@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<LogList>
+    <!-- boardTable -->
+    <Log id="Modify_BoardTable_Log" action="">
+      <Operation>Modify BoardTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+
+    <Log id="Delete_FileInfoMgmtTable_Log" action="">
+      <Operation>Delete FileInfoMgmtTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+
+    <Log id="Modify_SniAttributeTable_Log" action="">
+      <Operation>Modify SniAttributeTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+
+    <Log id="Add_SniTrunkConfigTable_Log" action="">
+      <Operation>Add SniTrunkConfigTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+    <Log id="Modify_SniTrunkConfigTable_Log" action="">
+      <Operation>Modify SniTrunkConfigTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+    <Log id="Delete_SniTrunkConfigTable_Log" action="">
+      <Operation>Delete SniTrunkConfigTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+
+    <Log id="Add_SniTrunkTable_Log" action="">
+      <Operation>Add SniTrunkTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+    <Log id="Modify_SniTrunkTable_Log" action="">
+      <Operation>Modify SniTrunkTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+    <Log id="Delete_SniTrunkTable_Log" action="">
+      <Operation>Delete SniTrunkTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+
+    <Log id="Add_SniMirrorTable_Log" action="">
+      <Operation>Add SniMirrorTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+    <Log id="Modify_SniMirrorTable_Log" action="">
+      <Operation>Modify SniMirrorTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+    <Log id="Delete_SniMirrorTable_Log" action="">
+      <Operation>Delete SniMirrorTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+
+    <Log id="Add_SniMacAddressMgmtTable_Log" action="">
+      <Operation>Add SniMacAddressMgmtTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+    <Log id="Modify_SniMacAddressMgmtTable_Log" action="">
+      <Operation>Modify SniMacAddressMgmtTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+    <Log id="Delete_SniMacAddressMgmtTable_Log" action="">
+      <Operation>Delete SniMacAddressMgmtTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+
+    <Log id="Add_SniMacAddressTable_Log" action="">
+      <Operation>Add SniMacAddressTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+    <Log id="Modify_SniMacAddressTable_Log" action="">
+      <Operation>Modify SniMacAddressTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+    <Log id="Delete_SniMacAddressTable_Log" action="">
+      <Operation>Delete SniMacAddressTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+
+    <Log id="Add_SniBroadcastStormSuppressionTable_Log" action="">
+      <Operation>Add SniBroadcastStormSuppressionTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+    <Log id="Modify_SniBroadcastStormSuppressionTable_Log" action="">
+      <Operation>Modify SniBroadcastStormSuppressionTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+    <Log id="Delete_SniBroadcastStormSuppressionTable_Log" action="">
+      <Operation>Delete SniBroadcastStormSuppressionTable</Operation>
+      <Level>4</Level>
+      <Annotation />
+    </Log>
+
+    <!-- ponPortInfoTable -->
+    <Log id="Modify_PonPortInfoTable_Log" action="">
+        <Operation>Modify PonPortInfoTable</Operation>
+        <Level>5</Level>
+        <Annotation>Modify</Annotation>
+    </Log>
+
+    <!-- aclRuleTable -->
+    <Log id="Add_AclRuleTable_Log" action="">
+        <Operation>Add AclRuleTable</Operation>
+        <Level>5</Level>
+        <Annotation>Add</Annotation>
+    </Log>
+    <Log id="Delete_AclRuleTable_Log" action="">
+        <Operation>Delete AclRuleTable</Operation>
+        <Level>5</Level>
+        <Annotation>Delete</Annotation>
+    </Log>
+
+    <!-- aclManagementTable -->
+    <Log id="Add_AclManagementTable_Log" action="">
+        <Operation>Add AclManagementTable</Operation>
+        <Level>5</Level>
+        <Annotation>Add</Annotation>
+    </Log>
+    <Log id="Delete_AclManagementTable_Log" action="">
+        <Operation>Delete AclManagementTable</Operation>
+        <Level>5</Level>
+        <Annotation>Delete</Annotation>
+    </Log>
+
+    <!-- portAclListTable -->
+    <Log id="Add_PortAclListTable_Log" action="">
+        <Operation>Add PortAclListTable</Operation>
+        <Level>5</Level>
+        <Annotation>Add</Annotation>
+    </Log>
+    <Log id="Delete_PortAclListTable_Log" action="">
+        <Operation>Delete PortAclListTable</Operation>
+        <Level>5</Level>
+        <Annotation>Delete</Annotation>
+    </Log>
+
+    <!-- ponBroadcastStormSuppressionTable -->
+    <Log id="Modify_PonBroadcastStormSuppressionTable_Log" action="">
+        <Operation>Modify PonBroadcastStormSuppressionTable</Operation>
+        <Level>5</Level>
+        <Annotation>Modify</Annotation>
+    </Log>
+
+    <!-- onuInfoTable -->
+    <Log id="Modify_OnuInfoTable_Log" action="">
+        <Operation>Modify OnuInfoTable</Operation>
+        <Level>5</Level>
+        <Annotation>Modify</Annotation>
+    </Log>
+    <Log id="Reset_ONU_Log" action="">
+        <Operation>Reset ONU</Operation>
+        <Level>5</Level>
+        <Annotation>Reset</Annotation>
+    </Log>
+
+    <!-- onuPonPortOpticalTransmissionPropertyTable -->
+
+    <!-- onuCapabilityTable -->
+    <Log id="Modify_OnuCapabilityTable_Log" action="">
+        <Operation>Modify OnuCapabilityTable</Operation>
+        <Level>5</Level>
+        <Annotation>Modify</Annotation>
+    </Log>
+
+    <!-- slaTable -->
+    <Log id="Modify_SlaTable_Log" action="">
+        <Operation>Modify SlaTable</Operation>
+        <Level>5</Level>
+        <Annotation>Modify</Annotation>
+    </Log>
+
+    <!-- onuAuthenticationPolicy -->
+
+    <!-- onuAuthenticationPreConfigTable -->
+
+    <!-- OnuAuthenticationBlockTable -->
+
+    <!-- uniAttributeTable -->
+    <Log id="Modify_UniAttributeTable_Log" action="">
+        <Operation>Modify UniAttributeTable</Operation>
+        <Level>5</Level>
+        <Annotation>Modify</Annotation>
+    </Log>
+    <Log id="Restart_AutoNegotiation_Log" action="">
+        <Operation>Restart Auto Negotiation</Operation>
+        <Level>5</Level>
+        <Annotation>Restart</Annotation>
+    </Log>
+
+    <!-- uniMacAddressManagementTable & uniMacAddressTable -->
+
+    <!-- uniTrunkGroupConfigTable & uniTrunkGroupTable -->
+
+    <!-- uniPortRateLimitTable -->
+    <Log id="Modify_UniPortRateLimitTable_Log" action="">
+        <Operation>Modify UniPortRateLimitTable</Operation>
+        <Level>5</Level>
+        <Annotation>Modify</Annotation>
+    </Log>
+
+    <!-- uniMirrorTable -->
+
+    <!-- uniBroadcastStormSuppressionTable -->
+
+</LogList>

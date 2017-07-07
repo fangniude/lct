@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="gb2312" ?>
+
+<StringMap>
+
+    <String key="CommonStringMap" value="com/winnertel/em/broadband/common/res/CommonStringMap"/>
+
+    <!-- for function tree table -->
+    <String key="Configuration" value="配置"/>
+    <String key="Fault" value="故障"/>
+    <String key="Performance" value="性能"/>
+    <String key="Upgrade" value="升级"/>
+
+    <!-- for snmp button -->
+    <String key="Apply" value="应用"/>
+    <String key="Save Config" value="保存配置"/>
+    <String key="Reset" value="复位"/>
+    <String key="Close" value="关闭"/>
+    <String key="Refresh" value="刷新"/>
+    <String key="Add" value="添加"/>
+    <String key="Modify" value="修改"/>
+    <String key="Batch Modify" value="批量修改"/>
+    <String key="Delete" value="删除"/>
+    <String key="Export" value="导出"/>
+    <String key="Restore" value="恢复默认值"/>
+
+    <!-- for task manager -->
+    <String key="Operation progress" value="操作进度"/>
+    <String key="Operation in process, please wait..." value="正在执行操作，请稍候..."/>
+    <String key="Cancel" value="取消"/>
+
+    <!-- for message dialog -->
+    <String key="Error" value="错误"/>
+    <String key="Following fields are invalid:" value="以下域的值非法，请重新输入："/>
+    <String key="Are you sure to do this configuration?" value="您确定要做这些配置操作吗？"/>
+    <String key="Are you sure to delete this row?" value="您确实要删除此行吗?"/>
+    <String key="Please Confirm" value="请确认"/>
+    <String key="Failed to query data from device!" value="从设备中查询数据时发生异常！"/>
+    <String key="Configuration completed successful!" value="配置操作成功完成！"/>
+    <String key="Configuration failed!" value="配置操作失败！"/>
+    <String key="Please select a row in the table for the operation." value="请为此操作在表中选择一行。"/>
+    <String key="Information" value="信息"/>
+    <String key="You have no permission for this operation." value="您没有执行该操作的权限！"/>
+    <String key="The file already exists, do you want to replace it?" value="文件已经存在,是否要进行替换?"/>
+
+    <!-- for message window -->
+    <String key="Result" value="操作结果"/>
+    <String key="Time" value="记录时间"/>
+    <String key="Level" value="级别"/>
+    <String key="IP Address" value="IP地址"/>
+    <String key="Host" value="主机"/>
+    <String key="User" value="用户名"/>
+    <String key="Operation Object" value="操作对象"/>
+    <String key="Operation" value="操作"/>
+    <String key="Annotation" value="备注"/>
+
+    <String key="Completed" value="完成"/>
+    <String key="Failed" value="失败"/>
+    <String key="Canceled" value="取消"/>
+
+    <!-- for ip menu bar -->
+    <String key="File" value="文件(F)"/>
+    <String key="Exit" value="退出(X)"/>
+    <String key="Help" value="帮助(H)"/>
+    <String key="Content" value="帮助(C)"/>
+
+    <!-- for gloabal fomatter -->
+    <String key="TIMETICK_DAY" value="天"/>
+    <String key="TIMETICK_HOUR" value="小时"/>
+    <String key="TIMETICK_MINUTE" value="分钟"/>
+    <String key="TIMETICK_SECOND" value="秒"/>
+
+    <!-- for snmp table panel -->
+    <String key="OK" value="确定"/>
+    <String key="Execution Result" value="执行结果"/>
+    <String key="Success" value="成功"/>
+    <String key="Failure" value="失败"/>
+
+    <String key="Please wait while configuring NE" value="正在对设备进行配置，请稍候..."/>
+    <String key="Please wait while retrieving data from NE" value="正在从设备读取数据，请稍候..."/>
+    <String key="Save and reboot to take any changes effect for Rushmore!" value="对RushmoreCPE的任何改动必须保存再重启才能生效!"/>
+    <String key="IAD Management" value="ONU CPE管理"/>
+    <String key="Inventory" value="ONU CPE设备"/>
+    <String key="OLT Module" value="OLT模块"/>
+    <String key="OLT Port" value="OLT端口"/>
+    <String key="ONU Port" value="ONU端口"/>
+
+    <String key="Select_File" value="选择文件"/>
+
+    <String key="Msg_Cfm_Save_Cfg" value="请确认是否要保存配置数据?"/>
+    <String key="Msg_Cfm_Exit_Dvm" value="您确定要退出设备管理?"/>
+
+    <String key="Err_NodeType_Is_Invalid" value="该ONU类型不正确，无法打开ONU设备管理!"/>
+    <String key="Err_NodeType_Is_Not_Supported" value="该ONU不支持设备管理!"/>
+    <String key="Err_NodeSwitchIp_Is_Invalid" value="ONU switch IP地址不正确，无法打开ONU设备管理!"/>
+
+    <String key="Card" value="板卡"/>
+    <String key="Slot" value="槽位"/>
+    <String key="Shelf" value="机框"/>
+    <String key="Board" value="板卡"/>
+
+</StringMap>

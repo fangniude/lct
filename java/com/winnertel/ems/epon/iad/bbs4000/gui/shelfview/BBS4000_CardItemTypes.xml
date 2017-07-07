@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<IltType>
+	<Card>
+    <Type name="CSM" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/card_csm.jpg" />
+    <Type name="EPM04A" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/card_epm04a.jpg" />
+    <Type name="EPM04B" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/card_epm04b.jpg" />
+    <Type name="EPM04D" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/card_epm04b.jpg" />
+    <Type name="GEM04" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/card_gem04.jpg" />
+    <Type name="GEM04A" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/card_gem04a.jpg" />
+    <Type name="GEM04B" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/card_gem04b.jpg" />
+    <Type name="GEM04C" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/card_gem04c.jpg" />
+    <Type name="XGM01A" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/card_xgm01a.jpg" />
+    <Type name="CSM_EMPTY" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/card_csm_empty.jpg" />
+    <Type name="EMPTY" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/card_empty.jpg" />
+    <Type name="PWR" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/card_pwr.jpg" />
+    <Type name="PWR_EMPTY" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/card_pwr_empty.jpg" />
+    <Type name="GPM02A" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/card_gpm02a.jpg" />
+	</Card>
+	<Port>
+		<Type name="CSM" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/port_ether.jpg" />
+		<Type name="GEM" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/port_filber.jpg" />
+		<Type name="EPM" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/port_filber.jpg" />
+		<Type name="GPM" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/port_filber.jpg" />
+	</Port>
+	<Led>
+		<Type name="LED_GREEN" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/led_green.gif" />
+		<Type name="LED_RED" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/led_red.jpg" />
+		<Type name="LED_YELLOW" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/led_yellow.jpg" />
+		<Type name="LED_OFF" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/led_gray.gif" />
+		<Type name="FAN_BLUE" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/led_fan_blue.jpg" />
+		<Type name="FAN_PURPLE" imgfile="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/led_fan_purple.jpg" />
+	</Led>
+</IltType>

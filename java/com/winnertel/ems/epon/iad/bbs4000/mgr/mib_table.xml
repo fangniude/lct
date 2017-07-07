@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tablelist>
+  <table name="utsEponArpTable">
+  	<item name="utsEponArpIpAddress" index="true" type="IPAddress" edit="false" visable="false"/>
+  	<item name="utsEponArpMacAddress" type="MACAddress" edit="true"/>
+  	<item name="utsEponArpIntfType" type="Integer" edit="false"/>
+  	<item name="utsEponArpModuleId" type="Integer" edit="false"/>
+  	<item name="utsEponArpPortId" type="Integer" edit="false"/>
+  	<item name="utsEponArpLinkAggGroupId" type="Integer" edit="false"/>
+  	<item name="utsEponArpVlanId" type="Integer" edit="false"/>
+  	<item name="utsEponArpItemType" type="Integer" edit="false"/>
+  	<item name="utsEponArpVlanSubVlanId" type="Integer" edit="false"/>
+  	<item name="utsEponArpRowStatus" type="Integer" edit="false"/>
+  </table>
+
+  <table name="utsLagExtLinkAggMacTable">
+  	<item name="utsLagExtLinkAggMacInterface" type="String" edit="true" length="32"/>
+  	<item name="utsLagExtLinkAggMacModule" type="Integer" edit="false"/>
+  	<item name="utsLagExtLinkAggMacPort" type="Integer" edit="false"/>
+  	<item name="utsLagExtLinkAggMacVlanId" type="Integer" edit="false"/>
+  	<item name="utsLagExtLinkAggMacIsStatic" type="Integer" edit="false"/>
+  	<item name="utsLagExtLinkAggMacIntfType" type="Integer" edit="false"/>
+  	<item name="utsLagExtLinkAggMacTrunkId" type="Integer" edit="false"/>
+  	<item name="utsLagExtLinkAggMacAddress" type="MACAddress" edit="true"/>
+  	<item name="utsLagExtLinkAggStatus" type="Integer" edit="false"/>
+  </table>
+
+  <table name="utsLagExtDot1qVlanTable">
+  	<item name="utsLagExtDot1qVlanIndex" index="true" type="Integer" edit="false" visable="false"/>
+  	<item name="utsLagExtDot1qVlanName" type="String" edit="true" length="16"/>
+  	<item name="utsLagExtDot1qVlanPortListPorts" type="Octets" edit="false" length="12"/>
+  	<item name="utsLagExtDot1qVlanTaggedPortListPorts" type="Octets" edit="true" length="12"/>
+  	<item name="utsLagExtDot1qVlanPortVidListPorts" type="Octets" edit="true" length="12"/>
+  	<item name="utsLagExtDot1qVlanStatus" type="Integer" edit="false"/>
+  	<item name="utsLagExtDot1qVlanUnTaggedPortListPorts" type="Octets" edit="true" length="12"/>
+  	<item name="utsLagExtDot1qVlanIgmpSnoop" type="Integer" edit="false"/>
+  	<item name="utsLagExtDot1qVlanPPPoEPlus" type="Integer" edit="false"/>
+  	<item name="utsLagExtDot1qVlanL2DHCPOption82" type="Integer" edit="false"/>
+  	<item name="utsLagExtDot1qVlanArpProxySwitch" type="Integer" edit="false"/>
+  </table>
+
+  <table name="utsIgmpSnoopingTable">
+  	<item name="utsIgmpSnoopingVID" index="true" type="Integer" edit="false" visable="false"/>
+  	<item name="utsIgmpSnoopingGroupAddress" index="true" type="IPAddress" edit="false" visable="false"/>
+  	<item name="utsIgmpSnoopingType" type="Integer" edit="false"/>
+  	<item name="utsIgmpSnoopingExpiryTime" type="Integer" edit="false"/>
+  	<item name="utsIgmpSnoopingEgressPortList" type="Octets" edit="false" length="12"/>
+  	<item name="utsIgmpSnoopingRowStatus" type="Integer" edit="false"/>
+  </table>
+
+  <table name="utsIgmpCacheTable">
+  	<item name="utsIgmpCacheIfIndex" index="true" type="Integer" edit="false" visable="false"/>
+  	<item name="utsIgmpCacheGroupAddress" index="true" type="IPAddress" edit="false" visable="false"/>
+  	<item name="utsIgmpCacheType" type="Integer" edit="false"/>
+  	<item name="utsIgmpCacheLastReporter" type="IPAddress" edit="false"/>
+  	<item name="utsIgmpCacheExpiryTime" type="Integer" edit="false"/>
+  	<item name="utsIgmpCacheStatus" type="Integer" edit="false"/>
+  </table>
+
+  <table name="utsIgmpCacheTable" version="3.0.0">
+    <item name="utsIgmpCacheIfIndex" index="true" type="Integer" edit="false" visable="false"/>
+    <item name="utsIgmpCacheGroupAddress" index="true" type="IPAddress" edit="false" visable="false"/>
+    <item name="utsIgmpCacheSourceAddress" index="true" type="IPAddress" edit="false" visable="false"/>
+    <item name="utsIgmpCacheType" type="Integer" edit="false"/>
+    <item name="utsIgmpCacheLastReporter" type="IPAddress" edit="false"/>
+    <item name="utsIgmpCacheExpiryTime" type="Integer" edit="false"/>
+    <item name="utsIgmpCacheStatus" type="Integer" edit="false"/>
+  </table>
+
+  <table name="utsDot3Onu2FDBTable">
+  	<item name="utsDot3OnuFDBModuleId" type="Integer" edit="false"/>
+  	<item name="utsDot3OnuFDBDeviceId" type="Integer" edit="false"/>
+  	<item name="utsDot3OnuFDBPortId" type="Integer" edit="false"/>
+  	<item name="utsDot3OnuFDBLPortId" type="Integer" edit="false"/>
+  	<item name="utsDot3OnuFDBIndex" type="Integer" edit="false"/>
+  	<item name="utsDot3OnuFDBDstMacAddr" type="MACAddress" edit="false"/>
+  	<item name="utsDot3OnuFDBVlanId" type="Integer" edit="false"/>
+  	<item name="utsDot3OnuFDBEgressPort" type="Octets" edit="false" length="4"/>
+  	<item name="utsDot3OnuFDBStatus" type="Integer" edit="false"/>
+  </table>
+
+  <table name="utsDot3Onu2CtcMulticastCtrlTable">
+  	<item name="utsDot3Onu2MCtrlModuleId" type="Integer" edit="false"/>
+  	<item name="utsDot3Onu2MCtrlDeviceId" type="Integer" edit="false"/>
+  	<item name="utsDot3Onu2MCtrlPortId" type="Integer" edit="false"/>
+  	<item name="utsDot3Onu2MCtrlLogicalPortId" type="Integer" edit="false"/>
+  	<item name="utsDot3Onu2MCastEntryIndex" type="Integer" edit="false"/>
+  	<item name="utsDot3Onu2MCastEntryUserId" type="Integer" edit="false"/>
+  	<item name="utsDot3Onu2MCastEntryMcVlanId" type="Integer" edit="false"/>
+  	<item name="utsDot3Onu2MCastEntryMcMacAddr" type="MACAddress" edit="false"/>
+  </table>
+ 
+  <table name="onuInfoSyncTable">
+      <item name="moduleId" type="Integer" edit="false"/>
+      <item name="deviceId" type="Integer" edit="false"/>
+      <item name="portId" type="Integer" edit="false"/>
+      <item name="logicalPortId" type="Integer" edit="false"/>
+      <item name="llId" type="Integer" edit="false"/>
+      <item name="serialNumber" type="Octets" edit="false" length="38"/>
+      <item name="switchAdminStatus" type="Integer" edit="false"/> <!--utsDot3Onu2CtcSwitchAdminStatus -->
+      <item name="registerStatus" type="Integer" edit="false"/>   <!--utsDot3Onu2CtcRegisterStatus -->
+      <item name="chipsetId" type="Octets" edit="false" length="8"/>   <!--utsDot3Onu2CtcChipsetId -->
+      <item name="onu2CtcAdmin" type="Integer" edit="false"/> <!--utsDot3Onu2CtcAdmin -->
+      <item name="onu2CtcRTT" type="Integer" edit="false"/> <!--utsDot3Onu2CtcRTT -->
+      <item name="switchIpAddress" type="IPAddress" edit="false"/> <!--utsDot3OnuSwitchIpAddress -->
+      <item name="switchMngStatus" type="Integer" edit="false"/>   <!--utsDot3OnuSwitchMngStatus -->
+  </table>
+
+  <table name="onuBindingTable">
+      <item name="moduleId" type="Integer" edit="false"/>
+      <item name="deviceId" type="Integer" edit="false"/>
+      <item name="portId" type="Integer" edit="false"/>
+      <item name="logicalPortId" type="Integer" edit="false"/>
+      <item name="onuMacAddress" type="MACAddress" edit="false"/>
+      <item name="configuredType" type="Integer" edit="false"/>
+      <item name="loId" type="Octets" edit="false" length="24"/>
+      <item name="password" type="Octets" edit="false" length="12"/>
+      <item name="authenMethod" type="Integer" edit="false"/>
+  </table>
+
+</tablelist>

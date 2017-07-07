@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<StringMap>
+
+    <String key="CommonStringMap" value="com/winnertel/em/broadband/common/res/CommonStringMap"/>
+
+    <!-- for gloabal fomatter -->
+    <String key="TIMETICK_DAY" value="day(s) and "/>
+    <String key="TIMETICK_HOUR" value=":"/>
+    <String key="TIMETICK_MINUTE" value=":"/>
+    <String key="TIMETICK_SECOND" value=""/>
+
+    <String key="IAD Management" value="ONU CPE Management"/>
+    <String key="Inventory" value="Inventory"/>
+    <String key="OLT Module" value="OLT Module"/>
+    <String key="OLT Port" value="OLT Port"/>
+    <String key="ONU Port" value="ONU Port"/>
+
+    <String key="Select_File" value="Select File"/>
+
+    <String key="Msg_Cfm_Save_Cfg" value="Do you confirm to save the NE config file?"/>
+    <String key="Msg_Cfm_Exit_Dvm" value="Are you sure to exit device management?"/>
+
+    <String key="Err_NodeType_Is_Invalid"
+            value="Failed to run the ONU device management as the ONU type is not correct!"/>
+    <String key="Err_NodeType_Is_Not_Supported" value="This ONU is not support ONU device management!"/>
+    <String key="Err_NodeSwitchIp_Is_Invalid"
+            value="Failed to run the ONU device management as the ONU switch IP address is not correct!"/>
+
+    <String key="Card" value="Card"/>
+    <String key="Slot" value="Slot"/>
+    <String key="Shelf" value="Shelf"/>
+    <String key="Board" value="Board"/>
+</StringMap>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<Security>
+
+    <!-- boardTable -->
+    <Authorization action="Modify_BoardTable" privilege="" />
+
+    <Authorization action="Delete_FileInfoMgmtTable" privilege="" />
+
+    <Authorization action="Modify_SniAttributeTable" privilege="" />
+
+    <Authorization action="Add_SniTrunkConfigTable" privilege="" />
+    <Authorization action="Modify_SniTrunkConfigTable" privilege="" />
+    <Authorization action="Delete_SniTrunkConfigTable" privilege="" />
+
+    <Authorization action="Add_SniTrunkTable" privilege="" />
+    <Authorization action="Modify_SniTrunkTable" privilege="" />
+    <Authorization action="Delete_SniTrunkTable" privilege="" />
+
+    <Authorization action="Add_SniMirrorTable" privilege="" />
+    <Authorization action="Modify_SniMirrorTable" privilege="" />
+    <Authorization action="Delete_SniMirrorTable" privilege="" />
+
+    <Authorization action="Add_SniMacAddressMgmtTable" privilege="" />
+    <Authorization action="Modify_SniMacAddressMgmtTable" privilege="" />
+    <Authorization action="Delete_SniMacAddressMgmtTable" privilege="" />
+
+    <Authorization action="Add_SniMacAddressTable" privilege="" />
+    <Authorization action="Modify_SniMacAddressTable" privilege="" />
+    <Authorization action="Delete_SniMacAddressTable" privilege="" />
+
+    <Authorization action="Add_SniBroadcastStormSuppressionTable" privilege="" />
+    <Authorization action="Modify_SniBroadcastStormSuppressionTable" privilege="" />
+    <Authorization action="Delete_SniBroadcastStormSuppressionTable" privilege="" />
+
+    <!-- ponPortInfoTable -->
+    <Authorization action="Modify_PonPortInfoTable" privilege="PON_Port:EDIT"/>
+
+    <!-- aclRuleTable -->
+    <Authorization action="Add_AclRuleTable" privilege="ACL_Management_Group:VIEW"/>
+    <Authorization action="Delete_AclRuleTable" privilege="ACL_Management_Group:EDIT"/>
+
+    <!-- aclManagementTable -->
+    <Authorization action="Add_AclManagementTable" privilege="ACL_Management_Group:VIEW"/>
+    <Authorization action="Delete_AclManagementTable" privilege="ACL_Management_Group:EDIT"/>
+
+    <!-- portAclListTable -->
+    <Authorization action="Add_PortAclListTable" privilege="ACL_Management_Group:VIEW"/>
+    <Authorization action="Delete_PortAclListTable" privilege="ACL_Management_Group:EDIT"/>
+
+    <!-- ponBroadcastStormSuppressionTable -->
+    <Authorization action="Modify_PonBroadcastStormSuppressionTable" privilege="PON_Port:EDIT"/>
+
+    <!-- onuInfoTable -->
+    <Authorization action="Modify_OnuInfoTable" privilege="ONU_Management:EDIT"/>
+    <Authorization action="Reset_ONU" privilege="ONU_Management:EDIT"/>
+
+    <!-- onuPonPortOpticalTransmissionPropertyTable -->
+
+    <!-- onuCapabilityTable -->
+    <Authorization action="Modify_OnuCapabilityTable" privilege="ONU_Management:EDIT"/>
+
+    <!-- slaTable -->
+    <Authorization action="Modify_SlaTable" privilege="ONU_Management:EDIT"/>
+
+    <!-- onuAuthenticationPolicy -->
+
+    <!-- onuAuthenticationPreConfigTable -->
+
+    <!-- OnuAuthenticationBlockTable -->
+
+    <!-- uniAttributeTable -->
+    <Authorization action="Modify_UniAttributeTable" privilege="UNI_Management:EDIT"/>
+    <Authorization action="Restart_AutoNegotiation" privilege="UNI_Management:EDIT"/>
+
+    <!-- uniMacAddressManagementTable & uniMacAddressTable -->
+
+    <!-- uniTrunkGroupConfigTable & uniTrunkGroupTable -->
+
+    <!-- uniPortRateLimitTable -->
+    <Authorization action="Modify_UniPortRateLimitTable" privilege="UNI_Management:EDIT"/>
+
+    <!-- uniMirrorTable -->
+
+    <!-- uniBroadcastStormSuppressionTable -->
+
+
+    <!-- VlanGlobalInfoTable_Panel -->
+    <Authorization action="Add_VlanGlobalInfoTable" privilege="" />
+    <Authorization action="Modify_VlanGlobalInfoTable" privilege="" />
+    <Authorization action="Delete_VlanGlobalInfoTable" privilege="" />
+
+    <!-- OltVlanConfigTable_Panel -->
+    <Authorization action="Add_OltVlanConfigTable" privilege="" />
+        <Authorization action="Modify_OltVlanConfigTable" privilege="" />
+        <Authorization action="Delete_OltVlanConfigTable" privilege="" />
+
+    <!-- OnuVlanConfigTable_Panel -->
+     <Authorization action="Add_OnuVlanConfigTable" privilege="" />
+        <Authorization action="Modify_OnuVlanConfigTable" privilege="" />
+        <Authorization action="Delete_OnuVlanConfigTable" privilege="" />
+
+    <!-- PortVlanTable_Panel -->
+    <Authorization action="Add_PortVlanTable" privilege="" />
+    <Authorization action="Modify_PortVlanTable" privilege="" />
+    <Authorization action="Delete_PortVlanTable" privilege="" />
+
+   <!--PortVlanTranslationTable_Panel-->
+    <Authorization action="Add_PortVlanTranslationTable" privilege="" />
+        <Authorization action="Modify_PortVlanTranslationTable" privilege="" />
+        <Authorization action="Delete_PortVlanTranslationTable" privilege="" />    
+   <!--PortVlanAggregationConfigTable_Panel-->
+    <Authorization action="Add_PortVlanAggregationConfigTable" privilege="" />
+        <Authorization action="Modify_PortVlanAggregationConfigTable" privilege="" />
+        <Authorization action="Delete_PortVlanAggregationConfigTable" privilege="" />
+
+    <!-- PortVlanTrunkTable_Panel -->
+    <Authorization action="Add_PortVlanTrunkTable" privilege="" />
+        <Authorization action="Modify_PortVlanTrunkTable" privilege="" />
+        <Authorization action="Delete_PortVlanTrunkTable" privilege="" />
+    <!--PortQinQConfigTable_Panel-->
+    <Authorization action="Add_PortQinQConfigTable" privilege="" />
+        <Authorization action="Modify_PortQinQConfigTable" privilege="" />
+        <Authorization action="Delete_PortQinQConfigTable" privilege="" />
+    <!--QosGlobalSetTable_Panel-->
+    <Authorization action="Add_QosGlobalSetTable" privilege="" />
+        <Authorization action="Modify_QosGlobalSetTable" privilege="" />
+        <Authorization action="Delete_QosGlobalSetTable" privilege="" />
+
+    <!--DeviceBaseQosMapTable_Panel-->
+    <Authorization action="Add_DeviceBaseQosMapTable" privilege="" />
+        <Authorization action="Modify_DeviceBaseQosMapTable" privilege="" />
+        <Authorization action="Delete_DeviceBaseQosMapTable" privilege="" />
+
+    <!--DeviceBaseQosPolicyTable_Panel-->
+     <Authorization action="Add_DeviceBaseQosPolicyTable" privilege="" />
+        <Authorization action="Modify_DeviceBaseQosPolicyTable" privilege="" />
+        <Authorization action="Delete_DeviceBaseQosPolicyTable" privilege="" />
+</Security>

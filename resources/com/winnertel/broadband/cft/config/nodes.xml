@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<nodes>
+
+    <node type="FBW3000"
+          mounter="com.winnertel.broadband.cft.provider.hznode.TftpNodeMounter"
+          dirFetcher="com.winnertel.broadband.cft.provider.hznode.TftpDirFetcher"
+          boardFinder="com.winnertel.broadband.cft.provider.hznode.epon.EponBoardFinder"
+          loader="com.winnertel.broadband.cft.provider.hznode.HZNodeLoader"
+          loadHandler="com.winnertel.broadband.cft.provider.hznode.epon.EponLoaderHandlerAdaptor"
+          eraser="com.winnertel.broadband.cft.loader.Eraser"/>
+    <node type="FBW2000"
+          mounter="com.winnertel.broadband.cft.provider.hznode.TftpNodeMounter"
+          dirFetcher="com.winnertel.broadband.cft.provider.hznode.TftpDirFetcher"
+          boardFinder="com.winnertel.broadband.cft.provider.hznode.epon.EponBoardFinder"
+          loader="com.winnertel.broadband.cft.provider.hznode.HZNodeLoader"
+          loadHandler="com.winnertel.broadband.cft.provider.hznode.epon.EponLoaderHandlerAdaptor"
+          eraser="com.winnertel.broadband.cft.loader.Eraser"/>
+    <node type="FBW5000"
+          mounter="com.winnertel.broadband.cft.provider.hznode.TftpNodeMounter"
+          dirFetcher="com.winnertel.broadband.cft.provider.hznode.TftpDirFetcher"
+          boardFinder="com.winnertel.broadband.cft.provider.hznode.epon.EponBoardFinder"
+          loader="com.winnertel.broadband.cft.provider.hznode.HZNodeLoader"
+          loadHandler="com.winnertel.broadband.cft.provider.hznode.epon.EponLoaderHandlerAdaptor"
+          eraser="com.winnertel.broadband.cft.loader.Eraser"/>
+
+</nodes>

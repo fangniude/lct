@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<FunctionTreeList>
+    <FunctionTree type="Configuration">
+        <Node id="FBW5000" text="FBW5000" decorator="com.winnertel.ems.epon.iad.bbs4000.CMFunctionTreeBuilder">
+        </Node>
+    </FunctionTree>
+
+    <!--
+    <FunctionTree type="VoIP">
+        <Node id="VoIP" text="VoIP View" decorator="com.winnertel.ems.epon.iad.bbs4000.IADViewTreeBuilder">
+        </Node>
+    </FunctionTree>
+
+    <FunctionTree type="Data">
+        <Node id="Data" text="Data View" decorator="com.winnertel.ems.epon.iad.bbs4000.IADViewTreeBuilder">
+        </Node>
+    </FunctionTree>
+
+    <FunctionTree type="ONU">
+        <Node id="ONU" text="ONU View" decorator="com.winnertel.ems.epon.iad.bbs4000.IADViewTreeBuilder">
+        </Node>
+    </FunctionTree>
+
+    <FunctionTree type="IPTV">
+        <Node id="IPTV" text="IP View" decorator="com.winnertel.ems.epon.iad.bbs4000.IADViewTreeBuilder">
+        </Node>
+    </FunctionTree>
+    -->
+</FunctionTreeList>

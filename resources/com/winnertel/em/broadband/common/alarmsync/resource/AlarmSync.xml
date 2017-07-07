@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<FMERegister>
+    <Register DevType="FBW3000" NodeVersion="1.0.0-9.9.9"
+              ValidateClass="com.winnertel.em.broadband.common.alarmsync.syncMechanism.EponSyncValidate"
+              PollClass="com.winnertel.ems.fm.trap.snmp.epon.EponPollData">
+        <SyncClasses>
+            <SyncClass SyncType="10"
+                       SyncClass="com.winnertel.ems.fm.trap.snmp.epon.EponPartSyncAction" />
+            <SyncClass SyncType="20"
+                       SyncClass="com.winnertel.ems.fm.trap.snmp.epon.EponFullSyncAction" />
+        </SyncClasses>
+    </Register>
+
+    <Register DevType="FBW2000" NodeVersion="1.0.0-9.9.9"
+              ValidateClass="com.winnertel.em.broadband.common.alarmsync.syncMechanism.EponSyncValidate"
+              PollClass="com.winnertel.ems.fm.trap.snmp.epon.EponPollData">
+        <SyncClasses>
+            <SyncClass SyncType="10"
+                       SyncClass="com.winnertel.ems.fm.trap.snmp.epon.EponPartSyncAction" />
+            <SyncClass SyncType="20"
+                       SyncClass="com.winnertel.ems.fm.trap.snmp.epon.EponFullSyncAction" />
+        </SyncClasses>
+    </Register>
+
+    <Register DevType="FBW5000" NodeVersion="1.0.0-9.9.9"
+              ValidateClass="com.winnertel.em.broadband.common.alarmsync.syncMechanism.EponSyncValidate"
+              PollClass="com.winnertel.ems.fm.trap.snmp.epon.EponPollData">
+        <SyncClasses>
+            <SyncClass SyncType="10"
+                       SyncClass="com.winnertel.ems.fm.trap.snmp.epon.EponPartSyncAction" />
+            <SyncClass SyncType="20"
+                       SyncClass="com.winnertel.ems.fm.trap.snmp.epon.EponFullSyncAction" />
+        </SyncClasses>
+    </Register>
+
+    <Register DevType="CLT2161A" NodeVersion="1.0.0-9.0.0"
+              ValidateClass="com.winnertel.em.broadband.common.alarmsync.syncMechanism.EponSyncValidate"
+              PollClass="com.winnertel.ems.fm.trap.snmp.epon.EponPollData">
+        <SyncClasses>
+            <SyncClass SyncType="10"
+                       SyncClass="com.winnertel.ems.fm.trap.snmp.epon.EponPartSyncAction" />
+            <SyncClass SyncType="20"
+                       SyncClass="com.winnertel.ems.fm.trap.snmp.epon.EponFullSyncAction" />
+        </SyncClasses>
+    </Register>
+
+
+</FMERegister>

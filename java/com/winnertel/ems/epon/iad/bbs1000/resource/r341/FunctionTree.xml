@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<FunctionTreeList>
+    <FunctionTree type="Configuration">
+        <Node id="BBS1000" text="BBS1000" decorator="com.winnertel.ems.epon.iad.bbs1000.CMFunctionTreeBuilder">
+        </Node>
+    </FunctionTree>
+</FunctionTreeList>

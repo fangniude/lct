@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+
+<LiteReleaseInfo>
+	<Server>
+        <!--The server's locate.If it is English version, please set <Language> to "en" and set <Country> to "US". If it is Chinese version, please set them to "zh","CN" respectively -->
+		<Language> en </Language>
+		<Country> US </Country>
+        <!--If the encoding of DB is not consistent with the locale and the encoding policy configured in /conf/ngnms/Encodingpolicy.xml should be effectual, please change the value from "false" to "true". Otherwise, the encoding policy should not be effectual.-->
+        <NeedEncodingPolicy> false </NeedEncodingPolicy>
+	</Server>	
+</LiteReleaseInfo>

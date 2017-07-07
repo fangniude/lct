@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<FunctionTreeList>
+    <FunctionTree type="Configuration">
+        <Node id="CBAT" text="CBAT" decorator="com.winnertel.ems.epon.iad.eoc.IADCMTreeBuilder">
+        </Node>
+        <Node id="CLT2161A" text="CLT2161A" decorator="com.winnertel.ems.epon.iad.eoc.IADCMTreeBuilder">
+        </Node>
+    </FunctionTree>
+</FunctionTreeList>

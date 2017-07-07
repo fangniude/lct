@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Parsers>
+
+    <Parser
+            DevType="FBW3000"
+            Protocol="SNMP"
+            ParserClass="com.winnertel.ems.epon.fm.EponTrapParser"
+            />
+
+    <Parser
+            DevType="FBW2000"
+            Protocol="SNMP"
+            ParserClass="com.winnertel.ems.epon.fm.EponTrapParser"
+            />
+
+    <Parser
+            DevType="FBW5000"
+            Protocol="SNMP"
+            ParserClass="com.winnertel.ems.epon.fm.EponTrapParser"
+            />
+
+    <Parser
+            DevType="CLT2161A"
+            Protocol="SNMP"
+            ParserClass="com.winnertel.ems.epon.fm.EponTrapParser"
+            />
+
+</Parsers>

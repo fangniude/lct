@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+	@Author:	Michael Dai,UTStarcom
+	@Created:	2003-01-06 11:00
+	@Modified:
+	@Purpose:
+	@Description:
+-->
+
+<Gepon>
+    <Device type="FBW5000" version="1.0.0,2.0.0,2.1.0,2.1.6,3.0.0">
+        <!-- linkdown -->
+        <Trap mibid=".1.3.6.1.6.3.1.1.5.3"></Trap>
+        <!-- linkup -->
+        <Trap mibid=".1.3.6.1.6.3.1.1.5.4"></Trap>
+
+        <!-- utsFanNormal -->
+        <Trap mibid=".1.3.6.1.4.1.41355.1.3.10.200.6.3.1.0.36"></Trap>
+        <!-- utsFanAbnormal -->
+        <Trap mibid=".1.3.6.1.4.1.41355.1.3.10.200.6.3.1.0.38"></Trap>
+
+        <!-- utsBBS4000CardInsertAlarm -->
+        <Trap mibid=".1.3.6.1.4.1.41355.1.3.10.200.6.3.1.0.36"></Trap>
+        <!-- utsBBS4000CardRemoveAlarm -->
+        <Trap mibid=".1.3.6.1.4.1.41355.1.3.10.200.6.3.1.0.38"></Trap>
+
+        <File type="dataSourceFile" spmodule="default" name="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/BBS4000_template.xml"/>
+        <File type="configurationFile" spmodule="default" name="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/BBS4000_config.css"/>
+        <File type="cardItemTypeFile" spmodule="default" name="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/BBS4000_CardItemTypes.xml"/>
+        <File type="cardItemActionFile" spmodule="default" name="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/BBS4000_CardItemActions.xml"/>
+        <File type="shelfBackgroundFile" spmodule="default" name="com/winnertel/ems/epon/iad/bbs4000/gui/shelfview/resource/BBS4000_background.gif"/>
+    </Device>
+</Gepon>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<StringMap>
+
+    <!--ONU Label Mangement-->
+    <String key="Root_Topo_View" value="Root Topo View"/>
+    <String key="Search" value="Search"/>
+    <String key="Modify" value="Modify"/>
+    <String key="Delete" value="Delete"/>
+    <String key="Refresh" value="Refresh"/>
+    <String key="ONU_Information_Management" value="ONU Information Management"/>
+    <String key="Unbound_ONU_Information_Management" value="Unbound ONU Information Management"/>
+
+    <!-- The Table Columns in ONU Mangement -->
+    <String key="All" value="All"/>
+    <String key="ONU Label" value="ONU Label"/>
+    <String key="ONU Type" value="ONU Type"/>
+    <String key="MAC Address" value="MAC Address"/>
+    <String key="NE Label" value="NE Label"/>
+    <String key="Shelf" value="Shelf"/>
+    <String key="Card" value="Card"/>
+    <String key="Port" value="Port"/>
+    <String key="ONU" value="ONU"/>
+    <String key="Admin Status" value="Admin Status"/>
+    <String key="Register Status" value="Register Status"/>
+    <String key="Splitter Label" value="Splitter Label"/>
+    <String key="Splitter Port" value="Splitter Port"/>
+
+    <String key="Up" value="UP"/>
+    <String key="Down" value="DOWN"/>
+    <String key="Register" value="Register"/>
+    <String key="Deregister" value="Deregister"/>
+
+    <String key="Page" value="Page"/>
+    <String key="Page Length" value="Page Length"/>
+    <String key="Total" value="Total"/>
+    <String key="Input_Onu_Label" value="Please input the ONU ID"/>
+    <String key="Onu_Label_Length_Error" value="The ONU Label length must be less than 64."/>
+    <String key="Onu_ID_String_Error" value="ONU ID must be a number."/>
+    <String key="Service Management" value="Service Management"/>
+    <String key="Modify ONU Label" value="Modify ONU Label"/>
+    <String key="Service Management" value="Service Management"/>
+    <String key="Log_Modify_Onu_Label_Fail" value="Failed to modify the ONU: "/>
+    <String key="Msg_Modify_Onu_Label_Fail" value="Fail to modify the ONU label."/>
+    <String key="Cfm_Delete_Onu_Label" value="Are you sure you want to delete the selected ONU?"/>
+    <String key="Confirm" value="Confirm"/>
+    <String key="Error" value="Error"/>
+    <String key="Title_Warning" value="Warning"/>
+    <String key="Delete ONU" value="Delete ONU "/>
+    <String key="Delete the ONU" value="Delete the ONU "/>
+    <String key="Log_Delete_Onu_Label_Fail" value="Failed to delete the ONU: "/>
+    <String key="Msg_Delete_Onu_Label_Fail" value="Failed to delete the ONU: "/>
+    <String key="No_Privilege_Error" value="You are not authorized to perform the selected operation."/>
+
+    <String key="TIMETICK_DAY" value="day(s) and "/>
+    <String key="TIMETICK_HOUR" value=":"/>
+    <String key="TIMETICK_MINUTE" value=":"/>
+    <String key="TIMETICK_SECOND" value=""/>
+
+    <!-- translate the english in ACS -->
+    <String key="ACS_Policy_Management" value="ONU ACS Management"/>
+    <String key="Policy" value="Task"/>
+    <String key="Version" value="Version/Digest"/>
+    <String key="oldVersion" value="Old Version/Digest"/>
+    <String key="newVersion" value="New Version/Digest"/>
+    <String key="filePath" value="File Path"/>
+    <String key="beginTime" value="Begin Time"/>
+    <String key="endTime" value="End Time"/>
+    <String key="result" value="Result"/>
+
+    <String key="selected" value="selected"/>
+    <String key="macaddress" value="MAC Address"/>
+    <String key="label" value="ONU Label"/>
+    <String key="hwtype" value="Type"/>
+    <String key="userlabel" value="NE Label"/>
+    <String key="Policy_File_Is_Null" value="No file is selected."/>
+
+    <String key="Err_NodeType_Is_Invalid" value="Failed to run the ONU device management as the ONU type is not correct!"/>
+    <String key="Err_NodeType_Is_Not_Supported" value="This ONU is not support ONU device management!"/>
+    <String key="Err_NodeSwitchIp_Is_Invalid" value="Failed to run the ONU device management as the ONU switch IP address is not correct!"/>
+
+</StringMap>

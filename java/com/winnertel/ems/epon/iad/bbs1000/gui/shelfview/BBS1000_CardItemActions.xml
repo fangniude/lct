@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+	@Author:	Michael Dai,UTStarcom
+	@Created:	2003-01-06 11:00
+	@Modified:
+	@Purpose:
+	@Description:
+-->
+
+<Action>
+    <Card>
+        <Type name="2024AL_Front_Panel" popupmenu="2024AL node"></Type>
+        <Type name="2024AL_Back_Panel" popupmenu="2024AL node"></Type>
+    </Card>
+    <Port>
+        <Type name="Console_Port_2024AL" popupmenu="console port"></Type>
+        <Type name="Lan_Port_2024AL" popupmenu="lan port"></Type>
+        <Type name="Reset_Button_2024AL" popupmenu="reset"></Type>
+        <Type name="UPLink_Port_2024AL" popupmenu="uplink port"></Type>
+        <Type name="Top_EthPort_Down_2024AL" popupmenu="ethernet port"></Type>
+        <Type name="Top_EthPort_Up_2024AL" popupmenu="ethernet port"></Type>
+        <Type name="Bottom_EthPort_Down_2024AL" popupmenu="ethernet port"></Type>
+        <Type name="Bottom_EthPort_Up_2024AL" popupmenu="ethernet port"></Type>
+        <Type name="Power_2024AL" popupmenu="power"></Type>
+    </Port>
+    <Led>
+    </Led>
+</Action>

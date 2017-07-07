@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="GB2312"?>
+
+<StringMap>
+
+    <!-- systemObjects -->
+    <String key="System_Information" value="系统配置"/>
+
+    <!-- sniObjects -->
+    <String key="Service_Node_Interface" value="SNI配置"/>
+
+    <!-- sniObjects -->
+    <String key="PON_Port" value="PON端口"/>
+
+    <!-- aclManagementGroup -->
+    <String key="ACL_Management_Group" value="ACL管理"/>
+
+    <!-- onuObjects -->
+    <String key="ONU_Management" value="ONU管理"/>
+
+    <!-- onuAuthenticationManagement -->
+    <String key="ONU_Authentication_Management" value="ONU认证管理"/>
+
+    <!-- eponLinkedEoCManagementObjects -->
+    <String key="EoC_Management" value="EoC管理"/>
+
+    <!-- uniObjects -->
+    <String key="UNI_Management" value="UNI管理"/>
+
+    <!-- igmpManagementObjects -->
+    <String key="IGMP_Management" value="IGMP管理"/>
+
+    <!-- vlanManagementObjects -->
+    <String key="VLAN_Management" value="VLAN管理"/>
+
+    <!-- qosManagementObjects -->
+    <String key="QoS_Management" value="QoS管理"/>
+
+    <!-- stpManagementObjects -->
+    <String key="STP_Management" value="STP管理"/>
+
+    <!-- performanceStatisticObjects -->
+    <String key="Performance_Statistics" value="性能统计"/>
+
+    <String key="Alarm_Information" value="告警信息"/>
+
+    <!--Common-->
+    <String key="true" value="是"/>
+    <String key="false" value="否"/>
+    <String key="other" value="其他"/>
+    <String key="others" value="其他"/>
+    <String key="up" value="Up"/>
+    <String key="down" value="Down"/>
+    <String key="testing" value="Testing"/>
+    <String key="disable" value="Disabled"/>
+    <String key="enable" value="Enabled"/>
+    <String key="disabled" value="Disabled"/>
+    <String key="enabled" value="Enabled"/>
+    <String key="invalid" value="非法"/>
+    <String key="valid" value="合法"/>
+    <String key="permit" value="允许"/>
+    <String key="preview" value="预览"/>
+    <String key="deny" value="禁止"/>
+    <String key="mark" value="标记"/>
+    <String key="byte" value="字节"/>
+    <String key="Apply" value="应用"/>
+    <String key="readOnly" value="只读"/>
+    <String key="readWrite" value="读写"/>
+    <String key="unknown" value="未知"/>
+    <String key="lock" value="锁定"/>
+    <String key="unlock" value="解锁"/>
+    <String key="critical" value="严重"/>
+    <String key="major" value="重要"/>
+    <String key="minor" value="次要"/>
+    <String key="warning" value="警告"/>
+    <String key="none" value="无告警"/>
+    <String key="info" value="信息"/>
+    <String key="clear" value="清除"/>
+    <String key="Refresh" value="刷新"/>
+    <String key="Delete" value="删除"/>
+
+    <String key="aes128" value="AES128"/>
+    <String key="ctcTripleChurning" value="CTC三重搅动"/>
+
+    <String key="installed" value="已安装"/>
+    <String key="notInstalled" value="未安装"/>
+
+    <String key="priority" value="优先级"/>
+    <String key="queue" value="队列"/>
+    <String key="weight" value="权重"/>
+    <String key="bandwidth" value="带宽"/>
+
+    <!-- ONU type -->
+    <String key="onu100" value="ONU100"/>
+    <String key="onu1000b" value="ONU1000B"/>
+    <String key="onu1000c" value="ONU1000C"/>
+    <String key="onu200a" value="ONU200A"/>
+    <String key="onu200b" value="ONU200B"/>
+    <String key="onu2024" value="ONU2024"/>
+    <String key="onu2004" value="ONU2004"/>
+    <String key="onu101k" value="ONU101K"/>
+    <String key="onu301" value="ONU301"/>
+    <String key="onu301c" value="ONU301C"/>
+    <String key="onu404" value="ONU404"/>
+    <String key="onu404c" value="ONU404C"/>
+    <String key="onu804" value="ONU804"/>
+    <String key="onu804c" value="ONU804C"/>
+    <String key="onu1001c" value="ONU1001C"/>
+    <String key="onu3004" value="ONU3004"/>
+    <String key="onu1001i" value="ONU1001i"/>
+    <String key="onu2004i" value="ONU2004i"/>
+    <String key="onu404i" value="ONU404i"/>
+    <String key="clt2060" value="CLT2060"/>
+    <String key="onu204i" value="ONU204i"/>
+    <String key="onu208i" value="ONU208i"/>
+    <String key="onu204h" value="ONU204h"/>
+    <String key="onu408t" value="ONU408t"/>
+    <String key="b1205-y" value="B1205-Y"/>
+    <String key="onu2024i" value="ONU2024i"/>
+    <String key="onub210" value="ONUB210"/>
+    <String key="onu1001h" value="ONU1001h"/>
+    <String key="onub220" value="ONUB220"/>
+    <String key="onu804i" value="ONU804i"/>
+    <String key="onu101" value="ONU101"/>
+    <String key="onu1001b" value="ONU1001b"/>
+    <String key="onu2004h" value="ONU2004h"/>
+    <String key="onu204d" value="ONU204d"/>
+    <String key="onu404t" value="ONU404t"/>
+    <String key="onu4024t" value="ONU4024t"/>
+    <String key="onu4024i" value="ONU4024i"/>
+    <String key="onu101i" value="ONU101i"/>
+    <String key="onub1205y" value="B1205-Y"/>
+    <String key="onub1205d" value="B1205-D"/>
+    <String key="onub130" value="B130"/>
+    <String key="onub1205" value="B1205"/>
+    <String key="ont952" value="ONU1001t"/>
+    <String key="ont958" value="ONU404t"/>
+    <String key="onu2004-2" value="ONU2004-2"/>
+    <String key="onu404h" value="ONU404h"/>
+    <String key="onu208h" value="ONU208h"/>
+    <String key="onu4016i" value="ONU4016i"/>
+    <String key="onu4016i-t" value="ONU4016i-t"/>
+    <String key="onu2016i-e" value="ONU2016i-e"/>
+    <String key="onu4016i-t A1B" value="ONU4016i-t A1B"/>
+    <String key="onu4016i-t A1S" value="ONU4016i-t A1S"/>
+    <String key="onu208p" value="ONU208p"/>
+    <String key="onu4024ia1b" value="ONU4024i A1B"/>
+    <String key="onu4024ia1s" value="ONU4024i A1S"/>
+    <String key="onu4024ia2b" value="ONU4024i A2B"/>
+    <String key="onu4024ia2s" value="ONU4024i A2S"/>
+    <String key="onub1202" value="B1202"/>
+    <String key="onu204ie" value="ONU204i-e"/>
+    <String key="onu204ih" value="ONU204i-h"/>
+    <String key="tkOnu" value="TK ONU"/>
+    <String key="pmcOnu" value="PMC ONU"/>
+
+    <!-- systemGlobalObjects -->
+    <String key="System_Configuration" value="系统配置"/>
+    <String key="System_Global" value="系统时间"/>
+    <String key="System_Inband" value="带内配置"/>
+    <String key="System_Outband" value="带外配置"/>
+
+    <String key="systemTime" value="系统时间"/>
+    <String key="inbandIpAddress" value="带内IP地址"/>
+    <String key="inbandIpGateway" value="带内IP网关"/>
+    <String key="inbandIpSubnetMask" value="带内IP子网掩码"/>
+    <String key="inbandMacAddress" value="带内MAC地址"/>
+    <String key="inbandVlanId" value="带内VLAN ID"/>
+    <String key="outbandIpAddress" value="带外IP地址"/>
+    <String key="outbandIpGateway" value="带外IP网关"/>
+    <String key="outbandIpSubnetMask" value="带外IP子网掩码"/>
+    <String key="outbandMacAddress" value="带外MAC地址"/>
+    <String key="systemOUI" value="系统OUI"/>
+    <String key="vendorName" value="供应商名称"/>
+
+    <!-- eponManagementAddrTable -->
+    <String key="Trap_Configuration" value="Trap配置"/>
+    <String key="eponManagementAddrName" value="节点名称"/>
+    <String key="eponManagementAddrTAddress" value="Trap目标IP地址"/>
+    <String key="eponManagementAddrTPort" value="UDP端口"/>
+    <String key="eponManagementAddrCommunity" value="Trap团体字符串"/>
+
+    <!-- oltPropertyTable -->
+    <String key="OLT_Device" value="OLT设备信息"/>
+    <String key="oltAdminStatus" value="管理状态"/>
+    <String key="oltDeviceIndex" value="设备索引"/>
+    <String key="oltDeviceUpTime" value="启动时间"/>
+    <String key="oltName" value="设备名称"/>
+    <String key="oltType" value="设备型号"/>
+    <String key="oltDeviceNumOfTotalServiceSlot" value="业务插槽数"/>
+    <String key="oltDeviceNumOfTotalPowerSlot" value="电源插槽数"/>
+    <String key="oltDeviceNumOfTotalFanSlot" value="风扇插槽数"/>
+    <String key="oltDeviceStyle" value="设备形态"/>
+    <String key="fixed" value="Fixed"/>
+    <String key="chassisBased" value="Chassis Based"/>
+
+    <!-- boardTable -->
+    <String key="Board_Table" value="板卡信息"/>
+    <String key="bDeviceIndex" value="设备索引"/>
+    <String key="bCardIndex" value="板卡索引"/>
+    <String key="bType" value="板卡类型"/>
+    <String key="bAttribute" value="保护模式"/>
+    <String key="bOperationStatus" value="运行状态"/>
+    <String key="bAdminStatus" value="管理状态"/>
+    <String key="bHardwareVersion" value="硬件版本"/>
+    <String key="bFirmwareVersion" value="固件版本"/>
+    <String key="bSoftwareVersion" value="软件版本"/>
+    <String key="bUpTime" value="在线时间"/>
+    <String key="bAlarmStatus" value="告警状态"/>
+    <String key="bSerialNumber" value="序列号"/>
+    <String key="bName" value="板卡名称"/>
+    <String key="bPresenceStatus" value="安装状态"/>
+
+    <String key="controlBoard" value="控制板"/>
+    <String key="geponBoard" value="G/EPON板"/>
+    <String key="uplinkBoard" value="上联板卡"/>
+    <String key="switchBoard" value="交换板"/>
+    <String key="vacant" value="N/A"/>
+
+    <String key="active" value="主用"/>
+    <String key="standby" value="备用"/>
+    <String key="standalone" value="无保护"/>
+    <String key="notApplicable" value="N/A"/>
+    <String key="loadShareing" value="负荷分担"/>
+
+    <String key="switchover" value="主备倒换"/>
+    <String key="Msg_cfm_switch_board" value="请确认是否要倒换该板卡?"/>
+    <String key="Err_Switch_Over_Not_CSM" value="该板卡不是CSM板,不能倒换!"/>
+    <String key="Err_Switch_Over_Not_Active_Standby" value="该板卡不是主备用保护模式,不能倒换!"/>
+
+    <String key="Upgrade" value="升级"/>
+    <String key="Msg_cfm_Upgrade_board" value="请确认是否要升级该板卡?"/>
+    <String key="Err_Upgrade_Not_CSM" value="该板卡不是CSM板,不能升级!"/>
+    
+    <!-- powerPropertyTable -->
+    <String key="PowerPropertyTable" value="电源"/>
+    <String key="powerCardAction" value="powerCardAction"/>
+    <String key="powerCardAlarmStatus" value="告警状态"/>
+    <String key="powerCardIndex" value="电源板索引"/>
+    <String key="powerCardOperationStatus" value="运行状态"/>
+    <String key="powerDeviceIndex" value="设备索引"/>
+    <String key="Msg_cfm_switch" value="请确认是否要倒换电源模块？"/>
+    <String key="Switch Over" value="主备倒换"/>
+    <String key="powerCardName" value="电源板名称"/>
+    <String key="powerCardPresenceStatus" value="安装状态"/>
+    <String key="powerCardRedundancyStatus" value="保护模式"/>
+
+    <!-- fanPropertyTable -->
+    <String key="FanPropertyTable" value="风扇"/>
+    <String key="fanCardAlarmStatus" value="告警状态"/>
+    <String key="fanCardIndex" value="风扇板索引"/>
+    <String key="fanCardOperationStatus" value="运行状态"/>
+    <String key="fanDeviceIndex" value="设备索引"/>
+    <String key="fanCardName" value="风扇板名称"/>
+    <String key="fanCardPresenceStatus" value="安装状态"/>
+
+    <!-- fileInfoManagementTable -->
+    <String key="FileInfoMgmtTable" value="文件管理"/>
+    <!--<String key="fileIndex" value="文件索引"/>-->
+    <String key="fileManagementAction" value="fileManagementAction"/>
+    <String key="fileModifyTime" value="修改时间"/>
+    <String key="fileName" value="文件名"/>
+    <String key="filePath" value="路径"/>
+    <String key="fileSize" value="大小(byte)"/>
+    <String key="fileAttribute" value="属性"/>
+    <String key="file" value="文件"/>
+    <String key="dir" value="目录"/>
+    <String key="currentPath" value="当前目录"/>
+    <!--<String key="noOperation" value="无操作"/>-->
+    <!--<String key="erase" value="文件删除"/>-->
+
+    <String key="FileTransferTable" value="文件传输"/>
+    <String key="fileTransferIndex" value="索引"/>
+    <String key="fileTransferProtocolType" value="传输协议"/>
+    <String key="serverIpAddress" value="服务器IP地址"/>
+    <String key="ftpUserName" value="用户名"/>
+    <String key="ftpUserPassword" value="密码"/>
+    <String key="transferFileSrcNamePath" value="源文件路径"/>
+    <String key="transferFileDstNamePath" value="目标文件路径"/>
+    <String key="transferAction" value="传输方向"/>
+    <String key="transferStatus" value="传输状态"/>
+    <String key="tftp" value="TFTP"/>
+    <String key="ftp" value="FTP"/>
+    <String key="put-file" value="上传文件"/>
+    <String key="get-file" value="下载文件"/>
+    <String key="idle" value="空闲"/>
+    <String key="in-progress" value="正在传输"/>
+    <String key="success" value="成功"/>
+    <String key="failure" value="失败"/>
+    <String key="Transfer File" value="传输文件"/>
+    <String key="Cancel Transfer" value="取消"/>
+
+    <!-- sniAttributeTable -->
+    <String key="SniAttributeTable" value="SNI端口"/>
+    <String key="auto-negotiate" value="自动协商"/>
+    <String key="fiber" value="光纤"/>
+    <String key="full-10" value="10M全双工"/>
+    <String key="full-100" value="100M全双工"/>
+    <String key="full-1000" value="1000M全双工"/>
+    <String key="full-10000" value="10G全双工"/>
+    <String key="half-10" value="10M半双式"/>
+    <String key="half-100" value="100M半双工"/>
+    <String key="sniAdminStatus" value="管理状态"/>
+    <String key="sniAttributeCardIndex" value="板卡索引"/>
+    <String key="sniAttributeDeviceIndex" value="设备索引"/>
+    <String key="sniAttributePortIndex" value="端口索引"/>
+    <String key="sniAutoNegotiationMode" value="自协商模式"/>
+    <String key="sniAutoNegotiationStatus" value="自协商状态"/>
+    <String key="sniIsolationEnable" value="端口隔离"/>
+    <String key="sniLastStatusChangeTime" value="上次状态改变时间"/>
+    <String key="sniMacAddrLearnMaxNum" value="最大MAC学习数"/>
+    <String key="not-limited" value="无限制"/>
+    <String key="sniMediaType" value="介质类型"/>
+    <String key="sniOperationStatus" value="运行状态"/>
+    <String key="sniPerfStats15minuteEnable" value="15分钟性能统计"/>
+    <String key="sniPerfStats24hourEnable" value="24小时性能统计"/>
+    <String key="sniPortName" value="端口名称"/>
+    <String key="twistedPair" value="双绞线"/>
+
+    <!-- sniTrunkGroupConfigTable & sniTrunkGroupTable -->
+    <String key="SNI_Trunk_Group" value="SNI Trunk组管理"/>
+    <String key="SniTrunkConfigTable" value="SNI Trunk配置"/>
+    <String key="sniTrunkGroupConfigIndex" value="Trunk索引"/>
+    <String key="sniTrunkGroupConfigMember" value="Trunk成员"/>
+    <String key="sniTrunkGroupConfigName" value="Trunk名称"/>
+    <String key="sniTrunkGroupConfigPolicy" value="Trunk策略"/>
+
+    <String key="SniTrunkTable" value="SNI Trunk管理"/>
+    <String key="sniTrunkGroupActualSpeed" value="实际速度(Mbps)"/>
+    <String key="sniTrunkGroupAdminStatus" value="管理状态"/>
+    <String key="sniTrunkGroupIndex" value="Trunk索引"/>
+    <String key="sniTrunkGroupOperationStatus" value="运行状态"/>
+    <String key="destIp" value="目标IP地址"/>
+    <String key="destMac" value="目标MAC地址"/>
+    <String key="srcIp" value="源IP地址"/>
+    <String key="srcIpNDestIp" value="源和目标IP地址"/>
+    <String key="srcMac" value="源MAC地址"/>
+    <String key="srcMacNDestMac" value="源和目标MAC地址"/>
+
+    <!-- sniMirrorTable -->
+    <String key="SniMirrorTable" value="SNI镜像"/>
+    <String key="sniMirrorGroupDstPortList" value="目标端口列表"/>
+    <String key="sniMirrorGroupIndex" value="索引"/>
+    <String key="sniMirrorGroupName" value="名称"/>
+    <String key="sniMirrorGroupSrcInPortList" value="源端口列表(收包)"/>
+    <String key="sniMirrorGroupSrcOutPortList" value="源端口列表(发包)"/>
+
+    <!-- sniMacAddressManagementTable & sniMacAddressTable -->
+    <String key="SNI_MAC_ADDRESS" value="SNI MAC地址管理"/>
+    <String key="SniMacAddressTable" value="MAC地址配置"/>
+    <String key="sniMacAddrTableAgingTime" value="MAC地址老化时间"/>
+    <String key="sniMacAddrTableClear" value="清除"/>
+    <String key="Clear" value="清除"/>
+
+    <String key="SniMacAddressMgmtTable" value="MAC地址管理"/>
+    <String key="sniMacAddressManagementDeviceIndex" value="设备索引"/>
+    <String key="sniMacAddrIndex" value="索引"/>
+    <String key="sniMacAddrPortId" value="端口索引"/>
+    <String key="sniMacAddrType" value="动态/静态"/>
+    <String key="sniMacAddrVlanIdIndex" value="VLAN ID"/>
+
+    <!-- sniBroadcastStormSuppressionTable -->
+    <String key="SniBroadcastStormSuppressionTable" value="风暴控制"/>
+    <String key="sniBroadcastStormEnable" value="广播风暴控制"/>
+    <String key="sniBroadcastStormInPacketRate" value="广播收包速率"/>
+    <String key="sniBroadcastStormOutPacketRate" value="广播发包速率"/>
+    <String key="sniBroadcastStormSuppressionCardIndex" value="板卡索引"/>
+    <String key="sniBroadcastStormSuppressionDeviceIndex" value="设备索引"/>
+    <String key="sniBroadcastStormSuppressionPortIndex" value="端口索引"/>
+    <String key="sniMulticastStormEnable" value="组播风暴控制"/>
+    <String key="sniMulticastStormInPacketRate" value="组播收包速率"/>
+    <String key="sniMulticastStormOutPacketRate" value="组播发包速率"/>
+    <String key="sniUnicastStormEnable" value="单播风暴控制"/>
+    <String key="sniUnicastStormInPacketRate" value="单播收包速率"/>
+    <String key="sniUnicastStormOutPacketRate" value="单播发包速率"/>
+
+    <!-- ponPortInfoTable -->
+    <String key="PON_Port_Information" value="PON端口信息"/>
+    <String key="ponDeviceIndex" value="端口索引"/>
+    <String key="ponCardIndex" value="板卡索引"/>
+    <String key="ponPortIndex" value="端口索引"/>
+    <String key="ponPortType" value="端口类型"/>
+    <String key="ponOperationStatus" value="运行状态"/>
+    <String key="ponPortAdminStatus" value="管理状态"/>
+    <String key="ponPortMaxOnuNumSupport" value="ONU最大支持数"/>
+    <String key="ponPortUpOnuNum" value="在线ONU数"/>
+    <String key="ponPortEncryptMode" value="加密模式"/>
+    <String key="ponPortEncryptKeyExchangeTime" value="密钥交换时间 (秒)"/>
+    <String key="ponPortIsolationEnable" value="端口隔离"/>
+    <String key="maxBandwidth" value="最大下行带宽"/>
+    <String key="actualBandwidthInUse" value="实际使用下行带宽"/>
+    <String key="remainBandwidth" value="剩余下行带宽"/>
+    <String key="maxUsBandwidth" value="最大上行带宽"/>
+    <String key="actualUsBandwidthInUse" value="实际使用上行带宽"/>
+    <String key="remainUsBandwidth" value="剩余上行带宽"/>
+    <String key="perfStats15minuteEnable" value="15分钟性能统计"/>
+    <String key="perfStats24hourEnable" value="24小时性能统计"/>
+    <String key="ponPortMacAddrLearnMaxNum" value="最大MAC学习数"/>
+
+    <String key="ge-epon" value="GE-EPON"/>
+    <String key="tenge-epon" value="10G-EPON"/>
+    <String key="gpon" value="GPON"/>
+
+    <!-- aclRuleTable -->
+    <String key="ACL_Rule" value="ACL规则"/>
+    <String key="aclRuleIndex" value="规则索引"/>
+    <String key="matchedSourseMac" value="源MAC"/>
+    <String key="matchedDestinationMac" value="目的MAC"/>
+    <String key="matchedVlanId" value="VLAN ID"/>
+    <String key="matchedEthernetType" value="以太网类型"/>
+    <String key="matchedSourseIP" value="源IP"/>
+    <String key="matchedDestinationIP" value="目的IP"/>
+    <String key="matchedIpMessageType" value="IP报文类型"/>
+    <String key="matchedDscp" value="DSCP"/>
+    <String key="matchedSoursePort" value="源端口"/>
+    <String key="matchedDestinationPort" value="目的端口"/>
+    <String key="matchedFieldSelection" value="选择的匹配域"/>
+    <String key="aclAction" value="ACL规则动作"/>
+    <String key="aclActionParameter" value="ACL规则动作参数类型"/>
+    <String key="aclActionValue" value="ACL规则动作参数值"/>
+    <String key="aclActionParameterType" value="ACL规则动作参数类型"/>
+    <String key="aclActionParameterValue" value="ACL规则动作参数值"/>
+
+    <String key="sourceMac" value="源MAC"/>
+    <String key="destinationMac" value="目的MAC"/>
+    <String key="vlanId" value="端口ID"/>
+    <String key="etherType" value="以太类型"/>
+    <String key="sourceIp" value="源IP"/>
+    <String key="destinationIp" value="目的IP"/>
+    <String key="ipProtocolType" value="IP协议类型"/>
+    <String key="dscp" value="DSCP"/>
+    <String key="sourceProtocolPort" value="源协议端口"/>
+    <String key="destinationProtocolPort" value="目的协议端口"/>
+
+    <!-- aclManagementTable -->
+    <String key="ACL_Management" value="ACL组管理"/>
+    <String key="aclListIndex" value="ACL组索引"/>
+    <String key="aclDescription" value="ACL组描述"/>
+    <String key="aclRuleList" value="ACL规则列表"/>
+
+    <!-- portAclListTable -->
+    <String key="Port_ACL_List" value="端口ACL列表"/>
+    <String key="aclDeviceIndex" value="设备索引"/>
+    <String key="aclCardIndex" value="板卡索引"/>
+    <String key="aclPortIndex" value="端口索引"/>
+    <String key="portAclListIndex" value="ACL组"/>
+    <String key="aclPortDirection" value="出口/入口"/>
+
+    <String key="ingress" value="Ingress"/>
+    <String key="egress" value="Egress"/>
+
+    <!-- ponBroadcastStormSuppressionTable -->
+    <String key="Broadcast_Strom_Suppression" value="PON风暴控制"/>
+    <String key="bsDeviceIndex" value="端口索引"/>
+    <String key="bsCardIndex" value="板卡索引"/>
+    <String key="bsPortIndex" value="端口索引"/>
+    <String key="unicastStormEnable" value="单播风暴控制"/>
+    <String key="unicastStormInPacketRate" value="单播收包速率"/>
+    <String key="unicastStormOutPacketRate" value="单播发包速率"/>
+    <String key="multicastStormEnable" value="组播风暴控制"/>
+    <String key="multicastStormInPacketRate" value="组播收包速率"/>
+    <String key="multicastStormOutPacketRate" value="组播发包速率"/>
+    <String key="broadcastStormEnable" value="广播风暴控制"/>
+    <String key="broadcastStormInPacketRate" value="广播收包速率"/>
+    <String key="broadcastStormOutPacketRate" value="广播发包速率"/>
+
+    <!-- onuInfoTable -->
+    <String key="ONU_Information" value="ONU信息"/>
+    <String key="onuDeviceIndex" value="ONU设备索引"/>
+    <String key="onuName" value="名称"/>
+    <String key="onuType" value="类型"/>
+    <String key="onuIpAddress" value="IP地址"/>
+    <String key="onuIpSubnetMask" value="IP子网掩码"/>
+    <String key="onuIpGateway" value="IP网关"/>
+    <String key="onuMacAddress" value="MAC地址"/>
+    <String key="onuOperationStatus" value="运行状态"/>
+    <String key="onuAdminStatus" value="管理状态"/>
+    <String key="onuChipVendor" value="芯片供应商"/>
+    <String key="onuChipType" value="芯片类型"/>
+    <String key="onuChipVersion" value="芯片版本"/>
+    <String key="onuSoftwareVersion" value="软件版本"/>
+    <String key="onuFirmwareVersion" value="固件版本"/>
+    <String key="onuTestDistance" value="测距(米)"/>
+    <String key="onuLlidId" value="LLID"/>
+    <String key="onuTimeSinceLastRegister" value="上线时间"/>
+    <String key="onuMgmtCvlan" value="C-VLAN" />
+    <String key="onuMgmtSvlan" value="S-VLAN" />
+    <String key="onuMgmtPriority" value="优先级" />
+    <String key="onuMgmtSnmpCommunityForRead" value="读团体字符串" />
+    <String key="onuMgmtSnmpCommunityForWrite" value="写团体字符串" />
+    <String key="onuMgmtSnmpTrapHost" value="TRAP目标地址" />
+
+    <String key="resetONU" value="重启ONU"/>
+
+    <!-- onuPonPortOpticalTransmissionPropertyTable -->
+    <String key="ONU_PON_Port_Optical_Transmission_Properties" value="ONU光模块测量信息"/>
+    <String key="onuPonPortOpticalTransmissionPropertyDeviceIndex" value="ONU设备索引"/>
+    <String key="onuPonPortOpticalTransmissionPropertyCardIndex" value="板卡索引"/>
+    <String key="onuPonPortOpticalTransmissionPropertyPortIndex" value="端口索引"/>
+    <String key="onuReceivedOpticalPower" value="接收光功率(dBm)"/>
+    <String key="onuTramsmittedOpticalPower" value="发送光功率(dBm)"/>
+    <String key="onuBiasCurrent" value="偏置电流(mA)"/>
+    <String key="onuWorkingVoltage" value="工作电压(mV)"/>
+    <String key="onuWorkingTemperature" value="温度(C)"/>
+
+    <!-- onuCapabilityTable -->
+    <String key="ONU_Capability" value="ONU能力"/>
+    <String key="onuCapabilityDeviceIndex" value="ONU设备索引"/>
+    <String key="onuGePortNum" value="GE口数量"/>
+    <String key="onuGePortBitmap" value="GE口列表"/>
+    <String key="onuFePortNum" value="FE口数量"/>
+    <String key="onuFePortBitmap" value="FE口列表"/>
+    <String key="onuQueueNumUplink" value="上行链路队列数"/>
+    <String key="onuMaxQueueNumUplink" value="最大上行链路队列数"/>
+    <String key="onuQueueNumDownlink" value="下行链路队列数"/>
+    <String key="onuMaxQueueNumDownlink" value="最大下行链路队列数"/>
+    <String key="onuFecEnable" value="FEC"/>
+    <String key="onuEncryptMode" value="加密模式"/>
+    <String key="onuEncryptKeyExchangeTime" value="密钥交换时间(秒)"/>
+
+    <!-- slaTable -->
+    <String key="ONU_SLA" value="ONU SLA"/>
+    <String key="slaIndex" value="SLA索引"/>
+    <String key="slaDsFixedBW" value="下行固定带宽(kbps)"/>
+    <String key="slaDsPeakBW" value="下行峰值带宽(kbps)"/>
+    <String key="slaDsCommittedBW" value="下行保证带宽(kbps)"/>
+    <String key="slaUsFixedBW" value="上行固定带宽(kbps)"/>
+    <String key="slaUsPeakBW" value="上行峰值带宽(kbps)"/>
+    <String key="slaUsCommittedBW" value="上行保证带宽(kbps)"/>
+
+    <!-- onuAuthenticationPolicy -->
+    <String key="ONU_Authentication_Policy" value="ONU认证策略"/>
+    <String key="onuAuthenticationPolicy" value="ONU认证策略"/>
+    <String key="acceptAll" value="接受所有"/>
+    <String key="rejectNotConfigured" value="只限白名单"/>
+
+    <!-- onuAuthenticationPreConfigTable -->
+    <String key="ONU_Authentication_Pre_Config" value="ONU认证预配置"/>
+    <String key="onuAuthenOnuId" value="ONU设备索引"/>
+    <String key="onuAuthenMacAddress" value="MAC地址"/>
+    <String key="onuAuthenAction" value="操作"/>
+    <String key="accept" value="接受"/>
+    <String key="reject" value="拒绝"/>
+
+    <!-- OnuAuthenticationBlockTable -->
+    <String key="ONU_Authentication_Block" value="ONU认证拒绝列表"/>
+    <String key="onuAuthenBlockOnuId" value="ONU设备索引"/>
+    <String key="onuAuthenBlockMacAddress" value="MAC地址"/>
+    <String key="authenTime" value="认证时间"/>
+
+    <!-- uniAttributeTable -->
+    <String key="UNI_Information" value="UNI信息"/>
+    <String key="uniAttributeDeviceIndex" value="ONU设备索引"/>
+    <String key="uniAttributeCardIndex" value="板卡索引"/>
+    <String key="uniAttributePortIndex" value="端口索引"/>
+    <String key="uniAdminStatus" value="管理状态"/>
+    <String key="uniOperationStatus" value="运行状态"/>
+    <!--
+    <String key="uniPerfStats15minuteEnable" value="15分钟性能统计"/>
+    <String key="uniPerfStats24hourEnable" value="24小时性能统计"/>
+    <String key="uniLastChangeTime" value="上次状态改变时间"/>
+    <String key="uniIsolationEnable" value="端口隔离"/>
+    <String key="uniMacAddrLearnMaxNum" value="最大MAC学习数"/>
+    -->
+    <String key="uniAutoNegotiationEnable" value="自动协商功能"/>
+    <String key="uniAutoNegotiationLocalTechAbility" value="实际端口自协商能力"/>
+    <String key="uniAutoNegotiationAdvertisedTechAbility" value="端口自协商能力通告"/>
+    <String key="tenBaseTFullDuplex" value="10Base-T FDX"/>
+    <String key="tenBaseTHalfDuplex" value="10Base-T"/>
+    <String key="hundredBaseTFullDuplex" value="100Base-T FDX"/>
+    <String key="hundredBaseTHalfDuplex" value="100Base-T"/>
+    <String key="thousandBaseTFullDuplex" value="1000Base-T FDX"/>
+    <String key="thousandBaseTHalfDuplex" value="1000Base-T"/>
+    <String key="thousandBaseXFullDuplex" value="1000Base-X FDX"/>
+    <String key="thousandBaseXHalfDuplex" value="1000Base-X"/>
+    <String key="fdxPause" value="FDX PAUSE"/>
+    <String key="fdxApause" value="FDX APAUSE"/>
+    <String key="fdxSpause" value="FDX SPAUSE"/>
+    <String key="fdxBpause" value="FDX BPAUSE"/>
+    <String key="uniAutoNegotiationRestart" value="重做自协商"/>
+
+    <!-- uniMacAddressManagementTable & uniMacAddressTable -->
+    <String key="UNI_MAC_Address_Management" value="UNI MAC地址管理"/>
+    <String key="UNI_MAC_Address_Management_Node" value="UNI MAC地址配置参数"/>
+    <String key="UNI_MAC_Address_Table" value="UNI MAC地址表"/>
+    <String key="uniMacAddrAgingTime" value="MAC地址老化时间"/>
+    <String key="uniMacAddrIndex" value="MAC地址索引"/>
+    <String key="uniMacAddrVlanIdIndex" value="VLAN ID"/>
+    <String key="uniMacAddrType" value="动态/静态"/>
+    <String key="uniMacAddrPortId" value="端口索引"/>
+    <String key="Clear Dynamic MAC Address" value="清除动态MAC地址"/>
+
+    <!-- uniTrunkGroupConfigTable & uniTrunkGroupTable -->
+    <String key="UNI_Trunk_Group" value="UNI Trunk 管理"/>
+    <String key="UniTrunkGroupConfigTable" value="UNI Trunk 信息表"/>
+    <String key="uniTrunkGroupConfigIndex" value="Trunk索引"/>
+    <String key="uniTrunkGroupConfigName" value="Trunk名称"/>
+    <String key="uniTrunkGroupConfigMember" value="Trunk成员"/>
+    <String key="uniTrunkGroupConfigPolicy" value="Trunk策略"/>
+
+    <String key="UniTrunkGroupTable" value="UNI Trunk 状态表"/>
+    <String key="uniTrunkGroupIndex" value="Trunk索引"/>
+    <String key="uniTrunkGroupOperationStatus" value="运行状态"/>
+    <String key="uniTrunkGroupActualSpeed" value="实际速度(Mbps)"/>
+    <String key="uniTrunkGroupAdminStatus" value="管理状态"/>
+
+    <!-- uniPortRateLimitTable -->
+    <String key="UNI_Rate_Limit" value="UNI速率限制"/>
+    <String key="uniPortRateLimitDeviceIndex" value="ONU设备索引"/>
+    <String key="uniPortRateLimitCardIndex" value="板卡索引"/>
+    <String key="uniPortRateLimitPortIndex" value="端口索引"/>
+    <String key="uniPortInCIR" value="入端口承诺速率(kbps)"/>
+    <String key="uniPortInCBS" value="入端口承诺突发大小(Kbytes)"/>
+    <String key="uniPortInEBS" value="入端口超出突发大小(Kbytes)"/>
+    <String key="uniPortOutCIR" value="出端口承诺速率(kbps)"/>
+    <!--
+    <String key="uniPortOutCBS" value="出端口承诺突发大小(kbytes)"/>
+    <String key="uniPortOutPBS" value="出端口峰值突发大小(kbytes)"/>
+    -->
+    <String key="uniPortOutPIR" value="出端口峰值速率(kbps)"/>
+    <String key="uniPortInRateLimitEnable" value="入端口速率限制"/>
+    <String key="uniPortOutRateLimitEnable" value="出端口速率限制"/>
+
+    <!-- uniMirrorTable -->
+    <String key="UNI_Mirror_Group" value="UNI镜像组"/>
+    <String key="uniMirrorGroupIndex" value="镜像组索引"/>
+    <String key="uniMirrorGroupName" value="镜像组名称"/>
+    <String key="uniMirrorGroupDstPortList" value="目标端口列表"/>
+    <String key="uniMirrorGroupSrcInPortList" value="源端口列表(收包)"/>
+    <String key="uniMirrorGroupSrcOutPortList" value="源端口列表(发包)"/>
+
+    <!-- uniBroadcastStormSuppressionTable -->
+    <String key="UNI_Storm_Suppression" value="UNI风暴控制"/>
+    <String key="uniBroadcastStormSuppressionCardIndex" value="板卡索引"/>
+    <String key="uniBroadcastStormSuppressionPortIndex" value="端口索引"/>
+    <String key="uniUnicastStormEnable" value="单播风暴控制"/>
+    <String key="uniUnicastStormInPacketRate" value="单播收包速率(pps)"/>
+    <String key="uniUnicastStormOutPacketRate" value="单播发包速率(pps)"/>
+    <String key="uniMulticastStormEnable" value="组播风暴控制"/>
+    <String key="uniMulticastStormInPacketRate" value="组播收包速率(pps)"/>
+    <String key="uniMulticastStormOutPacketRate" value="组播发包速率(pps)"/>
+    <String key="uniBroadcastStormEnable" value="广播风暴控制"/>
+    <String key="uniBroadcastStormInPacketRate" value="广播收包速率(pps)"/>
+    <String key="uniBroadcastStormOutPacketRate" value="广播发包速率(pps)"/>
+
+    <!-- uniExtAttributeTable -->
+    <String key="UNI_Ext_Attribute" value="UNI扩展属性表"/>
+    <String key="uniExtAttributeCardIndex" value="板卡索引"/>
+    <String key="uniExtAttributePortIndex" value="端口索引"/>
+    <String key="uniPerfStats15minuteEnable" value="15分钟性能统计"/>
+    <String key="uniPerfStats24hourEnable" value="24小时性能统计"/>
+    <String key="uniLastChangeTime" value="上次状态改变时间"/>
+    <String key="uniIsolationEnable" value="端口隔离"/>
+    <String key="uniMacAddrLearnMaxNum" value="最大MAC学习数"/>
+
+    <!-- igmpEntityTable -->
+    <String key="IGMP_Entity" value="IGMP实体表"/>
+    <String key="igmpDeviceIndex" value="设备索引"/>
+    <String key="igmpMode" value="IGMP工作模式"/>
+    <String key="maxQueryResponseTime" value="最大查询响应时间(秒)"/>
+    <String key="robustVariable" value="健壮性变量"/>
+    <String key="queryInterval" value="查询报文发送时间间隔(秒)"/>
+    <String key="lastMemberQueryInterval" value="发送指定组查询消息的间隔(秒)"/>
+    <String key="lastMemberQueryCount" value="发送指定组查询消息的次数"/>
+    <String key="igmpVersion" value="IGMP版本"/>
+    <String key="centralized" value="Centralized"/>
+    <String key="distributedwithcm" value="Distributed-CM"/>
+    <String key="distributedwocm" value="Distributed-No-CM"/>
+    <String key="v1" value="V1"/>
+    <String key="v2" value="V2"/>
+    <String key="v3" value="V3"/>
+
+    <!-- igmpProxyParaTable -->
+    <String key="IGMP_Proxy_Para" value="频道列表"/>
+    <String key="proxyIndex" value="Proxy索引"/>
+    <String key="proxyName" value="Proxy别名"/>
+    <String key="proxySrcIPAddress" value="Proxy源IP地址"/>
+    <String key="proxyMulticastVID" value="组播VLAN ID"/>
+    <String key="proxyMulticastIPAddress" value="组播IP地址"/>
+    <String key="multicastAssuredBW" value="组播保证带宽(kbps)"/>
+    <String key="multicastMaxBW" value="组播最大带宽(kbps)"/>
+
+    <!-- igmpForwardingTable -->
+    <String key="IGMP_Forwarding" value="组播转发表"/>
+    <String key="groupDeviceIndex" value="设备索引"/>
+    <String key="groupVlanIndex" value="VLAN索引"/>
+    <String key="groupMacAddress" value="组MAC地址"/>
+    <String key="groupPortList" value="转发端口列表"/>
+
+    <!-- controlledMulticastUserAuthorityTable & controlledMulticastPackageTable -->
+    <String key="Controlled_Multicast_Management" value="可控组播表管理"/>
+    <String key="Controlled_Multicast_User_Authority" value="可控组播用户权限"/>
+    <String key="cmDeviceIndex" value="设备索引"/>
+    <String key="cmCardIndex" value="板卡索引"/>
+    <String key="cmPortIndex" value="端口索引"/>
+    <String key="multicastPackageList" value="可控组播组列表"/>
+    <String key="igmpGlobalBW" value="IGMP全局带宽池大小(kbps)"/>
+    <String key="igmpGlobalBWUsed" value="使用带宽(kbps)"/>
+
+    <String key="Controlled_Multicast_Package" value="可控组播业务包"/>
+    <String key="cmIndex" value="业务包索引"/>
+    <String key="cmName" value="业务包名称"/>
+    <String key="cmProxyList" value="支持的频道列表"/>
+    <String key="multicastUserAuthority" value="用户权限"/>
+    <String key="maxRequestChannelNum" value="最大允许请求频道数"/>
+    <String key="singlePreviewTime" value="单次预览时间(秒)"/>
+    <String key="totalPreviewTime" value="预览总时长(秒)"/>
+    <String key="previewResetTime" value="预览复位时间(秒)"/>
+    <String key="previewCount" value="预览次数"/>
+
+    <!-- stpGlobalSetTable -->
+    <String key="STP_Global_Set" value="STP全局配置"/>
+    <String key="stpGlobalSetIndex" value="设备索引"/>
+    <String key="stpGlobalSetVersion" value="生成树协议"/>
+    <String key="stpGlobalSetPriority" value="优先级"/>
+    <String key="stpGlobalSetTimeSinceTopologyChange" value="拓扑变更时间"/>
+    <String key="stpGlobalSetTopChanges" value="拓扑变更次数"/>
+    <String key="stpGlobalSetDesignatedRoot" value="指定根桥"/>
+    <String key="stpGlobalSetRootCost" value="根路径开销"/>
+    <String key="stpGlobalSetRootPort" value="根端口"/>
+    <String key="stpGlobalSetMaxAge" value="最大老化时间(秒)"/>
+    <String key="stpGlobalSetHelloTime" value="报文发送间隔(秒)"/>
+    <String key="stpGlobalSetHoldTime" value="维持时间(秒)"/>
+    <String key="stpGlobalSetForwardDelay" value="转换时延(秒)"/>
+    <String key="stpGlobalSetBridgeMaxAge" value="桥最大老化时间(秒)"/>
+    <String key="stpGlobalSetBridgeHelloTime" value="桥报文发送间隔(秒)"/>
+    <String key="stpGlobalSetBridgeForwardDelay" value="桥转换时延(秒)"/>
+    <String key="stpGlobalSetRstpTxHoldCount" value="传输限速"/>
+    <String key="stpGlobalSetEnable" value="STP开关"/>
+    <String key="rstp" value="RSTP"/>
+    <String key="stp" value="STP"/>
+
+    <!-- stpPortTable -->
+    <String key="STP_Port" value="STP端口配置"/>
+    <String key="stpPortStpIndex" value="设备索引"/>
+    <String key="stpPortCardIndex" value="板卡索引"/>
+    <String key="stpPortIndex" value="端口索引"/>
+    <String key="stpPortStatus" value="端口状态"/>
+    <String key="stpPortPriority" value="端口优先级"/>
+    <String key="stpPortPathCost" value="端口路径开销"/>
+    <String key="stpPortDesignatedRoot" value="指定根网桥"/>
+    <String key="stpPortDesignatedCost" value="指定路径开销"/>
+    <String key="stpPortDesignatedBridge" value="指定网桥ID"/>
+    <String key="stpPortDesignatedPort" value="指定端口"/>
+    <String key="stpPortForwardTransitions" value="学习到转发的转变时间(秒)"/>
+    <String key="stpPortRstpProtocolMigration" value="协议迁移"/>
+    <String key="stpPortRstpAdminEdgePort" value="边缘端口"/>
+    <String key="stpPortRstpOperEdgePort" value="边缘端口状态"/>
+    <String key="stpPortPointToPointAdminStatus" value="点到点管理状态"/>
+    <String key="stpPortPointToPointOperStatus" value="点到点实际状态"/>
+    <String key="stpPortEnabled" value="端口使能状态"/>
+    <String key="blocking" value="Blocking"/>
+    <String key="listening" value="Listening"/>
+    <String key="learning" value="Learning"/>
+    <String key="forwarding" value="Forwarding"/>
+    <String key="broken" value="Broken"/>
+    <String key="forceFalse" value="forceFalse"/>
+    <String key="forceTrue" value="forceTrue"/>
+    <String key="auto" value="Auto"/>
+
+    <!-- curStatsTable -->
+    <String key="PM_CUR_Stats" value="实时性能"/>
+    <String key="curStatsDeviceIndex" value="设备索引"/>
+    <String key="curStatsCardIndex" value="板卡索引"/>
+    <String key="curStatsPortIndex" value="端口索引"/>
+    <String key="curStatsInOctets" value="接收字节数"/>
+    <String key="curStatsInPkts" value="接收帧数"/>
+    <String key="curStatsInBroadcastPkts" value="接收广播帧数"/>
+    <String key="curStatsInMulticastPkts" value="接收组播帧数"/>
+    <String key="curStatsInPkts64Octets" value="接收64字节包数"/>
+    <String key="curStatsInPkts65to127Octets" value="接收65~127字节包数"/>
+    <String key="curStatsInPkts128to255Octets" value="接收128~255字节包数"/>
+    <String key="curStatsInPkts256to511Octets" value="接收256~511字节包数"/>
+    <String key="curStatsInPkts512to1023Octets" value="接收512~1023字节包数"/>
+    <String key="curStatsInPkts1024to1518Octets" value="接收1024~1518字节包数"/>
+    <String key="curStatsInPkts1519to1522Octets" value="接收1519~1522字节包数"/>
+    <String key="curStatsInUndersizePkts" value="接收超短帧数"/>
+    <String key="curStatsInOversizePkts" value="接收超长帧数"/>
+    <String key="curStatsInFragments" value="接收碎片数"/>
+    <String key="curStatsInMpcpFrames" value="接收MPCP帧数"/>
+    <String key="curStatsInMpcpOctets" value="接收MPCP字节数"/>
+    <String key="curStatsInOAMFrames" value="接收OAM帧数"/>
+    <String key="curStatsInOAMOctets" value="接收OAM字节数"/>
+    <String key="curStatsInCRCErrorPkts" value="接收CRC错误帧"/>
+    <String key="curStatsInDropEvents" value="接收丢包事件次数"/>
+    <String key="curStatsInJabbers" value="接收超长错帧数"/>
+    <String key="curStatsInCollision" value="接收碰撞帧数"/>
+    <String key="curStatsOutOctets" value="发送字节数"/>
+    <String key="curStatsOutPkts" value="发送帧数"/>
+    <String key="curStatsOutBroadcastPkts" value="发送广播帧数"/>
+    <String key="curStatsOutMulticastPkts" value="发送组播帧数"/>
+    <String key="curStatsOutPkts64Octets" value="发送64字节包数"/>
+    <String key="curStatsOutPkts65to127Octets" value="发送65~127字节包数"/>
+    <String key="curStatsOutPkts128to255Octets" value="发送128~255字节包数"/>
+    <String key="curStatsOutPkts256to511Octets" value="发送256~511字节包数"/>
+    <String key="curStatsOutPkts512to1023Octets" value="发送512~1023字节包数"/>
+    <String key="curStatsOutPkts1024to1518Octets" value="发送1024~1518字节包数"/>
+    <String key="curStatsOutPkts1519o1522Octets" value="发送1519~1522字节包数"/>
+    <String key="curStatsOutUndersizePkts" value="发送超短帧数"/>
+    <String key="curStatsOutOversizePkts" value="发送超长帧数"/>
+    <String key="curStatsOutFragments" value="发送碎片数"/>
+    <String key="curStatsOutMpcpFrames" value="发送MPCP帧数"/>
+    <String key="curStatsOutMpcpOctets" value="发送MPCP字节数"/>
+    <String key="curStatsOutOAMFrames" value="发送OAM帧数"/>
+    <String key="curStatsOutOAMOctets" value="发送OAM字节数"/>
+    <String key="curStatsOutCRCErrorPkts" value="发送CRC错误帧"/>
+    <String key="curStatsOutDropEvents" value="发送丢包事件次数"/>
+    <String key="curStatsOutJabbers" value="发送超长错帧数"/>
+    <String key="curStatsOutCollision" value="发送碰撞帧数"/>
+    <String key="curStatsStatusAndAction" value="当前统计状态及操作"/>
+    <String key="Clean" value="清除数据"/>
+
+    <!-- perfStatsThresholdTable -->
+    <String key="PM_Stats_Threshold" value="性能统计门限"/>
+    <String key="perfStatsThresholdDeviceIndex" value="设备索引"/>
+    <String key="perfStatsThresholdCardIndex" value="板卡索引"/>
+    <String key="perfStatsThresholdPortIndex" value="端口索引"/>
+    <String key="perfStatsThresholdTypeIndex" value="门限类型"/>
+    <String key="perfStatsThresholdUpper" value="阈值上限"/>
+    <String key="perfStatsThresholdLower" value="阈值下限"/>
+
+    <!-- eocDevInfoTable -->
+    <String key="EoC_Dev_Info" value="EoC设备信息"/>
+    <String key="eDeviceIndex" value="设备索引"/>
+    <String key="eCardIndex" value="板卡索引"/>
+    <String key="ePortIndex" value="端口索引"/>
+    <String key="eocDeviceTechnologyProject" value="技术方案"/>
+    <String key="eocDeviceVendorName" value="生产商名称"/>
+    <String key="eocDeviceProductType" value="产品类型"/>
+    <String key="eocDeviceSoftwareVersion" value="软件版本"/>
+    <String key="eocDeviceHardwareVersion" value="硬件版本"/>
+    <String key="eocSeriesNumber" value="局端设备序列号"/>
+    <String key="eocDeviceIpAddress" value="IP地址"/>
+    <String key="eocDeviceMacAddress" value="MAC地址"/>
+    <String key="eocDeviceMibVersion" value="MIB版本号"/>
+
+    <!-- error message -->
+    <String key="Err_Only_Register_ONU_Can_Reset" value="只能对已经注册的ONU进行复位."/>
+    <String key="Err_Weight_Is_Invalid" value="全部权重值和必须是100。WRR模式下可以为1，SPWRR模式下可以为1"/>
+    <String key="Title_Confirm" value="请确认"/>
+    <String key="Msg_Cfm_Exit_Dvm" value="您确定要退出设备管理?"/>
+    <String key="Msg_Cfm_Save_Cfg" value="请确认是否要保存配置数据?"/>
+    <String key="Msg_Cfm_Reset_System_1" value="请确认是否要重启设备?"/>
+    <String key="Msg_Cfm_Reset_System_2" value="重启后所有未保存的数据都会丢失."/>
+    <String key="Msg_Cfm_Restore_System_1" value="请确认是否要恢复出厂设置?"/>
+    <String key="Msg_Cfm_Restore_System_2" value="恢复出厂设置以后, 所有的配置数据都会丢失."/>
+    <String key="Risky Operation Prompt" value="危险操作提示"/>
+
+    <!-- Menu: System Management -->
+    <String key="System_Management" value="系统管理"/>
+    <String key="NE_File_Management" value="设备文件管理"/>
+    <String key="FTP_Facility" value="FTP工具"/>
+    <String key="TFTP_Facility" value="TFTP工具"/>
+    <String key="Save_Config" value="保存配置数据"/>
+    <String key="Board_Switch" value="主备倒换"/>
+    <String key="Restart_NE" value="重启网元设备"/>
+    <String key="Set_Factory_Default" value="恢复出厂设置"/>
+
+    <!-- Menu: System Management -->
+    <!--<String key="ONU_Management" value="ONU管理"/>-->
+    <String key="ONU_CPE" value="CPE管理"/>
+    <String key="ONU_Firmware_Upgrade" value="固件管理"/>
+
+    <String key="Select_File" value="选择文件"/>
+    <String key="File System Group" value="网元文件管理"/>
+    <String key="FTP Facility" value="FTP工具"/>
+    <String key="TFTP Facility" value="TFTP工具"/>
+
+    <!-- VlanGlobalInfoTable_Panel -->
+    <String key="VlanGlobalInfoTable_Panel" value="全局VLAN信息表"/>
+    <String key="createdVlanNumber" value="已创建的VLAN数"/>
+    <String key="maxSupportVlans" value="最大支持的VLAN数"/>
+    <String key="maxVlanId" value="最大VLAN ID"/>
+    <String key="vlanDeviceIndex" value="设备索引"/>
+
+    <!-- OltVlanConfigTable_Panel -->
+    <String key="OltVlanConfigTable_Panel" value="OLT VLAN成员配置表"/>
+    <String key="oltVlanDeviceIndex" value="设备索引"/>
+    <String key="oltVlanIndex" value="VLAN索引"/>
+    <String key="oltVlanName" value="VLAN名称"/>
+    <String key="taggedPort" value="Tagged成员端口"/>
+    <String key="untaggedPort" value="Untagged成员端口"/>
+
+    <!-- OnuVlanConfigTable_Panel -->
+    <String key="onuVlanIndex" value="onuVlanIndex"/>
+    <String key="onuVlanName" value="onuVlanName"/>
+    <String key="onuVlanRowStatus" value="onuVlanRowStatus"/>
+    <String key="onuVlanTaggedPort" value="onuVlanTaggedPort"/>
+    <String key="onuVlanUntaggedPort" value="onuVlanUntaggedPort"/>
+
+    <!-- PortVlanTable_Panel -->
+    <String key="PortVlanTable_Panel" value="端口VLAN配置"/>
+    <String key="aggregation" value="Aggregation"/>
+    <String key="stacking" value="Stacking"/>
+    <String key="pvlanCardIndex" value="板卡索引"/>
+    <String key="pvlanDeviceIndex" value="设备索引"/>
+    <String key="pvlanPortIndex" value="端口索引"/>
+    <String key="tag" value="Tag"/>
+    <String key="translation" value="Translation"/>
+    <String key="transparent" value="Transparent"/>
+    <String key="trunk" value="Trunk"/>
+    <String key="vlanMode" value="VLAN模式"/>
+    <String key="vlanPVid" value="端口VLAN ID"/>
+    <String key="vlanTagCfi" value="规则格式指示符"/>
+    <String key="vlanTagPriority" value="VLAN优先级"/>
+    <String key="vlanTagTpid" value="TPID(16进制)"/>
+    <String key="translation_item" value="配置条目"/>
+
+    <!--PortVlanTranslationTable_Panel-->
+    <String key="PortVlanTranslationTable_Panel" value="端口VLAN转换"/>
+    <String key="pvtDeviceType" value="设备类型"/>
+    <String key="portVidIndex" value="原始VLAN ID"/>
+    <String key="pvtCardIndex" value="板卡索引"/>
+    <String key="pvtDeviceIndex" value="设备索引"/>
+    <String key="pvtPortIndex" value="端口索引"/>
+    <String key="pvtOnuNum" value="ONU Num"/>
+    <String key="translationNewVid" value="新VLAN ID"/>
+
+    <!--PortVlanAggregationConfigTable_Panel-->
+    <String key="PortVlanAggregationConfigTable_Panel" value="端口VLAN聚合"/>
+    <String key="aggregationRowStatus" value="aggregationRowStatus"/>
+    <String key="aggregationVidList" value="VLAN列表"/>
+    <String key="portAggregationVidIndex" value="聚合组VLAN ID"/>
+    <String key="pvaCardIndex" value="板卡索引"/>
+    <String key="pvaDeviceIndex" value="设备索引"/>
+    <String key="pvaOnuNum" value="ONU Num"/>
+    <String key="pvaPortIndex" value="端口索引"/>
+
+    <!-- PortVlanTrunkTable_Panel -->
+    <String key="PortVlanTrunkTable_Panel" value="端口VLAN Trunk"/>
+    <String key="portVlanTrunkRowStatus" value="portVlanTrunkRowStatus"/>
+    <String key="trunkCardIndex" value="板卡索引"/>
+    <String key="trunkDeviceIndex" value="设备索引"/>
+    <String key="trunkPortIndex" value="端口索引"/>
+    <String key="trunkOnuNum" value="ONU Num"/>
+    <String key="trunkVidList" value="VLAN列表"/>
+    <String key="Msg_Input_Vlan_Id" value="请输入一个VLAN ID."/>
+    <String key="Err_Input_Vlan_Id_Is_Invalid" value="请输入一个有效的VLAN ID.[1-4094]"/>
+    <String key="Err_Input_Vlan_Id_Exist" value="当前的VLAN ID已存在."/>
+
+    <!--PortQinQConfigTable_Panel-->
+    <String key="PortQinQConfigTable_Panel" value="QinQ配置"/>
+    <String key="copyFromCTag" value="从CTAG中拷贝"/>
+    <String key="pqCardIndex" value="板卡索引"/>
+    <String key="pqOnuNum" value="ONU Num"/>
+    <String key="pqDeviceIndex" value="设备索引" />
+    <String key="pqEndVlanId" value="结束VLAN ID"/>
+    <String key="pqPortIndex" value="端口索引"/>
+    <String key="pqSTagCosDetermine" value="STAG CoS确定方法"/>
+    <String key="pqSTagCosNewValue" value="新STAG CoS值"/>
+    <String key="pqSVlanId" value="外层VLAN ID"/>
+    <String key="pqStartVlanId" value="起始VLAN ID"/>
+    <String key="redefine" value="重定义" />
+
+    <String key="Err_SelectADeviceIndex" value="请选择一个设备索引."/>
+
+    <!-- QosGlobalSetTable_Panel -->
+    <String key="QosGlobalSetTable_Panel" value="QoS全局参数"/>
+    <String key="qosGlobalSetDeviceIndex" value="设备索引"/>
+    <String key="qosGlobalSetMaxQueueCount" value="最大队列数"/>
+    <String key="qosGlobalSetMode" value="基于设备/端口"/>
+
+    <String key="deviceBased" value="基于设备"/>
+    <String key="portBased" value="基于端口"/>
+
+    <!-- DeviceBaseQosMapTable_Panel -->
+    <String key="DeviceBaseQosMapTable_Panel" value="基于设备的QoS映射表"/>
+    <String key="deviceBaseQosMapDeviceIndex" value="设备索引"/>
+    <String key="deviceBaseQosMapRuleIndex" value="映射规则"/>
+    <String key="deviceBaseQosMapOctet" value="映射关系"/>
+
+    <String key="cos" value="cos"/>
+    <String key="tos" value="tos"/>
+    <String key="diffserv" value="diffserv"/>
+
+    <!-- DeviceBaseQosPolicyTable_Panel -->
+    <String key="DeviceBaseQosPolicyTable_Panel" value="基于设备的QoS策略表"/>
+    <String key="deviceBaseQosPolicyDeviceIndex" value="设备索引"/>
+    <String key="deviceBaseQosPolicyMode" value="调度模式"/>
+    <String key="deviceBaseQosPolicyWeightOctet" value="队列权重"/>
+    <String key="deviceBaseQosPolicySpBandwidthRange" value="队列保证带宽"/>
+
+    <String key="sp" value="sp"/>
+    <String key="wrr" value="wrr"/>
+    <String key="spWrr" value="spWrr"/>
+    <String key="wfp" value="wfp"/>
+
+    <!-- PortBaseQosMapTablePanel -->
+    <String key="PortBaseQosMapTable_Panel" value="基于端口的QoS映射表"/>
+    <String key="portBaseQosMapDeviceIndex" value="设备索引"/>
+    <String key="portBaseQosMapCardIndex" value="板卡索引"/>
+    <String key="portBaseQosMapPortIndex" value="端口索引"/>
+    <String key="portBaseQosMapRuleIndex" value="映射规则"/>
+    <String key="portBaseQosMapOctet" value="映射关系"/>
+
+    <!-- PortBaseQosPolicyTablePanel -->
+    <String key="PortBaseQosPolicyTable_Panel" value="基于端口的QoS策略表"/>
+    <String key="portBaseQosPolicyDeviceIndex" value="设备索引"/>
+    <String key="portBaseQosPolicyCardIndex" value="板卡索引"/>
+    <String key="portBaseQosPolicyPortIndex" value="端口索引"/>
+    <String key="portBaseQosPolicyMode" value="调度模式"/>
+    <String key="portBaseQosPolicyWeightOctet" value="队列权重"/>
+    <String key="portBaseQosPolicySpBandwidthRange" value="队列保证带宽(kbps)"/>
+
+  <String key="Alarm_Information" value="告警信息" /> 
+  <!--  activeAlarmTable --> 
+  <String key="Active_Alarm_Table" value="当前告警表" /> 
+  <String key="activeAlarmSeqNum" value="序列号" /> 
+  <String key="activeAlarmCode" value="告警代码" /> 
+  <String key="activeAlarmInstance" value="告警实体" /> 
+  <String key="activeAlarmSeverity" value="告警级别" /> 
+  <String key="activeAlarmRaisingNumber" value="上报编号" /> 
+  <String key="activeAlarmFirstOccurTime" value="初次发生时间" /> 
+  <String key="activeAlarmLastOccurTime" value="最近发生时间" /> 
+  <String key="activeAlarmRepeats" value="重复次数" /> 
+  <String key="activeAlarmConfirm" value="告警确认" /> 
+  <String key="activeAlarmAdditionalText" value="备注" /> 
+  <String key="alarm_code_101" value="板卡启动自动配置失败" /> 
+  <String key="alarm_code_102" value="板卡重启告警" /> 
+  <String key="alarm_code_103" value="板卡拔出" /> 
+  <String key="alarm_code_104" value="板卡温度异常告警" /> 
+  <String key="alarm_code_105" value="设备风扇故障告警" /> 
+  <String key="alarm_code_106" value="设备风扇框被拔出" /> 
+  <String key="alarm_code_107" value="设备电源模块异常告警" /> 
+  <String key="alarm_code_108" value="设备电源模块异常告警" /> 
+  <String key="alarm_code_109" value="PON芯片固件致命错误" /> 
+  <String key="alarm_code_201" value="PON口环回告警" /> 
+  <String key="alarm_code_202" value="OLT PON光模块失效" /> 
+  <String key="alarm_code_203" value="SNI禁用告警" /> 
+  <String key="alarm_code_204" value="PON禁用告警" /> 
+  <String key="alarm_code_205" value="PON注册LLID数量溢出" /> 
+  <String key="alarm_code_301" value="ONU严重事件告警" /> 
+  <String key="alarm_code_302" value="密钥交换失败告警" /> 
+  <String key="alarm_code_303" value="ONU OAM超时" /> 
+  <String key="alarm_code_304" value="ONU MAC认证失败" /> 
+  <String key="alarm_code_305" value="ONU上行接收光功率过低" /> 
+  <String key="alarm_code_306" value="ONU上行接收光功率过高" /> 
+  <String key="alarm_code_307" value="ONU下行接收光功率过低" /> 
+  <String key="alarm_code_308" value="ONU上行接收光功率过高" /> 
+  <String key="alarm_code_310" value="ONU停电告警" /> 
+  <String key="alarm_code_311" value="下行比特误码率超限告警" /> 
+  <String key="alarm_code_315" value="性能统计上限越界" /> 
+  <String key="alarm_code_316" value="性能统计下限越界" /> 
+  <String key="alarm_code_401" value="UNI禁用告警" /> 
+  <String key="alarm_code_402" value="ONU下挂设备出现环路" /> 
+  <String key="alarm_code_403" value="ONU以太口自协商失败" /> 
+
+  <!--  historyAlarmTable  --> 
+  <String key="History_Alarm_Table" value="历史告警表" /> 
+  <String key="historyAlarmSeqNum" value="序列号" /> 
+  <String key="historyAlarmCode" value="告警代码" /> 
+  <String key="historyAlarmInstance" value="告警实体" /> 
+  <String key="historyAlarmSeverity" value="告警级别" /> 
+  <String key="historyAlarmRaisingNumber" value="上报编号" /> 
+  <String key="historyAlarmFirstOccurTime" value="初次发生时间" /> 
+  <String key="historyAlarmLastOccurTime" value="最近发生时间" /> 
+  <String key="historyAlarmRepeats" value="重复次数" /> 
+  <String key="historyAlarmCorrelationId" value="清除编号" /> 
+  <String key="historyAlarmAdditionalText" value="备注" /> 
+  <String key="historyAlarmClearTime" value="清除时间" /> 
+
+  <String key="onu-register" value="ONU上线" /> 
+  <String key="new-cbat-recognized" value="EoC上线" /> 
+  
+  <String key="Err_Row_In_Table" value="该记录已存在！" /> 
+  
+  <String key="EventLogTable_Panel" value="事件日志" />
+  <String key="eventAdditionalText" value="附加信息" />
+  <String key="eventCode" value="事件代码" />
+  <String key="eventInstance" value="事件实体" />
+  <String key="eventOccurTime" value="发生时间" />
+  <String key="eventSeqNum" value="序列号" />
+
+</StringMap>

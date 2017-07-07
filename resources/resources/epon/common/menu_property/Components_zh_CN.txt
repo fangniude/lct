@@ -1,0 +1,93 @@
+Add=添加
+Delete=删除
+Update=更改
+Refresh=刷新
+Unbound=解绑定
+Search=查找
+Edit=修改
+default=设默认值
+Cancel=取消
+OK=确定
+Apply=应用
+Save=保存
+Detail=详细信息
+Previous=上一页
+Next=下一页
+Input_value_is_invalid=输入的值无效
+Required_input_string=要求输入的字符串
+min_Length_is=最小长度是
+max_Length_is=最大长度是
+defaultValue_is=默认值是
+Required_input_int=要求输入的整数值
+min_is=最小是 :
+max_is=最大是 :
+Input_is_a_invalid_IP!=输入的单播IP地址无效!
+Input_is_a_invalid_network_address!=输入的网络地址无效!
+Required_input_string_is_IP_address.=要求输入的字符串是一个IP地址.
+It's_segement_value_ranges_in_0_255!=它的范围是1.0.0.0 到 223.255.255.255,\n并且不能与127.0.0.1或子网掩码重复.\n默认值：111.111.111.192
+Required_input_string_is_network_address.=要求输入的字符串是一个网络地址.
+Network_default_vlaue_is_111.111.111.0.=默认网络地址是 111.111.111.0
+Input_string_is_a_invalide_subnet_mask!=输入的字符串是一个无效的子网掩码!
+Required_input_string_is_a_valid_subnet_mask!=要求输入一个有效子网掩码!\n默认值：255.0.0.0
+
+Required_input_string_is_PortList.=要求输入的字符串是一个端口列表!
+Input_is_a_invalid_Portist!=输入的字符串是一个无效的VLAN端口列表!
+It's_segement_value_is_d/d=VLAN端口列表是由一系列：板卡号/端口号\n起始板卡号-终止板卡号/起始端口号-终止端口号 lg链路聚合表编号组成，\n各个单元用空格分开；有效的板卡号:1-3,有效端口号:1-4, 有效链路聚合表编号:1-32。\n默认值：
+#ONUPortList's_segement_value_is_d/d/d=ONU列表是：板卡号/端口号/ONU端口号或\n起始板卡号-终止板卡号/起始端口号-终止端口号/起始ONU端口号-终止ONU端口。\n有效的板卡号:1-2,有效端口号:1-4，有效ONU端口号:1-32。\n默认值：
+LAGPortList's_segement_value_is_d/d=链路聚合表端口列表是由一系列：板卡号/端口号\n板卡号/起始端口号-终止端口号组成，\n各个单元用空格分开；有效的板卡号:3,有效端口号:1-4。\n默认值：
+MSGPortList's_segement_value_is_d/d=监控会话组端口列表是由一系列：板卡号/端口号\n起始板卡号-终止板卡号/起始端口号-终止端口号组成，\n各个单元用空格分开；有效的板卡号:1-3,有效端口号:1-4。\n默认值：
+SVIBitMapField's_segement_value_is_d=VLAN列表是由一系列：VLAN编号 \n起始VLAN编号-终止VLAN编号组成，\n各个单元用空格分开，有效VLAN编号:1-4094。\n默认值：
+Input_is_a_invalid_MacAddress!=输入的字符串是一个无效的硬件地址!
+Required_input_string_is_MacAddress.=要求输入的字符串是一个单播硬件地址.第一字节的最后一位不能为1,且不能是 00-00-00-00-00-00.
+It's_segement_value_ranges_in_00_FF!=有效的硬件地址各段数值是dd,\ndd代表一个两位的十六进制整型值。\n默认值：
+
+INPUT_IS_INVALID_GROUP_IP=输入的组播地址无效
+REQUIRED_STRING_IS_GROUP_IP=要求输入一个有效的组播地址
+GROUP_IP_VALUE_RANGE_IS=有效的组播地址的取值范围是:\n从224.0.2.0到239.255.255.255\: 默认值: 224.0.2.0
+
+SELECT_ITEM_DIALOG=选项对话框
+userInputDialogTitle=用户输入对话框
+overwriteCommentHead=文件夹内已包含一个命名为
+overwriteCommentTail=  的文件.  要覆盖原有的文件吗?
+renameComment=请输入一个新的文件名:
+fileNameDuplicate=输入的文件名已经存在.\n请重新输入文件名
+inputFileName=请输入新的文件名.
+newFileName=新文件名(英文)
+rbOverwriteLabel=覆盖
+rbrenameLabel=重命名
+
+Ping=Ping
+LinkTest=链路测试
+Stop=停止链路测试
+Copy=拷贝
+Paste=粘贴
+Rename=重命名
+Commit=保存
+Close=关闭
+Result=结果
+Upload=上传
+Download=下载
+
+internalFrameConfirmTitle=窗口将被关闭
+internalFrameConfirmNote=确定要关闭当前窗口吗?
+
+ONUPortListSelectDialog=ONU端口列表选择对话框
+RANGE0=NONE 
+RANGE1=Card1 
+RANGE2=Card2 
+RANGE3=Card1,2 
+RANGE4=ALL ONU
+
+ONUPORTLIST0=卡号
+ONUPORTLIST1=
+ONUPORTLIST2=起始端口号
+ONUPORTLIST3=终止端口号
+ONUPORTLIST4=起始ONU端口号
+ONUPORTLIST5=终止ONU端口号
+FROMPORTGREATTOPORT=起始端口号大于终止端口号
+FROMONUPORTGREATTOONUPORT=起始ONU端口号大于终止ONU端口号
+
+Input_is_a_invalid_ONUPortist!=输入的字符串是一个无效的ONU列表!
+Input_is_a_invalid_LAGPortList!=输入的字符串是一个无效的链路聚合表端口列表!
+Input_is_a_invalid_MSGPortList!=输入的字符串是一个无效的监控会话组端口列表!
+Input_is_a_invalid_SVIBitMapField!=输入的字符串是一个无效的超级SVI接口VLAN列表!

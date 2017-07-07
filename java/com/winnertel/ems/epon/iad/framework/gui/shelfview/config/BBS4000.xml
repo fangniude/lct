@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<chassis>
+    <device type="FBW5000" version="4.0.0-4.999.999" datasource="com.winnertel.ems.epon.iad.framework.gui.shelfview.model.NgbDataModel" popupmenufactory="com.winnertel.ems.epon.iad.framework.gui.shelfview.DefaultPopupMenuFactory">
+        <shelf width="616" height="300" location="50,115" factory="com.winnertel.ems.epon.iad.framework.gui.shelfview.factory.DefaultShelfFactory">
+            <layout-manager>
+                <!--
+                There are 2 layouts.
+                <layout column-spec="50,225,225,225" height="401" id="5U" row-spec="9,46,46,46,46,46,46,46,46" width="867">
+                    <cell column-index="2" height="1" position="0" row-index="5" width="3"/>
+                    <cell column-index="2" height="1" position="1" row-index="6" width="3"/>
+                    <cell column-index="2" height="1" position="2" row-index="7" width="3"/>
+                </layout>
+                -->
+                <layout name="position-layout" class="com.winnertel.ems.epon.iad.framework.gui.shelfview.layout.PositionLayout">
+                    <slot index="1" width="44" height="312" x="0" y="0"/>
+                    <slot index="2" width="44" height="312" x="44" y="0"/>
+                    <slot index="3" width="44" height="312" x="88" y="0"/>
+                    <slot index="4" width="44" height="312" x="132" y="0"/>
+                    <slot index="5" width="44" height="312" x="176" y="0"/>
+                    <slot index="6" width="44" height="312" x="220" y="0"/>
+                    <slot index="7" width="44" height="312" x="264" y="0"/>
+                    <slot index="8" width="44" height="312" x="308" y="0"/>
+                    <slot index="9" width="44" height="312" x="352" y="0"/>
+                    <slot index="10" width="44" height="312" x="396" y="0"/>
+                    <slot index="11" width="44" height="312" x="440" y="0"/>
+                    <slot index="12" width="44" height="312" x="484" y="0"/>
+                    <slot index="13" width="44" height="312" x="528" y="0"/>
+                    <slot index="14" width="44" height="312" x="572" y="0"/>
+                </layout>
+            </layout-manager>
+
+        </shelf>
+
+        <!-- define the module in shelf. -->
+        <modules factory="com.winnertel.ems.epon.iad.framework.gui.shelfview.factory.DefaultCardFactory">
+            <module name="uplink" icon="com/winnertel/ems/epon/iad/framework/gui/shelfview/resource/images/card_uplink.jpg" version="*"/>
+            <module name="gepon" icon="com/winnertel/ems/epon/iad/framework/gui/shelfview/resource/images/card_gepon.jpg" version="*"/>
+            <module name="control" icon="com/winnertel/ems/epon/iad/framework/gui/shelfview/resource/images/card_control.jpg" version="*"/>
+            <module name="other" icon="com/winnertel/ems/epon/iad/framework/gui/shelfview/resource/images/card_other.jpg" version="*"/>
+        </modules>
+    </device>
+</chassis>

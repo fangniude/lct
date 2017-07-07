@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root id="FBW5000">
+    <node id="System_Configuration"/>
+
+    <node id="Chassis"/>
+
+    <node id="Layer_2">
+        <node id="Interface_layer_2"/>
+        <!--<node id="Link_Aggregation"/>-->
+        <node id="MAC_Address"/>
+        <node id="Port_Monitor"/>
+        <node id="VLAN"/>
+        <node id="STP"/>
+    </node>
+
+    <node id="Layer_3">
+        <!--<node id="Interface_layer_3"/>-->
+        <node id="Interface_Extension"/>
+        <node id="ARP"/>
+        <node id="IP_Route"/>
+        <node id="DHCP">
+            <node id="DHCP_Setting"/>
+            <node id="DHCP_Relay"/>
+            <node id="DHCP_Server"/>
+            <node id="DHCP_States"/>
+        </node>
+    </node>
+
+    <node id="GPON_Management">
+        <node id="OLT_GPON"/>
+        <node id="ONT_Configuration"/>
+        <node id="ONT_Multicast"/>
+        <node id="ONT_Maintain"/>
+        <node id="VLAN_Type"/>
+        <node id="Virtual_Port_Profiles"/>
+        <node id="Bandwidth_Profiles"/>
+        <node id="UNI_Profiles"/>
+        <node id="Other_Profiles"/>
+        <node id="ONT_Management"/>
+    </node>
+
+    <node id="QoS"/>
+
+    <node id="ACL"/>
+
+    <node id="IGMP_Multicast"/>
+
+    <node id="Performance"/>
+
+    <node id="Security"/>
+</root>

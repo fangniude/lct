@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<MenuToolBar>
+
+    <MenuBarList>
+
+        <MenuBar id="default">
+
+            <Menu id="File" name="File">
+                <MenuItem id="Exit" name="Exit"/>
+            </Menu>
+            <Menu id="System_Management" name="System_Management">
+                <MenuItem id="NE_File_Management" name="NE_File_Management"/>
+                <MenuItem id="FTP_Facility" name="FTP_Facility"/>
+                <MenuItem id="TFTP_Facility" name="TFTP_Facility"/>
+                <MenuItem id="Save_Config" name="Save_Config"/>
+                <MenuItem id="Board_Switch" name="Board_Switch"/>
+                <MenuItem id="Restart_NE" name="Restart_NE"/>
+                <MenuItem id="Set_Factory_Default" name="Set_Factory_Default"/>
+            </Menu>
+<!--
+            <Menu id="ONU_Management" name="ONU_Management">
+                <MenuItem id="ONU_CPE" name="ONU_CPE"/>
+                &lt;!&ndash;
+                <MenuItem id="ONU_Firmware_Upgrade" name="ONU_Firmware_Upgrade"/>
+                &ndash;&gt;
+            </Menu>
+-->
+            <Menu id="Help" name="Help">
+                <MenuItem id="Content" name="Content"/>
+                <!--MenuItem id="About" name="About"/-->
+            </Menu>
+        </MenuBar>
+
+    </MenuBarList>
+
+    <ToolBarList>
+    </ToolBarList>
+    <ActionList>
+
+        <Action name="File">
+            <Mnemonic>f</Mnemonic>
+        </Action>
+
+        <Action name="Exit">
+            <Mnemonic>x</Mnemonic>
+            <Executor>com.winnertel.em.standard.gui.action.ExitAction</Executor>
+        </Action>
+
+        <Action name="NE_File_Management">
+            <Mnemonic>f</Mnemonic>
+            <Executor>com.winnertel.ems.epon.iad.bbs4000.gui.action.NEFileMgmtAction</Executor>
+        </Action>
+
+        <Action name="FTP_Facility">
+            <Mnemonic>t</Mnemonic>
+            <Executor>com.winnertel.ems.epon.iad.bbs4000.gui.action.FTPAction</Executor>
+        </Action>
+
+        <Action name="TFTP_Facility">
+            <Mnemonic>p</Mnemonic>
+            <Executor>com.winnertel.ems.epon.iad.bbs4000.gui.action.TFtpAction</Executor>
+        </Action>
+
+      <Action name="Save_Config">
+          <Mnemonic>s</Mnemonic>
+          <Executor>com.winnertel.ems.epon.iad.bbs4000.gui.action.SaveSystemAction</Executor>
+      </Action>
+      <Action name="Restart_NE">
+          <Mnemonic>r</Mnemonic>
+          <Executor>com.winnertel.ems.epon.iad.bbs4000.gui.action.ResetSystemAction</Executor>
+      </Action>
+      <Action name="Set_Factory_Default">
+          <Mnemonic>d</Mnemonic>
+          <Executor>com.winnertel.ems.epon.iad.bbs4000.gui.action.RestoreSystemAction</Executor>
+      </Action>
+
+      <Action name="Board_Switch">
+          <Mnemonic>w</Mnemonic>
+          <Executor>com.winnertel.ems.epon.iad.bbs4000.gui.action.SwitchBoardAction</Executor>
+      </Action>
+
+<!--
+      <Action name="ONU_CPE">
+          <Mnemonic>o</Mnemonic>
+          <Executor>com.winnertel.ems.epon.iad.bbs4000.gui.action.OpenIADAction</Executor>
+      </Action>
+-->
+
+        <Action name="Help">
+            <Mnemonic>h</Mnemonic>
+        </Action>
+
+      <Action name="Content">
+          <Mnemonic>c</Mnemonic>
+          <Executor>com.winnertel.ems.epon.iad.bbs4000.gui.action.OpenHelpAction</Executor>
+      </Action>
+    </ActionList>
+
+    <PopupMenuList>
+
+    </PopupMenuList>
+
+</MenuToolBar>

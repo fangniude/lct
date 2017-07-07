@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root>
+    <ne type="FBW5000" version="4.0.0">
+        <node id="System_Information"/>
+
+        <node id="Chassis"/>
+
+        <node id="Service_Node_Interface"/>
+
+        <node id="PON_Port">
+            <node id="ACL_Management_Group"/>
+        </node>
+
+        <node id="ONU_Management">
+            <node id="ONU_Authentication_Management"/>
+            <node id="EoC_Management"/>
+        </node>
+
+        <node id="UNI_Management"/>
+
+        <node id="IGMP_Management"/>
+
+        <node id="VLAN_Management"/>
+
+        <node id="QoS_Management"/>
+
+        <node id="STP_Management"/>
+
+        <node id="Performance_Statistics"/>
+
+        <node id="Alarm_Information"/>
+    </ne>
+</root>

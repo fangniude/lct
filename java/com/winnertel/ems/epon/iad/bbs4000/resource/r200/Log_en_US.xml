@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<LogList>
+  <Log id="Modify_SystemInfoMbean" action="">
+    <Operation>Configure System Information</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_SysBootParamsMBean" action="">
+    <Operation>Configure System Boot Parameters</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_SNTPGroupMBean" action="">
+    <Operation>Configure SNTP</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_SyslogMBean" action="">
+    <Operation>Configure System Log Parameters</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_SecurityMBean" action="">
+    <Operation>Configure Security Parameters</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_InOutBandTTLMBean" action="">
+    <Operation>Configure TTL</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_OltCtcCdrCtrlGroup" action="">
+    <Operation>Configure CDR Control Group</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Force_Report" action="">
+    <Operation>Force CDR report to server</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_AlarmModelTableMBean_Log" action="">
+    <Operation>Alarm Redifinition</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_AlarmFilteringMBean" action="">
+    <Operation>Configure Alarm Filter</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Add_SysCommuTableMBean_Log" action="">
+    <Operation>Configure SNMP Community</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Delete_SysCommuTableMBean" action="">
+    <Operation>Configure SNMP Community</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_EponTrapTableMBean_Log" action="">
+    <Operation>Configure Trap Destination</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Modify_EponTrapTableMBean_Log" action="">
+    <Operation>Configure Trap Destination</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Delete_EponTrapTableMBean" action="">
+    <Operation>Configure Trap Destination</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_SNTPServerTableMBean_Log" action="">
+    <Operation>Configure SNTP Server</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Modify_SNTPServerTableMBean_Log" action="">
+    <Operation>Configure SNTP Server</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Delete_SNTPServerTableMBean" action="">
+    <Operation>Configure SNTP Server</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Modify_SyslogServerTableMBean_Log" action="">
+    <Operation>Configure System Log Server</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Add_CoSQueueMapTable_Log" action="">
+    <Operation>Configure CoS Queue Mapping</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Modify_CoSQueueMapTable_Log" action="">
+    <Operation>Configure CoS Queue Mapping</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Delete_CoSQueueMapTable" action="">
+    <Operation>Configure CoS Queue Mapping</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_LinkAggregation_Log" action="">
+    <Operation>Configure Link Aggregation</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Modify_LinkAggregation_Log" action="">
+    <Operation>Configure Link Aggregation</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Delete_LinkAggregation" action="">
+    <Operation>Configure Link Aggregation</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Modify_InterfaceTableMBean_Log" action="">
+    <Operation>Configure Interface</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_InterfaceTableGEMtMBean_Log" action="">
+    <Operation>Configure Admin Status and Description of GE Interface</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_InterfaceTableLgMBean_Log" action="">
+    <Operation>Configure Admin Status of Link Aggregation</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Add_MACAddress_Log" action="">
+    <Operation>Configure MAC Address</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Delete_MACAddress" action="">
+    <Operation>Configure MAC Address</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_MonitorSessionControlTable_Log" action="">
+    <Operation>Configure Port Mirror</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Modify_MonitorSessionControlTable_Log" action="">
+    <Operation>Configure Port Mirror</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Delete_MonitorSessionControlTable" action="">
+    <Operation>Configure Port Mirror</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Modify_RSTPGeneral" action="">
+    <Operation>RSTP General Configuration</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+
+  <Log id="Modify_RSTPPort" action="">
+    <Operation>RSTP General Configuration</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Add_PortBasedVLAN" action="">
+    <Operation>Configure VLAN</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Modify_PortBasedVLAN" action="">
+    <Operation>Configure VLAN</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Delete_PortBasedVLAN" action="">
+    <Operation>Configure VLAN</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_SuperSVITable_Log" action="">
+    <Operation>Configure Super SVI</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Modify_SuperSVITable_Log" action="">
+    <Operation>Configure Super SVI</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Delete_SuperSVITable" action="">
+    <Operation>Configure Super SVI</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_EthIfExtTable_Log" action="">
+    <Operation>Configure L3 Interface</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Modify_EthIfExtTable_Log" action="">
+    <Operation>Configure L3 Interface</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Delete_EthIfExtTable" action="">
+    <Operation>Configure L3 Interface</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_SecondIPAddressTable_Log" action="">
+    <Operation>Configure Second IP Address</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Delete_SecondIPAddressTable" action="">
+    <Operation>Configure Second IP Address</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_EponArpTable_Log" action="">
+    <Operation>Configure ARP Entry</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Delete_EponArpTable" action="">
+    <Operation>Configure ARP Entry</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_StaticRouteTable_Log" action="">
+    <Operation>Configure Static Route</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Delete_StaticRouteTable" action="">
+    <Operation>Configure Static Route</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Modify_QosExtCosQueueSchedTable_Log" action="">
+    <Operation>Configure QoS CoS Queue Schedule</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Delete_QosExtCosQueueSchedTable" action="">
+    <Operation>Restore QoS CoS Queue Schedule</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_LgQosExtCosQueueSchedTable_Log" action="">
+    <Operation>Configure QoS CoS Queue Schedule</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_QosExtDscpCosMapTable_Log" action="">
+    <Operation>Configure QoS DSCP CoSMapping</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Restore_QosExtDscpCosMapTable" action="">
+    <Operation>Configure QoS DSCP CoS Mapping</Operation>
+    <Level>5</Level>
+    <Annotation>Reset</Annotation>
+  </Log>
+
+  <Log id="Modify_QosExtDscpMutMapTable_Log" action="">
+    <Operation>Configure QoS DSCP Mutation Mapping</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_QosExtIpPrecDscpMapTable_Log" action="">
+    <Operation>Configure IP Precedence DSCP Mapping</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_QosExtDscpTrustTable_Log" action="">
+    <Operation>Configure QoS DSCP Trust</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_LgQosExtDscpTrustTable_Log" action="">
+    <Operation>Configure QoS DSCP Trust</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Add_AclExtProfileImportTable_Log" action="">
+    <Operation>Import ACL Profile</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Delete_AclExtProfileImportTable" action="">
+    <Operation>Import ACL Profile</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_AclExtIntfConfigTable_Log" action="">
+    <Operation>Apply ACL Profile to Bridge</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Modify_AclExtIntfConfigTable_Log" action="">
+    <Operation>Apply ACL Profile to Bridge</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Delete_AclExtIntfConfigTable" action="">
+    <Operation>Apply ACL Profile to Bridge</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Modify_IgmpSnoopCfgTable_Log" action="">
+    <Operation>Configure IGMP Snooping per VLAN</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_IgmpInterfaceTable_Log" action="">
+    <Operation>Configure IGMP on L3 Interface</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Add_IgmpCacheTable_Log" action="">
+    <Operation>Configure Static Multicast Group</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Delete_IgmpCacheTable" action="">
+    <Operation>Configure Static Multicast Group</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_DHCPRelayServerTable_Log" action="">
+    <Operation>Configure DHCP Relay Server</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Delete_DHCPRelayServerTable" action="">
+    <Operation>Configure DHCP Relay Server</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_DHCPPoolTable_Log" action="">
+    <Operation>Configure DHCP Pool</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Modify_DHCPPoolTable_Log" action="">
+    <Operation>Configure DHCP Pool</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Delete_DHCPPoolTable" action="">
+    <Operation>Configure DHCP Pool</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_DHCPPoolDefaultRouterTable_Log" action="">
+    <Operation>Configure DHCP Default Gateway</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Delete_DHCPPoolDefaultRouterTable" action="">
+    <Operation>Configure DHCP Default Gateway</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_DHCPDNSServerTableMBean_Log" action="">
+    <Operation>Configure DHCP DNS Server</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Delete_DHCPDNSServerTableMBean" action="">
+    <Operation>Configure DHCP DNS Server</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Modify_DHCPIPBindingStatusTableMBean_Log" action="">
+    <Operation>Unbound DHCP Binding</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Add_DHCPLeaseLimitTableMBean_Log" action="">
+    <Operation>Configure DHCP Lease Limit</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Modify_DHCPLeaseLimitTableMBean_Log" action="">
+    <Operation>Configure DHCP Lease Limit</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Delete_DHCPLeaseLimitTableMBean" action="">
+    <Operation>Configure DHCP Lease Limit</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_DHCPLogServerTableMBean_Log" action="">
+    <Operation>Configure DHCP Log Server</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Delete_DHCPLogServerTableMBean" action="">
+    <Operation>Configure DHCP Log Server</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_DHCPMBindingTableMBean_Log" action="">
+    <Operation>Configure DHCP Manual Binding</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Modify_DHCPMBindingTableMBean_Log" action="">
+    <Operation>Configure DHCP Manual Binding</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Delete_DHCPMBindingTableMBean" action="">
+    <Operation>Configure DHCP Manual Binding</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Delete_DHCPIPBindingStatusTableMBean" action="">
+    <Operation>Configure DHCP IP Binding</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_DHCPNTPServerTableMBean_Log" action="">
+    <Operation>Configure DHCP NTP Server</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Delete_DHCPNTPServerTableMBean" action="">
+    <Operation>Configure DHCP NTP Server</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_DHCPPoolExcludeTableMBean_Log" action="">
+    <Operation>Configure DHCP Exclude IP Range</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Modify_DHCPPoolExcludeTableMBean_Log" action="">
+    <Operation>Configure DHCP Exclude IP Range</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Delete_DHCPPoolExcludeTableMBean" action="">
+    <Operation>Configure DHCP Exclude IP Range</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_DHCPPoolIncludeTableMBean_Log" action="">
+    <Operation>Configure DHCP Include IP Rang</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Modify_DHCPPoolIncludeTableMBean_Log" action="">
+    <Operation>Configure DHCP Include IP Rang</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Delete_DHCPPoolIncludeTableMBean" action="">
+    <Operation>Configure DHCP Include IP Rang</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Modify_ChassisConfTable_Log" action="">
+    <Operation>Configure Chassis Temperature Warning Threshold</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_EponModuleBoardTable_Log" action="">
+    <Operation>Configure Module Temperature Up Limit and Clear Limit</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_SwitchPortExtTable_Log" action="">
+    <Operation>Configure L2 Port</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_IntfRateControlTable_Log" action="">
+    <Operation>Configure L2 Rate Limitation</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_IntfRateControlGEMTable_Log" action="">
+    <Operation>Configure L2 Rate Limitation</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_Dot3OltTable_Log" action="">
+    <Operation>Configure EPON Port</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_Dot3DbaOltTable_Log" action="">
+    <Operation>Configure EPON Port DBA</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_Dot3OnuTable_Log" action="">
+    <Operation>Configure EPON ONU</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_Dot3DbaSlaTable_Log" action="">
+    <Operation>Configure EPON ONU DBA SLA</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_Dot3UnboundOnuTable_Log" action="">
+    <Operation>Configure Unbound ONU</Operation>
+    <Level>5</Level>
+    <Annotation>Bound</Annotation>
+  </Log>
+
+  <Log id="Delete_Dot3boundOnuTable" action="">
+    <Operation>Configure Bounded ONU</Operation>
+    <Level>5</Level>
+    <Annotation>Unbound</Annotation>
+  </Log>
+
+  <!--host route-->
+  <Log id="Add_HostRouteTable_Log" action="">
+    <Operation>Configure Host Route</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Delete_HostRouteTable" action="">
+    <Operation>Configure Host Route</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <!--MSTP-->
+  <Log id="Modify_MSTPPortTableMBean_Log" action="">
+    <Operation>Configure MST Port</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Add_MSTPMapTableMBean_Log" action="">
+    <Operation>Configure MIST VLAN range mapping</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Delete_MSTPMapTableMBean" action="">
+    <Operation>Configure MIST VLAN range mapping</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Modify_MSTPMapTableMBean_Log" action="">
+    <Operation>Configure MIST VLAN range mapping</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_MSTPXstTableMBean_Log" action="">
+    <Operation>General configuration of MIST or CIST</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Modify_MSTPXstPortTableMBean_Log" action="">
+    <Operation>Port configuration of MIST or CIST</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Add_MonitorSessionControlTableMBean_Log" action="">
+    <Operation>Configure Port Mirror</Operation>
+    <Level>5</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+  <Log id="Modify_MonitorSessionControlTableMBean_Log" action="">
+    <Operation>Configure Port Mirror</Operation>
+    <Level>5</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+  <Log id="Delete_MonitorSessionControlTableMBean" action="">
+    <Operation>Configure Port Mirror</Operation>
+    <Level>5</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_ONUUpgradeResultTableMBean_Log" action="">
+    <Operation>Configure ONU Upgrade Schedule</Operation>
+    <Level>4</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Delete_ONUScheduleUpgradeTableMBean" action="">
+    <Operation>Configure ONU Upgrade Schedule</Operation>
+    <Level>4</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_ONUUpgradeHwTableMBean_Log" action="">
+    <Operation>Configure ONU Upgrade Rule</Operation>
+    <Level>4</Level>
+    <Annotation>Add</Annotation>
+  </Log>
+
+  <Log id="Modify_ONUUpgradeHwTableMBean_Log" action="">
+    <Operation>Configure ONU Upgrade Rule</Operation>
+    <Level>4</Level>
+    <Annotation>Modify</Annotation>
+  </Log>
+
+  <Log id="Delete_ONUUpgradeHwTableMBean" action="">
+    <Operation>Configure ONU Upgrade Rule</Operation>
+    <Level>4</Level>
+    <Annotation>Delete</Annotation>
+  </Log>
+
+  <Log id="Add_ONUManualUpgradeTableMBean_Log" action="">
+    <Operation>ONU Manual Upgrade</Operation>
+    <Level>4</Level>
+    <Annotation>Upgrade</Annotation>
+  </Log>
+
+  <Log id="Lock_Port" action="">
+    <Operation>Configure Port Admin Status</Operation>
+    <Level>5</Level>
+    <Annotation>Lock</Annotation>
+  </Log>
+
+  <Log id="Unlock_Port" action="">
+    <Operation>Configure Port Admin Status</Operation>
+    <Level>5</Level>
+    <Annotation>Unlock</Annotation>
+  </Log>
+
+  <Log id="Lock_Card" action="">
+    <Operation>Configure Card Admin Status</Operation>
+    <Level>5</Level>
+    <Annotation>Lock</Annotation>
+  </Log>
+
+  <Log id="Unlock_Card" action="">
+    <Operation>Configure Card Admin Status</Operation>
+    <Level>5</Level>
+    <Annotation>Unlock</Annotation>
+  </Log>
+
+  <Log id="Reset_Card" action="">
+    <Operation>Reset Card</Operation>
+    <Level>5</Level>
+    <Annotation>Reset</Annotation>
+  </Log>
+
+  <Log id="Add_Dot3OnuSwitchTable_Log" action="">
+    <Operation>Configure ONU Switch</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+  <Log id="Modify_Dot3OnuSwitchTable_Log" action="">
+    <Operation>Configure ONU Switch</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+  <Log id="Modify_Dot3Olt2Table_Log" action="">
+    <Operation>Modify OLT Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+  <Log id="Modify_Dot3Olt2PortTable_Log" action="">
+    <Operation>Modify OLT Port Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Modify_Dot3Olt2QosGlbTable_Log" action="">
+    <Operation>Modify OLT Global QoS Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+  <Log id="Modify_Dot3Olt2DbaGlbTable_Log" action="">
+    <Operation>Modify OLT DBA Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Add_Dot3Olt2PolicingTable_Log" action="">
+    <Operation>Add OLT Policing Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Modify_Dot3Olt2PolicingTable_Log" action="">
+    <Operation>Modify OLT Policing Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Delete_Dot3Olt2PolicingTable" action="">
+    <Operation>Delete OLT Policing Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Modify_Dot3Onu2Table_Log" action="">
+    <Operation>Modify ONU Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Modify_Dot3Onu2TrafficProfTable_Log" action="">
+    <Operation>Modify ONU Traffic Profile</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  
+  <Log id="Batch_Modify_Dot3Onu2TrafficProfTable_Log" action="">
+    <Operation>Batch Modify ONU Traffic Profile</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  
+  <Log id="Modify_Dot3Onu2CtcTable_Log" action="">
+    <Operation>Modify ONU Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Modify_Dot3Onu2QoSTable_Log" action="">
+    <Operation>Modify ONU QoS Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Add_Dot3Onu2ClassifiRuleTable_Log" action="">
+    <Operation>Add ONU Classification Rule</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Modify_Dot3Onu2ClassifiRuleTable_Log" action="">
+    <Operation>Modify ONU Classification Rule</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Delete_Dot3Onu2ClassifiRuleTable" action="">
+    <Operation>Delete ONU Classification Rule</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Modify_Dot3Onu2CtcEtherPortTable_Log" action="">
+    <Operation>Modify ONU Ether Port Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Modify_VlanModeConfigMBean_Log" action="">
+    <Operation>Modify VLAN Mode Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Modify_UNIVlanStackingMBean_Log" action="">
+    <Operation>Modify UNI VLAN Stacking</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Modify_Dot3Onu2CtcDbaTable_Log" action="">
+    <Operation>Modify ONU DBA Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Add_OnuCtcMulticastCtrlTable_Log" action="">
+    <Operation>Add ONU Multicast Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Delete_OnuCtcMulticastCtrlTable" action="">
+    <Operation>Delete ONU Multicast Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Modify_OnuCtcBandCtrlTable_Log" action="">
+    <Operation>Modify ONU Band Control Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Add_Dot3Olt2AclConfTable_Log" action="">
+    <Operation>Add OLT ACL Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Delete_Dot3Olt2AclConfTable" action="">
+    <Operation>Delete OLT ACL Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Add_OltPullDownMcTable_Log" action="">
+    <Operation>Add OLT Pull Down Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Delete_OltPullDownMcTable" action="">
+    <Operation>Delete OLT Pull Down Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Delete_EthernetPerfStaticsCounterTableMBean" action="">
+    <Operation>Reset Ether Port Counter</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Delete_PonIf2ExtStatTable_OLT" action="">
+    <Operation>Reset OLT PM Counter</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Delete_PonIf2ExtStatTable_ONU" action="">
+    <Operation>Reset ONU PM Counter</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Modify_PonSystemGroup" action="">
+    <Operation>Modify Pon System Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+  <Log id="Restart_AutoNeg" action="">
+    <Operation>Restart Auto Negotiation</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Clear_MulticastVlanList" action="">
+    <Operation>Clear Multicast VLAN List</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Clear_ClassificationRule" action="">
+    <Operation>Clear_ClassificationRule</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Add_Dot3Onu2CtcLpBkTable_Log" action="">
+    <Operation>start ONU Loopback Test</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Delete_Dot3Onu2CtcLpBkTable" action="">
+    <Operation>Stop ONU Loopback Test</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Add_Dot3Onu2CtcClassifiAppTable_Log" action="">
+    <Operation>Add ONU Classification</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Delete_Dot3Onu2CtcClassifiAppTable" action="">
+    <Operation>Delete ONU Classification</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Modify_Dot3Onu2CtcValidOnuMacTable_Log" action="">
+    <Operation>Modify ONU MAC Binding Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Add_Dot3Onu2StaticFDBTable_Log" action="">
+    <Operation>Add ONU Static FDB Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Delete_Dot3Onu2StaticFDBTable" action="">
+    <Operation>Delete Static FDB Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Add_Dot3Onu2FDBTable_Log" action="">
+    <Operation>Add ONU FDB Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Delete_Dot3Onu2FDBTable" action="">
+    <Operation>Delete ONU FDB Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Add_Dot3Olt2VlanStackingTable_Log" action="">
+    <Operation>Add VLAN Stacking</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Delete_Dot3Olt2VlanStackingTable" action="">
+    <Operation>Delete VLAN Stacking</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Add_Dot3OnuClassifiImportTable_Log" action="">
+    <Operation>Import ONU Classification File</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Delete_Dot3OnuClassifiImportTable" action="">
+    <Operation>Delete ONU Classification File</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Modify_Dot3Olt2PortDbaTable_Log" action="">
+    <Operation>Modify OLT Port DBA Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Add_OltGlbMulticastGroupTable_Log" action="">
+    <Operation>Add Global Multicast Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+  <Log id="Delete_OltGlbMulticastGroupTable" action="">
+    <Operation>Delete Global Multicast Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+  <Log id="Modify_Dot3Onu2CtcLpBkGroup" action="">
+    <Operation>Start/Stop ONU Loop Back Test</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+  <Log id="Modify_GeneralConfiguration" action="">
+    <Operation>Modify CSM General Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+  <Log id="Modify_QosExtCosQueMapMBean_Log" action="">
+    <Operation>Modify Cos Queue Mapping</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+
+
+  <Log id="Delete_QosExtCosQueMapMBean" action="">
+    <Operation>Restore Cos Queue Mapping</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+
+  <Log id="Delete_QosExtDscpMutMapTable" action="">
+    <Operation>Restore DSCP Mutation Mapping</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+  <Log id="Delete_QosExtIpPrecDscpMapTable" action="">
+    <Operation>Restore IP Precedence DSCP Mapping</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+  <Log id="Modify_EponMulticastCtrlGroup" action="">
+    <Operation>Modify Multicast Control Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+  <Log id="Modify_DHCPServiceState" action="">
+    <Operation>Modify DHCP Service Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+  <Log id="Modify_DHCPRelay" action="">
+    <Operation>Modify DHCP Relay Service Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+  <Log id="Modify_MSTPGeneralMBean" action="">
+    <Operation>Modify MSTP General Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+  <Log id="Save_Config" action="">
+    <Operation>Save NE Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+  <Log id="Board_Switch" action="">
+    <Operation>Switch CSM Board</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+  <Log id="Restart_NE" action="">
+    <Operation>Restart NE</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+  <Log id="Set_Factory_Default" action="">
+    <Operation>Set Factory Default Configuration</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+  <Log id="Reset_ONU_Log" action="">
+    <Operation>Reset ONU</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+  <Log id="CPE_MGMT_Privilege_Check" action="">
+    <Operation>Check permission for CPE Management</Operation>
+    <Level>4</Level>
+    <Annotation/>
+  </Log>
+
+</LogList>

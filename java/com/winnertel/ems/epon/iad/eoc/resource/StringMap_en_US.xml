@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<StringMap>
+    <!-- ModEoCCBATDevInfoGroup_Panel -->
+    <String key="System Information" value="System Information"/>
+    <String key="ModEoCCBATDevInfoGroup_Panel" value="Device Information"/>
+
+    <String key="modEoCCBATAdminHardwareVersion" value="Hardware Version"/>
+    <String key="modEoCCBATAdminLogicalID" value="Logical ID"/>
+    <String key="modEoCCBATAdminManufactoryInfo" value="Manufactory Info"/>
+    <String key="modEoCCBATAdminModelNumber" value="Model Number"/>
+    <String key="modEoCCBATAdminSerialNumber" value="Serial Number"/>
+    <String key="modEoCCBATAdminSoftwareVersion" value="Software Version"/>
+    <String key="modEoCCBATAdminTechProject" value="Technical Project "/>
+    <String key="modEoCCBATAdminVendorSpecialInfo" value="Vendor Special Info"/>
+
+    <String key="Device Management" value="Device Management"/>
+    <String key="ModEoCCBATCardTable_Panel" value="Card Information"/>
+    <!-- ModEoCCBATCardTable_Panel-->
+    <String key="failed" value="failed"/>
+    <String key="false" value="false"/>
+    <String key="modEoCCBATCardConfigurationResult" value="Configuration Result"/>
+    <String key="modEoCCBATCardConfigurationSaving" value="Configuration Saving"/>
+    <String key="modEoCCBATCardIndex" value="CBAT Card Index"/>
+    <String key="modEoCCBATCardMACAddress" value="CBAT Card MAC Address"/>
+    <String key="modEoCCBATCardModelNumber" value="CBAT Card Model Number"/>
+    <String key="modEoCCBATCardOnlineStatus" value="CBAT Card Online Status"/>
+    <String key="modEoCCBATCardReset" value="CBAT Card Reset"/>
+    <String key="modEoCCBATCardSoftwareVersion" value="CBAT Card Software Version"/>
+    <String key="modEoCCBATCardUpLinkBroadcastFrameSendIntervalAfterAck"
+            value="CBAT Card UpLink Broadcast Frame Send Interval After Ack"/>
+    <String key="modEoCCBATCardUpLinkBroadcastFrameSendIntervalBeforeAck"
+            value="CBAT Card UpLink Broadcast Frame Send Interval Before Ack"/>
+    <String key="modEoCCBATCardUpLinkDeviceMACAddress" value="CBAT Card UpLink Device MAC Address"/>
+    <String key="modEoCCBATCardUpLinkDevicePortNumber" value="CBAT Card UpLink Device Port Number"/>
+    <String key="offline" value="offline"/>
+    <String key="online" value="online"/>
+    <String key="running" value="running"/>
+    <String key="success" value="success"/>
+    <String key="true" value="true"/>
+    <String key="Reset Card" value="Reset Card"/>
+    <String key="Save Configuration" value="Save Configuration"/>
+
+    <!-- ModEoCCBATNetworkAttrGroupPanel_Panel -->
+    <String key="Network Information" value="Network Information"/>
+    <String key="ModEoCCBATNetworkAttrGroupPanel_Panel" value="Network Attribute"/>
+    <String key="modEoCCBATAdminIPAddress" value="CBAT Admin IPAddress"/>
+    <String key="modEoCCBATAdminIPGateway" value="CBAT Admin IP Gateway"/>
+    <String key="modEoCCBATAdminIPMask" value="CBAT Admin IP Mask"/>
+    <String key="modEoCCBATAdminIPMode" value="CBAT Admin IP Mode"/>
+    <String key="modEoCCBATAdminMACAddress" value="CBAT Admin MAC Address"/>
+    <String key="Err_ConfirmChangeNetworkAttr" value="Are you sure to update Network"/>
+
+    <!-- ModEoCCBATDevStatusGroup_Panel -->
+    <String key="Device Status" value="Device Status"/>
+    <String key="ModEoCCBATDevStatusGroup_Panel" value="Device Status"/>
+    <String key="modEoCCBATAdminAlarmDetectionControl" value="CBAT Admin Alarm Detection Control"/>
+    <String key="modEoCCBATAdminConfigurationResult" value="CBAT Admin Configuration Result"/>
+    <String key="modEoCCBATAdminConfigurationSaving" value="CBAT Admin Configuration Saving"/>
+    <String key="modEoCCBATAdminDateAndTime" value="CBAT Admin Time"/>
+    <String key="modEoCCBATAdminInternalTemperature" value="CBAT Admin Internal Temperature"/>
+    <String key="modEoCCBATAdminReset" value="CBAT Admin Reset"/>
+    <String key="modEoCCBATAdminResetCause" value="CBAT Admin Reset Cause"/>
+    <String key="modEoCCBATAdminStatus" value="CBAT Admin Status"/>
+    <String key="modEoCCBATAdminStatus_Bit0" value="Message to be sent"/>
+    <String key="modEoCCBATAdminStatus_Bit1" value="Serious Warning"/>
+    <String key="modEoCCBATAdminStatus_Bit2" value="Very Serious Warning"/>
+    <String key="modEoCCBATAdminTamperStatus" value="CBAT Admin Tamper Status"/>
+    <String key="compromised" value="EoC CBAT Security Switch Open"/>
+    <String key="intact" value="EoC CBAT Deviece normal"/>
+    <String key="unknown" value="Unknown"/>
+
+    <String key="modEoCCBATAdminResetCauseVList_other" value="other reason"/>
+    <String key="modEoCCBATAdminResetCauseVList_craft" value="EoC CBAT Local interface reset"/>
+    <String key="modEoCCBATAdminResetCauseVList_command" value="software reset command"/>
+    <String key="modEoCCBATAdminResetCauseVList_powerup" value="Power up Reset"/>
+    <String key="modEoCCBATAdminResetCauseVList_watchdog" value="watchdog Reset"/>
+
+    <String key="modEoCCBATAdminConfigurationResultTList_failed" value="Save Config Failed"/>
+    <String key="modEoCCBATAdminConfigurationResultTList_running" value="Saving"/>
+    <String key="modEoCCBATAdminConfigurationResultTList_success" value="Save Config Successfully"/>
+
+    <String key="detectionEnabledAndRegenerate" value="Enabled And Regenerate"/>
+    <String key="detectionEnabled" value="Detection Enabled"/>
+    <String key="detectionDisabled" value="Detection Disabled"/>
+
+    <String key="ResetCBat" value="Reset EOC"/>
+    <String key="saveConfig" value="Save Configuration"/>
+
+    <!-- ModEoCCBATSNMPSettingGroupPanel_Panel -->
+    <String key="ModEoCCBATSNMPSettingGroupPanel_Panel" value="SNMP Setting Group"/>
+    <String key="modEoCCBATAdminSNMPCommunityTableNextIndex" value="Next Index"/>
+    <String key="modEoCCBATAdminSNMPVersion" value="SNMP Version"/>
+    <String key="modEoCCBATAdminVarBindings" value="Var Bindings"/>
+
+    <!-- ModEoCCBATAdminSNMPCommunityTable_Panel-->
+    <String key="ModEoCCBATAdminSNMPCommunityTable_Panel" value="SNMP Community"/>
+    <String key="active" value="active"/>
+    <String key="createAndGo" value="Create And Go"/>
+    <String key="createAndWait" value="Create And Wait"/>
+    <String key="destroy" value="destroy"/>
+    <String key="modEoCCBATAdminSNMPCommunity" value="SNMP Community"/>
+    <String key="modEoCCBATAdminSNMPCommunityIndex" value="SNMP Community Index"/>
+    <String key="modEoCCBATAdminSNMPCommunityPermission" value="SNMP Community Permission"/>
+    <String key="modEoCCBATAdminSNMPCommunityRowStatus" value="SNMP Community RowStatus"/>
+    <String key="notInService" value="Not InService"/>
+    <String key="notReady" value="Not Ready"/>
+    <String key="ro" value="Read Only"/>
+    <String key="rw" value="Reand And Write"/>
+
+    <!-- ModEoCCBATCardRFGroup_Panel-->
+    <String key="ModEoCCBATCardRFGroup_Panel" value="CBAT Card RF Group"/>
+    <String key="ModEoCCBATCardMACCNUIsolationTable_Panel" value="CBAT Card MAC CNU Isolation"/>
+    <String key="modEoCCBATCardRFDownstreamStartFreq" value="RF Downstream Start Freq"/>
+    <String key="modEoCCBATCardRFDownstreamStopFreq" value="RF Downstream Stop Freq"/>
+    <String key="modEoCCBATCardRFIndex" value="CBAT Card RF Index"/>
+    <String key="modEoCCBATCardRFLinkMaximum" value="CBAT Card RF Link Maximum"/>
+    <String key="modEoCCBATCardRFOutputLevel" value="CBAT Card RF Output Level"/>
+    <String key="modEoCCBATCardRFUpstreamStartFreq" value="RF Upstream Start Freq"/>
+    <String key="modEoCCBATCardRFUpstreamStopFreq" value="RF Upstream Stop Freq"/>
+
+    <String key="modEoCCNUWhiteListAllExtMACLimitation" value="CNU White List All Extreme MAC Limitation"/>
+    <String key="modEoCCNUWhiteListAllRFOutputLevel" value="CNU White List All RF Output Level"/>
+    <String key="modEoCCNUWhiteListAmountLimitation" value="CNU White List Amount Limitation"/>
+    <String key="modEoCCNUWhiteListPhyRateGate" value="CNU White List Physical Rate Gate"/>
+    <String key="modEoCCNUWhiteListRegisteredAmount" value="CNU White List Registered Amount"/>
+
+    <String key="modEoCCBATCardMACCNUIsolationEN" value="CBAT Card MAC CNU Isolation EN"/>
+    <String key="modEoCCBATCardMACCNUIsolationIndex" value="CBAT Card MAC CNU Isolation Index"/>
+
+    <!-- ModEoCCNUWhiteListTable_Panel-->
+    <String key="ModEoCCNUWhiteListTable_Panel" value="CNU White List"/>
+    <String key="ModEoCCNUWhiteList_Panel" value="CNU White List Manage"/>
+    <String key="active" value="active"/>
+    <String key="authorized" value="authorized"/>
+    <String key="createAndGo" value="Create And Go"/>
+    <String key="createAndWait" value="Create And Wait"/>
+    <String key="destroy" value="destroy"/>
+    <String key="disable" value="disable"/>
+    <String key="enable" value="enable"/>
+    <String key="modEoCCNUWhiteListAuthorization" value="CNU White List Authorization"/>
+    <String key="modEoCCNUWhiteListAutoUpgradeEN" value="CNU White List Auto Upgrade Enable"/>
+    <String key="modEoCCNUWhiteListEndTime" value="CNU White List End Time"/>
+    <String key="modEoCCNUWhiteListIPAddress" value="CNU White List IP Address"/>
+    <String key="modEoCCNUWhiteListIndex" value="CNU White List Index"/>
+    <String key="modEoCCNUWhiteListMACAddress" value="CNU White List MAC Address"/>
+    <String key="modEoCCNUWhiteListRFOutputLevel" value="CNU White List RF Output Level"/>
+    <String key="modEoCCNUWhiteListRegisterOnlineStatus" value="CNU White List Register Online Status"/>
+    <String key="modEoCCNUWhiteListRowStatus" value="CNU White List Row Status"/>
+    <String key="modEoCCNUWhiteListStartTime" value="CNU White List Start Time"/>
+    <String key="not-authorized" value="Not Authorized"/>
+    <String key="notInService" value="Not InService"/>
+    <String key="notReady" value="Not Ready"/>
+    <String key="offline" value="offline"/>
+    <String key="online" value="online"/>
+
+    <String key="CNU List" value="CNU List"/>
+    <String key="Other Admin" value="Other Admin"/>
+    <String key="modEoCCBATOtherAdminGroup_Panel" value="CBAT Other Admin Group"/>
+
+    <String key="modEoCCBATAdminLinkTopoChange" value="CBAT Admin Link Topo Change"/>
+    <String key="modEoCCBATAdminLinkTopoChangeTList_change" value="CBAT Admin Link Topo Change TList_change"/>
+    <String key="modEoCCBATAdminLinkTopoChangeTList_no-change" value="CBAT Admin Link Topo Change TList_no-change"/>
+    <String key="modEoCCBATAdminAppropriativeOID" value="CBAT Admin Appropriative OID"/>
+    <String key="modEoCCBATCardUpLinkBroadcastFrameSendManner" value="CBAT Card UpLink Broadcast Frame Send Manner"/>
+    <String key="modEoCCBATCardUpLinkBroadcastFrameSendMannerTList_t1"
+            value="CBAT Card UpLink Broadcast Frame Send Manner T1"/>
+    <String key="modEoCCBATCardUpLinkBroadcastFrameSendMannerTList_t2"
+            value="CBAT Card UpLink Broadcast Frame Send Manner T2"/>
+
+    <String key="modEoCCNU_Panel" value="CNU Information"/>
+
+    <String key="modEoCCNUAllReset" value="CNU All Reset"/>
+    <String key="modEoCCNUAmountLimitation" value="CNU Amount Limitation"/>
+    <String key="modEoCCNUCurrentAmount" value="CNU Current Amount"/>
+    <String key="ResetAll" value="Reset All"/>
+
+    <!-- ModEoCCNUTable_Panel-->
+    <String key="ModEoCCNUTable_Panel" value="CNU"/>
+    <String key="authorized" value="authorized"/>
+    <String key="failed" value="failed"/>
+    <String key="modEoCCNUAuthorizationState" value="CNU Authorization State"/>
+    <String key="modEoCCNUCBATCardIndex" value="CNU CBAT Card Index"/>
+    <String key="modEoCCNUConfigurationResult" value="CNU Configuration Result"/>
+    <String key="modEoCCNUConfigurationSaving" value="CNU Configuration Saving"/>
+    <String key="modEoCCNUIndex" value="CNU Index"/>
+    <String key="modEoCCNUMACAddress" value="CNU MAC Address"/>
+    <String key="installAddress" value="Install Address"/>
+    <String key="modEoCCNUModelNumber" value="CNU Model Number"/>
+    <String key="modEoCCNUOnlineStatus" value="CNU Online Status"/>
+    <String key="modEoCCNUPhyDownstreamRate" value="CNU Physical Downstream Rate"/>
+    <String key="modEoCCNUPhyUpstreamRate" value="CNU Physical Upstream Rate"/>
+    <String key="modEoCCNUPortAmount" value="CNU Port Amount"/>
+    <String key="modEoCCNURFAttenuation" value="CNU RF Attenuation"/>
+    <String key="modEoCCNURFDownstreamQuality" value="CNU RF Downstream Quality"/>
+    <String key="modEoCCNURFUpstreamQuality" value="CNU RF Upstream Quality"/>
+    <String key="modEoCCNUReset" value="CNU Reset"/>
+    <String key="modEoCCNUSoftwareVersion" value="CNU Software Version"/>
+    <String key="not-authorized" value="Not Authorized"/>
+    <String key="offline" value="offline"/>
+    <String key="online" value="online"/>
+    <String key="running" value="running"/>
+    <String key="success" value="success"/>
+
+    <String key="modEoCCNUServiceAmountLimitation" value="CNU Service Amount Limitation"/>
+    <String key="modEoCCNUServiceType" value="CNU Service Type"/>
+    <String key="ModEoCCNUService_Panel" value="CNU Service"/>
+
+    <!-- ModEoCCNUServiceTable_Panel-->
+    <String key="ModEoCCNUServiceTable_Panel" value="CNU Service Table"/>
+    <String key="active" value="active"/>
+    <String key="createAndGo" value="Create And Go"/>
+    <String key="createAndWait" value="Create And Wait"/>
+    <String key="destroy" value="destroy"/>
+    <String key="modEoCCNUServiceDBADownstreamCIR" value="CNU Service DBA Downstream CIR"/>
+    <String key="modEoCCNUServiceDBADownstreamPIR" value="CNU Service DBA Downstream PIR"/>
+    <String key="modEoCCNUServiceDBAUpstreamCIR" value="CNU Service DBA Upstream CIR"/>
+    <String key="modEoCCNUServiceDBAUpstreamPIR" value="CNU Service DBA Upstream PIR"/>
+    <String key="modEoCCNUServiceIndex" value="CNU Service Index"/>
+    <String key="modEoCCNUServiceMatchingValue" value="CNU Service Matching Value"/>
+    <String key="modEoCCNUServiceMaxLatency" value="CNU Service Max Latency"/>
+    <String key="modEoCCNUServiceName" value="CNU Service Name"/>
+    <String key="modEoCCNUServiceQOSPrio" value="CNU Service QOS Priority"/>
+    <String key="modEoCCNUServiceRowStatus" value="CNU Service Row Status"/>
+    <String key="notInService" value="Not InService"/>
+    <String key="notReady" value="Not Ready"/>
+
+    <String key="modEoCCNUPortAmountLimitation" value="CNU Port Amount Limitation"/>
+    <String key="modEoCCNUPortPerCNULimitation" value="CNU Port Per CNU Limitation"/>
+
+    <!-- ModEoCCNUPortTable_Panel-->
+    <String key="ModEoCCNUPort_Panel" value="CNU Port"/>
+    <String key="ModEoCCNUPortTable_Panel" value="CNU Port Table"/>
+    <String key="disable" value="disable"/>
+    <String key="enable" value="enable"/>
+    <String key="modEoCCNUPortCBATCardIndex" value="CNU Port CBAT Card Index"/>
+    <String key="modEoCCNUPortCNUIndex" value="CNU Port CNU Index"/>
+    <String key="modEoCCNUPortEN" value="CNU Port Enable"/>
+    <String key="modEoCCNUPortIndex" value="CNU Port Index"/>
+    <String key="modEoCCNUPortService" value="CNU Port Service"/>
+
+    <!-- ModEoCIGMPSnoopingTable_Panel-->
+    <String key="ModEoCIGMPSnoopingTable_Panel" value="IGMP Snooping Table"/>
+    <String key="disable" value="disable"/>
+    <String key="enable" value="enable"/>
+    <String key="modEoCIGMPSnoopingCBATCardIndex" value="IGMP Snooping CBAT Card Index"/>
+    <String key="modEoCIGMPSnoopingCNUIndex" value="IGMP Snooping CNU Index"/>
+    <String key="modEoCIGMPSnoopingDevMACAddress" value="IGMP Snooping Device MAC Address"/>
+    <String key="modEoCIGMPSnoopingEN" value="IGMP Snooping Enable"/>
+
+    <String key="modEoCVLANCreatedVLANNumber" value="VLAN Created VLAN Number"/>
+    <String key="modEoCVLANMaxSupportedVLANs" value="VLAN Max Supported VLANs"/>
+    <String key="modEoCVLANMaxVID" value="VLAN Max VID"/>
+    <String key="modEoCVLANNextFreeVID" value="VLAN Next Free VID"/>
+    <String key="modEoCVLANVIDList" value="VLAN VID List"/>
+    <String key="modEoCVLANVersionNumber" value="VLAN Version Number"/>
+
+    <!-- ModEoCVLANTable_Panel -->
+    <String key="ModEoCVLANGroup_Panel" value="VLAN Group"/>
+    <String key="ModEoCVLANTable_Panel" value="VLAN Table"/>
+    <String key="active" value="active"/>
+    <String key="createAndGo" value="Create And Go"/>
+    <String key="createAndWait" value="Create And Wait"/>
+    <String key="destroy" value="destroy"/>
+    <String key="false" value="false"/>
+    <String key="modEoCVLANFlag" value="VLAN Flag"/>
+    <String key="modEoCVLANIndex" value="VLAN Index"/>
+    <String key="modEoCVLANName" value="VLAN Name"/>
+    <String key="modEoCVLANRowStatus" value="VLAN Row Status"/>
+    <String key="notInService" value="Not InService"/>
+    <String key="notReady" value="Not Ready"/>
+    <String key="true" value="true"/>
+
+    <!-- ModEoCVLANPortTable_Panel -->
+    <String key="ModEoCVLANPortTable_Panel" value="VLAN Port Table"/>
+    <String key="access" value="access"/>
+    <String key="hybrid" value="hybrid"/>
+    <String key="modEoCVLANCBATCardIndex" value="VLAN CBAT Card Index"/>
+    <String key="modEoCVLANCNUIndex" value="VLAN CNU Index"/>
+    <String key="modEoCVLANPortIndex" value="VLAN Port Index"/>
+    <String key="modEoCVLANPortMode" value="VLAN Port Mode"/>
+    <String key="modEoCVLANPortPVID" value="VLAN Port PVID"/>
+    <String key="modEoCVLANPortPrio" value="VLAN Port Priority"/>
+    <String key="modEoCVLANPortTPID" value="VLAN Port TPID"/>
+    <String key="modEoCVLANPortUntaggedVIDList" value="VLAN Port Untagged VID List"/>
+    <String key="modEoCVLANPortVIDList" value="VLAN Port VID List"/>
+    <String key="transparent" value="transparent"/>
+    <String key="trunk" value="trunk"/>
+
+    <!-- ModEoCBroadcastStormProtectionTable_Panel -->
+    <String key="ModEoCBroadcastStormProtectionTable_Panel" value="Broadcast Storm Protection Table"/>
+    <String key="disable" value="disable"/>
+    <String key="enable" value="enable"/>
+    <String key="modEoCBroadcastStormProtectionCBATCardIndex" value="Broadcast Storm Protection CBAT Card Index"/>
+    <String key="modEoCBroadcastStormProtectionCNUIndex" value="Broadcast Storm Protection CNU Index"/>
+    <String key="modEoCBroadcastStormProtectionEN" value="Broadcast Storm Protection Enable"/>
+    <String key="modEoCBroadcastStormProtectionPortIndex" value="Broadcast Storm Protection Port Index"/>
+    <String key="modEoCBroadcastStormThreshold" value="Broadcast Storm Threshold"/>
+    <String key="modEoCMulticastStormProtectionEN" value="Multicast Storm Protection Enable"/>
+    <String key="modEoCMulticastStormThreshold" value="Multicast Storm Threshold"/>
+    <String key="modEoCUnknownUnicastStormProtectionEN" value="Unknown Unicast Storm Protection Enable"/>
+    <String key="modEoCUnknownUnicastStormThreshold" value="Unknown Unicast Storm Threshold"/>
+
+    <String key="modEoCSoftwareUpgradeLogin" value="Software Upgrade Login"/>
+    <String key="modEoCSoftwareUpgradePassWord" value="Software Upgrade Password"/>
+    <String key="modEoCSoftwareUpgradeServerPort" value="Software Upgrade Server Port"/>
+    <String key="modEoCSoftwaretUpgradeServerIP" value="Softwaret Upgrade Server IP"/>
+
+    <!-- ModEoCSoftwareUpgradeTable_Panel -->
+    <String key="ModEoCSoftwareUpgradeTable_Panel" value="Software Upgrade Table"/>
+    <String key="ModEoCSoftwareUpgradeGroup_Panel" value="Software Upgrade Group"/>
+    <String key="cbat" value="cbat"/>
+    <String key="cbat-card" value="Cbat Card"/>
+    <String key="cnu" value="cnu"/>
+    <String key="download" value="download"/>
+    <String key="downloadfailed" value="download failed"/>
+    <String key="downloading" value="downloading"/>
+    <String key="downloadsuccess" value="download success"/>
+    <String key="modEoCSoftwareUpgradeCBATCardIndex" value="Software Upgrade CBAT Card Index"/>
+    <String key="modEoCSoftwareUpgradeCNUIndex" value="Software Upgrade CNU Index"/>
+    <String key="modEoCSoftwareUpgradeDevType" value="Software Upgrade Device Type"/>
+    <String key="modEoCSoftwareUpgradeFileName" value="Software Upgrade File Name"/>
+    <String key="modEoCSoftwareUpgradeMACAddress" value="Software Upgrade MAC Address"/>
+    <String key="modEoCSoftwareUpgradeProceed" value="Software Upgrade Proceed"/>
+    <String key="modEoCSoftwareUpgradeResult" value="Software Upgrade Result"/>
+    <String key="none" value="none"/>
+    <String key="other" value="other"/>
+    <String key="reserved1" value="reserved1"/>
+    <String key="reserved2" value="reserved2"/>
+    <String key="reserved3" value="reserved3"/>
+    <String key="upgrade" value="upgrade"/>
+    <String key="upgradefailed" value="upgrade failed"/>
+    <String key="upgradesuccess" value="upgrade success"/>
+    <String key="upgrading" value="upgrading"/>
+    <String key="upload" value="upload"/>
+    <String key="uploadfailed" value="upload failed"/>
+    <String key="uploading" value="uploading"/>
+    <String key="uploadsuccess" value="upload success"/>
+
+    <String key="Alarm Management" value="Alarm Management"/>
+    <String key="Trap Configuration" value="Trap Configuration"/>
+
+
+    <String key="ModEoCTrapGroup_Panel" value="Trap Group"/>
+    <String key="ModEoCTrapTable_Panel" value="Trap Table"/>
+    <String key="modEoCTrapMaxInterval" value="Trap Max Interval(0.01s)"/>
+    <String key="modEoCTrapMaxTimes" value="TRAP Max Times"/>
+    <String key="modEoCTrapMinInterval" value="Trap Min Interval(0.01s)"/>
+    <String key="modEoCTrapVertion" value="Trap Vertion"/>
+
+    <String key="false" value="false"/>
+    <String key="modEoCTrapCommunity" value="TRAP Community"/>
+    <String key="modEoCTrapIP" value="TRAP IP"/>
+    <String key="modEoCTrapIndex" value="Trap Index"/>
+    <String key="modEoCTrapStatus" value="TRAP Status"/>
+    <String key="true" value="true"/>
+
+    <!-- AnalogPropertyTable_Panel -->
+    <String key="Analog Property Table" value="Analog Property Table"/>
+    <String key="AnalogPropertyTable_Panel" value="Analog Property"/>
+    <String key="aasHI" value="aasHI"/>
+    <String key="aasHIHI" value="aasHIHI"/>
+    <String key="aasLO" value="aasLO"/>
+    <String key="aasLOLO" value="aasLOLO"/>
+    <String key="aasNominal" value="Nominal"/>
+    <String key="analogAlarmDeadband" value="Analog Alarm Deadband"/>
+    <String key="analogAlarmEnable" value="Analog Alarm Enable"/>
+    <String key="analogAlarmHI" value="Analog Alarm HI"/>
+    <String key="analogAlarmHIHI" value="Analog Alarm HIHI"/>
+    <String key="analogAlarmLO" value="Analog Alarm LO"/>
+    <String key="analogAlarmLOLO" value="Analog Alarm LOLO"/>
+    <String key="analogAlarmParameterOID" value="Analog Alarm Parameter OID"/>
+    <String key="analogAlarmState" value="Analog Alarm State"/>
+    <String key="analogAlarmEnable_LOLO" value="Analog Alarm Enable_LOLO"/>
+    <String key="analogAlarmEnable_LO" value="Analog Alarm Enable_LOLO"/>
+    <String key="analogAlarmEnable_HI" value="Analog Alarm Enable_HI"/>
+    <String key="analogAlarmEnable_HIHI" value="Analog Alarm Enable_HIHI"/>
+    <String key="analogAlarmEnable_ALLCLOSE" value="Analog Alarm Enable_ALL CLOSE"/>
+
+    <String key="Err_AnalogAlarmEnable" value="Err_Analog Alarm Enable"/>
+
+    <!-- DiscretePropertyTable_Panel -->
+    <String key="DiscretePropertyTable_Panel" value="Discrete Property"/>
+    <String key="Discrete Property Table" value="Discrete Property Table"/>
+    <String key="dasDiscreteMajor" value="Discrete Major"/>
+    <String key="dasDiscreteMinor" value="Discrete Minor"/>
+    <String key="dasNominal" value="Nominal"/>
+    <String key="disable" value="disable"/>
+    <String key="discreteAlarmEnable" value="Discrete Alarm Enable"/>
+    <String key="discreteAlarmParameterOID" value="Discrete Alarm Parameter OID"/>
+    <String key="discreteAlarmState" value="Discrete Alarm State"/>
+    <String key="discreteAlarmValue" value="Discrete Alarm Value"/>
+    <String key="enableMajor" value="Enable Major"/>
+    <String key="enableMinor" value="Enable Minor"/>
+
+    <!-- CurrentAlarmTable_Panel -->
+    <String key="CurrentAlarmTable_Panel" value="Current Alarm"/>
+    <String key="Current Alarm Table" value="Current Alarm Table"/>
+    <String key="caasDiscreteMajor" value="Discrete Major"/>
+    <String key="caasDiscreteMinor" value="Discrete Minor"/>
+    <String key="caasHI" value="caasHI"/>
+    <String key="caasHIHI" value="caasHIHI"/>
+    <String key="caasLO" value="caasLO"/>
+    <String key="caasLOLO" value="caasLOLO"/>
+    <String key="currentAlarmOID" value="Current Alarm OID"/>
+    <String key="currentAlarmState" value="Current Alarm State"/>
+    <String key="currentAlarmValue" value="Current Alarm Value"/>
+
+
+    <String key="Alarm Log Number" value="Alarm Log Number"/>
+
+    <String key="AlarmLog_Panel" value="Alarm Log"/>
+    <String key="alarmLogLastIndex" value="Alarm Log Last Index"/>
+    <String key="alarmLogNumberOfEntries" value="Alarm Log Number Of Entries"/>
+    <String key="alarmText" value="Alarm Text(optional)"/>
+
+    <!-- AlarmLogTable_Panel -->
+    <String key="AlarmLogTable_Panel" value="Alarm Log Table"/>
+    <String key="alarmLogIndex" value="Alarm Log Index"/>
+    <String key="alarmLogInformation" value="Alarm Log Information"/>
+    <String key="alarmLogTime" value="Alarm Log Time"/>
+    <String key="alarmLogType" value="Alarm Log Type"/>
+    <String key="alarmLogMessage" value="Alarm Log Message"/>
+
+    <String key="Performance Management" value="Performance Management"/>
+
+    <!-- ModEoCRealTimeStatisticTable_Panel -->
+
+    <String key="ModEoCRealTimeStatisticTable_Panel" value="Real Time Statistic"/>
+    <String key="modEoCRealTimeStatisticAveragePreFEC" value="Average Pre FEC"/>
+    <String key="modEoCRealTimeStatisticCBATCardIndex" value="CBAT Card Index"/>
+    <String key="modEoCRealTimeStatisticCNUIndex" value="CNU Index"/>
+    <String key="modEoCRealTimeStatisticReset" value="Reset"/>
+    <String key="modEoCRealTimeStatisticRxBcast" value="Rx Bcast(optional)"/>
+    <String key="modEoCRealTimeStatisticRxByte" value="Rx Byte"/>
+    <String key="modEoCRealTimeStatisticRxCrc" value="Rx Crc"/>
+    <String key="modEoCRealTimeStatisticRxDropped" value="Rx Dropped"/>
+    <String key="modEoCRealTimeStatisticRxMcast" value="Rx Mcast"/>
+    <String key="modEoCRealTimeStatisticRxPkt" value="Rx Pkt"/>
+    <String key="modEoCRealTimeStatisticRxShort" value="Rx Short"/>
+    <String key="modEoCRealTimeStatisticTxBcast" value="Tx Bcast(optional)"/>
+    <String key="modEoCRealTimeStatisticTxByte" value="Tx Byte"/>
+    <String key="modEoCRealTimeStatisticTxDropped" value="Tx Dropped"/>
+    <String key="modEoCRealTimeStatisticTxMcast" value="Tx Mcast"/>
+    <String key="modEoCRealTimeStatisticTxPkt" value="Tx Pkt"/>
+    <String key="modEoCRealTimeStatisticTxShort" value="Tx Short"/>
+
+    <String key="Reset Statistic" value="Reset Statistic"/>
+    <String key="Reset Statistic action canceled" value="Reset Statistic action canceled"/>
+    <String key="Reset Statistic operation failed" value="Reset Statistic operation failed"/>
+
+    <String key="BatchModify" value="Batch Modify"/>
+    <String key="Err_NeedSingleSelect_ModEoCCNUPortTable" value="Err_Need Single Select CNU Port"/>
+
+
+</StringMap>

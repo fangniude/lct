@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<TabbedPaneList>
+
+
+    <TabbedPane id="System Information">
+        <Panel name="ModEoCCBATDevInfoGroup_Panel" class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCBATDevInfoGroupPanel"/>
+        <Panel name="ModEoCCBATCardTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="ModEoCCBATDevStatusGroup_Panel"
+               class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCBATDevStatusGroupPanel"/>
+    </TabbedPane>
+
+
+    <TabbedPane id="Device Management">
+        <Panel name="ModEoCCBATNetworkAttrGroupPanel_Panel"
+               class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCBATNetworkAttrGroupPanel"/>
+        <Panel name="ModEoCCBATSNMPSettingGroupPanel_Panel"
+               class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCBATSNMPSettingGroupPanel"/>
+        <Panel name="ModEoCCBATAdminSNMPCommunityTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="modEoCCBATOtherAdminGroup_Panel"
+               class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCBATOtherAdminGroupPanel"/>
+        <Panel name="ModEoCSoftwareUpgradeGroup_Panel"
+               class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCSoftwareUpgradeGroupPanel"/>
+        <Panel name="ModEoCSoftwareUpgradeTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="RF">
+        <Panel name="ModEoCCBATCardRFGroup_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="MAC Layer">
+        <Panel name="ModEoCVLANGroup_Panel" class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCVLANGroupPanel"/>
+        <Panel name="ModEoCVLANTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="ModEoCVLANPortTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="ModEoCCBATCardMACCNUIsolationTable_Panel"
+               class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+
+    <TabbedPane id="CNU White List">
+        <Panel name="modEoCCNU_Panel" class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCNUPanel"/>
+        <Panel name="ModEoCCNUTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="ModEoCCNUWhiteList_Panel" class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCNUWhiteListPanel"/>
+        <Panel name="ModEoCCNUWhiteListTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="ModEoCCNUPort_Panel" class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCNUPortPanel"/>
+    </TabbedPane>
+
+
+    <TabbedPane id="CNU Service">
+        <Panel name="ModEoCCNUServiceTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="ModEoCCNUService_Panel" class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCNUServicePanel"/>
+        <Panel name="ModEoCCNUPortTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="IGMP Snooping">
+        <Panel name="ModEoCIGMPSnoopingTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="ModEoCBroadcastStormProtectionTable_Panel"
+               class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+
+    <TabbedPane id="Trap Configuration">
+        <Panel name="ModEoCTrapGroup_Panel" class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCTrapGroupPanel"/>
+        <Panel name="ModEoCTrapTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+
+    </TabbedPane>
+
+    <TabbedPane id="Analog Property Table">
+        <Panel name="AnalogPropertyTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="Discrete Property Table">
+        <Panel name="DiscretePropertyTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="Current Alarm Table">
+        <Panel name="CurrentAlarmTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="Alarm Log Number">
+        <Panel name="AlarmLog_Panel" class="com.winnertel.ems.epon.iad.eoc.gui.AlarmLogPanel"/>
+        <Panel name="AlarmLogTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="EoC Statistic">
+        <Panel name="ModEoCRealTimeStatisticTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+</TabbedPaneList>

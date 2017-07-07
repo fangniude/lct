@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<Security>
+    <!--sys general-->
+    <Authorization action="System_Information" privilege="Node_Level_Configuration:VIEW"/>
+    <Authorization action="Modify_SystemInfoMbean" privilege="Node_Level_Configuration:EDIT"/>
+
+    <Authorization action="SNMP_Configuration" privilege="Node_Level_Configuration:VIEW"/>
+    <Authorization action="Add_SysCommuTableMBean" privilege="Node_Level_Configuration:EDIT"/>
+    <Authorization action="Delete_SysCommuTableMBean" privilege="Node_Level_Configuration:EDIT"/>
+    <Authorization action="Add_EponTrapTableMBean" privilege="Node_Level_Configuration:EDIT"/>
+    <Authorization action="Modify_EponTrapTableMBean" privilege="Node_Level_Configuration:EDIT"/>
+    <Authorization action="Delete_EponTrapTableMBean" privilege="Node_Level_Configuration:EDIT"/>
+
+    <Authorization action="SNTP Configuration" privilege="Node_Level_Configuration:VIEW"/>
+    <Authorization action="Modify_SNTPGroupMBean" privilege="Node_Level_Configuration:EDIT"/>
+    <Authorization action="Add_SNTPServerTableMBean" privilege="Node_Level_Configuration:EDIT"/>
+    <Authorization action="Modify_SNTPServerTableMBean" privilege="Node_Level_Configuration:EDIT"/>
+    <Authorization action="Delete_SNTPServerTableMBean" privilege="Node_Level_Configuration:EDIT"/>
+
+    <Authorization action="OltCtcCdrCtrlGroup_Panel" privilege="Node_Level_Configuration:VIEW"/>
+    <Authorization action="Modify_OltCtcCdrCtrlGroup" privilege="Node_Level_Configuration:EDIT"/>
+    <Authorization action="Force_Report" privilege="Node_Level_Configuration:EDIT"/>
+
+    <Authorization action="Security" privilege="Security_Configuration:VIEW"/>
+    <Authorization action="Modify_SecurityMBean" privilege="Security_Configuration:EDIT"/>
+
+    <Authorization action="Alarm_Redefinition" privilege="Alarm_Facility_Configuration:VIEW"/>
+    <Authorization action="Modify_AlarmModelTableMBean" privilege="Alarm_Facility_Configuration:EDIT"/>
+
+    <Authorization action="Alarm Configuration" privilege="Alarm_Facility_Configuration:VIEW"/>
+    <Authorization action="Modify_AlarmFilteringMBean" privilege="Alarm_Facility_Configuration:EDIT"/>
+
+    <Authorization action="ActiveAlarmTable_Panel" privilege="Alarm_Facility_Configuration:VIEW"/>
+
+    <Authorization action="System_Log" privilege="Node_Level_Configuration:VIEW"/>
+    <Authorization action="Modify_SyslogMBean" privilege="Node_Level_Configuration:EDIT"/>
+    <Authorization action="Modify_SyslogServerTableMBean" privilege="Node_Level_Configuration:EDIT"/>
+
+    <Authorization action="System_Boot_Params" privilege="Node_Level_Configuration:VIEW"/>
+    <Authorization action="Modify_SysBootParamsMBean" privilege="Node_Level_Configuration:EDIT"/>
+
+    <Authorization action="InBand_OutBand_TTL" privilege="Node_Level_Configuration:VIEW"/>
+    <Authorization action="Modify_InOutBandTTLMBean" privilege="Node_Level_Configuration:EDIT"/>
+
+    <Authorization action="LoopbackGlobalSettingPanel" privilege="Node_Level_Configuration:VIEW"/>
+    <Authorization action="Modify_LoopbackGlobalSettingBean" privilege="Node_Level_Configuration:EDIT"/>
+    
+    <Authorization action="TCA" privilege="Node_Level_Configuration:VIEW"/>
+  	<Authorization action="Modify_TCAConfig" privilege="Node_Level_Configuration:EDIT"/>
+  	
+  	<Authorization action="GeneralPonTTL Configuration" privilege="Node_Level_Configuration:VIEW"/>
+  	<Authorization action="Modify_GeneralGPonTTLConfig" privilege="Node_Level_Configuration:EDIT"/>
+
+    <!-- Module Summary -->
+    <Authorization action="Module_Summary" privilege="EquipMgt"/>
+    <Authorization action="ONU_Registration" privilege="ONU_Mgt:VIEW"/>
+
+    <Authorization action="Dot3Olt2PonProtectionTable_Panel" privilege="Node_Level_Configuration:VIEW"/>
+    <Authorization action="Modify_Dot3Olt2PonProtectionTable" privilege="Node_Level_Configuration:EDIT"/>
+    <Authorization action="Switch_Olt2PonProtectionTable" privilege="Node_Level_Configuration:EDIT"/>
+    <Authorization action="Switch_Olt2PonProtectionTable_Log" privilege="Node_Level_Configuration:EDIT"/>
+
+    <Authorization action="EthIntelligentLinkTable_Panel" privilege="Node_Level_Configuration:VIEW"/>
+    <Authorization action="Add_EthIntelligentLinkTable" privilege="Node_Level_Configuration:EDIT"/>
+    <Authorization action="Delete_EthIntelligentLinkTable" privilege="Node_Level_Configuration:EDIT"/>
+    <Authorization action="IntelligentLinkReturnToMaster" privilege="Node_Level_Configuration:EDIT"/>
+
+    <!-- Chassis View -->
+    <Authorization action="Chassis_View" privilege="EquipMgt"/>
+    <Authorization action="Lock_Card" privilege="EquipMgt"/>
+    <Authorization action="Unlock_Card" privilege="EquipMgt"/>
+    <Authorization action="Reset_Card" privilege="EquipMgt"/>
+    <Authorization action="Lock_Port" privilege="EquipMgt"/>
+    <Authorization action="Unlock_Port" privilege="EquipMgt"/>
+
+    <Authorization action="Chassis_Configuration" privilege="EquipMgt"/>
+    <Authorization action="Modify_ChassisConfTable" privilege="EquipMgt"/>
+
+    <!-- CSM -->
+    <Authorization action="Module_Information" privilege="Node_Level_Configuration:VIEW"/>
+    <Authorization action="Modify_EponModuleBoardTable" privilege="Node_Level_Configuration:EDIT"/>
+
+    <Authorization action="General_Configuration" privilege="Node_Level_Configuration:VIEW"/>
+    <Authorization action="Modify_GeneralConfiguration" privilege="Node_Level_Configuration:EDIT"/>
+
+    <Authorization action="QosExtCosQueueMapTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Modify_QosExtCosQueMapMBean" privilege="BBS_Service_Configuration:EDIT"/>
+    <Authorization action="Delete_QosExtCosQueMapMBean" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="QosExtDscpCosMapTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Modify_QosExtDscpCosMapTable" privilege="BBS_Service_Configuration:EDIT"/>
+    <Authorization action="Restore_QosExtDscpCosMapTable" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="QosExtDscpMutMapTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Modify_QosExtDscpMutMapTable" privilege="BBS_Service_Configuration:EDIT"/>
+    <Authorization action="Delete_QosExtDscpMutMapTable" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="QosExtIpPrecDscpMapTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Modify_QosExtIpPrecDscpMapTable" privilege="BBS_Service_Configuration:EDIT"/>
+    <Authorization action="Delete_QosExtIpPrecDscpMapTable" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <!-- Link Aggregation -->
+    <Authorization action="LinkAggregation_Panel" privilege="Layer_2:VIEW"/>
+    <Authorization action="Delete_LinkAggregation" privilege="Layer_2:EDIT"/>
+    <Authorization action="Modify_LinkAggregation" privilege="Layer_2:EDIT"/>
+    <Authorization action="Add_LinkAggregation" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="SwitchPortExtTable_Panel_lg" privilege="Layer_2:VIEW"/>
+    <Authorization action="Modify_SwitchPortExtTable" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="Interface_table_lg" privilege="Layer_2:VIEW"/>
+    <Authorization action="Modify_InterfaceTableLgMBean" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="MACAddress_Panel" privilege="Layer_2:VIEW"/>
+    <Authorization action="Add_MACAddress" privilege="Layer_2:EDIT"/>
+    <Authorization action="Delete_MACAddress" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="MonitorSessionTablePanel" privilege="Layer_2:VIEW"/>
+    <Authorization action="Add_MonitorSessionControlTableMBean" privilege="Layer_2:EDIT"/>
+    <Authorization action="Modify_MonitorSessionControlTableMBean" privilege="Layer_2:EDIT"/>
+    <Authorization action="Delete_MonitorSessionControlTableMBean" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="RSTPGeneral_Panel" privilege="Layer_2:VIEW"/>
+    <Authorization action="Modify_RSTPGeneral" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="RSTPPort_Panel" privilege="Layer_2:VIEW"/>
+    <Authorization action="Modify_RSTPPort" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="PortBasedVLAN_Panel" privilege="Layer_2:VIEW"/>
+    <Authorization action="Add_PortBasedVLAN" privilege="Layer_2:EDIT"/>
+    <Authorization action="Modify_PortBasedVLAN" privilege="Layer_2:EDIT"/>
+    <Authorization action="Delete_PortBasedVLAN" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="SuperSVITable_Panel" privilege="Layer_3:VIEW"/>
+    <Authorization action="Add_SuperSVITable" privilege="Layer_3:EDIT"/>
+    <Authorization action="Modify_SuperSVITable" privilege="Layer_3:EDIT"/>
+    <Authorization action="Delete_SuperSVITable" privilege="Layer_3:EDIT"/>
+
+    <Authorization action="EthIfExtMixtureMBean_Panel" privilege="Layer_3:VIEW"/>
+    <Authorization action="Add_EthIfExtMixtureMBean" privilege="Layer_3:EDIT"/>
+    <Authorization action="Modify_EthIfExtMixtureMBean" privilege="Layer_3:EDIT"/>
+    <Authorization action="Delete_EthIfExtMixtureMBean" privilege="Layer_3:EDIT"/>
+
+    <Authorization action="EthIfExtTable_Panel" privilege="Layer_3:VIEW"/>
+    <Authorization action="Add_EthIfExtTable" privilege="Layer_3:EDIT"/>
+    <Authorization action="Modify_EthIfExtTable" privilege="Layer_3:EDIT"/>
+    <Authorization action="Delete_EthIfExtTable" privilege="Layer_3:EDIT"/>
+
+    <Authorization action="SecondIPAddressTable_Panel" privilege="Layer_3:VIEW"/>
+    <Authorization action="Add_SecondIPAddressTable" privilege="Layer_3:EDIT"/>
+    <Authorization action="Delete_SecondIPAddressTable" privilege="Layer_3:EDIT"/>
+
+    <Authorization action="EponArpTable_Panel" privilege="Layer_3:VIEW"/>
+    <Authorization action="Add_EponArpTable" privilege="Layer_3:EDIT"/>
+    <Authorization action="Delete_EponArpTable" privilege="Layer_3:EDIT"/>
+
+    <Authorization action="StaticRouteTable_Panel" privilege="Layer_3:VIEW"/>
+    <Authorization action="Add_StaticRouteTable" privilege="Layer_3:EDIT"/>
+    <Authorization action="Delete_StaticRouteTable" privilege="Layer_3:EDIT"/>
+
+    <Authorization action="HostRouteTable_Panel" privilege="Layer_3:VIEW"/>
+    <Authorization action="Add_HostRouteTable" privilege="Layer_3:EDIT"/>
+    <Authorization action="Delete_HostRouteTable" privilege="Layer_3:EDIT"/>
+
+    <Authorization action="IpRouteTable_Panel" privilege="Layer_3:VIEW"/>
+
+    <Authorization action="LgQosExtCosQueueSchedTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Modify_LgQosExtCosQueueSchedTable" privilege="BBS_Service_Configuration:EDIT"/>
+    <Authorization action="Delete_LgQosExtCosQueueSchedTable" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="LgQosExtDscpTrustTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Modify_LgQosExtDscpTrustTable" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="AclExtProfileImportTable_Panel_r200" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Add_AclExtProfileImportTable" privilege="BBS_Service_Configuration:EDIT"/>
+    <Authorization action="Delete_AclExtProfileImportTable" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="AclExtProfileTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+
+    <Authorization action="AclExtIntfConfigTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Add_AclExtIntfConfigTable" privilege="BBS_Service_Configuration:EDIT"/>
+    <Authorization action="Modify_AclExtIntfConfigTable" privilege="BBS_Service_Configuration:EDIT"/>
+    <Authorization action="Delete_AclExtIntfConfigTable" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="Dot3Olt2AclConfTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Add_Dot3Olt2AclConfTable" privilege="BBS_Service_Configuration:EDIT"/>
+    <Authorization action="Delete_Dot3Olt2AclConfTable" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="AclExtProfileTable_Panel_r200" privilege="BBS_Service_Configuration:VIEW"/>
+
+    <Authorization action="EponMulticastCtrlGroupPanel" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Modify_EponMulticastCtrlGroup" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="IgmpSnoopCfgTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Modify_IgmpSnoopCfgTable" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="IgmpInterfaceTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Modify_IgmpInterfaceTable" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="IgmpCacheTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Add_IgmpCacheTable" privilege="BBS_Service_Configuration:EDIT"/>
+    <Authorization action="Delete_IgmpCacheTable" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="OnuCtcMulticastTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+
+    <Authorization action="OnuCtcMCastStatTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+
+    <Authorization action="DHCPGeneralPanel" privilege="Layer_3:VIEW"/>
+    <Authorization action="Modify_DHCPServiceState" privilege="Layer_3:EDIT"/>
+
+    <Authorization action="DHCPOption82Panel" privilege="Layer_3:VIEW"/>
+    <Authorization action="Modify_DHCPOption82" privilege="Layer_3:EDIT"/>
+
+    <Authorization action="DHCPRelayServerTable_Panel" privilege="Layer_3:VIEW"/>
+    <Authorization action="Modify_DHCPRelay" privilege="Layer_3:EDIT"/>
+    <Authorization action="Add_DHCPRelayServerTable" privilege="Layer_3:EDIT"/>
+    <Authorization action="Delete_DHCPRelayServerTable" privilege="Layer_3:EDIT"/>
+
+    <Authorization action="DHCPPoolTable_Panel" privilege="Layer_3:VIEW"/>
+    <Authorization action="Add_DHCPPoolTable" privilege="Layer_3:EDIT"/>
+    <Authorization action="Modify_DHCPPoolTable" privilege="Layer_3:EDIT"/>
+    <Authorization action="Delete_DHCPPoolTable" privilege="Layer_3:EDIT"/>
+
+    <Authorization action="DHCPIPAddressRange" privilege="Layer_3:VIEW"/>
+    <Authorization action="Modify_DHCPIPAddressRangeMBean" privilege="Layer_3:EDIT"/>
+    <Authorization action="Add_DHCPPoolIncludeTableMBean" privilege="Layer_3:EDIT"/>
+    <Authorization action="Modify_DHCPPoolIncludeTableMBean" privilege="Layer_3:EDIT"/>
+    <Authorization action="Delete_DHCPPoolIncludeTableMBean" privilege="Layer_3:EDIT"/>
+    <Authorization action="Add_DHCPPoolExcludeTableMBean" privilege="Layer_3:EDIT"/>
+    <Authorization action="Modify_DHCPPoolExcludeTableMBean" privilege="Layer_3:EDIT"/>
+    <Authorization action="Delete_DHCPPoolExcludeTableMBean" privilege="Layer_3:EDIT"/>
+
+    <Authorization action="DHCPPoolDefaultRouterTable_Panel" privilege="Layer_3:VIEW"/>
+    <Authorization action="Delete_DHCPPoolDefaultRouterTable" privilege="Layer_3:EDIT"/>
+    <Authorization action="Add_DHCPPoolDefaultRouterTable" privilege="Layer_3:EDIT"/>
+
+    <Authorization action="DHCPDNSServer" privilege="Layer_3:VIEW"/>
+    <Authorization action="Add_DHCPDNSServerTableMBean" privilege="Layer_3:EDIT"/>
+    <Authorization action="Delete_DHCPDNSServerTableMBean" privilege="Layer_3:EDIT"/>
+
+    <Authorization action="DHCPLogServer" privilege="Layer_3:VIEW"/>
+    <Authorization action="Add_DHCPLogServerTableMBean" privilege="Layer_3:EDIT"/>
+    <Authorization action="Delete_DHCPLogServerTableMBean" privilege="Layer_3:EDIT"/>
+
+    <Authorization action="DHCPNTPServer" privilege="Layer_3:VIEW"/>
+    <Authorization action="Add_DHCPNTPServerTableMBean" privilege="Layer_3:EDIT"/>
+    <Authorization action="Delete_DHCPNTPServerTableMBean" privilege="Layer_3:EDIT"/>
+
+    <Authorization action="DHCPManualBinding" privilege="Layer_3:VIEW"/>
+    <Authorization action="Add_DHCPMBindingTableMBean" privilege="Layer_3:EDIT"/>
+    <Authorization action="Modify_DHCPMBindingTableMBean" privilege="Layer_3:EDIT"/>
+    <Authorization action="Delete_DHCPMBindingTableMBean" privilege="Layer_3:EDIT"/>
+
+    <Authorization action="DHCPIPBindingStatus" privilege="Layer_3:VIEW"/>
+    <Authorization action="Delete_DHCPIPBindingStatusTableMBean" privilege="Layer_3:EDIT"/>
+
+    <Authorization action="DHCPLeaseLimit" privilege="Layer_3:VIEW"/>
+    <Authorization action="Add_DHCPLeaseLimitTableMBean" privilege="Layer_3:EDIT"/>
+    <Authorization action="Modify_DHCPLeaseLimitTableMBean" privilege="Layer_3:EDIT"/>
+    <Authorization action="Delete_DHCPLeaseLimitTableMBean" privilege="Layer_3:EDIT"/>
+
+    <Authorization action="DHCP_States" privilege="Layer_3:VIEW"/>
+    <Authorization action="Modify_DHCPServerStatsMBean" privilege="Layer_3:EDIT"/>
+
+    <Authorization action="Interface_table_gem" privilege="Layer_2:VIEW"/>
+    <Authorization action="Modify_InterfaceTableGEMtMBean" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="SwitchPortExtTable_Panel" privilege="Layer_2:VIEW"/>
+    <Authorization action="SwitchPortExtTable_Panel_2" privilege="Layer_2:VIEW"/>
+    <Authorization action="Modify_SwitchPortExtTable" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="IntfRateControlTable_Panel_gem" privilege="Layer_2:VIEW"/>
+    <Authorization action="Modify_IntfRateControlGEMTable" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="Interface_table" privilege="Layer_2:VIEW"/>
+    <Authorization action="Modify_InterfaceTableMBean" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="IntfRateControlTable_Panel" privilege="Layer_2:VIEW"/>
+    <Authorization action="IntfRateControlTable_Panel_2" privilege="Layer_2:VIEW"/>
+    <Authorization action="Modify_IntfRateControlTable" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="Dot3OltTable_Panel" privilege="OLT_portMgt:VIEW"/>
+    <Authorization action="Modify_Dot3OltTable" privilege="OLT_portMgt:EDIT"/>
+
+    <Authorization action="Dot3DbaOltTable_Panel" privilege="OLT_portMgt:VIEW"/>
+    <Authorization action="Modify_Dot3DbaOltTable" privilege="OLT_portMgt:EDIT"/>
+
+    <Authorization action="Dot3OltTransceiverTable_Panel" privilege="OLT_portMgt:VIEW"/>
+
+    <Authorization action="Dot3OnuTable_Panel" privilege="ONU_Service:VIEW"/>
+    <Authorization action="Modify_Dot3OnuTable" privilege="ONU_Service:EDIT"/>
+    <Authorization action="Delete_Dot3OnuTable" privilege="ONU_Service:EDIT"/>
+
+    <Authorization action="Dot3DbaSlaTable_Panel" privilege="ONU_Service:VIEW"/>
+    <Authorization action="Add_Dot3DbaSlaTable" privilege="ONU_Service:EDIT"/>
+    <Authorization action="Modify_Dot3DbaSlaTable" privilege="ONU_Service:EDIT"/>
+
+    <Authorization action="Dot3OnuSwitchTable_Panel" privilege="ONU_Service:VIEW"/>
+    <Authorization action="Add_Dot3OnuSwitchTable" privilege="ONU_Service:EDIT"/>
+    <Authorization action="Modify_Dot3OnuSwitchTable" privilege="ONU_Service:EDIT"/>
+    <Authorization action="Delete_Dot3OnuSwitchTable" privilege="ONU_Service:EDIT"/>
+
+    <Authorization action="Dot3UnboundOnuTable_Panel" privilege="ONU_Service:VIEW"/>
+    <Authorization action="Modify_Dot3UnboundOnuTable" privilege="ONU_Service:EDIT"/>
+
+    <Authorization action="Dot3boundOnuTable_Panel" privilege="ONU_Service:VIEW"/>
+    <Authorization action="Delete_Dot3boundOnuTable" privilege="ONU_Service:EDIT"/>
+
+    <Authorization action="Dot3OnuOamTable_Panel" privilege="ONU_Service:VIEW"/>
+
+    <Authorization action="Dot3OnuRTTPanel" privilege="ONU_Mgt:VIEW"/>
+
+    <Authorization action="Dot3OnuPingPanel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Delete_OnuPingTestMBean" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3OnuLinktestPanel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_OnuLinktestMBean" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3OnuLoopbackPanel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_OnuLoopbackMBean" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="QosExtCosQueueSchedTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="QosExtCosQueueSchedTable_Panel_2" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Modify_QosExtCosQueueSchedTable" privilege="BBS_Service_Configuration:EDIT"/>
+    <Authorization action="Delete_QosExtCosQueueSchedTable" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="QosExtDscpTrustTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="QosExtDscpTrustTable_Panel_2" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Modify_QosExtDscpTrustTable" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="MSTP_General_Panel" privilege="Layer_2:VIEW"/>
+    <Authorization action="Modify_MSTPGeneralMBean" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="MSTP_Port_Table" privilege="Layer_2:VIEW"/>
+    <Authorization action="Modify_MSTPPortTableMBean" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="MSTP_Map_Table" privilege="Layer_2:VIEW"/>
+    <Authorization action="Add_MSTPMapTableMBean" privilege="Layer_2:EDIT"/>
+    <Authorization action="Modify_MSTPMapTableMBean" privilege="Layer_2:EDIT"/>
+    <Authorization action="Delete_MSTPMapTableMBean" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="MSTP_Xst_Table" privilege="Layer_2:VIEW"/>
+    <Authorization action="Modify_MSTPXstTableMBean" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="MSTP_Xst_Port_Table" privilege="Layer_2:VIEW"/>
+    <Authorization action="Modify_MSTPXstPortTableMBean" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="Upgrade_Method_Definition_Hardware" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Add_ONUUpgradeHwTableMBean" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Delete_ONUUpgradeHwTableMBean" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Schedule_Upgrade" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="AllScheduleUpgradePanel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Add_ONUScheduleUpgradeTableMBean" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Delete_ONUScheduleUpgradeTableMBean" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Schedule_Upgrade_Result" privilege="ONU_Mgt:VIEW"/>
+
+    <Authorization action="Manual_Upgrade_Result" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Add_ONUManualUpgradeTableMBean" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Ethernet_Port" privilege="Counters_Mgr:VIEW"/>
+    <Authorization action="Delete_EthernetPerfStaticsCounterTableMBean" privilege="Counters_Mgr:RESET"/>
+
+    <Authorization action="ONU_Performance" privilege="Counters_Mgr:VIEW"/>
+    <Authorization action="Delete_ONUEPonStatesTableMBean" privilege="Counters_Mgr:RESET"/>
+
+    <Authorization action="OLT_Performance" privilege="Counters_Mgr:VIEW"/>
+    <Authorization action="Delete_OLTEPonStatesTableMBean" privilege="Counters_Mgr:RESET"/>
+
+    <Authorization action="IgmpSnoopingTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+
+    <Authorization action="FileSystemGroupMOD" privilege="Node_Level_Configuration:VIEW"/>
+    <Authorization action="FtpConfGroupMOD" privilege="Node_Level_Configuration:VIEW"/>
+    <Authorization action="TftpConfMOD" privilege="Node_Level_Configuration:VIEW"/>
+    <Authorization action="SystemBootGroupMOD_Save" privilege="Node_Level_Configuration:EDIT"/>
+    <Authorization action="SystemBootGroupMOD_Restart" privilege="Node_Level_Configuration:EDIT"/>
+    <Authorization action="SystemBootGroupMOD_Restore" privilege="Node_Level_Configuration:EDIT"/>
+    <Authorization action="IAD_Mgt" privilege="IAD_Mgt"/>
+
+    <Authorization action="Ethernet_Performance" privilege="Counters_Mgr:VIEW"/>
+    <Authorization action="PonIf2ExtStatTable_OLT_Panel" privilege="Counters_Mgr:VIEW"/>
+    <Authorization action="Delete_PonIf2ExtStatTable_OLT" privilege="Counters_Mgr:RESET"/>
+    <Authorization action="PonIf2ExtStatTable_ONU_Panel" privilege="Counters_Mgr:VIEW"/>
+    <Authorization action="Delete_PonIf2ExtStatTable_ONU" privilege="Counters_Mgr:RESET"/>
+    <Authorization action="Delete_PonIf2ExtStatTable" privilege="Counters_Mgr:RESET"/>
+    <Authorization action="Delete_EthernetPerfStaticsCounterTableMBean" privilege="Counters_Mgr:RESET"/>
+
+    <Authorization action="PonSystemGroup_Panel" privilege="OLT_portMgt:VIEW"/>
+    <Authorization action="Modify_PonSystemGroup" privilege="OLT_portMgt:EDIT"/>
+
+    <Authorization action="Dot3Olt2Table_Panel" privilege="OLT_portMgt:VIEW"/>
+    <Authorization action="Modify_Dot3Olt2Table" privilege="OLT_portMgt:EDIT"/>
+
+    <Authorization action="Dot3Olt2PortTable_Panel" privilege="OLT_portMgt:VIEW"/>
+    <Authorization action="Dot3Olt2PortTable_Panel_2" privilege="OLT_portMgt:VIEW"/>
+    <Authorization action="Modify_Dot3Olt2PortTable" privilege="OLT_portMgt:EDIT"/>
+    <Authorization action="Backup_Port" privilege="OLT_portMgt:EDIT"/>
+    <Authorization action="Backup_Port_Log" privilege="OLT_portMgt:EDIT"/>
+
+    <Authorization action="Dot3Olt2QosGlbTable_Panel" privilege="OLT_portMgt:VIEW"/>
+    <Authorization action="Modify_Dot3Olt2QosGlbTable" privilege="OLT_portMgt:EDIT"/>
+
+    <Authorization action="Dot3Olt2DbaGlbTable_Panel" privilege="OLT_portMgt:VIEW"/>
+    <Authorization action="Modify_Dot3Olt2DbaGlbTable" privilege="OLT_portMgt:EDIT"/>
+
+    <Authorization action="Dot3Olt2PolicingTable_Panel" privilege="OLT_portMgt:VIEW"/>
+    <Authorization action="Modify_Dot3Olt2PortTable" privilege="OLT_portMgt:EDIT"/>
+    <Authorization action="Add_Dot3Olt2PolicingTable" privilege="OLT_portMgt:EDIT"/>
+    <Authorization action="Modify_Dot3Olt2PolicingTable" privilege="OLT_portMgt:EDIT"/>
+    <Authorization action="Delete_Dot3Olt2PolicingTable" privilege="OLT_portMgt:EDIT"/>
+
+    <Authorization action="ONU_Monitor" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Onu_Monitor_Modify" privilege="ONU_Mgt:EDIT"/>
+  	<Authorization action="Onu_Monitor_Reset" privilege="ONU_Mgt:EDIT"/>
+  	<Authorization action="Onu_Monitor_Export" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3Onu2Table_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Add_Dot3Onu2Table" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Modify_Dot3Onu2Table" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Delete_Dot3Onu2Table" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3Onu2TrafficProfTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Dot3Onu2TrafficProfTable_Panel_2" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_Dot3OnuTrafficProfTable" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Modify_Dot3OnuTrafficProfTable_Log" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="OnuBatchTrafficProfTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Batch_Modify_Dot3OnuTrafficProfTable" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="OnuDbaProfileTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Add_OnuDbaProfileTable" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Modify_OnuDbaProfileTable" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Delete_OnuDbaProfileTable" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3Onu2CtcTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Dot3Onu2CtcTable_Panel_2" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Dot3Onu2CtcConfigure_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_Dot3Onu2CtcConfigure" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Reset_ONU" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Reset_ONU_Log" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3Onu2QoSTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_Dot3Onu2QoSTable" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="MulticastConfigure_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_MulticastConfigure" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="UNIMulticastConfigure_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_UNIMulticastConfigure" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Clear_MulticastVlanList" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3Onu2ClassifiRuleTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Add_Dot3Onu2ClassifiRuleTable" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Modify_Dot3Onu2ClassifiRuleTable" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Delete_Dot3Onu2ClassifiRuleTable" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3Onu2CtcEtherPortTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_Dot3Onu2CtcEtherPortTable" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Restart_AutoNeg" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Clear_MulticastVlanList" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Clear_ClassificationRule" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3Onu2CtcEtherPortRateTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_Dot3Onu2CtcEtherPortRateTable" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="PonVlanTranslationTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Add_PonVlanTranslationTable" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Delete_PonVlanTranslationTable" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="OnuCtcMulticastStatForUserPortTable_Panel" privilege="ONU_Mgt:VIEW"/>
+
+    <Authorization action="SelectiveQinQMBeanPanel_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Add_SelectiveQinQMBeanPanel" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Delete_SelectiveQinQMBeanPanel" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="OnuFlexQinQMBean_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Add_OnuFlexQinQMBean" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Delete_OnuFlexQinQMBean" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3Onu2CtcVoipLockTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_ONUVoipLock" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3Onu2CtcE1LockTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_ONUE1Lock" privilege="ONU_Mgt:EDIT"/>
+    
+    <Authorization action="OnuSelectiveQinQ_Panel" privilege="ONU_Mgt:VIEW"/>
+  	<Authorization action="Add_OnuSelectiveQinQ" privilege="ONU_Mgt:EDIT"/>
+  	<Authorization action="Delete_OnuSelectiveQinQ" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="VlanModeConfigMBean_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_VlanModeConfigMBean" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="UNIVlanStackingMBean_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_UNIVlanStackingMBean" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3Onu2CtcEtherPortClassifiTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Add_Dot3Onu2CtcEtherPortClassifiTabl" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Modify_Dot3Onu2CtcEtherPortClassifiTabl" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Delete_Dot3Onu2CtcEtherPortClassifiTabl" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3Onu2CtcDbaTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_Dot3Onu2CtcDbaTable" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="OnuCtcMulticastCtrlTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Add_OnuCtcMulticastCtrlTable" privilege="BBS_Service_Configuration:EDIT"/>
+    <Authorization action="Delete_OnuCtcMulticastCtrlTable" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="OnuCtcBandCtrlTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_OnuCtcBandCtrlTable" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="OltPullDownMcTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Add_OltPullDownMcTable" privilege="BBS_Service_Configuration:EDIT"/>
+    <Authorization action="Delete_OltPullDownMcTable" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="Dot3Onu2CtcLpBkTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Add_Dot3Onu2CtcLpBkTable" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Delete_Dot3Onu2CtcLpBkTable" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3Onu2CtcClassifiAppTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Add_Dot3Onu2CtcClassifiAppTable" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Delete_Dot3Onu2CtcClassifiAppTable" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3Onu2CtcValidOnuMacTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_Dot3Onu2CtcValidOnuMacTable" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="PortOnuBatchTrafficProfTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_Dot3OnuTrafficProfTable" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="OnuCtcMulticastOnlineGroupStatTable_Panel" privilege="ONU_Mgt:VIEW"/>
+
+    <Authorization action="Dot3OnuRTT_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_Dot3OnuRTT" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Modify_Dot3OnuRTT_Log" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="UtsDot3Onu2OPTDTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_UtsDot3Onu2OPTDTable" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3Onu2CtcLpBkGroup_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_Dot3Onu2CtcLpBkGroup" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3Onu2StaticFDBTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Add_Dot3Onu2StaticFDBTable" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Delete_Dot3Onu2StaticFDBTable" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3Onu2FDBTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Add_Dot3Onu2FDBTable" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Delete_Dot3Onu2FDBTable" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3Olt2VlanStackingTable_Panel" privilege="OLT_portMgt:VIEW"/>
+    <Authorization action="Dot3Olt2VlanStackingTable_Panel_2" privilege="OLT_portMgt:VIEW"/>
+    <Authorization action="Add_Dot3Olt2VlanStackingTable" privilege="OLT_portMgt:EDIT"/>
+    <Authorization action="Delete_Dot3Olt2VlanStackingTable" privilege="OLT_portMgt:EDIT"/>
+
+    <Authorization action="Dot3OnuClassifiImportTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Add_Dot3OnuClassifiImportTable" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Delete_Dot3OnuClassifiImportTable" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3Onu2CtcClassifiRuleTable_Panel" privilege="ONU_Mgt:VIEW"/>
+
+    <Authorization action="Dot3Onu2CtcMulticastCtrlTable_Panel" privilege="ONU_Mgt:VIEW"/>
+
+    <Authorization action="OnuLoopbackTest_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_OnuLoopbackTest" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="OnuLoopbackTestTable_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="OnuLoopbackTestTable_Panel_2" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_OnuLoopbackTestTable" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="Dot3Olt2PortDbaTable_Panel" privilege="OLT_portMgt:VIEW"/>
+    <Authorization action="Dot3Olt2PortDbaTable_Panel_2" privilege="OLT_portMgt:VIEW"/>
+    <Authorization action="Modify_Dot3Olt2PortDbaTable" privilege="OLT_portMgt:EDIT"/>
+    
+    <Authorization action="OltSelectiveQinQ_Panel" privilege="OLT_portMgt:VIEW"/>
+    <Authorization action="OltSelectiveQinQ_Panel_2" privilege="OLT_portMgt:VIEW"/>
+    <Authorization action="Add_OltSelectiveQinQ" privilege="OLT_portMgt:EDIT"/>
+    <Authorization action="Delete_OltSelectiveQinQ" privilege="OLT_portMgt:EDIT"/>
+
+    <Authorization action="OltGlbMulticastGroupTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Add_OltGlbMulticastGroupTable" privilege="BBS_Service_Configuration:EDIT"/>
+    <Authorization action="Delete_OltGlbMulticastGroupTable" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="Switch_Board" privilege="Node_Level_Configuration:EDIT"/>
+    <Authorization action="Save_System" privilege="Node_Level_Configuration:EDIT"/>
+    <Authorization action="Restart_NE" privilege="Node_Level_Configuration:EDIT"/>
+    <Authorization action="Restore_NE" privilege="Node_Level_Configuration:EDIT"/>
+
+    <Authorization action="OnuPowerMeasure_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_OnuPowerMeasure" privilege="ONU_Mgt:EDIT"/>
+    
+    <Authorization action="PowerMeasure_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Modify_OnuPowerMeasureTable" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="OnuDiagnosisTableDetail_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Start_OnuDiagnosisTable" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Stop_OnuDiagnosisTable" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Start_OnuDiagnosisTable_Log" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Stop_OnuDiagnosisTable_Log" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="OnuMulticastCtrlHeadPanel" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Modify_OnuMulticastCtrlHead" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="OnuMulticastCtrlProfilePanel" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Modify_OnuMulticastCtrlProfile" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="EthVlanMappingTable_Panel_2" privilege="Layer_2:VIEW"/>
+    <Authorization action="EthVlanTransparentTable_Panel" privilege="Layer_2:VIEW"/>
+    <Authorization action="Modify_EthVlanTransparentTable" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="EthSmartQinQTable_Panel" privilege="Layer_2:VIEW"/>
+    <Authorization action="Add_EthSmartQinQTable" privilege="Layer_2:EDIT"/>
+    <Authorization action="Delete_EthSmartQinQTable" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="EthVlanMappingTable_Panel" privilege="Layer_2:VIEW"/>
+    <Authorization action="Add_EthVlanMappingTable" privilege="Layer_2:EDIT"/>
+    <Authorization action="Delete_EthVlanMappingTable" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="PonIf2ExtStatTable_Panel" privilege="Layer_2:VIEW"/>
+
+    <Authorization action="Modify_UtsDot3Onu2OPTDTable_Panel" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="OnuFlexQinQMBean_Panel" privilege="ONU_Mgt:VIEW"/>
+    <Authorization action="Add_OnuFlexQinQMBean" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Modify_OnuFlexQinQMBean" privilege="ONU_Mgt:EDIT"/>
+    <Authorization action="Delete_OnuFlexQinQMBean" privilege="ONU_Mgt:EDIT"/>
+
+    <Authorization action="EthFlexQinQMBean_Panel" privilege="Layer_2:VIEW"/>
+    <Authorization action="Add_EthFlexQinQMBean" privilege="Layer_2:EDIT"/>
+    <Authorization action="Modify_EthFlexQinQMBean" privilege="Layer_2:EDIT"/>
+    <Authorization action="Delete_EthFlexQinQMBean" privilege="Layer_2:EDIT"/>
+
+    <Authorization action="Add_OnuEthUniCfgProTable" privilege=""/>
+    <Authorization action="Modify_OnuEthUniCfgProTable" privilege=""/>
+    <Authorization action="Delete_OnuEthUniCfgProTable" privilege=""/>
+
+    <Authorization action="Add_OnuRateCtrSchProfTable" privilege=""/>
+    <Authorization action="Modify_OnuRateCtrSchProfTable" privilege=""/>
+    <Authorization action="Delete_OnuRateCtrSchProfTable" privilege=""/>
+
+    <Authorization action="Add_OnuVirtualPortCfgTable" privilege=""/>
+    <Authorization action="Modify_OnuVirtualPortCfgTable" privilege=""/>
+    <Authorization action="Delete_OnuVirtualPortCfgTable" privilege=""/>
+
+    <Authorization action="Add_OnuVlanPriBitsUpTrafficMapProfTable" privilege=""/>
+    <Authorization action="Modify_OnuVlanPriBitsUpTrafficMapProfTable" privilege=""/>
+    <Authorization action="Delete_OnuVlanPriBitsUpTrafficMapProfTable" privilege=""/>
+
+    <Authorization action="Add_OnuVlanIdUpTrafficMapProfTable" privilege=""/>
+    <Authorization action="Modify_OnuVlanIdUpTrafficMapProfTable" privilege=""/>
+    <Authorization action="Delete_OnuVlanIdUpTrafficMapProfTable" privilege=""/>
+
+    <Authorization action="Add_OnuVlanIdVlanPriBitUpTrafficMapProfTable" privilege=""/>
+    <Authorization action="Modify_OnuVlanIdVlanPriBitUpTrafficMapProfTable" privilege=""/>
+    <Authorization action="Delete_OnuVlanIdVlanPriBitUpTrafficMapProfTable" privilege=""/>
+
+    <Authorization action="Add_OnuStaticMultiGroupProfTable" privilege=""/>
+    <Authorization action="Modify_OnuStaticMultiGroupProfTable" privilege=""/>
+    <Authorization action="Delete_OnuStaticMultiGroupProfTable" privilege=""/>
+
+    <Authorization action="Add_OltVlanTransProfTable" privilege=""/>
+    <Authorization action="Modify_OltVlanTransProfTable" privilege=""/>
+    <Authorization action="Delete_OltVlanTransProfTable" privilege=""/>
+
+    <Authorization action="Add_OnuVlanTransProfTable" privilege=""/>
+    <Authorization action="Modify_OnuVlanTransProfTable" privilege=""/>
+    <Authorization action="Delete_OnuVlanTransProfTable" privilege=""/>
+
+    <Authorization action="Add_OnuVoipServProfTable" privilege=""/>
+    <Authorization action="Modify_OnuVoipServProfTable" privilege=""/>
+    <Authorization action="Delete_OnuVoipServProfTable" privilege=""/>
+
+    <Authorization action="Add_OnuUpgradeTandRTable" privilege=""/>
+    <Authorization action="Modify_OnuUpgradeTandRTable" privilege=""/>
+    <Authorization action="Delete_OnuUpgradeTandRTable" privilege=""/>
+
+    <Authorization action="Add_OnuUpgradeHwTypeTable" privilege=""/>
+    <Authorization action="Modify_OnuUpgradeHwTypeTable" privilege=""/>
+    <Authorization action="Delete_OnuUpgradeHwTypeTable" privilege=""/>
+
+    <!--
+    <Authorization action="Add_GponOltMacBridgeFDB_Log" privilege=""/>
+    <Authorization action="Modify_GponOltMacBridgeFDB_Log" privilege=""/>
+    <Authorization action="Delete_GponOltMacBridgeFDB_Log" privilege=""/>
+    -->
+
+    <Authorization action="Add_GponOltMultiGroupToMultiVlanMap" privilege=""/>
+    <Authorization action="Modify_GponOltMultiGroupToMultiVlanMap" privilege=""/>
+    <Authorization action="Delete_GponOltMultiGroupToMultiVlanMap" privilege=""/>
+
+    <Authorization action="Add_GponOltMultiVlanToMultiGEMPortMap" privilege=""/>
+    <Authorization action="Modify_GponOltMultiVlanToMultiGEMPortMap" privilege=""/>
+    <Authorization action="Delete_GponOltMultiVlanToMultiGEMPortMap" privilege=""/>
+
+    <Authorization action="Add_GponOnuEthUniCfg" privilege=""/>
+    <Authorization action="Modify_GponOnuEthUniCfg" privilege=""/>
+    <Authorization action="Delete_GponOnuEthUniCfg" privilege=""/>
+
+    <!--<Authorization action="Add_GponOnuPotsUniCfg" privilege=""/>-->
+    <Authorization action="Modify_GponOnuPotsUniCfg" privilege=""/>
+    <Authorization action="Delete_GponOnuPotsUniCfg" privilege=""/>
+
+    <Authorization action="ACU_Setting" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Modify_AlarmAcuControl" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="AcuExternalAlarmTable_Panel" privilege="BBS_Service_Configuration:VIEW"/>
+    <Authorization action="Modify_AcuExternalAlarmTable" privilege="BBS_Service_Configuration:EDIT"/>
+
+    <Authorization action="UplinkOpmDataTable_Panel" privilege="Layer_2:VIEW"/>
+</Security>

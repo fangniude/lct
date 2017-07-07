@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<Security>
+
+    <!-- ModEoCCBATDevInfoGroup_Panel -->
+    <Authorization action="Add_ModEoCCBATDevInfoGroup" privilege="Device Configuration"/>
+    <Authorization action="Modify_ModEoCCBATDevInfoGroup" privilege="Device Configuration"/>
+    <Authorization action="Delete_ModEoCCBATDevInfoGroup" privilege="Device Configuration"/>
+
+    <!-- ModEoCCBATCardTable_Panel-->
+    <Authorization action="Modify_ModEoCCBATCardTable" privilege="Device Configuration"/>
+    <Authorization action="Reset_Card" privilege="Device Configuration"/>
+    <Authorization action="Save_Config" privilege="Device Configuration"/>
+
+    <!-- ModEoCCBATNetworkAttrGroupPanel_Panel -->
+    <Authorization action="Modify_ModEoCCBATNetworkAttrGroup" privilege="Device Configuration"/>
+
+    <!-- ModEoCCBATDevStatusGroup_Panel -->
+    <Authorization action="Modify_ModEoCCBATDevStatusGroup" privilege="Device Configuration"/>
+    <Authorization action="Reset_ModEoCCBATDevStatusGroup" privilege="Device Configuration"/>
+    <Authorization action="Save_ModEoCCBATDevStatusGroup" privilege="Device Configuration"/>
+
+    <!-- ModEoCCBATSNMPSettingGroupPanel_Panel -->
+    <Authorization action="Add_ModEoCCBATSNMPSettingGroupPanel" privilege="Device Configuration"/>
+    <Authorization action="Modify_ModEoCCBATSNMPSettingGroupPanel" privilege="Device Configuration"/>
+    <Authorization action="Delete_ModEoCCBATSNMPSettingGroupPanel" privilege="Device Configuration"/>
+
+    <!-- ModEoCCBATAdminSNMPCommunityTable_Panel-->
+    <Authorization action="Add_ModEoCCBATAdminSNMPCommunityTable" privilege="Device Configuration"/>
+    <Authorization action="Modify_ModEoCCBATAdminSNMPCommunityTable" privilege="Device Configuration"/>
+    <Authorization action="Delete_ModEoCCBATAdminSNMPCommunityTable" privilege="Device Configuration"/>
+
+    <!-- ModEoCCBATCardRFGroup_Panel-->
+    <Authorization action="Add_ModEoCCBATCardRFGroup" privilege="Device Configuration"/>
+    <Authorization action="Modify_ModEoCCBATCardRFGroup" privilege="Device Configuration"/>
+    <Authorization action="Delete_ModEoCCBATCardRFGroup" privilege="Device Configuration"/>
+
+    <!-- ModEoCCBATCardMACCNUIsolationTable_Panel-->
+    <Authorization action="Add_ModEoCCBATCardMACCNUIsolationTable" privilege="Service Configuration"/>
+    <Authorization action="Modify_ModEoCCBATCardMACCNUIsolationTable" privilege="Service Configuration"/>
+    <Authorization action="Delete_ModEoCCBATCardMACCNUIsolationTable" privilege="Service Configuration"/>
+
+    <!-- ModEoCCNUWhiteList_Panel -->
+    <Authorization action="Add_ModEoCCNUWhiteList" privilege="Service Configuration"/>
+    <Authorization action="Modify_ModEoCCNUWhiteList" privilege="Service Configuration"/>
+    <Authorization action="Delete_ModEoCCNUWhiteList" privilege="Service Configuration"/>
+
+    <!-- ModEoCCNUWhiteListTable_Panel-->
+    <Authorization action="Add_ModEoCCNUWhiteListTable" privilege="Service Configuration"/>
+    <Authorization action="Modify_ModEoCCNUWhiteListTable" privilege="Service Configuration"/>
+    <Authorization action="Delete_ModEoCCNUWhiteListTable" privilege="Service Configuration"/>
+
+    <!-- modEoCCNU_Panel -->
+    <Authorization action="Modify_ModEoCCNU" privilege="Service Configuration"/>
+    <Authorization action="Reset_ModEoCCNU" privilege="Service Configuration"/>
+
+    <!-- ModEoCCNUTable_Panel-->
+    <Authorization action="Reset_CNU" privilege="Service Configuration"/>
+    <Authorization action="Save_CNU" privilege="Service Configuration"/>
+    <Authorization action="Delete_ModEoCCNUTable" privilege="Service Configuration"/>
+
+    <!--modEoCCBATOtherAdminGroup_Panel-->
+    <Authorization action="Modify_ModEoCCBATOtherAdminGroup" privilege="Device Configuration"/>
+
+    <!-- ModEoCCNUService_Panel-->
+    <Authorization action="Add_ModEoCCNUService" privilege="Service Configuration"/>
+    <Authorization action="Modify_ModEoCCNUService" privilege="Service Configuration"/>
+    <Authorization action="Delete_ModEoCCNUService" privilege="Service Configuration"/>
+
+    <!-- ModEoCCNUServiceTable_Panel-->
+    <Authorization action="Add_ModEoCCNUServiceTable" privilege="Service Configuration"/>
+    <Authorization action="Modify_ModEoCCNUServiceTable" privilege="Service Configuration"/>
+    <Authorization action="Delete_ModEoCCNUServiceTable" privilege="Service Configuration"/>
+
+    <!-- ModEoCCNUPort_Panel -->
+    <Authorization action="Add_ModEoCCNUPort" privilege="Service Configuration"/>
+    <Authorization action="Modify_ModEoCCNUPort" privilege="Service Configuration"/>
+    <Authorization action="Delete_ModEoCCNUPort" privilege="Service Configuration"/>
+
+    <!-- ModEoCCNUPortTable_Panel -->
+    <Authorization action="Modify_ModEoCCNUPortTable" privilege="Service Configuration"/>
+    <Authorization action="BatchModify_ModEoCCNUPortTable" privilege="Service Configuration"/>
+
+    <!-- ModEoCIGMPSnoopingTable_Panel-->
+    <Authorization action="Add_ModEoCIGMPSnoopingTable" privilege="Service Configuration"/>
+    <Authorization action="Modify_ModEoCIGMPSnoopingTable" privilege="Service Configuration"/>
+    <Authorization action="Delete_ModEoCIGMPSnoopingTable" privilege="Service Configuration"/>
+
+    <!-- ModEoCVLANTable_Panel -->
+    <Authorization action="Add_ModEoCVLANTable" privilege="Service Configuration"/>
+    <Authorization action="Modify_ModEoCVLANTable" privilege="Service Configuration"/>
+    <Authorization action="Delete_ModEoCVLANTable" privilege="Service Configuration"/>
+
+    <!-- ModEoCVLANPortTable_Panel -->
+    <Authorization action="Add_ModEoCVLANPortTable" privilege="Service Configuration"/>
+    <Authorization action="Modify_ModEoCVLANPortTable" privilege="Service Configuration"/>
+    <Authorization action="Delete_ModEoCVLANPortTable" privilege="Service Configuration"/>
+
+    <!-- ModEoCBroadcastStormProtectionTable_Panel -->
+    <Authorization action="Add_ModEoCBroadcastStormProtectionTable" privilege="Service Configuration"/>
+    <Authorization action="Modify_ModEoCBroadcastStormProtectionTable" privilege="Service Configuration"/>
+    <Authorization action="Delete_ModEoCBroadcastStormProtectionTable" privilege="Service Configuration"/>
+
+    <!-- ModEoCSoftwareUpgradeGroup_Panel -->
+    <Authorization action="Add_ModEoCSoftwareUpgradeGroup" privilege="Device Configuration"/>
+    <Authorization action="Modify_ModEoCSoftwareUpgradeGroup" privilege="Device Configuration"/>
+    <Authorization action="Delete_ModEoCSoftwareUpgradeGroup" privilege="Device Configuration"/>
+
+    <!-- ModEoCSoftwareUpgradeTable_Panel -->
+    <Authorization action="Add_ModEoCSoftwareUpgradeTable" privilege="Device Configuration"/>
+    <Authorization action="Modify_ModEoCSoftwareUpgradeTable" privilege="Device Configuration"/>
+    <Authorization action="Delete_ModEoCSoftwareUpgradeTable" privilege="Device Configuration"/>
+
+    <!-- ModEoCTrapGroup_Panel -->
+    <Authorization action="Add_ModEoCTrapGroup" privilege="Alarm Management"/>
+    <Authorization action="Modify_ModEoCTrapGroup" privilege="Alarm Management"/>
+    <Authorization action="Delete_ModEoCTrapGroup" privilege="Alarm Management"/>
+
+    <!-- ModEoCTrapTable_Panel -->
+    <Authorization action="Add_ModEoCTrapTable" privilege="Alarm Management"/>
+    <Authorization action="Modify_ModEoCTrapTable" privilege="Alarm Management"/>
+    <Authorization action="Delete_ModEoCTrapTable" privilege="Alarm Management"/>
+
+    <!-- AnalogPropertyTable_Panel -->
+    <Authorization action="Add_AnalogPropertyTable" privilege="Alarm Management"/>
+    <Authorization action="Modify_AnalogPropertyTable" privilege="Alarm Management"/>
+    <Authorization action="Delete_AnalogPropertyTable" privilege="Alarm Management"/>
+
+    <!-- DiscretePropertyTable_Panel -->
+    <Authorization action="Add_DiscretePropertyTable" privilege="Alarm Management"/>
+    <Authorization action="Modify_DiscretePropertyTable" privilege="Alarm Management"/>
+    <Authorization action="Delete_DiscretePropertyTable" privilege="Alarm Management"/>
+
+    <!-- CurrentAlarmTable_Panel -->
+    <Authorization action="Add_CurrentAlarmTable" privilege="Alarm Management"/>
+    <Authorization action="Modify_CurrentAlarmTable" privilege="Alarm Management"/>
+    <Authorization action="Delete_CurrentAlarmTable" privilege="Alarm Management"/>
+
+    <!-- AlarmLog_Panel -->
+    <Authorization action="Modify_AlarmLog" privilege="Alarm Management"/>
+
+    <!-- AlarmLogTable_Panel -->
+    <Authorization action="Add_AlarmLogTable" privilege="Alarm Management"/>
+    <Authorization action="Modify_AlarmLogTable" privilege="Alarm Management"/>
+    <Authorization action="Delete_AlarmLogTable" privilege="Alarm Management"/>
+
+    <!-- ModEoCRealTimeStatisticTable_Panel -->
+    <Authorization action="StatisticReset" privilege="Performance Management"/>
+
+</Security>

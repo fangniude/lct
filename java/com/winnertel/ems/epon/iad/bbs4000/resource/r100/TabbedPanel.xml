@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<TabbedPaneList>
+    <TabbedPane id="System_Configuration">
+        <Panel name="System_Information" class="com.winnertel.ems.epon.iad.bbs4000.gui.SystemInfoMbeanPanel"/>
+        <Panel name="SNMP_Configuration" class="com.winnertel.ems.epon.iad.bbs4000.gui.SNMPConfigPanel"/>
+        <Panel name="SNTP Configuration" class="com.winnertel.ems.epon.iad.bbs4000.gui.SNTPGroupMBeanPanel"/>
+        <!--<Panel name="Security" class="com.winnertel.ems.epon.iad.bbs4000.gui.SecurityMBeanPanel"/>-->
+        <!--<Panel name="Alarm_Redefinition" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>-->
+        <!--<Panel name="Alarm_Filter" class="com.winnertel.ems.epon.iad.bbs4000.gui.AlarmFilteringMBeanPanel"/>-->
+        <Panel name="System_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.SyslogMBeanPanel"/>
+        <Panel name="System_Boot_Params" class="com.winnertel.ems.epon.iad.bbs4000.gui.SysBootParamsMBeanPanel"/>
+        <!--<Panel name="InBand_OutBand_TTL" class="com.winnertel.ems.epon.iad.bbs4000.gui.r200.TrafficTTLMBeanPanel"/>-->
+        <!--<Panel name="OltCtcCdrCtrlGroup_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r200.OltCtcCdrCtrlGroupPanel"/>-->
+        <!--<Panel name="PonSystemGroup_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r210.PonSystemGroupPanel"/>-->
+        <!--<Panel name="General_Configuration" class="com.winnertel.ems.epon.iad.bbs4000.gui.r300.GeneralConfigurationPanel"/>-->
+        <Panel name="LoopbackGlobalSettingPanel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r210.LoopbackGlobalSettingPanel"/>
+        <!--<Panel name="OnuLoopbackTest_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r210.OnuLoopbackTestPanel"/>-->
+        <Panel name="TCA" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.TCAConfigPanel"/>
+        <!-- combine tables(Alarm_Redefinition, Alarm_Filter and PonSystemGroup_Panel, General_Configuration, InBand_OutBand_TTL) added by Yang Yizai -->
+        <Panel name="Alarm Configuration" class="com.winnertel.ems.epon.iad.bbs4000.gui.AlarmConfigPanel"/>
+        <Panel name="PonSystemGroup_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r210.PonSystemGroupPanel"/>
+        <Panel name="GeneralPonTTL Configuration" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.GeneralPonTTLConfigPanel"/>
+    </TabbedPane>
+
+    <TabbedPane id="Chassis">
+        <Panel name="Chassis_View" class="com.winnertel.ems.epon.iad.bbs4000.gui.shelfview.ShelfViewPane"/>
+        <Panel name="Chassis_Configuration" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="Module_Information" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="Interface_layer_2">
+        <Panel name="Interface_table" class="com.winnertel.ems.epon.iad.bbs4000.gui.swing.BBS4000ModuleTablePane"/>
+        <Panel name="SwitchPortExtTable_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.swing.BBS4000ModuleTablePane"/>
+        <Panel name="IntfRateControlTable_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.swing.BBS4000ModuleTablePane"/>
+        <Panel name="LinkAggregation_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <!--
+    <TabbedPane id="Link_Aggregation">
+        <Panel name="LinkAggregation_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+    -->
+
+    <TabbedPane id="MAC_Address">
+        <Panel name="MACAddress_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="Port_Monitor">
+        <Panel name="MonitorSessionTablePanel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="VLAN">
+        <Panel name="PortBasedVLAN_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <!--<Panel name="SuperSVITable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>-->
+        <Panel name="EthVlanMappingTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="EthVlanTransparentTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="EthSmartQinQTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="EthFlexQinQMBean_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="GponP2pServiceVlanCfgTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="STP">
+        <Panel name="MSTP_General_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.MSTPGeneralMBeanPanel"/>
+        <Panel name="MSTP_Port_Table" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="MSTP_Map_Table" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="MSTP_Xst_Table" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="MSTP_Xst_Port_Table" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="RSTPGeneral_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="RSTPPort_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="Interface_Extension">
+        <Panel name="EthIfExtMixtureMBean_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <!--<Panel name="EthIfExtTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>-->
+        <!--<Panel name="SecondIPAddressTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>-->
+    </TabbedPane>
+
+    <TabbedPane id="ARP">
+        <Panel name="EponArpTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="IP_Route">
+        <Panel name="StaticRouteTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="HostRouteTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="IpRouteTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="DHCP_Setting">
+        <Panel name="DHCPGeneralPanel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r210.DHCPGeneralPanel"/>
+        <Panel name="DHCPOption82Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r210.DHCPOption82Panel"/>
+    </TabbedPane>
+
+    <TabbedPane id="DHCP_Relay">
+        <Panel name="DHCPRelayServerTable_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.DHCPRelayPanel"/>
+    </TabbedPane>
+
+    <TabbedPane id="DHCP_Server">
+        <Panel name="DHCPPoolTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="DHCPIPAddressRange" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="DHCPPoolDefaultRouterTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="DHCPDNSServer" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="DHCPLogServer" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="DHCPNTPServer" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="DHCPManualBinding" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="DHCPIPBindingStatus" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="DHCPLeaseLimit" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="DHCP_States">
+        <Panel name="DHCP_States" class="com.winnertel.ems.epon.iad.bbs4000.gui.DHCPServerStatsMBeanPanel"/>
+    </TabbedPane>
+
+    <TabbedPane id="OLT_GPON">
+        <Panel name="OltPonLinkCfgTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="SystemConfigMB_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.SystemConfigMBPanel"/>
+        <Panel name="Gpm02aBcm56228TableMBean_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="GponOltOls2CfgTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+      	<!-- Panel name="GponOltOlsCfgTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/> --> 
+     	<Panel name="Dot3Olt2PonProtectionTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="ONT_Configuration">
+        <Panel name="GponOnuSystemConfigure_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.swing.BBS4000OntTablePane"/>
+        <Panel name="GponOnuServiceConfigure_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.swing.BBS4000OntTablePane"/>
+        <Panel name="GponOnuNetworkConfigure_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.swing.BBS4000OntTablePane"/>
+        <Panel name="GponOnuVoipConfigure_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.swing.BBS4000OntTablePane"/>
+        <Panel name="GponOnuMiscConfigure_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.swing.BBS4000OntTablePane"/>
+        <Panel name="GponOltMacBridgeFDB_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.swing.BBS4000OntTablePane"/>
+        <Panel name="GponOnuOlsCfgTable_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.swing.BBS4000OntTablePane"/>
+    	<Panel name="OnuLpDetectCfgTable_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.swing.BBS4000OntTablePane"/>
+        <Panel name="OnuLaserTxOnOffCfgTable_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.swing.BBS4000OntTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="ONT_Multicast">
+        <Panel name="GponOnuDynamicMultiGroup_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.swing.BBS4000OntTablePane"/>
+        <Panel name="GponOltMultiGroupToMultiVlanMap_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="GponOltMultiVlanToMultiGEMPortMap_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="OnuStaticMultiGroupProfTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="GponOnuMulticastOperProfTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="ONT_Maintain">
+        <Panel name="GponOnuImageInfo_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.swing.BBS4000OntTablePane"/>
+        <Panel name="OnuUpgradeHwTypeTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="OnuUpgradeTandRTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="Virtual_Port_Profiles">
+        <Panel name="OnuUPUTMProfTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="OnuVlanPriBitsUpTrafficMapProfTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="OnuVlanIdUpTrafficMapProfTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="OnuVlanIdVlanPriBitUpTrafficMapProfTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="OnuUPCUTMProfTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="Bandwidth_Profiles">
+        <Panel name="OnuTcontVPortBindProfTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="OnuTcontSvcProfTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="OnuVPorSvcProfTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="OnuBwProfTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="GponOnuVirtualPortConfigure_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.swing.BBS4000OntTablePane"/>
+        <!--<Panel name="OnuRateCtrSchProfTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>-->
+    </TabbedPane>
+
+    <TabbedPane id="UNI_Profiles">
+        <Panel name="OnuEthUniCfgProTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="GponOnuEthUniCfg_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.swing.BBS4000OntTablePane"/>
+        <Panel name="GponOnuPotsUniCfg_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.swing.BBS4000OntTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="Other_Profiles">
+        <Panel name="OltGponProtocolProfTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="GponOnuVoipSvcProTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="OnuMacFilterPreassignProTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="GponOnuMacFilterProfTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="OnuVlanFilterProfileTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="QoS">
+        <Panel name="QosExtCosQueueSchedTable_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.GponQosExtCosQueueSchedTablePanel"/>
+        <Panel name="QosExtDscpTrustTable_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.GponQosExtDscpTrustTablePanel"/>
+        <Panel name="QosExtCosQueueMapTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="QosExtDscpCosMapTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="QosExtDscpMutMapTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="QosExtIpPrecDscpMapTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="ACL">
+        <Panel name="AclExtProfileImportTable_Panel_r200" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="AclExtIntfConfigTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+		<Panel name="GponAclExtIntfConfigTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <!-- Panel name="Dot3Olt2AclConfTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/> -->
+        <Panel name="AclExtProfileTable_Panel_r200" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="IGMP_Multicast">
+        <Panel name="EponMulticastCtrlGroupPanel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.EponMulticastCtrlGroupPanel"/>
+        <Panel name="IgmpSnoopCfgTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="IgmpInterfaceTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="IgmpCacheTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="IgmpSnoopingTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="OltGlbMulticastGroupTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <!--<Panel name="OnuCtcMulticastCtrlTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>-->
+        <Panel name="OnuCtcMulticastTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="OltPullDownMcTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="OnuCtcMCastStatTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="OnuMulticastCtrlHeadPanel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r210.multicast.client.OnuMulticastCtrlHeadTablePanel"/>
+        <Panel name="OnuMulticastCtrlProfilePanel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r210.multicast.client.OnuMulticastCtrlProfileTablePanel"/>
+        <Panel name="OnuCtcBandCtrlTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="OnuCtcMulticastStatForUserPortTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    </TabbedPane>
+
+    <TabbedPane id="Performance">
+        <Panel name="Ethernet_Performance" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <!--<Panel name="PonIf2ExtStatTable_OLT_Panel_gpon" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>-->
+        <!--<Panel name="PonIf2ExtStatTable_ONU_Panel_gpon" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>-->
+    </TabbedPane>
+
+    <TabbedPane id="Security">
+        <Panel name="Security" class="com.winnertel.ems.epon.iad.bbs4000.gui.SecurityMBeanPanel"/>
+    </TabbedPane>
+
+    <TabbedPane id="VLAN_Type">
+        <Panel name="VlanTypeTableMBean_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="OltVlanTransProfTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="OnuVlanTransProfTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        
+    </TabbedPane>
+    <TabbedPane id="ONT_Management">
+    	<Panel name="OnuAclExtProfileImportTable_Panel_r200" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    	<Panel name="OnuVlanTypeTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+    	<Panel name="OnuOltVlanTransProfTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="OnuPortsEgressOuterTpidTable_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.OnuPortsEgressOuterTpidTablePanel"/>
+        <Panel name="OnuGponAclExtIntfConfigTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+        <Panel name="OnuMLSQosExtCosQueueSchedTable_Panel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r100.OnuMLSQosExtCosQueueSchedTablePanel"/>
+		<Panel name="OnuAclExtProfileTable_Panel_r200" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+		<!-- <Panel name="OnuAclExtProfileTable_Panel" class="com.winnertel.em.standard.snmp.gui.SnmpTablePane"/>
+		 -->   
+    </TabbedPane>
+</TabbedPaneList>

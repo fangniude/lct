@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root id="BBS1000">
+    <node id="System_Configuration"/>
+    <node id="Chassis"/>
+    <node id="Module_Summary"/>
+    <node id="Layer_2">
+        <node id="Interface_layer_2"/>
+        <node id="Link_Aggregation"/>
+        <node id="MAC_Address"/>
+        <node id="Port_Monitor"/>
+        <node id="VLAN"/>
+        <node id="STP">
+          <node id="STP_Setting"/>
+          <node id="MSTP"/>
+          <node id="RSTP"/>
+        </node>
+    </node>
+    <node id="Layer_3">
+        <!--node id="Interface_layer_3"/-->
+        <node id="Interface_Extension"/>
+        <node id="ARP"/>
+        <node id="IP_Route"/>
+        <node id="DHCP">
+            <node id="DHCP_Setting"/>
+            <node id="DHCP_Relay"/>
+            <node id="DHCP_Server"/>
+            <node id="DHCP_States"/>
+        </node>
+    </node>
+    <node id="EPON_Management">
+        <node id="OLT_EPON"/>
+        <node id="ONU_EPON">
+            <node id="ONU_Configuration"/>
+            <node id="ONU_VoIPConfiguration"/>
+            <node id="ONU_Management"/>
+            <node id="ONU_Upgrade"/>
+        </node>
+    </node>
+
+    <!--node id="GPON_Management" version="3.0.0">
+        <node id="OLT_GPON"/>
+        <node id="ONT_GPON">
+            <node id="ONT"/>
+            <node id="ONT_Management"/>
+            <node id="ONT_Upgrade"/>
+        </node>
+        <node id="Profile"/>
+    </node-->
+
+    <node id="QoS"/>
+    <node id="ACL"/>
+    <node id="IGMP_Multicast"/>
+    <node id="Performance"/>
+    <node id="Security"/>
+    <node id="Alarm_Management"/>
+</root>

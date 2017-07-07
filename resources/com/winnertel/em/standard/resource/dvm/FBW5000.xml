@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<Product name="FBW5000" path="com/winnertel/ems/epon/iad/bbs4000/resource/">
+    <CommunitySelector class=""/>
+
+
+    <DeviceManager version="1.0" path="r310/">
+        <VersionInfo>
+            <Version key="System" value="1.0.0-9.9.9"/>
+        </VersionInfo>
+    </DeviceManager>
+
+</Product>

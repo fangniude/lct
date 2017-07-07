@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<Security>
+
+    <!-- ModEoCCBATCardTable_Panel-->
+    <Authorization action="Add_ModEoCCBATCardTable" privilege=""/>
+    <Authorization action="Modify_ModEoCCBATCardTable" privilege=""/>
+    <Authorization action="Delete_ModEoCCBATCardTable" privilege=""/>
+
+    <!-- ModEoCCBATAdminSNMPCommunityTable_Panel-->
+    <Authorization action="Add_ModEoCCBATAdminSNMPCommunityTable" privilege=""/>
+    <Authorization action="Modify_ModEoCCBATAdminSNMPCommunityTable" privilege=""/>
+    <Authorization action="Delete_ModEoCCBATAdminSNMPCommunityTable" privilege=""/>
+
+    <!-- ModEoCCBATCardRFGroup_Panel-->
+    <Authorization action="Add_ModEoCCBATCardRFGroup" privilege=""/>
+    <Authorization action="Modify_ModEoCCBATCardRFGroup" privilege=""/>
+    <Authorization action="Delete_ModEoCCBATCardRFGroup" privilege=""/>
+
+    <!-- ModEoCCBATCardMACCNUIsolationTable_Panel-->
+    <Authorization action="Add_ModEoCCBATCardMACCNUIsolationTable" privilege=""/>
+    <Authorization action="Modify_ModEoCCBATCardMACCNUIsolationTable" privilege=""/>
+    <Authorization action="Delete_ModEoCCBATCardMACCNUIsolationTable" privilege=""/>
+
+    <!-- ModEoCCNUWhiteListTable_Panel-->
+    <Authorization action="Add_ModEoCCNUWhiteListTable" privilege=""/>
+    <Authorization action="Modify_ModEoCCNUWhiteListTable" privilege=""/>
+    <Authorization action="Delete_ModEoCCNUWhiteListTable" privilege=""/>
+
+    <!-- ModEoCCNUTable_Panel-->
+    <Authorization action="Add_ModEoCCNUTable" privilege=""/>
+    <Authorization action="Modify_ModEoCCNUTable" privilege=""/>
+    <Authorization action="Delete_ModEoCCNUTable" privilege=""/>
+
+    <!-- ModEoCCNUServiceTable_Panel-->
+    <Authorization action="Add_ModEoCCNUServiceTable" privilege=""/>
+    <Authorization action="Modify_ModEoCCNUServiceTable" privilege=""/>
+    <Authorization action="Delete_ModEoCCNUServiceTable" privilege=""/>
+
+    <!-- ModEoCCNUServiceTable_Panel-->
+    <Authorization action="Add_ModEoCCNUPortTable" privilege=""/>
+    <Authorization action="Modify_ModEoCCNUPortTable" privilege=""/>
+    <Authorization action="Delete_ModEoCCNUPortTable" privilege=""/>
+
+    <!-- ModEoCIGMPSnoopingTable_Panel-->
+    <Authorization action="Add_ModEoCIGMPSnoopingTable" privilege=""/>
+    <Authorization action="Modify_ModEoCIGMPSnoopingTable" privilege=""/>
+    <Authorization action="Delete_ModEoCIGMPSnoopingTable" privilege=""/>
+
+    <!-- ModEoCVLANTable_Panel -->
+    <Authorization action="Add_ModEoCVLANTable" privilege=""/>
+    <Authorization action="Modify_ModEoCVLANTable" privilege=""/>
+    <Authorization action="Delete_ModEoCVLANTable" privilege=""/>
+
+    <!-- ModEoCVLANPortTable_Panel -->
+    <Authorization action="Add_ModEoCVLANPortTable" privilege=""/>
+    <Authorization action="Modify_ModEoCVLANPortTable" privilege=""/>
+    <Authorization action="Delete_ModEoCVLANPortTable" privilege=""/>
+
+    <!-- ModEoCBroadcastStormProtectionTable_Panel -->
+    <Authorization action="Add_ModEoCBroadcastStormProtectionTable" privilege=""/>
+    <Authorization action="Modify_ModEoCBroadcastStormProtectionTable" privilege=""/>
+    <Authorization action="Delete_ModEoCBroadcastStormProtectionTable" privilege=""/>
+
+    <!-- ModEoCSoftwareUpgradeTable_Panel -->
+    <Authorization action="Add_ModEoCSoftwareUpgradeTable" privilege=""/>
+    <Authorization action="Modify_ModEoCSoftwareUpgradeTable" privilege=""/>
+    <Authorization action="Delete_ModEoCSoftwareUpgradeTable" privilege=""/>
+
+    <!-- ModEoCTrapTable_Panel -->
+    <Authorization action="Add_ModEoCTrapTable" privilege=""/>
+    <Authorization action="Modify_ModEoCTrapTable" privilege=""/>
+    <Authorization action="Delete_ModEoCTrapTable" privilege=""/>
+
+    <!-- AnalogPropertyTable_Panel -->
+    <Authorization action="Add_AnalogPropertyTable" privilege=""/>
+    <Authorization action="Modify_AnalogPropertyTable" privilege=""/>
+    <Authorization action="Delete_AnalogPropertyTable" privilege=""/>
+
+    <!-- DiscretePropertyTable_Panel -->
+    <Authorization action="Add_DiscretePropertyTable" privilege=""/>
+    <Authorization action="Modify_DiscretePropertyTable" privilege=""/>
+    <Authorization action="Delete_DiscretePropertyTable" privilege=""/>
+
+    <!-- CurrentAlarmTable_Panel -->
+    <Authorization action="Add_CurrentAlarmTable" privilege=""/>
+    <Authorization action="Modify_CurrentAlarmTable" privilege=""/>
+    <Authorization action="Delete_CurrentAlarmTable" privilege=""/>
+
+    <!-- AlarmLogTable_Panel -->
+    <Authorization action="Add_AlarmLogTable" privilege=""/>
+    <Authorization action="Modify_AlarmLogTable" privilege=""/>
+    <Authorization action="Delete_AlarmLogTable" privilege=""/>
+
+    <!-- ModEoCRealTimeStatisticTable_Panel -->
+    <Authorization action="Add_ModEoCRealTimeStatisticTable" privilege=""/>
+    <Authorization action="Modify_ModEoCRealTimeStatisticTable" privilege=""/>
+    <Authorization action="Delete_ModEoCRealTimeStatisticTable" privilege=""/>
+
+</Security>

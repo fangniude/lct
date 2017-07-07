@@ -1,0 +1,2877 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<TableForm>
+    <TablePanelList>
+        <!-- eponManagementAddrTable -->
+        <Panel name="Trap_Configuration">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.EponManagementAddrTable">
+                <Field name="eponManagementAddrName" mib_property="eponManagementAddrName"/>
+                <Field name="eponManagementAddrTAddress" mib_property="eponManagementAddrTAddress"/>
+                <Field name="eponManagementAddrCommunity" mib_property="eponManagementAddrCommunity"/>
+            </Table>
+            <Button id="Add_EponManagementAddrTable" type="Add">
+                <Panel action_id="Add_EponManagementAddrTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.EponManagementAddrTablePanel"/>
+            </Button>
+            <Button id="Modify_EponManagementAddrTable" type="Modify">
+                <Panel action_id="Modify_EponManagementAddrTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.EponManagementAddrTablePanel"/>
+            </Button>
+            <Button id="Delete_EponManagementAddrTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- oltPropertyTable -->
+        <Panel name="OLT_Device">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.OltPropertyTable">
+                <Field name="oltDeviceIndex" mib_property="oltDeviceIndex"/>
+                <Field name="oltName" mib_property="oltName"/>
+                <Field name="oltType" mib_property="oltType"/>
+                <Field name="oltAdminStatus" mib_property="oltAdminStatus"/>
+                <Field name="oltDeviceUpTime" mib_property="oltDeviceUpTime"/>
+                <Field name="oltDeviceNumOfTotalServiceSlot" mib_property="oltDeviceNumOfTotalServiceSlot"/>
+                <Field name="oltDeviceNumOfTotalPowerSlot" mib_property="oltDeviceNumOfTotalPowerSlot"/>
+                <Field name="oltDeviceNumOfTotalFanSlot" mib_property="oltDeviceNumOfTotalFanSlot"/>
+                <Field name="oltDeviceStyle" mib_property="oltDeviceStyle"/>
+            </Table>
+            <Button id="Modify_OLT_Device" type="Modify">
+                <Panel action_id="Modify_OLT_Device_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.OltPropertyTablePanel"/>
+            </Button>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- boardTable -->
+        <Panel name="Board_Table">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.BoardTable">
+                <!--<Field name="deviceIndex" mib_property="deviceIndex"/>-->
+                <Field name="cardIndex" mib_property="cardIndex"/>
+                <Field name="name" mib_property="name"/>
+                <Field name="type" mib_property="type"/>
+                <Field name="presenceStatus" mib_property="presenceStatus"/>
+                <Field name="attribute" mib_property="attribute"/>
+                <Field name="operationStatus" mib_property="operationStatus"/>
+                <Field name="adminStatus" mib_property="adminStatus"/>
+                <Field name="hardwareVersion" mib_property="hardwareVersion"/>
+                <Field name="firmwareVersion" mib_property="firmwareVersion"/>
+                <Field name="softwareVersion" mib_property="softwareVersion"/>
+                <Field name="upTime" mib_property="upTime"/>
+                <Field name="alarmStatus" mib_property="alarmStatus"/>
+                <Field name="serialNumber" mib_property="serialNumber"/>
+            </Table>
+            <Button id="Modify_BoardTable" type="Modify">
+                <Panel action_id="Modify_BoardTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.BoardTablePanel"/>
+            </Button>
+            <Button id="Switch_Board" type="Custom" text="Switch Over" business_checker="com.winnertel.ems.epon.iad.bbs4000.checker.r400.SwitchBoardChecker">
+                <Action id="Switch_Board" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.action.SwitchBoardAction"/>
+            </Button>
+            <Button id="Upgrade_Board" type="Custom" text="Upgrade" business_checker="com.winnertel.ems.epon.iad.bbs4000.checker.r400.UpgradeBoardChecker">
+                <Action id="Upgrade_Board" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.action.UpgradeBoardAction"/>
+            </Button>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!--powerPropertyTable-->
+        <Panel name="PowerPropertyTable">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.PowerPropertyTable">
+                <!--<Field name="powerDeviceIndex" mib_property="powerDeviceIndex"/>-->
+                <Field name="powerCardIndex" mib_property="powerCardIndex"/>
+                <Field name="powerCardName" mib_property="powerCardName"/>
+                <Field name="powerCardOperationStatus" mib_property="powerCardOperationStatus"/>
+                <Field name="powerCardAlarmStatus" mib_property="powerCardAlarmStatus"/>
+                <Field name="powerCardPresenceStatus" mib_property="powerCardPresenceStatus"/>
+                <Field name="powerCardRedundancyStatus" mib_property="powerCardRedundancyStatus"/>
+            </Table>
+            <Button id="Switch_Power_Board" type="Custom" text="Switch Over" business_checker="com.winnertel.ems.epon.iad.bbs4000.checker.r400.SwitchPowerChecker">
+                <Action id="Switch_Power_Board" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.action.SwitchPowerBoardAction"/>
+            </Button>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!--fanPropertyTable-->
+        <Panel name="FanPropertyTable">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.FanPropertyTable">
+                <!--<Field name="fanDeviceIndex" mib_property="fanDeviceIndex"/>-->
+                <Field name="fanCardIndex" mib_property="fanCardIndex"/>
+                <Field name="fanCardName" mib_property="fanCardName"/>
+                <Field name="fanCardOperationStatus" mib_property="fanCardOperationStatus"/>
+                <Field name="fanCardAlarmStatus" mib_property="fanCardAlarmStatus"/>
+                <Field name="fanCardPresenceStatus" mib_property="fanCardPresenceStatus"/>
+            </Table>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!--fileTransferTable-->
+        <Panel name="FileTransferTable">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.FileTransferTable">
+                <Field name="fileTransferIndex" mib_property="fileTransferIndex"/>
+                <Field name="fileTransferProtocolType" mib_property="fileTransferProtocolType"/>
+                <Field name="serverIpAddress" mib_property="serverIpAddress"/>
+                <Field name="ftpUserName" mib_property="ftpUserName"/>
+                <Field name="ftpUserPassword" mib_property="ftpUserPassword"/>
+                <Field name="transferFileSrcNamePath" mib_property="transferFileSrcNamePath"/>
+                <Field name="transferFileDstNamePath" mib_property="transferFileDstNamePath"/>
+                <Field name="transferAction" mib_property="transferAction"/>
+                <Field name="transferStatus" mib_property="transferStatus"/>
+            </Table>
+            <Button id="Modify_FileTransferTable" type="Modify" text="Transfer File">
+                <Panel action_id="Modify_FileTransferTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.FileTransferTablePanel"/>
+            </Button>
+            <Button id="Delete_FileTransferTable" type="Delete" text="Cancel Transfer"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!--fileInfoManagementTable-->
+        <Panel name="FileInfoMgmtTable">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.FileInfoMgmtTable">
+                <!--<Field name="fileIndex" mib_property="fileIndex"/>-->
+                <Field name="filePath" mib_property="filePath"/>
+                <Field name="fileName" mib_property="fileName"/>
+                <Field name="fileSize" mib_property="fileSize"/>
+                <Field name="fileModifyTime" mib_property="fileModifyTime"/>
+                <!--<Field name="fileManagementAction" mib_property="fileManagementAction"/>-->
+                <Field name="fileAttribute" mib_property="fileAttribute"/>
+            </Table>
+            <Button id="Delete_FileInfoMgmtTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <Panel name="SniAttributeTable">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.SniAttributeTable">
+                <!--<Field name="sniAttributeDeviceIndex" mib_property="sniAttributeDeviceIndex"/>-->
+                <Field name="sniAttributeCardIndex" mib_property="sniAttributeCardIndex"/>
+                <Field name="sniAttributePortIndex" mib_property="sniAttributePortIndex"/>
+                <Field name="sniPortName" mib_property="sniPortName"/>
+                <Field name="sniAdminStatus" mib_property="sniAdminStatus"/>
+                <Field name="sniOperationStatus" mib_property="sniOperationStatus"/>
+                <Field name="sniMediaType" mib_property="sniMediaType"/>
+                <Field name="sniAutoNegotiationStatus" mib_property="sniAutoNegotiationStatus"/>
+                <Field name="sniAutoNegotiationMode" mib_property="sniAutoNegotiationMode"/>
+                <Field name="sniPerfStats15minuteEnable" mib_property="sniPerfStats15minuteEnable"/>
+                <Field name="sniPerfStats24hourEnable" mib_property="sniPerfStats24hourEnable"/>
+                <Field name="sniLastStatusChangeTime" mib_property="sniLastStatusChangeTime"/>
+                <Field name="sniMacAddrLearnMaxNum" mib_property="sniMacAddrLearnMaxNum"/>
+                <Field name="sniIsolationEnable" mib_property="sniIsolationEnable"/>
+            </Table>
+            <Button id="Modify_SniAttributeTable" type="Modify">
+                <Panel action_id="Modify_SniAttributeTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.SniAttributeTablePanel"/>
+            </Button>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <Panel name="SniTrunkConfigTable">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.SniTrunkConfigTable">
+                <Field name="sniTrunkGroupConfigIndex" mib_property="sniTrunkGroupConfigIndex"/>
+                <Field name="sniTrunkGroupConfigName" mib_property="sniTrunkGroupConfigName"/>
+                <Field name="sniTrunkGroupConfigMember" mib_property="sniTrunkGroupConfigMember"/>
+                <Field name="sniTrunkGroupConfigPolicy" mib_property="sniTrunkGroupConfigPolicy"/>
+            </Table>
+            <Button id="Add_SniTrunkConfigTable" type="Add">
+                <Panel action_id="Add_SniTrunkConfigTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.SniTrunkConfigTablePanel"/>
+            </Button>
+            <Button id="Modify_SniTrunkConfigTable" type="Modify">
+                <Panel action_id="Modify_SniTrunkConfigTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.SniTrunkConfigTablePanel"/>
+            </Button>
+            <Button id="Delete_SniTrunkConfigTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <Panel name="SniTrunkTable">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.SniTrunkTable">
+                <Field name="sniTrunkGroupIndex" mib_property="sniTrunkGroupIndex"/>
+                <Field name="sniTrunkGroupOperationStatus" mib_property="sniTrunkGroupOperationStatus"/>
+                <Field name="sniTrunkGroupActualSpeed" mib_property="sniTrunkGroupActualSpeed"/>
+                <Field name="sniTrunkGroupAdminStatus" mib_property="sniTrunkGroupAdminStatus"/>
+            </Table>
+            <Button id="Modify_SniTrunkTable" type="Modify">
+                <Panel action_id="Modify_SniTrunkTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.SniTrunkTablePanel"/>
+            </Button>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <Panel name="SniMirrorTable">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.SniMirrorTable">
+                <Field name="sniMirrorGroupIndex" mib_property="sniMirrorGroupIndex"/>
+                <Field name="sniMirrorGroupName" mib_property="sniMirrorGroupName"/>
+                <Field name="sniMirrorGroupDstPortList" mib_property="sniMirrorGroupDstPortList"/>
+                <Field name="sniMirrorGroupSrcInPortList" mib_property="sniMirrorGroupSrcInPortList"/>
+                <Field name="sniMirrorGroupSrcOutPortList" mib_property="sniMirrorGroupSrcOutPortList"/>
+            </Table>
+            <Button id="Add_SniMirrorTable" type="Add">
+                <Panel action_id="Add_SniMirrorTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.SniMirrorTablePanel"/>
+            </Button>
+            <Button id="Modify_SniMirrorTable" type="Modify">
+                <Panel action_id="Modify_SniMirrorTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.SniMirrorTablePanel"/>
+            </Button>
+            <Button id="Delete_SniMirrorTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <Panel name="SniMacAddressMgmtTable">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.SniMacAddressMgmtTable">
+                <Field name="sniMacAddressManagementDeviceIndex" mib_property="sniMacAddressManagementDeviceIndex"/>
+                <Field name="sniMacAddrTableAgingTime" mib_property="sniMacAddrTableAgingTime"/>
+                <!--<Field name="sniMacAddrTableClear" mib_property="sniMacAddrTableClear"/>-->
+            </Table>
+            <Button id="Modify_SniMacAddressMgmtTable" type="Modify">
+                <Panel action_id="Modify_SniMacAddressMgmtTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.SniMacAddressMgmtTablePanel"/>
+            </Button>
+            <Button id="Delete_SniMacAddressMgmtTable" type="Delete" text="Clear"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <Panel name="SniMacAddressTable">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.SniMacAddressTable">
+                <Field name="sniMacAddrIndex" mib_property="sniMacAddrIndex"/>
+                <Field name="sniMacAddrVlanIdIndex" mib_property="sniMacAddrVlanIdIndex"/>
+                <Field name="sniMacAddrType" mib_property="sniMacAddrType"/>
+                <Field name="sniMacAddrPortId" mib_property="sniMacAddrPortId"/>
+            </Table>
+            <Button id="Add_SniMacAddressTable" type="Add">
+                <Panel action_id="Add_SniMacAddressTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.SniMacAddressTablePanel"/>
+            </Button>
+            <Button id="Delete_SniMacAddressTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <Panel name="SniBroadcastStormSuppressionTable">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.SniBroadcastStormSuppressionTable">
+                <!--<Field name="sniBroadcastStormSuppressionDeviceIndex" mib_property="sniBroadcastStormSuppressionDeviceIndex"/>-->
+                <Field name="sniBroadcastStormSuppressionCardIndex" mib_property="sniBroadcastStormSuppressionCardIndex"/>
+                <Field name="sniBroadcastStormSuppressionPortIndex" mib_property="sniBroadcastStormSuppressionPortIndex"/>
+                <Field name="sniUnicastStormEnable" mib_property="sniUnicastStormEnable"/>
+                <Field name="sniUnicastStormOutPacketRate" mib_property="sniUnicastStormOutPacketRate"/>
+                <Field name="sniUnicastStormInPacketRate" mib_property="sniUnicastStormInPacketRate"/>
+                <Field name="sniMulticastStormEnable" mib_property="sniMulticastStormEnable"/>
+                <Field name="sniMulticastStormOutPacketRate" mib_property="sniMulticastStormOutPacketRate"/>
+                <Field name="sniMulticastStormInPacketRate" mib_property="sniMulticastStormInPacketRate"/>
+                <Field name="sniBroadcastStormEnable" mib_property="sniBroadcastStormEnable"/>
+                <Field name="sniBroadcastStormOutPacketRate" mib_property="sniBroadcastStormOutPacketRate"/>
+                <Field name="sniBroadcastStormInPacketRate" mib_property="sniBroadcastStormInPacketRate"/>
+            </Table>
+            <Button id="Modify_SniBroadcastStormSuppressionTable" type="Modify">
+                <Panel action_id="Modify_SniBroadcastStormSuppressionTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.SniBroadcastStormSuppressionTablePanel"/>
+            </Button>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- ponPortInfoTable -->
+        <Panel name="PON_Port_Information">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.PonPortInfoTable">
+                <Field name="ponDeviceIndex" mib_property="ponDeviceIndex"/>
+                <!--
+                <Field name="ponCardIndex" mib_property="ponCardIndex"/>
+                <Field name="ponPortIndex" mib_property="ponPortIndex"/>
+                -->
+                <Field name="ponPortType" mib_property="ponPortType"/>
+                <Field name="ponOperationStatus" mib_property="ponOperationStatus"/>
+                <Field name="ponPortAdminStatus" mib_property="ponPortAdminStatus"/>
+                <Field name="ponPortMaxOnuNumSupport" mib_property="ponPortMaxOnuNumSupport"/>
+                <Field name="ponPortUpOnuNum" mib_property="ponPortUpOnuNum"/>
+                <Field name="ponPortEncryptMode" mib_property="ponPortEncryptMode"/>
+                <Field name="ponPortEncryptKeyExchangeTime" mib_property="ponPortEncryptKeyExchangeTime"/>
+                <Field name="ponPortIsolationEnable" mib_property="ponPortIsolationEnable"/>
+                <Field name="maxBandwidth" mib_property="maxBandwidth"/>
+                <Field name="actualBandwidthInUse" mib_property="actualBandwidthInUse"/>
+                <Field name="remainBandwidth" mib_property="remainBandwidth"/>
+                <Field name="maxUsBandwidth" mib_property="maxUsBandwidth"/>
+                <Field name="actualUsBandwidthInUse" mib_property="actualUsBandwidthInUse"/>
+                <Field name="remainUsBandwidth" mib_property="remainUsBandwidth"/>
+                <Field name="perfStats15minuteEnable" mib_property="perfStats15minuteEnable"/>
+                <Field name="perfStats24hourEnable" mib_property="perfStats24hourEnable"/>
+                <Field name="ponPortMacAddrLearnMaxNum" mib_property="ponPortMacAddrLearnMaxNum"/>
+            </Table>
+            <Button id="Modify_PonPortInfoTable" type="Modify">
+                <Panel action_id="Modify_PonPortInfoTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.PonPortInfoTablePanel"/>
+            </Button>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- aclRuleTable -->
+        <Panel name="ACL_Rule">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.AclRuleTable">
+                <Field name="aclRuleIndex" mib_property="aclRuleIndex"/>
+                <Field name="matchedSourseMac" mib_property="matchedSourseMac"/>
+                <Field name="matchedDestinationMac" mib_property="matchedDestinationMac"/>
+                <Field name="matchedVlanId" mib_property="matchedVlanId"/>
+                <Field name="matchedEthernetType" mib_property="matchedEthernetType"/>
+                <Field name="matchedSourseIP" mib_property="matchedSourseIP"/>
+                <Field name="matchedDestinationIP" mib_property="matchedDestinationIP"/>
+                <Field name="matchedIpMessageType" mib_property="matchedIpMessageType"/>
+                <Field name="matchedDscp" mib_property="matchedDscp"/>
+                <Field name="matchedSoursePort" mib_property="matchedSoursePort"/>
+                <Field name="matchedDestinationPort" mib_property="matchedDestinationPort"/>
+                <!--<Field name="matchedFieldSelection" mib_property="matchedFieldSelection"/>-->
+                <Field name="aclAction" mib_property="aclAction"/>
+                <Field name="aclActionParameter" mib_property="aclActionParameter"/>
+                <Field name="aclActionValue" mib_property="aclActionValue"/>
+            </Table>
+            <Button id="Add_AclRuleTable" type="Add">
+                <Panel action_id="Add_AclRuleTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.AclRuleTablePanel"/>
+            </Button>
+            <Button id="Modify_AclRuleTable" type="Modify">
+                <Panel action_id="Modify_AclRuleTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.AclRuleTablePanel"/>
+            </Button>
+            <Button id="Delete_AclRuleTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- aclManagementTable -->
+        <Panel name="ACL_Management">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.AclManagementTable">
+                <Field name="aclListIndex" mib_property="aclListIndex"/>
+                <Field name="aclDescription" mib_property="aclDescription"/>
+                <Field name="aclRuleList" mib_property="aclRuleList"/>
+            </Table>
+            <Button id="Add_AclManagementTable" type="Add">
+                <Panel action_id="Add_AclManagementTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.AclManagementTablePanel"/>
+            </Button>
+            <Button id="Modify_AclManagementTable" type="Modify">
+                <Panel action_id="Modify_AclManagementTable" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.AclManagementTablePanel"/>
+            </Button>
+            <Button id="Delete_AclManagementTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- portAclListTable -->
+        <Panel name="Port_ACL_List">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.PortAclListTable">
+                <Field name="aclDeviceIndex" mib_property="aclDeviceIndex"/>
+                <Field name="aclCardIndex" mib_property="aclCardIndex"/>
+                <Field name="aclPortIndex" mib_property="aclPortIndex"/>
+                <Field name="portAclListIndex" mib_property="portAclListIndex"/>
+                <Field name="aclPortDirection" mib_property="aclPortDirection"/>
+                <!--
+                <Field name="aclAction" mib_property="aclAction"/>
+                <Field name="aclActionParameter" mib_property="aclActionParameter"/>
+                -->
+            </Table>
+            <Button id="Add_PortAclListTable" type="Add">
+                <Panel action_id="Add_PortAclListTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.PortAclListTablePanel"/>
+            </Button>
+            <Button id="Modify_PortAclListTable" type="Modify">
+                <Panel action_id="Modify_PortAclListTable" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.PortAclListTablePanel"/>
+            </Button>
+            <Button id="Delete_PortAclListTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- ponBroadcastStormSuppressionTable -->
+        <Panel name="Broadcast_Strom_Suppression">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.PonBroadcastStormSuppressionTable">
+                <Field name="bsDeviceIndex" mib_property="bsDeviceIndex"/>
+                <!--
+                <Field name="bsCardIndex" mib_property="bsCardIndex"/>
+                <Field name="bsPortIndex" mib_property="bsPortIndex"/>
+                -->
+                <Field name="unicastStormEnable" mib_property="unicastStormEnable"/>
+                <Field name="unicastStormInPacketRate" mib_property="unicastStormInPacketRate"/>
+                <Field name="unicastStormOutPacketRate" mib_property="unicastStormOutPacketRate"/>
+                <Field name="multicastStormEnable" mib_property="multicastStormEnable"/>
+                <Field name="multicastStormInPacketRate" mib_property="multicastStormInPacketRate"/>
+                <Field name="multicastStormOutPacketRate" mib_property="multicastStormOutPacketRate"/>
+                <Field name="broadcastStormEnable" mib_property="broadcastStormEnable"/>
+                <Field name="broadcastStormInPacketRate" mib_property="broadcastStormInPacketRate"/>
+                <Field name="broadcastStormOutPacketRate" mib_property="broadcastStormOutPacketRate"/>
+            </Table>
+            <Button id="Modify_PonBroadcastStormSuppressionTable" type="Modify">
+                <Panel action_id="Modify_PonBroadcastStormSuppressionTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.PonBroadcastStormSuppressionTablePanel"/>
+            </Button>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- onuInfoTable -->
+        <Panel name="ONU_Information">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.OnuInfoTable">
+                <Field name="onuDeviceIndex" mib_property="onuDeviceIndex"/>
+                <Field name="onuName" mib_property="onuName"/>
+                <Field name="onuType" mib_property="onuType"/>
+                <Field name="onuIpAddress" mib_property="onuIpAddress"/>
+                <Field name="onuIpSubnetMask" mib_property="onuIpSubnetMask"/>
+                <Field name="onuIpGateway" mib_property="onuIpGateway"/>
+                <Field name="onuMacAddress" mib_property="onuMacAddress"/>
+                <Field name="onuOperationStatus" mib_property="onuOperationStatus"/>
+                <Field name="onuAdminStatus" mib_property="onuAdminStatus"/>
+                <Field name="onuChipVendor" mib_property="onuChipVendor"/>
+                <Field name="onuChipType" mib_property="onuChipType"/>
+                <Field name="onuChipVersion" mib_property="onuChipVersion"/>
+                <Field name="onuSoftwareVersion" mib_property="onuSoftwareVersion"/>
+                <Field name="onuFirmwareVersion" mib_property="onuFirmwareVersion"/>
+                <Field name="onuTestDistance" mib_property="onuTestDistance"/>
+                <Field name="onuLlidId" mib_property="onuLlidId"/>
+                <Field name="onuTimeSinceLastRegister" mib_property="onuTimeSinceLastRegister"/>
+								<Field name="onuMgmtCvlan" mib_property="onuMgmtCvlan" />
+								<Field name="onuMgmtSvlan" mib_property="onuMgmtSvlan" />
+								<Field name="onuMgmtPriority" mib_property="onuMgmtPriority" />
+								<Field name="onuMgmtSnmpTrapHost" mib_property="onuMgmtSnmpTrapHost" />
+								<Field name="onuMgmtSnmpCommunityForRead" mib_property="onuMgmtSnmpCommunityForRead" />
+								<Field name="onuMgmtSnmpCommunityForWrite" mib_property="onuMgmtSnmpCommunityForWrite" />
+            </Table>
+            <Button id="Modify_OnuInfoTable" type="Modify">
+                <Panel action_id="Modify_OnuInfoTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.OnuInfoTablePanel"/>
+            </Button>
+            <Button id="Reset_ONU" type="Custom" text="resetONU">
+                <Action id="Reset_ONU_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.action.ResetOnuAction"/>
+            </Button>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- onuPonPortOpticalTransmissionPropertyTable -->
+        <Panel name="ONU_PON_Port_Optical_Transmission_Properties">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.OnuPonPortOpticalTransmissionPropertyTable">
+                <Field name="onuPonPortOpticalTransmissionPropertyDeviceIndex" mib_property="onuPonPortOpticalTransmissionPropertyDeviceIndex"/>
+                <!--
+                <Field name="onuPonPortOpticalTransmissionPropertyCardIndex" mib_property="onuPonPortOpticalTransmissionPropertyCardIndex"/>
+                <Field name="onuPonPortOpticalTransmissionPropertyPortIndex" mib_property="onuPonPortOpticalTransmissionPropertyPortIndex"/>
+                -->
+                <Field name="onuReceivedOpticalPower" mib_property="onuReceivedOpticalPower"/>
+                <Field name="onuTramsmittedOpticalPower" mib_property="onuTramsmittedOpticalPower"/>
+                <Field name="onuBiasCurrent" mib_property="onuBiasCurrent"/>
+                <Field name="onuWorkingVoltage" mib_property="onuWorkingVoltage"/>
+                <Field name="onuWorkingTemperature" mib_property="onuWorkingTemperature"/>
+            </Table>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- onuCapabilityTable -->
+        <Panel name="ONU_Capability">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.OnuCapabilityTable">
+                <Field name="onuCapabilityDeviceIndex" mib_property="onuCapabilityDeviceIndex"/>
+                <Field name="onuGePortNum" mib_property="onuGePortNum"/>
+                <Field name="onuGePortBitmap" mib_property="onuGePortBitmap"/>
+                <Field name="onuFePortNum" mib_property="onuFePortNum"/>
+                <Field name="onuFePortBitmap" mib_property="onuFePortBitmap"/>
+                <Field name="onuQueueNumUplink" mib_property="onuQueueNumUplink"/>
+                <Field name="onuMaxQueueNumUplink" mib_property="onuMaxQueueNumUplink"/>
+                <Field name="onuQueueNumDownlink" mib_property="onuQueueNumDownlink"/>
+                <Field name="onuMaxQueueNumDownlink" mib_property="onuMaxQueueNumDownlink"/>
+                <Field name="onuFecEnable" mib_property="onuFecEnable"/>
+                <Field name="onuEncryptMode" mib_property="onuEncryptMode"/>
+                <Field name="onuEncryptKeyExchangeTime" mib_property="onuEncryptKeyExchangeTime"/>
+            </Table>
+            <Button id="Modify_OnuCapabilityTable" type="Modify">
+                <Panel action_id="Modify_OnuCapabilityTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.OnuCapabilityTablePanel"/>
+            </Button>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- slaTable -->
+        <Panel name="ONU_SLA">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.SlaTable">
+                <Field name="slaIndex" mib_property="slaIndex"/>
+                <Field name="slaDsFixedBW" mib_property="slaDsFixedBW"/>
+                <Field name="slaDsPeakBW" mib_property="slaDsPeakBW"/>
+                <Field name="slaDsCommittedBW" mib_property="slaDsCommittedBW"/>
+                <Field name="slaUsFixedBW" mib_property="slaUsFixedBW"/>
+                <Field name="slaUsPeakBW" mib_property="slaUsPeakBW"/>
+                <Field name="slaUsCommittedBW" mib_property="slaUsCommittedBW"/>
+            </Table>
+            <Button id="Modify_SlaTable" type="Modify">
+                <Panel action_id="Modify_SlaTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.SlaTablePanel"/>
+            </Button>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- onuAuthenticationPolicy -->
+
+        <!-- onuAuthenticationPreConfigTable -->
+        <Panel name="ONU_Authentication_Pre_Config">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.OnuAuthenticationPreConfigTable">
+                <Field name="onuAuthenOnuId" mib_property="onuAuthenOnuId"/>
+                <Field name="onuAuthenMacAddress" mib_property="onuAuthenMacAddress"/>
+                <Field name="onuAuthenAction" mib_property="onuAuthenAction"/>
+            </Table>
+            <Button id="Add_OnuAuthenticationPreConfigTable" type="Add">
+                <Panel action_id="Add_OnuAuthenticationPreConfigTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.OnuAuthenticationPreConfigTablePanel"/>
+            </Button>
+            <Button id="Modify_OnuAuthenticationPreConfigTable" type="Modify">
+                <Panel action_id="Modify_OnuAuthenticationPreConfigTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.OnuAuthenticationPreConfigTablePanel"/>
+            </Button>
+            <Button id="Delete_OnuAuthenticationPreConfigTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- OnuAuthenticationBlockTable -->
+        <Panel name="ONU_Authentication_Block">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.OnuAuthenticationBlockTable">
+                <Field name="onuAuthenBlockOnuId" mib_property="onuAuthenBlockOnuId"/>
+                <Field name="onuAuthenBlockMacAddress" mib_property="onuAuthenBlockMacAddress"/>
+                <Field name="authenTime" mib_property="authenTime"/>
+            </Table>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- uniAttributeTable -->
+        <Panel name="UNI_Information">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.UniAttributeTable">
+                <Field name="uniAttributeDeviceIndex" mib_property="uniAttributeDeviceIndex"/>
+                <Field name="uniAttributeCardIndex" mib_property="uniAttributeCardIndex"/>
+                <Field name="uniAttributePortIndex" mib_property="uniAttributePortIndex"/>
+                <Field name="uniAdminStatus" mib_property="uniAdminStatus"/>
+                <Field name="uniOperationStatus" mib_property="uniOperationStatus"/>
+                <!--
+                <Field name="uniPerfStats15minuteEnable" mib_property="uniPerfStats15minuteEnable"/>
+                <Field name="uniPerfStats24hourEnable" mib_property="uniPerfStats24hourEnable"/>
+                <Field name="uniLastChangeTime" mib_property="uniLastChangeTime"/>
+                <Field name="uniIsolationEnable" mib_property="uniIsolationEnable"/>
+                <Field name="uniMacAddrLearnMaxNum" mib_property="uniMacAddrLearnMaxNum"/>
+                -->
+                <Field name="uniAutoNegotiationEnable" mib_property="uniAutoNegotiationEnable"/>
+                <Field name="uniAutoNegotiationLocalTechAbility" mib_property="uniAutoNegotiationLocalTechAbility"/>
+                <Field name="uniAutoNegotiationAdvertisedTechAbility" mib_property="uniAutoNegotiationAdvertisedTechAbility"/>
+                <!--
+                <Field name="uniAutoNegotiationRestart" mib_property="uniAutoNegotiationRestart"/>
+                -->
+            </Table>
+            <Button id="Modify_UniAttributeTable" type="Modify">
+                <Panel action_id="Modify_UniAttributeTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.UniAttributeTablePanel"/>
+            </Button>
+            <Button id="Restart_AutoNegotiation" type="Custom" text="uniAutoNegotiationRestart">
+                <Action id="Restart_AutoNegotiation_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.action.RestartAutoNegotiationAction"/>
+            </Button>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- uniMacAddressTable -->
+        <Panel name="UNI_MAC_Address_Table">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.UniMacAddressTable">
+                <Field name="uniMacAddrIndex" mib_property="uniMacAddrIndex"/>
+                <Field name="uniMacAddrVlanIdIndex" mib_property="uniMacAddrVlanIdIndex"/>
+                <Field name="uniMacAddrType" mib_property="uniMacAddrType"/>
+                <Field name="uniMacAddrPortId" mib_property="uniMacAddrPortId"/>
+            </Table>
+            <Button id="Clear_DynamicMac" type="Custom" text="Clear Dynamic MAC Address">
+                <Action id="Clear_DynamicMac_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.action.ClearDynamicMacAction"/>
+            </Button>
+            <Button id="Add_UniMacAddressTable" type="Add">
+                <Panel action_id="Add_MacAddressTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.UniMacAddressTablePanel"/>
+            </Button>
+            <Button id="Modify_UniMacAddressTable" type="Modify">
+                <Panel action_id="Modify_MacAddressTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.UniMacAddressTablePanel"/>
+            </Button>
+            <Button id="Delete_UniMacAddressTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- uniTrunkGroupConfigTable -->
+        <Panel name="UniTrunkGroupConfigTable">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.UniTrunkGroupConfigTable">
+                <Field name="uniTrunkGroupConfigIndex" mib_property="uniTrunkGroupConfigIndex"/>
+                <Field name="uniTrunkGroupConfigName" mib_property="uniTrunkGroupConfigName"/>
+                <Field name="uniTrunkGroupConfigMember" mib_property="uniTrunkGroupConfigMember"/>
+                <Field name="uniTrunkGroupConfigPolicy" mib_property="uniTrunkGroupConfigPolicy"/>
+            </Table>
+            <Button id="Add_UniTrunkGroupConfigTable" type="Add">
+                <Panel action_id="Add_UniTrunkGroupConfigTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.UniTrunkGroupConfigTablePanel"/>
+            </Button>
+            <Button id="Modify_UniTrunkGroupConfigTable" type="Modify">
+                <Panel action_id="Modify_UniTrunkGroupConfigTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.UniTrunkGroupConfigTablePanel"/>
+            </Button>
+            <Button id="Delete_UniTrunkGroupConfigTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- uniTrunkGroupTable -->
+        <Panel name="UniTrunkGroupTable">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.UniTrunkGroupTable">
+                <Field name="uniTrunkGroupIndex" mib_property="uniTrunkGroupIndex"/>
+                <Field name="uniTrunkGroupOperationStatus" mib_property="uniTrunkGroupOperationStatus"/>
+                <Field name="uniTrunkGroupActualSpeed" mib_property="uniTrunkGroupActualSpeed"/>
+                <Field name="uniTrunkGroupAdminStatus" mib_property="uniTrunkGroupAdminStatus"/>
+            </Table>
+            <!--
+            <Button id="Add_UniTrunkGroupTable" type="Add">
+                <Panel action_id="Add_UniTrunkGroupTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.UniTrunkGroupTablePanel"/>
+            </Button>
+            -->
+            <Button id="Modify_UniTrunkGroupTable" type="Modify">
+                <Panel action_id="Modify_UniTrunkGroupTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.UniTrunkGroupTablePanel"/>
+            </Button>
+            <!--
+            <Button id="Delete_UniTrunkGroupTable" type="Delete"/>
+            -->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- uniPortRateLimitTable -->
+        <Panel name="UNI_Rate_Limit">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.UniPortRateLimitTable">
+                <Field name="uniPortRateLimitDeviceIndex" mib_property="uniPortRateLimitDeviceIndex"/>
+                <Field name="uniPortRateLimitCardIndex" mib_property="uniPortRateLimitCardIndex"/>
+                <Field name="uniPortRateLimitPortIndex" mib_property="uniPortRateLimitPortIndex"/>
+                <Field name="uniPortInCIR" mib_property="uniPortInCIR"/>
+                <Field name="uniPortInCBS" mib_property="uniPortInCBS"/>
+                <Field name="uniPortInEBS" mib_property="uniPortInEBS"/>
+                <Field name="uniPortOutCIR" mib_property="uniPortOutCIR"/>
+                <!--
+                <Field name="uniPortOutCBS" mib_property="uniPortOutCBS"/>
+                <Field name="uniPortOutPBS" mib_property="uniPortOutPBS"/>
+                -->
+                <Field name="uniPortOutPIR" mib_property="uniPortOutPIR"/>
+                <Field name="uniPortInRateLimitEnable" mib_property="uniPortInRateLimitEnable"/>
+                <Field name="uniPortOutRateLimitEnable" mib_property="uniPortOutRateLimitEnable"/>
+            </Table>
+            <Button id="Modify_UniPortRateLimitTable" type="Modify">
+                <Panel action_id="Modify_UniPortRateLimitTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.UniPortRateLimitTablePanel"/>
+            </Button>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- uniMirrorTable -->
+        <Panel name="UNI_Mirror_Group">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.UniMirrorTable">
+                <Field name="uniMirrorGroupIndex" mib_property="uniMirrorGroupIndex"/>
+                <Field name="uniMirrorGroupName" mib_property="uniMirrorGroupName"/>
+                <Field name="uniMirrorGroupDstPortList" mib_property="uniMirrorGroupDstPortList"/>
+                <Field name="uniMirrorGroupSrcInPortList" mib_property="uniMirrorGroupSrcInPortList"/>
+                <Field name="uniMirrorGroupSrcOutPortList" mib_property="uniMirrorGroupSrcOutPortList"/>
+            </Table>
+            <Button id="Add_UniMirrorTable" type="Add">
+                <Panel action_id="Add_UniMirrorTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.UniMirrorTablePanel"/>
+            </Button>
+            <Button id="Modify_UniMirrorTable" type="Modify">
+                <Panel action_id="Modify_UniMirrorTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.UniMirrorTablePanel"/>
+            </Button>
+            <Button id="Delete_UniMirrorTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- uniBroadcastStormSuppressionTable -->
+        <Panel name="UNI_Storm_Suppression">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.UniBroadcastStormSuppressionTable">
+                <Field name="uniBroadcastStormSuppressionCardIndex" mib_property="uniBroadcastStormSuppressionCardIndex"/>
+                <Field name="uniBroadcastStormSuppressionPortIndex" mib_property="uniBroadcastStormSuppressionPortIndex"/>
+                <Field name="uniUnicastStormEnable" mib_property="uniUnicastStormEnable"/>
+                <Field name="uniUnicastStormInPacketRate" mib_property="uniUnicastStormInPacketRate"/>
+                <Field name="uniUnicastStormOutPacketRate" mib_property="uniUnicastStormOutPacketRate"/>
+                <Field name="uniMulticastStormEnable" mib_property="uniMulticastStormEnable"/>
+                <Field name="uniMulticastStormInPacketRate" mib_property="uniMulticastStormInPacketRate"/>
+                <Field name="uniMulticastStormOutPacketRate" mib_property="uniMulticastStormOutPacketRate"/>
+                <Field name="uniBroadcastStormEnable" mib_property="uniBroadcastStormEnable"/>
+                <Field name="uniBroadcastStormInPacketRate" mib_property="uniBroadcastStormInPacketRate"/>
+                <Field name="uniBroadcastStormOutPacketRate" mib_property="uniBroadcastStormOutPacketRate"/>
+            </Table>
+            <!--
+            <Button id="Add_UniBroadcastStormSuppressionTable" type="Add">
+                <Panel action_id="Add_UniBroadcastStormSuppressionTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.UniBroadcastStormSuppressionTablePanel"/>
+            </Button>
+            -->
+            <Button id="Modify_UniBroadcastStormSuppressionTable" type="Modify">
+                <Panel action_id="Modify_UniBroadcastStormSuppressionTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.UniBroadcastStormSuppressionTablePanel"/>
+            </Button>
+            <!--
+            <Button id="Delete_UniBroadcastStormSuppressionTable" type="Delete"/>
+            -->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- uniExtAttributeTable -->
+        <Panel name="UNI_Ext_Attribute">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.UniExtAttributeTable">
+                <Field name="uniExtAttributeCardIndex" mib_property="uniExtAttributeCardIndex"/>
+                <Field name="uniExtAttributePortIndex" mib_property="uniExtAttributePortIndex"/>
+                <Field name="uniPerfStats15minuteEnable" mib_property="uniPerfStats15minuteEnable"/>
+                <Field name="uniPerfStats24hourEnable" mib_property="uniPerfStats24hourEnable"/>
+                <Field name="uniLastChangeTime" mib_property="uniLastChangeTime"/>
+                <Field name="uniIsolationEnable" mib_property="uniIsolationEnable"/>
+                <Field name="uniMacAddrLearnMaxNum" mib_property="uniMacAddrLearnMaxNum"/>
+            </Table>
+            <Button id="Modify_UniExtAttributeTable" type="Modify">
+                <Panel action_id="Modify_UniExtAttributeTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.UniExtAttributeTablePanel"/>
+            </Button>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- igmpEntityTable -->
+        <Panel name="IGMP_Entity">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.IgmpEntityTable">
+                <Field name="igmpDeviceIndex" mib_property="igmpDeviceIndex"/>
+                <Field name="igmpMode" mib_property="igmpMode"/>
+                <Field name="maxQueryResponseTime" mib_property="maxQueryResponseTime"/>
+                <Field name="robustVariable" mib_property="robustVariable"/>
+                <Field name="queryInterval" mib_property="queryInterval"/>
+                <Field name="lastMemberQueryInterval" mib_property="lastMemberQueryInterval"/>
+                <Field name="lastMemberQueryCount" mib_property="lastMemberQueryCount"/>
+                <Field name="igmpVersion" mib_property="igmpVersion"/>
+            </Table>
+            <!--
+            <Button id="Add_IgmpEntityTable" type="Add">
+                <Panel action_id="Add_IgmpEntityTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.IgmpEntityTablePanel"/>
+            </Button>
+            -->
+            <Button id="Modify_IgmpEntityTable" type="Modify">
+                <Panel action_id="Modify_IgmpEntityTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.IgmpEntityTablePanel"/>
+            </Button>
+            <!--
+            <Button id="Delete_IgmpEntityTable" type="Delete"/>
+            -->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- igmpProxyParaTable -->
+        <Panel name="IGMP_Proxy_Para">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.IgmpProxyParaTable">
+                <Field name="proxyIndex" mib_property="proxyIndex"/>
+                <Field name="proxyName" mib_property="proxyName"/>
+                <Field name="proxySrcIPAddress" mib_property="proxySrcIPAddress"/>
+                <Field name="proxyMulticastVID" mib_property="proxyMulticastVID"/>
+                <Field name="proxyMulticastIPAddress" mib_property="proxyMulticastIPAddress"/>
+                <Field name="multicastAssuredBW" mib_property="multicastAssuredBW"/>
+                <Field name="multicastMaxBW" mib_property="multicastMaxBW"/>
+            </Table>
+            <Button id="Add_IgmpProxyParaTable" type="Add">
+                <Panel action_id="Add_IgmpProxyParaTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.IgmpProxyParaTablePanel"/>
+            </Button>
+            <Button id="Modify_IgmpProxyParaTable" type="Modify">
+                <Panel action_id="Modify_IgmpProxyParaTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.IgmpProxyParaTablePanel"/>
+            </Button>
+            <Button id="Delete_IgmpProxyParaTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- igmpForwardingTable -->
+        <Panel name="IGMP_Forwarding">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.IgmpForwardingTable">
+                <Field name="groupDeviceIndex" mib_property="groupDeviceIndex"/>
+                <Field name="groupVlanIndex" mib_property="groupVlanIndex"/>
+                <Field name="groupMacAddress" mib_property="groupMacAddress"/>
+                <Field name="groupPortList" mib_property="groupPortList"/>
+            </Table>
+            <!--
+            <Button id="Add_IgmpForwardingTable" type="Add">
+                <Panel action_id="Add_IgmpForwardingTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.IgmpForwardingTablePanel"/>
+            </Button>
+            <Button id="Modify_IgmpForwardingTable" type="Modify">
+                <Panel action_id="Modify_IgmpForwardingTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.IgmpForwardingTablePanel"/>
+            </Button>
+            <Button id="Delete_IgmpForwardingTable" type="Delete"/>
+            -->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- controlledMulticastUserAuthorityTable -->
+        <Panel name="Controlled_Multicast_User_Authority">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.ControlledMulticastUserAuthorityTable">
+                <Field name="cmDeviceIndex" mib_property="cmDeviceIndex"/>
+                <Field name="cmCardIndex" mib_property="cmCardIndex"/>
+                <Field name="cmPortIndex" mib_property="cmPortIndex"/>
+                <Field name="multicastPackageList" mib_property="multicastPackageList"/>
+                <Field name="igmpGlobalBW" mib_property="igmpGlobalBW"/>
+                <Field name="igmpGlobalBWUsed" mib_property="igmpGlobalBWUsed"/>
+            </Table>
+            <Button id="Add_ControlledMulticastUserAuthorityTable" type="Add">
+                <Panel action_id="Add_ControlledMulticastUserAuthorityTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.ControlledMulticastUserAuthorityTablePanel"/>
+            </Button>
+            <Button id="Modify_ControlledMulticastUserAuthorityTable" type="Modify">
+                <Panel action_id="Modify_ControlledMulticastUserAuthorityTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.ControlledMulticastUserAuthorityTablePanel"/>
+            </Button>
+            <Button id="Delete_ControlledMulticastUserAuthorityTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- controlledMulticastPackageTable -->
+        <Panel name="Controlled_Multicast_Package">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.ControlledMulticastPackageTable">
+                <Field name="cmIndex" mib_property="cmIndex"/>
+                <Field name="cmName" mib_property="cmName"/>
+                <Field name="cmProxyList" mib_property="cmProxyList"/>
+                <Field name="multicastUserAuthority" mib_property="multicastUserAuthority"/>
+                <Field name="maxRequestChannelNum" mib_property="maxRequestChannelNum"/>
+                <Field name="singlePreviewTime" mib_property="singlePreviewTime"/>
+                <Field name="totalPreviewTime" mib_property="totalPreviewTime"/>
+                <Field name="previewResetTime" mib_property="previewResetTime"/>
+                <Field name="previewCount" mib_property="previewCount"/>
+            </Table>
+            <Button id="Add_ControlledMulticastPackageTable" type="Add">
+                <Panel action_id="Add_ControlledMulticastPackageTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.ControlledMulticastPackageTablePanel"/>
+            </Button>
+            <Button id="Modify_ControlledMulticastPackageTable" type="Modify">
+                <Panel action_id="Modify_ControlledMulticastPackageTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.ControlledMulticastPackageTablePanel"/>
+            </Button>
+            <Button id="Delete_ControlledMulticastPackageTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- stpGlobalSetTable -->
+        <Panel name="STP_Global_Set">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.StpGlobalSetTable">
+                <Field name="stpGlobalSetIndex" mib_property="stpGlobalSetIndex"/>
+                <Field name="stpGlobalSetVersion" mib_property="stpGlobalSetVersion"/>
+                <Field name="stpGlobalSetPriority" mib_property="stpGlobalSetPriority"/>
+                <Field name="stpGlobalSetTimeSinceTopologyChange" mib_property="stpGlobalSetTimeSinceTopologyChange"/>
+                <Field name="stpGlobalSetTopChanges" mib_property="stpGlobalSetTopChanges"/>
+                <Field name="stpGlobalSetDesignatedRoot" mib_property="stpGlobalSetDesignatedRoot"/>
+                <Field name="stpGlobalSetRootCost" mib_property="stpGlobalSetRootCost"/>
+                <Field name="stpGlobalSetRootPort" mib_property="stpGlobalSetRootPort"/>
+                <Field name="stpGlobalSetMaxAge" mib_property="stpGlobalSetMaxAge"/>
+                <Field name="stpGlobalSetHelloTime" mib_property="stpGlobalSetHelloTime"/>
+                <Field name="stpGlobalSetHoldTime" mib_property="stpGlobalSetHoldTime"/>
+                <Field name="stpGlobalSetForwardDelay" mib_property="stpGlobalSetForwardDelay"/>
+                <Field name="stpGlobalSetBridgeMaxAge" mib_property="stpGlobalSetBridgeMaxAge"/>
+                <Field name="stpGlobalSetBridgeHelloTime" mib_property="stpGlobalSetBridgeHelloTime"/>
+                <Field name="stpGlobalSetBridgeForwardDelay" mib_property="stpGlobalSetBridgeForwardDelay"/>
+                <Field name="stpGlobalSetRstpTxHoldCount" mib_property="stpGlobalSetRstpTxHoldCount"/>
+                <Field name="stpGlobalSetEnable" mib_property="stpGlobalSetEnable"/>
+            </Table>
+            <!--
+            <Button id="Add_StpGlobalSetTable" type="Add">
+                <Panel action_id="Add_StpGlobalSetTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.StpGlobalSetTablePanel"/>
+            </Button>
+            -->
+            <Button id="Modify_StpGlobalSetTable" type="Modify">
+                <Panel action_id="Modify_StpGlobalSetTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.StpGlobalSetTablePanel"/>
+            </Button>
+            <!--
+            <Button id="Delete_StpGlobalSetTable" type="Delete"/>
+            -->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- stpPortTable -->
+        <Panel name="STP_Port">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.StpPortTable">
+                <Field name="stpPortStpIndex" mib_property="stpPortStpIndex"/>
+                <!--
+                <Field name="stpPortCardIndex" mib_property="stpPortCardIndex"/>
+                <Field name="stpPortIndex" mib_property="stpPortIndex"/>
+                -->
+                <Field name="stpPortStatus" mib_property="stpPortStatus"/>
+                <Field name="stpPortPriority" mib_property="stpPortPriority"/>
+                <Field name="stpPortPathCost" mib_property="stpPortPathCost"/>
+                <Field name="stpPortDesignatedRoot" mib_property="stpPortDesignatedRoot"/>
+                <Field name="stpPortDesignatedCost" mib_property="stpPortDesignatedCost"/>
+                <Field name="stpPortDesignatedBridge" mib_property="stpPortDesignatedBridge"/>
+                <Field name="stpPortDesignatedPort" mib_property="stpPortDesignatedPort"/>
+                <Field name="stpPortForwardTransitions" mib_property="stpPortForwardTransitions"/>
+                <Field name="stpPortRstpProtocolMigration" mib_property="stpPortRstpProtocolMigration"/>
+                <Field name="stpPortRstpAdminEdgePort" mib_property="stpPortRstpAdminEdgePort"/>
+                <Field name="stpPortRstpOperEdgePort" mib_property="stpPortRstpOperEdgePort"/>
+                <Field name="stpPortPointToPointAdminStatus" mib_property="stpPortPointToPointAdminStatus"/>
+                <Field name="stpPortPointToPointOperStatus" mib_property="stpPortPointToPointOperStatus"/>
+                <Field name="stpPortEnabled" mib_property="stpPortEnabled"/>
+            </Table>
+            <!--
+            <Button id="Add_StpPortTable" type="Add">
+                <Panel action_id="Add_StpPortTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.StpPortTablePanel"/>
+            </Button>
+            -->
+            <Button id="Modify_StpPortTable" type="Modify">
+                <Panel action_id="Modify_StpPortTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.StpPortTablePanel"/>
+            </Button>
+            <!--
+            <Button id="Delete_StpPortTable" type="Delete"/>
+            -->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- curStatsTable -->
+        <Panel name="PM_CUR_Stats">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.CurStatsTable">
+                <Field name="curStatsDeviceIndex" mib_property="curStatsDeviceIndex"/>
+                <Field name="curStatsCardIndex" mib_property="curStatsCardIndex"/>
+                <Field name="curStatsPortIndex" mib_property="curStatsPortIndex"/>
+                <Field name="curStatsInOctets" mib_property="curStatsInOctets"/>
+                <Field name="curStatsInPkts" mib_property="curStatsInPkts"/>
+                <Field name="curStatsInBroadcastPkts" mib_property="curStatsInBroadcastPkts"/>
+                <Field name="curStatsInMulticastPkts" mib_property="curStatsInMulticastPkts"/>
+                <Field name="curStatsInPkts64Octets" mib_property="curStatsInPkts64Octets"/>
+                <Field name="curStatsInPkts65to127Octets" mib_property="curStatsInPkts65to127Octets"/>
+                <Field name="curStatsInPkts128to255Octets" mib_property="curStatsInPkts128to255Octets"/>
+                <Field name="curStatsInPkts256to511Octets" mib_property="curStatsInPkts256to511Octets"/>
+                <Field name="curStatsInPkts512to1023Octets" mib_property="curStatsInPkts512to1023Octets"/>
+                <Field name="curStatsInPkts1024to1518Octets" mib_property="curStatsInPkts1024to1518Octets"/>
+                <Field name="curStatsInPkts1519to1522Octets" mib_property="curStatsInPkts1519to1522Octets"/>
+                <Field name="curStatsInUndersizePkts" mib_property="curStatsInUndersizePkts"/>
+                <Field name="curStatsInOversizePkts" mib_property="curStatsInOversizePkts"/>
+                <Field name="curStatsInFragments" mib_property="curStatsInFragments"/>
+                <Field name="curStatsInMpcpFrames" mib_property="curStatsInMpcpFrames"/>
+                <Field name="curStatsInMpcpOctets" mib_property="curStatsInMpcpOctets"/>
+                <Field name="curStatsInOAMFrames" mib_property="curStatsInOAMFrames"/>
+                <Field name="curStatsInOAMOctets" mib_property="curStatsInOAMOctets"/>
+                <Field name="curStatsInCRCErrorPkts" mib_property="curStatsInCRCErrorPkts"/>
+                <Field name="curStatsInDropEvents" mib_property="curStatsInDropEvents"/>
+                <Field name="curStatsInJabbers" mib_property="curStatsInJabbers"/>
+                <Field name="curStatsInCollision" mib_property="curStatsInCollision"/>
+                <Field name="curStatsOutOctets" mib_property="curStatsOutOctets"/>
+                <Field name="curStatsOutPkts" mib_property="curStatsOutPkts"/>
+                <Field name="curStatsOutBroadcastPkts" mib_property="curStatsOutBroadcastPkts"/>
+                <Field name="curStatsOutMulticastPkts" mib_property="curStatsOutMulticastPkts"/>
+                <Field name="curStatsOutPkts64Octets" mib_property="curStatsOutPkts64Octets"/>
+                <Field name="curStatsOutPkts65to127Octets" mib_property="curStatsOutPkts65to127Octets"/>
+                <Field name="curStatsOutPkts128to255Octets" mib_property="curStatsOutPkts128to255Octets"/>
+                <Field name="curStatsOutPkts256to511Octets" mib_property="curStatsOutPkts256to511Octets"/>
+                <Field name="curStatsOutPkts512to1023Octets" mib_property="curStatsOutPkts512to1023Octets"/>
+                <Field name="curStatsOutPkts1024to1518Octets" mib_property="curStatsOutPkts1024to1518Octets"/>
+                <Field name="curStatsOutPkts1519o1522Octets" mib_property="curStatsOutPkts1519o1522Octets"/>
+                <Field name="curStatsOutUndersizePkts" mib_property="curStatsOutUndersizePkts"/>
+                <Field name="curStatsOutOversizePkts" mib_property="curStatsOutOversizePkts"/>
+                <Field name="curStatsOutFragments" mib_property="curStatsOutFragments"/>
+                <Field name="curStatsOutMpcpFrames" mib_property="curStatsOutMpcpFrames"/>
+                <Field name="curStatsOutMpcpOctets" mib_property="curStatsOutMpcpOctets"/>
+                <Field name="curStatsOutOAMFrames" mib_property="curStatsOutOAMFrames"/>
+                <Field name="curStatsOutOAMOctets" mib_property="curStatsOutOAMOctets"/>
+                <Field name="curStatsOutCRCErrorPkts" mib_property="curStatsOutCRCErrorPkts"/>
+                <Field name="curStatsOutDropEvents" mib_property="curStatsOutDropEvents"/>
+                <Field name="curStatsOutJabbers" mib_property="curStatsOutJabbers"/>
+                <Field name="curStatsOutCollision" mib_property="curStatsOutCollision"/>
+                <!--<Field name="curStatsStatusAndAction" mib_property="curStatsStatusAndAction"/>-->
+            </Table>
+            <Button id="Clean_PerformanceCurStats" type="Custom" text="Clean">
+                <Action id="Clear_PerformanceCurStats_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.action.CleanPerformanceCurStatsAction"/>
+            </Button>
+            <!--
+            <Button id="Add_CurStatsTable" type="Add">
+                <Panel action_id="Add_CurStatsTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.mib.r400.gui.CurStatsTablePanel"/>
+            </Button>
+            <Button id="Modify_CurStatsTable" type="Modify">
+                <Panel action_id="Modify_CurStatsTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.mib.r400.gui.CurStatsTablePanel"/>
+            </Button>
+            <Button id="Delete_CurStatsTable" type="Delete"/>
+            -->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- perfStatsThresholdTable -->
+        <Panel name="PM_Stats_Threshold">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.PerfStatsThresholdTable">
+                <Field name="perfStatsThresholdDeviceIndex" mib_property="perfStatsThresholdDeviceIndex"/>
+                <Field name="perfStatsThresholdCardIndex" mib_property="perfStatsThresholdCardIndex"/>
+                <Field name="perfStatsThresholdPortIndex" mib_property="perfStatsThresholdPortIndex"/>
+                <Field name="perfStatsThresholdTypeIndex" mib_property="perfStatsThresholdTypeIndex"/>
+                <Field name="perfStatsThresholdUpper" mib_property="perfStatsThresholdUpper"/>
+                <Field name="perfStatsThresholdLower" mib_property="perfStatsThresholdLower"/>
+            </Table>
+            <Button id="Add_PerfStatsThresholdTable" type="Add">
+                <Panel action_id="Add_PerfStatsThresholdTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.PerfStatsThresholdTablePanel"/>
+            </Button>
+            <Button id="Modify_PerfStatsThresholdTable" type="Modify">
+                <Panel action_id="Modify_PerfStatsThresholdTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.PerfStatsThresholdTablePanel"/>
+            </Button>
+            <Button id="Delete_PerfStatsThresholdTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- eocDevInfoTable -->
+        <Panel name="EoC_Dev_Info">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.EocDevInfoTable">
+                <Field name="eocDeviceIndex" mib_property="eocDeviceIndex"/>
+                <Field name="eocCardIndex" mib_property="eocCardIndex"/>
+                <Field name="eocPortIndex" mib_property="eocPortIndex"/>
+                <Field name="eocDeviceTechnologyProject" mib_property="eocDeviceTechnologyProject"/>
+                <Field name="eocDeviceVendorName" mib_property="eocDeviceVendorName"/>
+                <Field name="eocDeviceProductType" mib_property="eocDeviceProductType"/>
+                <Field name="eocDeviceSoftwareVersion" mib_property="eocDeviceSoftwareVersion"/>
+                <Field name="eocDeviceHardwareVersion" mib_property="eocDeviceHardwareVersion"/>
+                <Field name="eocSeriesNumber" mib_property="eocSeriesNumber"/>
+                <Field name="eocDeviceIpAddress" mib_property="eocDeviceIpAddress"/>
+                <Field name="eocDeviceMacAddress" mib_property="eocDeviceMacAddress"/>
+                <Field name="eocDeviceMibVersion" mib_property="eocDeviceMibVersion"/>
+            </Table>
+            <!--
+            <Button id="Add_EocDevInfoTable" type="Add">
+                <Panel action_id="Add_EocDevInfoTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.EocDevInfoTablePanel"/>
+            </Button>
+            <Button id="Modify_EocDevInfoTable" type="Modify">
+                <Panel action_id="Modify_EocDevInfoTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.EocDevInfoTablePanel"/>
+            </Button>
+            <Button id="Delete_EocDevInfoTable" type="Delete"/>
+            -->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- VlanGlobalInfoTable_Panel -->
+        <Panel name="VlanGlobalInfoTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.VlanGlobalInfoTable">
+                <Field name="vlanDeviceIndex" mib_property="vlanDeviceIndex"/>
+                <Field name="maxVlanId" mib_property="maxVlanId"/>
+                <Field name="maxSupportVlans" mib_property="maxSupportVlans"/>
+                <Field name="createdVlanNumber" mib_property="createdVlanNumber"/>
+
+            </Table>
+            <!--
+            <Button id="Add_VlanGlobalInfoTable" type="Add">
+                <Panel action_id="Add_VlanGlobalInfoTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.VlanGlobalInfoTablePanel"/>
+            </Button>
+            <Button id="Modify_VlanGlobalInfoTable" type="Modify">
+                <Panel action_id="Modify_VlanGlobalInfoTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.VlanGlobalInfoTablePanel"/>
+            </Button>
+            <Button id="Delete_VlanGlobalInfoTable" type="Delete"/>
+            -->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- OltVlanConfigTable_Panel -->
+        <Panel name="OltVlanConfigTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.OltVlanConfigTable">
+                <Field name="oltVlanIndex" mib_property="oltVlanIndex"/>
+                <Field name="oltVlanDeviceIndex" mib_property="oltVlanDeviceIndex"/>
+                <Field name="oltVlanName" mib_property="oltVlanName"/>
+                <Field name="taggedPort" mib_property="taggedPort"/>
+                <Field name="untaggedPort" mib_property="untaggedPort"/>
+
+            </Table>
+            <Button id="Add_OltVlanConfigTable" type="Add" style="O|C">
+                <Panel action_id="Add_OltVlanConfigTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.OltVlanConfigTablePanel"/>
+            </Button>
+            <Button id="Modify_OltVlanConfigTable" type="Modify">
+                <Panel action_id="Modify_OltVlanConfigTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.OltVlanConfigTablePanel"/>
+            </Button>
+            <Button id="Delete_OltVlanConfigTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- OnuVlanConfigTable_Panel -->
+        <Panel name="OnuVlanConfigTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.OnuVlanConfigTable">
+                <Field name="onuVlanIndex" mib_property="onuVlanIndex"/>
+                <Field name="onuVlanName" mib_property="onuVlanName"/>
+                <Field name="onuVlanTaggedPort" mib_property="onuVlanTaggedPort"/>
+                <Field name="onuVlanUntaggedPort" mib_property="onuVlanUntaggedPort"/>
+
+            </Table>
+            <Button id="Add_OnuVlanConfigTable" type="Add" style="O|C">
+                <Panel action_id="Add_OnuVlanConfigTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.OnuVlanConfigTablePanel"/>
+            </Button>
+            <!--Button id="Modify_OnuVlanConfigTable" type="Modify">
+                <Panel action_id="Modify_OnuVlanConfigTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.OnuVlanConfigTablePanel"/>
+            </Button-->
+            <Button id="Delete_OnuVlanConfigTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+        <!-- PortVlanTable_Panel -->
+        <Panel name="PortVlanTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.PortVlanTable">
+                <Field name="pvlanDeviceIndex" mib_property="pvlanDeviceIndex"/>
+                <!--Field name="pvlanCardIndex" mib_property="pvlanCardIndex"/>
+                <Field name="pvlanPortIndex" mib_property="pvlanPortIndex"/-->
+                <Field name="vlanTagTpid" mib_property="vlanTagTpid"/>
+                <Field name="vlanTagCfi" mib_property="vlanTagCfi"/>
+                <Field name="vlanTagPriority" mib_property="vlanTagPriority"/>
+                <Field name="vlanPVid" mib_property="vlanPVid"/>
+                <Field name="vlanMode" mib_property="vlanMode"/>
+
+            </Table>
+            <!--Button id="Add_PortVlanTable" type="Add">
+                <Panel action_id="Add_PortVlanTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.PortVlanTablePanel"/>
+            </Button-->
+            <Button id="Modify_PortVlanTable" type="Modify">
+                <Panel action_id="Modify_PortVlanTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.PortVlanTablePanel"/>
+            </Button>
+            <!--Button id="Delete_PortVlanTable" type="Delete" /-->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!--PortVlanTranslationTable_Panel-->
+        <Panel name="PortVlanTranslationTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.PortVlanTranslationTable">
+                <Field name="pvtDeviceIndex" mib_property="pvtDeviceIndex"/>
+                <!--Field name="pvtCardIndex" mib_property="pvtCardIndex" /-->
+                <!--Field name="pvtPortIndex" mib_property="pvtPortIndex"/-->
+                <Field name="portVidIndex" mib_property="portVidIndex"/>
+                <Field name="translationNewVid" mib_property="translationNewVid"/>
+
+            </Table>
+            <Button id="Add_PortVlanTranslationTable" type="Add" style="O|C">
+                <Panel action_id="Add_PortVlanTranslationTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.PortVlanTranslationTablePanel"/>
+            </Button>
+            <Button id="Modify_PortVlanTranslationTable" type="Modify">
+                <Panel action_id="Modify_PortVlanTranslationTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.PortVlanTranslationTablePanel"/>
+            </Button>
+            <Button id="Delete_PortVlanTranslationTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <Panel name="PortVlanTranslationTable_Panel_In_Vlan_Mode">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.PortVlanTranslationTable">
+                <Field name="pvtDeviceIndex" mib_property="pvtDeviceIndex"/>
+                <!--Field name="pvtCardIndex" mib_property="pvtCardIndex" /-->
+                <!--Field name="pvtPortIndex" mib_property="pvtPortIndex"/-->
+                <Field name="portVidIndex" mib_property="portVidIndex"/>
+                <Field name="translationNewVid" mib_property="translationNewVid"/>
+
+            </Table>
+            <Button id="Add_PortVlanTranslationTable" type="Add" style="O|C">
+                <Panel action_id="Add_PortVlanTranslationTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.PortVlanTranslationTableInVlanModePanel"/>
+            </Button>
+            <Button id="Modify_PortVlanTranslationTable" type="Modify">
+                <Panel action_id="Modify_PortVlanTranslationTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.PortVlanTranslationTableInVlanModePanel"/>
+            </Button>
+            <Button id="Delete_PortVlanTranslationTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!--PortVlanAggregationConfigTable_Panel-->
+        <Panel name="PortVlanAggregationConfigTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.PortVlanAggregationConfigTable">
+                <Field name="pvaDeviceIndex" mib_property="pvaDeviceIndex"/>
+                <!--Field name="pvaCardIndex" mib_property="pvaCardIndex"/>
+                <Field name="pvaPortIndex" mib_property="pvaPortIndex"/-->
+                <Field name="portAggregationVidIndex" mib_property="portAggregationVidIndex"/>
+                <Field name="aggregationVidList" mib_property="aggregationVidList"/>
+
+            </Table>
+            <Button id="Add_PortVlanAggregationConfigTable" type="Add" style="O|C">
+                <Panel action_id="Add_PortVlanAggregationConfigTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.PortVlanAggregationConfigTablePanel"/>
+            </Button>
+            <!--Button id="Modify_PortVlanAggregationConfigTable" type="Modify">
+                <Panel action_id="Modify_PortVlanAggregationConfigTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.PortVlanAggregationConfigTablePanel"/>
+            </Button-->
+            <Button id="Delete_PortVlanAggregationConfigTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- PortVlanTrunkTable_Panel -->
+        <Panel name="PortVlanTrunkTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.PortVlanTrunkTable">
+                <Field name="trunkDeviceIndex" mib_property="trunkDeviceIndex"/>
+                <!--Field name="trunkCardIndex" mib_property="trunkCardIndex"/>
+                <Field name="trunkPortIndex" mib_property="trunkPortIndex"/-->
+                <Field name="trunkVidList" mib_property="trunkVidList"/>
+
+            </Table>
+            <Button id="Add_PortVlanTrunkTable" type="Add" style="O|C">
+                <Panel action_id="Add_PortVlanTrunkTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.PortVlanTrunkTablePanel"/>
+            </Button>
+            <!--Button id="Modify_PortVlanTrunkTable" type="Modify">
+                <Panel action_id="Modify_PortVlanTrunkTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.PortVlanTrunkTablePanel"/>
+            </Button-->
+            <Button id="Delete_PortVlanTrunkTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!--PortQinQConfigTable_Panel-->
+        <Panel name="PortQinQConfigTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.PortQinQConfigTable">
+                <Field name="pqDeviceIndex" mib_property="pqDeviceIndex"/>
+                <!--Field name="pqCardIndex" mib_property="pqCardIndex"/>
+                <Field name="pqPortIndex" mib_property="pqPortIndex"/-->
+                <Field name="pqStartVlanId" mib_property="pqStartVlanId"/>
+                <Field name="pqEndVlanId" mib_property="pqEndVlanId"/>
+                <Field name="pqSVlanId" mib_property="pqSVlanId"/>
+                <Field name="pqSTagCosDetermine" mib_property="pqSTagCosDetermine"/>
+                <Field name="pqSTagCosNewValue" mib_property="pqSTagCosNewValue"/>
+
+            </Table>
+            <Button id="Add_PortQinQConfigTable" type="Add" style="O|C">
+                <Panel action_id="Add_PortQinQConfigTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.PortQinQConfigTablePanel"/>
+            </Button>
+            <Button id="Modify_PortQinQConfigTable" type="Modify">
+                <Panel action_id="Modify_PortQinQConfigTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.PortQinQConfigTablePanel_Modify"/>
+            </Button>
+            <Button id="Delete_PortQinQConfigTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- QosGlobalSetTable_Panel -->
+        <Panel name="QosGlobalSetTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.QosGlobalSetTable">
+                <Field name="qosGlobalSetDeviceIndex" mib_property="qosGlobalSetDeviceIndex"/>
+                <Field name="qosGlobalSetMaxQueueCount" mib_property="qosGlobalSetMaxQueueCount"/>
+                <Field name="qosGlobalSetMode" mib_property="qosGlobalSetMode"/>
+            </Table>
+            <Button id="Modify_QosGlobalSetTable" type="Modify">
+                <Panel action_id="Modify_QosGlobalSetTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.QosGlobalSetTablePanel"/>
+            </Button>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- DeviceBaseQosMapTable_Panel -->
+        <Panel name="DeviceBaseQosMapTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.DeviceBaseQosMapTable">
+                <Field name="deviceBaseQosMapDeviceIndex" mib_property="deviceBaseQosMapDeviceIndex"/>
+                <Field name="deviceBaseQosMapRuleIndex" mib_property="deviceBaseQosMapRuleIndex"/>
+                <Field name="deviceBaseQosMapOctet" mib_property="deviceBaseQosMapOctet"/>
+            </Table>
+            <Button id="Modify_DeviceBaseQosMapTable" type="Modify">
+                <Panel action_id="Modify_DeviceBaseQosMapTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.DeviceBaseQosMapTablePanel"/>
+            </Button>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- DeviceBaseQosPolicyTable_Panel -->
+        <Panel name="DeviceBaseQosPolicyTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.DeviceBaseQosPolicyTable">
+                <Field name="deviceBaseQosPolicyDeviceIndex" mib_property="deviceBaseQosPolicyDeviceIndex"/>
+                <Field name="deviceBaseQosPolicyMode" mib_property="deviceBaseQosPolicyMode"/>
+                <Field name="deviceBaseQosPolicyWeightOctet" mib_property="deviceBaseQosPolicyWeightOctet"/>
+                <Field name="deviceBaseQosPolicySpBandwidthRange" mib_property="deviceBaseQosPolicySpBandwidthRange"/>
+            </Table>
+            <Button id="Modify_DeviceBaseQosPolicyTable" type="Modify">
+                <Panel action_id="Modify_DeviceBaseQosPolicyTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.DeviceBaseQosPolicyTablePanel"/>
+            </Button>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- PortBaseQosMapTablePanel -->
+        <Panel name="PortBaseQosMapTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.PortBaseQosMapTable">
+                <Field name="portBaseQosMapDeviceIndex" mib_property="portBaseQosMapDeviceIndex"/>
+                <Field name="portBaseQosMapCardIndex" mib_property="portBaseQosMapCardIndex"/>
+                <Field name="portBaseQosMapPortIndex" mib_property="portBaseQosMapPortIndex"/>
+                <Field name="portBaseQosMapRuleIndex" mib_property="portBaseQosMapRuleIndex"/>
+                <Field name="portBaseQosMapOctet" mib_property="portBaseQosMapOctet"/>
+            </Table>
+            <Button id="Modify_PortBaseQosMapTable" type="Modify">
+                <Panel action_id="Modify_PortBaseQosMapTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.PortBaseQosMapTablePanel"/>
+            </Button>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- PortBaseQosPolicyTablePanel -->
+        <Panel name="PortBaseQosPolicyTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.PortBaseQosPolicyTable">
+                <Field name="portBaseQosPolicyDeviceIndex" mib_property="portBaseQosPolicyDeviceIndex"/>
+                <Field name="portBaseQosPolicyCardIndex" mib_property="portBaseQosPolicyCardIndex"/>
+                <Field name="portBaseQosPolicyPortIndex" mib_property="portBaseQosPolicyPortIndex"/>
+                <Field name="portBaseQosPolicyMode" mib_property="portBaseQosPolicyMode"/>
+                <Field name="portBaseQosPolicyWeightOctet" mib_property="portBaseQosPolicyWeightOctet"/>
+                <Field name="portBaseQosPolicySpBandwidthRange" mib_property="portBaseQosPolicySpBandwidthRange"/>
+            </Table>
+            <Button id="Modify_PortBaseQosPolicyTable" type="Modify">
+                <Panel action_id="Modify_PortBaseQosPolicyTable_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.r400.PortBaseQosPolicyTablePanel"/>
+            </Button>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- activeAlarmTable -->
+        <Panel name="Active_Alarm_Table">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.ActiveAlarmTable">
+                <Field name="activeAlarmSeqNum" mib_property="activeAlarmSeqNum"/>
+                <Field name="activeAlarmCode" mib_property="activeAlarmCode"/>
+                <Field name="activeAlarmInstance" mib_property="activeAlarmInstance"/>
+                <Field name="activeAlarmSeverity" mib_property="activeAlarmSeverity"/>
+                <Field name="activeAlarmRaisingNumber" mib_property="activeAlarmRaisingNumber"/>
+                <Field name="activeAlarmFirstOccurTime" mib_property="activeAlarmFirstOccurTime"/>
+                <Field name="activeAlarmLastOccurTime" mib_property="activeAlarmLastOccurTime"/>
+                <Field name="activeAlarmRepeats" mib_property="activeAlarmRepeats"/>
+                <Field name="activeAlarmConfirm" mib_property="activeAlarmConfirm"/>
+                <Field name="activeAlarmAdditionalText" mib_property="activeAlarmAdditionalText"/>
+            </Table>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- historyAlarmTable -->
+        <Panel name="History_Alarm_Table">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.HistoryAlarmTable">
+                <Field name="historyAlarmSeqNum" mib_property="historyAlarmSeqNum"/>
+                <Field name="historyAlarmCode" mib_property="historyAlarmCode"/>
+                <Field name="historyAlarmInstance" mib_property="historyAlarmInstance"/>
+                <Field name="historyAlarmSeverity" mib_property="historyAlarmSeverity"/>
+                <Field name="historyAlarmRaisingNumber" mib_property="historyAlarmRaisingNumber"/>
+                <Field name="historyAlarmFirstOccurTime" mib_property="historyAlarmFirstOccurTime"/>
+                <Field name="historyAlarmLastOccurTime" mib_property="historyAlarmLastOccurTime"/>
+                <Field name="historyAlarmRepeats" mib_property="historyAlarmRepeats"/>
+                <Field name="historyAlarmCorrelationId" mib_property="historyAlarmCorrelationId"/>
+                <Field name="historyAlarmAdditionalText" mib_property="historyAlarmAdditionalText"/>
+                <Field name="historyAlarmClearTime" mib_property="historyAlarmClearTime"/>
+            </Table>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <Panel name="EventLogTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.bbs4000.mib.r400.EventLogTable">
+                <Field name="eventSeqNum" mib_property="eventSeqNum" />
+                <Field name="eventCode" mib_property="eventCode" />
+                <Field name="eventInstance" mib_property="eventInstance" />
+                <Field name="eventOccurTime" mib_property="eventOccurTime" />
+                <Field name="eventAdditionalText" mib_property="eventAdditionalText" />
+            </Table>
+            <Button type="Refresh" />
+        </Panel>
+    </TablePanelList>
+
+    <FieldList>
+        <!-- eponManagementAddrTable -->
+        <Field name="eponManagementAddrName" label="eponManagementAddrName"/>
+        <Field name="eponManagementAddrTAddress" label="eponManagementAddrTAddress" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.TAddressFormatter"/>
+        <Field name="eponManagementAddrCommunity" label="eponManagementAddrCommunity"/>
+
+        <!-- oltPropertyTable -->
+        <Field name="oltDeviceIndex" label="oltDeviceIndex"/>
+        <Field name="oltName" label="oltName"/>
+        <Field name="oltType" label="oltType"/>
+        <Field name="oltAdminStatus" label="oltAdminStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="up"/>
+                    <Entry value="2" display="down"/>
+                    <Entry value="3" display="testing"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="oltDeviceUpTime" label="oltDeviceUpTime" formatter="com.winnertel.em.standard.snmp.gui.formatter.TimeTicksFormatter"/>
+        <Field name="oltDeviceNumOfTotalServiceSlot" label="oltDeviceNumOfTotalServiceSlot"/>
+        <Field name="oltDeviceNumOfTotalPowerSlot" label="oltDeviceNumOfTotalPowerSlot"/>
+        <Field name="oltDeviceNumOfTotalFanSlot" label="oltDeviceNumOfTotalFanSlot"/>
+        <Field name="oltDeviceStyle" label="oltDeviceStyle">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="fixed"/>
+                    <Entry value="2" display="chassisBased"/>
+                    <Entry value="3" display="other"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- boardTable -->
+        <Field name="deviceIndex" label="bDeviceIndex"/>
+        <Field name="cardIndex" label="bCardIndex"/>
+        <Field name="type" label="bType">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="controlBoard"/>
+                    <Entry value="2" display="geponBoard"/>
+                    <Entry value="3" display="uplinkBoard"/>
+                    <Entry value="4" display="switchBoard"/>
+                    <Entry value="5" display="other"/>
+                    <Entry value="6" display="vacant"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="attribute" label="bAttribute">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="active"/>
+                    <Entry value="2" display="standby"/>
+                    <Entry value="3" display="standalone"/>
+                    <Entry value="4" display="notApplicable"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="operationStatus" label="bOperationStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="up"/>
+                    <Entry value="2" display="down"/>
+                    <Entry value="3" display="testing"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="adminStatus" label="bAdminStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="up"/>
+                    <Entry value="2" display="down"/>
+                    <Entry value="3" display="testing"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="hardwareVersion" label="bHardwareVersion"/>
+        <Field name="firmwareVersion" label="bFirmwareVersion"/>
+        <Field name="softwareVersion" label="bSoftwareVersion"/>
+        <Field name="upTime" label="bUpTime" formatter="com.winnertel.em.standard.snmp.gui.formatter.TimeTicksFormatter"/>
+        <Field name="alarmStatus" label="bAlarmStatus" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.AlarmStatusFormatter"/>
+        <Field name="serialNumber" label="bSerialNumber"/>
+        <Field name="action" label="bAction">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="noAction"/>
+                    <Entry value="2" display="switchover"/>
+                    <Entry value="3" display="upgrade"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="name" label="bName"/>
+        <Field name="presenceStatus" label="bPresenceStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="installed"/>
+                    <Entry value="2" display="notInstalled"/>
+                    <Entry value="3" display="others"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!--powerPropertyTable-->
+        <Field name="powerDeviceIndex" label="powerDeviceIndex"/>
+        <Field name="powerCardIndex" label="powerCardIndex"/>
+        <Field name="powerCardOperationStatus" label="powerCardOperationStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="up"/>
+                    <Entry value="2" display="down"/>
+                    <Entry value="3" display="testing"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="powerCardAlarmStatus" label="powerCardAlarmStatus" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.AlarmStatusFormatter"/>
+        <Field name="powerCardName" label="powerCardName"/>
+        <Field name="powerCardPresenceStatus" label="powerCardPresenceStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="installed"/>
+                    <Entry value="2" display="notInstalled"/>
+                    <Entry value="3" display="others"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="powerCardRedundancyStatus" label="powerCardRedundancyStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="active"/>
+                    <Entry value="2" display="stanby"/>
+                    <Entry value="3" display="standalone"/>
+                    <Entry value="4" display="loadShareing"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <Field name="powerCardAction" label="powerCardAction">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="noAction"/>
+                    <Entry value="2" display="switchover"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!--fanPropertyTable-->
+        <Field name="fanDeviceIndex" label="fanDeviceIndex"/>
+        <Field name="fanCardIndex" label="fanCardIndex"/>
+        <Field name="fanCardOperationStatus" label="fanCardOperationStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="up"/>
+                    <Entry value="2" display="down"/>
+                    <Entry value="3" display="testing"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="fanCardAlarmStatus" label="fanCardAlarmStatus" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.AlarmStatusFormatter"/>
+        <Field name="fanCardName" label="fanCardName"/>
+        <Field name="fanCardPresenceStatus" label="fanCardPresenceStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="installed"/>
+                    <Entry value="2" display="notInstalled"/>
+                    <Entry value="3" display="others"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!--fileInfoManagementTable-->
+        <!--<Field name="fileIndex" label="fileIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.Bytes2StringFormatter"/>-->
+        <Field name="filePath" label="filePath"/>
+        <Field name="fileName" label="fileName"/>
+        <Field name="fileSize" label="fileSize"/>
+        <Field name="fileModifyTime" label="fileModifyTime" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.DateAndTimeFormatter"/>
+        <Field name="fileManagementAction" label="fileManagementAction">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="noOperation"/>
+                    <Entry value="2" display="erase"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="fileAttribute" label="fileAttribute">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="file"/>
+                    <Entry value="2" display="dir"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!--fileTransferTable-->
+        <Field name="fileTransferIndex" label="fileTransferIndex"/>
+        <Field name="fileTransferProtocolType" label="fileTransferProtocolType">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="ftp"/>
+                    <Entry value="2" display="tftp"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="serverIpAddress" label="serverIpAddress"/>
+        <Field name="ftpUserName" label="ftpUserName"/>
+        <Field name="ftpUserPassword" label="ftpUserPassword"/>
+        <Field name="transferFileSrcNamePath" label="transferFileSrcNamePath"/>
+        <Field name="transferFileDstNamePath" label="transferFileDstNamePath"/>
+        <Field name="transferAction" label="transferAction">
+            <Mib>
+                <ValueMap>
+                    <Entry value="0" display="-"/>
+                    <Entry value="2" display="put-file"/>
+                    <Entry value="3" display="get-file"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="transferStatus" label="transferStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="idle"/>
+                    <Entry value="2" display="in-progress"/>
+                    <Entry value="3" display="success"/>
+                    <Entry value="4" display="failure"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <Field name="sniAttributeDeviceIndex" label="sniAttributeDeviceIndex"/>
+        <Field name="sniAttributeCardIndex" label="sniAttributeCardIndex"/>
+        <Field name="sniAttributePortIndex" label="sniAttributePortIndex"/>
+        <Field name="sniPortName" label="sniPortName"/>
+        <Field name="sniAdminStatus" label="sniAdminStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="up"/>
+                    <Entry value="2" display="down"/>
+                    <Entry value="3" display="testing"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="sniOperationStatus" label="sniOperationStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="up"/>
+                    <Entry value="2" display="down"/>
+                    <Entry value="3" display="testing"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="sniMediaType" label="sniMediaType">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="twistedPair"/>
+                    <Entry value="2" display="fiber"/>
+                    <Entry value="3" display="other"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="sniAutoNegotiationStatus" label="sniAutoNegotiationStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="auto-negotiate"/>
+                    <Entry value="2" display="half-10"/>
+                    <Entry value="3" display="full-10"/>
+                    <Entry value="4" display="half-100"/>
+                    <Entry value="5" display="full-100"/>
+                    <Entry value="6" display="full-1000"/>
+                    <Entry value="7" display="full-10000"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="sniAutoNegotiationMode" label="sniAutoNegotiationMode">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="auto-negotiate"/>
+                    <Entry value="2" display="half-10"/>
+                    <Entry value="3" display="full-10"/>
+                    <Entry value="4" display="half-100"/>
+                    <Entry value="5" display="full-100"/>
+                    <Entry value="6" display="full-1000"/>
+                    <Entry value="7" display="full-10000"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="sniPerfStats15minuteEnable" label="sniPerfStats15minuteEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="sniPerfStats24hourEnable" label="sniPerfStats24hourEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="sniLastStatusChangeTime" label="sniLastStatusChangeTime" formatter="com.winnertel.em.standard.snmp.gui.formatter.TimeTicksFormatter"/>
+        <Field name="sniMacAddrLearnMaxNum" label="sniMacAddrLearnMaxNum">
+            <Mib>
+                <ValueMap>
+                    <Entry value="0" display="not-limited"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="sniIsolationEnable" label="sniIsolationEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <Field name="sniTrunkGroupConfigIndex" label="sniTrunkGroupConfigIndex"/>
+        <Field name="sniTrunkGroupConfigName" label="sniTrunkGroupConfigName"/>
+        <Field name="sniTrunkGroupConfigMember" label="sniTrunkGroupConfigMember" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.IfIndexFormatter"/>
+        <Field name="sniTrunkGroupConfigPolicy" label="sniTrunkGroupConfigPolicy">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="srcMac"/>
+                    <Entry value="2" display="destMac"/>
+                    <Entry value="3" display="srcMacNDestMac"/>
+                    <Entry value="4" display="srcIp"/>
+                    <Entry value="5" display="destIp"/>
+                    <Entry value="6" display="srcIpNDestIp"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <Field name="sniTrunkGroupIndex" label="sniTrunkGroupIndex">
+
+        </Field>
+        <Field name="sniTrunkGroupOperationStatus" label="sniTrunkGroupOperationStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="up"/>
+                    <Entry value="2" display="down"/>
+                    <Entry value="3" display="testing"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="sniTrunkGroupActualSpeed" label="sniTrunkGroupActualSpeed">
+
+        </Field>
+        <Field name="sniTrunkGroupAdminStatus" label="sniTrunkGroupAdminStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="up"/>
+                    <Entry value="2" display="down"/>
+                    <Entry value="3" display="testing"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <Field name="sniMirrorGroupIndex" label="sniMirrorGroupIndex"/>
+        <Field name="sniMirrorGroupName" label="sniMirrorGroupName"/>
+        <Field name="sniMirrorGroupDstPortList" label="sniMirrorGroupDstPortList" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.IfIndexFormatter"/>
+        <Field name="sniMirrorGroupSrcInPortList" label="sniMirrorGroupSrcInPortList" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.IfIndexFormatter"/>
+        <Field name="sniMirrorGroupSrcOutPortList" label="sniMirrorGroupSrcOutPortList" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.IfIndexFormatter"/>
+
+        <Field name="sniMacAddressManagementDeviceIndex" label="sniMacAddressManagementDeviceIndex"/>
+        <Field name="sniMacAddrTableAgingTime" label="sniMacAddrTableAgingTime"/>
+        <Field name="sniMacAddrTableClear" label="sniMacAddrTableClear"/>
+
+        <Field name="sniMacAddrIndex" label="sniMacAddrIndex" formatter="com.winnertel.em.standard.snmp.gui.formatter.MacAddressFormatter"/>
+        <Field name="sniMacAddrVlanIdIndex" label="sniMacAddrVlanIdIndex"/>
+        <Field name="sniMacAddrType" label="sniMacAddrType">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="static"/>
+                    <Entry value="2" display="dynamic"/>
+                    <Entry value="3" display="other"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="sniMacAddrPortId" label="sniMacAddrPortId" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+
+        <Field name="sniBroadcastStormSuppressionDeviceIndex" label="sniBroadcastStormSuppressionDeviceIndex"/>
+        <Field name="sniBroadcastStormSuppressionCardIndex" label="sniBroadcastStormSuppressionCardIndex"/>
+        <Field name="sniBroadcastStormSuppressionPortIndex" label="sniBroadcastStormSuppressionPortIndex"/>
+        <Field name="sniUnicastStormEnable" label="sniUnicastStormEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="sniUnicastStormInPacketRate" label="sniUnicastStormInPacketRate"/>
+        <Field name="sniUnicastStormOutPacketRate" label="sniUnicastStormOutPacketRate"/>
+        <Field name="sniMulticastStormEnable" label="sniMulticastStormEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="sniMulticastStormInPacketRate" label="sniMulticastStormInPacketRate"/>
+        <Field name="sniMulticastStormOutPacketRate" label="sniMulticastStormOutPacketRate"/>
+        <Field name="sniBroadcastStormEnable" label="sniBroadcastStormEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="sniBroadcastStormInPacketRate" label="sniBroadcastStormInPacketRate"/>
+        <Field name="sniBroadcastStormOutPacketRate" label="sniBroadcastStormOutPacketRate"/>
+
+        <!-- ponPortInfoTable -->
+        <Field name="ponDeviceIndex" label="ponDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.PonPortInfoIndexFormatter"/>
+        <Field name="ponCardIndex" label="ponCardIndex"/>
+        <Field name="ponPortIndex" label="ponPortIndex"/>
+        <Field name="ponPortType" label="ponPortType">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="ge-epon"/>
+                    <Entry value="2" display="tenge-epon"/>
+                    <Entry value="3" display="gpon"/>
+                    <Entry value="4" display="other"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="ponOperationStatus" label="ponOperationStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="up"/>
+                    <Entry value="2" display="down"/>
+                    <Entry value="3" display="testing"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="ponPortAdminStatus" label="ponPortAdminStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="up"/>
+                    <Entry value="2" display="down"/>
+                    <Entry value="3" display="testing"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="ponPortMaxOnuNumSupport" label="ponPortMaxOnuNumSupport"/>
+        <Field name="ponPortUpOnuNum" label="ponPortUpOnuNum"/>
+        <Field name="ponPortEncryptMode" label="ponPortEncryptMode">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="aes128"/>
+                    <Entry value="2" display="ctcTripleChurning"/>
+                    <Entry value="3" display="other"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="ponPortEncryptKeyExchangeTime" label="ponPortEncryptKeyExchangeTime"/>
+        <Field name="ponPortIsolationEnable" label="ponPortIsolationEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="maxBandwidth" label="maxBandwidth" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.BandwidthFormatter"/>
+        <Field name="actualBandwidthInUse" label="actualBandwidthInUse" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.BandwidthFormatter"/>
+        <Field name="remainBandwidth" label="remainBandwidth" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.BandwidthFormatter"/>
+        <Field name="maxUsBandwidth" label="maxUsBandwidth" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.BandwidthFormatter"/>
+        <Field name="actualUsBandwidthInUse" label="actualUsBandwidthInUse" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.BandwidthFormatter"/>
+        <Field name="remainUsBandwidth" label="remainUsBandwidth" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.BandwidthFormatter"/>
+        <Field name="perfStats15minuteEnable" label="perfStats15minuteEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="perfStats24hourEnable" label="perfStats24hourEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="ponPortMacAddrLearnMaxNum" label="ponPortMacAddrLearnMaxNum">
+            <Mib>
+                <ValueMap>
+                    <Entry value="0" display="not-limited"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- aclRuleTable -->
+        <Field name="aclRuleIndex" label="aclRuleIndex"/>
+        <Field name="matchedSourseMac" label="matchedSourseMac" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.AclRuleFieldFormatter"/>
+        <Field name="matchedDestinationMac" label="matchedDestinationMac" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.AclRuleFieldFormatter"/>
+        <Field name="matchedVlanId" label="matchedVlanId" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.AclRuleFieldFormatter"/>
+        <Field name="matchedEthernetType" label="matchedEthernetType" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.AclRuleFieldFormatter"/>
+        <Field name="matchedSourseIP" label="matchedSourseIP" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.AclRuleFieldFormatter"/>
+        <Field name="matchedDestinationIP" label="matchedDestinationIP" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.AclRuleFieldFormatter"/>
+        <Field name="matchedIpMessageType" label="matchedIpMessageType" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.AclRuleFieldFormatter"/>
+        <Field name="matchedDscp" label="matchedDscp" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.AclRuleFieldFormatter"/>
+        <Field name="matchedSoursePort" label="matchedSoursePort" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.AclRuleFieldFormatter"/>
+        <Field name="matchedDestinationPort" label="matchedDestinationPort" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.AclRuleFieldFormatter"/>
+        <Field name="matchedFieldSelection" label="matchedFieldSelection" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.HexStringFormatter"/>
+        <Field name="aclAction" label="aclAction">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="permit"/>
+                    <Entry value="2" display="deny"/>
+                    <Entry value="3" display="mark"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="aclActionParameter" label="aclActionParameter" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.ActionParameterFormatter"/>
+        <Field name="aclActionValue" label="aclActionValue" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.ActionValueFormatter"/>
+
+        <!-- aclManagementTable -->
+        <Field name="aclListIndex" label="aclListIndex"/>
+        <Field name="aclDescription" label="aclDescription"/>
+        <Field name="aclRuleList" label="aclRuleList" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.AclRuleListFormatter"/>
+
+        <!-- portAclListTable -->
+        <Field name="aclDeviceIndex" label="aclDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+        <Field name="aclCardIndex" label="aclCardIndex"/>
+        <Field name="aclPortIndex" label="aclPortIndex"/>
+        <Field name="portAclListIndex" label="portAclListIndex"/>
+        <Field name="aclPortDirection" label="aclPortDirection" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.PortDirectionFormatter"/>
+
+        <!-- ponBroadcastStormSuppressionTable -->
+        <Field name="bsDeviceIndex" label="bsDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.PonBsIndexFormatter"/>
+        <Field name="bsCardIndex" label="bsCardIndex"/>
+        <Field name="bsPortIndex" label="bsPortIndex"/>
+        <Field name="unicastStormEnable" label="unicastStormEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="unicastStormInPacketRate" label="unicastStormInPacketRate"/>
+        <Field name="unicastStormOutPacketRate" label="unicastStormOutPacketRate"/>
+        <Field name="multicastStormEnable" label="multicastStormEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="multicastStormInPacketRate" label="multicastStormInPacketRate"/>
+        <Field name="multicastStormOutPacketRate" label="multicastStormOutPacketRate"/>
+        <Field name="broadcastStormEnable" label="broadcastStormEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="broadcastStormInPacketRate" label="broadcastStormInPacketRate"/>
+        <Field name="broadcastStormOutPacketRate" label="broadcastStormOutPacketRate"/>
+
+        <!-- onuInfoTable -->
+        <Field name="onuDeviceIndex" label="onuDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+        <Field name="onuName" label="onuName"/>
+        <Field name="onuType" label="onuType">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="fixed"/>
+                    <Entry value="2" display="chassisBased"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="onuIpAddress" label="onuIpAddress"/>
+        <Field name="onuIpSubnetMask" label="onuIpSubnetMask"/>
+        <Field name="onuIpGateway" label="onuIpGateway"/>
+        <Field name="onuMacAddress" label="onuMacAddress" formatter="com.winnertel.em.standard.snmp.gui.formatter.MacAddressFormatter"/>
+        <Field name="onuOperationStatus" label="onuOperationStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="up"/>
+                    <Entry value="2" display="down"/>
+                    <Entry value="3" display="testing"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="onuAdminStatus" label="onuAdminStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="up"/>
+                    <Entry value="2" display="down"/>
+                    <Entry value="3" display="testing"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="onuChipVendor" label="onuChipVendor">
+            <Mib>
+                <ValueMap>
+                    <Entry value="0203" display="Teknovus"/>
+                    <Entry value="4536" display="PMC"/>
+                    <Entry value="4353" display="Cortina"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="onuChipType" label="onuChipType"/>
+        <Field name="onuChipVersion" label="onuChipVersion"/>
+        <Field name="onuSoftwareVersion" label="onuSoftwareVersion"/>
+        <Field name="onuFirmwareVersion" label="onuFirmwareVersion"/>
+        <Field name="onuTestDistance" label="onuTestDistance"/>
+        <Field name="onuLlidId" label="onuLlidId"/>
+        <Field name="resetONU" label="resetONU"/>
+        <Field name="onuTimeSinceLastRegister" label="onuTimeSinceLastRegister" formatter="com.winnertel.em.standard.snmp.gui.formatter.TimeTicksFormatter"/>
+				<Field name="onuMgmtCvlan" label="onuMgmtCvlan"/>
+				<Field name="onuMgmtSvlan" label="onuMgmtSvlan"/>
+				<Field name="onuMgmtPriority" label="onuMgmtPriority"/>
+				<Field name="onuMgmtSnmpTrapHost" label="onuMgmtSnmpTrapHost"/>
+				<Field name="onuMgmtSnmpCommunityForRead" label="onuMgmtSnmpCommunityForRead"/>
+				<Field name="onuMgmtSnmpCommunityForWrite" label="onuMgmtSnmpCommunityForWrite"/>
+
+        <!-- onuPonPortOpticalTransmissionPropertyTable -->
+        <Field name="onuPonPortOpticalTransmissionPropertyDeviceIndex" label="onuPonPortOpticalTransmissionPropertyDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+        <Field name="onuPonPortOpticalTransmissionPropertyCardIndex" label="onuPonPortOpticalTransmissionPropertyCardIndex"/>
+        <Field name="onuPonPortOpticalTransmissionPropertyPortIndex" label="onuPonPortOpticalTransmissionPropertyPortIndex"/>
+        <Field name="onuReceivedOpticalPower" label="onuReceivedOpticalPower" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.PowerFormatter"/>
+        <Field name="onuTramsmittedOpticalPower" label="onuTramsmittedOpticalPower" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.PowerFormatter"/>
+        <Field name="onuBiasCurrent" label="onuBiasCurrent" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.CurrentFormatter"/>
+        <Field name="onuWorkingVoltage" label="onuWorkingVoltage" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.VoltageFormatter"/>
+        <Field name="onuWorkingTemperature" label="onuWorkingTemperature" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.TemperatureFormatter"/>
+
+        <!-- onuCapabilityTable -->
+        <Field name="onuCapabilityDeviceIndex" label="onuCapabilityDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+        <Field name="onuGePortNum" label="onuGePortNum"/>
+        <Field name="onuGePortBitmap" label="onuGePortBitmap" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.OnuGeFePortListFormatter"/>
+        <Field name="onuFePortNum" label="onuFePortNum"/>
+        <Field name="onuFePortBitmap" label="onuFePortBitmap" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.OnuGeFePortListFormatter"/>
+        <Field name="onuQueueNumUplink" label="onuQueueNumUplink"/>
+        <Field name="onuMaxQueueNumUplink" label="onuMaxQueueNumUplink"/>
+        <Field name="onuQueueNumDownlink" label="onuQueueNumDownlink"/>
+        <Field name="onuMaxQueueNumDownlink" label="onuMaxQueueNumDownlink"/>
+        <Field name="onuFecEnable" label="onuFecEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="onuEncryptMode" label="onuEncryptMode">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="aes128"/>
+                    <Entry value="2" display="ctcTripleChurning"/>
+                    <Entry value="3" display="other"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="onuEncryptKeyExchangeTime" label="onuEncryptKeyExchangeTime" formatter="com.winnertel.em.standard.snmp.gui.formatter.TimeTicksFormatter"/>
+
+        <!-- slaTable -->
+        <Field name="slaIndex" label="slaIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+        <Field name="slaDsFixedBW" label="slaDsFixedBW"/>
+        <Field name="slaDsPeakBW" label="slaDsPeakBW"/>
+        <Field name="slaDsCommittedBW" label="slaDsCommittedBW"/>
+        <Field name="slaUsFixedBW" label="slaUsFixedBW"/>
+        <Field name="slaUsPeakBW" label="slaUsPeakBW"/>
+        <Field name="slaUsCommittedBW" label="slaUsCommittedBW"/>
+
+        <!-- onuAuthenticationPolicy -->
+
+        <!-- onuAuthenticationPreConfigTable -->
+        <Field name="onuAuthenOnuId" label="onuAuthenOnuId" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+        <Field name="onuAuthenMacAddress" label="onuAuthenMacAddress" formatter="com.winnertel.em.standard.snmp.gui.formatter.MacAddressFormatter"/>
+        <Field name="onuAuthenAction" label="onuAuthenAction">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="accept"/>
+                    <Entry value="2" display="reject"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- OnuAuthenticationBlockTable -->
+        <Field name="onuAuthenBlockOnuId" label="onuAuthenBlockOnuId" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+        <Field name="onuAuthenBlockMacAddress" label="onuAuthenBlockMacAddress" formatter="com.winnertel.em.standard.snmp.gui.formatter.MacAddressFormatter"/>
+        <Field name="authenTime" label="authenTime" formatter="com.winnertel.em.standard.snmp.gui.formatter.TimeTicksFormatter"/>
+
+        <!-- uniAttributeTable -->
+        <Field name="uniAttributeDeviceIndex" label="uniAttributeDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+        <Field name="uniAttributeCardIndex" label="uniAttributeCardIndex"/>
+        <Field name="uniAttributePortIndex" label="uniAttributePortIndex"/>
+        <Field name="uniAdminStatus" label="uniAdminStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="up"/>
+                    <Entry value="2" display="down"/>
+                    <Entry value="3" display="testing"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="uniOperationStatus" label="uniOperationStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="up"/>
+                    <Entry value="2" display="down"/>
+                    <Entry value="3" display="testing"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <!--
+        <Field name="uniPerfStats15minuteEnable" label="uniPerfStats15minuteEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="uniPerfStats24hourEnable" label="uniPerfStats24hourEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="uniLastChangeTime" label="uniLastChangeTime"/>
+        <Field name="uniIsolationEnable" label="uniIsolationEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="uniMacAddrLearnMaxNum" label="uniMacAddrLearnMaxNum"/>
+        -->
+        <Field name="uniAutoNegotiationEnable" label="uniAutoNegotiationEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="uniAutoNegotiationLocalTechAbility" label="uniAutoNegotiationLocalTechAbility" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.UniNegoAbilityFormatter"/>
+        <Field name="uniAutoNegotiationAdvertisedTechAbility" label="uniAutoNegotiationAdvertisedTechAbility" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.UniNegoAbilityFormatter"/>
+        <Field name="uniAutoNegotiationRestart" label="uniAutoNegotiationRestart"/>
+
+        <!-- uniMacAddressTable -->
+        <Field name="uniMacAddrIndex" label="uniMacAddrIndex"/>
+        <Field name="uniMacAddrVlanIdIndex" label="uniMacAddrVlanIdIndex"/>
+        <Field name="uniMacAddrType" label="uniMacAddrType">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="static"/>
+                    <Entry value="2" display="dynamic"/>
+                    <Entry value="3" display="other"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="uniMacAddrPortId" label="uniMacAddrPortId"/>
+
+        <!-- uniTrunkGroupConfigTable -->
+        <Field name="uniTrunkGroupConfigIndex" label="uniTrunkGroupConfigIndex"/>
+        <Field name="uniTrunkGroupConfigName" label="uniTrunkGroupConfigName"/>
+        <Field name="uniTrunkGroupConfigMember" label="uniTrunkGroupConfigMember"/>
+        <Field name="uniTrunkGroupConfigPolicy" label="uniTrunkGroupConfigPolicy">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="srcMac"/>
+                    <Entry value="2" display="destMac"/>
+                    <Entry value="3" display="srcMacNDestMac"/>
+                    <Entry value="4" display="srcIp"/>
+                    <Entry value="5" display="destIp"/>
+                    <Entry value="6" display="srcIpNDestIp"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- uniTrunkGroupTable -->
+        <Field name="uniTrunkGroupIndex" label="uniTrunkGroupIndex"/>
+        <Field name="uniTrunkGroupOperationStatus" label="uniTrunkGroupOperationStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="up"/>
+                    <Entry value="2" display="down"/>
+                    <Entry value="3" display="testing"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="uniTrunkGroupActualSpeed" label="uniTrunkGroupActualSpeed"/>
+        <Field name="uniTrunkGroupAdminStatus" label="uniTrunkGroupAdminStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="up"/>
+                    <Entry value="2" display="down"/>
+                    <Entry value="3" display="testing"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- uniPortRateLimitTable -->
+        <Field name="uniPortRateLimitDeviceIndex" label="uniPortRateLimitDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+        <Field name="uniPortRateLimitCardIndex" label="uniPortRateLimitCardIndex"/>
+        <Field name="uniPortRateLimitPortIndex" label="uniPortRateLimitPortIndex"/>
+        <Field name="uniPortInCIR" label="uniPortInCIR"/>
+        <Field name="uniPortInCBS" label="uniPortInCBS"/>
+        <Field name="uniPortInEBS" label="uniPortInEBS"/>
+        <Field name="uniPortOutCIR" label="uniPortOutCIR"/>
+        <!--
+        <Field name="uniPortOutCBS" label="uniPortOutCBS"/>
+        <Field name="uniPortOutPBS" label="uniPortOutPBS"/>
+        -->
+        <Field name="uniPortOutPIR" label="uniPortOutPIR"/>
+        <Field name="uniPortInRateLimitEnable" label="uniPortInRateLimitEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="uniPortOutRateLimitEnable" label="uniPortOutRateLimitEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- uniMirrorTable -->
+        <Field name="uniMirrorGroupIndex" label="uniMirrorGroupIndex"/>
+        <Field name="uniMirrorGroupName" label="uniMirrorGroupName"/>
+        <Field name="uniMirrorGroupDstPortList" label="uniMirrorGroupDstPortList" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.UniPortListFormatter"/>
+        <Field name="uniMirrorGroupSrcInPortList" label="uniMirrorGroupSrcInPortList" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.UniPortListFormatter"/>
+        <Field name="uniMirrorGroupSrcOutPortList" label="uniMirrorGroupSrcOutPortList" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.UniPortListFormatter"/>
+
+        <!-- uniBroadcastStormSuppressionTable -->
+        <Field name="uniBroadcastStormSuppressionCardIndex" label="uniBroadcastStormSuppressionCardIndex"/>
+        <Field name="uniBroadcastStormSuppressionPortIndex" label="uniBroadcastStormSuppressionPortIndex"/>
+        <Field name="uniUnicastStormEnable" label="uniUnicastStormEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="uniUnicastStormInPacketRate" label="uniUnicastStormInPacketRate"/>
+        <Field name="uniUnicastStormOutPacketRate" label="uniUnicastStormOutPacketRate"/>
+        <Field name="uniMulticastStormEnable" label="uniMulticastStormEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="uniMulticastStormInPacketRate" label="uniMulticastStormInPacketRate"/>
+        <Field name="uniMulticastStormOutPacketRate" label="uniMulticastStormOutPacketRate"/>
+        <Field name="uniBroadcastStormEnable" label="uniBroadcastStormEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="uniBroadcastStormInPacketRate" label="uniBroadcastStormInPacketRate"/>
+        <Field name="uniBroadcastStormOutPacketRate" label="uniBroadcastStormOutPacketRate"/>
+
+        <!-- uniExtAttributeTable -->
+        <Field name="uniExtAttributeCardIndex" label="uniExtAttributeCardIndex"/>
+        <Field name="uniExtAttributePortIndex" label="uniExtAttributePortIndex"/>
+        <Field name="uniPerfStats15minuteEnable" label="uniPerfStats15minuteEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="uniPerfStats24hourEnable" label="uniPerfStats24hourEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="uniLastChangeTime" label="uniLastChangeTime"/>
+        <Field name="uniIsolationEnable" label="uniIsolationEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="uniMacAddrLearnMaxNum" label="uniMacAddrLearnMaxNum"/>
+
+        <!-- igmpEntityTable -->
+        <Field name="igmpDeviceIndex" label="igmpDeviceIndex"/>
+        <Field name="igmpMode" label="igmpMode">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="centralized"/>
+                    <Entry value="2" display="distributed"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="maxQueryResponseTime" label="maxQueryResponseTime" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.TenthIntegerFormatter"/>
+        <Field name="robustVariable" label="robustVariable"/>
+        <Field name="queryInterval" label="queryInterval"/>
+        <Field name="lastMemberQueryInterval" label="lastMemberQueryInterval" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.TenthIntegerFormatter"/>
+        <Field name="lastMemberQueryCount" label="lastMemberQueryCount"/>
+        <Field name="igmpVersion" label="igmpVersion">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="v1"/>
+                    <Entry value="2" display="v2"/>
+                    <Entry value="3" display="v3"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- igmpProxyParaTable -->
+        <Field name="proxyIndex" label="proxyIndex"/>
+        <Field name="proxyName" label="proxyName"/>
+        <Field name="proxySrcIPAddress" label="proxySrcIPAddress"/>
+        <Field name="proxyMulticastVID" label="proxyMulticastVID"/>
+        <Field name="proxyMulticastIPAddress" label="proxyMulticastIPAddress"/>
+        <Field name="multicastAssuredBW" label="multicastAssuredBW"/>
+        <Field name="multicastMaxBW" label="multicastMaxBW"/>
+
+        <!-- igmpForwardingTable -->
+        <Field name="groupDeviceIndex" label="groupDeviceIndex"/>
+        <Field name="groupVlanIndex" label="groupVlanIndex"/>
+        <Field name="groupMacAddress" label="groupMacAddress" formatter="com.winnertel.em.standard.snmp.gui.formatter.MacAddressFormatter"/>
+        <Field name="groupPortList" label="groupPortList" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.OltPortListFormatter"/>
+
+        <!-- controlledMulticastUserAuthorityTable -->
+        <Field name="cmDeviceIndex" label="cmDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+        <Field name="cmCardIndex" label="cmCardIndex"/>
+        <Field name="cmPortIndex" label="cmPortIndex"/>
+        <Field name="multicastPackageList" label="multicastPackageList" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.IgmpProxyListFormatter"/>
+        <Field name="igmpGlobalBW" label="igmpGlobalBW"/>
+        <Field name="igmpGlobalBWUsed" label="igmpGlobalBWUsed"/>
+
+        <!-- controlledMulticastPackageTable -->
+        <Field name="cmIndex" label="cmIndex"/>
+        <Field name="cmName" label="cmName"/>
+        <Field name="cmProxyList" label="cmProxyList" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.IgmpProxyListFormatter"/>
+        <Field name="multicastUserAuthority" label="multicastUserAuthority">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="permit"/>
+                    <Entry value="2" display="preview"/>
+                    <Entry value="3" display="deny"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="maxRequestChannelNum" label="maxRequestChannelNum"/>
+        <Field name="singlePreviewTime" label="singlePreviewTime"/>
+        <Field name="totalPreviewTime" label="totalPreviewTime"/>
+        <Field name="previewResetTime" label="previewResetTime"/>
+        <Field name="previewCount" label="previewCount"/>
+
+        <!-- stpGlobalSetTable -->
+        <Field name="stpGlobalSetIndex" label="stpGlobalSetIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+        <Field name="stpGlobalSetVersion" label="stpGlobalSetVersion">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="rstp"/>
+                    <Entry value="2" display="stp"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="stpGlobalSetPriority" label="stpGlobalSetPriority"/>
+        <Field name="stpGlobalSetTimeSinceTopologyChange" label="stpGlobalSetTimeSinceTopologyChange" formatter="com.winnertel.em.standard.snmp.gui.formatter.TimeTicksFormatter"/>
+        <Field name="stpGlobalSetTopChanges" label="stpGlobalSetTopChanges"/>
+        <Field name="stpGlobalSetDesignatedRoot" label="stpGlobalSetDesignatedRoot" formatter="com.winnertel.em.standard.snmp.gui.formatter.BridgeIdFormatter"/>
+        <Field name="stpGlobalSetRootCost" label="stpGlobalSetRootCost"/>
+        <Field name="stpGlobalSetRootPort" label="stpGlobalSetRootPort" formatter="com.winnertel.em.standard.snmp.gui.formatter.BridgeIdFormatter"/>
+        <Field name="stpGlobalSetMaxAge" label="stpGlobalSetMaxAge" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.CentiIntegerFormatter"/>
+        <Field name="stpGlobalSetHelloTime" label="stpGlobalSetHelloTime" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.CentiIntegerFormatter"/>
+        <Field name="stpGlobalSetHoldTime" label="stpGlobalSetHoldTime" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.CentiIntegerFormatter"/>
+        <Field name="stpGlobalSetForwardDelay" label="stpGlobalSetForwardDelay" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.CentiIntegerFormatter"/>
+        <Field name="stpGlobalSetBridgeMaxAge" label="stpGlobalSetBridgeMaxAge" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.CentiIntegerFormatter"/>
+        <Field name="stpGlobalSetBridgeHelloTime" label="stpGlobalSetBridgeHelloTime" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.CentiIntegerFormatter"/>
+        <Field name="stpGlobalSetBridgeForwardDelay" label="stpGlobalSetBridgeForwardDelay" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.CentiIntegerFormatter"/>
+        <Field name="stpGlobalSetRstpTxHoldCount" label="stpGlobalSetRstpTxHoldCount"/>
+        <Field name="stpGlobalSetEnable" label="stpGlobalSetEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- stpPortTable -->
+        <Field name="stpPortStpIndex" label="stpPortStpIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+        <Field name="stpPortCardIndex" label="stpPortCardIndex"/>
+        <Field name="stpPortIndex" label="stpPortIndex"/>
+        <Field name="stpPortStatus" label="stpPortStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="disabled"/>
+                    <Entry value="2" display="blocking"/>
+                    <Entry value="3" display="listening"/>
+                    <Entry value="4" display="learning"/>
+                    <Entry value="5" display="forwarding"/>
+                    <Entry value="6" display="broken"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="stpPortPriority" label="stpPortPriority"/>
+        <Field name="stpPortPathCost" label="stpPortPathCost"/>
+        <Field name="stpPortDesignatedRoot" label="stpPortDesignatedRoot" formatter="com.winnertel.em.standard.snmp.gui.formatter.BridgeIdFormatter"/>
+        <Field name="stpPortDesignatedCost" label="stpPortDesignatedCost"/>
+        <Field name="stpPortDesignatedBridge" label="stpPortDesignatedBridge" formatter="com.winnertel.em.standard.snmp.gui.formatter.BridgeIdFormatter"/>
+        <Field name="stpPortDesignatedPort" label="stpPortDesignatedPort" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.StpPortFormatter"/>
+        <Field name="stpPortForwardTransitions" label="stpPortForwardTransitions"/>
+        <Field name="stpPortRstpProtocolMigration" label="stpPortRstpProtocolMigration">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="stpPortRstpAdminEdgePort" label="stpPortRstpAdminEdgePort">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="stpPortRstpOperEdgePort" label="stpPortRstpOperEdgePort">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="stpPortPointToPointAdminStatus" label="stpPortPointToPointAdminStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="0" display="forceFalse"/>
+                    <Entry value="1" display="forceTrue"/>
+                    <Entry value="2" display="auto"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="stpPortPointToPointOperStatus" label="stpPortPointToPointOperStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="stpPortEnabled" label="stpPortEnabled">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- curStatsTable -->
+        <Field name="curStatsDeviceIndex" label="curStatsDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+        <Field name="curStatsCardIndex" label="curStatsCardIndex"/>
+        <Field name="curStatsPortIndex" label="curStatsPortIndex"/>
+        <Field name="curStatsInOctets" label="curStatsInOctets"/>
+        <Field name="curStatsInPkts" label="curStatsInPkts"/>
+        <Field name="curStatsInBroadcastPkts" label="curStatsInBroadcastPkts"/>
+        <Field name="curStatsInMulticastPkts" label="curStatsInMulticastPkts"/>
+        <Field name="curStatsInPkts64Octets" label="curStatsInPkts64Octets"/>
+        <Field name="curStatsInPkts65to127Octets" label="curStatsInPkts65to127Octets"/>
+        <Field name="curStatsInPkts128to255Octets" label="curStatsInPkts128to255Octets"/>
+        <Field name="curStatsInPkts256to511Octets" label="curStatsInPkts256to511Octets"/>
+        <Field name="curStatsInPkts512to1023Octets" label="curStatsInPkts512to1023Octets"/>
+        <Field name="curStatsInPkts1024to1518Octets" label="curStatsInPkts1024to1518Octets"/>
+        <Field name="curStatsInPkts1519to1522Octets" label="curStatsInPkts1519to1522Octets"/>
+        <Field name="curStatsInUndersizePkts" label="curStatsInUndersizePkts"/>
+        <Field name="curStatsInOversizePkts" label="curStatsInOversizePkts"/>
+        <Field name="curStatsInFragments" label="curStatsInFragments"/>
+        <Field name="curStatsInMpcpFrames" label="curStatsInMpcpFrames"/>
+        <Field name="curStatsInMpcpOctets" label="curStatsInMpcpOctets"/>
+        <Field name="curStatsInOAMFrames" label="curStatsInOAMFrames"/>
+        <Field name="curStatsInOAMOctets" label="curStatsInOAMOctets"/>
+        <Field name="curStatsInCRCErrorPkts" label="curStatsInCRCErrorPkts"/>
+        <Field name="curStatsInDropEvents" label="curStatsInDropEvents"/>
+        <Field name="curStatsInJabbers" label="curStatsInJabbers"/>
+        <Field name="curStatsInCollision" label="curStatsInCollision"/>
+        <Field name="curStatsOutOctets" label="curStatsOutOctets"/>
+        <Field name="curStatsOutPkts" label="curStatsOutPkts"/>
+        <Field name="curStatsOutBroadcastPkts" label="curStatsOutBroadcastPkts"/>
+        <Field name="curStatsOutMulticastPkts" label="curStatsOutMulticastPkts"/>
+        <Field name="curStatsOutPkts64Octets" label="curStatsOutPkts64Octets"/>
+        <Field name="curStatsOutPkts65to127Octets" label="curStatsOutPkts65to127Octets"/>
+        <Field name="curStatsOutPkts128to255Octets" label="curStatsOutPkts128to255Octets"/>
+        <Field name="curStatsOutPkts256to511Octets" label="curStatsOutPkts256to511Octets"/>
+        <Field name="curStatsOutPkts512to1023Octets" label="curStatsOutPkts512to1023Octets"/>
+        <Field name="curStatsOutPkts1024to1518Octets" label="curStatsOutPkts1024to1518Octets"/>
+        <Field name="curStatsOutPkts1519o1522Octets" label="curStatsOutPkts1519o1522Octets"/>
+        <Field name="curStatsOutUndersizePkts" label="curStatsOutUndersizePkts"/>
+        <Field name="curStatsOutOversizePkts" label="curStatsOutOversizePkts"/>
+        <Field name="curStatsOutFragments" label="curStatsOutFragments"/>
+        <Field name="curStatsOutMpcpFrames" label="curStatsOutMpcpFrames"/>
+        <Field name="curStatsOutMpcpOctets" label="curStatsOutMpcpOctets"/>
+        <Field name="curStatsOutOAMFrames" label="curStatsOutOAMFrames"/>
+        <Field name="curStatsOutOAMOctets" label="curStatsOutOAMOctets"/>
+        <Field name="curStatsOutCRCErrorPkts" label="curStatsOutCRCErrorPkts"/>
+        <Field name="curStatsOutDropEvents" label="curStatsOutDropEvents"/>
+        <Field name="curStatsOutJabbers" label="curStatsOutJabbers"/>
+        <Field name="curStatsOutCollision" label="curStatsOutCollision"/>
+        <Field name="curStatsStatusAndAction" label="curStatsStatusAndAction"/>
+
+        <!-- perfStatsThresholdTable -->
+        <Field name="perfStatsThresholdDeviceIndex" label="perfStatsThresholdDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+        <Field name="perfStatsThresholdCardIndex" label="perfStatsThresholdCardIndex"/>
+        <Field name="perfStatsThresholdPortIndex" label="perfStatsThresholdPortIndex"/>
+        <Field name="perfStatsThresholdTypeIndex" label="perfStatsThresholdTypeIndex"/>
+        <Field name="perfStatsThresholdUpper" label="perfStatsThresholdUpper"/>
+        <Field name="perfStatsThresholdLower" label="perfStatsThresholdLower"/>
+
+        <!-- eocDevInfoTable -->
+        <Field name="eocDeviceIndex" label="eDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+        <Field name="eocCardIndex" label="eCardIndex"/>
+        <Field name="eocPortIndex" label="ePortIndex"/>
+        <Field name="eocDeviceTechnologyProject" label="eocDeviceTechnologyProject"/>
+        <Field name="eocDeviceVendorName" label="eocDeviceVendorName"/>
+        <Field name="eocDeviceProductType" label="eocDeviceProductType"/>
+        <Field name="eocDeviceSoftwareVersion" label="eocDeviceSoftwareVersion"/>
+        <Field name="eocDeviceHardwareVersion" label="eocDeviceHardwareVersion"/>
+        <Field name="eocSeriesNumber" label="eocSeriesNumber"/>
+        <Field name="eocDeviceIpAddress" label="eocDeviceIpAddress"/>
+        <Field name="eocDeviceMacAddress" label="eocDeviceMacAddress" formatter="com.winnertel.em.standard.snmp.gui.formatter.MacAddressFormatter"/>
+        <Field name="eocDeviceMibVersion" label="eocDeviceMibVersion"/>
+
+        <!-- VlanGlobalInfoTable_Panel -->
+        <Field name="vlanDeviceIndex" label="vlanDeviceIndex">
+
+        </Field>
+        <Field name="maxVlanId" label="maxVlanId">
+
+        </Field>
+        <Field name="maxSupportVlans" label="maxSupportVlans">
+
+        </Field>
+        <Field name="createdVlanNumber" label="createdVlanNumber">
+
+        </Field>
+
+        <!-- OltVlanConfigTable_Panel -->
+        <Field name="oltVlanIndex" label="oltVlanIndex">
+
+        </Field>
+        <Field name="oltVlanDeviceIndex" label="oltVlanDeviceIndex">
+
+        </Field>
+        <Field name="oltVlanName" label="oltVlanName">
+
+        </Field>
+        <Field name="taggedPort" label="taggedPort" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.VlanPortFormatter">
+
+        </Field>
+        <Field name="untaggedPort" label="untaggedPort" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.VlanPortFormatter">
+
+        </Field>
+        <Field name="oltVlanRowStatus" label="oltVlanRowStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="active"/>
+                    <Entry value="2" display="notInService"/>
+                    <Entry value="5" display="createAndWait"/>
+                    <Entry value="4" display="createAndGo"/>
+                    <Entry value="3" display="notReady"/>
+                    <Entry value="6" display="destroy"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- OnuVlanConfigTable_Panel -->
+        <Field name="onuVlanIndex" label="onuVlanIndex">
+
+        </Field>
+        <Field name="onuVlanName" label="onuVlanName">
+
+        </Field>
+        <Field name="onuVlanTaggedPort" label="onuVlanTaggedPort" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.OnuVlanPortFormatter">
+
+        </Field>
+        <Field name="onuVlanUntaggedPort" label="onuVlanUntaggedPort" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.OnuVlanPortFormatter">
+
+        </Field>
+        <Field name="onuVlanRowStatus" label="onuVlanRowStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="active"/>
+                    <Entry value="2" display="notInService"/>
+                    <Entry value="5" display="createAndWait"/>
+                    <Entry value="4" display="createAndGo"/>
+                    <Entry value="3" display="notReady"/>
+                    <Entry value="6" display="destroy"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- PortVlanTable_Panel -->
+        <Field name="pvlanDeviceIndex" label="pvlanDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponComboDeviceIndexFormatter">
+
+        </Field>
+        <!--Field name="pvlanCardIndex" label="pvlanCardIndex">
+
+        </Field>
+        <Field name="pvlanPortIndex" label="pvlanPortIndex">
+
+        </Field-->
+        <Field name="vlanTagTpid" label="vlanTagTpid" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.TpidFormatter">
+
+        </Field>
+        <Field name="vlanTagCfi" label="vlanTagCfi">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="vlanTagPriority" label="vlanTagPriority">
+
+        </Field>
+        <Field name="vlanPVid" label="vlanPVid">
+
+        </Field>
+        <Field name="vlanMode" label="vlanMode">
+            <Mib>
+                <ValueMap>
+                    <Entry value="2" display="translation"/>
+                    <Entry value="4" display="trunk"/>
+                    <Entry value="1" display="tag"/>
+                    <Entry value="0" display="transparent"/>
+                    <Entry value="3" display="aggregation"/>
+                    <Entry value="5" display="stacking"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!--PortVlanTranslationTable_Panel-->
+        <Field name="pvtDeviceIndex" label="pvtDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponComboDeviceIndexFormatter">
+
+        </Field>
+        <!--Field name="pvtCardIndex" label="pvtCardIndex">
+
+        </Field-->
+        <!--Field name="pvtPortIndex" label="pvtPortIndex">
+
+        </Field-->
+        <Field name="portVidIndex" label="portVidIndex">
+
+        </Field>
+        <Field name="translationNewVid" label="translationNewVid">
+
+        </Field>
+        <Field name="translationRowStatus" label="translationRowStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="active"/>
+                    <Entry value="2" display="notInService"/>
+                    <Entry value="5" display="createAndWait"/>
+                    <Entry value="4" display="createAndGo"/>
+                    <Entry value="3" display="notReady"/>
+                    <Entry value="6" display="destroy"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!--PortVlanAggregationConfigTable_Panel-->
+        <Field name="pvaDeviceIndex" label="pvaDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponComboDeviceIndexFormatter">
+
+        </Field>
+        <Field name="pvaCardIndex" label="pvaCardIndex">
+
+        </Field>
+        <Field name="pvaPortIndex" label="pvaPortIndex">
+
+        </Field>
+        <Field name="portAggregationVidIndex" label="portAggregationVidIndex">
+
+        </Field>
+        <Field name="aggregationVidList" label="aggregationVidList" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.VidListFormatter">
+
+        </Field>
+        <Field name="aggregationRowStatus" label="aggregationRowStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="active"/>
+                    <Entry value="2" display="notInService"/>
+                    <Entry value="5" display="createAndWait"/>
+                    <Entry value="4" display="createAndGo"/>
+                    <Entry value="3" display="notReady"/>
+                    <Entry value="6" display="destroy"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- PortVlanTrunkTable_Panel -->
+        <Field name="trunkDeviceIndex" label="trunkDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponComboDeviceIndexFormatter">
+
+        </Field>
+        <Field name="trunkCardIndex" label="trunkCardIndex">
+
+        </Field>
+        <Field name="trunkPortIndex" label="trunkPortIndex">
+
+        </Field>
+        <Field name="trunkVidList" label="trunkVidList" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.VidListFormatter">
+
+        </Field>
+        <Field name="portVlanTrunkRowStatus" label="portVlanTrunkRowStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="active"/>
+                    <Entry value="2" display="notInService"/>
+                    <Entry value="5" display="createAndWait"/>
+                    <Entry value="4" display="createAndGo"/>
+                    <Entry value="3" display="notReady"/>
+                    <Entry value="6" display="destroy"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!--PortQinQConfigTable_Panel-->
+        <Field name="pqDeviceIndex" label="pqDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponComboDeviceIndexFormatter">
+
+        </Field>
+        <Field name="pqCardIndex" label="pqCardIndex">
+
+        </Field>
+        <Field name="pqPortIndex" label="pqPortIndex">
+
+        </Field>
+        <Field name="pqStartVlanId" label="pqStartVlanId">
+
+        </Field>
+        <Field name="pqEndVlanId" label="pqEndVlanId">
+
+        </Field>
+        <Field name="pqSVlanId" label="pqSVlanId">
+
+        </Field>
+        <Field name="pqSTagCosDetermine" label="pqSTagCosDetermine">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="redefine"/>
+                    <Entry value="2" display="copyFromCTag"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="pqSTagCosNewValue" label="pqSTagCosNewValue">
+
+        </Field>
+        <Field name="pqRowStatus" label="pqRowStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="active"/>
+                    <Entry value="2" display="notInService"/>
+                    <Entry value="5" display="createAndWait"/>
+                    <Entry value="4" display="createAndGo"/>
+                    <Entry value="3" display="notReady"/>
+                    <Entry value="6" display="destroy"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- QosGlobalSetTable_Panel -->
+        <Field name="qosGlobalSetDeviceIndex" label="qosGlobalSetDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+        <Field name="qosGlobalSetMaxQueueCount" label="qosGlobalSetMaxQueueCount"/>
+        <Field name="qosGlobalSetMode" label="qosGlobalSetMode">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="deviceBased"/>
+                    <Entry value="2" display="portBased"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- DeviceBaseQosMapTable_Panel -->
+        <Field name="deviceBaseQosMapDeviceIndex" label="deviceBaseQosMapDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+        <Field name="deviceBaseQosMapRuleIndex" label="deviceBaseQosMapRuleIndex">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="cos"/>
+                    <Entry value="2" display="tos"/>
+                    <Entry value="3" display="diffserv"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="deviceBaseQosMapOctet" label="deviceBaseQosMapOctet" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.BaseQosMapOctetFormatter"/>
+
+        <!-- DeviceBaseQosPolicyTable_Panel -->
+        <Field name="deviceBaseQosPolicyDeviceIndex" label="deviceBaseQosPolicyDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+        <Field name="deviceBaseQosPolicyMode" label="deviceBaseQosPolicyMode">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="sp"/>
+                    <Entry value="2" display="wrr"/>
+                    <Entry value="3" display="spWrr"/>
+                    <Entry value="4" display="wfp"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="deviceBaseQosPolicyWeightOctet" label="deviceBaseQosPolicyWeightOctet" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.BaseQosPolicyWeightOctetFormatter"/>
+        <Field name="deviceBaseQosPolicySpBandwidthRange" label="deviceBaseQosPolicySpBandwidthRange" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.BaseQosPolicySpBandwidthRangeFormatter"/>
+
+        <!-- PortBaseQosMapTablePanel -->
+        <Field name="portBaseQosMapDeviceIndex" label="portBaseQosMapDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+        <Field name="portBaseQosMapCardIndex" label="portBaseQosMapCardIndex"/>
+        <Field name="portBaseQosMapPortIndex" label="portBaseQosMapPortIndex"/>
+        <Field name="portBaseQosMapRuleIndex" label="portBaseQosMapRuleIndex">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="cos"/>
+                    <Entry value="2" display="tos"/>
+                    <Entry value="3" display="diffserv"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="portBaseQosMapOctet" label="portBaseQosMapOctet" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.BaseQosMapOctetFormatter"/>
+
+        <!-- PortBaseQosPolicyTablePanel -->
+        <Field name="portBaseQosPolicyDeviceIndex" label="portBaseQosPolicyDeviceIndex" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.EponDeviceIndexFormatter"/>
+        <Field name="portBaseQosPolicyCardIndex" label="portBaseQosPolicyCardIndex"/>
+        <Field name="portBaseQosPolicyPortIndex" label="portBaseQosPolicyPortIndex"/>
+        <Field name="portBaseQosPolicyMode" label="portBaseQosPolicyMode">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="sp"/>
+                    <Entry value="2" display="wrr"/>
+                    <Entry value="3" display="spWrr"/>
+                    <Entry value="4" display="wfp"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="portBaseQosPolicyWeightOctet" label="portBaseQosPolicyWeightOctet" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.BaseQosPolicyWeightOctetFormatter"/>
+        <Field name="portBaseQosPolicySpBandwidthRange" label="portBaseQosPolicySpBandwidthRange" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.BaseQosPolicySpBandwidthRangeFormatter"/>
+
+        <!-- activeAlarmTable -->
+        <Field name="activeAlarmSeqNum" label="activeAlarmSeqNum"/>
+        <Field name="activeAlarmCode" label="activeAlarmCode">
+            <Mib>
+                <ValueMap>
+                    <Entry value="101" display="alarm_code_101"/>
+                    <Entry value="102" display="alarm_code_102"/>
+                    <Entry value="103" display="alarm_code_103"/>
+                    <Entry value="104" display="alarm_code_104"/>
+                    <Entry value="105" display="alarm_code_105"/>
+                    <Entry value="106" display="alarm_code_106"/>
+                    <Entry value="107" display="alarm_code_107"/>
+                    <Entry value="108" display="alarm_code_108"/>
+                    <Entry value="109" display="alarm_code_109"/>
+                    <Entry value="201" display="alarm_code_201"/>
+                    <Entry value="202" display="alarm_code_202"/>
+                    <Entry value="203" display="alarm_code_203"/>
+                    <Entry value="204" display="alarm_code_204"/>
+                    <Entry value="205" display="alarm_code_205"/>
+                    <Entry value="301" display="alarm_code_301"/>
+                    <Entry value="302" display="alarm_code_302"/>
+                    <Entry value="303" display="alarm_code_303"/>
+                    <Entry value="304" display="alarm_code_304"/>
+                    <Entry value="305" display="alarm_code_305"/>
+                    <Entry value="306" display="alarm_code_306"/>
+                    <Entry value="307" display="alarm_code_307"/>
+                    <Entry value="308" display="alarm_code_308"/>
+                    <Entry value="310" display="alarm_code_310"/>
+                    <Entry value="311" display="alarm_code_311"/>
+                    <Entry value="315" display="alarm_code_315"/>
+                    <Entry value="316" display="alarm_code_316"/>
+                    <Entry value="401" display="alarm_code_401"/>
+                    <Entry value="402" display="alarm_code_402"/>
+                    <Entry value="403" display="alarm_code_403"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="activeAlarmInstance" label="activeAlarmInstance" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.AlarmInstanceFormatter"/>
+        <Field name="activeAlarmSeverity" label="activeAlarmSeverity">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="critical"/>
+                    <Entry value="2" display="major"/>
+                    <Entry value="3" display="minor"/>
+                    <Entry value="4" display="warning"/>
+                    <Entry value="5" display="info"/>
+                    <Entry value="6" display="clear"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="activeAlarmRaisingNumber" label="activeAlarmRaisingNumber"/>
+        <Field name="activeAlarmFirstOccurTime" label="activeAlarmFirstOccurTime" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r300.AlarmOccurenceTimeFormatter"/>
+        <Field name="activeAlarmLastOccurTime" label="activeAlarmLastOccurTime" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r300.AlarmOccurenceTimeFormatter"/>
+        <Field name="activeAlarmRepeats" label="activeAlarmRepeats"/>
+        <Field name="activeAlarmConfirm" label="activeAlarmConfirm">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="activeAlarmAdditionalText" label="activeAlarmAdditionalText"/>
+
+        <!-- historyAlarmTable -->
+        <Field name="historyAlarmSeqNum" label="historyAlarmSeqNum"/>
+        <Field name="historyAlarmCode" label="historyAlarmCode">
+            <Mib>
+                <ValueMap>
+                    <Entry value="101" display="alarm_code_101"/>
+                    <Entry value="102" display="alarm_code_102"/>
+                    <Entry value="103" display="alarm_code_103"/>
+                    <Entry value="104" display="alarm_code_104"/>
+                    <Entry value="105" display="alarm_code_105"/>
+                    <Entry value="106" display="alarm_code_106"/>
+                    <Entry value="107" display="alarm_code_107"/>
+                    <Entry value="108" display="alarm_code_108"/>
+                    <Entry value="109" display="alarm_code_109"/>
+                    <Entry value="201" display="alarm_code_201"/>
+                    <Entry value="202" display="alarm_code_202"/>
+                    <Entry value="203" display="alarm_code_203"/>
+                    <Entry value="204" display="alarm_code_204"/>
+                    <Entry value="205" display="alarm_code_205"/>
+                    <Entry value="301" display="alarm_code_301"/>
+                    <Entry value="302" display="alarm_code_302"/>
+                    <Entry value="303" display="alarm_code_303"/>
+                    <Entry value="304" display="alarm_code_304"/>
+                    <Entry value="305" display="alarm_code_305"/>
+                    <Entry value="306" display="alarm_code_306"/>
+                    <Entry value="307" display="alarm_code_307"/>
+                    <Entry value="308" display="alarm_code_308"/>
+                    <Entry value="310" display="alarm_code_310"/>
+                    <Entry value="311" display="alarm_code_311"/>
+                    <Entry value="315" display="alarm_code_315"/>
+                    <Entry value="316" display="alarm_code_316"/>
+                    <Entry value="401" display="alarm_code_401"/>
+                    <Entry value="402" display="alarm_code_402"/>
+                    <Entry value="403" display="alarm_code_403"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="historyAlarmInstance" label="historyAlarmInstance" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.AlarmInstanceFormatter"/>
+        <Field name="historyAlarmSeverity" label="historyAlarmSeverity">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="critical"/>
+                    <Entry value="2" display="major"/>
+                    <Entry value="3" display="minor"/>
+                    <Entry value="4" display="warning"/>
+                    <Entry value="5" display="info"/>
+                    <Entry value="6" display="clear"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="historyAlarmRaisingNumber" label="historyAlarmRaisingNumber"/>
+        <Field name="historyAlarmFirstOccurTime" label="historyAlarmFirstOccurTime" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r300.AlarmOccurenceTimeFormatter"/>
+        <Field name="historyAlarmLastOccurTime" label="historyAlarmLastOccurTime" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r300.AlarmOccurenceTimeFormatter"/>
+        <Field name="historyAlarmRepeats" label="historyAlarmRepeats"/>
+        <Field name="historyAlarmCorrelationId" label="historyAlarmCorrelationId"/>
+        <Field name="historyAlarmAdditionalText" label="historyAlarmAdditionalText"/>
+        <Field name="historyAlarmClearTime" label="historyAlarmClearTime" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r300.AlarmOccurenceTimeFormatter"/>
+        <Field name="eventSeqNum" label="eventSeqNum"/>
+        <Field name="eventCode" label="eventCode"/>
+        <Field name="eventInstance" label="eventInstance" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r400.AlarmInstanceFormatter"/>
+        <Field name="eventOccurTime" label="eventOccurTime" formatter="com.winnertel.ems.epon.iad.bbs4000.formatter.r300.AlarmOccurenceTimeFormatter"/>
+        <Field name="eventAdditionalText" label="eventAdditionalText"/>
+    </FieldList>
+</TableForm>

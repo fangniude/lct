@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<MenuToolBar>
+
+    <MenuBarList>
+
+        <MenuBar id="default">
+
+            <Menu id="File" name="File">
+                <MenuItem id="Exit" name="Exit"/>
+            </Menu>
+        </MenuBar>
+
+    </MenuBarList>
+
+    <ToolBarList>
+    </ToolBarList>
+    <ActionList>
+
+        <Action name="File">
+            <Mnemonic>f</Mnemonic>
+        </Action>
+
+        <Action name="Exit">
+            <Mnemonic>x</Mnemonic>
+            <Executor>com.winnertel.em.standard.gui.action.ExitAction</Executor>
+        </Action>
+
+
+    </ActionList>
+
+    <PopupMenuList>
+
+    </PopupMenuList>
+
+</MenuToolBar>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="GB2312"?>
+
+<StringMap>
+
+    <!--ONU Label Mangement-->
+    <String key="Root_Topo_View" value="物理视图"/>
+    <String key="Search" value="搜索"/>
+    <String key="Modify" value="修改"/>
+    <String key="Delete" value="删除"/>
+    <String key="Refresh" value="刷新"/>
+    <String key="ONU_Information_Management" value="ONU信息管理"/>
+    <String key="Unbound_ONU_Information_Management" value="未绑定ONU信息管理"/>
+    <String key="Bind" value="绑定"/>
+    <!-- The Table Columns in ONU Mangement -->
+    <String key="All" value="All"/>
+    <String key="ONU Label" value="ONU名称"/>
+    <String key="ONU Type" value="ONU类型"/>
+    <String key="MAC Address" value="MAC地址"/>
+    <String key="NE Label" value="NE名称"/>
+    <String key="Shelf" value="机架ID"/>
+    <String key="Card" value="板卡ID"/>
+    <String key="Port" value="端口ID"/>
+    <String key="ONU" value="ONU ID"/>
+    <String key="Admin Status" value="管理状态"/>
+    <String key="Register Status" value="注册状态"/>
+    <String key="Splitter Label" value="分光器名称"/>
+    <String key="Splitter Port" value="分光器端口"/>
+
+    <String key="Up" value="在线"/>
+    <String key="Down" value="离线"/>
+    <String key="Register" value="已注册"/>
+    <String key="Deregister" value="未注册"/>
+
+    <String key="Page" value="当前页"/>
+    <String key="Page Length" value="每页条目"/>
+    <String key="Total" value="总共条目"/>
+    <String key="Input_Onu_Label" value="请输入ONU ID"/>
+    <String key="Onu_Label_Length_Error" value="ONU的名称不能大于64个字符."/>
+    <String key="Onu_ID_String_Error" value="ONU ID 不能为字符."/>
+    <String key="Service Management" value="Service Management"/>
+    <String key="Modify ONU Label" value="修改ONU名称"/>
+    <String key="Service Management" value="Service Management"/>
+    <String key="Log_Modify_Onu_Label_Fail" value="修改ONU名称失败: "/>
+    <String key="Msg_Modify_Onu_Label_Fail" value="修改ONU名称失败."/>
+    <String key="Cfm_Delete_Onu_Label" value="是否要删除选择的ONU?"/>
+    <String key="Confirm" value="确认"/>
+    <String key="Error" value="错误"/>
+    <String key="Delete ONU" value="删除ONU "/>
+    <String key="Delete the ONU" value="删除ONU "/>
+    <String key="Log_Delete_Onu_Label_Fail" value="删除ONU失败: "/>
+    <String key="Msg_Delete_Onu_Label_Fail" value="删除ONU失败: "/>
+    <String key="No_Privilege_Error" value="您没有权限进行该操作."/>
+
+    <String key="Node Label" value="网元名称"/>
+    <String key="MAC Address" value="MAC地址"/>
+    <String key="Remove" value="删除"/>
+    <String key="OK" value="确定"/>
+    <String key="Cancel" value="取消"/>
+    <String key="ONU Label / MAC Address" value="ONU名称/MAC地址"/>
+    <String key="ONU Index(Label_Shelf/Card/Port/ONU Port)" value="ONU索引"/>
+    <String key="ONU Index(Node Label_Shelf/Card/Port/ONU Port)" value="ONU索引"/>
+    <String key="ONU Switch Port" value="ONU交换端口"/>
+    <String key="Available ONU Switch Port" value="可用ONU交换端口"/>
+    <String key="Selected ONU Switch Port" value="已选ONU交换端口"/>
+    <String key="Assign ONU" value="分配ONU"/>
+    <String key="There is no such ONU!" value="ONU不存在."/>
+    <String key="Title_Warning" value="错误"/>
+    <String key="There is no ONU Switch Port with this MAC address!" value="指定的ONU交换端口不存在."/>
+    <String key="Node List" value="网元列表"/>
+    <String key="Please just selected one element." value="请选择一条记录"/>
+    <String key="Available Node List" value="可用的网元列表"/>
+    <String key="There is no Node with this label!" value="指定的网元不存在."/>
+    <String key="Please select one or more rows in the available onu switch port list." value="请选择一个或多个ONU交换端口."/>
+    <String key="Please just select one row." value="只能选择一条记录."/>
+    <String key="This ONU has already been in the Table." value="ONU已经被选中."/>
+    <String key="Please select one or more rows in the selected onu switch port list." value="请选择一个或多个ONU交换端口."/>
+    <String key="Please just select one row" value="请选择一条记录."/>
+    <String key="Please select one or more rows in the available onu switch port list." value="请选择一个或多个可用ONU交换端口."/>
+    <String key="Please select one or more rows in the selected onu switch port list." value="请选择一个或多个ONU交换端口."/>
+    <String key="Do you want to delete this item?" value="请确认是否要删除?"/>
+    <String key="Please choose at least one ONU Switch Port for the subscriber." value="请选择至少一个ONU交换端口."/>
+    <String key="Assign ONU failed! The subscriber" value="分配ONU失败! 用户"/>
+    <String key="has already been deleted." value="已被删除."/>
+    <String key="Service Management" value="业务管理"/>
+    <String key="Assign ONU to Subscriber: " value="分配ONU到用户: "/>
+    <String key="had been assigned to others!" value="已经被分配给其他用户."/>
+    <String key="try again" value="请重试!"/>
+
+    <String key="Column 1" value="自定义列1"/>
+    <String key="Column 2" value="自定义列2"/>
+    <String key="Column 3" value="自定义列3"/>
+    <String key="Customize Column" value="自定义列名"/>
+    <String key="The column name is null." value="列名不能为空."/>
+    <String key="The column name is duplicate." value="列名已经存在."/>
+    <String key="Fail to change the column name." value="修改列名失败."/>
+
+    <String key="You are not authorized to perform the selected operation." value="您没有权限执行该操作."/>
+    <String key="Customized Field 1" value="自定义列1"/>
+    <String key="Customized Field 2" value="自定义列2"/>
+    <String key="Customized Field 3" value="自定义列3"/>
+
+    <String key="Can't create the file." value="无法创建该文件."/>
+    <String key="Import subscriber from file failed! Please check the format of the file." value="导入失败, 请检查文件格式是否正确."/>
+    <String key="Can not find the file specified." value="找不到指定的文件."/>
+
+    <String key="Search" value="搜索"/>
+    <String key="Import Subscriber" value="导入用户"/>
+    <String key="Export Subscriber" value="导出用户"/>
+    <String key="Export Subscriber Detail" value="导出用户详细信息"/>
+    <String key="Add" value="增加"/>
+    <String key="Modify" value="修改"/>
+    <String key="Delete" value="删除"/>
+    <String key="Assign ONU" value="分配ONU"/>
+    <String key="Remove Assigned ONU" value="删除ONU"/>
+    <String key="Customize Columns" value="订制列名"/>
+    <String key="Current Page:" value="当前页:"/>
+    <String key="Page Length:" value="每页行数:"/>
+    <String key="Account" value="帐号"/>
+    <String key="Name" value="名称"/>
+    <String key="Phone Number" value="电话号码"/>
+    <String key="Fax Number" value="传真号码"/>
+    <String key="Email Address" value="E-Mail地址"/>
+    <String key="Address" value="地址"/>
+    <String key="Remark" value="备注"/>
+    <String key="Subscriber Time" value="修改时间"/>
+    <String key="Total:" value="总页数:"/>
+    <String key="Subscriber" value="用户"/>
+    <String key="Assigned ONU" value="分配ONU"/>
+    <String key="Subscriber Information Management" value="用户信息管理"/>
+    <String key="Import" value="导入"/>
+    <String key="Export" value="导出"/>
+    <String key="This file already exists, do you want to replace the existing file?" value="文件已经存在, 是否要覆盖该文件?"/>
+    <String key="Export Subscriber Data File" value="导出用户数据文件"/>
+    <String key="Export Subscriber data to csv file" value="导出用户数据到CSV文件"/>
+    <String key="The subscriber information is exported to the file: " value="用户数据已经导出到文件: "/>
+    <String key=" successfully!" value="!"/>
+    <String key="Export Subscriber data to xls file" value="导出用户数据到XLS文件"/>
+    <String key="Import Subscriber Data File" value="导入用户数据文件"/>
+    <String key="Do you want to delete the selected subscriber(s)?" value="请确认是要删除选定的用户?"/>
+    <String key="Delete subscriber failed!" value="删除用户失败!"/>
+    <String key="The subscriber " value="用户 "/>
+    <String key=" has already been deleted." value=" 已经被删除."/>
+    <String key="Delete Subscriber" value="删除用户"/>
+    <String key="Delete Subscriber: " value="删除用户: "/>
+    <String key="Please select one subscriber." value="请选择一个用户."/>
+    <String key="Please select one or more rows in the Assigned ONU table!" value="请选择一条或多条已分配的ONU."/>
+    <String key="Do you want to remove the selected ONU switch port(s) from the subscriber?" value="请确认是否要删除选定的ONU交换端口?"/>
+    <String key="Remove ONU" value="删除ONU"/>
+    <String key="Remove ONU from Subscriber: " value="删除ONU: "/>
+    <String key=" has already existed, do you want to replace it ?" value="已经存在, 是否要替换?"/>
+    <String key="Replace" value="替换"/>
+    <String key="Replace All" value="全部替换"/>
+    <String key="No" value="不"/>
+    <String key="No To All" value="全部不"/>
+
+    <String key="Continue Add" value="增加并继续"/>
+    <String key="Add Subscriber" value="增加用户"/>
+    <String key="Modify Subscriber" value="修改用户"/>
+    <String key="Add subscriber failed!" value="增加用户失败!"/>
+    <String key="This subscriber " value="用户 "/>
+    <String key=" has already been added into the Subscriber table." value="已经存在."/>
+    <String key="Add Subscriber: " value="增加用户"/>
+    <String key=" had been assigned to others!" value="已经被分配给其他用户!"/>
+    <String key="Modify subscriber failed!" value="修改用户失败!"/>
+    <String key=" has already been deleted." value="已经被删除!"/>
+    <String key=" had been assigned to others!" value="已经被分配给其他用户!"/>
+    <String key="Modify Subscriber: " value="修改用户: "/>
+    <String key="The size of the input should be between 1-128 characters." value="输入的字符串长度应该是1-128."/>
+    <String key="The size of the input should be between 1-64 characters." value="输入的字符串长度应该是1-64."/>
+    <String key="The size of the input should be between 1-255 characters." value="输入的字符串长度应该是1-255."/>
+    <String key="Please select one or more ONU Switch Port!" value="请选择一个或多个ONU交换端口."/>
+    <String key="Please input the subscriber account." value="请输入用户帐号."/>
+    <String key="The account has already been added." value="用户帐号已经存在."/>
+
+    <!-- translate the english in BBS1000+ to Chinese -->
+    <String key="Clear" value="清除告警"/>
+    <String key="Warning" value="警告告警"/>
+    <String key="Minor" value="次要告警"/>
+    <String key="Major" value="重要告警"/>
+    <String key="Critical" value="紧急告警"/>
+    <String key="Indeterminate" value="未知告警"/>
+    <String key="Communication" value="通信告警"/>
+    <String key="Equipment" value="设备告警"/>
+    <String key="Environmental" value="环境告警"/>
+    <String key="ProcessingError" value="处理错误告警"/>
+    <String key="QualityOfService" value="服务质量告警"/>
+    <String key="Unavailable" value="不可达"/>
+    <String key="High Temperature" value="温度过高"/>
+    <String key="Cooling Fan Failure" value="冷却风扇失效"/>
+    <String key="Replaceable Unit Missing" value="可替换模块缺失"/>
+    <String key="Power Problem" value="电源问题"/>
+    <String key="Link Down" value="链路中断"/>
+    <String key="Communication Protocol Error" value="通讯协议错误"/>
+    <String key="Excessive BER" value="误码率过高"/>
+    <String key="Framing Error" value="帧错误"/>
+    <String key="ONU Switch Offline" value="ONU交换模块链路中断"/>
+    <String key="CPU Usage Too High" value="CPU使用率过高"/>
+    <String key="Memory Usage Too Much" value="内在占用率过高"/>
+    <String key="System Resources Overload" value="系统资源过载"/>
+    <String key="Auto clear" value="自动清除"/>
+    <String key="Manual clear" value="手工清除	"/>
+    <String key="Inter Soft Module" value="软件模块"/>
+    <String key="Inter Board" value="内部板卡"/>
+
+    <String key="TIMETICK_DAY" value="天"/>
+    <String key="TIMETICK_HOUR" value="小时"/>
+    <String key="TIMETICK_MINUTE" value="分钟"/>
+    <String key="TIMETICK_SECOND" value="秒"/>
+
+    <!-- translate the english in ACS to Chinese -->
+    <String key="Device Log" value="升级日志"/>
+    <String key="Exit" value="退出"/>
+    <String key="Do you want to delete the selected rows?" value="是否要删除选定的记录?"/>
+    <String key="File" value="文件"/>
+    <String key="Edit" value="编辑"/>
+    <String key="View" value="视图"/>
+    <String key="Policy" value="升级任务"/>
+    <String key="Log" value="升级日志"/>
+    <String key="ACS_Policy_Management" value="ONU自动配置管理"/>
+    <String key="Version" value="版本/摘要"/>
+    <String key="Description" value="备注"/>
+    <String key="oldVersion" value="升级前版本/摘要"/>
+    <String key="newVersion" value="升级后版本/摘要"/>
+    <String key="filePath" value="文件路径"/>
+    <String key="beginTime" value="开始时间"/>
+    <String key="endTime" value="结束时间"/>
+    <String key="result" value="升级结果"/>
+    <String key="description" value="备注"/>
+
+    <String key="Configuration File" value="配置文件"/>
+    <String key="Onu Device List" value="ONU 设备列表"/>
+    <String key="Onu Device List" value="ONU 设备列表"/>
+    <String key="Filter" value="过滤"/>
+    <String key="Apply" value="应用"/>
+    <String key="selected" value="选中"/>
+    <String key="macaddress" value="MAC 地址"/>
+    <String key="label" value="ONU名称"/>
+    <String key="hwtype" value="硬件类型"/>
+    <String key="userlabel" value="网元名称"/>
+    <String key="Select All" value="全选"/>
+    <String key="Clear Selection" value="清除选择"/>
+    <String key="Add ACS Policy" value="增加ACS配置"/>
+    <String key="Policy_File_Is_Null" value="配置文件为空."/>
+
+    <String key="Err_NodeType_Is_Invalid" value="该ONU类型不正确，无法打开ONU设备管理!"/>
+    <String key="Err_NodeType_Is_Not_Supported" value="该ONU不支持设备管理!"/>
+    <String key="Err_NodeSwitchIp_Is_Invalid" value="ONU switch IP地址不正确，无法打开ONU设备管理!"/>
+
+</StringMap>

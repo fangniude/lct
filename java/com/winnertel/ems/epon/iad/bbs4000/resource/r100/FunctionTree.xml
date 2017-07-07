@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<FunctionTreeList>
+    <FunctionTree type="Configuration">
+        <Node id="FBW5000" text="FBW5000" decorator="com.winnertel.ems.epon.iad.bbs4000.GponCMTreeBuilder"/>
+    </FunctionTree>
+</FunctionTreeList>

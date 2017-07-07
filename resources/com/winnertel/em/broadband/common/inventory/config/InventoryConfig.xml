@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<InventoryProviderList>
+
+    <InventoryProvider type="FBW3000" class="com.winnertel.ems.epon.inventory.EponInventoryProvider"/>
+    <InventoryProvider type="FBW2000" class="com.winnertel.ems.epon.inventory.EponInventoryProvider"/>
+    <InventoryProvider type="FBW5000" class="com.winnertel.ems.epon.inventory.EponInventoryProvider"/>
+</InventoryProviderList>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root id="FBW5000">
+    <node id="System_Configuration"/>
+
+    <node id="Chassis"/>
+
+    <node id="Layer_2">
+        <node id="Interface_layer_2"/>
+        <!--<node id="Link_Aggregation"/>-->
+        <node id="MAC_Address"/>
+        <node id="Port_Monitor"/>
+        <node id="VLAN"/>
+        <node id="STP"/>
+    </node>
+
+    <node id="Layer_3">
+        <!--<node id="Interface_layer_3"/>-->
+        <node id="Interface_Extension"/>
+        <node id="ARP"/>
+        <node id="IP_Route"/>
+        <node id="DHCP">
+            <node id="DHCP_Setting"/>
+            <node id="DHCP_Relay"/>
+            <node id="DHCP_Server"/>
+            <node id="DHCP_States"/>
+        </node>
+    </node>
+
+    <node id="EPON_Management">
+        <node id="OLT_EPON"/>
+        <node id="ONU_EPON">
+            <!--<node id="ONU_Configuration"/>
+            <node id="ONU_Management"/>-->
+            <node id="ONU_BaseInfo"/>
+            <node id="ONU_RegisAddr"/>
+            <node id="ONU_Configuration"/>
+            <node id="ONU_VoIPConfiguration"/>
+            <node id="ONU_UNIConfiguration"/>
+            <node id="ONU_MulticastConfiguration"/>
+            <node id="ONU_VLANConfiguration"/>
+            <node id="ONU_BrandConfiguration"/>
+            <node id="ONU_QosConfiguration"/>
+            <!-- node id="ONU_NMSConfiguration"/ -->
+            <node id="Onu2CtcAlarmReportingTable_Panel"/>
+            <!--<node id="Onu2CtcMduSnmpConfTable_Panel"/>-->
+            <!--<node id="ONU_StatusManagement"/>-->
+            <node id="ONU_DiagnoseManagement"/>
+            <node id="ONU_Upgrade"/>
+        </node>
+    </node>
+    
+    <node id="Electric_ONU_Private_Configuration" version="3.1.1.500"/>
+
+    <node id="QoS"/>
+
+    <node id="ACL"/>
+
+    <node id="IGMP_Multicast"/>
+
+    <node id="Performance"/>
+    
+    <!-- <node id="Performance_Management"/> -->
+
+    <node id="Security"/>
+
+    <node id="ACU" version="3.0.0"/>
+    
+    <node id="ONU_Offline_Configuration" version="3.1.0,3.1.1,2.2.1">	
+    	<node id="ONU_Offline_BaseInfo"/>
+    	<node id="ONU_Offline_IPTVInfo"/>
+    	<node id="ONU_Offline_VoIPInfo"/>
+    	<node id="ONU_Offline_DataInfo"/>
+    </node>
+    
+    <node id="Optical_Layer_Measurement" version="3.1.0,3.1.1,2.2.1"/>
+    
+    <node id="EoC_Device_Information" version="3.1.0,3.1.1,2.2.1"/>
+    
+    <node id="PON_Hand_To_Hand_Protection" version="3.1.0,3.1.1"/>
+    
+    <node id="Alarm_Management"/>
+</root>

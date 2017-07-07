@@ -1,0 +1,1700 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<LogList>
+    <Log id="Modify_SystemInfoMbean" action="">
+        <Operation>配置系统信息</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_SysBootParamsMBean" action="">
+        <Operation>配置系统启动参数</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_SNTPGroupMBean" action="">
+        <Operation>配置SNTP</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_SyslogMBean" action="">
+        <Operation>配置系统日志参数</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_SecurityMBean" action="">
+        <Operation>配置安全参数</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_InOutBandTTLMBean" action="">
+        <Operation>配置TTL</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_OltCtcCdrCtrlGroup" action="">
+        <Operation>配置CDR参数</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Force_Report" action="">
+        <Operation>CDR上报</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_AlarmModelTableMBean_Log" action="">
+        <Operation>告警重定义</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_AlarmFilteringMBean" action="">
+        <Operation>告警过滤</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Add_SysCommuTableMBean_Log" action="">
+        <Operation>增加SNMP共用体</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Delete_SysCommuTableMBean" action="">
+        <Operation>删除SNMP共用体</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_EponTrapTableMBean_Log" action="">
+        <Operation>增加Trap服务器</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Modify_EponTrapTableMBean_Log" action="">
+        <Operation>修改Trap服务器</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_EponTrapTableMBean" action="">
+        <Operation>删除Trap服务器</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_SNTPServerTableMBean_Log" action="">
+        <Operation>增加SNTP服务器</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Modify_SNTPServerTableMBean_Log" action="">
+        <Operation>修改SNTP服务器</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_SNTPServerTableMBean" action="">
+        <Operation>删除SNTP服务器</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Modify_SyslogServerTableMBean_Log" action="">
+        <Operation>修改系统日志服务器</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Add_CoSQueueMapTable_Log" action="">
+        <Operation>增加CoS队列映射</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Modify_CoSQueueMapTable_Log" action="">
+        <Operation>修改CoS队列映射</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_CoSQueueMapTable" action="">
+        <Operation>删除CoS队列映射</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_LinkAggregation_Log" action="">
+        <Operation>增加链路聚合体</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Modify_LinkAggregation_Log" action="">
+        <Operation>修改链路聚合体</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_LinkAggregation" action="">
+        <Operation>删除链路聚合体</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Modify_InterfaceTableMBean_Log" action="">
+        <Operation>修改二层接口</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_InterfaceTableGEMtMBean_Log" action="">
+        <Operation>修改GE端口管理状态和描述</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_InterfaceTableLgMBean_Log" action="">
+        <Operation>修改链路聚合体管理状态</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Add_MACAddress_Log" action="">
+        <Operation>修改MAC地址</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Delete_MACAddress" action="">
+        <Operation>删除MAC地址</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_MonitorSessionControlTable_Log" action="">
+        <Operation>增加端口镜像</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Modify_MonitorSessionControlTable_Log" action="">
+        <Operation>修改端口镜像</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_MonitorSessionControlTable" action="">
+        <Operation>删除端口镜像</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Modify_RSTPGeneral" action="">
+        <Operation>修改RSTP基本配置</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_RSTPPort" action="">
+        <Operation>修改RSTP端口配置</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Add_PortBasedVLAN" action="">
+        <Operation>增加VLAN</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Modify_PortBasedVLAN" action="">
+        <Operation>修改VLAN</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_PortBasedVLAN" action="">
+        <Operation>删除VLAN</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_SuperSVITable_Log" action="">
+        <Operation>增加Super SVI</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Modify_SuperSVITable_Log" action="">
+        <Operation>修改Super SVI</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_SuperSVITable" action="">
+        <Operation>删除Super SVI</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_EthIfExtTable_Log" action="">
+        <Operation>增加三层接口</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Modify_EthIfExtTable_Log" action="">
+        <Operation>修改三层接口</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_EthIfExtTable" action="">
+        <Operation>删除三层接口</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_SecondIPAddressTable_Log" action="">
+        <Operation>增加次IP地址</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Delete_SecondIPAddressTable" action="">
+        <Operation>删除次IP地址</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_EponArpTable_Log" action="">
+        <Operation>增加ARP记录</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Delete_EponArpTable" action="">
+        <Operation>删除ARP记录</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_StaticRouteTable_Log" action="">
+        <Operation>增加静态路由</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Delete_StaticRouteTable" action="">
+        <Operation>删除静态路由</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Modify_QosExtCosQueueSchedTable_Log" action="">
+        <Operation>修改QoS CoS队列调度信息</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_QosExtCosQueueSchedTable" action="">
+        <Operation>重置QoS CoS队列调度信息</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_LgQosExtCosQueueSchedTable_Log" action="">
+        <Operation>修改QoS CoS队列调度信息</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_QosExtDscpCosMapTable_Log" action="">
+        <Operation>修改QoS DSCP CoS映射</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Restore_QosExtDscpCosMapTable" action="">
+        <Operation>复位QoS DSCP CoS映射</Operation>
+        <Level>5</Level>
+        <Annotation>复位</Annotation>
+    </Log>
+
+    <Log id="Modify_QosExtDscpMutMapTable_Log" action="">
+        <Operation>修改QoS DSCP转换映射</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_QosExtIpPrecDscpMapTable_Log" action="">
+        <Operation>修改IP Precedence DSCP映射</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_QosExtDscpTrustTable_Log" action="">
+        <Operation>修改QoS DSCP Trust</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_LgQosExtDscpTrustTable_Log" action="">
+        <Operation>修改QoS DSCP Trust</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Add_AclExtProfileImportTable_Log" action="">
+        <Operation>导入ACL模板文件</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Delete_AclExtProfileImportTable" action="">
+        <Operation>删除ACL模板文件</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_AclExtIntfConfigTable_Log" action="">
+        <Operation>应用ACL模板文件</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Modify_AclExtIntfConfigTable_Log" action="">
+        <Operation>修改ACL模板文件应用</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_AclExtIntfConfigTable" action="">
+        <Operation>删除ACL模板文件应用</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Modify_IgmpSnoopCfgTable_Log" action="">
+        <Operation>修改VLAN的IGMP监听</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_IgmpInterfaceTable_Log" action="">
+        <Operation>修改三层接口的IGMP监听</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Add_IgmpCacheTable_Log" action="">
+        <Operation>增加静态组播组</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Delete_IgmpCacheTable" action="">
+        <Operation>删除静态组播组</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_DHCPRelayServerTable_Log" action="">
+        <Operation>增加DHCP中继服务器</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Delete_DHCPRelayServerTable" action="">
+        <Operation>删除DHCP中继服务器</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_DHCPPoolTable_Log" action="">
+        <Operation>增加DHCP池</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Modify_DHCPPoolTable_Log" action="">
+        <Operation>修改DHCP池</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_DHCPPoolTable" action="">
+        <Operation>删除DHCP池</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_DHCPPoolDefaultRouterTable_Log" action="">
+        <Operation>增加DHCP缺省网关</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Delete_DHCPPoolDefaultRouterTable" action="">
+        <Operation>删除DHCP缺省网关</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_DHCPDNSServerTableMBean_Log" action="">
+        <Operation>增加DHCP DNS服务器</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Delete_DHCPDNSServerTableMBean" action="">
+        <Operation>删除DHCP DNS服务器</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Modify_DHCPIPBindingStatusTableMBean_Log" action="">
+        <Operation>解绑定DHCP绑定</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Add_DHCPLeaseLimitTableMBean_Log" action="">
+        <Operation>增加DHCP租用限制</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Modify_DHCPLeaseLimitTableMBean_Log" action="">
+        <Operation>修改DHCP租用限制</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_DHCPLeaseLimitTableMBean" action="">
+        <Operation>删除DHCP租用限制</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_DHCPLogServerTableMBean_Log" action="">
+        <Operation>增加DHCP日志服务器</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Delete_DHCPLogServerTableMBean" action="">
+        <Operation>删除DHCP日志服务器</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_DHCPMBindingTableMBean_Log" action="">
+        <Operation>增加DHCP手工绑定</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Modify_DHCPMBindingTableMBean_Log" action="">
+        <Operation>修改DHCP手工绑定</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_DHCPMBindingTableMBean" action="">
+        <Operation>删除DHCP手工绑定</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Delete_DHCPIPBindingStatusTableMBean" action="">
+        <Operation>删除DHCP IP绑定</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_DHCPNTPServerTableMBean_Log" action="">
+        <Operation>增加DHCP NTP服务器</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Delete_DHCPNTPServerTableMBean" action="">
+        <Operation>删除DHCP NTP服务器</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_DHCPPoolExcludeTableMBean_Log" action="">
+        <Operation>增加DHCP不可用IP地址段</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Modify_DHCPPoolExcludeTableMBean_Log" action="">
+        <Operation>修改DHCP不可用IP地址段</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_DHCPPoolExcludeTableMBean" action="">
+        <Operation>删除DHCP不可用IP地址段</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_DHCPPoolIncludeTableMBean_Log" action="">
+        <Operation>增加DHCP可用IP地址段</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Modify_DHCPPoolIncludeTableMBean_Log" action="">
+        <Operation>修改DHCP可用IP地址段</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_DHCPPoolIncludeTableMBean" action="">
+        <Operation>删除DHCP可用IP地址段</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Modify_ChassisConfTable_Log" action="">
+        <Operation>修改机架温度告警阈值</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_EponModuleBoardTable_Log" action="">
+        <Operation>修改板卡温度告警阈值</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_SwitchPortExtTable_Log" action="">
+        <Operation>修改二层端口配置信息</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_IntfRateControlTable_Log" action="">
+        <Operation>配置二层接口速率限制</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_IntfRateControlGEMTable_Log" action="">
+        <Operation>修改二层接口速率限制</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_Dot3OltTable_Log" action="">
+        <Operation>修改PON端口配置信息</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_Dot3DbaOltTable_Log" action="">
+        <Operation>修改PON端口DBA</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_Dot3OnuTable_Log" action="">
+        <Operation>修改ONU配置信息</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_Dot3DbaSlaTable_Log" action="">
+        <Operation>修改ONU DBA SLA</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_Dot3UnboundOnuTable_Log" action="">
+        <Operation>绑定ONU</Operation>
+        <Level>5</Level>
+        <Annotation>Bound</Annotation>
+    </Log>
+
+    <Log id="Delete_Dot3boundOnuTable" action="">
+        <Operation>解绑定ONU</Operation>
+        <Level>5</Level>
+        <Annotation>Unbound</Annotation>
+    </Log>
+
+    <!--host route-->
+    <Log id="Add_HostRouteTable_Log" action="">
+        <Operation>增加主机路由</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Delete_HostRouteTable" action="">
+        <Operation>删除主机路由</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <!--MSTP-->
+    <Log id="Modify_MSTPPortTableMBean_Log" action="">
+        <Operation>修改MST端口</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Add_MSTPMapTableMBean_Log" action="">
+        <Operation>增加MIST VLAN范围映射</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Delete_MSTPMapTableMBean" action="">
+        <Operation>删除MIST VLAN范围映射</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Modify_MSTPMapTableMBean_Log" action="">
+        <Operation>修改MIST VLAN范围映射</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_MSTPXstTableMBean_Log" action="">
+        <Operation>修改MIST或CIST基本配置</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_MSTPXstPortTableMBean_Log" action="">
+        <Operation>修改MIST或CIST端口配置</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Add_MonitorSessionControlTableMBean_Log" action="">
+        <Operation>增加端口镜像</Operation>
+        <Level>5</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Modify_MonitorSessionControlTableMBean_Log" action="">
+        <Operation>修改端口镜像</Operation>
+        <Level>5</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_MonitorSessionControlTableMBean" action="">
+        <Operation>删除端口镜像</Operation>
+        <Level>5</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_ONUUpgradeResultTableMBean_Log" action="">
+        <Operation>增加ONU升级任务</Operation>
+        <Level>4</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Delete_ONUScheduleUpgradeTableMBean" action="">
+        <Operation>删除ONU升级任务</Operation>
+        <Level>4</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_ONUUpgradeHwTableMBean_Log" action="">
+        <Operation>增加ONU升级规则</Operation>
+        <Level>4</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Modify_ONUUpgradeHwTableMBean_Log" action="">
+        <Operation>修改ONU升级规则</Operation>
+        <Level>4</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_ONUUpgradeHwTableMBean" action="">
+        <Operation>删除ONU升级规则</Operation>
+        <Level>4</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_ONUManualUpgradeTableMBean_Log" action="">
+        <Operation>手工升级ONU</Operation>
+        <Level>4</Level>
+        <Annotation>升级</Annotation>
+    </Log>
+
+    <Log id="Lock_Port" action="">
+        <Operation>锁定端口</Operation>
+        <Level>5</Level>
+        <Annotation>锁定</Annotation>
+    </Log>
+
+    <Log id="Unlock_Port" action="">
+        <Operation>解锁端口</Operation>
+        <Level>5</Level>
+        <Annotation>解锁</Annotation>
+    </Log>
+
+    <Log id="Lock_Card" action="">
+        <Operation>锁定板卡</Operation>
+        <Level>5</Level>
+        <Annotation>锁定</Annotation>
+    </Log>
+
+    <Log id="Unlock_Card" action="">
+        <Operation>解锁板卡</Operation>
+        <Level>5</Level>
+        <Annotation>解锁</Annotation>
+    </Log>
+
+    <Log id="Reset_Card" action="">
+        <Operation>复位板卡</Operation>
+        <Level>5</Level>
+        <Annotation>复位</Annotation>
+    </Log>
+
+    <Log id="Add_Dot3OnuSwitchTable_Log" action="">
+        <Operation>增加ONU Switch记录</Operation>
+        <Level>4</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Modify_Dot3OnuSwitchTable_Log" action="">
+        <Operation>修改ONU Switch记录</Operation>
+        <Level>4</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_Dot3OnuSwitchTable" action="">
+        <Operation>删除ONU Switch记录</Operation>
+        <Level>4</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Modify_Dot3Olt2Table_Log" action="">
+        <Operation>修改OLT板卡信息</Operation>
+        <Level>4</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_Dot3Olt2PortTable_Log" action="">
+        <Operation>修改OLT端口信息</Operation>
+        <Level>4</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_Dot3Olt2QosGlbTable_Log" action="">
+        <Operation>修改OLT QoS</Operation>
+        <Level>4</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_Dot3Olt2DbaGlbTable_Log" action="">
+        <Operation>修改OLTDBA全局配置信息</Operation>
+        <Level>4</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Add_Dot3Olt2PolicingTable_Log" action="">
+        <Operation>增加OLT报文过滤策略</Operation>
+        <Level>4</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Modify_Dot3Olt2PolicingTable_Log" action="">
+        <Operation>修改OLT报文过滤策略</Operation>
+        <Level>4</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_Dot3Olt2PolicingTable" action="">
+        <Operation>删除OLT报文过滤策略</Operation>
+        <Level>4</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Add_Dot3Onu2Table_Log" action="">
+        <Operation>增加ONU属性</Operation>
+        <Level>4</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Modify_Dot3Onu2Table_Log" action="">
+        <Operation>修改ONU属性</Operation>
+        <Level>4</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_Dot3Onu2Table" action="">
+        <Operation>删除ONU属性</Operation>
+        <Level>4</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Modify_Dot3Onu2TrafficProfTable_Log" action="">
+        <Operation>修改ONU带宽信息</Operation>
+        <Level>4</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Batch_Modify_Dot3Onu2TrafficProfTable_Log" action="">
+        <Operation>批量修改ONU带宽信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_Dot3Onu2CtcTable_Log" action="">
+        <Operation>修改ONU基本信息</Operation>
+        <Level>4</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Modify_Dot3Onu2QoSTable_Log" action="">
+        <Operation>修改ONU QoS信息</Operation>
+        <Level>4</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Add_Dot3Onu2ClassifiRuleTable_Log" action="">
+        <Operation>增加ONU流分类信息</Operation>
+        <Level>4</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Modify_Dot3Onu2ClassifiRuleTable_Log" action="">
+        <Operation>修改ONU流分类信息</Operation>
+        <Level>4</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Delete_Dot3Onu2ClassifiRuleTable" action="">
+        <Operation>删除ONU流分类信息</Operation>
+        <Level>4</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Modify_Dot3Onu2CtcEtherPortTable_Log" action="">
+        <Operation>修改ONU以太端口信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_VlanModeConfigMBean_Log" action="">
+        <Operation>修改VLAN模式配置</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_UNIVlanStackingMBean_Log" action="">
+        <Operation>修改UNI VLAN堆叠</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_Dot3Onu2CtcDbaTable_Log" action="">
+        <Operation>修改ONU DBA配置信息</Operation>
+        <Level>4</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Add_OnuCtcMulticastCtrlTable_Log" action="">
+        <Operation>增加组播用户权限</Operation>
+        <Level>4</Level>
+        <Annotation>增加</Annotation>
+    </Log>
+
+    <Log id="Delete_OnuCtcMulticastCtrlTable" action="">
+        <Operation>删除组播用户权限</Operation>
+        <Level>4</Level>
+        <Annotation>删除</Annotation>
+    </Log>
+
+    <Log id="Modify_OnuCtcBandCtrlTable_Log" action="">
+        <Operation>修改ONU频道控制信息</Operation>
+        <Level>4</Level>
+        <Annotation>修改</Annotation>
+    </Log>
+
+    <Log id="Add_Dot3Olt2AclConfTable_Log" action="">
+        <Operation>增加OLT接入控制信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Delete_Dot3Olt2AclConfTable" action="">
+        <Operation>删除OLT接入控制信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OltPullDownMcTable_Log" action="">
+        <Operation>增加下拉组播表</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Delete_OltPullDownMcTable" action="">
+        <Operation>删除下拉组播表</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Delete_EthernetPerfStaticsCounterTableMBean" action="">
+        <Operation>复位以太端口性能统计计数器</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Delete_PonIf2ExtStatTable_OLT" action="">
+        <Operation>复位OLT性能统计计数器</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Delete_PonIf2ExtStatTable_ONU" action="">
+        <Operation>复位ONU性能统计计数器</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_PonSystemGroup" action="">
+        <Operation>修改PON系统信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Restart_AutoNeg" action="">
+        <Operation>重启自协商</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Clear_MulticastVlanList" action="">
+        <Operation>清除组播VLAN信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Clear_ClassificationRule" action="">
+        <Operation>清除流分类信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_Dot3Onu2CtcLpBkTable_Log" action="">
+        <Operation>增加ONU环回测试信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Delete_Dot3Onu2CtcLpBkTable" action="">
+        <Operation>删除ONU环回测试信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_Dot3Onu2CtcClassifiAppTable_Log" action="">
+        <Operation>增加ONU业务流分类信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Delete_Dot3Onu2CtcClassifiAppTable" action="">
+        <Operation>删除ONU业务流分类信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_Dot3Onu2CtcValidOnuMacTable_Log" action="">
+        <Operation>配置ONU MAC地址绑定信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_Dot3Onu2StaticFDBTable_Log" action="">
+        <Operation>增加ONU静态转发信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Delete_Dot3Onu2StaticFDBTable" action="">
+        <Operation>删除ONU静态转发信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_Dot3Onu2FDBTable_Log" action="">
+        <Operation>增加ONU端口转发信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Delete_Dot3Onu2FDBTable" action="">
+        <Operation>删除ONU端口转发信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_Dot3Olt2VlanStackingTable_Log" action="">
+        <Operation>增加OLT VLAN 堆叠信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Delete_Dot3Olt2VlanStackingTable" action="">
+        <Operation>删除OLT VLAN 堆叠信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_Dot3OnuClassifiImportTable_Log" action="">
+        <Operation>增加ONU流分类模板导入信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Delete_Dot3OnuClassifiImportTable" action="">
+        <Operation>删除ONU流分类模板导入信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_Dot3Olt2PortDbaTable_Log" action="">
+        <Operation>修改OLT DBA 配置信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OltGlbMulticastGroupTable_Log" action="">
+        <Operation>增加组播组VLAN</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Delete_OltGlbMulticastGroupTable" action="">
+        <Operation>删除组播组VLAN</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_Dot3Onu2CtcLpBkGroup" action="">
+        <Operation>启动/停止ONU Loop Back测试</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_OnuLoopbackTest" action="">
+        <Operation>启动/停止ONU 环回测试业务</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_OnuLoopbackTestTable_Log" action="">
+        <Operation>启动/停止OLT端口下的ONU 环回测试</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_GeneralConfiguration" action="">
+        <Operation>修改CSM板基本配置</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_QosExtCosQueMapMBean_Log" action="">
+        <Operation>修改CoS队列映射信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Delete_QosExtCosQueMapMBean" action="">
+        <Operation>复位CoS队列映射信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Delete_QosExtDscpMutMapTable" action="">
+        <Operation>复位DSCP转变映射</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Delete_QosExtIpPrecDscpMapTable" action="">
+        <Operation>复位IP优先DSCP映射信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_EponMulticastCtrlGroup" action="">
+        <Operation>修改组播控制组配置</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_DHCPServiceState" action="">
+        <Operation>修改DHCP服务配置信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_DHCPOption82" action="">
+        <Operation>修改DHCP Option 82设置</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_DHCPRelay" action="">
+        <Operation>修改DHCP中继服务配置信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_MSTPGeneralMBean" action="">
+        <Operation>修改MSTP基本配置信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Save_Config" action="">
+        <Operation>保存网元配置数据</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Board_Switch" action="">
+        <Operation>CSM板倒换</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Restart_NE" action="">
+        <Operation>重启网元</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Set_Factory_Default" action="">
+        <Operation>恢复出厂设置</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_OnuPowerMeasure" action="">
+        <Operation>测量ONU光功率</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OnuFlexQinQMBean_Log" action="">
+        <Operation>增加灵活QinQ</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_OnuFlexQinQMBean_Log" action="">
+        <Operation>修改灵活QinQ</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Delete_OnuFlexQinQMBean_Log" action="">
+        <Operation>删除灵活QinQ</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_EthFlexQinQMBean_Log" action="">
+        <Operation>增加灵活QinQ</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_EthFlexQinQMBean_Log" action="">
+        <Operation>修改灵活QinQ</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Delete_EthFlexQinQMBean_Log" action="">
+        <Operation>删除灵活QinQ</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_PortBasedVLAN_Log" action="">
+        <Operation>增加基于端口的VLAN信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_PortBasedVLAN_Log" action="">
+        <Operation>修改基于端口的VLAN信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_OltPonLinkCfgTable_Log" action="">
+        <Operation>Modify OltPonLinkCfgTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OltGponProtocolProfTable_Log" action="">
+        <Operation>Add OltGponProtocolProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_OltGponProtocolProfTable_Log" action="">
+        <Operation>Modify OltGponProtocolProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_OltGponProtocolProfTable_Log" action="">
+        <Operation>Delete OltGponProtocolProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Add_VlanToGEMPorMapTable_Log" action="">
+        <Operation>Add VlanToGEMPorMapTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_VlanToGEMPorMapTable_Log" action="">
+        <Operation>Modify VlanToGEMPorMapTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_VlanToGEMPorMapTable_Log" action="">
+        <Operation>Delete VlanToGEMPorMapTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_OnuDynMultiGroupTable_Log" action="">
+        <Operation>Modify OnuDynMultiGroupTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OnuTcontSvcProfTable_Log" action="">
+        <Operation>Add OnuTcontSvcProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_OnuTcontSvcProfTable_Log" action="">
+        <Operation>Modify OnuTcontSvcProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_OnuTcontSvcProfTable_Log" action="">
+        <Operation>Delete OnuTcontSvcProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OnuTcontVPortBindProfTable_Log" action="">
+        <Operation>Add OnuTcontVPortBindProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_OnuTcontVPortBindProfTable_Log" action="">
+        <Operation>Modify OnuTcontVPortBindProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_OnuTcontVPortBindProfTable_Log" action="">
+        <Operation>Delete OnuTcontVPortBindProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OnuVPorSvcProfTable_Log" action="">
+        <Operation>Add OnuVPorSvcProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_OnuVPorSvcProfTable_Log" action="">
+        <Operation>Modify OnuVPorSvcProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_OnuVPorSvcProfTable_Log" action="">
+        <Operation>Delete OnuVPorSvcProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OnuBwProfTable_Log" action="">
+        <Operation>Add OnuBwProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_OnuBwProfTable_Log" action="">
+        <Operation>Modify OnuBwProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_OnuBwProfTable_Log" action="">
+        <Operation>Delete OnuBwProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OnuUPCUTMProfTable_Log" action="">
+        <Operation>Add OnuUPCUTMProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_OnuUPCUTMProfTable_Log" action="">
+        <Operation>Modify OnuUPCUTMProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_OnuUPCUTMProfTable_Log" action="">
+        <Operation>Delete OnuUPCUTMProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OnuUPUTMProfTable_Log" action="">
+        <Operation>Add OnuUPUTMProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_OnuUPUTMProfTable_Log" action="">
+        <Operation>Modify OnuUPUTMProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_OnuUPUTMProfTable_Log" action="">
+        <Operation>Delete OnuUPUTMProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OnuEthUniCfgProTable_Log" action="">
+        <Operation>Add OnuEthUniCfgProTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_OnuEthUniCfgProTable_Log" action="">
+        <Operation>Modify OnuEthUniCfgProTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_OnuEthUniCfgProTable_Log" action="">
+        <Operation>Delete OnuEthUniCfgProTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OnuRateCtrSchProfTable_Log" action="">
+        <Operation>Add OnuRateCtrSchProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_OnuRateCtrSchProfTable_Log" action="">
+        <Operation>Modify OnuRateCtrSchProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_OnuRateCtrSchProfTable_Log" action="">
+        <Operation>Delete OnuRateCtrSchProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OnuVirtualPortCfgTable_Log" action="">
+        <Operation>Add OnuVirtualPortCfgTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_OnuVirtualPortCfgTable_Log" action="">
+        <Operation>Modify OnuVirtualPortCfgTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_OnuVirtualPortCfgTable_Log" action="">
+        <Operation>Delete OnuVirtualPortCfgTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OnuVlanPriBitsUpTrafficMapProfTable_Log" action="">
+        <Operation>Add OnuVlanPriBitsUpTrafficMapProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_OnuVlanPriBitsUpTrafficMapProfTable_Log" action="">
+        <Operation>Modify OnuVlanPriBitsUpTrafficMapProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_OnuVlanPriBitsUpTrafficMapProfTable_Log" action="">
+        <Operation>Delete OnuVlanPriBitsUpTrafficMapProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OnuVlanIdUpTrafficMapProfTable_Log" action="">
+        <Operation>Add OnuVlanIdUpTrafficMapProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_OnuVlanIdUpTrafficMapProfTable_Log" action="">
+        <Operation>Modify OnuVlanIdUpTrafficMapProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_OnuVlanIdUpTrafficMapProfTable_Log" action="">
+        <Operation>Delete OnuVlanIdUpTrafficMapProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OnuVlanIdVlanPriBitUpTrafficMapProfTable_Log" action="">
+        <Operation>Add OnuVlanIdVlanPriBitUpTrafficMapProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_OnuVlanIdVlanPriBitUpTrafficMapProfTable_Log" action="">
+        <Operation>Modify OnuVlanIdVlanPriBitUpTrafficMapProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_OnuVlanIdVlanPriBitUpTrafficMapProfTable_Log" action="">
+        <Operation>Delete OnuVlanIdVlanPriBitUpTrafficMapProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OnuStaticMultiGroupProfTable_Log" action="">
+        <Operation>Add OnuStaticMultiGroupProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_OnuStaticMultiGroupProfTable_Log" action="">
+        <Operation>Modify OnuStaticMultiGroupProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_OnuStaticMultiGroupProfTable_Log" action="">
+        <Operation>Delete OnuStaticMultiGroupProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OltVlanTransProfTable_Log" action="">
+        <Operation>Add OltVlanTransProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_OltVlanTransProfTable_Log" action="">
+        <Operation>Modify OltVlanTransProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_OltVlanTransProfTable_Log" action="">
+        <Operation>Delete OltVlanTransProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OnuVlanTransProfTable_Log" action="">
+        <Operation>Add OnuVlanTransProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_OnuVlanTransProfTable_Log" action="">
+        <Operation>Modify OnuVlanTransProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_OnuVlanTransProfTable_Log" action="">
+        <Operation>Delete OnuVlanTransProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OnuVoipServProfTable_Log" action="">
+        <Operation>Add OnuVoipServProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_OnuVoipServProfTable_Log" action="">
+        <Operation>Modify OnuVoipServProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_OnuVoipServProfTable_Log" action="">
+        <Operation>Delete OnuVoipServProfTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OnuUpgradeTandRTable_Log" action="">
+        <Operation>Add OnuUpgradeTandRTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_OnuUpgradeTandRTable_Log" action="">
+        <Operation>Modify OnuUpgradeTandRTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_OnuUpgradeTandRTable_Log" action="">
+        <Operation>Delete OnuUpgradeTandRTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OnuUpgradeHwTypeTable_Log" action="">
+        <Operation>Add OnuUpgradeHwTypeTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_OnuUpgradeHwTypeTable_Log" action="">
+        <Operation>Modify OnuUpgradeHwTypeTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_OnuUpgradeHwTypeTable_Log" action="">
+        <Operation>Delete OnuUpgradeHwTypeTable</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <!--
+    <Log id="Add_GponOltMacBridgeFDB_Log" action="">
+        <Operation>Add GponOltMacBridgeFDB</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_GponOltMacBridgeFDB_Log" action="">
+        <Operation>Modify GponOltMacBridgeFDB</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_GponOltMacBridgeFDB_Log" action="">
+        <Operation>Delete GponOltMacBridgeFDB</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    -->
+
+    <Log id="Add_GponOltMultiGroupToMultiVlanMap_Log" action="">
+        <Operation>Add GponOltMultiGroupToMultiVlanMap</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_GponOltMultiGroupToMultiVlanMap_Log" action="">
+        <Operation>Modify GponOltMultiGroupToMultiVlanMap</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_GponOltMultiGroupToMultiVlanMap_Log" action="">
+        <Operation>Delete GponOltMultiGroupToMultiVlanMap</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_GponOltMultiVlanToMultiGEMPortMap_Log" action="">
+        <Operation>Add GponOltMultiVlanToMultiGEMPortMap</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_GponOltMultiVlanToMultiGEMPortMap_Log" action="">
+        <Operation>Modify GponOltMultiVlanToMultiGEMPortMap</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_GponOltMultiVlanToMultiGEMPortMap_Log" action="">
+        <Operation>Delete GponOltMultiVlanToMultiGEMPortMap</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_GponOnuEthUniCfg_Log" action="">
+        <Operation>Add GponOnuEthUniCfg</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_GponOnuEthUniCfg_Log" action="">
+        <Operation>Modify GponOnuEthUniCfg</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Delete_GponOnuEthUniCfg_Log" action="">
+        <Operation>Delete GponOnuEthUniCfg</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+    <Log id="Modify_TCAConfig" action="">
+    	<Operation>Modify  TCAConfig</Operation>
+    	<Level>4</Level>
+    	<Annotation/>
+    </Log>
+    
+     <Log id="Add__Log" action="">
+          <Operation>Add </Operation>
+          <Level>4</Level>
+          <Annotation />
+        </Log>
+        <Log id="Modify__Log" action="">
+          <Operation>Modify </Operation>
+          <Level>4</Level>
+          <Annotation />
+        </Log>
+        <Log id="Delete__Log" action="">
+          <Operation>Delete </Operation>
+          <Level>4</Level>
+          <Annotation />
+        </Log>
+
+    <Log id="Modify_AlarmAcuControl" action="">
+        <Operation>修改ACU配置信息</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_AcuExternalAlarmTable" action="">
+        <Operation>修改ACU告警设置</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Add_OnuDbaProfileTable_Log" action="">
+        <Operation>增加ONU DBA配置模板</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Modify_OnuDbaProfileTable_Log" action="">
+        <Operation>修改ONU DBA配置模板</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+
+    <Log id="Delete_OnuDbaProfileTable" action="">
+        <Operation>删除ONU DBA配置模板</Operation>
+        <Level>4</Level>
+        <Annotation/>
+    </Log>
+</LogList>

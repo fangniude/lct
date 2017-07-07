@@ -1,0 +1,3059 @@
+<cplData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ilog/cpl/schema/data.xsd">
+  <addObject id="SHELF1" container="true">
+    <class>
+      ilog.tgo.model.IltShelf
+    </class>
+    <children>
+      <child>
+        FAN2
+      </child>
+      <child>
+        FAN1
+      </child>
+      <child>
+        FAN3
+      </child>
+      <child>
+        CARD1
+      </child>
+      <child>
+        CARD2
+      </child>
+      <child>
+        CARD3
+      </child>
+      <child>
+        CARD4
+      </child>
+      <child>
+        CARD5
+      </child>
+      <child>
+        CARD6
+      </child>
+      <child>
+        CARD7
+      </child>
+      <child>
+        CARD8
+      </child>
+      <child>
+        CARD9
+      </child>
+      <child>
+        CARD10
+      </child>
+      <child>
+        CARD11
+      </child>
+      <child>
+        CARD12
+      </child>
+      <child>
+        CARD13
+      </child>
+      <child>
+        CARD14
+      </child>
+      <child>
+        PWR1
+      </child>
+      <child>
+        PWR2
+      </child>
+    </children>
+    <attribute name="direction">
+      Right
+    </attribute>
+    <attribute name="type">
+      IltShelf.Type.Standard
+    </attribute>
+    <attribute name="slotSizes" javaClass="ilog.tgo.model.IltSlotSizes">
+      <height>
+        <value>
+          156
+        </value>
+        <value>
+          156
+        </value>
+      </height>
+      <width>
+        <value>
+          44
+        </value>
+        <value>
+          44
+        </value>
+        <value>
+          44
+        </value>
+        <value>
+          44
+        </value>
+        <value>
+          44
+        </value>
+        <value>
+          44
+        </value>
+        <value>
+          54
+        </value>
+        <value>
+          54
+        </value>
+        <value>
+          44
+        </value>
+        <value>
+          44
+        </value>
+        <value>
+          44
+        </value>
+        <value>
+          44
+        </value>
+        <value>
+          44
+        </value>
+        <value>
+          44
+        </value>
+        <value>
+          56
+        </value>
+      </width>
+    </attribute>
+    <attribute name="xslotindex">
+      0
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpPoint">
+      <x>
+        53.0
+      </x>
+      <y>
+        138.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      Shelf
+    </attribute>
+  </addObject>
+  <addObject id="CARD1" container="true">
+    <class>
+      ilog.tgo.model.IltCard
+    </class>
+    <parent>
+      SHELF1
+    </parent>
+    <children>
+      <child>
+        CARD1_LED1
+      </child>
+      <child>
+        CARD1_LED2
+      </child>
+      <child>
+        CARD1_LED3
+      </child>
+      <child>
+        CARD1_LED4
+      </child>
+      <child>
+        CARD1_LED5
+      </child>
+      <child>
+        CARD1_LED6
+      </child>
+      <child>
+        CARD1_LED7
+      </child>
+      <child>
+        CARD1_LED8
+      </child>
+    </children>
+    <attribute name="type" javaClass="ilog.tgo.model.IltCard$Type">
+      GEM_04A
+    </attribute>
+    <attribute name="direction">
+      Bottom
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.views.IlpShelfItemPosition">
+      <xIndex>
+        0
+      </xIndex>
+      <yIndex>
+        0
+      </yIndex>
+      <xSpan>
+        1.0
+      </xSpan>
+      <ySpan>
+        2.0
+      </ySpan>
+    </attribute>
+    <attribute name="name" null="true"/>
+  </addObject>
+  
+  <addObject id="CARD1_LED1">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD1
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_RED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        33.0
+      </x>
+      <y>
+        258.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD1_LED2">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD1
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_GREEN
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        33.0
+      </x>
+      <y>
+        250.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>  
+  <addObject id="CARD1_LED3">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD1
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_YELLOW
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        33.0
+      </x>
+      <y>
+        242.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD1_LED4">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD1
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_RED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        33.0
+      </x>
+      <y>
+        234.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD1_LED5">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD1
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_GREEN
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        33.0
+      </x>
+      <y>
+        212.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>  
+  <addObject id="CARD1_LED6">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD1
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_GREEN
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        33.0
+      </x>
+      <y>
+        203.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD1_LED7">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD1
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_GREEN
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        33.0
+      </x>
+      <y>
+        194.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD1_LED8">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD1
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_GREEN
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        33.0
+      </x>
+      <y>
+        185.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  
+  
+  <addObject id="CARD2" container="true">
+    <class>
+      ilog.tgo.model.IltCard
+    </class>
+    <parent>
+      SHELF1
+    </parent>
+    <children>
+      <child>
+        CARD2_LED1
+      </child>
+      <child>
+        CARD2_LED2
+      </child>
+      <child>
+        CARD2_LED3
+      </child>
+      <child>
+        CARD2_LED4
+      </child>
+      <child>
+        CARD2_LED5
+      </child>
+      <child>
+        CARD2_LED6
+      </child>
+      <child>
+        CARD2_LED7
+      </child>
+      <child>
+        CARD2_LED8
+      </child>
+    </children>
+    <attribute name="type" javaClass="ilog.tgo.model.IltCard$Type">
+      GEM_04A
+    </attribute>
+    <attribute name="direction">
+      Bottom
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.views.IlpShelfItemPosition">
+      <xIndex>
+        1
+      </xIndex>
+      <yIndex>
+        0
+      </yIndex>
+      <xSpan>
+        1.0
+      </xSpan>
+      <ySpan>
+        2.0
+      </ySpan>
+    </attribute>
+    <attribute name="name" null="true"/>
+  </addObject>
+  
+  <addObject id="CARD2_LED1">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD2
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        25.0
+      </x>
+      <y>
+        319.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD2_LED2">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD2
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        25.0
+      </x>
+      <y>
+        305.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD2_LED3">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD2
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        25.0
+      </x>
+      <y>
+        292.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD2_LED4">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD2
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        24.0
+      </x>
+      <y>
+        278.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD2_LED5">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD2
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        25.0
+      </x>
+      <y>
+        243.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD2_LED6">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD2
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        26.0
+      </x>
+      <y>
+        226.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD2_LED7">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD2
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        25.0
+      </x>
+      <y>
+        211.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD2_LED8">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD2
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        23.0
+      </x>
+      <y>
+        195.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  
+  <addObject id="CARD3" container="true">
+    <class>
+      ilog.tgo.model.IltCard
+    </class>
+    <parent>
+      SHELF1
+    </parent>
+    <children/>
+    <attribute name="type" javaClass="ilog.tgo.model.IltCard$Type">
+      GEM_04A
+    </attribute>
+    <attribute name="direction">
+      Bottom
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.views.IlpShelfItemPosition">
+      <xIndex>
+        2
+      </xIndex>
+      <yIndex>
+        0
+      </yIndex>
+      <xSpan>
+        1.0
+      </xSpan>
+      <ySpan>
+        2.0
+      </ySpan>
+    </attribute>
+    <attribute name="name" null="true"/>
+  </addObject>
+  <addObject id="CARD4" container="true">
+    <class>
+      ilog.tgo.model.IltCard
+    </class>
+    <parent>
+      SHELF1
+    </parent>
+    <children/>
+    <attribute name="type" javaClass="ilog.tgo.model.IltCard$Type">
+      GEM_04A
+    </attribute>
+    <attribute name="direction">
+      Bottom
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.views.IlpShelfItemPosition">
+      <xIndex>
+        3
+      </xIndex>
+      <yIndex>
+        0
+      </yIndex>
+      <xSpan>
+        1.0
+      </xSpan>
+      <ySpan>
+        2.0
+      </ySpan>
+    </attribute>
+    <attribute name="name" null="true"/>
+  </addObject>
+  <addObject id="CARD5" container="true">
+    <class>
+      ilog.tgo.model.IltCard
+    </class>
+    <parent>
+      SHELF1
+    </parent>
+    <children/>
+    <attribute name="type" javaClass="ilog.tgo.model.IltCard$Type">
+      GEM_04A
+    </attribute>
+    <attribute name="direction">
+      Bottom
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.views.IlpShelfItemPosition">
+      <xIndex>
+        4
+      </xIndex>
+      <yIndex>
+        0
+      </yIndex>
+      <xSpan>
+        1.0
+      </xSpan>
+      <ySpan>
+        2.0
+      </ySpan>
+    </attribute>
+    <attribute name="name" null="true"/>
+  </addObject>  
+  <addObject id="CARD6" container="true">
+    <class>
+      ilog.tgo.model.IltCard
+    </class>
+    <parent>
+      SHELF1
+    </parent>
+    <children/>
+    <attribute name="type" javaClass="ilog.tgo.model.IltCard$Type">
+      GEM_04A
+    </attribute>
+    <attribute name="direction">
+      Bottom
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.views.IlpShelfItemPosition">
+      <xIndex>
+        5
+      </xIndex>
+      <yIndex>
+        0
+      </yIndex>
+      <xSpan>
+        1.0
+      </xSpan>
+      <ySpan>
+        2.0
+      </ySpan>
+    </attribute>
+    <attribute name="name" null="true"/>
+  </addObject>
+  <addObject id="CARD7" container="true">
+    <class>
+      ilog.tgo.model.IltCard
+    </class>
+    <parent>
+      SHELF1
+    </parent>
+    <children>
+      <child>
+        FAN1_LED1
+      </child>
+      <child>
+        FAN1_LED2
+      </child>
+      <child>
+        FAN2_LED1
+      </child>
+      <child>
+        FAN2_LED2
+      </child>
+      <child>
+        FAN3_LED1
+      </child>
+      <child>
+        FAN3_LED2
+      </child>
+      <child>
+        CARD7_LED1
+      </child>
+      <child>
+        CARD7_LED2
+      </child>
+      <child>
+        CARD7_LED3
+      </child>
+      <child>
+        CARD7_LED4
+      </child>
+      <child>
+        CARD7_LED5
+      </child>
+      <child>
+        CARD7_LED6
+      </child>
+      <child>
+        CARD7_LED7
+      </child>
+      <child>
+        CARD7_LED8
+      </child>
+      <child>
+        CARD7_LED9
+      </child>
+    </children>
+    <attribute name="type" javaClass="ilog.tgo.model.IltCard$Type">
+      CSM
+    </attribute>
+    <attribute name="direction">
+      Bottom
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.views.IlpShelfItemPosition">
+      <xIndex>
+        6
+      </xIndex>
+      <yIndex>
+        0
+      </yIndex>
+      <xSpan>
+        1.0
+      </xSpan>
+      <ySpan>
+        2.0
+      </ySpan>
+    </attribute>
+    <attribute name="name" null="true"/>
+  </addObject>
+  <addObject id="FAN1_LED1">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD7
+    </parent>
+    <attribute name="height">
+      10.0
+    </attribute>
+    <attribute name="width">
+      35.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_FAN_BLUE
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        205.0
+      </x>
+      <y>
+        376.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      RectangularShape
+    </attribute>
+  </addObject>
+  <addObject id="FAN1_LED2">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD7
+    </parent>
+    <attribute name="height">
+      10.0
+    </attribute>
+    <attribute name="width">
+      35.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_FAN_PURPLE
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        170.0
+      </x>
+      <y>
+        376.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      RectangularShape
+    </attribute>
+  </addObject>    
+ <addObject id="FAN2_LED1">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD7
+    </parent>
+    <attribute name="height">
+      10.0
+    </attribute>
+    <attribute name="width">
+      35.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_FAN_BLUE
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        -13.0
+      </x>
+      <y>
+        376.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      RectangularShape
+    </attribute>
+  </addObject>
+  <addObject id="FAN2_LED2">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD7
+    </parent>
+    <attribute name="height">
+      10.0
+    </attribute>
+    <attribute name="width">
+      35.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_FAN_PURPLE
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        -48.0
+      </x>
+      <y>
+        376.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      RectangularShape
+    </attribute>
+  </addObject>
+  <addObject id="FAN3_LED1">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD7
+    </parent>
+    <attribute name="height">
+      10.0
+    </attribute>
+    <attribute name="width">
+      35.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_FAN_BLUE
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        -238.0
+      </x>
+      <y>
+        376.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      RectangularShape
+    </attribute>
+  </addObject>
+  <addObject id="FAN3_LED2">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD7
+    </parent>
+    <attribute name="height">
+      10.0
+    </attribute>
+    <attribute name="width">
+      35.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_FAN_PURPLE
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        -273.0
+      </x>
+      <y>
+        376.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      RectangularShape
+    </attribute>
+  </addObject>
+  
+  <addObject id="CARD7_LED1">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD7
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_RED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        41.0
+      </x>
+      <y>
+        258.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD7_LED2">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD7
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_GREEN
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        41.0
+      </x>
+      <y>
+        250.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>  
+  <addObject id="CARD7_LED3">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD7
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_YELLOW
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        41.0
+      </x>
+      <y>
+        242.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD7_LED4">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD7
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_RED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        41.0
+      </x>
+      <y>
+        234.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD7_LED5">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD7
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_RED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        41.0
+      </x>
+      <y>
+        212.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD7_LED6">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD7
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_HYACINTH
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        41.0
+      </x>
+      <y>
+        203.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD7_LED7">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD7
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_YELLOW
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        41.0
+      </x>
+      <y>
+        194.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD7_LED8">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD7
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_GREEN
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        38.0
+      </x>
+      <y>
+        150.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD7_LED9">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD7
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_YELLOW
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        30.0
+      </x>
+      <y>
+        150.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+    
+  <addObject id="CARD8" container="true">
+    <class>
+      ilog.tgo.model.IltCard
+    </class>
+    <parent>
+      SHELF1
+    </parent>
+    <children>
+      <child>
+        CARD8_LED1
+      </child>
+      <child>
+        CARD8_LED2
+      </child>
+      <child>
+        CARD8_LED3
+      </child>
+      <child>
+        CARD8_LED4
+      </child>
+      <child>
+        CARD8_LED5
+      </child>
+      <child>
+        CARD8_LED6
+      </child>
+      <child>
+        CARD8_LED7
+      </child>
+      <child>
+        CARD8_LED8
+      </child>
+      <child>
+        CARD8_LED9
+      </child>
+    </children>
+    <attribute name="type" javaClass="ilog.tgo.model.IltCard$Type">
+      CSM
+    </attribute>
+    <attribute name="direction">
+      Bottom
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.views.IlpShelfItemPosition">
+      <xIndex>
+        7
+      </xIndex>
+      <yIndex>
+        0
+      </yIndex>
+      <xSpan>
+        1.0
+      </xSpan>
+      <ySpan>
+        2.0
+      </ySpan>
+    </attribute>
+    <attribute name="name" null="true"/>
+  </addObject>
+  
+  <addObject id="CARD8_LED1">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD8
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        22.0
+      </x>
+      <y>
+        325.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD8_LED2">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD8
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        22.0
+      </x>
+      <y>
+        313.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD8_LED3">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD8
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        22.0
+      </x>
+      <y>
+        300.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD8_LED4">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD8
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        24.0
+      </x>
+      <y>
+        288.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD8_LED5">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD8
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        23.0
+      </x>
+      <y>
+        257.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD8_LED6">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD8
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        24.0
+      </x>
+      <y>
+        246.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD8_LED7">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD8
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        26.0
+      </x>
+      <y>
+        232.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD8_LED8">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD8
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        29.0
+      </x>
+      <y>
+        198.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD8_LED9">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD8
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        14.0
+      </x>
+      <y>
+        199.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+    
+  <addObject id="CARD9" container="true">
+    <class>
+      ilog.tgo.model.IltCard
+    </class>
+    <parent>
+      SHELF1
+    </parent>
+    <children>
+      <child>
+        CARD9_LED1
+      </child>
+      <child>
+        CARD9_LED2
+      </child>
+      <child>
+        CARD9_LED3
+      </child>
+      <child>
+        CARD9_LED4
+      </child>
+      <child>
+        CARD9_LED5
+      </child>
+      <child>
+        CARD9_LED6
+      </child>
+      <child>
+        CARD9_LED7
+      </child>
+      <child>
+        CARD9_LED8
+      </child>
+      <child>
+        CARD9_LED9
+      </child>
+      <child>
+        CARD9_LED10
+      </child>
+      <child>
+        CARD9_LED11
+      </child>
+      <child>
+        CARD9_LED12
+      </child>
+    </children>
+    <attribute name="type" javaClass="ilog.tgo.model.IltCard$Type">
+      EPM04A
+    </attribute>
+    <attribute name="direction">
+      Bottom
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.views.IlpShelfItemPosition">
+      <xIndex>
+        8
+      </xIndex>
+      <yIndex>
+        0
+      </yIndex>
+      <xSpan>
+        1.0
+      </xSpan>
+      <ySpan>
+        2.0
+      </ySpan>
+    </attribute>
+    <attribute name="name" null="true"/>
+  </addObject>
+  
+  <addObject id="CARD9_LED1">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD9
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_RED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        33.0
+      </x>
+      <y>
+        259.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD9_LED2">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD9
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_GREEN
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        33.0
+      </x>
+      <y>
+        251.5
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD9_LED3">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD9
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_YELLOW
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        33.0
+      </x>
+      <y>
+        244.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD9_LED4">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD9
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_RED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        33.0
+      </x>
+      <y>
+        236.5
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD9_LED5">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD9
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_RED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        34.0
+      </x>
+      <y>
+        213.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD9_LED6">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD9
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_GREEN
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        24.0
+      </x>
+      <y>
+        213.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD9_LED7">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD9
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_RED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        34.0
+      </x>
+      <y>
+        204.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD9_LED8">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD9
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_GREEN
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        24.0
+      </x>
+      <y>
+        204.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD9_LED9">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD9
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_RED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        34.0
+      </x>
+      <y>
+        195.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD9_LED10">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD9
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_GREEN
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        24.0
+      </x>
+      <y>
+        195.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+
+  <addObject id="CARD9_LED11">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD9
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_RED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        34.0
+      </x>
+      <y>
+        186.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="CARD9_LED12">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      CARD9
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_GREEN
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        24.0
+      </x>
+      <y>
+        186.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  
+  <addObject id="CARD10" container="true">
+    <class>
+      ilog.tgo.model.IltCard
+    </class>
+    <parent>
+      SHELF1
+    </parent>
+    <children/>
+    <attribute name="type" javaClass="ilog.tgo.model.IltCard$Type">
+      EPM04A
+    </attribute>
+    <attribute name="direction">
+      Bottom
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.views.IlpShelfItemPosition">
+      <xIndex>
+        9
+      </xIndex>
+      <yIndex>
+        0
+      </yIndex>
+      <xSpan>
+        1.0
+      </xSpan>
+      <ySpan>
+        2.0
+      </ySpan>
+    </attribute>
+    <attribute name="name" null="true"/>
+  </addObject>  
+<addObject id="CARD11" container="true">
+    <class>
+      ilog.tgo.model.IltCard
+    </class>
+    <parent>
+      SHELF1
+    </parent>
+    <children/>
+    <attribute name="type" javaClass="ilog.tgo.model.IltCard$Type">
+      EPM04A
+    </attribute>
+    <attribute name="direction">
+      Bottom
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.views.IlpShelfItemPosition">
+      <xIndex>
+        10
+      </xIndex>
+      <yIndex>
+        0
+      </yIndex>
+      <xSpan>
+        1.0
+      </xSpan>
+      <ySpan>
+        2.0
+      </ySpan>
+    </attribute>
+    <attribute name="name" null="true"/>
+  </addObject>
+  <addObject id="CARD12" container="true">
+    <class>
+      ilog.tgo.model.IltCard
+    </class>
+    <parent>
+      SHELF1
+    </parent>
+    <children/>
+    <attribute name="type" javaClass="ilog.tgo.model.IltCard$Type">
+      EPM04A
+    </attribute>
+    <attribute name="direction">
+      Bottom
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.views.IlpShelfItemPosition">
+      <xIndex>
+        11
+      </xIndex>
+      <yIndex>
+        0
+      </yIndex>
+      <xSpan>
+        1.0
+      </xSpan>
+      <ySpan>
+        2.0
+      </ySpan>
+    </attribute>
+    <attribute name="name" null="true"/>
+  </addObject>
+  <addObject id="CARD13" container="true">
+    <class>
+      ilog.tgo.model.IltCard
+    </class>
+    <parent>
+      SHELF1
+    </parent>
+    <children/>
+    <attribute name="type" javaClass="ilog.tgo.model.IltCard$Type">
+      EPM04A
+    </attribute>
+    <attribute name="direction">
+      Bottom
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.views.IlpShelfItemPosition">
+      <xIndex>
+        12
+      </xIndex>
+      <yIndex>
+        0
+      </yIndex>
+      <xSpan>
+        1.0
+      </xSpan>
+      <ySpan>
+        2.0
+      </ySpan>
+    </attribute>
+    <attribute name="name" null="true"/>
+  </addObject>
+  <addObject id="CARD14" container="true">
+    <class>
+      ilog.tgo.model.IltCard
+    </class>
+    <parent>
+      SHELF1
+    </parent>
+    <children/>
+    <attribute name="type" javaClass="ilog.tgo.model.IltCard$Type">
+      EPM04A
+    </attribute>
+    <attribute name="direction">
+      Bottom
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.views.IlpShelfItemPosition">
+      <xIndex>
+        13
+      </xIndex>
+      <yIndex>
+        0
+      </yIndex>
+      <xSpan>
+        1.0
+      </xSpan>
+      <ySpan>
+        2.0
+      </ySpan>
+    </attribute>
+    <attribute name="name" null="true"/>
+  </addObject>
+  <addObject id="PWR1" container="true">
+    <class>
+      ilog.tgo.model.IltCard
+    </class>
+    <parent>
+      SHELF1
+    </parent>
+    <children>
+      <child>
+        PWR1_LED1
+      </child>
+      <child>
+        PWR1_LED2
+      </child>
+    </children>
+    <attribute name="type" javaClass="ilog.tgo.model.IltCard$Type">
+      PWR
+    </attribute>
+    <attribute name="direction">
+      Bottom
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.views.IlpShelfItemPosition">
+      <xIndex>
+        14
+      </xIndex>
+      <yIndex>
+        0
+      </yIndex>
+      <xSpan>
+        1.0
+      </xSpan>
+      <ySpan>
+        1.0
+      </ySpan>
+    </attribute>
+    <attribute name="name" null="true"/>
+  </addObject>  
+  
+  <addObject id="PWR1_LED1">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      PWR1
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_GREEN
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        38.0
+      </x>
+      <y>
+        122.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="PWR1_LED2">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      PWR1
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_RED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        30.0
+      </x>
+      <y>
+        122.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="PWR2" container="true">
+    <class>
+      ilog.tgo.model.IltCard
+    </class>
+    <parent>
+      SHELF1
+    </parent>
+    <children>
+      <child>
+        PWR2_LED1
+      </child>
+      <child>
+        PWR2_LED2
+      </child>
+    </children>
+    <attribute name="type" javaClass="ilog.tgo.model.IltCard$Type">
+      PWR
+    </attribute>
+    <attribute name="direction">
+      Bottom
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.views.IlpShelfItemPosition">
+      <xIndex>
+        14
+      </xIndex>
+      <yIndex>
+        1
+      </yIndex>
+      <xSpan>
+        1.0
+      </xSpan>
+      <ySpan>
+        1.0
+      </ySpan>
+    </attribute>
+    <attribute name="name" null="true"/>
+  </addObject>
+  <addObject id="PWR2_LED1">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      PWR2
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_GREEN
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        38.0
+      </x>
+      <y>
+        122.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+  <addObject id="PWR2_LED2">
+    <class>
+      ilog.tgo.model.IltLed
+    </class>
+    <parent>
+      PWR2
+    </parent>
+    <attribute name="height">
+      15.0
+    </attribute>
+    <attribute name="width">
+      15.0
+    </attribute>
+    <attribute name="type" javaClass="ilog.tgo.model.IltLed$Type">
+      LED_RED
+    </attribute>
+    <attribute name="direction">
+      Top
+    </attribute>
+    <attribute name="logicalType">
+      IltObject.LogicalType.Standard
+    </attribute>
+    <attribute name="tinyType">
+      IltObject.TinyType.Standard
+    </attribute>
+    <attribute name="objectState" null="true"/>
+    <attribute name="position" javaClass="ilog.cpl.graphic.IlpRelativePoint">
+      <x>
+        30.0
+      </x>
+      <y>
+        122.0
+      </y>
+    </attribute>
+    <attribute name="name">
+      LED
+    </attribute>
+  </addObject>
+
+</cplData>

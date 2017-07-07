@@ -1,0 +1,105 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Equipment component additional customization
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Equipment {
+  toolbar: true;
+  interactor: true;
+  zooming: true;
+  backgrounds: true;
+}
+
+// Configure the toolbar to disallow moving of objects.
+ToolBar {
+  enabled: false;
+  button[0]: @+SelectionButton;
+  button[1]: @+PanButton;
+  button[2]: @+ZoomInButton;
+  button[3]: @+ZoomOutButton;
+  button[4]: @+ZoomBackButton;
+  button[5]: @+ZoomResetButton;
+  button[6]: @+FitToContentsButton;
+  button[7]: @+ZoomViewButton;
+}
+
+#SelectionButton {
+  actionType: "Select";
+  usingObjectInteractor: true;
+  moveAllowed: false;
+  action[0]: @+action0;
+  multipleSelectionMode:false;
+}
+
+#action0 {
+  key: "control A";
+  class: "ilog.cpl.network.action.IlpSelectAllObjectsAction";
+}
+
+#PanButton {
+  actionType: "Pan";
+  usingObjectInteractor: false;
+}
+
+#ZoomInButton {
+  actionType: "ZoomIn";
+}
+
+#ZoomOutButton {
+  actionType: "ZoomOut";
+}
+
+#ZoomBackButton {
+  actionType: "ZoomBack";
+}
+
+#ZoomResetButton {
+  actionType: "ZoomReset";
+}
+
+#FitToContentsButton {
+  actionType: "FitToContents";
+}
+
+#ZoomViewButton {
+  actionType: "ZoomView";
+  usingObjectInteractor: false;
+}
+
+// Define the interactor
+Interactor {
+  name: "Select";
+}
+
+// Set the Mixed Zoom policy
+Zooming {
+  type: "Mixed";
+}
+
+// Load a background file
+Backgrounds {
+  background[0]: "com/winnertel/ems/epon/iad/bbs1000/gui/shelfview/resource/background.gif";
+}
+
+object."ilog.tgo.model.IltShelf" {
+    labelVisible :false;
+}
+
+object."ilog.tgo.model.IltCard" {
+    direction: IlvDirection.Bottom;
+}
+
+object."ilog.tgo.model.IltPort" {
+    selectionBorderForeground: yellow;
+}
+
+object."ilog.tgo.model.IltLed" {
+  foreground: '@|valuemap(@=ledColorMap, @name)';
+  selectable: false;
+}
+
+#ledColorMap {
+  class: 'ilog.cpl.service.IlpOrderedValueMap';
+  keyClass: 'java.lang.String';
+  valueClass: 'java.awt.Color';
+  keys: "null, LED, LED_OFF, LED_GREEN, LED_RED, LED_BLUE, LED_PURPLE, LED_YELLOW";
+  values: "#AEB5AD, #AEB5AD, #AEB5AD, #5BEE66, #FF0000, #33CCFF, #F06EAA, #FFF200";
+}

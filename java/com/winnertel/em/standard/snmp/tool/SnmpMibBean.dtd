@@ -1,0 +1,31 @@
+<!ELEMENT SnmpMibBean       (MibTableList, OperationList)>
+<!ATTLIST SnmpMibBean
+    class CDATA #REQUIRED
+    package CDATA #REQUIRED>
+
+<!ELEMENT MibTableList  (MibTable+)>
+
+<!ELEMENT MibTable      (MibItemList)>
+<!ATTLIST MibTable
+    oid CDATA #REQUIRED
+    name CDATA #REQUIRED>
+
+<!ELEMENT MibItemList   (MibItem+)>
+
+<!ELEMENT MibItem EMPTY>
+<!ATTLIST MibItem
+    name ID #REQUIRED
+    oid CDATA #IMPLIED
+    index CDATA #IMPLIED
+    type (Integer | IpAddress | String | Counter | Gauge | Timeticks | MacAddress | ObjectId | Counter64) #REQUIRED>
+
+<!ELEMENT OperationList (Operation+)>
+
+<!ELEMENT Operation (MibItemRef+)>
+<!ATTLIST Operation
+    name (retrieve | retrieveAll | add | modify | delete) #REQUIRED
+    row_status CDATA #IMPLIED >
+
+<!ELEMENT MibItemRef EMPTY>
+<!ATTLIST MibItemRef
+    name IDREF #REQUIRED>

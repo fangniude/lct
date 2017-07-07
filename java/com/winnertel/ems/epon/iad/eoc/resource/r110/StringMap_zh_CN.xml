@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="GB2312"?>
+
+<StringMap>
+
+    <String key="Save" value="保存(S)"/>
+    <String key="Reset" value="复位(R)"/>
+
+    <String key="System Information" value="设备信息"/>
+    <String key="ModEoCCBATDevInfoGroup_Panel" value="节点信息"/>
+
+    <String key="modEoCCBATAdminHardwareVersion" value="设备硬件版本号"/>
+    <String key="modEoCCBATAdminLogicalID" value="逻辑标识符"/>
+    <String key="modEoCCBATAdminManufactoryInfo" value="设备生产厂家"/>
+    <String key="modEoCCBATAdminModelNumber" value="设备型号"/>
+    <String key="modEoCCBATAdminSerialNumber" value="设备序列号"/>
+    <String key="modEoCCBATAdminSoftwareVersion" value="设备软件版本号"/>
+    <String key="modEoCCBATAdminTechProject" value="采用的技术方案"/>
+    <String key="modEoCCBATAdminVendorSpecialInfo" value="设备供应商的其它特殊指定信息"/>
+
+
+    <String key="Device Management" value="设备管理"/>
+    <String key="ModEoCCBATCardTable_Panel" value="板卡信息"/>
+    <!-- ModEoCCBATCardTable_Panel-->
+    <String key="failed" value="failed"/>
+    <String key="false" value="false"/>
+    <String key="modEoCCBATCardConfigurationResult" value="存储当前配置"/>
+    <String key="modEoCCBATCardConfigurationSaving" value="存储当前配置"/>
+    <String key="modEoCCBATCardIndex" value="CBAT板卡的序号索引"/>
+    <String key="modEoCCBATCardMACAddress" value="CBAT板卡的MAC地址"/>
+    <String key="modEoCCBATCardModelNumber" value="CBAT板卡的型号"/>
+    <String key="modEoCCBATCardOnlineStatus" value="CBAT板卡在线状态"/>
+    <String key="modEoCCBATCardReset" value="复位在线CBAT板卡"/>
+    <String key="modEoCCBATCardSoftwareVersion" value="CBAT板卡的程序版本号"/>
+    <String key="modEoCCBATCardUpLinkBroadcastFrameSendIntervalAfterAck"
+            value="向上联ONU发送CDBP广播帧间隔T2（单位为0.01秒,间隔值建议为120000,即20分钟）"/>
+    <String key="modEoCCBATCardUpLinkBroadcastFrameSendIntervalBeforeAck"
+            value="向上联ONU发送CDBP广播帧间隔T1（单位为0.01秒,间隔值建议为6000,即1分钟）"/>
+    <String key="modEoCCBATCardUpLinkDeviceMACAddress" value="CBAT板卡上联ONU的MAC地址(optional)"/>
+    <String key="modEoCCBATCardUpLinkDevicePortNumber" value="CBAT板卡上联ONU的端口号(optional)"/>
+    <String key="offline" value="offline"/>
+    <String key="online" value="online"/>
+    <String key="running" value="running"/>
+    <String key="success" value="success"/>
+    <String key="true" value="true"/>
+    <String key="Reset Card" value="复位板卡"/>
+    <String key="Save Configuration" value="存储配置"/>
+    <String key="Info_Modify_ModEoCCBATCard" value="不支持修改CBAT线卡参数。"/>
+    <String key="Info_Reset_ModEoCCBATCard" value="不支持复位CBAT线卡。"/>
+
+    <String key="Network Information" value="网络信息"/>
+    <String key="ModEoCCBATNetworkAttrGroupPanel_Panel" value="网络配置"/>
+
+    <String key="Err_ConfirmChangeNetworkAttr" value="是否确认更新网络属性信息?"/>
+
+    <String key="modEoCCBATAdminIPAddress" value="CBAT的IP地址"/>
+    <String key="modEoCCBATAdminIPGateway" value="CBAT的网关地址"/>
+    <String key="modEoCCBATAdminIPMask" value="CBAT的IP掩码"/>
+    <String key="modEoCCBATAdminIPMode" value="CBAT的IP分配方式"/>
+    <String key="modEoCCBATAdminMACAddress" value="CBAT的MAC地址"/>
+
+    <String key="Device Status" value="设备状态"/>
+    <String key="ModEoCCBATDevStatusGroup_Panel" value="设备状态"/>
+
+    <String key="modEoCCBATAdminAlarmDetectionControl" value="设备的告警检测开关"/>
+    <String key="modEoCCBATAdminConfigurationResult" value="存储当前配置至非易失性存储器的操作结果"/>
+    <String key="modEoCCBATAdminConfigurationSaving" value="存储当前配置至非易失性存储器"/>
+    <String key="modEoCCBATAdminDateAndTime" value="当前时间"/>
+    <String key="modEoCCBATAdminInternalTemperature" value="设备机内温度(摄氏度)"/>
+    <String key="modEoCCBATAdminReset" value="复位CBAT"/>
+    <String key="modEoCCBATAdminResetCause" value="CBAT最近一次复位的原因"/>
+    <String key="modEoCCBATAdminStatus" value="设备登记状态"/>
+    <String key="modEoCCBATAdminStatus_Bit0" value="有消息待发"/>
+    <String key="modEoCCBATAdminStatus_Bit1" value="有严重告警"/>
+    <String key="modEoCCBATAdminStatus_Bit2" value="有非严重告警"/>
+
+    <String key="modEoCCBATAdminTamperStatus" value="设备开盖"/>
+    <String key="compromised" value="EoC CBAT设备安全开关打开"/>
+    <String key="intact" value="EoC CBAT设备正常"/>
+    <String key="unknown" value="未知"/>
+
+    <String key="modEoCCBATAdminResetCauseVList_other" value="其他原因"/>
+    <String key="modEoCCBATAdminResetCauseVList_craft" value="EoC CBAT设备本地接口复位"/>
+    <String key="modEoCCBATAdminResetCauseVList_command" value="软件命令复位"/>
+    <String key="modEoCCBATAdminResetCauseVList_powerup" value="上电复位"/>
+    <String key="modEoCCBATAdminResetCauseVList_watchdog" value="看门狗复位"/>
+
+    <String key="modEoCCBATAdminConfigurationResultTList_failed" value="保存当前配置失败"/>
+    <String key="modEoCCBATAdminConfigurationResultTList_running" value="正在保存当前配置"/>
+    <String key="modEoCCBATAdminConfigurationResultTList_success" value="保存当前配置成功"/>
+
+    <String key="detectionEnabledAndRegenerate" value="允许CBAT设备告警检测,并清除告警记录表"/>
+    <String key="detectionEnabled" value="允许CBAT设备告警检测"/>
+    <String key="detectionDisabled" value="禁用CBAT设备告警检测"/>
+
+    <String key="ResetCBat" value="复位EOC设备"/>
+    <String key="saveConfig" value="保存当前配置"/>
+
+    <String key="ModEoCCBATSNMPSettingGroupPanel_Panel" value="SNMP设置管理"/>
+
+    <String key="modEoCCBATAdminSNMPCommunityTableNextIndex" value="SNMP共同体管理表"/>
+    <String key="modEoCCBATAdminSNMPVersion" value="SNMP版本号"/>
+    <String key="modEoCCBATAdminVarBindings" value="接收的SNMP消息变量绑定表项的最大数目"/>
+
+    <String key="ModEoCCBATAdminSNMPCommunityTable_Panel" value="SNMP共同体管理"/>
+    <!-- ModEoCCBATAdminSNMPCommunityTable_Panel-->
+    <String key="active" value="active"/>
+    <String key="createAndGo" value="createAndGo"/>
+    <String key="createAndWait" value="createAndWait"/>
+    <String key="destroy" value="destroy"/>
+    <String key="modEoCCBATAdminSNMPCommunity" value="SNMP共同体串"/>
+    <String key="modEoCCBATAdminSNMPCommunityIndex" value="SNMP共同体管理表索引"/>
+    <String key="modEoCCBATAdminSNMPCommunityPermission" value="SNMP共同体串操作权限"/>
+    <String key="modEoCCBATAdminSNMPCommunityRowStatus" value="SNMP共同体表行状态"/>
+    <String key="notInService" value="notInService"/>
+    <String key="notReady" value="notReady"/>
+    <String key="ro" value="ro"/>
+    <String key="rw" value="rw"/>
+    <String key="0-noLimit" value="无限制"/>
+
+
+    <String key="RF" value="射频配置"/>
+    <String key="ModEoCCBATCardRFGroup_Panel" value="CBAT板卡射频信道管理"/>
+    <!-- ModEoCCBATCardRFGroup_Panel-->
+    <String key="modEoCCBATCardRFDownstreamStartFreq" value="射频下行信道起始频率(MHz)"/>
+    <String key="modEoCCBATCardRFDownstreamStopFreq" value="射频下行信道结束频率(MHz)"/>
+    <String key="modEoCCBATCardRFIndex" value="CBAT板卡的序号索引"/>
+    <String key="modEoCCBATCardRFLinkMaximum" value="CBAT板卡射频最大信道数"/>
+    <String key="modEoCCBATCardRFOutputLevel" value="CBAT板卡射频输出功率(dBuV)"/>
+    <String key="modEoCCBATCardRFUpstreamStartFreq" value="射频上行信道起始频率(MHz)"/>
+    <String key="modEoCCBATCardRFUpstreamStopFreq" value="射频上行信道结束频率(MHz)"/>
+
+    <String key="MAC Layer" value="二层管理"/>
+    <String key="ModEoCCBATCardMACCNUIsolationTable_Panel" value="CBAT板卡MAC层CNU隔离管理"/>
+
+    <!-- modEoCCBATCardMACCNUIsolationTable_Panel -->
+    <String key="false" value="false"/>
+    <String key="modEoCCBATCardMACCNUIsolationEN" value="CNU隔离开关"/>
+    <String key="modEoCCBATCardMACCNUIsolationIndex" value="CBAT板卡的序号索引"/>
+    <String key="true" value="true"/>
+
+
+    <String key="CNU White List" value="CNU管理"/>
+    <String key="ModEoCCNUWhiteList_Panel" value="CNU白名单登记管理"/>
+
+    <String key="modEoCCNUWhiteListAllExtMACLimitation" value="所有CNU的MAC地址限制"/>
+    <String key="modEoCCNUWhiteListAllRFOutputLevel" value="所有CNU输出电平(dBuV)"/>
+    <String key="modEoCCNUWhiteListAmountLimitation" value="CNU白名单最大数目"/>
+    <String key="modEoCCNUWhiteListPhyRateGate" value="物理层速率阈值(bps)"/>
+    <String key="modEoCCNUWhiteListRegisteredAmount" value="CNU白名单已存在数目"/>
+
+    <String key="ModEoCCNUWhiteListTable_Panel" value="CNU白名单表"/>
+    <!-- ModEoCCNUWhiteListTable_Panel-->
+    <String key="active" value="active"/>
+    <String key="authorized" value="authorized"/>
+    <String key="createAndGo" value="createAndGo"/>
+    <String key="createAndWait" value="createAndWait"/>
+    <String key="destroy" value="destroy"/>
+    <String key="disable" value="disable"/>
+    <String key="enable" value="enable"/>
+    <String key="modEoCCNUWhiteListAuthorization" value="CNU授权状态"/>
+    <String key="modEoCCNUWhiteListAutoUpgradeEN" value="CNU自动升级使能"/>
+    <String key="modEoCCNUWhiteListEndTime" value="CNU业务结束时间(Optional)"/>
+    <String key="modEoCCNUWhiteListIPAddress" value="CNU的IP地址(Optional)"/>
+    <String key="modEoCCNUWhiteListIndex" value="CNU白名单序号索引"/>
+    <String key="modEoCCNUWhiteListMACAddress" value="CNU的MAC地址"/>
+    <String key="modEoCCNUWhiteListRFOutputLevel" value="CNU输出电平(dBuV)"/>
+    <String key="modEoCCNUWhiteListRegisterOnlineStatus" value="CNU在线状态"/>
+    <String key="modEoCCNUWhiteListRowStatus" value="行状态"/>
+    <String key="modEoCCNUWhiteListStartTime" value="CNU业务开通时间(Optional)"/>
+    <String key="not-authorized" value="not-authorized"/>
+    <String key="notInService" value="notInService"/>
+    <String key="notReady" value="notReady"/>
+    <String key="offline" value="offline"/>
+    <String key="online" value="online"/>
+
+    <String key="CNU List" value="CNU列表"/>
+    <String key="Other Admin" value="其他管理功能"/>
+    <String key="modEoCCBATOtherAdminGroup_Panel" value="自动发现协议配置"/>
+
+    <String key="modEoCCBATAdminLinkTopoChange" value="设备信道拓扑图变化识别信息"/>
+    <String key="modEoCCBATAdminLinkTopoChangeTList_change" value="有变化"/>
+    <String key="modEoCCBATAdminLinkTopoChangeTList_no-change" value="没有变化"/>
+    <String key="modEoCCBATAdminAppropriativeOID" value="设备专用MIB OID"/>
+    <String key="modEoCCBATCardUpLinkBroadcastFrameSendManner" value="向上联设备ONU发送广播帧间隔方式"/>
+    <String key="modEoCCBATCardUpLinkBroadcastFrameSendMannerTList_t1" value="向上联ONU发送CDBP广播帧间隔T1"/>
+    <String key="modEoCCBATCardUpLinkBroadcastFrameSendMannerTList_t2" value="向上联ONU发送CDBP广播帧间隔T2"/>
+
+    <String key="modEoCCNU_Panel" value="CNU信息"/>
+
+    <String key="modEoCCNUAllReset" value="复位全部在线CNU"/>
+    <String key="modEoCCNUAmountLimitation" value="在线CNU数量限制"/>
+    <String key="modEoCCNUCurrentAmount" value="当前在线CNU数量"/>
+    <String key="ResetAll" value="复位全部在线CNU"/>
+
+    <String key="ModEoCCNUTable_Panel" value="CNU信息表"/>
+    <!-- ModEoCCNUTable_Panel-->
+    <String key="authorized" value="authorized"/>
+    <String key="failed" value="failed"/>
+    <String key="modEoCCNUAuthorizationState" value="CNU的授权状态"/>
+    <String key="modEoCCNUCBATCardIndex" value="CBAT板卡的序号索引"/>
+    <String key="modEoCCNUConfigurationResult" value="存储当前配置至非易失性存储器的操作结果"/>
+    <String key="modEoCCNUConfigurationSaving" value="存储当前配置至非易失性存储器"/>
+    <String key="modEoCCNUIndex" value="CNU的序号索引"/>
+    <String key="modEoCCNUMACAddress" value="CNU的MAC地址"/>
+    <String key="installAddress" value="安装地址"/>
+    <String key="modEoCCNUModelNumber" value="CNU的型号"/>
+    <String key="modEoCCNUOnlineStatus" value="CNU在线状态"/>
+    <String key="modEoCCNUPhyDownstreamRate" value="CNU下行物理层速率(Kbps)"/>
+    <String key="modEoCCNUPhyUpstreamRate" value="CNU上行物理层速率(Kbps)"/>
+    <String key="modEoCCNUPortAmount" value="CNU以太网端口数量"/>
+    <String key="modEoCCNURFAttenuation" value="射频信道链路衰减(dB)"/>
+    <String key="modEoCCNURFDownstreamQuality" value="射频下行信道链路质量(%)"/>
+    <String key="modEoCCNURFUpstreamQuality" value="射频上行信道链路质量(%)"/>
+    <String key="modEoCCNUReset" value="复位在线CNU"/>
+    <String key="modEoCCNUSoftwareVersion" value="CNU的程序版本号"/>
+    <String key="not-authorized" value="not-authorized"/>
+    <String key="offline" value="offline"/>
+    <String key="online" value="online"/>
+    <String key="running" value="running"/>
+    <String key="success" value="success"/>
+
+    <String key="Reset CNU" value="复位"/>
+    <String key="Save CNU Configuration" value="下发CNU当前配置"/>
+
+    <String key="CNU Service" value="CNU业务"/>
+    <String key="ModEoCCNUService_Panel" value="CNU业务"/>
+
+    <String key="modEoCCNUServiceAmountLimitation" value="CNU业务最大数目"/>
+    <String key="modEoCCNUServiceType" value="CNU业务类型"/>
+    <String key="Err_Select_ModEoCCNUServiceType" value="请选择一个有效的CNU业务类型"/>
+
+    <String key="ModEoCCNUServiceTable_Panel" value="业务模板"/>
+    <!-- ModEoCCNUServiceTable_Panel-->
+    <String key="active" value="active"/>
+    <String key="createAndGo" value="createAndGo"/>
+    <String key="createAndWait" value="createAndWait"/>
+    <String key="destroy" value="destroy"/>
+    <String key="modEoCCNUServiceDBADownstreamCIR" value="CNU业务下行保障带宽(Kbps)"/>
+    <String key="modEoCCNUServiceDBADownstreamPIR" value="CNU业务下行最大带宽(Kbps)"/>
+    <String key="modEoCCNUServiceDBAUpstreamCIR" value="CNU业务上行保障带宽(Kbps)"/>
+    <String key="modEoCCNUServiceDBAUpstreamPIR" value="CNU业务上行最大带宽(Kbps)"/>
+    <String key="modEoCCNUServiceIndex" value="CNU业务序号索引"/>
+    <String key="modEoCCNUServiceMatchingValue" value="CNU所选业务参数值"/>
+    <String key="modEoCCNUServiceMaxLatency" value="最大允许延时(ns)"/>
+    <String key="modEoCCNUServiceName" value="CNU业务名称"/>
+    <String key="modEoCCNUServiceQOSPrio" value="CNU业务的QOS优先级"/>
+    <String key="modEoCCNUServiceRowStatus" value="行状态"/>
+    <String key="notInService" value="notInService"/>
+    <String key="notReady" value="notReady"/>
+
+    <String key="CNU Port" value="业务指配"/>
+    <String key="ModEoCCNUPort_Panel" value="CNU端口个数限制"/>
+
+    <String key="modEoCCNUPortAmountLimitation" value="CNU普通以太网端口数限制"/>
+    <String key="modEoCCNUPortPerCNULimitation" value="CNU最大物理端口数"/>
+
+
+    <!-- ModEoCCNUPortTable_Panel-->
+    <String key="ModEoCCNUPortTable_Panel" value="CNU端口"/>
+    <String key="disable" value="disable"/>
+    <String key="enable" value="enable"/>
+    <String key="modEoCCNUPortCBATCardIndex" value="CBAT板卡的序号索引"/>
+    <String key="modEoCCNUPortCNUIndex" value="CNU的序号索引"/>
+    <String key="modEoCCNUPortEN" value="CNU端口启动或关闭"/>
+    <String key="modEoCCNUPortIndex" value="CNU端口的序号索引"/>
+    <String key="modEoCCNUPortService" value="CNU端口业务索引"/>
+
+    <String key="IGMP Snooping" value="IGMP Snooping"/>
+    <String key="ModEoCIGMPSnoopingTable_Panel" value="IGMP Snooping"/>
+    <!-- ModEoCIGMPSnoopingTable_Panel-->
+    <String key="disable" value="disable"/>
+    <String key="enable" value="enable"/>
+    <String key="modEoCIGMPSnoopingCBATCardIndex" value="CBAT板卡的序号索引"/>
+    <String key="modEoCIGMPSnoopingCNUIndex" value="CNU的序号索引"/>
+    <String key="modEoCIGMPSnoopingDevMACAddress" value="设备的MAC地址"/>
+    <String key="modEoCIGMPSnoopingEN" value="设备IGMP Snooping开关"/>
+
+    <String key="VLAN Group" value="VLAN 定义"/>
+    <String key="ModEoCVLANGroup_Panel" value="VLAN信息"/>
+
+    <String key="modEoCVLANCreatedVLANNumber" value="已创建VLAN的数目"/>
+    <String key="modEoCVLANMaxSupportedVLANs" value="最大支持的VLAN数目"/>
+    <String key="modEoCVLANMaxVID" value="设备支持的最大VID"/>
+    <String key="modEoCVLANNextFreeVID" value="下一个可用的VID"/>
+    <String key="modEoCVLANVIDList" value="当前已存在的VID位图"/>
+    <String key="modEoCVLANVersionNumber" value="VLAN协议版本"/>
+
+    <String key="ModEoCVLANTable_Panel" value="VLAN表"/>
+    <!-- ModEoCVLANTable_Panel -->
+    <String key="active" value="active"/>
+    <String key="createAndGo" value="createAndGo"/>
+    <String key="createAndWait" value="createAndWait"/>
+    <String key="destroy" value="destroy"/>
+    <String key="false" value="false"/>
+    <String key="modEoCVLANFlag" value="组播VLAN标志位"/>
+    <String key="modEoCVLANIndex" value="VLAN ID索引"/>
+    <String key="modEoCVLANName" value="VLAN别名"/>
+    <String key="modEoCVLANRowStatus" value="行状态"/>
+    <String key="notInService" value="notInService"/>
+    <String key="notReady" value="notReady"/>
+    <String key="true" value="true"/>
+
+    <String key="VLAN Port" value="端口VLAN"/>
+    <String key="ModEoCVLANPortTable_Panel" value="端口VLAN信息表"/>
+    <!-- ModEoCVLANPortTable_Panel -->
+    <String key="access" value="access"/>
+    <String key="hybrid" value="hybrid"/>
+    <String key="modEoCVLANCBATCardIndex" value="CBAT板卡的序号索引"/>
+    <String key="modEoCVLANCNUIndex" value="CNU的序号索引"/>
+    <String key="modEoCVLANPortIndex" value="端口的序号索引"/>
+    <String key="modEoCVLANPortMode" value="端口的VLAN模式"/>
+    <String key="modEoCVLANPortPVID" value="端口缺省的VLAN ID"/>
+    <String key="modEoCVLANPortPrio" value="端口的缺省优先级"/>
+    <String key="modEoCVLANPortTPID" value="端口缺省的TPID(16进制)"/>
+    <String key="modEoCVLANPortUntaggedVIDList" value="端口剥VLAN标签的VID列表"/>
+    <String key="modEoCVLANPortVIDList" value="端口的VID列表"/>
+    <String key="transparent" value="transparent"/>
+    <String key="trunk" value="trunk"/>
+    <String key="Msg_Input_Vlan_Id" value="请输入一个VLAN ID."/>
+    <String key="Err_Input_Vlan_Id_Is_Invalid" value="请输入一个有效的VLAN ID.[1-4094]"/>
+    <String key="Err_Input_Vlan_Id_Exist" value="当前的VLAN ID已存在."/>
+
+    <String key="Broadcast Storm Protection" value="广播风暴抑制"/>
+    <String key="ModEoCBroadcastStormProtectionTable_Panel" value="广播风暴抑制管理"/>
+    <!-- ModEoCBroadcastStormProtectionTable_Panel -->
+    <String key="disable" value="disable"/>
+    <String key="enable" value="enable"/>
+    <String key="modEoCBroadcastStormProtectionCBATCardIndex" value="CBAT板卡的序号索引"/>
+    <String key="modEoCBroadcastStormProtectionCNUIndex" value="CNU的序号索引"/>
+    <String key="modEoCBroadcastStormProtectionEN" value="广播包抑制使能"/>
+    <String key="modEoCBroadcastStormProtectionPortIndex" value="CNU端口号索引"/>
+    <String key="modEoCBroadcastStormThreshold" value="广播包抑制值(packets/s)"/>
+    <String key="modEoCMulticastStormProtectionEN" value="多播包抑制使能"/>
+    <String key="modEoCMulticastStormThreshold" value="多播包抑制值(packets/s)"/>
+    <String key="modEoCUnknownUnicastStormProtectionEN" value="未知包抑制使能"/>
+    <String key="modEoCUnknownUnicastStormThreshold" value="未知包抑制值(packets/s)"/>
+
+    <String key="Software Upgrade" value="升级"/>
+    <String key="ModEoCSoftwareUpgradeGroup_Panel" value="软件升级管理"/>
+
+    <String key="modEoCSoftwareUpgradeLogin" value="注册用户名"/>
+    <String key="modEoCSoftwareUpgradePassWord" value="密码"/>
+    <String key="modEoCSoftwareUpgradeServerPort" value="软件升级服务器IP端口号"/>
+    <String key="modEoCSoftwaretUpgradeServerIP" value="软件升级服务器IP地址"/>
+
+    <String key="ModEoCSoftwareUpgradeTable_Panel" value="软件升级表"/>
+    <!-- ModEoCSoftwareUpgradeTable_Panel -->
+    <String key="cbat" value="CBAT"/>
+    <String key="cbat-card" value="CBAT-Card"/>
+    <String key="cnu" value="CNU"/>
+    <String key="download" value="下载"/>
+    <String key="downloadfailed" value="下载失败"/>
+    <String key="downloading" value="正在下载"/>
+    <String key="downloadsuccess" value="下载成功"/>
+    <String key="modEoCSoftwareUpgradeCBATCardIndex" value="CBAT板卡的序号索引"/>
+    <String key="modEoCSoftwareUpgradeCNUIndex" value="CNU的序号索引"/>
+    <String key="modEoCSoftwareUpgradeDevType" value="待软件升级设备的类型"/>
+    <String key="modEoCSoftwareUpgradeFileName" value="要下载的文件名"/>
+    <String key="modEoCSoftwareUpgradeMACAddress" value="待软件升级设备的MAC地址"/>
+    <String key="modEoCSoftwareUpgradeProceed" value="设备软件升级指令"/>
+    <String key="modEoCSoftwareUpgradeResult" value="软件升级状态"/>
+    <String key="none" value="无"/>
+    <String key="other" value="other"/>
+    <String key="reserved1" value="reserved1"/>
+    <String key="reserved2" value="reserved2"/>
+    <String key="reserved3" value="reserved3"/>
+    <String key="upgrade" value="升级"/>
+    <String key="upgradefailed" value="升级失败"/>
+    <String key="upgradesuccess" value="升级成功"/>
+    <String key="upgrading" value="正在升级"/>
+    <String key="upload" value="上传"/>
+    <String key="uploadfailed" value="上传失败"/>
+    <String key="uploading" value="正在上传"/>
+    <String key="uploadsuccess" value="上传成功"/>
+
+    <String key="Alarm Management" value="告警管理"/>
+    <String key="Trap Configuration" value="Trap 配置"/>
+
+
+    <String key="ModEoCTrapGroup_Panel" value="Trap配置"/>
+    <String key="modEoCTrapMaxInterval" value="发送TRAP的最大时间间隔(0.01s)"/>
+    <String key="modEoCTrapMaxTimes" value="TRAP发送的最大次数"/>
+    <String key="modEoCTrapMinInterval" value="发送TRAP的最小时间间隔(0.01s)"/>
+    <String key="modEoCTrapVertion" value="Trap版本号"/>
+
+    <String key="ModEoCTrapTable_Panel" value="TRAP表"/>
+    <String key="false" value="false"/>
+    <String key="modEoCTrapCommunity" value="TRAP共同体"/>
+    <String key="modEoCTrapIP" value="TRAP目的主机IP"/>
+    <String key="modEoCTrapIndex" value="序号索引"/>
+    <String key="modEoCTrapStatus" value="TRAP是否使用"/>
+    <String key="true" value="true"/>
+
+    <!-- AnalogPropertyTable_Panel -->
+    <String key="Analog Property Table" value="模拟参数属性表"/>
+    <String key="AnalogPropertyTable_Panel" value="模拟参数属性表"/>
+    <String key="aasHI" value="高告警门限"/>
+    <String key="aasHIHI" value="极高告警门限"/>
+    <String key="aasLO" value="低告警门限"/>
+    <String key="aasLOLO" value="极低告警门限"/>
+    <String key="aasNominal" value="Nominal"/>
+    <String key="analogAlarmDeadband" value="告警门限死区的值"/>
+    <String key="analogAlarmEnable" value="告警使能控制"/>
+    <String key="analogAlarmHI" value="高告警门限HI的值"/>
+    <String key="analogAlarmHIHI" value="极高告警门限HIHI的值"/>
+    <String key="analogAlarmLO" value="低告警门限LO的值"/>
+    <String key="analogAlarmLOLO" value="极低告警门限LOLO的值"/>
+    <String key="analogAlarmParameterOID" value="索引"/>
+    <String key="analogAlarmState" value="当前告警状态"/>
+    <String key="analogAlarmEnable_LOLO" value="极低告警"/>
+    <String key="analogAlarmEnable_LO" value="低告警"/>
+    <String key="analogAlarmEnable_HI" value="高告警"/>
+    <String key="analogAlarmEnable_HIHI" value="极高告警"/>
+    <String key="analogAlarmEnable_ALLCLOSE" value="关闭"/>
+
+    <String key="Err_AnalogAlarmEnable" value="请选择有效的告警使能控制"/>
+
+    <!-- DiscretePropertyTable_Panel -->
+    <String key="DiscretePropertyTable_Panel" value="离散属性表"/>
+    <String key="Discrete Property Table" value="离散属性表"/>
+    <String key="dasDiscreteMajor" value="Discrete Major"/>
+    <String key="dasDiscreteMinor" value="Discrete Minor"/>
+    <String key="dasNominal" value="Nominal"/>
+    <String key="disable" value="disable"/>
+    <String key="discreteAlarmEnable" value="告警使能控制"/>
+    <String key="discreteAlarmParameterOID" value="索引"/>
+    <String key="discreteAlarmState" value="当前告警状态"/>
+    <String key="discreteAlarmValue" value="参数值"/>
+    <String key="enableMajor" value="enableMajor"/>
+    <String key="enableMinor" value="enableMinor"/>
+
+    <!-- CurrentAlarmTable_Panel -->
+    <String key="CurrentAlarmTable_Panel" value="当前告警表"/>
+    <String key="Current Alarm Table" value="当前告警表"/>
+    <String key="caasDiscreteMajor" value="Discrete Major"/>
+    <String key="caasDiscreteMinor" value="Discrete Minor"/>
+    <String key="caasHI" value="高告警门限"/>
+    <String key="caasHIHI" value="极高告警门限"/>
+    <String key="caasLO" value="低告警门限"/>
+    <String key="caasLOLO" value="极低告警门限"/>
+    <String key="currentAlarmOID" value="OID索引"/>
+    <String key="currentAlarmState" value="当前告警状态"/>
+    <String key="currentAlarmValue" value="告警参数的值"/>
+
+
+    <String key="Alarm Log Number" value="告警记录"/>
+
+    <String key="AlarmLog_Panel" value="告警记录"/>
+    <String key="alarmLogLastIndex" value="最近一条告警的索引值"/>
+    <String key="alarmLogNumberOfEntries" value="记录数量"/>
+    <String key="alarmText" value="alarmText(optional)"/>
+
+    <!-- AlarmLogTable_Panel -->
+    <String key="AlarmLogTable_Panel" value="告警记录表"/>
+    <String key="alarmLogIndex" value="索引"/>
+    <String key="alarmLogInformation" value="告警记录信息"/>
+    <String key="alarmLogTime" value="告警时间"/>
+    <String key="alarmLogType" value="告警类型"/>
+    <String key="alarmLogMessage" value="告警信息"/>
+
+    <String key="Performance Management" value="性能统计"/>
+
+    <!-- ModEoCRealTimeStatisticTable_Panel -->
+
+    <String key="ModEoCRealTimeStatisticTable_Panel" value="性能统计"/>
+    <String key="modEoCRealTimeStatisticAveragePreFEC" value="平均Pre FEC比特错误率"/>
+    <String key="modEoCRealTimeStatisticCBATCardIndex" value="板卡索引"/>
+    <String key="modEoCRealTimeStatisticCNUIndex" value="CNU索引"/>
+    <String key="modEoCRealTimeStatisticReset" value="重置实时性能统计"/>
+    <String key="modEoCRealTimeStatisticRxBcast" value="接收广播数据包的数量(optional)"/>
+    <String key="modEoCRealTimeStatisticRxByte" value="所有数据流中接收字节的总数"/>
+    <String key="modEoCRealTimeStatisticRxCrc" value="接收CRC数据包的数量"/>
+    <String key="modEoCRealTimeStatisticRxDropped" value="接收数据包的丢弃数量"/>
+    <String key="modEoCRealTimeStatisticRxMcast" value="接收多播数据包的数量"/>
+    <String key="modEoCRealTimeStatisticRxPkt" value="接收单播数据包的数量"/>
+    <String key="modEoCRealTimeStatisticRxShort" value="接收短数据包的数量"/>
+    <String key="modEoCRealTimeStatisticTxBcast" value="发送广播数据包的数量(optional)"/>
+    <String key="modEoCRealTimeStatisticTxByte" value="所有数据流中发送字节的总数"/>
+    <String key="modEoCRealTimeStatisticTxDropped" value="发送数据包的丢弃数量"/>
+    <String key="modEoCRealTimeStatisticTxMcast" value="发送多播数据包的数量"/>
+    <String key="modEoCRealTimeStatisticTxPkt" value="发送单播数据包的数量"/>
+    <String key="modEoCRealTimeStatisticTxShort" value="发送短数据包的数量"/>
+
+    <String key="Reset Statistic" value="重置实时性能统计"/>
+    <String key="Reset Statistic action canceled" value="重置实时性能统计已取消"/>
+    <String key="Reset Statistic operation failed" value="重置实时性能统计失败"/>
+
+    <String key="BatchModify" value="批量修改"/>
+    <String key="Err_NeedSingleSelect_ModEoCCNUPortTable" value="请选择单个记录做修改"/>
+
+    <String key="White List Index already exists." value="白名单列表中已经存在此Index."/>
+</StringMap>

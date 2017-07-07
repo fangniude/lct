@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<StringMap>
+
+    <!-- systemObjects -->
+    <String key="System_Information" value="System Information"/>
+
+    <!-- sniObjects -->
+    <String key="Service_Node_Interface" value="Service Node Interface"/>
+
+    <!-- sniObjects -->
+    <String key="PON_Port" value="PON Port"/>
+
+    <!-- aclManagementGroup -->
+    <String key="ACL_Management_Group" value="ACL Management Group"/>
+
+    <!-- onuObjects -->
+    <String key="ONU_Management" value="ONU Management"/>
+
+    <!-- onuAuthenticationManagement -->
+    <String key="ONU_Authentication_Management" value="ONU Authentication Management"/>
+
+    <!-- eponLinkedEoCManagementObjects -->
+    <String key="EoC_Management" value="EoC Management"/>
+
+    <!-- uniObjects -->
+    <String key="UNI_Management" value="UNI Management"/>
+
+    <!-- igmpManagementObjects -->
+    <String key="IGMP_Management" value="IGMP Management"/>
+
+    <!-- vlanManagementObjects -->
+    <String key="VLAN_Management" value="VLAN Management"/>
+
+    <!-- qosManagementObjects -->
+    <String key="QoS_Management" value="QoS Management"/>
+
+    <!-- stpManagementObjects -->
+    <String key="STP_Management" value="STP Management"/>
+
+    <!-- performanceStatisticObjects -->
+    <String key="Performance_Statistics" value="Performance Statistics"/>
+
+    <String key="Alarm_Information" value="Alarm Information"/>
+
+    <!--Common-->
+    <String key="true" value="True"/>
+    <String key="false" value="False"/>
+    <String key="other" value="Other"/>
+    <String key="others" value="Others"/>
+    <String key="up" value="Up"/>
+    <String key="down" value="Down"/>
+    <String key="testing" value="Testing"/>
+    <String key="disable" value="Disable"/>
+    <String key="enable" value="Enable"/>
+    <String key="disabled" value="Disabled"/>
+    <String key="enabled" value="Enabled"/>
+    <String key="invalid" value="Invalid"/>
+    <String key="valid" value="Valid"/>
+    <String key="permit" value="Permit"/>
+    <String key="preview" value="Preview"/>
+    <String key="deny" value="Deny"/>
+    <String key="mark" value="Mark"/>
+    <String key="byte" value="Byte"/>
+    <String key="Apply" value="Apply"/>
+    <String key="readOnly" value="Read Only"/>
+    <String key="readWrite" value="Read Write"/>
+    <String key="unknown" value="Unknown"/>
+    <String key="lock" value="Lock"/>
+    <String key="unlock" value="Unlock"/>
+    <String key="critical" value="Critical"/>
+    <String key="major" value="Major"/>
+    <String key="minor" value="Minor"/>
+    <String key="warning" value="Warning"/>
+    <String key="info" value="Information"/>
+    <String key="clear" value="Clear"/>
+
+    <String key="aes128" value="AES128"/>
+    <String key="ctcTripleChurning" value="CTC Triple Churning"/>
+
+    <String key="installed" value="Installed"/>
+    <String key="notInstalled" value="Not Installed"/>
+
+    <String key="queue" value="Queue"/>
+    <String key="weight" value="Weight"/>
+    <String key="bandwidth" value="Bandwidth"/>
+
+    <!-- ONU type -->
+    <String key="onu100" value="ONU100"/>
+    <String key="onu1000b" value="ONU1000B"/>
+    <String key="onu1000c" value="ONU1000C"/>
+    <String key="onu200a" value="ONU200A"/>
+    <String key="onu200b" value="ONU200B"/>
+    <String key="onu2024" value="ONU2024"/>
+    <String key="onu2004" value="ONU2004"/>
+    <String key="onu101k" value="ONU101K"/>
+    <String key="onu301" value="ONU301"/>
+    <String key="onu301c" value="ONU301C"/>
+    <String key="onu404" value="ONU404"/>
+    <String key="onu404c" value="ONU404C"/>
+    <String key="onu804" value="ONU804"/>
+    <String key="onu804c" value="ONU804C"/>
+    <String key="onu1001c" value="ONU1001C"/>
+    <String key="onu3004" value="ONU3004"/>
+    <String key="onu1001i" value="ONU1001i"/>
+    <String key="onu2004i" value="ONU2004i"/>
+    <String key="onu404i" value="ONU404i"/>
+    <String key="clt2060" value="CLT2060"/>
+    <String key="onu204i" value="ONU204i"/>
+    <String key="onu208i" value="ONU208i"/>
+    <String key="onu204h" value="ONU204h"/>
+    <String key="onu408t" value="ONU408t"/>
+    <String key="b1205-y" value="B1205-Y"/>
+    <String key="onu2024i" value="ONU2024i"/>
+    <String key="onub210" value="ONUB210"/>
+    <String key="onu1001h" value="ONU1001h"/>
+    <String key="onub220" value="ONUB220"/>
+    <String key="onu804i" value="ONU804i"/>
+    <String key="onu101" value="ONU101"/>
+    <String key="onu1001b" value="ONU1001b"/>
+    <String key="onu2004h" value="ONU2004h"/>
+    <String key="onu204d" value="ONU204d"/>
+    <String key="onu404t" value="ONU404t"/>
+    <String key="onu4024t" value="ONU4024t"/>
+    <String key="onu4024i" value="ONU4024i"/>
+    <String key="onu101i" value="ONU101i"/>
+    <String key="onub1205y" value="B1205-Y"/>
+    <String key="onub1205d" value="B1205-D"/>
+    <String key="onub130" value="B130"/>
+    <String key="onub1205" value="B1205"/>
+    <String key="ont952" value="ONU1001t"/>
+    <String key="ont958" value="ONU404t"/>
+    <String key="onu2004-2" value="ONU2004-2"/>
+    <String key="onu404h" value="ONU404h"/>
+    <String key="onu208h" value="ONU208h"/>
+    <String key="onu4016i" value="ONU4016i"/>
+    <String key="onu4016i-t" value="ONU4016i-t"/>
+    <String key="onu2016i-e" value="ONU2016i-e"/>
+    <String key="onu4016i-t A1B" value="ONU4016i-t A1B"/>
+    <String key="onu4016i-t A1S" value="ONU4016i-t A1S"/>
+    <String key="onu208p" value="ONU208p"/>
+    <String key="onu4024ia1b" value="ONU4024i A1B"/>
+    <String key="onu4024ia1s" value="ONU4024i A1S"/>
+    <String key="onu4024ia2b" value="ONU4024i A2B"/>
+    <String key="onu4024ia2s" value="ONU4024i A2S"/>
+    <String key="onub1202" value="B1202"/>
+    <String key="onu204ie" value="ONU204i-e"/>
+    <String key="onu204ih" value="ONU204i-h"/>
+    <String key="tkOnu" value="TK ONU"/>
+    <String key="pmcOnu" value="PMC ONU"/>
+
+    <!-- systemGlobalObjects -->
+    <String key="System_Configuration" value="System Configuration"/>
+    <String key="systemTime" value="System Time"/>
+    <String key="inbandIpAddress" value="Inband IP Address"/>
+    <String key="inbandIpGateway" value="Inband IP Gateway"/>
+    <String key="inbandIpSubnetMask" value="Inband IP Subnet Mask"/>
+    <String key="inbandMacAddress" value="Inband MAC Address"/>
+    <String key="inbandVlanId" value="Inband VLAN ID"/>
+    <String key="outbandIpAddress" value="Outband IP Address"/>
+    <String key="outbandIpGateway" value="Outband IP Gateway"/>
+    <String key="outbandIpSubnetMask" value="Outband IP Subnet Mask"/>
+    <String key="outbandMacAddress" value="Outband MAC Address"/>
+    <String key="systemOUI" value="System OUI"/>
+    <String key="vendorName" value="Vendor Name"/>
+
+    <!-- eponManagementAddrTable -->
+    <String key="Trap_Configuration" value="Trap Configuration"/>
+    <String key="eponManagementAddrName" value="Management Address Name"/>
+    <String key="eponManagementAddrTAddress" value="IP Address"/>
+    <String key="eponManagementAddrTPort" value="UDP Port"/>
+    <String key="eponManagementAddrCommunity" value="Trap Community"/>
+
+    <!-- oltPropertyTable -->
+    <String key="OLT_Device" value="OLT Device"/>
+    <String key="oltAdminStatus" value="Administrative Status"/>
+    <String key="oltDeviceIndex" value="Device Index"/>
+    <String key="oltDeviceUpTime" value="Up Time"/>
+    <String key="oltName" value="Device Name"/>
+    <String key="oltType" value="Device Type"/>
+    <String key="oltDeviceNumOfTotalServiceSlot" value="Service Slot Number"/>
+    <String key="oltDeviceNumOfTotalPowerSlot" value="Power Slot Number"/>
+    <String key="oltDeviceNumOfTotalFanSlot" value="Fan Slot Number"/>
+    <String key="oltDeviceStyle" value="Device Style"/>
+    <String key="fixed" value="Fixed"/>
+    <String key="chassisBased" value="Chassis Based"/>
+
+    <!-- boardTable -->
+    <String key="Board_Table" value="Board"/>
+    <String key="bDeviceIndex" value="Device Index"/>
+    <String key="bCardIndex" value="Card Index"/>
+    <String key="bType" value="Board Type"/>
+    <String key="bAttribute" value="Redundancy Status"/>
+    <String key="bOperationStatus" value="Operational Status"/>
+    <String key="bAdminStatus" value="Administrative Status"/>
+    <String key="bHardwareVersion" value="Hardware Version"/>
+    <String key="bFirmwareVersion" value="Firmware Version"/>
+    <String key="bSoftwareVersion" value="Software Version"/>
+    <String key="bUpTime" value="Up Time"/>
+    <String key="bAlarmStatus" value="Alarm Status"/>
+    <String key="bSerialNumber" value="Serial Number"/>
+    <String key="bName" value="Board Name"/>
+    <String key="bPresenceStatus" value="Presence Status"/>
+
+    <String key="controlBoard" value="Control Board"/>
+    <String key="geponBoard" value="G/EPON Board"/>
+    <String key="uplinkBoard" value="Uplink Board"/>
+    <String key="switchBoard" value="Switch Board"/>
+    <String key="vacant" value="vacant"/>
+
+    <String key="active" value="Active"/>
+    <String key="standby" value="Standby"/>
+    <String key="standalone" value="Stand Alone"/>
+    <String key="notApplicable" value="N/A"/>
+
+    <String key="switchover" value="Switch Over"/>
+    <String key="Msg_cfm_switch_board" value="Do you really want to switch over this Card?"/>
+
+    <!-- powerPropertyTable -->
+    <String key="PowerPropertyTable" value="Power"/>
+    <String key="powerCardAlarmStatus" value="Alarm Status"/>
+    <String key="powerCardIndex" value="Power Card Index"/>
+    <String key="powerCardOperationStatus" value="Operational Status"/>
+    <String key="powerDeviceIndex" value="Device Index"/>
+    <String key="Msg_cfm_switch" value="Do you really want to switch over the Power Card?"/>
+    <String key="powerCardName" value="Power Card Name"/>
+    <String key="powerCardPresenceStatus" value="Power Card Presence Status"/>
+
+    <!-- fanPropertyTable -->
+    <String key="FanPropertyTable" value="Fan"/>
+    <String key="fanCardAlarmStatus" value="Alarm Status"/>
+    <String key="fanCardIndex" value="Fan Card Index"/>
+    <String key="fanCardOperationStatus" value="Operational Status"/>
+    <String key="fanDeviceIndex" value="Device Index"/>
+    <String key="fanCardName" value="Fan Card Name"/>
+    <String key="fanCardPresenceStatus" value="Fan Card Presence Status"/>
+
+    <!-- fileInfoManagementTable -->
+    <String key="FileInfoMgmtTable" value="File Management"/>
+    <!--<String key="fileIndex" value="File Index"/>-->
+    <String key="fileManagementAction" value="fileManagementAction"/>
+    <String key="fileModifyTime" value="Modification Time"/>
+    <String key="fileName" value="Name"/>
+    <String key="filePath" value="Path"/>
+    <String key="fileSize" value="Size"/>
+    <String key="fileAttribute" value="Attribute"/>
+    <String key="file" value="file"/>
+    <String key="dir" value="dir"/>
+    <!--<String key="noOperation" value="No Operation"/>-->
+    <!--<String key="erase" value="Erase"/>-->
+
+    <String key="FileTransferTable" value="File Transfer"/>
+    <String key="fileTransferIndex" value="Index"/>
+    <String key="fileTransferProtocolType" value="Protocol Type"/>
+    <String key="serverIpAddress" value="Server IP Address"/>
+    <String key="ftpUserName" value="User Name"/>
+    <String key="ftpUserPassword" value="Password"/>
+    <String key="transferFileSrcNamePath" value="Source File Path"/>
+    <String key="transferFileDstNamePath" value="Destination File Path"/>
+    <String key="transferAction" value="Transfer Action"/>
+    <String key="transferStatus" value="Transfer Status"/>
+    <String key="tftp" value="TFTP"/>
+    <String key="ftp" value="FTP"/>
+    <String key="put-file" value="Upload File"/>
+    <String key="get-file" value="Download File"/>
+    <String key="idle" value="Idle"/>
+    <String key="in-progress" value="In-Progress"/>
+    <String key="success" value="Success"/>
+    <String key="failure" value="Failure"/>
+    <String key="Cancel Transfer" value="Cancel"/>
+
+    <!-- sniAttributeTable -->
+    <String key="SniAttributeTable" value="SNI Information"/>
+    <String key="auto-negotiate" value="Auto-Negotiate"/>
+    <String key="fiber" value="Fiber"/>
+    <String key="full-10" value="full-10"/>
+    <String key="full-100" value="full-100"/>
+    <String key="full-1000" value="full-1000"/>
+    <String key="full-10000" value="full-10000"/>
+    <String key="half-10" value="half-10"/>
+    <String key="half-100" value="half-100"/>
+    <String key="sniAdminStatus" value="Administrative Status"/>
+    <String key="sniAttributeCardIndex" value="Card Index"/>
+    <String key="sniAttributeDeviceIndex" value="Device Index"/>
+    <String key="sniAttributePortIndex" value="Port Index"/>
+    <String key="sniAutoNegotiationMode" value="Auto Negotiation Mode"/>
+    <String key="sniAutoNegotiationStatus" value="Auto Negotiation Status"/>
+    <String key="sniIsolationEnable" value="Port Isolation"/>
+    <String key="sniLastStatusChangeTime" value="Last Change Time"/>
+    <String key="sniMacAddrLearnMaxNum" value="MAC Limit"/>
+    <String key="sniMediaType" value="Media Type"/>
+    <String key="sniOperationStatus" value="Operational Status"/>
+    <String key="sniPerfStats15minuteEnable" value="Performance Stat. 15 mins"/>
+    <String key="sniPerfStats24hourEnable" value="Performance Stat. 24 hours"/>
+    <String key="sniPortName" value="Port Name"/>
+    <String key="twistedPair" value="Twisted Pair"/>
+
+    <!-- sniTrunkGroupConfigTable & sniTrunkGroupTable -->
+    <String key="SNI_Trunk_Group" value="SNI Trunk Group Management"/>
+    <String key="SniTrunkConfigTable" value="SNI Trunk Configuration"/>
+    <String key="sniTrunkGroupConfigIndex" value="Trunk Index"/>
+    <String key="sniTrunkGroupConfigMember" value="Trunk Members"/>
+    <String key="sniTrunkGroupConfigName" value="Trunk Name"/>
+    <String key="sniTrunkGroupConfigPolicy" value="Trunk Policy"/>
+
+    <String key="SniTrunkTable" value="SNI Trunk Management"/>
+    <String key="sniTrunkGroupActualSpeed" value="Actual Speed (Mbps)"/>
+    <String key="sniTrunkGroupAdminStatus" value="Administrative Status"/>
+    <String key="sniTrunkGroupIndex" value="Trunk Index"/>
+    <String key="sniTrunkGroupOperationStatus" value="Operational Status"/>
+    <String key="destIp" value="Destination IP"/>
+    <String key="destMac" value="Destination MAC"/>
+    <String key="srcIp" value="Source IP"/>
+    <String key="srcIpNDestIp" value="Source and Destination IP"/>
+    <String key="srcMac" value="Source MAC"/>
+    <String key="srcMacNDestMac" value="Source and Destination MAC"/>
+
+    <!-- sniMirrorTable -->
+    <String key="SniMirrorTable" value="SNI Mirror"/>
+    <String key="sniMirrorGroupDstPortList" value="Destionation Pot List"/>
+    <String key="sniMirrorGroupIndex" value="Index"/>
+    <String key="sniMirrorGroupName" value="Name"/>
+    <String key="sniMirrorGroupSrcInPortList" value="Ingress Source Port List"/>
+    <String key="sniMirrorGroupSrcOutPortList" value="Egres Source Port List"/>
+
+    <!-- sniMacAddressManagementTable & sniMacAddressTable -->
+    <String key="SNI_MAC_ADDRESS" value="SNI MAC Address Management"/>
+    <String key="SniMacAddressTable" value="MAC Address Configuration"/>
+    <String key="sniMacAddrTableAgingTime" value="MAC Aging Time (sec)"/>
+    <String key="sniMacAddrTableClear" value="Clear"/>
+    <String key="Clear" value="Clear"/>
+
+    <String key="SniMacAddressMgmtTable" value="MAC Address Management"/>
+    <String key="sniMacAddressManagementDeviceIndex" value="Device Index"/>
+    <String key="sniMacAddrIndex" value="Device Index"/>
+    <String key="sniMacAddrPortId" value="Port ID"/>
+    <String key="sniMacAddrType" value="Dynamic/Static"/>
+    <String key="sniMacAddrVlanIdIndex" value="VLAN ID"/>
+
+    <!-- sniBroadcastStormSuppressionTable -->
+    <String key="SniBroadcastStormSuppressionTable" value="SNI Strom Suppression"/>
+    <String key="sniBroadcastStormEnable" value="Broadcast Storm Control"/>
+    <String key="sniBroadcastStormInPacketRate" value="Broadcast In Packet Rate"/>
+    <String key="sniBroadcastStormOutPacketRate" value="Broadcast Out Packet Rate"/>
+    <String key="sniBroadcastStormSuppressionCardIndex" value="Card Index"/>
+    <String key="sniBroadcastStormSuppressionDeviceIndex" value="Device Index"/>
+    <String key="sniBroadcastStormSuppressionPortIndex" value="Port Index"/>
+    <String key="sniMulticastStormEnable" value="Multicast Storm Control"/>
+    <String key="sniMulticastStormInPacketRate" value="Multicast In Packet Rate"/>
+    <String key="sniMulticastStormOutPacketRate" value="Multicast Out Packet Rate"/>
+    <String key="sniUnicastStormEnable" value="Unicast Storm Control"/>
+    <String key="sniUnicastStormInPacketRate" value="Unicast In Packet Rate"/>
+    <String key="sniUnicastStormOutPacketRate" value="Unicast Out Packet Rate"/>
+
+    <!-- ponPortInfoTable -->
+    <String key="PON_Port_Information" value="PON Port Information"/>
+    <String key="ponDeviceIndex" value="Device Index"/>
+    <String key="ponCardIndex" value="Card Index"/>
+    <String key="ponPortIndex" value="Port Index"/>
+    <String key="ponPortType" value="Port Type"/>
+    <String key="ponOperationStatus" value="Operational Status"/>
+    <String key="ponPortAdminStatus" value="Administrative Status"/>
+    <String key="ponPortMaxOnuNumSupport" value="Max ONU Number Supported"/>
+    <String key="ponPortUpOnuNum" value="Online ONU Number"/>
+    <String key="ponPortEncryptMode" value="Encryption Mode"/>
+    <String key="ponPortEncryptKeyExchangeTime" value="Encryption Key Exchange Time (sec)"/>
+    <String key="ponPortIsolationEnable" value="Port Isolation"/>
+    <String key="maxBandwidth" value="Max Bandwidth (bps)"/>
+    <String key="actualBandwidthInUse" value="Actual Bandwidth In Use (bps)"/>
+    <String key="remainBandwidth" value="Remain Bandwidth (bps)"/>
+    <String key="perfStats15minuteEnable" value="Performance Stat. 15 mins"/>
+    <String key="perfStats24hourEnable" value="Performance Stat. 24 hours"/>
+    <String key="ponPortMacAddrLearnMaxNum" value="MAC Limit"/>
+
+    <String key="ge-epon" value="EPON: GE"/>
+    <String key="tenge-epon" value="EPON: 10GE"/>
+    <String key="gpon" value="GPON"/>
+
+    <!-- aclRuleTable -->
+    <String key="ACL_Rule" value="ACL Rule"/>
+    <String key="aclRuleIndex" value="Rule Index"/>
+    <String key="matchedSourseMac" value="Sourse MAC"/>
+    <String key="matchedDestinationMac" value="Destination MAC"/>
+    <String key="matchedVlanId" value="VLAN ID"/>
+    <String key="matchedEthernetType" value="Ethernet Type"/>
+    <String key="matchedSourseIP" value="Sourse IP"/>
+    <String key="matchedDestinationIP" value="Destination IP"/>
+    <String key="matchedIpMessageType" value="IP Message Type"/>
+    <String key="matchedDscp" value="DSCP"/>
+    <String key="matchedSoursePort" value="Sourse Port"/>
+    <String key="matchedDestinationPort" value="Destination Port"/>
+    <String key="matchedFieldSelection" value="Field Selected"/>
+    <String key="aclAction" value="ACL Action"/>
+    <String key="aclActionParameter" value="ACL Action Parameters"/>
+    <String key="aclActionParameterType" value="ACL Action Parameters Type"/>
+    <String key="aclActionParameterValue" value="ACL Action Parameters Value"/>
+
+    <String key="sourceMac" value="Source MAC"/>
+    <String key="destinationMac" value="Destination MAC"/>
+    <String key="vlanId" value="Port ID"/>
+    <String key="etherType" value="Ether Type"/>
+    <String key="sourceIp" value="Source IP"/>
+    <String key="destinationIp" value="Destination IP"/>
+    <String key="ipProtocolType" value="IP Protocol Type"/>
+    <String key="dscp" value="DSCP"/>
+    <String key="sourceProtocolPort" value="Source Protocol Port"/>
+    <String key="destinationProtocolPort" value="Destination Protocol Port"/>
+
+    <!-- aclManagementTable -->
+    <String key="ACL_Management" value="ACL Management"/>
+    <String key="aclListIndex" value="ACL Index"/>
+    <String key="aclDescription" value="ACL Description"/>
+    <String key="aclRuleList" value="ACL Rule List"/>
+
+    <!-- portAclListTable -->
+    <String key="Port_ACL_List" value="Port ACL List"/>
+    <String key="aclDeviceIndex" value="Device Index"/>
+    <String key="aclCardIndex" value="Card Index"/>
+    <String key="aclPortIndex" value="Port Index"/>
+    <String key="portAclListIndex" value="ACL"/>
+    <String key="aclPortDirection" value="Port Direction"/>
+
+    <String key="ingress" value="Ingress"/>
+    <String key="egress" value="Egress"/>
+
+    <!-- ponBroadcastStormSuppressionTable -->
+    <String key="Broadcast_Strom_Suppression" value="PON Strom Suppression"/>
+    <String key="bsDeviceIndex" value="Device Index"/>
+    <String key="bsCardIndex" value="Card Index"/>
+    <String key="bsPortIndex" value="Port Index"/>
+    <String key="unicastStormEnable" value="Unicast Storm Control"/>
+    <String key="unicastStormInPacketRate" value="Unicast In Packet Rate"/>
+    <String key="unicastStormOutPacketRate" value="Unicast Out Packet Rate"/>
+    <String key="multicastStormEnable" value="Multicast Storm Control"/>
+    <String key="multicastStormInPacketRate" value="Multicast In Packet Rate"/>
+    <String key="multicastStormOutPacketRate" value="Multicast Out Packet Rate"/>
+    <String key="broadcastStormEnable" value="Broadcast Storm Control"/>
+    <String key="broadcastStormInPacketRate" value="Broadcast In Packet Rate"/>
+    <String key="broadcastStormOutPacketRate" value="Broadcast Out Packet Rate"/>
+
+    <!-- onuInfoTable -->
+    <String key="ONU_Information" value="ONU Information"/>
+    <String key="onuDeviceIndex" value="ONU Device Index"/>
+    <String key="onuName" value="Name"/>
+    <String key="onuType" value="Type"/>
+    <String key="onuIpAddress" value="IP Address"/>
+    <String key="onuIpSubnetMask" value="IP Subnet Mask"/>
+    <String key="onuIpGateway" value="IP Gateway"/>
+    <String key="onuMacAddress" value="MAC Address"/>
+    <String key="onuOperationStatus" value="Operational Status"/>
+    <String key="onuAdminStatus" value="Administrative Status"/>
+    <String key="onuChipVendor" value="Chip Vendor"/>
+    <String key="onuChipType" value="Chip Type"/>
+    <String key="onuChipVersion" value="Chip Version"/>
+    <String key="onuSoftwareVersion" value="Software Version"/>
+    <String key="onuFirmwareVersion" value="Firmware Version"/>
+    <String key="onuTestDistance" value="Test Distance (meter)"/>
+    <String key="onuLlidId" value="LLID"/>
+
+    <String key="resetONU" value="Reset ONU"/>
+
+    <!-- onuPonPortOpticalTransmissionPropertyTable -->
+    <String key="ONU_PON_Port_Optical_Transmission_Properties" value="ONU PON Port Optical Transmission Properties"/>
+    <String key="onuPonPortOpticalTransmissionPropertyDeviceIndex" value="ONU Device Index"/>
+    <String key="onuPonPortOpticalTransmissionPropertyCardIndex" value="Card Index"/>
+    <String key="onuPonPortOpticalTransmissionPropertyPortIndex" value="Port Index"/>
+    <String key="onuReceivedOpticalPower" value="Received Optical Power"/>
+    <String key="onuTramsmittedOpticalPower" value="Tramsmitted Optical Power"/>
+    <String key="onuBiasCurrent" value="Bias Current"/>
+    <String key="onuWorkingVoltage" value="Working Voltage"/>
+    <String key="onuWorkingTemperature" value="Working Temperature"/>
+
+    <!-- onuCapabilityTable -->
+    <String key="ONU_Capability" value="ONU Capability"/>
+    <String key="onuCapabilityDeviceIndex" value="ONU Device Index"/>
+    <String key="onuGePortNum" value="GE Port Number"/>
+    <String key="onuGePortBitmap" value="GE Port List"/>
+    <String key="onuFePortNum" value="FE Port Number"/>
+    <String key="onuFePortBitmap" value="FE Port List"/>
+    <String key="onuQueueNumUplink" value="Uplink Queue Number"/>
+    <String key="onuMaxQueueNumUplink" value="Max Uplink Queue Number"/>
+    <String key="onuQueueNumDownlink" value="Downlink Queue Number"/>
+    <String key="onuMaxQueueNumDownlink" value="Max Downlink Queue Number"/>
+    <String key="onuFecEnable" value="FEC"/>
+    <String key="onuEncryptMode" value="Encryption Mode"/>
+    <String key="onuEncryptKeyExchangeTime" value="Encryption Key Exchange Time (sec)"/>
+
+    <!-- slaTable -->
+    <String key="ONU_SLA" value="ONU SLA"/>
+    <String key="slaIndex" value="SLA Index"/>
+    <String key="slaDsFixedBW" value="Downstream Fixed Bandwidth (Kbps)"/>
+    <String key="slaDsPeakBW" value="Downstream Peak Bandwidth (Kbps)"/>
+    <String key="slaDsCommittedBW" value="Downstream Committed Bandwidth (Kbps)"/>
+    <String key="slaUsFixedBW" value="Upstream Fixed Bandwidth (Kbps)"/>
+    <String key="slaUsPeakBW" value="Upstream Peak Bandwidth (Kbps)"/>
+    <String key="slaUsCommittedBW" value="Upstream Committed Bandwidth (Kbps)"/>
+
+    <!-- onuAuthenticationPolicy -->
+    <String key="ONU_Authentication_Policy" value="ONU Authentication Policy"/>
+    <String key="onuAuthenticationPolicy" value="ONU Authentication Policy"/>
+    <String key="acceptAll" value="Accept All"/>
+    <String key="rejectNotConfigured" value="Reject Not Configured"/>
+
+    <!-- onuAuthenticationPreConfigTable -->
+    <String key="ONU_Authentication_Pre_Config" value="ONU Authentication Pre-Config"/>
+    <String key="onuAuthenOnuId" value="Onu Device Index"/>
+    <String key="onuAuthenMacAddress" value="MAC Address"/>
+    <String key="onuAuthenAction" value="Action"/>
+    <String key="accept" value="Accept"/>
+    <String key="reject" value="Reject"/>
+
+    <!-- OnuAuthenticationBlockTable -->
+    <String key="ONU_Authentication_Block" value="ONU Authentication Block"/>
+    <String key="onuAuthenBlockOnuId" value="Onu Device Index"/>
+    <String key="onuAuthenBlockMacAddress" value="MAC Address"/>
+    <String key="authenTime" value="Time"/>
+
+    <!-- uniAttributeTable -->
+    <String key="UNI_Information" value="UNI Information"/>
+    <String key="uniAttributeDeviceIndex" value="ONU Device Index"/>
+    <String key="uniAttributeCardIndex" value="Card Index"/>
+    <String key="uniAttributePortIndex" value="Port Index"/>
+    <String key="uniAdminStatus" value="Administrative Status"/>
+    <String key="uniOperationStatus" value="Operational Status"/>
+    <!--
+    <String key="uniPerfStats15minuteEnable" value="Performance Stat. 15 mins"/>
+    <String key="uniPerfStats24hourEnable" value="Performance Stat. 24 hours"/>
+    <String key="uniLastChangeTime" value="Last Change Time"/>
+    <String key="uniIsolationEnable" value="Port Isolation"/>
+    <String key="uniMacAddrLearnMaxNum" value="MAC Limit"/>
+    -->
+    <String key="uniAutoNegotiationEnable" value="Auto Negotiation"/>
+    <String key="uniAutoNegotiationLocalTechAbility" value="Auto Negotiation Local Technology Ability"/>
+    <String key="uniAutoNegotiationAdvertisedTechAbility" value="Auto Negotiation Advertised Technology Ability"/>
+    <String key="tenBaseTFullDuplex" value="tenBaseTFullDuplex"/>
+    <String key="tenBaseTHalfDuplex" value="tenBaseTHalfDuplex"/>
+    <String key="hundredBaseTFullDuplex" value="hundredBaseTFullDuplex"/>
+    <String key="hundredBaseTHalfDuplex" value="hundredBaseTHalfDuplex"/>
+    <String key="thousandBaseTFullDuplex" value="thousandBaseTFullDuplex"/>
+    <String key="thousandBaseTHalfDuplex" value="thousandBaseTHalfDuplex"/>
+    <String key="thousandBaseXFullDuplex" value="thousandBaseXFullDuplex"/>
+    <String key="thousandBaseXHalfDuplex" value="thousandBaseXHalfDuplex"/>
+    <String key="fdxPause" value="fdxPause"/>
+    <String key="fdxApause" value="fdxApause"/>
+    <String key="fdxSpause" value="fdxSpause"/>
+    <String key="fdxBpause" value="fdxBpause"/>
+    <String key="uniAutoNegotiationRestart" value="Restart Auto Negotiation"/>
+
+    <!-- uniMacAddressManagementTable & uniMacAddressTable -->
+    <String key="UNI_MAC_Address_Management" value="UNI MAC Address Management"/>
+    <String key="UNI_MAC_Address_Management_Node" value="UNI MAC Address Management Node"/>
+    <String key="UNI_MAC_Address_Table" value="UNI MAC Address Table"/>
+    <String key="uniMacAddrAgingTime" value="MAC Aging Time (sec)"/>
+    <String key="uniMacAddrIndex" value="MAC Address Index"/>
+    <String key="uniMacAddrVlanIdIndex" value="VLAN ID"/>
+    <String key="uniMacAddrType" value="Dynamic/Static"/>
+    <String key="uniMacAddrPortId" value="Port ID"/>
+    <String key="Clear Dynamic MAC Address" value="Clear Dynamic MAC Address"/>
+
+    <!-- uniTrunkGroupConfigTable & uniTrunkGroupTable -->
+    <String key="UNI_Trunk_Group" value="UNI Trunk Group Management"/>
+    <String key="UniTrunkGroupConfigTable" value="UNI Trunk Configuration"/>
+    <String key="uniTrunkGroupConfigIndex" value="Trunk Index"/>
+    <String key="uniTrunkGroupConfigName" value="Trunk Name"/>
+    <String key="uniTrunkGroupConfigMember" value="Trunk Members"/>
+    <String key="uniTrunkGroupConfigPolicy" value="Trunk Policy"/>
+
+    <String key="UniTrunkGroupTable" value="UNI Trunk Management"/>
+    <String key="uniTrunkGroupIndex" value="Trunk Index"/>
+    <String key="uniTrunkGroupOperationStatus" value="Operational Status"/>
+    <String key="uniTrunkGroupActualSpeed" value="Actual Speed (Mbps)"/>
+    <String key="uniTrunkGroupAdminStatus" value="Administrative Status"/>
+
+    <!-- uniPortRateLimitTable -->
+    <String key="UNI_Rate_Limit" value="UNI Rate Limit"/>
+    <String key="uniPortRateLimitDeviceIndex" value="ONU Device Index"/>
+    <String key="uniPortRateLimitCardIndex" value="Card Index"/>
+    <String key="uniPortRateLimitPortIndex" value="Port Index"/>
+    <String key="uniPortInCIR" value="Ingress CIR (kbps)"/>
+    <String key="uniPortInCBS" value="Ingress CBS (kbytes)"/>
+    <String key="uniPortInEBS" value="Ingress EBS (kbytes)"/>
+    <String key="uniPortOutCIR" value="Egress CIR (kbps)"/>
+    <!--
+    <String key="uniPortOutCBS" value="Egress CBS (kbytes)"/>
+    <String key="uniPortOutPBS" value="Egress PBS (kbytes)"/>
+    -->
+    <String key="uniPortOutPIR" value="Egress PIR(kbps)"/>
+    <String key="uniPortInRateLimitEnable" value="Ingress Rate Limit"/>
+    <String key="uniPortOutRateLimitEnable" value="Egress Rate Limit"/>
+
+    <!-- uniMirrorTable -->
+    <String key="UNI_Mirror_Group" value="UNI Mirror Group"/>
+    <String key="uniMirrorGroupIndex" value="Mirror Group Index"/>
+    <String key="uniMirrorGroupName" value="Mirro rGroup Name"/>
+    <String key="uniMirrorGroupDstPortList" value="Destionation Pot List"/>
+    <String key="uniMirrorGroupSrcInPortList" value="Ingress Source Port List"/>
+    <String key="uniMirrorGroupSrcOutPortList" value="Engres Source Port List"/>
+
+    <!-- uniBroadcastStormSuppressionTable -->
+    <String key="UNI_Storm_Suppression" value="UNI Storm Suppression"/>
+    <String key="uniBroadcastStormSuppressionCardIndex" value="Card Index"/>
+    <String key="uniBroadcastStormSuppressionPortIndex" value="Port Index"/>
+    <String key="uniUnicastStormEnable" value="Unicast Storm Control"/>
+    <String key="uniUnicastStormInPacketRate" value="Unicast In Packet Rate (pps)"/>
+    <String key="uniUnicastStormOutPacketRate" value="Unicast Out Packet Rate (pps)"/>
+    <String key="uniMulticastStormEnable" value="Multicast Storm Control"/>
+    <String key="uniMulticastStormInPacketRate" value="Multicast In Packet Rate (pps)"/>
+    <String key="uniMulticastStormOutPacketRate" value="Multicast Out Packet Rate (pps)"/>
+    <String key="uniBroadcastStormEnable" value="Broadcast Storm Control"/>
+    <String key="uniBroadcastStormInPacketRate" value="Broadcast In Packet Rate (pps)"/>
+    <String key="uniBroadcastStormOutPacketRate" value="Broadcast Out Packet Rate (pps)"/>
+
+    <!-- uniExtAttributeTable -->
+    <String key="UNI_Ext_Attribute" value="UNI Extended Attribution"/>
+    <String key="uniExtAttributeCardIndex" value="Card Index"/>
+    <String key="uniExtAttributePortIndex" value="Port Index"/>
+    <String key="uniPerfStats15minuteEnable" value="Performance Stat. 15 mins"/>
+    <String key="uniPerfStats24hourEnable" value="Performance Stat. 24 hours"/>
+    <String key="uniLastChangeTime" value="Last Change Time"/>
+    <String key="uniIsolationEnable" value="Port Isolation"/>
+    <String key="uniMacAddrLearnMaxNum" value="MAC Limit"/>
+
+    <!-- igmpEntityTable -->
+    <String key="IGMP_Entity" value="IGMP Entity"/>
+    <String key="igmpDeviceIndex" value="Device Index"/>
+    <String key="igmpMode" value="IGMP Mode"/>
+    <String key="maxQueryResponseTime" value="Max Query Response Time (sec)"/>
+    <String key="robustVariable" value="Robust Variable"/>
+    <String key="queryInterval" value="Query Interval (sec)"/>
+    <String key="lastMemberQueryInterval" value="Last Member Query Interval (sec)"/>
+    <String key="lastMemberQueryCount" value="Last Member Query Count"/>
+    <String key="igmpVersion" value="IGMP Version"/>
+    <String key="centralized" value="Centralized"/>
+    <String key="distributed" value="Distributed"/>
+    <String key="v1" value="V1"/>
+    <String key="v2" value="V2"/>
+    <String key="v3" value="V3"/>
+
+    <!-- igmpProxyParaTable -->
+    <String key="IGMP_Proxy_Para" value="IGMP Proxy Parameters"/>
+    <String key="proxyIndex" value="Proxy Index"/>
+    <String key="proxyName" value="Proxy Name"/>
+    <String key="proxySrcIPAddress" value="Proxy Source IP"/>
+    <String key="proxyMulticastVID" value="Multicast VLAN ID"/>
+    <String key="proxyMulticastIPAddress" value="Muliticast IP Address"/>
+    <String key="multicastAssuredBW" value="Multicast Assured Bandwidth (kbps)"/>
+    <String key="multicastMaxBW" value="Multicast Max Bandwidth (kbps)"/>
+
+    <!-- igmpForwardingTable -->
+    <String key="IGMP_Forwarding" value="Multicast Forwarding"/>
+    <String key="groupDeviceIndex" value="Device Index"/>
+    <String key="groupVlanIndex" value="VLAN Index"/>
+    <String key="groupMacAddress" value="Group MAC Address"/>
+    <String key="groupPortList" value="Forwarding Port List"/>
+
+    <!-- controlledMulticastUserAuthorityTable & controlledMulticastPackageTable -->
+    <String key="Controlled_Multicast_Management" value="Controlled Multicast Management"/>
+    <String key="Controlled_Multicast_User_Authority" value="Controlled Multicast User Authority"/>
+    <String key="cmDeviceIndex" value="Device Index"/>
+    <String key="cmCardIndex" value="Card Index"/>
+    <String key="cmPortIndex" value="Port ID"/>
+    <String key="multicastPackageList" value="Controlled Multicast Group List"/>
+    <String key="igmpGlobalBW" value="IGMP Global Bandwidth (kbps)"/>
+    <String key="igmpGlobalBWUsed" value="Used Bandwidth (kbps)"/>
+
+    <String key="Controlled_Multicast_Package" value="Controlled Multicast Package"/>
+    <String key="cmIndex" value="Package Index"/>
+    <String key="cmName" value="Package Name"/>
+    <String key="cmProxyList" value="Proxy List"/>
+    <String key="multicastUserAuthority" value="User Authority"/>
+    <String key="maxRequestChannelNum" value="Max Channel Number"/>
+    <String key="singlePreviewTime" value="Single Preview Time (sec)"/>
+    <String key="totalPreviewTime" value="Total Preview Time (sec)"/>
+    <String key="previewResetTime" value="Preview Reset Time (sec)"/>
+    <String key="previewCount" value="Preview Count"/>
+
+    <!-- stpGlobalSetTable -->
+    <String key="STP_Global_Set" value="Global STP Configruation"/>
+    <String key="stpGlobalSetIndex" value="Device Index"/>
+    <String key="stpGlobalSetVersion" value="STP Protocol"/>
+    <String key="stpGlobalSetPriority" value="Priority"/>
+    <String key="stpGlobalSetTimeSinceTopologyChange" value="Last Topology Change Time"/>
+    <String key="stpGlobalSetTopChanges" value="Topology Changes"/>
+    <String key="stpGlobalSetDesignatedRoot" value="Designated Root"/>
+    <String key="stpGlobalSetRootCost" value="Root Cost"/>
+    <String key="stpGlobalSetRootPort" value="Root Port"/>
+    <String key="stpGlobalSetMaxAge" value="Max Aging Time (sec)"/>
+    <String key="stpGlobalSetHelloTime" value="Hello Time (sec)"/>
+    <String key="stpGlobalSetHoldTime" value="Hold Time (sec)"/>
+    <String key="stpGlobalSetForwardDelay" value="Forwarding Delay (sec)"/>
+    <String key="stpGlobalSetBridgeMaxAge" value="Bridge Max Aging Time (sec)"/>
+    <String key="stpGlobalSetBridgeHelloTime" value="Bridge Hello Time (sec)"/>
+    <String key="stpGlobalSetBridgeForwardDelay" value="Bridge Forwarding Delay (sec)"/>
+    <String key="stpGlobalSetRstpTxHoldCount" value="Tx Hold Count"/>
+    <String key="stpGlobalSetEnable" value="STP Enable"/>
+    <String key="rstp" value="RSTP"/>
+    <String key="stp" value="STP"/>
+
+    <!-- stpPortTable -->
+    <String key="STP_Port" value="STP Port Configruation"/>
+    <String key="stpPortStpIndex" value="Device Index"/>
+    <String key="stpPortCardIndex" value="Card Index"/>
+    <String key="stpPortIndex" value="Port Index"/>
+    <String key="stpPortStatus" value="Port Status"/>
+    <String key="stpPortPriority" value="Port Priority"/>
+    <String key="stpPortPathCost" value="Port Path Cost"/>
+    <String key="stpPortDesignatedRoot" value="Designated Root"/>
+    <String key="stpPortDesignatedCost" value="Designated Path Cost"/>
+    <String key="stpPortDesignatedBridge" value="Designated Bridge"/>
+    <String key="stpPortDesignatedPort" value="Designated Port"/>
+    <String key="stpPortForwardTransitions" value="Forward Transitions (sec)"/>
+    <String key="stpPortRstpProtocolMigration" value="Protocol Migration"/>
+    <String key="stpPortRstpAdminEdgePort" value="Edge Port"/>
+    <String key="stpPortRstpOperEdgePort" value="Edge Port Status"/>
+    <String key="stpPortPointToPointAdminStatus" value="P2P Admin Status"/>
+    <String key="stpPortPointToPointOperStatus" value="P2P Operational Status"/>
+    <String key="stpPortEnabled" value="Port Enable"/>
+    <String key="blocking" value="blocking"/>
+    <String key="listening" value="listening"/>
+    <String key="learning" value="learning"/>
+    <String key="forwarding" value="forwarding"/>
+    <String key="broken" value="broken"/>
+    <String key="forceFalse" value="forceFalse"/>
+    <String key="forceTrue" value="forceTrue"/>
+    <String key="auto" value="auto"/>
+
+    <!-- curStatsTable -->
+    <String key="PM_CUR_Stats" value="Real-time Performance Counters"/>
+    <String key="curStatsDeviceIndex" value="Device Index"/>
+    <String key="curStatsCardIndex" value="Card Index"/>
+    <String key="curStatsPortIndex" value="Port Index"/>
+    <String key="curStatsInOctets" value="Rx Octets"/>
+    <String key="curStatsInPkts" value="Rx Pkts"/>
+    <String key="curStatsInBroadcastPkts" value="Rx Broadcast Pkts"/>
+    <String key="curStatsInMulticastPkts" value="Rx Multicast Pkts"/>
+    <String key="curStatsInPkts64Octets" value="Rx Pkts (64 Octets)"/>
+    <String key="curStatsInPkts65to127Octets" value="Rx Pkts (65-127 Octets)"/>
+    <String key="curStatsInPkts128to255Octets" value="Rx Pkts (128-255 Octets)"/>
+    <String key="curStatsInPkts256to511Octets" value="Rx Pkts (256-511 Octets)"/>
+    <String key="curStatsInPkts512to1023Octets" value="Rx Pkts (512-1023 Octets)"/>
+    <String key="curStatsInPkts1024to1518Octets" value="Rx Pkts (1024-1518 Octets)"/>
+    <String key="curStatsInPkts1519to1522Octets" value="Rx Pkts (1519-1522 Octets)"/>
+    <String key="curStatsInUndersizePkts" value="Rx Undersize Pkts"/>
+    <String key="curStatsInOversizePkts" value="Rx Oversize Pkts"/>
+    <String key="curStatsInFragments" value="Rx Fragments"/>
+    <String key="curStatsInMpcpFrames" value="Rx MPCP Frames"/>
+    <String key="curStatsInMpcpOctets" value="Rx MPCP Octets"/>
+    <String key="curStatsInOAMFrames" value="Rx OAM Frames"/>
+    <String key="curStatsInOAMOctets" value="Rx OAM Octets"/>
+    <String key="curStatsInCRCErrorPkts" value="Rx CRC Error Pkts"/>
+    <String key="curStatsInDropEvents" value="Rx Drop Events"/>
+    <String key="curStatsInJabbers" value="Rx Jabbers"/>
+    <String key="curStatsInCollision" value="Rx Collisions"/>
+    <String key="curStatsOutOctets" value="Tx Octets"/>
+    <String key="curStatsOutPkts" value="Tx Pkts"/>
+    <String key="curStatsOutBroadcastPkts" value="Tx Broadcast Pkts"/>
+    <String key="curStatsOutMulticastPkts" value="Tx Multicast Pkts"/>
+    <String key="curStatsOutPkts64Octets" value="Tx Pkts (64 Octets)"/>
+    <String key="curStatsOutPkts65to127Octets" value="Tx Pkts (65-127 Octets)"/>
+    <String key="curStatsOutPkts128to255Octets" value="Tx Pkts (128-255 Octets)"/>
+    <String key="curStatsOutPkts256to511Octets" value="Tx Pkts (256-511 Octets)"/>
+    <String key="curStatsOutPkts512to1023Octets" value="Tx Pkts (512-1023 Octets)"/>
+    <String key="curStatsOutPkts1024to1518Octets" value="Tx Pkts (1024-1518 Octets)"/>
+    <String key="curStatsOutPkts1519o1522Octets" value="Tx Pkts (1519-1522 Octets)"/>
+    <String key="curStatsOutUndersizePkts" value="Tx Undersize Pkts"/>
+    <String key="curStatsOutOversizePkts" value="Tx Oversize Pkts"/>
+    <String key="curStatsOutFragments" value="Tx Fragments"/>
+    <String key="curStatsOutMpcpFrames" value="Tx MPCP Frames"/>
+    <String key="curStatsOutMpcpOctets" value="Tx MPCP Octets"/>
+    <String key="curStatsOutOAMFrames" value="Tx OAM Frames"/>
+    <String key="curStatsOutOAMOctets" value="Tx OAM Octets"/>
+    <String key="curStatsOutCRCErrorPkts" value="Tx CRC Error Pkts"/>
+    <String key="curStatsOutDropEvents" value="Tx Drop Events"/>
+    <String key="curStatsOutJabbers" value="Tx Jabbers"/>
+    <String key="curStatsOutCollision" value="Tx Collisions"/>
+    <String key="curStatsStatusAndAction" value="curStatsStatusAndAction"/>
+    <String key="Clean" value="Clean"/>
+
+    <!-- perfStatsThresholdTable -->
+    <String key="PM_Stats_Threshold" value="Performance Statistics Threshold"/>
+    <String key="perfStatsThresholdDeviceIndex" value="Device Index"/>
+    <String key="perfStatsThresholdCardIndex" value="Card Index"/>
+    <String key="perfStatsThresholdPortIndex" value="Port Index"/>
+    <String key="perfStatsThresholdTypeIndex" value="Threshold Type"/>
+    <String key="perfStatsThresholdUpper" value="Upper Threshold"/>
+    <String key="perfStatsThresholdLower" value="Lower Threshold"/>
+
+    <!-- eocDevInfoTable -->
+    <String key="EoC_Dev_Info" value="EoC Device Information"/>
+    <String key="eDeviceIndex" value="Device ID"/>
+    <String key="eCardIndex" value="Card ID"/>
+    <String key="ePortIndex" value="Port ID"/>
+    <String key="eocDeviceTechnologyProject" value="Technology Project"/>
+    <String key="eocDeviceVendorName" value="Vendor Name"/>
+    <String key="eocDeviceProductType" value="Product Type"/>
+    <String key="eocDeviceSoftwareVersion" value="Software Version"/>
+    <String key="eocDeviceHardwareVersion" value="Hardware Version"/>
+    <String key="eocSeriesNumber" value="Series Number"/>
+    <String key="eocDeviceIpAddress" value="IP Address"/>
+    <String key="eocDeviceMacAddress" value="MAC Address"/>
+    <String key="eocDeviceMibVersion" value="MIB Version"/>
+
+    <!-- error message -->
+    <String key="Err_Only_Register_ONU_Can_Reset" value="Only registered ONU can be reset."/>
+    <String key="Err_Weight_Is_Invalid" value="Sum of weight should be 100,or 1 in WRR mode ,0 in SPWRR mode."/>
+    <String key="Title_Confirm" value="Please Confirm"/>
+    <String key="Msg_Cfm_Exit_Dvm" value="Are you sure to exit device management?"/>
+    <String key="Msg_Cfm_Save_Cfg" value="Do you confirm to save the NE config file?"/>
+    <String key="Msg_Cfm_Reset_System_1" value="Do you confirm to restart NE?"/>
+    <String key="Msg_Cfm_Reset_System_2" value="All operations will fail before the NE is restarted."/>
+    <String key="Msg_Cfm_Restore_System_1" value="Do you confirm to restore the default settings?"/>
+    <String key="Msg_Cfm_Restore_System_2" value="If NE is restored, all the configuration data will be lost!"/>
+
+    <!-- Menu: System Management -->
+    <String key="System_Management" value="System Administrative"/>
+    <String key="NE_File_Management" value="NE File Management"/>
+    <String key="FTP_Facility" value="FTP Facility"/>
+    <String key="TFTP_Facility" value="TFTP Facility"/>
+    <String key="Save_Config" value="Save Configuration"/>
+    <String key="Board_Switch" value="Switch Board"/>
+    <String key="Restart_NE" value="Restart NE"/>
+    <String key="Set_Factory_Default" value="Set Factory Default"/>
+
+    <!-- Menu: System Management -->
+    <String key="ONU_Management" value="ONU Management"/>
+    <String key="ONU_CPE" value="CPE Management"/>
+    <String key="ONU_Firmware_Upgrade" value="Firmware Management"/>
+
+    <String key="Select_File" value="Select File"/>
+    <String key="File System Group" value="NE File Management"/>
+    <String key="FTP Facility" value="FTP Facility"/>
+    <String key="TFTP Facility" value="TFTP Facility"/>
+
+    <!-- VlanGlobalInfoTable_Panel -->
+    <String key="VlanGlobalInfoTable_Panel" value="VLAN Global Information"/>
+    <String key="createdVlanNumber" value="Created VLAN Number"/>
+    <String key="maxSupportVlans" value="Max Supported VLANs"/>
+    <String key="maxVlanId" value="Max VLAN ID"/>
+    <String key="vlanDeviceIndex" value="Device Index"/>
+
+    <!-- OltVlanConfigTable_Panel -->
+    <String key="OltVlanConfigTable_Panel" value="OLT VLAN Configuration"/>
+    <String key="oltVlanDeviceIndex" value="Device Index"/>
+    <String key="oltVlanIndex" value="VLAN Index"/>
+    <String key="oltVlanName" value="VLAN Name"/>
+    <String key="taggedPort" value="Tagged Ports"/>
+    <String key="untaggedPort" value="Untagged Ports"/>
+
+    <!-- OnuVlanConfigTable_Panel -->
+    <String key="onuVlanIndex" value="onuVlanIndex"/>
+    <String key="onuVlanName" value="onuVlanName"/>
+    <String key="onuVlanTaggedPort" value="onuVlanTaggedPort"/>
+    <String key="onuVlanUntaggedPort" value="onuVlanUntaggedPort"/>
+
+    <!-- PortVlanTable_Panel -->
+    <String key="PortVlanTable_Panel" value=" Port VLAN Configuration"/>
+    <String key="aggregation" value="Aggregation"/>
+    <String key="stacking" value="Stacking"/>
+    <String key="pvlanCardIndex" value="ONU Card Index"/>
+    <String key="pvlanDeviceIndex" value="Device Index"/>
+    <String key="pvlanPortIndex" value="ONU Port Index"/>
+    <String key="tag" value="Tag"/>
+    <String key="translation" value="Translation"/>
+    <String key="transparent" value="Transparent"/>
+    <String key="trunk" value="Trunk"/>
+    <String key="vlanMode" value="VLAN Mode"/>
+    <String key="vlanPVid" value="Port VLAN ID"/>
+    <String key="vlanTagCfi" value="CFI"/>
+    <String key="vlanTagPriority" value="VLAN Priority"/>
+    <String key="vlanTagTpid" value="TPID(Hex)"/>
+
+    <!--PortVlanTranslationTable_Panel-->
+    <String key="PortVlanTranslationTable_Panel" value="Port VLAN Translation"/>
+    <String key="pvtDeviceType" value="Device Type"/>
+    <String key="portVidIndex" value="Original VLAN ID"/>
+    <String key="pvtCardIndex" value="ONU Card Index"/>
+    <String key="pvtDeviceIndex" value="Device Index"/>
+    <String key="pvtPortIndex" value="ONU Port Index"/>
+    <String key="pvtOnuNum" value="ONU Num"/>
+    <String key="translationNewVid" value="New VLAN ID"/>
+
+    <!--PortVlanAggregationConfigTable_Panel-->
+    <String key="PortVlanAggregationConfigTable_Panel" value="Port VLAN Aggregation"/>
+    <String key="aggregationVidList" value="VLAN List"/>
+    <String key="portAggregationVidIndex" value="Aggregation VLAN ID"/>
+    <String key="pvaCardIndex" value="ONU Card Index"/>
+    <String key="pvaDeviceIndex" value="Device Index"/>
+    <String key="pvaOnuNum" value="ONU Num"/>
+
+    <String key="pvaPortIndex" value="ONU Port Index"/>
+
+    <!-- PortVlanTrunkTable_Panel -->
+    <String key="PortVlanTrunkTable_Panel" value="Port VLAN Trunk"/>
+    <String key="trunkCardIndex" value="ONU Card Index"/>
+    <String key="trunkDeviceIndex" value="Device Index"/>
+    <String key="trunkPortIndex" value="ONU Port Index"/>
+    <String key="trunkOnuNum" value="ONU Num"/>
+    <String key="trunkVidList" value="VLAN List"/>
+    <String key="Msg_Input_Vlan_Id" value="Please input a VLAN ID."/>
+    <String key="Err_Input_Vlan_Id_Is_Invalid" value="Please input a valid VLAN ID.[1-4094]"/>
+    <String key="Err_Input_Vlan_Id_Exist" value="Please input a unique VLAN ID."/>
+
+    <!--PortQinQConfigTable_Panel-->
+    <String key="PortQinQConfigTable_Panel" value="QinQ Config Table"/>
+    <String key="copyFromCTag" value="Copy From CTag"/>
+    <String key="pqCardIndex" value="ONU Card Index"/>
+    <String key="pqOnuNum" value="ONU Num"/>
+    <String key="pqDeviceIndex" value="Device Index"/>
+    <String key="pqEndVlanId" value="End VLAN ID"/>
+    <String key="pqPortIndex" value="ONU Port Index"/>
+    <String key="pqSTagCosDetermine" value="Determination of STAG CoS"/>
+    <String key="pqSTagCosNewValue" value="New STAG CoS Value"/>
+    <String key="pqSVlanId" value="Outer VLAN ID"/>
+    <String key="pqStartVlanId" value="Start VLAN ID"/>
+    <String key="redefine" value="Redefine"/>
+
+    <String key="Err_SelectADeviceIndex" value="Please select a device id."/>
+
+    <!-- QosGlobalSetTable_Panel -->
+    <String key="QosGlobalSetTable_Panel" value="Global QoS Parameters"/>
+    <String key="qosGlobalSetDeviceIndex" value="Device Index"/>
+    <String key="qosGlobalSetMaxQueueCount" value="Max Queues"/>
+    <String key="qosGlobalSetMode" value="Device/Port Based"/>
+
+    <String key="deviceBased" value="deviceBased"/>
+    <String key="portBased" value="portBased"/>
+
+    <!-- DeviceBaseQosMapTable_Panel -->
+    <String key="DeviceBaseQosMapTable_Panel" value="Device-based QoS Mapping Table"/>
+    <String key="deviceBaseQosMapDeviceIndex" value="Device Index"/>
+    <String key="deviceBaseQosMapRuleIndex" value="Mapping Rule"/>
+    <String key="deviceBaseQosMapOctet" value="Mapping Matrix"/>
+
+    <String key="cos" value="cos"/>
+    <String key="tos" value="tos"/>
+    <String key="diffserv" value="diffserv"/>
+
+    <!-- DeviceBaseQosPolicyTable_Panel -->
+    <String key="DeviceBaseQosPolicyTable_Panel" value="Device-based QoS Policy Table"/>
+    <String key="deviceBaseQosPolicyDeviceIndex" value="Device Index"/>
+    <String key="deviceBaseQosPolicyMode" value="Policy Mode"/>
+    <String key="deviceBaseQosPolicyWeightOctet" value="Queue Weight"/>
+    <String key="deviceBaseQosPolicySpBandwidthRange" value="Queue Assured Bandwidth"/>
+
+    <String key="sp" value="sp"/>
+    <String key="wrr" value="wrr"/>
+    <String key="spWrr" value="spWrr"/>
+    <String key="wfp" value="wfp"/>
+
+    <!-- PortBaseQosMapTablePanel -->
+    <String key="PortBaseQosMapTable_Panel" value="Port-based QoS Mapping Table"/>
+    <String key="portBaseQosMapDeviceIndex" value="Device Index"/>
+    <String key="portBaseQosMapCardIndex" value="Card Index"/>
+    <String key="portBaseQosMapPortIndex" value="Port Index"/>
+    <String key="portBaseQosMapRuleIndex" value="Mapping Rule"/>
+    <String key="portBaseQosMapOctet" value="Mapping Matrix"/>
+
+    <!-- PortBaseQosPolicyTablePanel -->
+    <String key="PortBaseQosPolicyTable_Panel" value="Port-based QoS Policy Table"/>
+    <String key="portBaseQosPolicyDeviceIndex" value="Device Index"/>
+    <String key="portBaseQosPolicyCardIndex" value="Card Index"/>
+    <String key="portBaseQosPolicyPortIndex" value="Port Index"/>
+    <String key="portBaseQosPolicyMode" value="Policy Mode"/>
+    <String key="portBaseQosPolicyWeightOctet" value="Queue Weight"/>
+    <String key="portBaseQosPolicySpBandwidthRange" value="Queue Assured Bandwidth"/>
+
+    <!-- activeAlarmTable -->
+    <String key="Active_Alarm_Table" value="Active Alarm Table"/>
+    <String key="activeAlarmSeqNum" value="activeAlarmSeqNum"/>
+    <String key="activeAlarmCode" value="activeAlarmCode"/>
+    <String key="activeAlarmInstance" value="activeAlarmInstance"/>
+    <String key="activeAlarmSeverity" value="activeAlarmSeverity"/>
+    <String key="activeAlarmRaisingNumber" value="activeAlarmRaisingNumber"/>
+    <String key="activeAlarmFirstOccurTime" value="activeAlarmFirstOccurTime"/>
+    <String key="activeAlarmLastOccurTime" value="activeAlarmLastOccurTime"/>
+    <String key="activeAlarmRepeats" value="activeAlarmRepeats"/>
+    <String key="activeAlarmConfirm" value="activeAlarmConfirm"/>
+    <String key="activeAlarmAdditionalText" value="activeAlarmAdditionalText"/>
+    <!-- historyAlarmTable -->
+    <String key="History_Alarm_Table" value="History Alarm Table"/>
+    <String key="historyAlarmSeqNum" value="historyAlarmSeqNum"/>
+    <String key="historyAlarmCode" value="historyAlarmCode"/>
+    <String key="historyAlarmInstance" value="historyAlarmInstance"/>
+    <String key="historyAlarmSeverity" value="historyAlarmSeverity"/>
+    <String key="historyAlarmRaisingNumber" value="historyAlarmRaisingNumber"/>
+    <String key="historyAlarmFirstOccurTime" value="historyAlarmFirstOccurTime"/>
+    <String key="historyAlarmLastOccurTime" value="historyAlarmLastOccurTime"/>
+    <String key="historyAlarmRepeats" value="historyAlarmRepeats"/>
+    <String key="historyAlarmCorrelationId" value="historyAlarmCorrelationId"/>
+    <String key="historyAlarmAdditionalText" value="historyAlarmAdditionalText"/>
+    <String key="historyAlarmClearTime" value="historyAlarmClearTime"/>
+
+  <String key="onu-register" value="ONU Register" /> 
+  <String key="new-cbat-recognized" value="New CBAT Recognized" /> 
+
+  <String key="Err_Row_In_Table" value="This recorde has existed in table." /> 
+</StringMap>

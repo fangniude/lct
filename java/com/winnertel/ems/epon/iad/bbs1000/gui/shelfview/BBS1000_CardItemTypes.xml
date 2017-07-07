@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<IltType>
+	<Card>
+    <Type name="LTM" imgfile="com/winnertel/ems/epon/iad/bbs1000/gui/shelfview/resource/card_ltm.jpg" />
+    <Type name="LTM6" imgfile="com/winnertel/ems/epon/iad/bbs1000/gui/shelfview/resource/card_ltm.jpg" />
+    <Type name="GSM" imgfile="com/winnertel/ems/epon/iad/bbs1000/gui/shelfview/resource/card_gsm.jpg" />
+    <Type name="EMPTY" imgfile="com/winnertel/ems/epon/iad/bbs1000/gui/shelfview/resource/card_empty.jpg" />
+    <Type name="PWR" imgfile="com/winnertel/ems/epon/iad/bbs1000/gui/shelfview/resource/card_pwr.jpg" />
+    <Type name="PWR_EMPTY" imgfile="com/winnertel/ems/epon/iad/bbs1000/gui/shelfview/resource/card_pwr_empty.jpg" />
+    <Type name="PWR_AC" imgfile="com/winnertel/ems/epon/iad/bbs1000/gui/shelfview/resource/card_pwr_ac.jpg" />
+	</Card>
+	<Port>
+		<Type name="GSM" imgfile="com/winnertel/ems/epon/iad/bbs1000/gui/shelfview/resource/port_filber.gif" />
+		<Type name="LTM" imgfile="com/winnertel/ems/epon/iad/bbs1000/gui/shelfview/resource/port_filber.gif" />
+	</Port>
+	<Led>
+		<Type name="LED_GREEN" imgfile="com/winnertel/ems/epon/iad/bbs1000/gui/shelfview/resource/led_green.gif" />
+		<Type name="LED_RED" imgfile="com/winnertel/ems/epon/iad/bbs1000/gui/shelfview/resource/led_red.gif" />
+		<Type name="LED_YELLOW" imgfile="com/winnertel/ems/epon/iad/bbs1000/gui/shelfview/resource/led_yellow.gif" />
+		<Type name="LED_OFF" imgfile="com/winnertel/ems/epon/iad/bbs1000/gui/shelfview/resource/led_off.gif" />
+	</Led>
+</IltType>

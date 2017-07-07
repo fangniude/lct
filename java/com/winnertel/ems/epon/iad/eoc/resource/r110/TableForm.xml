@@ -1,0 +1,1202 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<TableForm>
+    <TablePanelList>
+        <!-- ModEoCCBATCardTable_Panel-->
+        <Panel name="ModEoCCBATCardTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.eoc.mib.ModEoCCBATCardTable">
+                <Field name="modEoCCBATCardIndex" mib_property="modEoCCBATCardIndex"/>
+                <Field name="modEoCCBATCardMACAddress" mib_property="modEoCCBATCardMACAddress"/>
+                <Field name="modEoCCBATCardOnlineStatus" mib_property="modEoCCBATCardOnlineStatus"/>
+                <Field name="modEoCCBATCardModelNumber" mib_property="modEoCCBATCardModelNumber"/>
+                <Field name="modEoCCBATCardSoftwareVersion" mib_property="modEoCCBATCardSoftwareVersion"/>
+                <!--Field name="modEoCCBATCardReset" mib_property="modEoCCBATCardReset" /-->
+                <Field name="modEoCCBATCardUpLinkBroadcastFrameSendIntervalBeforeAck"
+                       mib_property="modEoCCBATCardUpLinkBroadcastFrameSendIntervalBeforeAck"/>
+                <Field name="modEoCCBATCardUpLinkBroadcastFrameSendIntervalAfterAck"
+                       mib_property="modEoCCBATCardUpLinkBroadcastFrameSendIntervalAfterAck"/>
+                <!--Field name="modEoCCBATCardUpLinkDeviceMACAddress" mib_property="modEoCCBATCardUpLinkDeviceMACAddress" /-->
+                <!--Field name="modEoCCBATCardUpLinkDevicePortNumber" mib_property="modEoCCBATCardUpLinkDevicePortNumber" /-->
+                <!--Field name="modEoCCBATCardConfigurationSaving" mib_property="modEoCCBATCardConfigurationSaving" /-->
+                <Field name="modEoCCBATCardConfigurationResult" mib_property="modEoCCBATCardConfigurationResult"/>
+
+            </Table>
+            <!--Button id="Add_ModEoCCBATCardTable" type="Add">
+              <Panel action_id="Add_ModEoCCBATCardTable_Log" class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCBATCardTablePanel" />
+            </Button-->
+
+            <Button id="Modify_ModEoCCBATCardTable" type="Modify"
+                    business_checker="com.winnertel.ems.epon.iad.eoc.checker.ModifyModEoCCBATCardTableChecker">
+                <Panel action_id="Modify_ModEoCCBATCardTable_Log"
+                       class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCBATCardTablePanel"/>
+            </Button>
+            <Button id="Reset_Card" type="Custom" text="Reset Card"
+                    business_checker="com.winnertel.ems.epon.iad.eoc.checker.ResetModEoCCBATCardTableChecker">
+                <Action id="Reset_Card" class="com.winnertel.ems.epon.iad.eoc.gui.action.ResetCardAction"/>
+            </Button>
+
+            <!--Button id="Save_Config" type="Custom" text="Save Configuration">
+                <Action id="Save_Config" class="com.winnertel.ems.epon.iad.eoc.gui.action.SaveConfigAction"/>
+            </Button-->
+            <!--Button id="Delete_ModEoCCBATCardTable" type="Delete" /-->
+            <Button type="Refresh"/>
+        </Panel>
+        <!-- ModEoCCBATAdminSNMPCommunityTable_Panel-->
+        <Panel name="ModEoCCBATAdminSNMPCommunityTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.eoc.mib.ModEoCCBATAdminSNMPCommunityTable">
+                <Field name="modEoCCBATAdminSNMPCommunityIndex" mib_property="modEoCCBATAdminSNMPCommunityIndex"/>
+                <Field name="modEoCCBATAdminSNMPCommunity" mib_property="modEoCCBATAdminSNMPCommunity"/>
+                <Field name="modEoCCBATAdminSNMPCommunityPermission"
+                       mib_property="modEoCCBATAdminSNMPCommunityPermission"/>
+
+
+            </Table>
+            <Button id="Add_ModEoCCBATAdminSNMPCommunityTable" type="Add">
+                <Panel action_id="Add_ModEoCCBATAdminSNMPCommunityTable_Log"
+                       class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCBATAdminSNMPCommunityTablePanel"/>
+            </Button>
+            <!--Button id="Modify_ModEoCCBATAdminSNMPCommunityTable" type="Modify">
+              <Panel action_id="Modify_ModEoCCBATAdminSNMPCommunityTable_Log" class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCBATAdminSNMPCommunityTablePanel" />
+            </Button-->
+            <Button id="Delete_ModEoCCBATAdminSNMPCommunityTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- ModEoCCBATCardRFGroup_Panel-->
+        <Panel name="ModEoCCBATCardRFGroup_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.eoc.mib.ModEoCCBATCardRFGroup">
+                <Field name="modEoCCBATCardRFIndex" mib_property="modEoCCBATCardRFIndex"/>
+                <Field name="modEoCCBATCardRFLinkMaximum" mib_property="modEoCCBATCardRFLinkMaximum"/>
+                <Field name="modEoCCBATCardRFOutputLevel" mib_property="modEoCCBATCardRFOutputLevel"/>
+                <Field name="modEoCCBATCardRFDownstreamStartFreq" mib_property="modEoCCBATCardRFDownstreamStartFreq"/>
+                <Field name="modEoCCBATCardRFDownstreamStopFreq" mib_property="modEoCCBATCardRFDownstreamStopFreq"/>
+                <Field name="modEoCCBATCardRFUpstreamStartFreq" mib_property="modEoCCBATCardRFUpstreamStartFreq"/>
+                <Field name="modEoCCBATCardRFUpstreamStopFreq" mib_property="modEoCCBATCardRFUpstreamStopFreq"/>
+
+            </Table>
+            <!-- not support(gyf) Button id="Add_ModEoCCBATCardRFGroup" type="Add">
+              <Panel action_id="Add_ModEoCCBATCardRFGroup_Log" class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCBATCardRFGroupPanel" />
+            </Button-->
+            <Button id="Modify_ModEoCCBATCardRFGroup" type="Modify">
+                <Panel action_id="Modify_ModEoCCBATCardRFGroup_Log"
+                       class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCBATCardRFGroupPanel"/>
+            </Button>
+            <!--Button id="Delete_ModEoCCBATCardRFGroup" type="Delete" /-->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- ModEoCCBATCardMACCNUIsolationTable_Panel-->
+        <Panel name="ModEoCCBATCardMACCNUIsolationTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.eoc.mib.ModEoCCBATCardMACCNUIsolationTable">
+                <Field name="modEoCCBATCardMACCNUIsolationIndex" mib_property="modEoCCBATCardMACCNUIsolationIndex"/>
+                <Field name="modEoCCBATCardMACCNUIsolationEN" mib_property="modEoCCBATCardMACCNUIsolationEN"/>
+
+            </Table>
+            <!--Button id="Add_ModEoCCBATCardMACCNUIsolationTable" type="Add">
+              <Panel action_id="Add_ModEoCCBATCardMACCNUIsolationTable_Log" class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCBATCardMACCNUIsolationTablePanel" />
+            </Button-->
+            <Button id="Modify_ModEoCCBATCardMACCNUIsolationTable" type="Modify">
+                <Panel action_id="Modify_ModEoCCBATCardMACCNUIsolationTable_Log"
+                       class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCBATCardMACCNUIsolationTablePanel"/>
+            </Button>
+            <!--Button id="Delete_ModEoCCBATCardMACCNUIsolationTable" type="Delete" /-->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- ModEoCCNUWhiteListTable_Panel-->
+        <Panel name="ModEoCCNUWhiteListTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.eoc.mib.ModEoCCNUWhiteListTable">
+                <Field name="modEoCCNUWhiteListIndex" mib_property="modEoCCNUWhiteListIndex"/>
+                <!--Field name="modEoCCNUWhiteListIPAddress" mib_property="modEoCCNUWhiteListIPAddress" /-->
+                <Field name="modEoCCNUWhiteListMACAddress" mib_property="modEoCCNUWhiteListMACAddress"/>
+                <Field name="modEoCCNUWhiteListAuthorization" mib_property="modEoCCNUWhiteListAuthorization"/>
+                <Field name="modEoCCNUWhiteListRFOutputLevel" mib_property="modEoCCNUWhiteListRFOutputLevel"/>
+                <Field name="modEoCCNUWhiteListAutoUpgradeEN" mib_property="modEoCCNUWhiteListAutoUpgradeEN"/>
+                <Field name="modEoCCNUWhiteListRegisterOnlineStatus"
+                       mib_property="modEoCCNUWhiteListRegisterOnlineStatus"/>
+                <!--Field name="modEoCCNUWhiteListStartTime" mib_property="modEoCCNUWhiteListStartTime" />
+                <Field name="modEoCCNUWhiteListEndTime" mib_property="modEoCCNUWhiteListEndTime" /-->
+
+
+            </Table>
+            <Button id="Add_ModEoCCNUWhiteListTable" type="Add">
+                <Panel action_id="Add_ModEoCCNUWhiteListTable_Log"
+                       class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCNUWhiteListTablePanel"/>
+            </Button>
+            <Button id="Modify_ModEoCCNUWhiteListTable" type="Modify">
+                <Panel action_id="Modify_ModEoCCNUWhiteListTable_Log"
+                       class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCNUWhiteListTablePanel"/>
+            </Button>
+            <Button id="Delete_ModEoCCNUWhiteListTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- ModEoCCNUTable_Panel-->
+        <Panel name="ModEoCCNUTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.eoc.mib.r110.ModEoCCNUTable">
+                <Field name="modEoCCNUCBATCardIndex" mib_property="modEoCCNUCBATCardIndex"/>
+                <Field name="modEoCCNUIndex" mib_property="modEoCCNUIndex"/>
+                <Field name="modEoCCNUMACAddress" mib_property="modEoCCNUMACAddress"/>
+                <Field name="installAddress" mib_property="installAddress"/>
+                <Field name="modEoCCNUOnlineStatus" mib_property="modEoCCNUOnlineStatus"/>
+                <Field name="modEoCCNUModelNumber" mib_property="modEoCCNUModelNumber"/>
+                <Field name="modEoCCNUPortAmount" mib_property="modEoCCNUPortAmount"/>
+                <Field name="modEoCCNUAuthorizationState" mib_property="modEoCCNUAuthorizationState"/>
+                <Field name="modEoCCNUSoftwareVersion" mib_property="modEoCCNUSoftwareVersion"/>
+                <!--Field name="modEoCCNUReset" mib_property="modEoCCNUReset" /-->
+                <Field name="modEoCCNURFAttenuation" mib_property="modEoCCNURFAttenuation"/>
+                <Field name="modEoCCNURFDownstreamQuality" mib_property="modEoCCNURFDownstreamQuality"/>
+                <Field name="modEoCCNURFUpstreamQuality" mib_property="modEoCCNURFUpstreamQuality"/>
+                <Field name="modEoCCNUPhyDownstreamRate" mib_property="modEoCCNUPhyDownstreamRate"/>
+                <Field name="modEoCCNUPhyUpstreamRate" mib_property="modEoCCNUPhyUpstreamRate"/>
+                <!--Field name="modEoCCNUConfigurationSaving" mib_property="modEoCCNUConfigurationSaving" /-->
+                <Field name="modEoCCNUConfigurationResult" mib_property="modEoCCNUConfigurationResult"/>
+
+            </Table>
+            <!--Button id="Add_ModEoCCNUTable" type="Add">
+              <Panel action_id="Add_ModEoCCNUTable_Log" class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCNUTablePanel" />
+            </Button-->
+            <!--Button id="Modify_ModEoCCNUTable" type="Modify">
+              <Panel action_id="Modify_ModEoCCNUTable_Log" class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCNUTablePanel" />
+            </Button-->
+
+            <Button id="Reset_CNU" type="Custom" text="Reset CNU">
+                <Action id="Reset_CNU" class="com.winnertel.ems.epon.iad.eoc.gui.r110.action.ResetCNUAction"/>
+            </Button>
+
+            <Button id="Save_CNU" type="Custom" text="Save CNU Configuration">
+                <Action id="Save_CNU" class="com.winnertel.ems.epon.iad.eoc.gui.action.SaveCNUConfigAction"/>
+            </Button>
+
+            <Button id="Delete_ModEoCCNUTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- ModEoCCNUServiceTable_Panel-->
+        <Panel name="ModEoCCNUServiceTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.eoc.mib.ModEoCCNUServiceTable">
+                <Field name="modEoCCNUServiceIndex" mib_property="modEoCCNUServiceIndex"/>
+                <Field name="modEoCCNUServiceName" mib_property="modEoCCNUServiceName"/>
+                <Field name="modEoCCNUServiceMatchingValue" mib_property="modEoCCNUServiceMatchingValue"/>
+                <Field name="modEoCCNUServiceQOSPrio" mib_property="modEoCCNUServiceQOSPrio"/>
+                <Field name="modEoCCNUServiceDBADownstreamPIR" mib_property="modEoCCNUServiceDBADownstreamPIR"/>
+                <Field name="modEoCCNUServiceDBAUpstreamPIR" mib_property="modEoCCNUServiceDBAUpstreamPIR"/>
+                <Field name="modEoCCNUServiceDBADownstreamCIR" mib_property="modEoCCNUServiceDBADownstreamCIR"/>
+                <Field name="modEoCCNUServiceDBAUpstreamCIR" mib_property="modEoCCNUServiceDBAUpstreamCIR"/>
+                <Field name="modEoCCNUServiceMaxLatency" mib_property="modEoCCNUServiceMaxLatency"/>
+
+
+            </Table>
+            <Button id="Add_ModEoCCNUServiceTable" type="Add">
+                <Panel action_id="Add_ModEoCCNUServiceTable_Log"
+                       class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCNUServiceTablePanel"/>
+            </Button>
+            <Button id="Modify_ModEoCCNUServiceTable" type="Modify">
+                <Panel action_id="Modify_ModEoCCNUServiceTable_Log"
+                       class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCNUServiceTablePanel"/>
+            </Button>
+            <Button id="Delete_ModEoCCNUServiceTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- ModEoCCNUPortTable_Panel-->
+        <Panel name="ModEoCCNUPortTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.eoc.mib.ModEoCCNUPortTable" multiple_selection="true">
+                <Field name="modEoCCNUPortCBATCardIndex" mib_property="modEoCCNUPortCBATCardIndex"/>
+                <Field name="modEoCCNUPortCNUIndex" mib_property="modEoCCNUPortCNUIndex"/>
+                <Field name="modEoCCNUPortIndex" mib_property="modEoCCNUPortIndex"/>
+                <Field name="modEoCCNUPortEN" mib_property="modEoCCNUPortEN"/>
+                <Field name="modEoCCNUPortService" mib_property="modEoCCNUPortService"/>
+
+            </Table>
+            <!--Button id="Add_ModEoCCNUPortTable" type="Add">
+              <Panel action_id="Add_ModEoCCNUPortTable_Log" class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCNUPortTablePanel" />
+            </Button-->
+            <Button id="Modify_ModEoCCNUPortTable" type="Modify">
+                <Panel action_id="Modify_ModEoCCNUPortTable_Log"
+                       class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCNUPortTablePanel"/>
+            </Button>
+            <Button id="BatchModify_ModEoCCNUPortTable" type="Modify" text="BatchModify">
+                <Panel action_id="BatchModify_ModEoCCNUPortTable_Log"
+                       class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCCNUPortTable_BatchModifyPanel"/>
+                <!--Action id="BatchModify_ModEoCCNUPortTable" class="com.winnertel.ems.epon.iad.eoc.gui.action.BatchModifyModEoCCNUPortTableAction"/-->
+            </Button>
+            <!--Button id="Delete_ModEoCCNUPortTable" type="Delete" /-->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- ModEoCIGMPSnoopingTable_Panel-->
+        <Panel name="ModEoCIGMPSnoopingTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.eoc.mib.ModEoCIGMPSnoopingTable">
+                <Field name="modEoCIGMPSnoopingCBATCardIndex" mib_property="modEoCIGMPSnoopingCBATCardIndex"/>
+                <Field name="modEoCIGMPSnoopingCNUIndex" mib_property="modEoCIGMPSnoopingCNUIndex"/>
+                <!--Field name="modEoCIGMPSnoopingDevMACAddress" mib_property="modEoCIGMPSnoopingDevMACAddress" /-->
+                <Field name="modEoCIGMPSnoopingEN" mib_property="modEoCIGMPSnoopingEN"/>
+
+            </Table>
+            <!--Button id="Add_ModEoCIGMPSnoopingTable" type="Add">
+              <Panel action_id="Add_ModEoCIGMPSnoopingTable_Log" class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCIGMPSnoopingTablePanel" />
+            </Button-->
+            <Button id="Modify_ModEoCIGMPSnoopingTable" type="Modify">
+                <Panel action_id="Modify_ModEoCIGMPSnoopingTable_Log"
+                       class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCIGMPSnoopingTablePanel"/>
+            </Button>
+            <!--Button id="Delete_ModEoCIGMPSnoopingTable" type="Delete" /-->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- ModEoCVLANTable_Panel -->
+        <Panel name="ModEoCVLANTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.eoc.mib.ModEoCVLANTable">
+                <Field name="modEoCVLANIndex" mib_property="modEoCVLANIndex"/>
+                <Field name="modEoCVLANName" mib_property="modEoCVLANName"/>
+                <Field name="modEoCVLANFlag" mib_property="modEoCVLANFlag"/>
+
+
+            </Table>
+            <Button id="Add_ModEoCVLANTable" type="Add">
+                <Panel action_id="Add_ModEoCVLANTable_Log"
+                       class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCVLANTablePanel"/>
+            </Button>
+            <Button id="Modify_ModEoCVLANTable" type="Modify">
+                <Panel action_id="Modify_ModEoCVLANTable_Log"
+                       class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCVLANTablePanel"/>
+            </Button>
+            <Button id="Delete_ModEoCVLANTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- ModEoCVLANPortTable_Panel -->
+        <Panel name="ModEoCVLANPortTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.eoc.mib.ModEoCVLANPortTable">
+                <Field name="modEoCVLANCBATCardIndex" mib_property="modEoCVLANCBATCardIndex"/>
+                <Field name="modEoCVLANCNUIndex" mib_property="modEoCVLANCNUIndex"/>
+                <Field name="modEoCVLANPortIndex" mib_property="modEoCVLANPortIndex"/>
+                <Field name="modEoCVLANPortPVID" mib_property="modEoCVLANPortPVID"/>
+                <Field name="modEoCVLANPortTPID" mib_property="modEoCVLANPortTPID"/>
+                <Field name="modEoCVLANPortPrio" mib_property="modEoCVLANPortPrio"/>
+                <Field name="modEoCVLANPortVIDList" mib_property="modEoCVLANPortVIDList"/>
+                <Field name="modEoCVLANPortUntaggedVIDList" mib_property="modEoCVLANPortUntaggedVIDList"/>
+                <Field name="modEoCVLANPortMode" mib_property="modEoCVLANPortMode"/>
+
+            </Table>
+            <!--Button id="Add_ModEoCVLANPortTable" type="Add">
+              <Panel action_id="Add_ModEoCVLANPortTable_Log" class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCVLANPortTablePanel" />
+            </Button-->
+            <Button id="Modify_ModEoCVLANPortTable" type="Modify">
+                <Panel action_id="Modify_ModEoCVLANPortTable_Log"
+                       class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCVLANPortTablePanel"/>
+            </Button>
+            <!--Button id="Delete_ModEoCVLANPortTable" type="Delete" /-->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- ModEoCBroadcastStormProtectionTable_Panel -->
+        <Panel name="ModEoCBroadcastStormProtectionTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.eoc.mib.ModEoCBroadcastStormProtectionTable">
+                <Field name="modEoCBroadcastStormProtectionCBATCardIndex"
+                       mib_property="modEoCBroadcastStormProtectionCBATCardIndex"/>
+                <Field name="modEoCBroadcastStormProtectionCNUIndex"
+                       mib_property="modEoCBroadcastStormProtectionCNUIndex"/>
+                <Field name="modEoCBroadcastStormProtectionPortIndex"
+                       mib_property="modEoCBroadcastStormProtectionPortIndex"/>
+                <Field name="modEoCBroadcastStormProtectionEN" mib_property="modEoCBroadcastStormProtectionEN"/>
+                <Field name="modEoCBroadcastStormThreshold" mib_property="modEoCBroadcastStormThreshold"/>
+                <Field name="modEoCMulticastStormProtectionEN" mib_property="modEoCMulticastStormProtectionEN"/>
+                <Field name="modEoCMulticastStormThreshold" mib_property="modEoCMulticastStormThreshold"/>
+                <Field name="modEoCUnknownUnicastStormProtectionEN"
+                       mib_property="modEoCUnknownUnicastStormProtectionEN"/>
+                <Field name="modEoCUnknownUnicastStormThreshold" mib_property="modEoCUnknownUnicastStormThreshold"/>
+
+            </Table>
+            <!--Button id="Add_ModEoCBroadcastStormProtectionTable" type="Add">
+              <Panel action_id="Add_ModEoCBroadcastStormProtectionTable_Log" class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCBroadcastStormProtectionTablePanel" />
+            </Button-->
+            <Button id="Modify_ModEoCBroadcastStormProtectionTable" type="Modify">
+                <Panel action_id="Modify_ModEoCBroadcastStormProtectionTable_Log"
+                       class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCBroadcastStormProtectionTablePanel"/>
+            </Button>
+            <!--Button id="Delete_ModEoCBroadcastStormProtectionTable" type="Delete" /-->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- ModEoCSoftwareUpgradeTable_Panel -->
+        <Panel name="ModEoCSoftwareUpgradeTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.eoc.mib.ModEoCSoftwareUpgradeTable">
+                <Field name="modEoCSoftwareUpgradeCBATCardIndex" mib_property="modEoCSoftwareUpgradeCBATCardIndex"/>
+                <Field name="modEoCSoftwareUpgradeCNUIndex" mib_property="modEoCSoftwareUpgradeCNUIndex"/>
+                <!--Field name="modEoCSoftwareUpgradeMACAddress" mib_property="modEoCSoftwareUpgradeMACAddress" /-->
+                <Field name="modEoCSoftwareUpgradeDevType" mib_property="modEoCSoftwareUpgradeDevType"/>
+                <Field name="modEoCSoftwareUpgradeFileName" mib_property="modEoCSoftwareUpgradeFileName"/>
+                <Field name="modEoCSoftwareUpgradeProceed" mib_property="modEoCSoftwareUpgradeProceed"/>
+                <Field name="modEoCSoftwareUpgradeResult" mib_property="modEoCSoftwareUpgradeResult"/>
+
+            </Table>
+            <!--Button id="Add_ModEoCSoftwareUpgradeTable" type="Add">
+              <Panel action_id="Add_ModEoCSoftwareUpgradeTable_Log" class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCSoftwareUpgradeTablePanel" />
+            </Button-->
+            <Button id="Modify_ModEoCSoftwareUpgradeTable" type="Modify">
+                <Panel action_id="Modify_ModEoCSoftwareUpgradeTable_Log"
+                       class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCSoftwareUpgradeTablePanel"/>
+            </Button>
+            <!--Button id="Delete_ModEoCSoftwareUpgradeTable" type="Delete" /-->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- ModEoCTrapTable_Panel -->
+        <Panel name="ModEoCTrapTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.eoc.mib.ModEoCTrapTable">
+                <Field name="modEoCTrapIndex" mib_property="modEoCTrapIndex"/>
+                <Field name="modEoCTrapIP" mib_property="modEoCTrapIP"/>
+                <Field name="modEoCTrapCommunity" mib_property="modEoCTrapCommunity"/>
+                <!--Field name="modEoCTrapStatus" mib_property="modEoCTrapStatus" /-->
+
+
+            </Table>
+            <Button id="Add_ModEoCTrapTable" type="Add">
+                <Panel action_id="Add_ModEoCTrapTable_Log"
+                       class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCTrapTablePanel"/>
+            </Button>
+            <Button id="Modify_ModEoCTrapTable" type="Modify">
+                <Panel action_id="Modify_ModEoCTrapTable_Log"
+                       class="com.winnertel.ems.epon.iad.eoc.gui.ModEoCTrapTablePanel"/>
+            </Button>
+            <Button id="Delete_ModEoCTrapTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- AnalogPropertyTable_Panel -->
+        <Panel name="AnalogPropertyTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.eoc.mib.AnalogPropertyTable">
+                <Field name="analogAlarmParameterOID" mib_property="analogAlarmParameterOID"/>
+                <Field name="analogAlarmEnable" mib_property="analogAlarmEnable"/>
+                <Field name="analogAlarmState" mib_property="analogAlarmState"/>
+                <Field name="analogAlarmHIHI" mib_property="analogAlarmHIHI"/>
+                <Field name="analogAlarmHI" mib_property="analogAlarmHI"/>
+                <Field name="analogAlarmLO" mib_property="analogAlarmLO"/>
+                <Field name="analogAlarmLOLO" mib_property="analogAlarmLOLO"/>
+                <Field name="analogAlarmDeadband" mib_property="analogAlarmDeadband"/>
+
+            </Table>
+            <!--Button id="Add_AnalogPropertyTable" type="Add">
+              <Panel action_id="Add_AnalogPropertyTable_Log" class="com.winnertel.ems.epon.iad.eoc.gui.AnalogPropertyTablePanel" />
+            </Button-->
+            <Button id="Modify_AnalogPropertyTable" type="Modify">
+                <Panel action_id="Modify_AnalogPropertyTable_Log"
+                       class="com.winnertel.ems.epon.iad.eoc.gui.AnalogPropertyTablePanel"/>
+            </Button>
+            <!--Button id="Delete_AnalogPropertyTable" type="Delete" /-->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- DiscretePropertyTable_Panel -->
+        <Panel name="DiscretePropertyTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.eoc.mib.DiscretePropertyTable">
+                <Field name="discreteAlarmParameterOID" mib_property="discreteAlarmParameterOID"/>
+                <Field name="discreteAlarmValue" mib_property="discreteAlarmParameterOID"/>
+                <!--discreteAlarmValue get from discreteAlarmParameterOID -->
+                <Field name="discreteAlarmEnable" mib_property="discreteAlarmEnable"/>
+                <Field name="discreteAlarmState" mib_property="discreteAlarmState"/>
+
+            </Table>
+            <!--Button id="Add_DiscretePropertyTable" type="Add">
+              <Panel action_id="Add_DiscretePropertyTable_Log" class="com.winnertel.ems.epon.iad.eoc.gui.DiscretePropertyTablePanel" />
+            </Button-->
+            <Button id="Modify_DiscretePropertyTable" type="Modify">
+                <Panel action_id="Modify_DiscretePropertyTable_Log"
+                       class="com.winnertel.ems.epon.iad.eoc.gui.DiscretePropertyTablePanel"/>
+            </Button>
+            <!--Button id="Delete_DiscretePropertyTable" type="Delete" /-->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- CurrentAlarmTable_Panel -->
+        <Panel name="CurrentAlarmTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.eoc.mib.CurrentAlarmTable">
+                <Field name="currentAlarmOID" mib_property="currentAlarmOID"/>
+                <Field name="currentAlarmState" mib_property="currentAlarmState"/>
+                <Field name="currentAlarmValue" mib_property="currentAlarmValue"/>
+
+            </Table>
+            <!--Button id="Add_CurrentAlarmTable" type="Add">
+              <Panel action_id="Add_CurrentAlarmTable_Log" class="com.winnertel.ems.epon.iad.eoc.gui.CurrentAlarmTablePanel" />
+            </Button>
+            <Button id="Modify_CurrentAlarmTable" type="Modify">
+              <Panel action_id="Modify_CurrentAlarmTable_Log" class="com.winnertel.ems.epon.iad.eoc.gui.CurrentAlarmTablePanel" />
+            </Button>
+            <Button id="Delete_CurrentAlarmTable" type="Delete" /-->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- AlarmLogTable_Panel -->
+        <Panel name="AlarmLogTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.eoc.mib.AlarmLogTable">
+                <Field name="alarmLogIndex" mib_property="alarmLogIndex"/>
+                <!--Field name="alarmLogInformation" mib_property="alarmLogInformation" /-->
+
+                <Field name="alarmLogTime" mib_property="alarmLogTime"/>
+                <Field name="alarmLogType" mib_property="alarmLogType"/>
+                <Field name="alarmLogMessage" mib_property="alarmLogMessage"/>
+            </Table>
+            <!--Button id="Add_AlarmLogTable" type="Add">
+              <Panel action_id="Add_AlarmLogTable_Log" class="com.winnertel.ems.epon.iad.eoc.gui.AlarmLogTablePanel" />
+            </Button>
+            <Button id="Modify_AlarmLogTable" type="Modify">
+              <Panel action_id="Modify_AlarmLogTable_Log" class="com.winnertel.ems.epon.iad.eoc.gui.AlarmLogTablePanel" />
+            </Button>
+            <Button id="Delete_AlarmLogTable" type="Delete" /-->
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- ModEoCRealTimeStatisticTable_Panel -->
+        <Panel name="ModEoCRealTimeStatisticTable_Panel">
+            <Table mib_bean="com.winnertel.ems.epon.iad.eoc.mib.ModEoCRealTimeStatisticTableA">
+                <Field name="modEoCRealTimeStatisticCBATCardIndex" mib_property="modEoCRealTimeStatisticCBATCardIndex"/>
+                <Field name="modEoCRealTimeStatisticCNUIndex" mib_property="modEoCRealTimeStatisticCNUIndex"/>
+                <Field name="modEoCRealTimeStatisticTxByte" mib_property="modEoCRealTimeStatisticTxByte"/>
+                <Field name="modEoCRealTimeStatisticRxByte" mib_property="modEoCRealTimeStatisticRxByte"/>
+                <Field name="modEoCRealTimeStatisticTxPkt" mib_property="modEoCRealTimeStatisticTxPkt"/>
+                <Field name="modEoCRealTimeStatisticRxPkt" mib_property="modEoCRealTimeStatisticRxPkt"/>
+                <Field name="modEoCRealTimeStatisticTxBcast" mib_property="modEoCRealTimeStatisticTxBcast"/>
+                <Field name="modEoCRealTimeStatisticRxBcast" mib_property="modEoCRealTimeStatisticRxBcast"/>
+                <Field name="modEoCRealTimeStatisticTxMcast" mib_property="modEoCRealTimeStatisticTxMcast"/>
+                <Field name="modEoCRealTimeStatisticRxMcast" mib_property="modEoCRealTimeStatisticRxMcast"/>
+                <Field name="modEoCRealTimeStatisticRxCrc" mib_property="modEoCRealTimeStatisticRxCrc"/>
+                <Field name="modEoCRealTimeStatisticTxShort" mib_property="modEoCRealTimeStatisticTxShort"/>
+                <Field name="modEoCRealTimeStatisticRxShort" mib_property="modEoCRealTimeStatisticRxShort"/>
+                <Field name="modEoCRealTimeStatisticTxDropped" mib_property="modEoCRealTimeStatisticTxDropped"/>
+                <Field name="modEoCRealTimeStatisticRxDropped" mib_property="modEoCRealTimeStatisticRxDropped"/>
+                <Field name="modEoCRealTimeStatisticAveragePreFEC" mib_property="modEoCRealTimeStatisticAveragePreFEC"/>
+                <!--Field name="modEoCRealTimeStatisticReset" mib_property="modEoCRealTimeStatisticReset" /-->
+
+            </Table>
+            <!--Button id="Add_ModEoCRealTimeStatisticTable" type="Add">
+              <Panel action_id="Add_ModEoCRealTimeStatisticTable_Log" class=".gui.ModEoCRealTimeStatisticTablePanel" />
+            </Button>
+            <Button id="Modify_ModEoCRealTimeStatisticTable" type="Modify">
+              <Panel action_id="Modify_ModEoCRealTimeStatisticTable_Log" class=".gui.ModEoCRealTimeStatisticTablePanel" />
+            </Button>
+            <Button id="Delete_ModEoCRealTimeStatisticTable" type="Delete" /-->
+
+            <Button id="StatisticReset" type="Custom" text="Reset Statistic">
+                <Action id="StatisticReset" class="com.winnertel.ems.epon.iad.eoc.gui.action.ResetStatisticAction"/>
+            </Button>
+
+            <Button type="Refresh"/>
+        </Panel>
+
+    </TablePanelList>
+
+    <FieldList>
+
+        <!-- ModEoCCBATCardTable_Panel-->
+        <Field name="modEoCCBATCardIndex" label="modEoCCBATCardIndex">
+
+        </Field>
+        <Field name="modEoCCBATCardMACAddress" label="modEoCCBATCardMACAddress"
+               formatter="com.winnertel.em.standard.snmp.gui.formatter.MacAddressFormatter">
+
+        </Field>
+        <Field name="modEoCCBATCardOnlineStatus" label="modEoCCBATCardOnlineStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="0" display="offline"/>
+                    <Entry value="1" display="online"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="modEoCCBATCardModelNumber" label="modEoCCBATCardModelNumber">
+
+        </Field>
+        <Field name="modEoCCBATCardSoftwareVersion" label="modEoCCBATCardSoftwareVersion">
+
+        </Field>
+        <Field name="modEoCCBATCardReset" label="modEoCCBATCardReset">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="modEoCCBATCardUpLinkBroadcastFrameSendIntervalBeforeAck"
+               label="modEoCCBATCardUpLinkBroadcastFrameSendIntervalBeforeAck">
+
+        </Field>
+        <Field name="modEoCCBATCardUpLinkBroadcastFrameSendIntervalAfterAck"
+               label="modEoCCBATCardUpLinkBroadcastFrameSendIntervalAfterAck">
+
+        </Field>
+        <Field name="modEoCCBATCardUpLinkDeviceMACAddress" label="modEoCCBATCardUpLinkDeviceMACAddress"
+               formatter="com.winnertel.em.standard.snmp.gui.formatter.MacAddressFormatter">
+
+        </Field>
+        <Field name="modEoCCBATCardUpLinkDevicePortNumber" label="modEoCCBATCardUpLinkDevicePortNumber">
+
+        </Field>
+        <Field name="modEoCCBATCardConfigurationSaving" label="modEoCCBATCardConfigurationSaving">
+
+        </Field>
+        <Field name="modEoCCBATCardConfigurationResult" label="modEoCCBATCardConfigurationResult">
+            <Mib>
+                <ValueMap>
+                    <Entry value="2" display="failed"/>
+                    <Entry value="1" display="running"/>
+                    <Entry value="0" display="success"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <!-- ModEoCCBATAdminSNMPCommunityTable_Panel-->
+        <Field name="modEoCCBATAdminSNMPCommunityIndex" label="modEoCCBATAdminSNMPCommunityIndex">
+
+        </Field>
+        <Field name="modEoCCBATAdminSNMPCommunity" label="modEoCCBATAdminSNMPCommunity">
+
+        </Field>
+        <Field name="modEoCCBATAdminSNMPCommunityPermission" label="modEoCCBATAdminSNMPCommunityPermission">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="ro"/>
+                    <Entry value="2" display="rw"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="modEoCCBATAdminSNMPCommunityRowStatus" label="modEoCCBATAdminSNMPCommunityRowStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="active"/>
+                    <Entry value="2" display="notInService"/>
+                    <Entry value="5" display="createAndWait"/>
+                    <Entry value="4" display="createAndGo"/>
+                    <Entry value="3" display="notReady"/>
+                    <Entry value="6" display="destroy"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- ModEoCCBATCardRFGroup_Panel-->
+        <Field name="modEoCCBATCardRFIndex" label="modEoCCBATCardRFIndex">
+
+        </Field>
+        <Field name="modEoCCBATCardRFLinkMaximum" label="modEoCCBATCardRFLinkMaximum">
+
+        </Field>
+        <Field name="modEoCCBATCardRFOutputLevel" label="modEoCCBATCardRFOutputLevel">
+
+        </Field>
+        <Field name="modEoCCBATCardRFDownstreamStartFreq" label="modEoCCBATCardRFDownstreamStartFreq">
+
+        </Field>
+        <Field name="modEoCCBATCardRFDownstreamStopFreq" label="modEoCCBATCardRFDownstreamStopFreq">
+
+        </Field>
+        <Field name="modEoCCBATCardRFUpstreamStartFreq" label="modEoCCBATCardRFUpstreamStartFreq">
+
+        </Field>
+        <Field name="modEoCCBATCardRFUpstreamStopFreq" label="modEoCCBATCardRFUpstreamStopFreq">
+
+        </Field>
+
+        <!-- ModEoCCBATCardMACCNUIsolationTable_Panel-->
+        <Field name="modEoCCBATCardMACCNUIsolationIndex" label="modEoCCBATCardMACCNUIsolationIndex">
+
+        </Field>
+        <Field name="modEoCCBATCardMACCNUIsolationEN" label="modEoCCBATCardMACCNUIsolationEN">
+            <Mib>
+                <ValueMap>
+                    <Entry value="2" display="false"/>
+                    <Entry value="1" display="true"/>
+                    <Entry value="0" display="false"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <!-- ModEoCCNUWhiteListTable_Panel-->
+        <Field name="modEoCCNUWhiteListIndex" label="modEoCCNUWhiteListIndex">
+
+        </Field>
+        <Field name="modEoCCNUWhiteListIPAddress" label="modEoCCNUWhiteListIPAddress">
+
+        </Field>
+        <Field name="modEoCCNUWhiteListMACAddress" label="modEoCCNUWhiteListMACAddress"
+               formatter="com.winnertel.em.standard.snmp.gui.formatter.MacAddressFormatter">
+
+        </Field>
+        <Field name="modEoCCNUWhiteListAuthorization" label="modEoCCNUWhiteListAuthorization">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="authorized"/>
+                    <Entry value="0" display="not-authorized"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="modEoCCNUWhiteListRFOutputLevel" label="modEoCCNUWhiteListRFOutputLevel">
+
+        </Field>
+        <Field name="modEoCCNUWhiteListAutoUpgradeEN" label="modEoCCNUWhiteListAutoUpgradeEN">
+            <Mib>
+                <ValueMap>
+                    <Entry value="0" display="disable"/>
+                    <Entry value="1" display="enable"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="modEoCCNUWhiteListRegisterOnlineStatus" label="modEoCCNUWhiteListRegisterOnlineStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="0" display="offline"/>
+                    <Entry value="1" display="online"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="modEoCCNUWhiteListStartTime" label="modEoCCNUWhiteListStartTime">
+
+        </Field>
+        <Field name="modEoCCNUWhiteListEndTime" label="modEoCCNUWhiteListEndTime">
+
+        </Field>
+        <Field name="modEoCCNUWhiteListRowStatus" label="modEoCCNUWhiteListRowStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="active"/>
+                    <Entry value="2" display="notInService"/>
+                    <Entry value="5" display="createAndWait"/>
+                    <Entry value="4" display="createAndGo"/>
+                    <Entry value="3" display="notReady"/>
+                    <Entry value="6" display="destroy"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- ModEoCCNUTable_Panel-->
+        <Field name="modEoCCNUCBATCardIndex" label="modEoCCNUCBATCardIndex">
+
+        </Field>
+        <Field name="modEoCCNUIndex" label="modEoCCNUIndex">
+
+        </Field>
+        <Field name="modEoCCNUMACAddress" label="modEoCCNUMACAddress"
+               formatter="com.winnertel.em.standard.snmp.gui.formatter.MacAddressFormatter">
+
+        </Field>
+        <Field name="installAddress" label="installAddress">
+
+        </Field>
+        <Field name="modEoCCNUOnlineStatus" label="modEoCCNUOnlineStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="0" display="offline"/>
+                    <Entry value="1" display="online"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="modEoCCNUModelNumber" label="modEoCCNUModelNumber">
+
+        </Field>
+        <Field name="modEoCCNUPortAmount" label="modEoCCNUPortAmount">
+
+        </Field>
+        <Field name="modEoCCNUAuthorizationState" label="modEoCCNUAuthorizationState">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="authorized"/>
+                    <Entry value="0" display="not-authorized"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="modEoCCNUSoftwareVersion" label="modEoCCNUSoftwareVersion">
+
+        </Field>
+        <!--Field name="modEoCCNUReset" label="modEoCCNUReset">
+
+                </Field-->
+        <Field name="modEoCCNURFAttenuation" label="modEoCCNURFAttenuation">
+
+        </Field>
+        <Field name="modEoCCNURFDownstreamQuality" label="modEoCCNURFDownstreamQuality">
+
+        </Field>
+        <Field name="modEoCCNURFUpstreamQuality" label="modEoCCNURFUpstreamQuality">
+
+        </Field>
+        <Field name="modEoCCNUPhyDownstreamRate" label="modEoCCNUPhyDownstreamRate"
+               formatter="com.winnertel.ems.epon.iad.eoc.formatter.KBPSFormatter">
+
+        </Field>
+        <Field name="modEoCCNUPhyUpstreamRate" label="modEoCCNUPhyUpstreamRate"
+               formatter="com.winnertel.ems.epon.iad.eoc.formatter.KBPSFormatter">
+
+        </Field>
+        <!--Field name="modEoCCNUConfigurationSaving" label="modEoCCNUConfigurationSaving">
+
+                </Field-->
+        <Field name="modEoCCNUConfigurationResult" label="modEoCCNUConfigurationResult">
+            <Mib>
+                <ValueMap>
+                    <Entry value="2" display="failed"/>
+                    <Entry value="1" display="running"/>
+                    <Entry value="0" display="success"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- ModEoCCNUServiceTable_Panel-->
+        <Field name="modEoCCNUServiceIndex" label="modEoCCNUServiceIndex">
+
+        </Field>
+        <Field name="modEoCCNUServiceName" label="modEoCCNUServiceName">
+
+        </Field>
+        <Field name="modEoCCNUServiceMatchingValue" label="modEoCCNUServiceMatchingValue">
+
+        </Field>
+        <Field name="modEoCCNUServiceQOSPrio" label="modEoCCNUServiceQOSPrio">
+
+        </Field>
+        <Field name="modEoCCNUServiceDBADownstreamPIR" label="modEoCCNUServiceDBADownstreamPIR"
+               formatter="com.winnertel.ems.epon.iad.eoc.formatter.KBPSFormatter">
+
+        </Field>
+        <Field name="modEoCCNUServiceDBAUpstreamPIR" label="modEoCCNUServiceDBAUpstreamPIR"
+               formatter="com.winnertel.ems.epon.iad.eoc.formatter.KBPSFormatter">
+
+        </Field>
+        <Field name="modEoCCNUServiceDBADownstreamCIR" label="modEoCCNUServiceDBADownstreamCIR"
+               formatter="com.winnertel.ems.epon.iad.eoc.formatter.KBPSFormatter">
+
+        </Field>
+        <Field name="modEoCCNUServiceDBAUpstreamCIR" label="modEoCCNUServiceDBAUpstreamCIR"
+               formatter="com.winnertel.ems.epon.iad.eoc.formatter.KBPSFormatter">
+
+        </Field>
+        <Field name="modEoCCNUServiceMaxLatency" label="modEoCCNUServiceMaxLatency">
+
+        </Field>
+        <Field name="modEoCCNUServiceRowStatus" label="modEoCCNUServiceRowStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="active"/>
+                    <Entry value="2" display="notInService"/>
+                    <Entry value="5" display="createAndWait"/>
+                    <Entry value="4" display="createAndGo"/>
+                    <Entry value="3" display="notReady"/>
+                    <Entry value="6" display="destroy"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- ModEoCCNUPortTable_Panel-->
+        <Field name="modEoCCNUPortCBATCardIndex" label="modEoCCNUPortCBATCardIndex">
+
+        </Field>
+        <Field name="modEoCCNUPortCNUIndex" label="modEoCCNUPortCNUIndex">
+
+        </Field>
+        <Field name="modEoCCNUPortIndex" label="modEoCCNUPortIndex">
+
+        </Field>
+        <Field name="modEoCCNUPortEN" label="modEoCCNUPortEN">
+            <Mib>
+                <ValueMap>
+                    <Entry value="0" display="disable"/>
+                    <Entry value="1" display="enable"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="modEoCCNUPortService" label="modEoCCNUPortService">
+
+        </Field>
+
+        <!-- ModEoCIGMPSnoopingTable_Panel-->
+        <Field name="modEoCIGMPSnoopingCBATCardIndex" label="modEoCIGMPSnoopingCBATCardIndex">
+
+        </Field>
+        <Field name="modEoCIGMPSnoopingCNUIndex" label="modEoCIGMPSnoopingCNUIndex">
+
+        </Field>
+        <Field name="modEoCIGMPSnoopingDevMACAddress" label="modEoCIGMPSnoopingDevMACAddress"
+               formatter="com.winnertel.em.standard.snmp.gui.formatter.MacAddressFormatter">
+
+        </Field>
+        <Field name="modEoCIGMPSnoopingEN" label="modEoCIGMPSnoopingEN">
+            <Mib>
+                <ValueMap>
+                    <Entry value="0" display="disable"/>
+                    <Entry value="1" display="enable"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- ModEoCVLANTable_Panel -->
+        <Field name="modEoCVLANIndex" label="modEoCVLANIndex">
+
+        </Field>
+        <Field name="modEoCVLANName" label="modEoCVLANName">
+
+        </Field>
+        <Field name="modEoCVLANFlag" label="modEoCVLANFlag">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="0" display="false"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="modEoCVLANRowStatus" label="modEoCVLANRowStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="active"/>
+                    <Entry value="2" display="notInService"/>
+                    <Entry value="5" display="createAndWait"/>
+                    <Entry value="4" display="createAndGo"/>
+                    <Entry value="3" display="notReady"/>
+                    <Entry value="6" display="destroy"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- ModEoCVLANPortTable_Panel -->
+        <Field name="modEoCVLANCBATCardIndex" label="modEoCVLANCBATCardIndex">
+
+        </Field>
+        <Field name="modEoCVLANCNUIndex" label="modEoCVLANCNUIndex">
+
+        </Field>
+        <Field name="modEoCVLANPortIndex" label="modEoCVLANPortIndex">
+
+        </Field>
+        <Field name="modEoCVLANPortPVID" label="modEoCVLANPortPVID">
+
+        </Field>
+        <Field name="modEoCVLANPortTPID" label="modEoCVLANPortTPID"
+               formatter="com.winnertel.ems.epon.iad.eoc.formatter.EocTpidFormatter">
+
+        </Field>
+        <Field name="modEoCVLANPortPrio" label="modEoCVLANPortPrio">
+
+        </Field>
+        <Field name="modEoCVLANPortVIDList" label="modEoCVLANPortVIDList"
+               formatter="com.winnertel.ems.epon.iad.eoc.formatter.VidListFormatter">
+
+        </Field>
+        <Field name="modEoCVLANPortUntaggedVIDList" label="modEoCVLANPortUntaggedVIDList"
+               formatter="com.winnertel.ems.epon.iad.eoc.formatter.VidListFormatter">
+
+        </Field>
+        <Field name="modEoCVLANPortMode" label="modEoCVLANPortMode">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="access"/>
+                    <Entry value="2" display="trunk"/>
+                    <Entry value="0" display="transparent"/>
+                    <Entry value="3" display="hybrid"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- ModEoCBroadcastStormProtectionTable_Panel -->
+        <Field name="modEoCBroadcastStormProtectionCBATCardIndex" label="modEoCBroadcastStormProtectionCBATCardIndex">
+
+        </Field>
+        <Field name="modEoCBroadcastStormProtectionCNUIndex" label="modEoCBroadcastStormProtectionCNUIndex">
+
+        </Field>
+        <Field name="modEoCBroadcastStormProtectionPortIndex" label="modEoCBroadcastStormProtectionPortIndex">
+
+        </Field>
+        <Field name="modEoCBroadcastStormProtectionEN" label="modEoCBroadcastStormProtectionEN">
+            <Mib>
+                <ValueMap>
+                    <Entry value="0" display="disable"/>
+                    <Entry value="1" display="enable"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="modEoCBroadcastStormThreshold" label="modEoCBroadcastStormThreshold">
+
+        </Field>
+        <Field name="modEoCMulticastStormProtectionEN" label="modEoCMulticastStormProtectionEN">
+            <Mib>
+                <ValueMap>
+                    <Entry value="0" display="disable"/>
+                    <Entry value="1" display="enable"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="modEoCMulticastStormThreshold" label="modEoCMulticastStormThreshold">
+
+        </Field>
+        <Field name="modEoCUnknownUnicastStormProtectionEN" label="modEoCUnknownUnicastStormProtectionEN">
+            <Mib>
+                <ValueMap>
+                    <Entry value="0" display="disable"/>
+                    <Entry value="1" display="enable"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="modEoCUnknownUnicastStormThreshold" label="modEoCUnknownUnicastStormThreshold">
+
+        </Field>
+
+        <!-- ModEoCSoftwareUpgradeTable_Panel -->
+        <Field name="modEoCSoftwareUpgradeCBATCardIndex" label="modEoCSoftwareUpgradeCBATCardIndex">
+
+        </Field>
+        <Field name="modEoCSoftwareUpgradeCNUIndex" label="modEoCSoftwareUpgradeCNUIndex">
+
+        </Field>
+        <Field name="modEoCSoftwareUpgradeMACAddress" label="modEoCSoftwareUpgradeMACAddress"
+               formatter="com.winnertel.em.standard.snmp.gui.formatter.MacAddressFormatter">
+
+        </Field>
+        <Field name="modEoCSoftwareUpgradeDevType" label="modEoCSoftwareUpgradeDevType">
+            <Mib>
+                <ValueMap>
+                    <Entry value="4" display="other"/>
+                    <Entry value="2" display="cbat-card"/>
+                    <Entry value="7" display="reserved3"/>
+                    <Entry value="5" display="reserved1"/>
+                    <Entry value="1" display="cbat"/>
+                    <Entry value="3" display="cnu"/>
+                    <Entry value="6" display="reserved2"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="modEoCSoftwareUpgradeFileName" label="modEoCSoftwareUpgradeFileName">
+
+        </Field>
+        <Field name="modEoCSoftwareUpgradeProceed" label="modEoCSoftwareUpgradeProceed">
+            <Mib>
+                <ValueMap>
+                    <Entry value="0" display="none"/>
+                    <Entry value="1" display="download"/>
+                    <Entry value="2" display="upgrade"/>
+                    <Entry value="3" display="upload"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="modEoCSoftwareUpgradeResult" label="modEoCSoftwareUpgradeResult">
+            <Mib>
+                <ValueMap>
+                    <Entry value="8" display="uploadfailed"/>
+                    <Entry value="4" display="upgrading"/>
+                    <Entry value="7" display="uploading"/>
+                    <Entry value="0" display="none"/>
+                    <Entry value="6" display="upgradesuccess"/>
+                    <Entry value="1" display="downloading"/>
+                    <Entry value="9" display="uploadsuccess"/>
+                    <Entry value="2" display="downloadfailed"/>
+                    <Entry value="5" display="upgradefailed"/>
+                    <Entry value="3" display="downloadsuccess"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- ModEoCTrapTable_Panel -->
+        <Field name="modEoCTrapIndex" label="modEoCTrapIndex">
+
+        </Field>
+        <Field name="modEoCTrapIP" label="modEoCTrapIP">
+
+        </Field>
+        <Field name="modEoCTrapCommunity" label="modEoCTrapCommunity">
+
+        </Field>
+        <Field name="modEoCTrapStatus" label="modEoCTrapStatus">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="true"/>
+                    <Entry value="2" display="false"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+
+
+        <!-- AnalogPropertyTable_Panel -->
+        <Field name="analogAlarmParameterOID" label="analogAlarmParameterOID"
+               formatter="com.winnertel.ems.epon.iad.eoc.formatter.AlarmParameterOIDFormatter">
+
+        </Field>
+        <Field name="analogAlarmEnable" label="analogAlarmEnable"
+               formatter="com.winnertel.ems.epon.iad.eoc.formatter.AnalogAlarmEnableFormatter">
+
+        </Field>
+        <Field name="analogAlarmState" label="analogAlarmState">
+            <Mib>
+                <ValueMap>
+                    <Entry value="2" display="aasHIHI"/>
+                    <Entry value="4" display="aasLO"/>
+                    <Entry value="3" display="aasHI"/>
+                    <Entry value="1" display="aasNominal"/>
+                    <Entry value="5" display="aasLOLO"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="analogAlarmHIHI" label="analogAlarmHIHI">
+
+        </Field>
+        <Field name="analogAlarmHI" label="analogAlarmHI">
+
+        </Field>
+        <Field name="analogAlarmLO" label="analogAlarmLO">
+
+        </Field>
+        <Field name="analogAlarmLOLO" label="analogAlarmLOLO">
+
+        </Field>
+        <Field name="analogAlarmDeadband" label="analogAlarmDeadband">
+
+        </Field>
+
+        <!-- DiscretePropertyTable_Panel -->
+        <Field name="discreteAlarmParameterOID" label="discreteAlarmParameterOID"
+               formatter="com.winnertel.ems.epon.iad.eoc.formatter.AlarmParameterOIDFormatter">
+
+        </Field>
+        <Field name="discreteAlarmValue" label="discreteAlarmValue"
+               formatter="com.winnertel.ems.epon.iad.eoc.formatter.DiscreteAlarmValueFormatter">
+
+        </Field>
+        <Field name="discreteAlarmEnable" label="discreteAlarmEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="3" display="enableMinor"/>
+                    <Entry value="2" display="enableMajor"/>
+                    <Entry value="1" display="disable"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="discreteAlarmState" label="discreteAlarmState">
+            <Mib>
+                <ValueMap>
+                    <Entry value="7" display="dasDiscreteMinor"/>
+                    <Entry value="6" display="dasDiscreteMajor"/>
+                    <Entry value="1" display="dasNominal"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+
+        <!-- CurrentAlarmTable_Panel -->
+        <Field name="currentAlarmOID" label="currentAlarmOID"
+               formatter="com.winnertel.ems.epon.iad.eoc.formatter.AlarmParameterOIDFormatter">
+
+        </Field>
+        <Field name="currentAlarmState" label="currentAlarmState">
+            <Mib>
+                <ValueMap>
+                    <Entry value="2" display="caasHIHI"/>
+                    <Entry value="3" display="caasHI"/>
+                    <Entry value="7" display="caasDiscreteMinor"/>
+                    <Entry value="4" display="caasLO"/>
+                    <Entry value="5" display="caasLOLO"/>
+                    <Entry value="6" display="caasDiscreteMajor"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="currentAlarmValue" label="currentAlarmValue"
+               formatter="com.winnertel.ems.epon.iad.eoc.formatter.DiscreteAlarmValueFormatter">
+
+        </Field>
+
+        <!-- AlarmLogTable_Panel -->
+        <Field name="alarmLogIndex" label="alarmLogIndex">
+
+        </Field>
+        <!--Field name="alarmLogInformation" label="alarmLogInformation" formatter="com.winnertel.ems.epon.iad.eoc.formatter.AlarmLogInformationFormatter" /-->
+
+        <Field name="alarmLogTime" label="alarmLogTime"
+               formatter="com.winnertel.ems.epon.iad.eoc.formatter.AlarmLogInformationFormatter"/>
+        <Field name="alarmLogType" label="alarmLogType"
+               formatter="com.winnertel.ems.epon.iad.eoc.formatter.AlarmLogInformationFormatter"/>
+        <Field name="alarmLogMessage" label="alarmLogMessage"
+               formatter="com.winnertel.ems.epon.iad.eoc.formatter.AlarmLogInformationFormatter"/>
+
+        <!-- ModEoCRealTimeStatisticTable_Panel -->
+        <Field name="modEoCRealTimeStatisticCBATCardIndex" label="modEoCRealTimeStatisticCBATCardIndex">
+
+        </Field>
+        <Field name="modEoCRealTimeStatisticCNUIndex" label="modEoCRealTimeStatisticCNUIndex">
+
+        </Field>
+        <Field name="modEoCRealTimeStatisticTxByte" label="modEoCRealTimeStatisticTxByte">
+
+        </Field>
+        <Field name="modEoCRealTimeStatisticRxByte" label="modEoCRealTimeStatisticRxByte">
+
+        </Field>
+        <Field name="modEoCRealTimeStatisticTxPkt" label="modEoCRealTimeStatisticTxPkt">
+
+        </Field>
+        <Field name="modEoCRealTimeStatisticRxPkt" label="modEoCRealTimeStatisticRxPkt">
+
+        </Field>
+        <Field name="modEoCRealTimeStatisticTxBcast" label="modEoCRealTimeStatisticTxBcast">
+
+        </Field>
+        <Field name="modEoCRealTimeStatisticRxBcast" label="modEoCRealTimeStatisticRxBcast">
+
+        </Field>
+        <Field name="modEoCRealTimeStatisticTxMcast" label="modEoCRealTimeStatisticTxMcast">
+
+        </Field>
+        <Field name="modEoCRealTimeStatisticRxMcast" label="modEoCRealTimeStatisticRxMcast">
+
+        </Field>
+        <Field name="modEoCRealTimeStatisticRxCrc" label="modEoCRealTimeStatisticRxCrc">
+
+        </Field>
+        <Field name="modEoCRealTimeStatisticTxShort" label="modEoCRealTimeStatisticTxShort">
+
+        </Field>
+        <Field name="modEoCRealTimeStatisticRxShort" label="modEoCRealTimeStatisticRxShort">
+
+        </Field>
+        <Field name="modEoCRealTimeStatisticTxDropped" label="modEoCRealTimeStatisticTxDropped">
+
+        </Field>
+        <Field name="modEoCRealTimeStatisticRxDropped" label="modEoCRealTimeStatisticRxDropped">
+
+        </Field>
+        <Field name="modEoCRealTimeStatisticAveragePreFEC" label="modEoCRealTimeStatisticAveragePreFEC">
+
+        </Field>
+        <Field name="modEoCRealTimeStatisticReset" label="modEoCRealTimeStatisticReset">
+            <Mib>
+                <ValueMap>
+                    <Entry value="0" display="none"/>
+                    <Entry value="1" display="clear"/>
+
+                </ValueMap>
+            </Mib>
+        </Field>
+
+    </FieldList>
+</TableForm>
