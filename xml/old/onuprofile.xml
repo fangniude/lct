@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<onu>
+    <onu_cfg_3-1 onu_attr="3-1" up_max_bw="100000" down_max_bw="100000" />
+</onu>
+<uni>
+    <onu_uni_3-1-1 onu_uni="3-1-1" onu_vlan_mode="1" onu_vlan_tag="101" onu_vlan_tpid="0x8100" policing_enable="1" policing_cir="5000" policing_cbs="1000"policing_ebs="1000" ds_enable="1" ds_cir="6000"ds_pir="6000" />
+</uni>

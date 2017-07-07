@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<onu>
+    <onu_1_1onu_id="1-1" onu_mac="54:93:59:00:e1:f1" />
+    <onu_1_2onu_id="1-2" onu_mac="00:07:ba:5d:bc:09" />
+    <onu_1_3onu_id="1-3" onu_mac="00:d0:d0:55:cc:99" />
+    <onu_1_4onu_id="1-4" onu_mac="2c:d1:41:60:81:de" />
+    <onu_1_5onu_id="1-5" onu_mac="00:0a:5a:37:ae:0c" />
+    <onu_cfg_1-1onu_attr="1-1" up_max_bw="19000" down_max_bw="29000" />
+    <onu_cfg_1-2 onu_attr="1-2"up_max_bw="100000" down_max_bw="100000" />
+</onu>
+<uni>
+    <onu_uni_1-1-2onu_uni="1-1-2" onu_vlan_mode="1" onu_vlan_tag="100" />
+    <onu_uni_1-5-4onu_uni="1-5-4" policing_enable="1" policing_cir="5000" policing_cbs="1000"policing_ebs="1000" ds_enable="1" ds_cir="6000"ds_pir="6000" />
+</uni>
