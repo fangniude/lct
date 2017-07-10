@@ -340,8 +340,8 @@
     </TabbedPane>
 
     <TabbedPane id="Batch_Config">
-        <Panel name="OltBase_Panel" class="com.winnertel.ems.epon.iad.bbs1000.gui.swing.OltBasePanel"/>
-        <Panel name="OnuBase_Panel" class="com.winnertel.ems.epon.iad.bbs1000.gui.swing.OnuBasePanel"/>
-        <Panel name="OnuProfile_Panel" class="com.winnertel.ems.epon.iad.bbs1000.gui.swing.OnuProfilePanel"/>
+        <Panel name="OltBase_Panel" class="com.winnertel.lct.batch.gui.OltBasePanel"/>
+        <Panel name="OnuBase_Panel" class="com.winnertel.lct.batch.gui.OnuBasePanel"/>
+        <Panel name="OnuProfile_Panel" class="com.winnertel.lct.batch.gui.OnuProfilePanel"/>
     </TabbedPane>
 </TabbedPaneList>

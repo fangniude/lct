@@ -11,7 +11,7 @@ public class XmlMapper {
     }
 
     private static void testOnuProfile() {
-        ProfileOnu onu = new ProfileOnu("id", "upMaxBw", "downMaxBw", "upCommitedBw", "downCommitedBw", "upFixBw", "upBurstSize", "downBurstSize", "upPriority");
+        ProfileOnu onu = new ProfileOnu("id", "upMaxBw", "downMaxBw", "upCommitedBw", "downCommitedBw", "upFixBw", "upBurstSize", "downBurstSize", "upPriority", "address", "mask", "gateway", "cvlan", "svlan", "priority");
         ProfileOnu onu1 = new ProfileOnu("id1", "upMaxBw1", "downMaxBw1", "upCommitedBw1", "downCommitedBw1", "upFixBw1", "upBurstSize1", "downBurstSize1", "upPriority1");
         ProfileOnu onu2 = new ProfileOnu("id2", "upMaxBw2", "downMaxBw2", "upCommitedBw2", "downCommitedBw2", "upFixBw2", "upBurstSize2", "downBurstSize2", "upPriority2");
 
@@ -32,7 +32,7 @@ public class XmlMapper {
         OnuMacBind bind1 = new OnuMacBind("id1", "mac1", "desc1");
         OnuMacBind bind2 = new OnuMacBind("id2", "mac2", "desc2");
 
-        OnuCfg onuCfg = new OnuCfg("id", "upMaxBw", "downMaxBw", "upCommitedBw", "downCommitedBw", "upFixBw", "upBurstSize", "downBurstSize", "upPriority");
+        OnuCfg onuCfg = new OnuCfg("id", "upMaxBw", "downMaxBw", "upCommitedBw", "downCommitedBw", "upFixBw", "upBurstSize", "downBurstSize", "upPriority", "address", "mask", "gateway", "cvlan", "svlan", "priority");
         OnuCfg onuCfg1 = new OnuCfg("id1", "upMaxBw1", "downMaxBw1", "upCommitedBw1", "downCommitedBw1", "upFixBw1", "upBurstSize1", "downBurstSize1", "upPriority1");
         OnuCfg onuCfg2 = new OnuCfg("id2", "upMaxBw2", "downMaxBw2", "upCommitedBw2", "downCommitedBw2", "upFixBw2", "upBurstSize2", "downBurstSize2", "upPriority2");
 
