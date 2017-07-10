@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <system>
+        <system_node
+                system_name="4f4c54" system_location="48616e677a686f75"
+                system_contact="485a" mgmt_vlan="0" mac_ageing="300" mac_auth="enable"
+                vlan_transparent="enable" global_p2p="disable" mgmt_ip="192.168.1.1"/>
+    </system>
+    <vlan>
+        <olt_vlan
+                vlan_id="1" vlan_name="Default" vlan_member="0xff" vlan_tagmember="0xff"/>
+        <olt_vlan
+                vlan_id="101" vlan_name="" vlan_member="0x1f" vlan_tagmember="0x1f"/>
+        <olt_vlan
+                vlan_id="40" vlan_name="" vlan_member="0x1f" vlan_tagmember="0x1f"/>
+        <olt_vlan
+                vlan_id="4016" vlan_name="" vlan_member="0x1f" vlan_tagmember="0x1f"/>
+        <olt_vlan
+                vlan_id="4017" vlan_name="" vlan_member="0x1f" vlan_tagmember="0x1f"/>
+        <olt_vlan
+                vlan_id="4020" vlan_name="" vlan_member="0x3f" vlan_tagmember="0x1f"/>
+    </vlan>
+    <qinq>
+        <olt_qinq
+                pon_id="1" qinq_index="1" qinq_startvlan="100" qinq_endvlan="102" qinq_ethertype="0x0"
+                qinq_newvlan="1000"/>
+        <olt_qinq
+                pon_id="2" qinq_index="2" qinq_startvlan="1" qinq_endvlan="10" qinq_ethertype="0x8863"
+                qinq_newvlan="1000"/>
+        <olt_qinq
+                pon_id="2" qinq_index="3" qinq_startvlan="11" qinq_endvlan="12" qinq_ethertype="0x8864"
+                qinq_newvlan="1000"/>
+        <olt_qinq
+                pon_id="2" qinq_index="4" qinq_startvlan="13" qinq_endvlan="14" qinq_ethertype="0x800"
+                qinq_newvlan="200"/>
+        <olt_qinq
+                pon_id="3" qinq_index="1" qinq_startvlan="16" qinq_endvlan="18" qinq_ethertype="0x0"
+                qinq_newvlan="1000"/>
+    </qinq>
+    <port>
+        <olt_port_attr
+                port_id="0" port_pvid="0" port_admin="1" port_description="epon1/1"/>
+        <olt_port_attr
+                port_id="1" port_pvid="0" port_admin="1" port_description="epon1/2"/>
+        <olt_port_attr
+                port_id="2" port_pvid="0" port_admin="1" port_description="epon1/3"/>
+        <olt_port_attr
+                port_id="3" port_pvid="0" port_admin="1" port_description="epon1/4"/>
+        <olt_port_attr
+                port_id="4" port_pvid="0" port_admin="1" port_description="ge2/1"/>
+        <olt_port_attr
+                port_id="5" port_pvid="4020" port_admin="1" port_description="ge2/2"/>
+        <olt_port_attr
+                port_id="6" port_pvid="0" port_admin="1" port_description="ge2/3"/>
+        <olt_port_attr
+                port_id="7" port_pvid="0" port_admin="1" port_description="ge2/4"/>
+    </port>
+</root>
