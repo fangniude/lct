@@ -57,6 +57,18 @@ public class ProfileOnu {
         this.mxuPriority = mxuPriority;
     }
 
+    public ProfileOnu(String id, String upMaxBw, String downMaxBw, String upCommittedBw, String downCommittedBw, String upFixBw, String upBurstSize, String downBurstSize, String upPriority) {
+        this.id = id;
+        this.upMaxBw = upMaxBw;
+        this.downMaxBw = downMaxBw;
+        this.upCommittedBw = upCommittedBw;
+        this.downCommittedBw = downCommittedBw;
+        this.upFixBw = upFixBw;
+        this.upBurstSize = upBurstSize;
+        this.downBurstSize = downBurstSize;
+        this.upPriority = upPriority;
+    }
+
     public String getId() {
         return id;
     }

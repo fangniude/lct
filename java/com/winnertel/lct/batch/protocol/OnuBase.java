@@ -11,19 +11,19 @@ import java.util.List;
 @Root(name = "root", strict = false)
 public class OnuBase {
     @Path("onu")
-    @ElementList(inline = true, type = OltQinQ.class, required = false)
+    @ElementList(inline = true, type = OnuMacBind.class, required = false)
     private List<OnuMacBind> qinqList;
     @Path("onu")
-    @ElementList(inline = true, type = OltQinQ.class, required = false)
+    @ElementList(inline = true, type = OnuCfg.class, required = false)
     private List<OnuCfg> onuCfg;
     @Path("uni")
-    @ElementList(inline = true, type = OltQinQ.class, required = false)
-    private List<OnuCfg> onuUni;
+    @ElementList(inline = true, type = OnuUni.class, required = false)
+    private List<OnuUni> onuUni;
 
     public OnuBase() {
     }
 
-    public OnuBase(List<OnuMacBind> qinqList, List<OnuCfg> onuCfg, List<OnuCfg> onuUni) {
+    public OnuBase(List<OnuMacBind> qinqList, List<OnuCfg> onuCfg, List<OnuUni> onuUni) {
         this.qinqList = qinqList;
         this.onuCfg = onuCfg;
         this.onuUni = onuUni;
@@ -66,11 +66,11 @@ public class OnuBase {
         this.onuCfg = onuCfg;
     }
 
-    public List<OnuCfg> getOnuUni() {
+    public List<OnuUni> getOnuUni() {
         return onuUni;
     }
 
-    public void setOnuUni(List<OnuCfg> onuUni) {
+    public void setOnuUni(List<OnuUni> onuUni) {
         this.onuUni = onuUni;
     }
 }

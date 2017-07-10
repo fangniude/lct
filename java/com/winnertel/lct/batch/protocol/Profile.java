@@ -12,11 +12,11 @@ import java.util.List;
 public class Profile {
 
     @Path("onu")
-    @ElementList(inline = true, type = OltQinQ.class, required = false)
+    @ElementList(inline = true, type = ProfileOnu.class, required = false)
     private List<ProfileOnu> onuList;
 
     @Path("uni")
-    @ElementList(inline = true, type = OltQinQ.class, required = false)
+    @ElementList(inline = true, type = ProfileUni.class, required = false)
     private List<ProfileUni> uniList;
 
     public Profile() {
