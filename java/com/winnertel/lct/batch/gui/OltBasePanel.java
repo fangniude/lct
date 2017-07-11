@@ -29,7 +29,7 @@ public class OltBasePanel extends UPanel {
         JTabbedPane jTabbedPane = new JTabbedPane();
 
 
-        SnmpTablePane vlanPanel = (SnmpTablePane) composer.composeSnmpTablePane("PortBasedVLAN_Panel");
+        SnmpTablePane vlanPanel = (SnmpTablePane) composer.composeSnmpTablePane("OltVlanTable_Panel");
         jTabbedPane.addTab(stringMap.getString("VLAN_Config"), vlanPanel);
         SnmpTablePane qinqPanel = (SnmpTablePane) composer.composeSnmpTablePane("OltSelectiveQinQ_Panel");
         jTabbedPane.addTab(stringMap.getString("QinQ_Config"), qinqPanel);

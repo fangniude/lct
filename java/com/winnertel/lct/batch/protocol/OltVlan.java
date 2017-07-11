@@ -3,6 +3,9 @@ package com.winnertel.lct.batch.protocol;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Root;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Root(name = "olt_vlan", strict = false)
 public class OltVlan {
     @Attribute(name = "vlan_id", required = false)
@@ -54,5 +57,14 @@ public class OltVlan {
 
     public void setTagMember(String tagMember) {
         this.tagMember = tagMember;
+    }
+
+    public Map<String, Object> toMap() {
+        Map<String, Object> map = new HashMap<>();
+        map.put("olt.vlan.id", id);
+        map.put("olt.vlan.name", name);
+        map.put("olt.vlan.member", member);
+        map.put("olt.vlan.tagMember", tagMember);
+        return map;
     }
 }

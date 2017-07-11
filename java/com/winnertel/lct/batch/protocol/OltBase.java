@@ -7,6 +7,7 @@ import org.simpleframework.xml.Root;
 import org.simpleframework.xml.core.Persister;
 
 import java.io.StringWriter;
+import java.util.Arrays;
 import java.util.List;
 
 @Root(name = "root", strict = false)
@@ -62,7 +63,11 @@ public class OltBase {
     }
 
     public List<OltVlan> getVlanList() {
-        return vlanList;
+        OltVlan oltVlan = new OltVlan("1", "name", "mem", "tag");
+        OltVlan oltVlan1 = new OltVlan("2", "name1", "mem1", "tag1");
+        OltVlan oltVlan2 = new OltVlan("3", "name2", "mem2", "tag2");
+        return Arrays.asList(oltVlan, oltVlan1, oltVlan2);
+//        return vlanList;
     }
 
     public void setVlanList(List<OltVlan> vlanList) {
