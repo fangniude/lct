@@ -5,9 +5,11 @@ import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Path;
 import org.simpleframework.xml.Root;
 import org.simpleframework.xml.core.Persister;
+import org.simpleframework.xml.stream.Format;
 
+import java.io.File;
 import java.io.StringWriter;
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 @Root(name = "root", strict = false)
@@ -18,11 +20,11 @@ public class OltBase {
 
     @Path("vlan")
     @ElementList(inline = true, type = OltVlan.class, required = false)
-    private List<OltVlan> vlanList;
+    private List<OltVlan> vlanList = new ArrayList<>();
 
     @Path("qinq")
     @ElementList(inline = true, type = OltQinQ.class, required = false)
-    private List<OltQinQ> qinqList;
+    private List<OltQinQ> qinqList = new ArrayList<>();
 
     public OltBase() {
     }
@@ -33,11 +35,28 @@ public class OltBase {
         this.qinqList = qinqList;
     }
 
+    public static OltBase fromFile(File oltFile) {
+        try {
+            return new Persister().read(OltBase.class, oltFile);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return new OltBase();
+    }
+
+    public void toFile(File oltFile) {
+        try {
+            new Persister(new Format("<?xml version=\"1.0\" encoding=\"utf-8\"?>")).write(this, oltFile);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     public static String toXml(OltBase data) {
         try {
             StringWriter out = new StringWriter();
-            new Persister().write(data, out);
-            return "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" + out.toString();
+            new Persister(new Format("<?xml version=\"1.0\" encoding=\"utf-8\"?>")).write(data, out);
+            return out.toString();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -63,11 +82,11 @@ public class OltBase {
     }
 
     public List<OltVlan> getVlanList() {
-        OltVlan oltVlan = new OltVlan("1", "name", "mem", "tag");
-        OltVlan oltVlan1 = new OltVlan("2", "name1", "mem1", "tag1");
-        OltVlan oltVlan2 = new OltVlan("3", "name2", "mem2", "tag2");
-        return Arrays.asList(oltVlan, oltVlan1, oltVlan2);
-//        return vlanList;
+//        OltVlan oltVlan = new OltVlan(1, "name", "mem", "tag");
+//        OltVlan oltVlan1 = new OltVlan(2, "name1", "mem1", "tag1");
+//        OltVlan oltVlan2 = new OltVlan(3, "name2", "mem2", "tag2");
+//        return Arrays.asList(oltVlan, oltVlan1, oltVlan2);
+        return vlanList;
     }
 
     public void setVlanList(List<OltVlan> vlanList) {

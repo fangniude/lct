@@ -1,0 +1,13 @@
+<root>
+   <system/>
+   <vlan>
+      <olt_vlan vlan_id="2" vlan_name="test" vlan_member="0x2" vlan_tagmember="0x22"/>
+      <olt_vlan vlan_id="2" vlan_name="test" vlan_member="0x22" vlan_tagmember="0x2A"/>
+      <olt_vlan vlan_id="2" vlan_name="test" vlan_member="0x22" vlan_tagmember="0x2A"/>
+      <olt_vlan vlan_id="2" vlan_name="test" vlan_member="0x22" vlan_tagmember="0x2A"/>
+      <olt_vlan vlan_id="2" vlan_name="test" vlan_member="0x22" vlan_tagmember="0x2A"/>
+      <olt_vlan vlan_id="2" vlan_name="test" vlan_member="0x22" vlan_tagmember="0x2A"/>
+      <olt_vlan vlan_id="2" vlan_name="test" vlan_member="0x02" vlan_tagmember="0x22"/>
+   </vlan>
+   <qinq/>
+</root>

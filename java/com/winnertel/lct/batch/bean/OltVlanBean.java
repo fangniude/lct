@@ -5,6 +5,8 @@ import com.winnertel.em.framework.model.snmp.ISnmpConstant;
 import com.winnertel.em.framework.model.snmp.ISnmpProxy;
 import com.winnertel.em.framework.model.snmp.SnmpMibBean;
 import com.winnertel.em.framework.model.snmp.SnmpMibBeanProperty;
+import com.winnertel.lct.batch.LctContants;
+import com.winnertel.lct.batch.protocol.XmlTable;
 import com.winnertel.lct.batch.proxy.XmlProxy;
 
 import java.util.Vector;
@@ -22,10 +24,11 @@ public class OltVlanBean extends SnmpMibBean {
 
     @Override
     protected void init() {
-        initProperty(ID, new SnmpMibBeanProperty(ID, "olt.vlan.id", ISnmpConstant.INTEGER));
-        initProperty(NAME, new SnmpMibBeanProperty(NAME, "olt.vlan.name", ISnmpConstant.STRING));
-        initProperty(MEMBER, new SnmpMibBeanProperty(MEMBER, "olt.vlan.member", ISnmpConstant.STRING));
-        initProperty(TAG_MEMBER, new SnmpMibBeanProperty(TAG_MEMBER, "olt.vlan.tagMember", ISnmpConstant.STRING));
+        initProperty(ID, new SnmpMibBeanProperty(ID, XmlTable.OltVlan.name() + ".id", ISnmpConstant.INTEGER));
+        initProperty(NAME, new SnmpMibBeanProperty(NAME, XmlTable.OltVlan.name() + ".name", ISnmpConstant.STRING));
+        initProperty(MEMBER, new SnmpMibBeanProperty(MEMBER, XmlTable.OltVlan.name() + ".member", ISnmpConstant.STRING));
+        initProperty(TAG_MEMBER, new SnmpMibBeanProperty(TAG_MEMBER, XmlTable.OltVlan.name() + ".tagMember", ISnmpConstant.STRING));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, XmlTable.OltVlan.name() + "." + LctContants.OPERATION, ISnmpConstant.STRING));
     }
 
 
@@ -91,14 +94,14 @@ public class OltVlanBean extends SnmpMibBean {
         prepareSave(getProperty(MEMBER));
         prepareSave(getProperty(TAG_MEMBER));
 
-        setRowStatus(4);
+        getProperty(ROW_STATUS).setValue(LctContants.ADD);
         prepareSave(getProperty(ROW_STATUS));
 
         return save();
     }
 
     public boolean delete() throws MibBeanException {
-        setRowStatus(6);
+        getProperty(ROW_STATUS).setValue(LctContants.DELETE);
         prepareSave(getProperty(ROW_STATUS));
 
         return save();
@@ -106,12 +109,26 @@ public class OltVlanBean extends SnmpMibBean {
 
     public static void main(String[] args) throws MibBeanException {
         OltVlanBean bean = new OltVlanBean(new XmlProxy("192.168.1.2"));
-        Vector vector = bean.retrieveAll();
+        Vector<OltVlanBean> vector = bean.retrieveAll();
         System.out.println(vector);
+
+        bean.setId(1);
+        bean.setName("t name");
+        bean.setMember("t mem");
+        bean.setTagMember("t tag");
+//        bean.add();
+        bean.modify();
+        bean.delete();
     }
 
+    @Override
     public String toString() {
-        return "vlan" + getId();
+        final StringBuilder sb = new StringBuilder("OltVlanBean{");
+        sb.append("id: ").append(getId());
+        sb.append("name: ").append(getName());
+        sb.append("member: ").append(getMember());
+        sb.append("tagMember: ").append(getTagMember());
+        sb.append('}');
+        return sb.toString();
     }
-
 }

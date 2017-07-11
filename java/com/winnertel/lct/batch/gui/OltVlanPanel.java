@@ -2,15 +2,12 @@ package com.winnertel.lct.batch.gui;
 
 import com.winnertel.em.framework.IApplication;
 import com.winnertel.em.framework.gui.swing.UPanel;
-import com.winnertel.em.framework.model.MibBeanException;
 import com.winnertel.em.standard.snmp.action.SnmpAction;
 import com.winnertel.em.standard.util.gui.input.IntegerTextField;
 import com.winnertel.em.standard.util.gui.input.StringTextField;
 import com.winnertel.em.standard.util.gui.layout.HSpacer;
 import com.winnertel.em.standard.util.gui.layout.NTLayout;
 import com.winnertel.em.standard.util.gui.layout.VSpacer;
-import com.winnertel.ems.epon.iad.bbs1000.ConfigUtility;
-import com.winnertel.ems.epon.iad.bbs1000.mib.r330.PortBasedVLAN;
 import com.winnertel.lct.batch.bean.OltVlanBean;
 import com.winnertel.lct.batch.proxy.XmlProxy;
 
@@ -27,8 +24,8 @@ public class OltVlanPanel extends UPanel {
     private final String utsLagExtDot1qVlanIndex = fStringMap.getString("utsLagExtDot1qVlanIndex") + ": ";
     private final String utsLagExtDot1qVlanName = fStringMap.getString("utsLagExtDot1qVlanName") + ": ";
 
-    private IntegerTextField tfUtsLagExtDot1qVlanIndex = new IntegerTextField();
-    private StringTextField tfUtsLagExtDot1qVlanName = new StringTextField();
+    private IntegerTextField idField = new IntegerTextField();
+    private StringTextField nameField = new StringTextField();
 
     // table for selecting "Tagged / Untagged" fields
     private JTable portSelectionTbl = null;
@@ -54,13 +51,13 @@ public class OltVlanPanel extends UPanel {
         baseInfoPanel1.setBorder(BorderFactory.createEtchedBorder());
 
         baseInfoPanel1.add(new JLabel(utsLagExtDot1qVlanIndex));
-        tfUtsLagExtDot1qVlanIndex.setName(fStringMap.getString("utsLagExtDot1qVlanIndex"));
-        baseInfoPanel1.add(tfUtsLagExtDot1qVlanIndex);
+        idField.setName(fStringMap.getString("utsLagExtDot1qVlanIndex"));
+        baseInfoPanel1.add(idField);
         baseInfoPanel1.add(new HSpacer());
 
         baseInfoPanel1.add(new JLabel(utsLagExtDot1qVlanName));
-        tfUtsLagExtDot1qVlanName.setName(fStringMap.getString("utsLagExtDot1qVlanName"));
-        baseInfoPanel1.add(tfUtsLagExtDot1qVlanName);
+        nameField.setName(fStringMap.getString("utsLagExtDot1qVlanName"));
+        baseInfoPanel1.add(nameField);
         baseInfoPanel1.add(new HSpacer());
 
         baseInfoPanel.add(baseInfoPanel1);
@@ -141,14 +138,14 @@ public class OltVlanPanel extends UPanel {
     }
 
     protected void initForm() {
-        tfUtsLagExtDot1qVlanIndex.setValueScope(2, 4094);
-        tfUtsLagExtDot1qVlanName.setLenScope(0, 16);
+        idField.setValueScope(2, 4094);
+        nameField.setLenScope(0, 16);
     }
 
     public void refresh() {
         try {
             if (SnmpAction.IType.ADD.equals(fCommand)) {
-                tfUtsLagExtDot1qVlanIndex.setEditable(true);
+                idField.setEditable(true);
                 portSelectionTblModel.getDataVector().clear();
                 Vector portList = getPortList();
                 for (int i = 0; i < portList.size(); i++) {
@@ -164,20 +161,21 @@ public class OltVlanPanel extends UPanel {
                     throw new RuntimeException("error");
                 }
 
-                tfUtsLagExtDot1qVlanIndex.setEditable(false);
-                tfUtsLagExtDot1qVlanIndex.setValue(mbean.getId());
-                tfUtsLagExtDot1qVlanName.setValue(mbean.getName());
+                idField.setEditable(false);
+                idField.setValue(mbean.getId());
+                nameField.setValue(mbean.getName());
                 portSelectionTblModel.getDataVector().clear(); // clear original data first.
-//                Set taggedPortList = parsePortListString(mbean.getUtsLagExtDot1qVlanTaggedPortListPorts());
-//                Set untaggedPortList = parsePortListString(mbean.getUtsLagExtDot1qVlanUnTaggedPortListPorts());
+
+                String tags = getTagedPort(mbean.getTagMember());
+                String untags = getUnTagedPort(mbean.getMember(), mbean.getTagMember());
 
                 Vector portList = getPortList();
                 for (int i = 0; i < portList.size(); i++) {
                     Vector tmpVector = new Vector();
                     String portName = (String) portList.elementAt(i);
                     tmpVector.add(portName);
-//                    tmpVector.add(taggedPortList.contains(portName));
-//                    tmpVector.add(untaggedPortList.contains(portName));
+                    tmpVector.add(tags.charAt(i) == '1');
+                    tmpVector.add(untags.charAt(i) == '1');
                     portSelectionTblModel.addRow(tmpVector);
                 }
             }
@@ -186,60 +184,65 @@ public class OltVlanPanel extends UPanel {
         }
     }
 
-    //modified by Zhou Chao, 2008/7/17
+    private String getUnTagedPort(String member, String tagMember) {
+        Byte mem = Byte.valueOf(tagMember.substring(2), 16);
+        Byte tag = Byte.valueOf(tagMember.substring(2), 16);
+        int unTag = mem ^ tag;
+        String str = Integer.toBinaryString(unTag);
+        StringBuilder sb = new StringBuilder(str).reverse();
+        while (sb.length() < 8) {
+            sb.append("0");
+        }
+        return sb.toString();
+    }
+
+    private String getTagedPort(String tagMember) {
+        String str = Integer.toBinaryString(Byte.valueOf(tagMember.substring(2), 16));
+        StringBuilder sb = new StringBuilder(str).reverse();
+        while (sb.length() < 8) {
+            sb.append("0");
+        }
+        return sb.toString();
+    }
+
     public void updateModel() {
         if (SnmpAction.IType.ADD.equals(fCommand)) {
-            setModel(new OltVlanBean(new XmlProxy(fApplication.getSnmpProxy().getTargetHost())));
-        }
-
-        OltVlanBean mbean = (OltVlanBean) getModel();
-        if (mbean == null) {
-            return;
-        }
-
-        if (SnmpAction.IType.ADD.equals(fCommand)) {
-            // here set the value of index
-
-            boolean isSingle = true;
-            int startIndex = 0;
-            int endIndex = 0;
-
-            String vlanName = tfUtsLagExtDot1qVlanName.getValue();
-            // get tagged/untagged/vid port lists
-            byte[] taggedPorts = ConfigUtility.StringArrayToPortMapping(getPortSelectionStr(1));
-            byte[] untaggedPorts = ConfigUtility.StringArrayToPortMapping(getPortSelectionStr(2));
-            byte[] vidPorts = ConfigUtility.StringArrayToPortMapping(getPortSelectionStr(3));
-
-            for (int i = startIndex; i < endIndex; i++) {
-                PortBasedVLAN bean = new PortBasedVLAN(fApplication.getSnmpProxy());
-                bean.setUtsLagExtDot1qVlanIndex(i);
-                bean.setUtsLagExtDot1qVlanName(vlanName);
-                bean.setUtsLagExtDot1qVlanTaggedPortListPorts(taggedPorts);
-                bean.setUtsLagExtDot1qVlanUnTaggedPortListPorts(untaggedPorts);
-
-                try {
-                    if (!bean.add())
-                        return;
-                } catch (MibBeanException e) {
-                    return;
-                }
-            }
-
-            // one (last) record
-//            mbean.setId(endIndex);
-//            mbean.setName(vlanName);
-//            mbean.setMember(taggedPorts);
-//            mbean.setTagMember(untaggedPorts);
+            OltVlanBean model = new OltVlanBean(new XmlProxy(fApplication.getSnmpProxy().getTargetHost()));
+            model.setId(idField.getValue());
+            model.setName(nameField.getValue());
+            model.setMember(getMember());
+            model.setTagMember(getTagMember());
+            setModel(model);
         } else {
-//            mbean.setUtsLagExtDot1qVlanName(tfUtsLagExtDot1qVlanName.getValue());
-//
-//            // get tagged/untagged/vid port lists
-//            byte[] taggedPorts = ConfigUtility.StringArrayToPortMapping(getPortSelectionStr(1));
-//            byte[] untaggedPorts = ConfigUtility.StringArrayToPortMapping(getPortSelectionStr(2));
-//            byte[] vidPorts = ConfigUtility.StringArrayToPortMapping(getPortSelectionStr(3));
-//            mbean.setUtsLagExtDot1qVlanTaggedPortListPorts(taggedPorts);
-//            mbean.setUtsLagExtDot1qVlanUnTaggedPortListPorts(untaggedPorts);
+            OltVlanBean model = (OltVlanBean) getModel();
+            model.setName(nameField.getValue());
+            model.setMember(getMember());
+            model.setTagMember(getTagMember());
         }
+    }
+
+    private String getTagMember() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < portSelectionTblModel.getRowCount(); i++) {
+            Boolean tag = (Boolean) portSelectionTblModel.getValueAt(i, 1);
+            Boolean unTag = (Boolean) portSelectionTblModel.getValueAt(i, 2);
+            sb.append(tag || unTag? "1": "0");
+        }
+        return toHexStr(sb.reverse().toString());
+    }
+
+    private String toHexStr(String binStr) {
+        Integer intVal = Integer.valueOf(binStr, 2);
+        return String.format("0x%s", String.format("%02X", intVal & 0xff));
+    }
+
+    private String getMember() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < portSelectionTblModel.getRowCount(); i++) {
+            Boolean tag = (Boolean) portSelectionTblModel.getValueAt(i, 1);
+            sb.append(tag? "1": "0");
+        }
+        return toHexStr(sb.reverse().toString());
     }
 
     protected String[] getPortSelectionStr(int colIdx) {

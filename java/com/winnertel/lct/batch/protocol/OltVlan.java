@@ -9,7 +9,7 @@ import java.util.Map;
 @Root(name = "olt_vlan", strict = false)
 public class OltVlan {
     @Attribute(name = "vlan_id", required = false)
-    private String id;
+    private int id;
     @Attribute(name = "vlan_name", required = false)
     private String name;
     @Attribute(name = "vlan_member", required = false)
@@ -20,18 +20,18 @@ public class OltVlan {
     public OltVlan() {
     }
 
-    public OltVlan(String id, String name, String member, String tagMember) {
+    public OltVlan(int id, String name, String member, String tagMember) {
         this.id = id;
         this.name = name;
         this.member = member;
         this.tagMember = tagMember;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -61,10 +61,19 @@ public class OltVlan {
 
     public Map<String, Object> toMap() {
         Map<String, Object> map = new HashMap<>();
-        map.put("olt.vlan.id", id);
-        map.put("olt.vlan.name", name);
-        map.put("olt.vlan.member", member);
-        map.put("olt.vlan.tagMember", tagMember);
+        map.put("index.0", id);
+        map.put("name", name);
+        map.put("member", member);
+        map.put("tagMember", tagMember);
         return map;
+    }
+
+    public static OltVlan valueOf(Map<String, Object> map) {
+        OltVlan vlan = new OltVlan();
+        vlan.setId(Integer.valueOf(map.get("index.0").toString()));
+        vlan.setName((String) map.get("name"));
+        vlan.setMember((String) map.get("member"));
+        vlan.setTagMember((String) map.get("tagMember"));
+        return vlan;
     }
 }

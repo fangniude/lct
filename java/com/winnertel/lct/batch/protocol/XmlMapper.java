@@ -6,8 +6,8 @@ public class XmlMapper {
 
     public static void main(String[] args) {
         testOltBase();
-        testOnuBase();
-        testOnuProfile();
+//        testOnuBase();
+//        testOnuProfile();
     }
 
     private static void testOnuProfile() {
@@ -50,9 +50,9 @@ public class XmlMapper {
     private static void testOltBase() {
         OltSystem system = new OltSystem("name", "loc", "contact", "mgtVlan", "macAgeing", "macAuth", "vlanTrans", "p2p", "mgIp");
 
-        OltVlan oltVlan = new OltVlan("id", "name", "mem", "tag");
-        OltVlan oltVlan1 = new OltVlan("id1", "name1", "mem1", "tag1");
-        OltVlan oltVlan2 = new OltVlan("id2", "name2", "mem2", "tag2");
+        OltVlan oltVlan = new OltVlan(1, "name", "mem", "tag");
+        OltVlan oltVlan1 = new OltVlan(2, "name1", "mem1", "tag1");
+        OltVlan oltVlan2 = new OltVlan(3, "name2", "mem2", "tag2");
 
         OltQinQ qinq = new OltQinQ("id", "index", "startVlan", "endVlan", "etherType", "newVlan");
         OltQinQ qinq1 = new OltQinQ("id1", "index1", "startVlan1", "endVlan1", "etherType1", "newVlan1");
