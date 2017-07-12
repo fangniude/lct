@@ -3,9 +3,10 @@ package com.winnertel.lct.batch.proxy;
 import com.winnertel.lct.batch.protocol.OltBase;
 import com.winnertel.lct.batch.protocol.OnuBase;
 import com.winnertel.lct.batch.protocol.Profile;
+import org.apache.commons.net.tftp.TFTP;
+import org.apache.commons.net.tftp.TFTPClient;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -100,6 +101,31 @@ public class XmlDataBase {
         OltBase.fromFile(oltFile).toMap(tableMap);
         OnuBase.fromFile(onuFile).toMap(tableMap);
         Profile.fromFile(profileFile).toMap(tableMap);
+    }
+
+    public void sendOltBase() {
+        sendXml2Olt("oltbase.xml", oltFile);
+    }
+
+    public void sendOnuBase() {
+        sendXml2Olt("onubase.xml", oltFile);
+    }
+
+    public void sendOnuProfile() {
+        sendXml2Olt("onuprofile.xml", oltFile);
+    }
+
+    private void sendXml2Olt(String fileName, File file) {
+        TFTPClient client = new TFTPClient();
+        try {
+            client.open();
+            try (InputStream in = new FileInputStream(file)) {
+                client.sendFile(fileName, TFTP.OCTET_MODE, in, host);
+            }
+            client.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void main(String[] args) {
