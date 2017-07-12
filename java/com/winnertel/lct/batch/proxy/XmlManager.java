@@ -1,6 +1,7 @@
 package com.winnertel.lct.batch.proxy;
 
-import com.winnertel.lct.batch.protocol.*;
+import com.winnertel.lct.batch.protocol.OltBase;
+import com.winnertel.lct.batch.protocol.OltVlan;
 
 import java.io.File;
 import java.io.IOException;
@@ -57,8 +58,8 @@ public class XmlManager {
         return oltFile;
     }
 
-    public List<Map<String, Object>> readAll(XmlTable xmlTable) {
-        switch (xmlTable) {
+    public List<Map<String, Object>> readAll(TableName tableName) {
+        switch (tableName) {
             case OltSystem:
                 break;
             case OltVlan:
@@ -72,23 +73,23 @@ public class XmlManager {
         return null;
     }
 
-    public Map<String, Object> read(XmlTable xmlTable) {
+    public Map<String, Object> read(TableName tableName) {
         return null;
     }
 
-    public void add(XmlTable xmlTable, Map<String, Object> map) {
+    public void add(TableName tableName, Map<String, Object> map) {
         OltVlan vlan = OltVlan.valueOf(map);
         oltBase.getVlanList().add(vlan);
         oltBase.toFile(oltFile);
     }
 
-    public void modify(XmlTable xmlTable, Map<String, Object> map) {
+    public void modify(TableName tableName, Map<String, Object> map) {
         OltVlan vlan = OltVlan.valueOf(map);
         oltBase.getVlanList().add(vlan);
         oltBase.toFile(oltFile);
     }
 
-    public void delete(XmlTable xmlTable, Map<String, Object> map) {
+    public void delete(TableName tableName, Map<String, Object> map) {
         System.out.println("delete");
     }
 }

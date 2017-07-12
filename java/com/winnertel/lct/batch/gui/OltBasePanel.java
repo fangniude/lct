@@ -16,6 +16,7 @@ import java.awt.*;
 public class OltBasePanel extends UPanel {
     private final DvmStringMap stringMap;
     private IGuiComposer composer;
+    private SnmpTablePane vlanPanel;
 
     public OltBasePanel(IApplication app) {
         super(app);
@@ -29,7 +30,7 @@ public class OltBasePanel extends UPanel {
         JTabbedPane jTabbedPane = new JTabbedPane();
 
 
-        SnmpTablePane vlanPanel = (SnmpTablePane) composer.composeSnmpTablePane("OltVlanTable_Panel");
+        vlanPanel = (SnmpTablePane) composer.composeSnmpTablePane("OltVlanTable_Panel");
         jTabbedPane.addTab(stringMap.getString("VLAN_Config"), vlanPanel);
         SnmpTablePane qinqPanel = (SnmpTablePane) composer.composeSnmpTablePane("OltSelectiveQinQ_Panel");
         jTabbedPane.addTab(stringMap.getString("QinQ_Config"), qinqPanel);
@@ -46,6 +47,7 @@ public class OltBasePanel extends UPanel {
 
     @Override
     public void refresh() {
+        vlanPanel.refresh();
     }
 
 }

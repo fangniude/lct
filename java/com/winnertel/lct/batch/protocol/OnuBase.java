@@ -1,5 +1,7 @@
 package com.winnertel.lct.batch.protocol;
 
+import com.winnertel.lct.batch.proxy.TableName;
+import com.winnertel.lct.batch.proxy.XmlTable;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Path;
 import org.simpleframework.xml.Root;
@@ -7,6 +9,7 @@ import org.simpleframework.xml.core.Persister;
 
 import java.io.StringWriter;
 import java.util.List;
+import java.util.Map;
 
 @Root(name = "root", strict = false)
 public class OnuBase {
@@ -72,5 +75,9 @@ public class OnuBase {
 
     public void setOnuUni(List<OnuUni> onuUni) {
         this.onuUni = onuUni;
+    }
+
+    public static OnuBase fromMap(Map<TableName, XmlTable> tableMap) {
+        return null;
     }
 }

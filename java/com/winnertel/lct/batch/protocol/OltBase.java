@@ -1,5 +1,7 @@
 package com.winnertel.lct.batch.protocol;
 
+import com.winnertel.lct.batch.proxy.TableName;
+import com.winnertel.lct.batch.proxy.XmlTable;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Path;
@@ -11,6 +13,8 @@ import java.io.File;
 import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @Root(name = "root", strict = false)
 public class OltBase {
@@ -99,5 +103,24 @@ public class OltBase {
 
     public void setQinqList(List<OltQinQ> qinqList) {
         this.qinqList = qinqList;
+    }
+
+    public static OltBase fromMap(Map<TableName, XmlTable> tableMap) {
+        XmlTable sysTable = tableMap.get(TableName.OltVlan);
+        List<OltVlan> oltVlanList;
+        if (sysTable != null) {
+            oltVlanList = sysTable.select().stream().map(OltVlan::valueOf).collect(Collectors.toList());
+        } else {
+            oltVlanList = new ArrayList<>();
+        }
+        return new OltBase(new OltSystem(), oltVlanList, new ArrayList<>());
+    }
+
+    public void toMap(Map<TableName, XmlTable> tableMap) {
+        XmlTable vlanTable = new XmlTable(TableName.OltVlan);
+        vlanList.stream().map(OltVlan::toMap).forEach(map -> {
+            vlanTable.insert(map);
+        });
+        tableMap.put(TableName.OltVlan, vlanTable);
     }
 }

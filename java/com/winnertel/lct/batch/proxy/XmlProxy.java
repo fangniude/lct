@@ -7,7 +7,6 @@ import com.winnertel.em.standard.snmp.ISnmpParameter;
 import com.winnertel.em.standard.snmp.SnmpParameter;
 import com.winnertel.em.standard.snmp.SnmpProxy;
 import com.winnertel.lct.batch.LctContants;
-import com.winnertel.lct.batch.protocol.XmlTable;
 
 import java.util.HashMap;
 import java.util.List;
@@ -19,7 +18,7 @@ public class XmlProxy implements ISnmpProxy {
     private final String host;
 
     private SnmpParameter fParameter;
-    private XmlManager xmlManager;
+    private XmlDataBase xmlDataBase;
 
     public XmlProxy(ISnmpParameter aParameter) {
         this(aParameter.getTargetHost());
@@ -28,23 +27,7 @@ public class XmlProxy implements ISnmpProxy {
 
     public XmlProxy(String targetHost) {
         host = targetHost;
-        xmlManager = XmlManager.getInstance(host);
-    }
-
-    private int second2Millisecond(int timeout) {
-        if (timeout > 1000) {
-            return timeout;
-        } else {
-            return timeout * 1000;
-        }
-    }
-
-    private int millisecond2Second(int timeout) {
-        if (timeout > 1000) {
-            return timeout / 1000;
-        } else {
-            return timeout;
-        }
+        xmlDataBase = XmlDataBase.getInstance(host);
     }
 
     @Override
@@ -74,9 +57,12 @@ public class XmlProxy implements ISnmpProxy {
 
     @Override
     public Vector<Object[]> loadTable(String[] anOidList, int[] indexByteCountList, int rowsPerFetch, int retrieveCount, String aSubTableIndex, String indexPrefix) throws com.winnertel.snmp.snmp2.DefaultSnmpException {
+        if (anOidList.length == 0) {
+            return new Vector<>();
+        }
         String[] split = anOidList[0].split("\\.");
         String tableName = split[0];
-        List<Map<String, Object>> listMap = xmlManager.readAll(XmlTable.valueOf(tableName));
+        List<Map<String, Object>> listMap = xmlDataBase.select(TableName.valueOf(tableName));
 
         Vector<Object[]> result = new Vector<>();
 
@@ -98,7 +84,13 @@ public class XmlProxy implements ISnmpProxy {
     public Object[] loadRow(String[] anOidList) throws com.winnertel.snmp.snmp2.DefaultSnmpException {
         String[] split = anOidList[0].split("\\.");
         String tableName = split[0];
-        Map<String, Object> map = xmlManager.read(XmlTable.valueOf(tableName));
+
+        String[] indexArray = new String[split.length - 2];
+        for (int i = 2; i < split.length; i++) {
+            indexArray[i - 2] = split[i];
+        }
+
+        Map<String, Object> map = xmlDataBase.selectOne(TableName.valueOf(tableName), new XmlRowIndex(indexArray));
 
         Object[] objs = new Object[anOidList.length];
 
@@ -116,14 +108,13 @@ public class XmlProxy implements ISnmpProxy {
     @Override
     @Deprecated
     public Object[] loadRow(String[] anOidList, int[] indexByteCountList) throws com.winnertel.snmp.snmp2.DefaultSnmpException {
-
         return loadRow(anOidList);
     }
 
     @Override
     public boolean saveRow(String[] anOidList, Object[] aValueList, byte[] aTypeList) throws com.winnertel.snmp.snmp2.DefaultSnmpException {
         String[] split = anOidList[0].split("\\.");
-        XmlTable xmlTable = XmlTable.valueOf(split[0]);
+        TableName tableName = TableName.valueOf(split[0]);
 
         HashMap<String, Object> map = new HashMap<>();
         for (int i = 2; i < split.length; i++) {
@@ -136,51 +127,20 @@ public class XmlProxy implements ISnmpProxy {
             map.put(spl[1], aValueList[i]);
         }
 
-        String operation = map.getOrDefault(LctContants.OPERATION, LctContants.MODIFY).toString();
+        XmlOperation operation = XmlOperation.valueOf(map.getOrDefault(LctContants.OPERATION, XmlOperation.MODIFY).toString());
         switch (operation) {
-            case LctContants.ADD:
-                xmlManager.add(xmlTable, map);
+            case ADD:
+                xmlDataBase.insert(tableName, map);
                 break;
-            case LctContants.MODIFY:
-                xmlManager.modify(xmlTable, map);
+            case MODIFY:
+                xmlDataBase.update(tableName, map);
                 break;
-            case LctContants.DELETE:
-                xmlManager.delete(xmlTable, map);
+            case DELETE:
+                xmlDataBase.delete(tableName, map);
                 break;
             default:
                 throw new RuntimeException("operation not supported");
         }
-
-
-        // 1. prepare request PDU
-//        com.winnertel.snmp.snmp2.SnmpPDU requestPdu = new com.winnertel.snmp.snmp2.SnmpPDU();
-//        initRequestPdu(requestPdu);
-//        requestPdu.setCommand(ISnmpConstant.SET_REQ_MSG);
-//
-//        for (int i = 0; i < aValueList.length; i++) {
-//            com.winnertel.snmp.snmp2.SnmpVar tmpVar = createSnmpVar(aValueList[i], aTypeList[i]);
-//            requestPdu.addVariableBinding(new com.winnertel.snmp.snmp2.SnmpVarBind(new com.winnertel.snmp.snmp2.SnmpOID(anOidList[i]), tmpVar));
-//        }
-//
-//        // 2. send request and get response
-//        com.winnertel.snmp.snmp2.SnmpPDU responsePdu = null;
-//        try {
-//            responsePdu = fSnmpExecutor.syncSend(requestPdu);
-//
-//            if (responsePdu == null) {
-//                fLogger.error("Response PDU is null");
-//                return false;
-//            }
-//
-//            if (hasErrorInResponse(responsePdu)) {
-//                throw buildException(responsePdu);
-//            }
-//
-//        } catch (RemoteException e) {
-//            fLogger.error("Error in lookup remote api", e);
-//            return false;
-//        }
-
         return true;
     }
 
@@ -268,5 +228,21 @@ public class XmlProxy implements ISnmpProxy {
 
     public void setParameter(ISnmpParameter fParameter) {
         this.fParameter = (SnmpParameter) fParameter;
+    }
+
+    private int second2Millisecond(int timeout) {
+        if (timeout > 1000) {
+            return timeout;
+        } else {
+            return timeout * 1000;
+        }
+    }
+
+    private int millisecond2Second(int timeout) {
+        if (timeout > 1000) {
+            return timeout / 1000;
+        } else {
+            return timeout;
+        }
     }
 }

@@ -1,5 +1,7 @@
 package com.winnertel.lct.batch.protocol;
 
+import com.winnertel.lct.batch.proxy.TableName;
+import com.winnertel.lct.batch.proxy.XmlTable;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Path;
 import org.simpleframework.xml.Root;
@@ -7,6 +9,7 @@ import org.simpleframework.xml.core.Persister;
 
 import java.io.StringWriter;
 import java.util.List;
+import java.util.Map;
 
 @Root(name = "root", strict = false)
 public class Profile {
@@ -62,5 +65,9 @@ public class Profile {
 
     public void setUniList(List<ProfileUni> uniList) {
         this.uniList = uniList;
+    }
+
+    public static Profile fromMap(Map<TableName, XmlTable> tableMap) {
+        return null;
     }
 }

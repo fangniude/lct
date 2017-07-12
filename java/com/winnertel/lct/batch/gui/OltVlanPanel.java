@@ -185,8 +185,8 @@ public class OltVlanPanel extends UPanel {
     }
 
     private String getUnTagedPort(String member, String tagMember) {
-        Byte mem = Byte.valueOf(tagMember.substring(2), 16);
-        Byte tag = Byte.valueOf(tagMember.substring(2), 16);
+        Integer mem = Integer.valueOf(member.substring(2), 16);
+        Integer tag = Integer.valueOf(tagMember.substring(2), 16);
         int unTag = mem ^ tag;
         String str = Integer.toBinaryString(unTag);
         StringBuilder sb = new StringBuilder(str).reverse();
@@ -197,7 +197,7 @@ public class OltVlanPanel extends UPanel {
     }
 
     private String getTagedPort(String tagMember) {
-        String str = Integer.toBinaryString(Byte.valueOf(tagMember.substring(2), 16));
+        String str = Integer.toBinaryString(Integer.valueOf(tagMember.substring(2), 16));
         StringBuilder sb = new StringBuilder(str).reverse();
         while (sb.length() < 8) {
             sb.append("0");
@@ -221,12 +221,21 @@ public class OltVlanPanel extends UPanel {
         }
     }
 
-    private String getTagMember() {
+    private String getMember() {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < portSelectionTblModel.getRowCount(); i++) {
             Boolean tag = (Boolean) portSelectionTblModel.getValueAt(i, 1);
             Boolean unTag = (Boolean) portSelectionTblModel.getValueAt(i, 2);
-            sb.append(tag || unTag? "1": "0");
+            sb.append(tag || unTag ? "1" : "0");
+        }
+        return toHexStr(sb.reverse().toString());
+    }
+
+    private String getTagMember() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < portSelectionTblModel.getRowCount(); i++) {
+            Boolean tag = (Boolean) portSelectionTblModel.getValueAt(i, 1);
+            sb.append(tag ? "1" : "0");
         }
         return toHexStr(sb.reverse().toString());
     }
@@ -234,15 +243,6 @@ public class OltVlanPanel extends UPanel {
     private String toHexStr(String binStr) {
         Integer intVal = Integer.valueOf(binStr, 2);
         return String.format("0x%s", String.format("%02X", intVal & 0xff));
-    }
-
-    private String getMember() {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < portSelectionTblModel.getRowCount(); i++) {
-            Boolean tag = (Boolean) portSelectionTblModel.getValueAt(i, 1);
-            sb.append(tag? "1": "0");
-        }
-        return toHexStr(sb.reverse().toString());
     }
 
     protected String[] getPortSelectionStr(int colIdx) {
