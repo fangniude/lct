@@ -3,6 +3,9 @@ package com.winnertel.lct.batch.protocol;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Root;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Root(name = "onu_uni", strict = false)
 public class OnuUni {
     @Attribute(name = "onu_uni_id", required = false)
@@ -57,6 +60,40 @@ public class OnuUni {
         this.dsPir = dsPir;
         this.dsEnable = dsEnable;
         this.loopDetect = loopDetect;
+    }
+
+    public Map<String, Object> toMap() {
+        Map<String, Object> map = new HashMap<>();
+        map.put("index.0", id);
+        map.put("vlanMode", vlanMode);
+        map.put("vlanTag", vlanTag);
+        map.put("vlanTpid", vlanTpid);
+        map.put("policingEnable", policingEnable);
+        map.put("policingCir", policingCir);
+        map.put("policingCbs", policingCbs);
+        map.put("policingEbs", policingEbs);
+        map.put("dsCir", dsCir);
+        map.put("dsPir", dsPir);
+        map.put("dsEnable", dsEnable);
+        map.put("loopDetect", loopDetect);
+        return map;
+    }
+
+    public static OnuUni valueOf(Map<String, Object> map) {
+        OnuUni uni = new OnuUni();
+        uni.setId(String.valueOf(map.get("index.0")));
+        uni.setVlanMode(String.valueOf(map.get("vlanMode")));
+        uni.setVlanTag(String.valueOf(map.get("vlanTag")));
+        uni.setVlanTpid(String.valueOf(map.get("vlanTpid")));
+        uni.setPolicingEnable(String.valueOf(map.get("policingEnable")));
+        uni.setPolicingCir(String.valueOf(map.get("policingCir")));
+        uni.setPolicingCbs(String.valueOf(map.get("policingCbs")));
+        uni.setPolicingEbs(String.valueOf(map.get("policingEbs")));
+        uni.setDsCir(String.valueOf(map.get("dsCir")));
+        uni.setDsPir(String.valueOf(map.get("dsPir")));
+        uni.setDsEnable(String.valueOf(map.get("dsEnable")));
+        uni.setLoopDetect(String.valueOf(map.get("loopDetect")));
+        return uni;
     }
 
     public String getId() {

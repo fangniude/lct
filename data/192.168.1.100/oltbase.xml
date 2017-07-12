@@ -6,6 +6,7 @@
    <vlan>
       <olt_vlan vlan_id="2" vlan_name="t2" vlan_member="0xFF" vlan_tagmember="0x55"/>
       <olt_vlan vlan_id="3" vlan_name="t3" vlan_member="0x55" vlan_tagmember="0x55"/>
+      <olt_vlan vlan_id="4" vlan_name="123" vlan_member="0xAA" vlan_tagmember="0x00"/>
    </vlan>
    <qinq/>
 </root>

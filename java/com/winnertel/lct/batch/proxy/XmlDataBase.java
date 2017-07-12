@@ -92,16 +92,18 @@ public class XmlDataBase {
 
     public void toDisk() {
         OltBase.fromMap(tableMap).toFile(oltFile);
-        OnuBase.fromMap(tableMap); // todo to file
-        Profile.fromMap(tableMap);
+        OnuBase.fromMap(tableMap).toFile(onuFile);
+        Profile.fromMap(tableMap).toFile(profileFile);
     }
 
     public void fromDisk() {
         OltBase.fromFile(oltFile).toMap(tableMap);
+        OnuBase.fromFile(onuFile).toMap(tableMap);
+        Profile.fromFile(profileFile).toMap(tableMap);
     }
 
     public static void main(String[] args) {
-        XmlDataBase db = XmlDataBase.getInstance("192.168.1.100");
+        XmlDataBase db = XmlDataBase.getInstance("192.168.1.2");
         System.out.println(db);
     }
 }

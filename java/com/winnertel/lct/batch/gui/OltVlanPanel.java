@@ -162,7 +162,7 @@ public class OltVlanPanel extends UPanel {
                 }
 
                 idField.setEditable(false);
-                idField.setValue(mbean.getId());
+                idField.setValue(Integer.valueOf(mbean.getId()));
                 nameField.setValue(mbean.getName());
                 portSelectionTblModel.getDataVector().clear(); // clear original data first.
 
@@ -208,7 +208,7 @@ public class OltVlanPanel extends UPanel {
     public void updateModel() {
         if (SnmpAction.IType.ADD.equals(fCommand)) {
             OltVlanBean model = new OltVlanBean(new XmlProxy(fApplication.getSnmpProxy().getTargetHost()));
-            model.setId(idField.getValue());
+            model.setId(String.valueOf(idField.getValue()));
             model.setName(nameField.getValue());
             model.setMember(getMember());
             model.setTagMember(getTagMember());

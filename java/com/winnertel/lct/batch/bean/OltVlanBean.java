@@ -8,7 +8,6 @@ import com.winnertel.em.framework.model.snmp.SnmpMibBeanProperty;
 import com.winnertel.lct.batch.LctContants;
 import com.winnertel.lct.batch.proxy.TableName;
 import com.winnertel.lct.batch.proxy.XmlOperation;
-import com.winnertel.lct.batch.proxy.XmlProxy;
 
 import java.util.Vector;
 
@@ -25,7 +24,7 @@ public class OltVlanBean extends SnmpMibBean {
 
     @Override
     protected void init() {
-        initProperty(ID, new SnmpMibBeanProperty(ID, TableName.OltVlan.name() + ".id", ISnmpConstant.INTEGER));
+        initProperty(ID, new SnmpMibBeanProperty(ID, TableName.OltVlan.name() + ".id", ISnmpConstant.STRING));
         initProperty(NAME, new SnmpMibBeanProperty(NAME, TableName.OltVlan.name() + ".name", ISnmpConstant.STRING));
         initProperty(MEMBER, new SnmpMibBeanProperty(MEMBER, TableName.OltVlan.name() + ".member", ISnmpConstant.STRING));
         initProperty(TAG_MEMBER, new SnmpMibBeanProperty(TAG_MEMBER, TableName.OltVlan.name() + ".tagMember", ISnmpConstant.STRING));
@@ -33,11 +32,11 @@ public class OltVlanBean extends SnmpMibBean {
     }
 
 
-    public Integer getId() {
-        return Integer.valueOf(String.valueOf(getIndex(0)));
+    public String getId() {
+        return String.valueOf(getIndex(0));
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         setIndex(0, id);
     }
 
@@ -106,20 +105,6 @@ public class OltVlanBean extends SnmpMibBean {
         prepareSave(getProperty(ROW_STATUS));
 
         return save();
-    }
-
-    public static void main(String[] args) throws MibBeanException {
-        OltVlanBean bean = new OltVlanBean(new XmlProxy("192.168.1.2"));
-        Vector<OltVlanBean> vector = bean.retrieveAll();
-        System.out.println(vector);
-
-        bean.setId(1);
-        bean.setName("t name");
-        bean.setMember("t mem");
-        bean.setTagMember("t tag");
-//        bean.add();
-        bean.modify();
-        bean.delete();
     }
 
     @Override

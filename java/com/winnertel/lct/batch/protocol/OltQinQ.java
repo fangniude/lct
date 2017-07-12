@@ -3,6 +3,9 @@ package com.winnertel.lct.batch.protocol;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Root;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Root(name = "olt_qinq", strict = false)
 public class OltQinQ {
 
@@ -34,6 +37,28 @@ public class OltQinQ {
         this.endVlan = endVlan;
         this.etherType = etherType;
         this.newVlan = newVlan;
+    }
+
+    public Map<String, Object> toMap() {
+        Map<String, Object> map = new HashMap<>();
+        map.put("index.0", id);
+        map.put("index.1", index);
+        map.put("startVlan", startVlan);
+        map.put("endVlan", endVlan);
+        map.put("etherType", etherType);
+        map.put("newVlan", newVlan);
+        return map;
+    }
+
+    public static OltQinQ valueOf(Map<String, Object> map) {
+        OltQinQ qinQ = new OltQinQ();
+        qinQ.setId(String.valueOf(map.get("index.0")));
+        qinQ.setIndex(String.valueOf(map.get("index.1")));
+        qinQ.setStartVlan(String.valueOf(map.get("startVlan")));
+        qinQ.setEndVlan(String.valueOf(map.get("endVlan")));
+        qinQ.setEtherType(String.valueOf(map.get("etherType")));
+        qinQ.setNewVlan(String.valueOf(map.get("newVlan")));
+        return qinQ;
     }
 
     public String getId() {

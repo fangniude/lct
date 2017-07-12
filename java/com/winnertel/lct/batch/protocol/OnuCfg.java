@@ -3,6 +3,9 @@ package com.winnertel.lct.batch.protocol;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Root;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Root(name = "onu_cfg", strict = false)
 public class OnuCfg {
     @Attribute(name = "onu_cfg_id", required = false)
@@ -67,6 +70,46 @@ public class OnuCfg {
         this.mxuCVlan = mxuCVlan;
         this.mxuSVlan = mxuSVlan;
         this.mxuPriority = mxuPriority;
+    }
+
+    public Map<String, Object> toMap() {
+        Map<String, Object> map = new HashMap<>();
+        map.put("index.0", id);
+        map.put("upMaxBw", upMaxBw);
+        map.put("downMaxBw", downMaxBw);
+        map.put("upCommittedBw", upCommittedBw);
+        map.put("downCommittedBw", downCommittedBw);
+        map.put("upFixBw", upFixBw);
+        map.put("upBurstSize", upBurstSize);
+        map.put("downBurstSize", downBurstSize);
+        map.put("upPriority", upPriority);
+        map.put("mxuIpAddress", mxuIpAddress);
+        map.put("mxuIpMask", mxuIpMask);
+        map.put("mxuGateway", mxuGateway);
+        map.put("mxuCVlan", mxuCVlan);
+        map.put("mxuSVlan", mxuSVlan);
+        map.put("mxuPriority", mxuPriority);
+        return map;
+    }
+
+    public static OnuCfg valueOf(Map<String, Object> map) {
+        OnuCfg cfg = new OnuCfg();
+        cfg.setId(String.valueOf(map.get("index.0")));
+        cfg.setUpMaxBw(String.valueOf(map.get("upMaxBw")));
+        cfg.setDownMaxBw(String.valueOf(map.get("downMaxBw")));
+        cfg.setUpCommittedBw(String.valueOf(map.get("upCommittedBw")));
+        cfg.setDownCommittedBw(String.valueOf(map.get("downCommittedBw")));
+        cfg.setUpFixBw(String.valueOf(map.get("upFixBw")));
+        cfg.setUpBurstSize(String.valueOf(map.get("upBurstSize")));
+        cfg.setDownBurstSize(String.valueOf(map.get("downBurstSize")));
+        cfg.setUpPriority(String.valueOf(map.get("upPriority")));
+        cfg.setMxuIpAddress(String.valueOf(map.get("mxuIpAddress")));
+        cfg.setMxuIpMask(String.valueOf(map.get("mxuIpMask")));
+        cfg.setMxuGateway(String.valueOf(map.get("mxuGateway")));
+        cfg.setMxuCVlan(String.valueOf(map.get("mxuCVlan")));
+        cfg.setMxuSVlan(String.valueOf(map.get("mxuSVlan")));
+        cfg.setMxuPriority(String.valueOf(map.get("mxuPriority")));
+        return cfg;
     }
 
     public String getId() {

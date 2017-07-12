@@ -1,6 +1,7 @@
 package com.winnertel.lct.batch.protocol;
 
 import com.winnertel.lct.batch.proxy.TableName;
+import com.winnertel.lct.batch.proxy.XmlRowIndex;
 import com.winnertel.lct.batch.proxy.XmlTable;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
@@ -31,12 +32,52 @@ public class OltBase {
     private List<OltQinQ> qinqList = new ArrayList<>();
 
     public OltBase() {
+        this(new OltSystem(), new ArrayList<OltVlan>(), new ArrayList<>());
     }
 
     public OltBase(OltSystem system, List<OltVlan> vlanList, List<OltQinQ> qinqList) {
         this.system = system;
         this.vlanList = vlanList;
         this.qinqList = qinqList;
+    }
+
+    public static OltBase fromMap(Map<TableName, XmlTable> tableMap) {
+        XmlTable systemTable = tableMap.get(TableName.OltSystem);
+        XmlTable vlanTable = tableMap.get(TableName.OltVlan);
+        XmlTable qinqTable = tableMap.get(TableName.OltQinQ);
+
+        OltSystem oltSystem = OltSystem.valueOf(systemTable.selectOne(new XmlRowIndex("")));
+
+        List<OltVlan> vlanList;
+        if (vlanTable != null) {
+            vlanList = vlanTable.select().stream().map(OltVlan::valueOf).collect(Collectors.toList());
+        } else {
+            vlanList = new ArrayList<>();
+        }
+
+        List<OltQinQ> qinqList;
+        if (vlanTable != null) {
+            qinqList = qinqTable.select().stream().map(OltQinQ::valueOf).collect(Collectors.toList());
+        } else {
+            qinqList = new ArrayList<>();
+        }
+
+        return new OltBase(oltSystem, vlanList, qinqList);
+    }
+
+    public void toMap(Map<TableName, XmlTable> tableMap) {
+        XmlTable systemTable = new XmlTable(TableName.OltSystem);
+        systemTable.insert(system.toMap());
+
+        XmlTable vlanTable = new XmlTable(TableName.OltVlan);
+        vlanList.stream().map(OltVlan::toMap).forEach(vlanTable::insert);
+
+        XmlTable qinqTable = new XmlTable(TableName.OltQinQ);
+        qinqList.stream().map(OltQinQ::toMap).forEach(qinqTable::insert);
+
+        tableMap.put(TableName.OltSystem, systemTable);
+        tableMap.put(TableName.OltVlan, qinqTable);
+        tableMap.put(TableName.OltQinQ, qinqTable);
     }
 
     public static OltBase fromFile(File oltFile) {
@@ -56,21 +97,20 @@ public class OltBase {
         }
     }
 
-    public static String toXml(OltBase data) {
+    public static OltBase fromXml(String xml) {
         try {
-            StringWriter out = new StringWriter();
-            new Persister(new Format("<?xml version=\"1.0\" encoding=\"utf-8\"?>")).write(data, out);
-            return out.toString();
+            return new Persister().read(OltBase.class, xml);
         } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
     }
 
-    public static OltBase fromXml(String xml) {
+    public static String toXml(OltBase data) {
         try {
-            OltBase result = new Persister().read(OltBase.class, xml);
-            return result;
+            StringWriter out = new StringWriter();
+            new Persister(new Format("<?xml version=\"1.0\" encoding=\"utf-8\"?>")).write(data, out);
+            return out.toString();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -86,10 +126,6 @@ public class OltBase {
     }
 
     public List<OltVlan> getVlanList() {
-//        OltVlan oltVlan = new OltVlan(1, "name", "mem", "tag");
-//        OltVlan oltVlan1 = new OltVlan(2, "name1", "mem1", "tag1");
-//        OltVlan oltVlan2 = new OltVlan(3, "name2", "mem2", "tag2");
-//        return Arrays.asList(oltVlan, oltVlan1, oltVlan2);
         return vlanList;
     }
 
@@ -103,24 +139,5 @@ public class OltBase {
 
     public void setQinqList(List<OltQinQ> qinqList) {
         this.qinqList = qinqList;
-    }
-
-    public static OltBase fromMap(Map<TableName, XmlTable> tableMap) {
-        XmlTable sysTable = tableMap.get(TableName.OltVlan);
-        List<OltVlan> oltVlanList;
-        if (sysTable != null) {
-            oltVlanList = sysTable.select().stream().map(OltVlan::valueOf).collect(Collectors.toList());
-        } else {
-            oltVlanList = new ArrayList<>();
-        }
-        return new OltBase(new OltSystem(), oltVlanList, new ArrayList<>());
-    }
-
-    public void toMap(Map<TableName, XmlTable> tableMap) {
-        XmlTable vlanTable = new XmlTable(TableName.OltVlan);
-        vlanList.stream().map(OltVlan::toMap).forEach(map -> {
-            vlanTable.insert(map);
-        });
-        tableMap.put(TableName.OltVlan, vlanTable);
     }
 }

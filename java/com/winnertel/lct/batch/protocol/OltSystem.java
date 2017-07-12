@@ -3,6 +3,9 @@ package com.winnertel.lct.batch.protocol;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Root;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Root(name = "system_node", strict = false)
 public class OltSystem {
     @Attribute(name = "system_name", required = false)
@@ -37,6 +40,34 @@ public class OltSystem {
         this.vlanTransParent = vlanTransParent;
         this.globalP2p = globalP2p;
         this.mgmtIp = mgmtIp;
+    }
+
+    public Map<String, Object> toMap() {
+        Map<String, Object> map = new HashMap<>();
+        map.put("name", name);
+        map.put("location", location);
+        map.put("contact", contact);
+        map.put("mgmtVlan", mgmtVlan);
+        map.put("macAgeing", macAgeing);
+        map.put("macAuth", macAuth);
+        map.put("vlanTransParent", vlanTransParent);
+        map.put("globalP2p", globalP2p);
+        map.put("mgmtIp", mgmtIp);
+        return map;
+    }
+
+    public static OltSystem valueOf(Map<String, Object> map) {
+        OltSystem system = new OltSystem();
+        system.setName(String.valueOf(map.get("name")));
+        system.setLocation(String.valueOf(map.get("location")));
+        system.setContact(String.valueOf(map.get("contact")));
+        system.setMgmtVlan(String.valueOf(map.get("mgmtVlan")));
+        system.setMacAgeing(String.valueOf(map.get("macAgeing")));
+        system.setMacAuth(String.valueOf(map.get("macAuth")));
+        system.setVlanTransParent(String.valueOf(map.get("vlanTransParent")));
+        system.setGlobalP2p(String.valueOf(map.get("globalP2p")));
+        system.setMgmtIp(String.valueOf(map.get("mgmtIp")));
+        return system;
     }
 
     public String getName() {
