@@ -6,24 +6,24 @@ import com.winnertel.em.framework.model.snmp.ISnmpProxy;
 import com.winnertel.em.framework.model.snmp.SnmpMibBean;
 import com.winnertel.em.framework.model.snmp.SnmpMibBeanProperty;
 import com.winnertel.lct.batch.LctContants;
-import com.winnertel.lct.batch.protocol.OltVlan;
+import com.winnertel.lct.batch.protocol.OnuMac;
 import com.winnertel.lct.batch.proxy.TableName;
 import com.winnertel.lct.batch.proxy.XmlOperation;
 
 import java.util.Vector;
 
-public class OltVlanBean extends SnmpMibBean {
-    public OltVlanBean(ISnmpProxy aSnmpProxy) {
+public class OnuMacBean extends SnmpMibBean {
+    public OnuMacBean(ISnmpProxy aSnmpProxy) {
         super(aSnmpProxy);
         init();
     }
 
     @Override
     protected void init() {
-        for (OltVlan.Field field : OltVlan.Field.values()) {
-            initProperty(field.name(), new SnmpMibBeanProperty(field.name(), TableName.OltVlan.name() + "." + field.name(), ISnmpConstant.STRING));
+        for (OnuMac.Field field : OnuMac.Field.values()) {
+            initProperty(field.name(), new SnmpMibBeanProperty(field.name(), TableName.OnuMac.name() + "." + field.name(), ISnmpConstant.STRING));
         }
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, TableName.OltVlan.name() + "." + LctContants.OPERATION, ISnmpConstant.STRING));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, TableName.OnuMac.name() + "." + LctContants.OPERATION, ISnmpConstant.STRING));
     }
 
 
@@ -35,41 +35,32 @@ public class OltVlanBean extends SnmpMibBean {
         setIndex(0, id);
     }
 
-    public String getProperty(OltVlan.Field field) {
+    public String getProperty(OnuMac.Field field) {
         return String.valueOf(getProperty(field.name()).getValue());
     }
 
-    public void setProperty(OltVlan.Field field, String val) {
+    public void setProperty(OnuMac.Field field, String val) {
         getProperty(field.name()).setValue(val);
     }
 
-    public String getName() {
-        return getProperty(OltVlan.Field.name);
+    public String getMac() {
+        return getProperty(OnuMac.Field.mac);
     }
 
-    public void setName(String name) {
-        setProperty(OltVlan.Field.name, name);
+    public void setMac(String mac) {
+        setProperty(OnuMac.Field.mac, mac);
     }
 
-    public String getMember() {
-        return getProperty(OltVlan.Field.member);
+    public String getDesc() {
+        return getProperty(OnuMac.Field.desc);
     }
 
-    public void setMember(String member) {
-        setProperty(OltVlan.Field.member, member);
+    public void setDesc(String desc) {
+        setProperty(OnuMac.Field.desc, desc);
     }
-
-    public String getTagMember() {
-        return getProperty(OltVlan.Field.tagMember);
-    }
-
-    public void setTagMember(String tagMember) {
-        setProperty(OltVlan.Field.tagMember, tagMember);
-    }
-
 
     public boolean retrieve() throws MibBeanException {
-        for (OltVlan.Field field : OltVlan.Field.values()) {
+        for (OnuMac.Field field : OnuMac.Field.values()) {
             prepareRead(getProperty(field.name()));
         }
 
@@ -77,7 +68,7 @@ public class OltVlanBean extends SnmpMibBean {
     }
 
     public Vector retrieveAll() throws MibBeanException {
-        for (OltVlan.Field field : OltVlan.Field.values()) {
+        for (OnuMac.Field field : OnuMac.Field.values()) {
             prepareRead(getProperty(field.name()));
         }
 
@@ -85,14 +76,14 @@ public class OltVlanBean extends SnmpMibBean {
     }
 
     public boolean modify() throws MibBeanException {
-        for (OltVlan.Field field : OltVlan.Field.values()) {
+        for (OnuMac.Field field : OnuMac.Field.values()) {
             prepareSave(getProperty(field.name()));
         }
         return save();
     }
 
     public boolean add() throws MibBeanException {
-        for (OltVlan.Field field : OltVlan.Field.values()) {
+        for (OnuMac.Field field : OnuMac.Field.values()) {
             prepareSave(getProperty(field.name()));
         }
 

@@ -8,6 +8,9 @@ import java.util.Map;
 
 @Root(name = "olt_qinq", strict = false)
 public class OltQinQ {
+    public enum Field {
+        startVlan, endVlan, etherType, newVlan
+    }
 
     @Attribute(name = "pon_id", required = false)
     private String id;
@@ -43,10 +46,10 @@ public class OltQinQ {
         Map<String, Object> map = new HashMap<>();
         map.put("index.0", id);
         map.put("index.1", index);
-        map.put("startVlan", startVlan);
-        map.put("endVlan", endVlan);
-        map.put("etherType", etherType);
-        map.put("newVlan", newVlan);
+        map.put(OltQinQ.Field.startVlan.name(), startVlan);
+        map.put(OltQinQ.Field.endVlan.name(), endVlan);
+        map.put(OltQinQ.Field.etherType.name(), etherType);
+        map.put(OltQinQ.Field.newVlan.name(), newVlan);
         return map;
     }
 
@@ -54,10 +57,10 @@ public class OltQinQ {
         OltQinQ qinQ = new OltQinQ();
         qinQ.setId(String.valueOf(map.get("index.0")));
         qinQ.setIndex(String.valueOf(map.get("index.1")));
-        qinQ.setStartVlan(String.valueOf(map.get("startVlan")));
-        qinQ.setEndVlan(String.valueOf(map.get("endVlan")));
-        qinQ.setEtherType(String.valueOf(map.get("etherType")));
-        qinQ.setNewVlan(String.valueOf(map.get("newVlan")));
+        qinQ.setStartVlan(String.valueOf(map.get(OltQinQ.Field.startVlan.name())));
+        qinQ.setEndVlan(String.valueOf(map.get(OltQinQ.Field.endVlan.name())));
+        qinQ.setEtherType(String.valueOf(map.get(OltQinQ.Field.etherType.name())));
+        qinQ.setNewVlan(String.valueOf(map.get(OltQinQ.Field.newVlan.name())));
         return qinQ;
     }
 

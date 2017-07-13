@@ -8,6 +8,10 @@ import java.util.Map;
 
 @Root(name = "olt_vlan", strict = false)
 public class OltVlan {
+    public enum Field {
+        name, member, tagMember
+    }
+
     @Attribute(name = "vlan_id", required = false)
     private String id;
     @Attribute(name = "vlan_name", required = false)
@@ -30,18 +34,18 @@ public class OltVlan {
     public Map<String, Object> toMap() {
         Map<String, Object> map = new HashMap<>();
         map.put("index.0", id);
-        map.put("name", name);
-        map.put("member", member);
-        map.put("tagMember", tagMember);
+        map.put(Field.name.name(), name);
+        map.put(Field.member.name(), member);
+        map.put(Field.tagMember.name(), tagMember);
         return map;
     }
 
     public static OltVlan valueOf(Map<String, Object> map) {
         OltVlan vlan = new OltVlan();
         vlan.setId(String.valueOf(map.get("index.0")));
-        vlan.setName(String.valueOf(map.get("name")));
-        vlan.setMember(String.valueOf(map.get("member")));
-        vlan.setTagMember(String.valueOf(map.get("tagMember")));
+        vlan.setName(String.valueOf(map.get(Field.name.name())));
+        vlan.setMember(String.valueOf(map.get(Field.member.name())));
+        vlan.setTagMember(String.valueOf(map.get(Field.tagMember.name())));
         return vlan;
     }
 

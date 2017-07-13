@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
    <system>
-      <system_node/>
+      <system_node system_name="null" system_location="null" system_contact="null" mgmt_vlan="null" mac_ageing="null" mac_auth="null" vlan_transparent="null" global_p2p="null" mgmt_ip="null"/>
    </system>
    <vlan>
-      <olt_vlan vlan_id="2" vlan_name="t2" vlan_member="0xFF" vlan_tagmember="0x55"/>
-      <olt_vlan vlan_id="3" vlan_name="t3" vlan_member="0x55" vlan_tagmember="0x55"/>
-      <olt_vlan vlan_id="4" vlan_name="123" vlan_member="0xAA" vlan_tagmember="0x00"/>
+      <olt_vlan vlan_id="2" vlan_name="null" vlan_member="null" vlan_tagmember="null"/>
    </vlan>
-   <qinq/>
+   <qinq>
+      <olt_qinq pon_id="2" qinq_index="null" qinq_startvlan="null" qinq_endvlan="null" qinq_ethertype="null" qinq_newvlan="null"/>
+   </qinq>
 </root>

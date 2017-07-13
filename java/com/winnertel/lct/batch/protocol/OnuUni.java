@@ -8,6 +8,10 @@ import java.util.Map;
 
 @Root(name = "onu_uni", strict = false)
 public class OnuUni {
+    public enum Field {
+        vlanMode, vlanTag, vlanTpid, policingEnable, policingCir, policingCbs, policingEbs, dsCir, dsPir, dsEnable, loopDetect
+    }
+
     @Attribute(name = "onu_uni_id", required = false)
     private String id;
 
@@ -65,34 +69,34 @@ public class OnuUni {
     public Map<String, Object> toMap() {
         Map<String, Object> map = new HashMap<>();
         map.put("index.0", id);
-        map.put("vlanMode", vlanMode);
-        map.put("vlanTag", vlanTag);
-        map.put("vlanTpid", vlanTpid);
-        map.put("policingEnable", policingEnable);
-        map.put("policingCir", policingCir);
-        map.put("policingCbs", policingCbs);
-        map.put("policingEbs", policingEbs);
-        map.put("dsCir", dsCir);
-        map.put("dsPir", dsPir);
-        map.put("dsEnable", dsEnable);
-        map.put("loopDetect", loopDetect);
+        map.put(Field.vlanMode.name(), vlanMode);
+        map.put(Field.vlanTag.name(), vlanTag);
+        map.put(Field.vlanTpid.name(), vlanTpid);
+        map.put(Field.policingEnable.name(), policingEnable);
+        map.put(Field.policingCir.name(), policingCir);
+        map.put(Field.policingCbs.name(), policingCbs);
+        map.put(Field.policingEbs.name(), policingEbs);
+        map.put(Field.dsCir.name(), dsCir);
+        map.put(Field.dsPir.name(), dsPir);
+        map.put(Field.dsEnable.name(), dsEnable);
+        map.put(Field.loopDetect.name(), loopDetect);
         return map;
     }
 
     public static OnuUni valueOf(Map<String, Object> map) {
         OnuUni uni = new OnuUni();
         uni.setId(String.valueOf(map.get("index.0")));
-        uni.setVlanMode(String.valueOf(map.get("vlanMode")));
-        uni.setVlanTag(String.valueOf(map.get("vlanTag")));
-        uni.setVlanTpid(String.valueOf(map.get("vlanTpid")));
-        uni.setPolicingEnable(String.valueOf(map.get("policingEnable")));
-        uni.setPolicingCir(String.valueOf(map.get("policingCir")));
-        uni.setPolicingCbs(String.valueOf(map.get("policingCbs")));
-        uni.setPolicingEbs(String.valueOf(map.get("policingEbs")));
-        uni.setDsCir(String.valueOf(map.get("dsCir")));
-        uni.setDsPir(String.valueOf(map.get("dsPir")));
-        uni.setDsEnable(String.valueOf(map.get("dsEnable")));
-        uni.setLoopDetect(String.valueOf(map.get("loopDetect")));
+        uni.setVlanMode(String.valueOf(map.get(Field.vlanMode.name())));
+        uni.setVlanTag(String.valueOf(map.get(Field.vlanTag.name())));
+        uni.setVlanTpid(String.valueOf(map.get(Field.vlanTpid.name())));
+        uni.setPolicingEnable(String.valueOf(map.get(Field.policingEnable.name())));
+        uni.setPolicingCir(String.valueOf(map.get(Field.policingCir.name())));
+        uni.setPolicingCbs(String.valueOf(map.get(Field.policingCbs.name())));
+        uni.setPolicingEbs(String.valueOf(map.get(Field.policingEbs.name())));
+        uni.setDsCir(String.valueOf(map.get(Field.dsCir.name())));
+        uni.setDsPir(String.valueOf(map.get(Field.dsPir.name())));
+        uni.setDsEnable(String.valueOf(map.get(Field.dsEnable.name())));
+        uni.setLoopDetect(String.valueOf(map.get(Field.loopDetect.name())));
         return uni;
     }
 

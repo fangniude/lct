@@ -7,7 +7,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Root(name = "onu_attr", strict = false)
-public class OnuMacBind {
+public class OnuMac {
+    public enum Field {
+        mac, desc
+    }
+
     @Attribute(name = "onu_id", required = false)
     private String id;
     @Attribute(name = "onu_mac", required = false)
@@ -15,10 +19,10 @@ public class OnuMacBind {
     @Attribute(name = "onu_desc", required = false)
     private String desc;
 
-    public OnuMacBind() {
+    public OnuMac() {
     }
 
-    public OnuMacBind(String id, String mac, String desc) {
+    public OnuMac(String id, String mac, String desc) {
         this.id = id;
         this.mac = mac;
         this.desc = desc;
@@ -27,16 +31,16 @@ public class OnuMacBind {
     public Map<String, Object> toMap() {
         Map<String, Object> map = new HashMap<>();
         map.put("index.0", id);
-        map.put("mac", mac);
-        map.put("desc", desc);
+        map.put(Field.mac.name(), mac);
+        map.put(Field.desc.name(), desc);
         return map;
     }
 
-    public static OnuMacBind valueOf(Map<String, Object> map) {
-        OnuMacBind mac = new OnuMacBind();
+    public static OnuMac valueOf(Map<String, Object> map) {
+        OnuMac mac = new OnuMac();
         mac.setId(String.valueOf(map.get("index.0")));
-        mac.setMac(String.valueOf(map.get("mac")));
-        mac.setDesc(String.valueOf(map.get("desc")));
+        mac.setMac(String.valueOf(map.get(Field.mac.name())));
+        mac.setDesc(String.valueOf(map.get(Field.desc.name())));
         return mac;
     }
 

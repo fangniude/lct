@@ -6,24 +6,24 @@ import com.winnertel.em.framework.model.snmp.ISnmpProxy;
 import com.winnertel.em.framework.model.snmp.SnmpMibBean;
 import com.winnertel.em.framework.model.snmp.SnmpMibBeanProperty;
 import com.winnertel.lct.batch.LctContants;
-import com.winnertel.lct.batch.protocol.OltVlan;
+import com.winnertel.lct.batch.protocol.OltQinQ;
 import com.winnertel.lct.batch.proxy.TableName;
 import com.winnertel.lct.batch.proxy.XmlOperation;
 
 import java.util.Vector;
 
-public class OltVlanBean extends SnmpMibBean {
-    public OltVlanBean(ISnmpProxy aSnmpProxy) {
+public class OltQinQBean extends SnmpMibBean {
+    public OltQinQBean(ISnmpProxy aSnmpProxy) {
         super(aSnmpProxy);
         init();
     }
 
     @Override
     protected void init() {
-        for (OltVlan.Field field : OltVlan.Field.values()) {
-            initProperty(field.name(), new SnmpMibBeanProperty(field.name(), TableName.OltVlan.name() + "." + field.name(), ISnmpConstant.STRING));
+        for (OltQinQ.Field field : OltQinQ.Field.values()) {
+            initProperty(field.name(), new SnmpMibBeanProperty(field.name(), TableName.OltQinQ.name() + "." + field.name(), ISnmpConstant.STRING));
         }
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, TableName.OltVlan.name() + "." + LctContants.OPERATION, ISnmpConstant.STRING));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, TableName.OltQinQ.name() + "." + LctContants.OPERATION, ISnmpConstant.STRING));
     }
 
 
@@ -35,41 +35,58 @@ public class OltVlanBean extends SnmpMibBean {
         setIndex(0, id);
     }
 
-    public String getProperty(OltVlan.Field field) {
+
+    public String getIndex() {
+        return String.valueOf(getIndex(1));
+    }
+
+    public void setIndex(String index) {
+        setIndex(1, index);
+    }
+
+    public String getProperty(OltQinQ.Field field) {
         return String.valueOf(getProperty(field.name()).getValue());
     }
 
-    public void setProperty(OltVlan.Field field, String val) {
+    public void setProperty(OltQinQ.Field field, String val) {
         getProperty(field.name()).setValue(val);
     }
 
-    public String getName() {
-        return getProperty(OltVlan.Field.name);
+    public String getStartVlan() {
+        return getProperty(OltQinQ.Field.startVlan);
     }
 
-    public void setName(String name) {
-        setProperty(OltVlan.Field.name, name);
+    public void setStartVlan(String startVlan) {
+        setProperty(OltQinQ.Field.startVlan, startVlan);
     }
 
-    public String getMember() {
-        return getProperty(OltVlan.Field.member);
+    public String getEndVlan() {
+        return getProperty(OltQinQ.Field.endVlan);
     }
 
-    public void setMember(String member) {
-        setProperty(OltVlan.Field.member, member);
+    public void setEndVlan(String endVlan) {
+        setProperty(OltQinQ.Field.endVlan, endVlan);
     }
 
-    public String getTagMember() {
-        return getProperty(OltVlan.Field.tagMember);
+    public String getEtherType() {
+        return getProperty(OltQinQ.Field.etherType);
     }
 
-    public void setTagMember(String tagMember) {
-        setProperty(OltVlan.Field.tagMember, tagMember);
+    public void setEtherType(String etherType) {
+        setProperty(OltQinQ.Field.etherType, etherType);
+    }
+
+    public String getNewVlan() {
+        return getProperty(OltQinQ.Field.newVlan);
+    }
+
+    public void setNewVlan(String newVlan) {
+        setProperty(OltQinQ.Field.newVlan, newVlan);
     }
 
 
     public boolean retrieve() throws MibBeanException {
-        for (OltVlan.Field field : OltVlan.Field.values()) {
+        for (OltQinQ.Field field : OltQinQ.Field.values()) {
             prepareRead(getProperty(field.name()));
         }
 
@@ -77,7 +94,7 @@ public class OltVlanBean extends SnmpMibBean {
     }
 
     public Vector retrieveAll() throws MibBeanException {
-        for (OltVlan.Field field : OltVlan.Field.values()) {
+        for (OltQinQ.Field field : OltQinQ.Field.values()) {
             prepareRead(getProperty(field.name()));
         }
 
@@ -85,14 +102,14 @@ public class OltVlanBean extends SnmpMibBean {
     }
 
     public boolean modify() throws MibBeanException {
-        for (OltVlan.Field field : OltVlan.Field.values()) {
+        for (OltQinQ.Field field : OltQinQ.Field.values()) {
             prepareSave(getProperty(field.name()));
         }
         return save();
     }
 
     public boolean add() throws MibBeanException {
-        for (OltVlan.Field field : OltVlan.Field.values()) {
+        for (OltQinQ.Field field : OltQinQ.Field.values()) {
             prepareSave(getProperty(field.name()));
         }
 

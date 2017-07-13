@@ -8,6 +8,10 @@ import java.util.Map;
 
 @Root(name = "onu_cfg", strict = false)
 public class OnuCfg {
+    public enum Field {
+        upMaxBw, downMaxBw, upCommittedBw, downCommittedBw, upFixBw, upBurstSize, downBurstSize, upPriority, mxuIpAddress, mxuIpMask, mxuGateway, mxuCVlan, mxuSVlan, mxuPriority
+    }
+
     @Attribute(name = "onu_cfg_id", required = false)
     private String id;
     @Attribute(name = "up_max_bw", required = false)
@@ -75,40 +79,40 @@ public class OnuCfg {
     public Map<String, Object> toMap() {
         Map<String, Object> map = new HashMap<>();
         map.put("index.0", id);
-        map.put("upMaxBw", upMaxBw);
-        map.put("downMaxBw", downMaxBw);
-        map.put("upCommittedBw", upCommittedBw);
-        map.put("downCommittedBw", downCommittedBw);
-        map.put("upFixBw", upFixBw);
-        map.put("upBurstSize", upBurstSize);
-        map.put("downBurstSize", downBurstSize);
-        map.put("upPriority", upPriority);
-        map.put("mxuIpAddress", mxuIpAddress);
-        map.put("mxuIpMask", mxuIpMask);
-        map.put("mxuGateway", mxuGateway);
-        map.put("mxuCVlan", mxuCVlan);
-        map.put("mxuSVlan", mxuSVlan);
-        map.put("mxuPriority", mxuPriority);
+        map.put(Field.upMaxBw.name(), upMaxBw);
+        map.put(Field.downMaxBw.name(), downMaxBw);
+        map.put(Field.upCommittedBw.name(), upCommittedBw);
+        map.put(Field.downCommittedBw.name(), downCommittedBw);
+        map.put(Field.upFixBw.name(), upFixBw);
+        map.put(Field.upBurstSize.name(), upBurstSize);
+        map.put(Field.downBurstSize.name(), downBurstSize);
+        map.put(Field.upPriority.name(), upPriority);
+        map.put(Field.mxuIpAddress.name(), mxuIpAddress);
+        map.put(Field.mxuIpMask.name(), mxuIpMask);
+        map.put(Field.mxuGateway.name(), mxuGateway);
+        map.put(Field.mxuCVlan.name(), mxuCVlan);
+        map.put(Field.mxuSVlan.name(), mxuSVlan);
+        map.put(Field.mxuPriority.name(), mxuPriority);
         return map;
     }
 
     public static OnuCfg valueOf(Map<String, Object> map) {
         OnuCfg cfg = new OnuCfg();
         cfg.setId(String.valueOf(map.get("index.0")));
-        cfg.setUpMaxBw(String.valueOf(map.get("upMaxBw")));
-        cfg.setDownMaxBw(String.valueOf(map.get("downMaxBw")));
-        cfg.setUpCommittedBw(String.valueOf(map.get("upCommittedBw")));
-        cfg.setDownCommittedBw(String.valueOf(map.get("downCommittedBw")));
-        cfg.setUpFixBw(String.valueOf(map.get("upFixBw")));
-        cfg.setUpBurstSize(String.valueOf(map.get("upBurstSize")));
-        cfg.setDownBurstSize(String.valueOf(map.get("downBurstSize")));
-        cfg.setUpPriority(String.valueOf(map.get("upPriority")));
-        cfg.setMxuIpAddress(String.valueOf(map.get("mxuIpAddress")));
-        cfg.setMxuIpMask(String.valueOf(map.get("mxuIpMask")));
-        cfg.setMxuGateway(String.valueOf(map.get("mxuGateway")));
-        cfg.setMxuCVlan(String.valueOf(map.get("mxuCVlan")));
-        cfg.setMxuSVlan(String.valueOf(map.get("mxuSVlan")));
-        cfg.setMxuPriority(String.valueOf(map.get("mxuPriority")));
+        cfg.setUpMaxBw(String.valueOf(map.get(Field.upMaxBw.name())));
+        cfg.setDownMaxBw(String.valueOf(map.get(Field.downMaxBw.name())));
+        cfg.setUpCommittedBw(String.valueOf(map.get(Field.upCommittedBw.name())));
+        cfg.setDownCommittedBw(String.valueOf(map.get(Field.downCommittedBw.name())));
+        cfg.setUpFixBw(String.valueOf(map.get(Field.upFixBw.name())));
+        cfg.setUpBurstSize(String.valueOf(map.get(Field.upBurstSize.name())));
+        cfg.setDownBurstSize(String.valueOf(map.get(Field.downBurstSize.name())));
+        cfg.setUpPriority(String.valueOf(map.get(Field.upPriority.name())));
+        cfg.setMxuIpAddress(String.valueOf(map.get(Field.mxuIpAddress.name())));
+        cfg.setMxuIpMask(String.valueOf(map.get(Field.mxuIpMask.name())));
+        cfg.setMxuGateway(String.valueOf(map.get(Field.mxuGateway.name())));
+        cfg.setMxuCVlan(String.valueOf(map.get(Field.mxuCVlan.name())));
+        cfg.setMxuSVlan(String.valueOf(map.get(Field.mxuSVlan.name())));
+        cfg.setMxuPriority(String.valueOf(map.get(Field.mxuPriority.name())));
         return cfg;
     }
 

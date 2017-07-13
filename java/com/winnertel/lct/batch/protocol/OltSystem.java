@@ -8,6 +8,10 @@ import java.util.Map;
 
 @Root(name = "system_node", strict = false)
 public class OltSystem {
+    public enum Field {
+        name, location, contact, mgmtVlan, macAgeing, macAuth, vlanTransParent, globalP2p, mgmtIp
+    }
+
     @Attribute(name = "system_name", required = false)
     private String name;
     @Attribute(name = "system_location", required = false)
@@ -44,29 +48,29 @@ public class OltSystem {
 
     public Map<String, Object> toMap() {
         Map<String, Object> map = new HashMap<>();
-        map.put("name", name);
-        map.put("location", location);
-        map.put("contact", contact);
-        map.put("mgmtVlan", mgmtVlan);
-        map.put("macAgeing", macAgeing);
-        map.put("macAuth", macAuth);
-        map.put("vlanTransParent", vlanTransParent);
-        map.put("globalP2p", globalP2p);
-        map.put("mgmtIp", mgmtIp);
+        map.put(Field.name.name(), name);
+        map.put(Field.location.name(), location);
+        map.put(Field.contact.name(), contact);
+        map.put(Field.mgmtVlan.name(), mgmtVlan);
+        map.put(Field.macAgeing.name(), macAgeing);
+        map.put(Field.macAuth.name(), macAuth);
+        map.put(Field.vlanTransParent.name(), vlanTransParent);
+        map.put(Field.globalP2p.name(), globalP2p);
+        map.put(Field.mgmtIp.name(), mgmtIp);
         return map;
     }
 
     public static OltSystem valueOf(Map<String, Object> map) {
         OltSystem system = new OltSystem();
-        system.setName(String.valueOf(map.get("name")));
-        system.setLocation(String.valueOf(map.get("location")));
-        system.setContact(String.valueOf(map.get("contact")));
-        system.setMgmtVlan(String.valueOf(map.get("mgmtVlan")));
-        system.setMacAgeing(String.valueOf(map.get("macAgeing")));
-        system.setMacAuth(String.valueOf(map.get("macAuth")));
-        system.setVlanTransParent(String.valueOf(map.get("vlanTransParent")));
-        system.setGlobalP2p(String.valueOf(map.get("globalP2p")));
-        system.setMgmtIp(String.valueOf(map.get("mgmtIp")));
+        system.setName(String.valueOf(map.get(Field.name.name())));
+        system.setLocation(String.valueOf(map.get(Field.location.name())));
+        system.setContact(String.valueOf(map.get(Field.contact.name())));
+        system.setMgmtVlan(String.valueOf(map.get(Field.mgmtVlan.name())));
+        system.setMacAgeing(String.valueOf(map.get(Field.macAgeing.name())));
+        system.setMacAuth(String.valueOf(map.get(Field.macAuth.name())));
+        system.setVlanTransParent(String.valueOf(map.get(Field.vlanTransParent.name())));
+        system.setGlobalP2p(String.valueOf(map.get(Field.globalP2p.name())));
+        system.setMgmtIp(String.valueOf(map.get(Field.mgmtIp.name())));
         return system;
     }
 

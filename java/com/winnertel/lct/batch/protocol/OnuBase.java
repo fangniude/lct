@@ -18,8 +18,8 @@ import java.util.stream.Collectors;
 @Root(name = "root", strict = false)
 public class OnuBase {
     @Path("onu")
-    @ElementList(inline = true, type = OnuMacBind.class, required = false)
-    private List<OnuMacBind> macList;
+    @ElementList(inline = true, type = OnuMac.class, required = false)
+    private List<OnuMac> macList;
     @Path("onu")
     @ElementList(inline = true, type = OnuCfg.class, required = false)
     private List<OnuCfg> onuCfg;
@@ -31,7 +31,7 @@ public class OnuBase {
         this(new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
     }
 
-    public OnuBase(List<OnuMacBind> macList, List<OnuCfg> onuCfg, List<OnuUni> onuUni) {
+    public OnuBase(List<OnuMac> macList, List<OnuCfg> onuCfg, List<OnuUni> onuUni) {
         this.macList = macList;
         this.onuCfg = onuCfg;
         this.onuUni = onuUni;
@@ -42,9 +42,9 @@ public class OnuBase {
         XmlTable cfgTable = tableMap.get(TableName.OnuCfg);
         XmlTable uniTable = tableMap.get(TableName.OnuUni);
 
-        List<OnuMacBind> macList;
+        List<OnuMac> macList;
         if (macTable != null) {
-            macList = macTable.select().stream().map(OnuMacBind::valueOf).collect(Collectors.toList());
+            macList = macTable.select().stream().map(OnuMac::valueOf).collect(Collectors.toList());
         } else {
             macList = new ArrayList<>();
         }
@@ -68,7 +68,7 @@ public class OnuBase {
 
     public void toMap(Map<TableName, XmlTable> tableMap) {
         XmlTable macTable = new XmlTable(TableName.OnuMac);
-        macList.stream().map(OnuMacBind::toMap).forEach(macTable::insert);
+        macList.stream().map(OnuMac::toMap).forEach(macTable::insert);
 
         XmlTable cfgTable = new XmlTable(TableName.OnuCfg);
         onuCfg.stream().map(OnuCfg::toMap).forEach(cfgTable::insert);
@@ -118,11 +118,11 @@ public class OnuBase {
         return null;
     }
 
-    public List<OnuMacBind> getMacList() {
+    public List<OnuMac> getMacList() {
         return macList;
     }
 
-    public void setMacList(List<OnuMacBind> macList) {
+    public void setMacList(List<OnuMac> macList) {
         this.macList = macList;
     }
 

@@ -28,9 +28,9 @@ public class XmlMapper {
     }
 
     private static void testOnuBase() {
-        OnuMacBind bind = new OnuMacBind("id", "mac", "desc");
-        OnuMacBind bind1 = new OnuMacBind("id1", "mac1", "desc1");
-        OnuMacBind bind2 = new OnuMacBind("id2", "mac2", "desc2");
+        OnuMac bind = new OnuMac("id", "mac", "desc");
+        OnuMac bind1 = new OnuMac("id1", "mac1", "desc1");
+        OnuMac bind2 = new OnuMac("id2", "mac2", "desc2");
 
         OnuCfg onuCfg = new OnuCfg("id", "upMaxBw", "downMaxBw", "upCommitedBw", "downCommitedBw", "upFixBw", "upBurstSize", "downBurstSize", "upPriority", "address", "mask", "gateway", "cvlan", "svlan", "priority");
         OnuCfg onuCfg1 = new OnuCfg("id1", "upMaxBw1", "downMaxBw1", "upCommitedBw1", "downCommitedBw1", "upFixBw1", "upBurstSize1", "downBurstSize1", "upPriority1");
