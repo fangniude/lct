@@ -120,7 +120,7 @@ public class OltSystemBean extends SnmpMibBean {
             prepareRead(getProperty(field.name()));
         }
 
-        return loadAll(new int[]{1});
+        return loadAll(new int[]{});
     }
 
     public boolean modify() throws MibBeanException {

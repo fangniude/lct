@@ -98,7 +98,7 @@ public class OltQinQBean extends SnmpMibBean {
             prepareRead(getProperty(field.name()));
         }
 
-        return loadAll(new int[]{1});
+        return loadAll(new int[]{1, 1});
     }
 
     public boolean modify() throws MibBeanException {

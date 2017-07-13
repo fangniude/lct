@@ -95,7 +95,7 @@ public class XmlProxy implements ISnmpProxy {
         Object[] objs = new Object[anOidList.length];
 
         for (int i = 0; i < anOidList.length; i++) {
-            objs[i] = map.getOrDefault(anOidList[i].substring(tableName.length() + 1), "");
+            objs[i] = map.getOrDefault(anOidList[i].split("\\.")[1], "");
         }
 
 

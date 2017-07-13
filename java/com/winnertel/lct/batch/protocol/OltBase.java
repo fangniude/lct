@@ -46,7 +46,7 @@ public class OltBase {
         XmlTable vlanTable = tableMap.get(TableName.OltVlan);
         XmlTable qinqTable = tableMap.get(TableName.OltQinQ);
 
-        OltSystem oltSystem = OltSystem.valueOf(systemTable.selectOne(new XmlRowIndex("")));
+        OltSystem oltSystem = OltSystem.valueOf(systemTable.selectOne(new XmlRowIndex("0")));
 
         List<OltVlan> vlanList;
         if (vlanTable != null) {

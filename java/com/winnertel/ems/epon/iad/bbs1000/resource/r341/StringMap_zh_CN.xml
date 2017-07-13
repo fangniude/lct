@@ -3987,6 +3987,8 @@
 	<String key="isFilterEmptyMac" value="¹ýÂË¿ÕMACÏî" />
 
     <String key="Batch_Config" value="ÅúÁ¿ÅäÖÃ" />
+    <String key="Apply_OltBase_xml" value="ÏÂ·¢OLTÅäÖÃ" />
+
     <String key="OltBase_Panel" value="OLTÅäÖÃ" />
     <String key="OnuBase_Panel" value="ONUÅäÖÃ" />
     <String key="OnuProfile_Panel" value="ONUÄ£°åÅäÖÃ" />

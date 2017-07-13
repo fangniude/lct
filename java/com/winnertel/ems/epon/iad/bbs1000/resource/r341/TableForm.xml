@@ -3,7 +3,7 @@
 <TableForm>
     <TablePanelList>
 
-        <!--OltVlanTable-->
+        <!-- OltVlanTable -->
         <Panel name="OltVlanTable_Panel">
             <Table mib_bean="com.winnertel.lct.batch.bean.OltVlanBean" snmp_proxy="com.winnertel.lct.batch.proxy.XmlProxy">
                 <Field name="id" mib_property="id"/>
@@ -18,6 +18,152 @@
                 <Panel action_id="Modify_OltVlanTable_Log" class="com.winnertel.lct.batch.gui.OltVlanPanel"/>
             </Button>
             <Button id="Delete_OltVlanTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+        <!-- OltQinQTable -->
+        <Panel name="OltQinQTable_Panel">
+            <Table mib_bean="com.winnertel.lct.batch.bean.OltQinQBean" snmp_proxy="com.winnertel.lct.batch.proxy.XmlProxy">
+                <Field name="id" mib_property="id"/>
+                <Field name="index" mib_property="index"/>
+                <Field name="startVlan" mib_property="startVlan"/>
+                <Field name="endVlan" mib_property="endVlan"/>
+                <Field name="etherType" mib_property="etherType"/>
+                <Field name="newVlan" mib_property="newVlan"/>
+            </Table>
+            <Button id="Add_OltQinQTable" type="Add" style="O|C">
+                <Panel action_id="Add_OltQinQTable_Log" class="com.winnertel.lct.batch.gui.OltQinQPanel"/>
+            </Button>
+            <Button id="Modify_OltQinQTable" type="Modify">
+                <Panel action_id="Modify_OltQinQTable_Log" class="com.winnertel.lct.batch.gui.OltQinQPanel"/>
+            </Button>
+            <Button id="Delete_OltQinQTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!--OnuMacTable_Panel-->
+        <Panel name="OnuMacTable_Panel">
+            <Table mib_bean="com.winnertel.lct.batch.bean.OnuMacBean" snmp_proxy="com.winnertel.lct.batch.proxy.XmlProxy">
+                <Field name="id" mib_property="id"/>
+                <Field name="mac" mib_property="mac"/>
+                <Field name="desc" mib_property="desc"/>
+            </Table>
+            <Button id="Add_OnuMacTable" type="Add" style="O|C">
+                <Panel action_id="Add_OnuMacTable_Log" class="com.winnertel.lct.batch.gui.OnuMacPanel"/>
+            </Button>
+            <Button id="Modify_OnuMacTable" type="Modify">
+                <Panel action_id="Modify_OnuMacTable_Log" class="com.winnertel.lct.batch.gui.OnuMacPanel"/>
+            </Button>
+            <Button id="Delete_OnuMacTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- OnuCfgTable -->
+        <Panel name="OnuCfgTable_Panel">
+            <Table mib_bean="com.winnertel.lct.batch.bean.OnuCfgBean" snmp_proxy="com.winnertel.lct.batch.proxy.XmlProxy">
+                <Field name="id" mib_property="id"/>
+                <Field name="upMaxBw" mib_property="upMaxBw"/>
+                <Field name="downMaxBw" mib_property="downMaxBw"/>
+                <Field name="upCommittedBw" mib_property="upCommittedBw"/>
+                <Field name="downCommittedBw" mib_property="downCommittedBw"/>
+                <Field name="upFixBw" mib_property="upFixBw"/>
+                <Field name="upBurstSize" mib_property="upBurstSize"/>
+                <Field name="downBurstSize" mib_property="downBurstSize"/>
+                <Field name="upPriority" mib_property="upPriority"/>
+                <Field name="mxuIpAddress" mib_property="mxuIpAddress"/>
+                <Field name="mxuIpMask" mib_property="mxuIpMask"/>
+                <Field name="mxuGateway" mib_property="mxuGateway"/>
+                <Field name="mxuCVlan" mib_property="mxuCVlan"/>
+                <Field name="mxuSVlan" mib_property="mxuSVlan"/>
+                <Field name="mxuPriority" mib_property="mxuPriority"/>
+            </Table>
+            <Button id="Add_OnuCfgTable" type="Add" style="O|C">
+                <Panel action_id="Add_OnuCfgTable_Log" class="com.winnertel.lct.batch.gui.OnuCfgPanel"/>
+            </Button>
+            <Button id="Modify_OnuCfgTable" type="Modify">
+                <Panel action_id="Modify_OnuCfgTable_Log" class="com.winnertel.lct.batch.gui.OnuCfgPanel"/>
+            </Button>
+            <Button id="Delete_OnuCfgTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- OnuUniTable -->
+        <Panel name="OnuUniTable_Panel">
+            <Table mib_bean="com.winnertel.lct.batch.bean.OnuUniBean" snmp_proxy="com.winnertel.lct.batch.proxy.XmlProxy">
+                <Field name="id" mib_property="id"/>
+                <Field name="vlanMode" mib_property="vlanMode"/>
+                <Field name="vlanTag" mib_property="vlanTag"/>
+                <Field name="vlanTpid" mib_property="vlanTpid"/>
+                <Field name="policingEnable" mib_property="policingEnable"/>
+                <Field name="policingCir" mib_property="policingCir"/>
+                <Field name="policingCbs" mib_property="policingCbs"/>
+                <Field name="policingEbs" mib_property="policingEbs"/>
+                <Field name="dsCir" mib_property="dsCir"/>
+                <Field name="dsPir" mib_property="dsPir"/>
+                <Field name="dsEnable" mib_property="dsEnable"/>
+                <Field name="loopDetect" mib_property="loopDetect"/>
+            </Table>
+            <Button id="Add_OnuUniTable" type="Add" style="O|C">
+                <Panel action_id="Add_OnuUniTable_Log" class="com.winnertel.lct.batch.gui.OnuUniPanel"/>
+            </Button>
+            <Button id="Modify_OnuUniTable" type="Modify">
+                <Panel action_id="Modify_OnuUniTable_Log" class="com.winnertel.lct.batch.gui.OnuUniPanel"/>
+            </Button>
+            <Button id="Delete_OnuUniTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- ProfileOnuTable -->
+        <Panel name="ProfileOnuTable_Panel">
+            <Table mib_bean="com.winnertel.lct.batch.bean.ProfileOnuBean" snmp_proxy="com.winnertel.lct.batch.proxy.XmlProxy">
+                <Field name="id" mib_property="id"/>
+                <Field name="upMaxBw" mib_property="upMaxBw"/>
+                <Field name="downMaxBw" mib_property="downMaxBw"/>
+                <Field name="upCommittedBw" mib_property="upCommittedBw"/>
+                <Field name="downCommittedBw" mib_property="downCommittedBw"/>
+                <Field name="upFixBw" mib_property="upFixBw"/>
+                <Field name="upBurstSize" mib_property="upBurstSize"/>
+                <Field name="downBurstSize" mib_property="downBurstSize"/>
+                <Field name="upPriority" mib_property="upPriority"/>
+                <Field name="mxuIpAddress" mib_property="mxuIpAddress"/>
+                <Field name="mxuIpMask" mib_property="mxuIpMask"/>
+                <Field name="mxuGateway" mib_property="mxuGateway"/>
+                <Field name="mxuCVlan" mib_property="mxuCVlan"/>
+                <Field name="mxuSVlan" mib_property="mxuSVlan"/>
+                <Field name="mxuPriority" mib_property="mxuPriority"/>
+            </Table>
+            <Button id="Add_ProfileOnuTable" type="Add" style="O|C">
+                <Panel action_id="Add_ProfileOnuTable_Log" class="com.winnertel.lct.batch.gui.ProfileOnuPanel"/>
+            </Button>
+            <Button id="Modify_ProfileOnuTable" type="Modify">
+                <Panel action_id="Modify_ProfileOnuTable_Log" class="com.winnertel.lct.batch.gui.ProfileOnuPanel"/>
+            </Button>
+            <Button id="Delete_ProfileOnuTable" type="Delete"/>
+            <Button type="Refresh"/>
+        </Panel>
+
+        <!-- OnuUniTable -->
+        <Panel name="ProfileUniTable_Panel">
+            <Table mib_bean="com.winnertel.lct.batch.bean.ProfileUniBean" snmp_proxy="com.winnertel.lct.batch.proxy.XmlProxy">
+                <Field name="id" mib_property="id"/>
+                <Field name="vlanMode" mib_property="vlanMode"/>
+                <Field name="vlanTag" mib_property="vlanTag"/>
+                <Field name="vlanTpid" mib_property="vlanTpid"/>
+                <Field name="policingEnable" mib_property="policingEnable"/>
+                <Field name="policingCir" mib_property="policingCir"/>
+                <Field name="policingCbs" mib_property="policingCbs"/>
+                <Field name="policingEbs" mib_property="policingEbs"/>
+                <Field name="dsCir" mib_property="dsCir"/>
+                <Field name="dsPir" mib_property="dsPir"/>
+                <Field name="dsEnable" mib_property="dsEnable"/>
+                <Field name="loopDetect" mib_property="loopDetect"/>
+            </Table>
+            <Button id="Add_ProfileUniTable" type="Add" style="O|C">
+                <Panel action_id="Add_ProfileUniTable_Log" class="com.winnertel.lct.batch.gui.ProfileUniPanel"/>
+            </Button>
+            <Button id="Modify_ProfileUniTable" type="Modify">
+                <Panel action_id="Modify_ProfileUniTable_Log" class="com.winnertel.lct.batch.gui.ProfileUniPanel"/>
+            </Button>
+            <Button id="Delete_ProfileUniTable" type="Delete"/>
             <Button type="Refresh"/>
         </Panel>
 
@@ -12331,5 +12477,44 @@
         <Field name="member" label="member"/>
         <Field name="tagMember" label="tagMember"/>
 
+        <Field name="id" label="id"/>
+        <Field name="index" label="index"/>
+        <Field name="startVlan" label="startVlan"/>
+        <Field name="endVlan" label="endVlan"/>
+        <Field name="etherType" label="etherType"/>
+        <Field name="newVlan" label="newVlan"/>
+
+        <Field name="id" label="id"/>
+        <Field name="mac" label="mac"/>
+        <Field name="desc" label="desc"/>
+
+        <Field name="id" label="id"/>
+        <Field name="upMaxBw" label="upMaxBw"/>
+        <Field name="downMaxBw" label="downMaxBw"/>
+        <Field name="upCommittedBw" label="upCommittedBw"/>
+        <Field name="downCommittedBw" label="downCommittedBw"/>
+        <Field name="upFixBw" label="upFixBw"/>
+        <Field name="upBurstSize" label="upBurstSize"/>
+        <Field name="downBurstSize" label="downBurstSize"/>
+        <Field name="upPriority" label="upPriority"/>
+        <Field name="mxuIpAddress" label="mxuIpAddress"/>
+        <Field name="mxuIpMask" label="mxuIpMask"/>
+        <Field name="mxuGateway" label="mxuGateway"/>
+        <Field name="mxuCVlan" label="mxuCVlan"/>
+        <Field name="mxuSVlan" label="mxuSVlan"/>
+        <Field name="mxuPriority" label="mxuPriority"/>
+
+        <Field name="id" label="id"/>
+        <Field name="vlanMode" label="vlanMode"/>
+        <Field name="vlanTag" label="vlanTag"/>
+        <Field name="vlanTpid" label="vlanTpid"/>
+        <Field name="policingEnable" label="policingEnable"/>
+        <Field name="policingCir" label="policingCir"/>
+        <Field name="policingCbs" label="policingCbs"/>
+        <Field name="policingEbs" label="policingEbs"/>
+        <Field name="dsCir" label="dsCir"/>
+        <Field name="dsPir" label="dsPir"/>
+        <Field name="dsEnable" label="dsEnable"/>
+        <Field name="loopDetect" label="loopDetect"/>
     </FieldList>
 </TableForm>

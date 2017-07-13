@@ -48,6 +48,7 @@ public class OltSystem {
 
     public Map<String, Object> toMap() {
         Map<String, Object> map = new HashMap<>();
+        map.put("index.0", "0");
         map.put(Field.name.name(), name);
         map.put(Field.location.name(), location);
         map.put(Field.contact.name(), contact);

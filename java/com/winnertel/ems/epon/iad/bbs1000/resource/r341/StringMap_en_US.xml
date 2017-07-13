@@ -3871,6 +3871,7 @@
 	<String key="isFilterEmptyMac" value="Filter Empty MAC Items" />
 
 	<String key="Batch_Config" value="Batch Config" />
+	<String key="Apply_OltBase_xml" value="Apply OLT Config" />
 
 	<String key="OltBase_Panel" value="OLT Config" />
 	<String key="OnuBase_Panel" value="ONU Config" />

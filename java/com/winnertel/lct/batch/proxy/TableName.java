@@ -10,7 +10,7 @@ public enum TableName {
     public IndexType[] indexTypes() {
         switch (this) {
             case OltSystem:
-                return new IndexType[0];
+                return new IndexType[]{IndexType.INT};
             case OltVlan:
                 return new IndexType[]{IndexType.INT};
             case OltQinQ:

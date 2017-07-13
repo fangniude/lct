@@ -5,9 +5,12 @@ import com.winnertel.em.framework.gui.IGuiComposer;
 import com.winnertel.em.framework.gui.swing.UPanel;
 import com.winnertel.em.framework.gui.util.DvmStringMap;
 import com.winnertel.em.standard.snmp.gui.SnmpTablePane;
+import com.winnertel.lct.batch.proxy.XmlDataBase;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 /**
  * Created by IntelliJ IDEA.
@@ -17,6 +20,10 @@ public class OltBasePanel extends UPanel {
     private final DvmStringMap stringMap;
     private IGuiComposer composer;
     private SnmpTablePane vlanPanel;
+    private JButton applyOltBaseXml;
+    private JTabbedPane jTabbedPane;
+    private SnmpTablePane qinqPanel;
+    private OltSystemPanel systemPanel;
 
     public OltBasePanel(IApplication app) {
         super(app);
@@ -27,12 +34,13 @@ public class OltBasePanel extends UPanel {
     }
 
     public void initGui() {
-        JTabbedPane jTabbedPane = new JTabbedPane();
+        jTabbedPane = new JTabbedPane();
 
-
+        systemPanel = new OltSystemPanel(fApplication);
+        jTabbedPane.addTab(stringMap.getString("System_Information"), systemPanel);
         vlanPanel = (SnmpTablePane) composer.composeSnmpTablePane("OltVlanTable_Panel");
         jTabbedPane.addTab(stringMap.getString("VLAN_Config"), vlanPanel);
-        SnmpTablePane qinqPanel = (SnmpTablePane) composer.composeSnmpTablePane("OltSelectiveQinQ_Panel");
+        qinqPanel = (SnmpTablePane) composer.composeSnmpTablePane("OltQinQTable_Panel");
         jTabbedPane.addTab(stringMap.getString("QinQ_Config"), qinqPanel);
 
         this.setLayout(new BorderLayout());
@@ -41,13 +49,28 @@ public class OltBasePanel extends UPanel {
         JPanel buttonPanel = new JPanel(new FlowLayout());
 //    buttonPanel.add(new JButton(stringMap.getString("Import")));
 //    buttonPanel.add(new JButton(stringMap.getString("Save_As")));
-        buttonPanel.add(new JButton(stringMap.getString("Apply")));
+        applyOltBaseXml = new JButton(stringMap.getString("Apply_OltBase_xml"));
+        applyOltBaseXml.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                XmlDataBase db = XmlDataBase.getInstance(fApplication.getSnmpProxy().getTargetHost());
+                db.sendOltBase();
+            }
+        });
+        buttonPanel.add(applyOltBaseXml);
         this.add(buttonPanel, BorderLayout.SOUTH);
+
     }
 
     @Override
     public void refresh() {
-        vlanPanel.refresh();
+        if (jTabbedPane.isEnabledAt(0)) {
+            systemPanel.refresh();
+        } else if (jTabbedPane.isEnabledAt(1)) {
+            vlanPanel.refresh();
+        } else if (jTabbedPane.isEnabledAt(2)) {
+            qinqPanel.refresh();
+        }
     }
 
 }

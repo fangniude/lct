@@ -26,12 +26,17 @@ public class OnuProfilePanel extends UPanel {
     }
 
     public void initGui() {
+    }
+
+    @Override
+    public void refresh() {
         JTabbedPane jTabbedPane = new JTabbedPane();
 
 
-        SnmpTablePane vlanPanel = (SnmpTablePane) composer.composeSnmpTablePane("PortBasedVLAN_Panel");
+        SnmpTablePane vlanPanel = (SnmpTablePane) composer.composeSnmpTablePane("ProfileOnuTable_Panel");
+        SnmpTablePane qinqPanel = (SnmpTablePane) composer.composeSnmpTablePane("ProfileUniTable_Panel");
+
         jTabbedPane.addTab(stringMap.getString("Onu_Profile"), vlanPanel);
-        SnmpTablePane qinqPanel = (SnmpTablePane) composer.composeSnmpTablePane("OltSelectiveQinQ_Panel");
         jTabbedPane.addTab(stringMap.getString("Uni_Profile"), qinqPanel);
 
         this.setLayout(new BorderLayout());
@@ -42,10 +47,6 @@ public class OnuProfilePanel extends UPanel {
 //    buttonPanel.add(new JButton(stringMap.getString("Save_As")));
         buttonPanel.add(new JButton(stringMap.getString("Apply")));
         this.add(buttonPanel, BorderLayout.SOUTH);
-    }
-
-    @Override
-    public void refresh() {
     }
 
 }

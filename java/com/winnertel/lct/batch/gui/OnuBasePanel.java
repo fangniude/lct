@@ -26,13 +26,19 @@ public class OnuBasePanel extends UPanel {
     }
 
     public void initGui() {
+    }
+
+    @Override
+    public void refresh() {
         JTabbedPane jTabbedPane = new JTabbedPane();
 
+        SnmpTablePane macPanel = (SnmpTablePane) composer.composeSnmpTablePane("OnuMacTable_Panel");
+        SnmpTablePane onuCfgPanel = (SnmpTablePane) composer.composeSnmpTablePane("OnuCfgTable_Panel");
+        SnmpTablePane onuUniPanel = (SnmpTablePane) composer.composeSnmpTablePane("OnuUniTable_Panel");
 
-        SnmpTablePane vlanPanel = (SnmpTablePane) composer.composeSnmpTablePane("PortBasedVLAN_Panel");
-        jTabbedPane.addTab(stringMap.getString("Onu_Config"), vlanPanel);
-        SnmpTablePane qinqPanel = (SnmpTablePane) composer.composeSnmpTablePane("OltSelectiveQinQ_Panel");
-        jTabbedPane.addTab(stringMap.getString("Uni_Config"), qinqPanel);
+        jTabbedPane.addTab(stringMap.getString("Onu_Mac"), macPanel);
+        jTabbedPane.addTab(stringMap.getString("Onu_Config"), onuCfgPanel);
+        jTabbedPane.addTab(stringMap.getString("Uni_Config"), onuUniPanel);
 
         this.setLayout(new BorderLayout());
         this.add(jTabbedPane, BorderLayout.CENTER);
@@ -42,10 +48,6 @@ public class OnuBasePanel extends UPanel {
 //    buttonPanel.add(new JButton(stringMap.getString("Save_As")));
         buttonPanel.add(new JButton(stringMap.getString("Apply")));
         this.add(buttonPanel, BorderLayout.SOUTH);
-    }
-
-    @Override
-    public void refresh() {
     }
 
 }
