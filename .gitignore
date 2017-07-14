@@ -10,3 +10,6 @@ hs_err_pid*
 .idea
 logs
 out
+/LCT/
+/bin/jre1.8/
+/LCT.zip

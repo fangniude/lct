@@ -16,7 +16,7 @@ set OPTS=-server -Xms512M -Xmx512M -Xss512k
 echo OPTS: %OPTS%
 echo CLASSPATH: %CP%
 echo.
-java -Djava.security.policy=.\java.policy %OPTS% -cp %CP%  -Ddvm.mode.lct=true com.winnertel.ems.lct.LctMain LCT
+.\bin\jre1.8\bin\java -Djava.security.policy=.\java.policy %OPTS% -cp %CP%  -Ddvm.mode.lct=true com.winnertel.ems.lct.LctMain LCT
 
 pause
 cmd
