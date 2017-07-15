@@ -85,19 +85,27 @@ public class OnuUni {
 
     public static OnuUni valueOf(Map<String, Object> map) {
         OnuUni uni = new OnuUni();
-        uni.setId(String.valueOf(map.get("index.0")));
-        uni.setVlanMode(String.valueOf(map.get(Field.vlanMode.name())));
-        uni.setVlanTag(String.valueOf(map.get(Field.vlanTag.name())));
-        uni.setVlanTpid(String.valueOf(map.get(Field.vlanTpid.name())));
-        uni.setPolicingEnable(String.valueOf(map.get(Field.policingEnable.name())));
-        uni.setPolicingCir(String.valueOf(map.get(Field.policingCir.name())));
-        uni.setPolicingCbs(String.valueOf(map.get(Field.policingCbs.name())));
-        uni.setPolicingEbs(String.valueOf(map.get(Field.policingEbs.name())));
-        uni.setDsCir(String.valueOf(map.get(Field.dsCir.name())));
-        uni.setDsPir(String.valueOf(map.get(Field.dsPir.name())));
-        uni.setDsEnable(String.valueOf(map.get(Field.dsEnable.name())));
-        uni.setLoopDetect(String.valueOf(map.get(Field.loopDetect.name())));
+        uni.setId(valueOf(map.get("index.0")));
+        uni.setVlanMode(valueOf(map.get(Field.vlanMode.name())));
+        uni.setVlanTag(valueOf(map.get(Field.vlanTag.name())));
+        uni.setVlanTpid(valueOf(map.get(Field.vlanTpid.name())));
+        uni.setPolicingEnable(valueOf(map.get(Field.policingEnable.name())));
+        uni.setPolicingCir(valueOf(map.get(Field.policingCir.name())));
+        uni.setPolicingCbs(valueOf(map.get(Field.policingCbs.name())));
+        uni.setPolicingEbs(valueOf(map.get(Field.policingEbs.name())));
+        uni.setDsCir(valueOf(map.get(Field.dsCir.name())));
+        uni.setDsPir(valueOf(map.get(Field.dsPir.name())));
+        uni.setDsEnable(valueOf(map.get(Field.dsEnable.name())));
+        uni.setLoopDetect(valueOf(map.get(Field.loopDetect.name())));
         return uni;
+    }
+
+    public static String valueOf(Object o) {
+        if (o == null) {
+            return null;
+        } else {
+            return String.valueOf(o);
+        }
     }
 
     public String getId() {

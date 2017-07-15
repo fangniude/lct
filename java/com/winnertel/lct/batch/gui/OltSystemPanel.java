@@ -18,6 +18,9 @@ import com.winnertel.lct.batch.proxy.XmlProxy;
 import javax.swing.*;
 import java.awt.*;
 
+import static com.winnertel.lct.batch.gui.TransformUtils.fromHex;
+import static com.winnertel.lct.batch.gui.TransformUtils.toHex;
+
 public class OltSystemPanel extends UPanel {
     private final String nameLabel = fStringMap.getString("sysName") + ": ";
     private final String locationLabel = fStringMap.getString("sysLocation") + ": ";
@@ -127,9 +130,9 @@ public class OltSystemPanel extends UPanel {
             throw new RuntimeException("error");
         }
 
-        nameField.setValue(mbean.getName());
-        locationField.setValue(mbean.getLocation());
-        contactField.setValue(mbean.getContact());
+        nameField.setValue(fromHex(mbean.getName()));
+        locationField.setValue(fromHex(mbean.getLocation()));
+        contactField.setValue(fromHex(mbean.getContact()));
         String mgmtVlan = mbean.getMgmtVlan();
         if (mgmtVlan != null && !mgmtVlan.trim().isEmpty()) {
             try {
@@ -154,9 +157,9 @@ public class OltSystemPanel extends UPanel {
 
     public void updateModel() {
         OltSystemBean model = (OltSystemBean) getModel();
-        model.setName(nameField.getValue());
-        model.setLocation(locationField.getValue());
-        model.setContact(contactField.getValue());
+        model.setName(toHex(nameField.getValue()));
+        model.setLocation(toHex(locationField.getValue()));
+        model.setContact(toHex(contactField.getValue()));
         model.setMgmtVlan(String.valueOf(mgmtVlanField.getValue()));
         model.setMacAgeing(String.valueOf(macAgeingField.getValue()));
         model.setMacAuth(String.valueOf(macAuthField.getSelectedItem()));

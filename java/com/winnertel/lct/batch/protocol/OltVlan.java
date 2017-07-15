@@ -42,11 +42,19 @@ public class OltVlan {
 
     public static OltVlan valueOf(Map<String, Object> map) {
         OltVlan vlan = new OltVlan();
-        vlan.setId(String.valueOf(map.get("index.0")));
-        vlan.setName(String.valueOf(map.get(Field.name.name())));
-        vlan.setMember(String.valueOf(map.get(Field.member.name())));
-        vlan.setTagMember(String.valueOf(map.get(Field.tagMember.name())));
+        vlan.setId(valueOf(map.get("index.0")));
+        vlan.setName(valueOf(map.get(Field.name.name())));
+        vlan.setMember(valueOf(map.get(Field.member.name())));
+        vlan.setTagMember(valueOf(map.get(Field.tagMember.name())));
         return vlan;
+    }
+
+    public static String valueOf(Object o) {
+        if (o == null) {
+            return null;
+        } else {
+            return String.valueOf(o);
+        }
     }
 
     public String getId() {

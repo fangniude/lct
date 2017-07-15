@@ -63,16 +63,24 @@ public class OltSystem {
 
     public static OltSystem valueOf(Map<String, Object> map) {
         OltSystem system = new OltSystem();
-        system.setName(String.valueOf(map.get(Field.name.name())));
-        system.setLocation(String.valueOf(map.get(Field.location.name())));
-        system.setContact(String.valueOf(map.get(Field.contact.name())));
-        system.setMgmtVlan(String.valueOf(map.get(Field.mgmtVlan.name())));
-        system.setMacAgeing(String.valueOf(map.get(Field.macAgeing.name())));
-        system.setMacAuth(String.valueOf(map.get(Field.macAuth.name())));
-        system.setVlanTransParent(String.valueOf(map.get(Field.vlanTransParent.name())));
-        system.setGlobalP2p(String.valueOf(map.get(Field.globalP2p.name())));
-        system.setMgmtIp(String.valueOf(map.get(Field.mgmtIp.name())));
+        system.setName(valueOf(map.get(Field.name.name())));
+        system.setLocation(valueOf(map.get(Field.location.name())));
+        system.setContact(valueOf(map.get(Field.contact.name())));
+        system.setMgmtVlan(valueOf(map.get(Field.mgmtVlan.name())));
+        system.setMacAgeing(valueOf(map.get(Field.macAgeing.name())));
+        system.setMacAuth(valueOf(map.get(Field.macAuth.name())));
+        system.setVlanTransParent(valueOf(map.get(Field.vlanTransParent.name())));
+        system.setGlobalP2p(valueOf(map.get(Field.globalP2p.name())));
+        system.setMgmtIp(valueOf(map.get(Field.mgmtIp.name())));
         return system;
+    }
+
+    public static String valueOf(Object o) {
+        if (o == null) {
+            return null;
+        } else {
+            return String.valueOf(o);
+        }
     }
 
     public String getName() {

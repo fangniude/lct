@@ -72,10 +72,12 @@ public class XmlDataBase {
     }
 
     public List<Map<String, Object>> select(TableName tableName) {
+        fromDisk();
         return tableMap.get(tableName).select();
     }
 
     public Map<String, Object> selectOne(TableName tableName, XmlRowIndex index) {
+        fromDisk();
         return tableMap.get(tableName).selectOne(index);
     }
 
@@ -86,6 +88,11 @@ public class XmlDataBase {
 
     public void update(TableName tableName, Map<String, Object> map) {
         tableMap.get(tableName).update(map);
+        toDisk();
+    }
+
+    public void save(TableName tableName, Map<String, Object> map) {
+        tableMap.get(tableName).save(map);
         toDisk();
     }
 

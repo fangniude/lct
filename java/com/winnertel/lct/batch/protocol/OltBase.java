@@ -67,16 +67,16 @@ public class OltBase {
 
     public void toMap(Map<TableName, XmlTable> tableMap) {
         XmlTable systemTable = new XmlTable(TableName.OltSystem);
-        systemTable.insert(system.toMap());
+        systemTable.save(system.toMap());
 
         XmlTable vlanTable = new XmlTable(TableName.OltVlan);
-        vlanList.stream().map(OltVlan::toMap).forEach(vlanTable::insert);
+        vlanList.stream().map(OltVlan::toMap).forEach(vlanTable::save);
 
         XmlTable qinqTable = new XmlTable(TableName.OltQinQ);
-        qinqList.stream().map(OltQinQ::toMap).forEach(qinqTable::insert);
+        qinqList.stream().map(OltQinQ::toMap).forEach(qinqTable::save);
 
         tableMap.put(TableName.OltSystem, systemTable);
-        tableMap.put(TableName.OltVlan, qinqTable);
+        tableMap.put(TableName.OltVlan, vlanTable);
         tableMap.put(TableName.OltQinQ, qinqTable);
     }
 

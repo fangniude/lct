@@ -36,7 +36,12 @@ public class OnuCfgBean extends SnmpMibBean {
     }
 
     public String getProperty(OnuCfg.Field field) {
-        return String.valueOf(getProperty(field.name()).getValue());
+        Object value = getProperty(field.name()).getValue();
+        if (value == null) {
+            return null;
+        } else {
+            return String.valueOf(value);
+        }
     }
 
     public void setProperty(OnuCfg.Field field, String val) {

@@ -3988,6 +3988,8 @@
 
     <String key="Batch_Config" value="批量配置" />
     <String key="Apply_OltBase_xml" value="下发OLT配置" />
+    <String key="Apply_OnuBase_xml" value="下发ONU配置" />
+    <String key="Apply_OnuProfile_xml" value="下发ONU模板配置" />
 
     <String key="OltBase_Panel" value="OLT配置" />
     <String key="OnuBase_Panel" value="ONU配置" />
@@ -4003,4 +4005,29 @@
     <String key="Uni_Config" value="UNI配置" />
     <String key="Onu_Profile" value="ONU模板配置" />
     <String key="Uni_Profile" value="UNI模板配置" />
+
+
+    <String key="mgmtVlanLabel" value="管理VLAN" />
+    <String key="vlanTransParentLabel" value="VLAN转换" />
+    <String key="macAuthLabel" value="MAC认证" />
+    <String key="globalP2pLabel" value="全局P2P" />
+    <String key="mgmtIpLabel" value="管理IP地址" />
+
+
+    <String key="id" value="ID" />
+    <String key="idLabel" value="ID" />
+    <String key="name" value="名称" />
+    <String key="member" value="端口" />
+    <String key="tagMember" value="Tagged端口" />
+
+    <String key="qinqPonId" value="PON端口" />
+    <String key="index" value="索引" />
+    <String key="startVlan" value="开始VLAN" />
+    <String key="endVlan" value="结束VLAN" />
+    <String key="etherType" value="以太网类型" />
+    <String key="newVlan" value="外层VLAN" />
+
+
+    <String key="Onu_Mac" value="ONU MAC绑定" />
+
 </StringMap>

@@ -58,10 +58,10 @@ public class Profile {
 
     public void toMap(Map<TableName, XmlTable> tableMap) {
         XmlTable onuTable = new XmlTable(TableName.ProfileOnu);
-        onuList.stream().map(ProfileOnu::toMap).forEach(onuTable::insert);
+        onuList.stream().map(ProfileOnu::toMap).forEach(onuTable::save);
 
         XmlTable uniTable = new XmlTable(TableName.ProfileUni);
-        uniList.stream().map(ProfileUni::toMap).forEach(uniTable::insert);
+        uniList.stream().map(ProfileUni::toMap).forEach(uniTable::save);
 
         tableMap.put(TableName.ProfileOnu, onuTable);
         tableMap.put(TableName.ProfileUni, uniTable);

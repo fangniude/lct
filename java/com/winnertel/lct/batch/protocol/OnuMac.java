@@ -38,10 +38,18 @@ public class OnuMac {
 
     public static OnuMac valueOf(Map<String, Object> map) {
         OnuMac mac = new OnuMac();
-        mac.setId(String.valueOf(map.get("index.0")));
-        mac.setMac(String.valueOf(map.get(Field.mac.name())));
-        mac.setDesc(String.valueOf(map.get(Field.desc.name())));
+        mac.setId(valueOf(map.get("index.0")));
+        mac.setMac(valueOf(map.get(Field.mac.name())));
+        mac.setDesc(valueOf(map.get(Field.desc.name())));
         return mac;
+    }
+
+    public static String valueOf(Object o) {
+        if (o == null) {
+            return null;
+        } else {
+            return String.valueOf(o);
+        }
     }
 
     public String getId() {

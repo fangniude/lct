@@ -3872,6 +3872,8 @@
 
 	<String key="Batch_Config" value="Batch Config" />
 	<String key="Apply_OltBase_xml" value="Apply OLT Config" />
+	<String key="Apply_OnuBase_xml" value="Apply ONU Config" />
+	<String key="Apply_OnuProfile_xml" value="Apply ONU Profile Config" />
 
 	<String key="OltBase_Panel" value="OLT Config" />
 	<String key="OnuBase_Panel" value="ONU Config" />
@@ -3887,5 +3889,29 @@
 	<String key="Uni_Config" value="UNI Config" />
 	<String key="Onu_Profile" value="ONU Profile" />
 	<String key="Uni_Profile" value="UNI Profile" />
+
+    <String key="mgmtVlanLabel" value="Management VLAN" />
+    <String key="vlanTransParentLabel" value="VLAN Trans" />
+    <String key="macAuthLabel" value="MAC Auth" />
+    <String key="globalP2pLabel" value="Global P2P" />
+    <String key="mgmtIpLabel" value="Management IP" />
+
+
+    <String key="id" value="ID" />
+    <String key="idLabel" value="ID" />
+    <String key="name" value="Name" />
+    <String key="member" value="Port" />
+    <String key="tagMember" value="Tagged Port" />
+
+    <String key="qinqPonId" value="PON Port" />
+    <String key="index" value="Index" />
+    <String key="startVlan" value="Start VLAN" />
+    <String key="endVlan" value="End VLAN" />
+    <String key="etherType" value="Ethernet Type" />
+    <String key="newVlan" value="New VLAN" />
+
+
+    <String key="Onu_Mac" value="ONU MAC Binding" />
+
 
 </StringMap>

@@ -60,15 +60,16 @@ public class OltBasePanel extends UPanel {
         buttonPanel.add(applyOltBaseXml);
         this.add(buttonPanel, BorderLayout.SOUTH);
 
+        jTabbedPane.addChangeListener(e -> refresh());
     }
 
     @Override
     public void refresh() {
-        if (jTabbedPane.isEnabledAt(0)) {
+        if (jTabbedPane.getSelectedIndex() == 0) {
             systemPanel.refresh();
-        } else if (jTabbedPane.isEnabledAt(1)) {
+        } else if (jTabbedPane.getSelectedIndex() == 1) {
             vlanPanel.refresh();
-        } else if (jTabbedPane.isEnabledAt(2)) {
+        } else if (jTabbedPane.getSelectedIndex() == 2) {
             qinqPanel.refresh();
         }
     }

@@ -46,6 +46,12 @@ public class XmlTable {
         }
     }
 
+    public void save(Map<String, Object> map) {
+        XmlRow row = new XmlRow(tableName.indexTypes(), map);
+
+        rowMap.put(row.getIndex().toString(), row);
+    }
+
     public void delete(Map<String, Object> map) {
         XmlRowIndex index = new XmlRowIndex(tableName.indexTypes(), map);
         rowMap.remove(index.toString());

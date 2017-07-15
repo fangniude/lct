@@ -13,9 +13,11 @@ import com.winnertel.lct.batch.proxy.XmlProxy;
 import javax.swing.*;
 import java.awt.*;
 
+import static com.winnertel.lct.batch.gui.TransformUtils.setNullableIntField;
+
 public class OltQinQPanel extends UPanel {
     private final String idLabel = fStringMap.getString("qinqPonId") + ": ";
-    private final String indexLabel = fStringMap.getString("qinqIndex") + ": ";
+    private final String indexLabel = fStringMap.getString("index") + ": ";
     private final String startVlanLabel = fStringMap.getString("startVlan") + ": ";
     private final String endVlanLabel = fStringMap.getString("endVlan") + ": ";
     private final String etherTypeLabel = fStringMap.getString("etherType") + ": ";
@@ -86,9 +88,9 @@ public class OltQinQPanel extends UPanel {
 
                 idField.setEnabled(false);
                 indexField.setEnabled(false);
-                startVlanField.setValue(Integer.valueOf(mbean.getStartVlan()));
-                endVlanField.setValue(Integer.valueOf(mbean.getStartVlan()));
-                newVlanField.setValue(Integer.valueOf(mbean.getStartVlan()));
+                setNullableIntField(startVlanField, mbean.getStartVlan());
+                setNullableIntField(endVlanField, mbean.getEndVlan());
+                setNullableIntField(newVlanField, mbean.getNewVlan());
                 etherTypeField.setValue(mbean.getEtherType());
             }
         } catch (Exception ex) {

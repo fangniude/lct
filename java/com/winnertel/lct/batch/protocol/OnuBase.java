@@ -68,16 +68,16 @@ public class OnuBase {
 
     public void toMap(Map<TableName, XmlTable> tableMap) {
         XmlTable macTable = new XmlTable(TableName.OnuMac);
-        macList.stream().map(OnuMac::toMap).forEach(macTable::insert);
+        macList.stream().map(OnuMac::toMap).forEach(macTable::save);
 
         XmlTable cfgTable = new XmlTable(TableName.OnuCfg);
-        onuCfg.stream().map(OnuCfg::toMap).forEach(cfgTable::insert);
+        onuCfg.stream().map(OnuCfg::toMap).forEach(cfgTable::save);
 
         XmlTable uniTable = new XmlTable(TableName.OnuUni);
-        onuUni.stream().map(OnuUni::toMap).forEach(uniTable::insert);
+        onuUni.stream().map(OnuUni::toMap).forEach(uniTable::save);
 
         tableMap.put(TableName.OnuMac, macTable);
-        tableMap.put(TableName.OnuCfg, uniTable);
+        tableMap.put(TableName.OnuCfg, cfgTable);
         tableMap.put(TableName.OnuUni, uniTable);
     }
 

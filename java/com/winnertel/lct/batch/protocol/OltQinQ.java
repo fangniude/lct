@@ -55,13 +55,21 @@ public class OltQinQ {
 
     public static OltQinQ valueOf(Map<String, Object> map) {
         OltQinQ qinQ = new OltQinQ();
-        qinQ.setId(String.valueOf(map.get("index.0")));
-        qinQ.setIndex(String.valueOf(map.get("index.1")));
-        qinQ.setStartVlan(String.valueOf(map.get(OltQinQ.Field.startVlan.name())));
-        qinQ.setEndVlan(String.valueOf(map.get(OltQinQ.Field.endVlan.name())));
-        qinQ.setEtherType(String.valueOf(map.get(OltQinQ.Field.etherType.name())));
-        qinQ.setNewVlan(String.valueOf(map.get(OltQinQ.Field.newVlan.name())));
+        qinQ.setId(valueOf(map.get("index.0")));
+        qinQ.setIndex(valueOf(map.get("index.1")));
+        qinQ.setStartVlan(valueOf(map.get(OltQinQ.Field.startVlan.name())));
+        qinQ.setEndVlan(valueOf(map.get(OltQinQ.Field.endVlan.name())));
+        qinQ.setEtherType(valueOf(map.get(OltQinQ.Field.etherType.name())));
+        qinQ.setNewVlan(valueOf(map.get(OltQinQ.Field.newVlan.name())));
         return qinQ;
+    }
+
+    public static String valueOf(Object o) {
+        if (o == null) {
+            return null;
+        } else {
+            return String.valueOf(o);
+        }
     }
 
     public String getId() {

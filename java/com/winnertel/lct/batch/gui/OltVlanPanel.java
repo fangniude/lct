@@ -125,14 +125,14 @@ public class OltVlanPanel extends UPanel {
 
     private Vector getPortList() throws Exception {
         Vector allPortList = new Vector();
-        allPortList.add("pon1/1");
-        allPortList.add("pon1/2");
-        allPortList.add("pon1/3");
-        allPortList.add("pon1/4");
-        allPortList.add("ge2/1");
-        allPortList.add("ge2/2");
-        allPortList.add("ge2/3");
-        allPortList.add("ge2/4");
+        allPortList.add("PON 1/1");
+        allPortList.add("PON 1/2");
+        allPortList.add("PON 1/3");
+        allPortList.add("PON 1/4");
+        allPortList.add("GE 2/1");
+        allPortList.add("GE 2/2");
+        allPortList.add("GE 2/3");
+        allPortList.add("GE 2/4");
 
         return allPortList;
     }

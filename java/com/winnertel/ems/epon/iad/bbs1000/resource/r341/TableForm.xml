@@ -12485,36 +12485,36 @@
         <Field name="newVlan" label="newVlan"/>
 
         <Field name="id" label="id"/>
-        <Field name="mac" label="mac"/>
-        <Field name="desc" label="desc"/>
+        <Field name="mac" label="utsDot3ValidOnuMacAddr"/>
+        <Field name="desc" label="utsDot3OnuDescription" formatter="com.winnertel.lct.batch.gui.formatter.FromHexStringFormatter"/>
 
         <Field name="id" label="id"/>
-        <Field name="upMaxBw" label="upMaxBw"/>
-        <Field name="downMaxBw" label="downMaxBw"/>
-        <Field name="upCommittedBw" label="upCommittedBw"/>
-        <Field name="downCommittedBw" label="downCommittedBw"/>
-        <Field name="upFixBw" label="upFixBw"/>
-        <Field name="upBurstSize" label="upBurstSize"/>
-        <Field name="downBurstSize" label="downBurstSize"/>
-        <Field name="upPriority" label="upPriority"/>
-        <Field name="mxuIpAddress" label="mxuIpAddress"/>
-        <Field name="mxuIpMask" label="mxuIpMask"/>
-        <Field name="mxuGateway" label="mxuGateway"/>
-        <Field name="mxuCVlan" label="mxuCVlan"/>
-        <Field name="mxuSVlan" label="mxuSVlan"/>
-        <Field name="mxuPriority" label="mxuPriority"/>
+        <Field name="upMaxBw" label="utsDot3OnuUpstreamPir"/>
+        <Field name="downMaxBw" label="utsDot3OnuDownstreamPir"/>
+        <Field name="upCommittedBw" label="utsDot3OnuUpstreamCir"/>
+        <Field name="downCommittedBw" label="utsDot3OnuDownstreamCir"/>
+        <Field name="upFixBw" label="utsDot3OnuUpstreamFir"/>
+        <Field name="upBurstSize" label="utsDot3OnuUpstreamMaxBurstSize"/>
+        <Field name="downBurstSize" label="utsDot3OnuDownstreamMaxBurstSize"/>
+        <Field name="upPriority" label="utsDot3OnuUpstreamWeight"/>
+        <Field name="mxuIpAddress" label="utsDot3Onu2CtcMduMgmtIpConfIpAddr" formatter="com.winnertel.lct.batch.gui.formatter.FromHexIpFormatter"/>
+        <Field name="mxuIpMask" label="utsDot3Onu2CtcMduMgmtIpConfIpMask" formatter="com.winnertel.lct.batch.gui.formatter.FromHexIpFormatter"/>
+        <Field name="mxuGateway" label="utsDot3Onu2CtcMduMgmtIpConfGw" formatter="com.winnertel.lct.batch.gui.formatter.FromHexIpFormatter"/>
+        <Field name="mxuCVlan" label="utsDot3Onu2CtcMduMgmtIpConfCvlan" formatter="com.winnertel.lct.batch.gui.formatter.FromHexShortFormatter"/>
+        <Field name="mxuSVlan" label="utsDot3Onu2CtcMduMgmtIpConfSvlan" formatter="com.winnertel.lct.batch.gui.formatter.FromHexShortFormatter"/>
+        <Field name="mxuPriority" label="utsDot3Onu2CtcMduMgmtIpConfDataPrio" formatter="com.winnertel.lct.batch.gui.formatter.FromHexByteFormatter"/>
 
         <Field name="id" label="id"/>
-        <Field name="vlanMode" label="vlanMode"/>
-        <Field name="vlanTag" label="vlanTag"/>
-        <Field name="vlanTpid" label="vlanTpid"/>
-        <Field name="policingEnable" label="policingEnable"/>
-        <Field name="policingCir" label="policingCir"/>
-        <Field name="policingCbs" label="policingCbs"/>
-        <Field name="policingEbs" label="policingEbs"/>
-        <Field name="dsCir" label="dsCir"/>
-        <Field name="dsPir" label="dsPir"/>
-        <Field name="dsEnable" label="dsEnable"/>
-        <Field name="loopDetect" label="loopDetect"/>
+        <Field name="vlanMode" label="utsDot3OnuEtherPortVlanMode"/>
+        <Field name="vlanTag" label="utsDot3OnuEtherPortVlanTag"/>
+        <Field name="vlanTpid" label="utsDot3OnuEtherPortVlanTPID" formatter="com.winnertel.lct.batch.gui.formatter.FromHexShortFormatter"/>
+        <Field name="policingEnable" label="utsDot3OnuEtherPortPolicingEnable"/>
+        <Field name="policingCir" label="utsDot3OnuEtherPortPolicingCIR"/>
+        <Field name="policingCbs" label="utsDot3OnuEtherPortPolicingCBS"/>
+        <Field name="policingEbs" label="utsDot3OnuEtherPortPolicingEBS"/>
+        <Field name="dsCir" label="utsDot3OnuEtherPortDSPolicingCIR"/>
+        <Field name="dsPir" label="utsDot3OnuEtherPortDSPolicingPIR"/>
+        <Field name="dsEnable" label="utsDot3OnuEtherPortDSPolicingEnable"/>
+        <Field name="loopDetect" label="utsDot3OltPortLoopbackDetection"/>
     </FieldList>
 </TableForm>

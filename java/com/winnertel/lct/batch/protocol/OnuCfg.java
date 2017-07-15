@@ -98,22 +98,30 @@ public class OnuCfg {
 
     public static OnuCfg valueOf(Map<String, Object> map) {
         OnuCfg cfg = new OnuCfg();
-        cfg.setId(String.valueOf(map.get("index.0")));
-        cfg.setUpMaxBw(String.valueOf(map.get(Field.upMaxBw.name())));
-        cfg.setDownMaxBw(String.valueOf(map.get(Field.downMaxBw.name())));
-        cfg.setUpCommittedBw(String.valueOf(map.get(Field.upCommittedBw.name())));
-        cfg.setDownCommittedBw(String.valueOf(map.get(Field.downCommittedBw.name())));
-        cfg.setUpFixBw(String.valueOf(map.get(Field.upFixBw.name())));
-        cfg.setUpBurstSize(String.valueOf(map.get(Field.upBurstSize.name())));
-        cfg.setDownBurstSize(String.valueOf(map.get(Field.downBurstSize.name())));
-        cfg.setUpPriority(String.valueOf(map.get(Field.upPriority.name())));
-        cfg.setMxuIpAddress(String.valueOf(map.get(Field.mxuIpAddress.name())));
-        cfg.setMxuIpMask(String.valueOf(map.get(Field.mxuIpMask.name())));
-        cfg.setMxuGateway(String.valueOf(map.get(Field.mxuGateway.name())));
-        cfg.setMxuCVlan(String.valueOf(map.get(Field.mxuCVlan.name())));
-        cfg.setMxuSVlan(String.valueOf(map.get(Field.mxuSVlan.name())));
-        cfg.setMxuPriority(String.valueOf(map.get(Field.mxuPriority.name())));
+        cfg.setId(valueOf(map.get("index.0")));
+        cfg.setUpMaxBw(valueOf(map.get(Field.upMaxBw.name())));
+        cfg.setDownMaxBw(valueOf(map.get(Field.downMaxBw.name())));
+        cfg.setUpCommittedBw(valueOf(map.get(Field.upCommittedBw.name())));
+        cfg.setDownCommittedBw(valueOf(map.get(Field.downCommittedBw.name())));
+        cfg.setUpFixBw(valueOf(map.get(Field.upFixBw.name())));
+        cfg.setUpBurstSize(valueOf(map.get(Field.upBurstSize.name())));
+        cfg.setDownBurstSize(valueOf(map.get(Field.downBurstSize.name())));
+        cfg.setUpPriority(valueOf(map.get(Field.upPriority.name())));
+        cfg.setMxuIpAddress(valueOf(map.get(Field.mxuIpAddress.name())));
+        cfg.setMxuIpMask(valueOf(map.get(Field.mxuIpMask.name())));
+        cfg.setMxuGateway(valueOf(map.get(Field.mxuGateway.name())));
+        cfg.setMxuCVlan(valueOf(map.get(Field.mxuCVlan.name())));
+        cfg.setMxuSVlan(valueOf(map.get(Field.mxuSVlan.name())));
+        cfg.setMxuPriority(valueOf(map.get(Field.mxuPriority.name())));
         return cfg;
+    }
+
+    public static String valueOf(Object o) {
+        if (o == null) {
+            return null;
+        } else {
+            return String.valueOf(o);
+        }
     }
 
     public String getId() {
