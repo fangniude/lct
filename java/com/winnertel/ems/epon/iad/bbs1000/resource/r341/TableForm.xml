@@ -97,9 +97,9 @@
                 <Field name="policingCir" mib_property="policingCir"/>
                 <Field name="policingCbs" mib_property="policingCbs"/>
                 <Field name="policingEbs" mib_property="policingEbs"/>
+                <Field name="dsEnable" mib_property="dsEnable"/>
                 <Field name="dsCir" mib_property="dsCir"/>
                 <Field name="dsPir" mib_property="dsPir"/>
-                <Field name="dsEnable" mib_property="dsEnable"/>
                 <Field name="loopDetect" mib_property="loopDetect"/>
             </Table>
             <Button id="Add_OnuUniTable" type="Add" style="O|C">
@@ -152,9 +152,9 @@
                 <Field name="policingCir" mib_property="policingCir"/>
                 <Field name="policingCbs" mib_property="policingCbs"/>
                 <Field name="policingEbs" mib_property="policingEbs"/>
+                <Field name="dsEnable" mib_property="dsEnable"/>
                 <Field name="dsCir" mib_property="dsCir"/>
                 <Field name="dsPir" mib_property="dsPir"/>
-                <Field name="dsEnable" mib_property="dsEnable"/>
                 <Field name="loopDetect" mib_property="loopDetect"/>
             </Table>
             <Button id="Add_ProfileUniTable" type="Add" style="O|C">
@@ -12505,16 +12505,47 @@
         <Field name="mxuPriority" label="utsDot3Onu2CtcMduMgmtIpConfDataPrio" formatter="com.winnertel.lct.batch.gui.formatter.FromHexByteFormatter"/>
 
         <Field name="id" label="id"/>
-        <Field name="vlanMode" label="utsDot3OnuEtherPortVlanMode"/>
+        <Field name="vlanMode" label="utsDot3OnuEtherPortVlanMode">
+            <Mib>
+                <ValueMap>
+                    <Entry value="0" display="transparent"/>
+                    <Entry value="1" display="tag"/>
+                    <Entry value="2" display="translation"/>
+                    <Entry value="3" display="n1aggregation"/>
+                    <Entry value="4" display="trunk"/>
+                </ValueMap>
+            </Mib>
+        </Field>
         <Field name="vlanTag" label="utsDot3OnuEtherPortVlanTag"/>
         <Field name="vlanTpid" label="utsDot3OnuEtherPortVlanTPID" formatter="com.winnertel.lct.batch.gui.formatter.FromHexShortFormatter"/>
-        <Field name="policingEnable" label="utsDot3OnuEtherPortPolicingEnable"/>
+        <Field name="policingEnable" label="utsDot3OnuEtherPortPolicingEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="enable"/>
+                    <Entry value="0" display="disable"/>
+                </ValueMap>
+            </Mib>
+        </Field>
         <Field name="policingCir" label="utsDot3OnuEtherPortPolicingCIR"/>
         <Field name="policingCbs" label="utsDot3OnuEtherPortPolicingCBS"/>
         <Field name="policingEbs" label="utsDot3OnuEtherPortPolicingEBS"/>
         <Field name="dsCir" label="utsDot3OnuEtherPortDSPolicingCIR"/>
         <Field name="dsPir" label="utsDot3OnuEtherPortDSPolicingPIR"/>
-        <Field name="dsEnable" label="utsDot3OnuEtherPortDSPolicingEnable"/>
-        <Field name="loopDetect" label="utsDot3OltPortLoopbackDetection"/>
+        <Field name="dsEnable" label="utsDot3OnuEtherPortDSPolicingEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="enable"/>
+                    <Entry value="0" display="disable"/>
+                </ValueMap>
+            </Mib>
+        </Field>
+        <Field name="loopDetect" label="utsDot3OltPortLoopbackDetection">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="enable"/>
+                    <Entry value="0" display="disable"/>
+                </ValueMap>
+            </Mib>
+        </Field>
     </FieldList>
 </TableForm>

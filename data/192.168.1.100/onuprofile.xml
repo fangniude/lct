@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-    <onu>
-        <onu_cfg
-                onu_cfg_id="3-1" up_max_bw="100000" down_max_bw="1000000"
-                up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0"
-                up_burst_size="512" down_burst_size="512" up_priority="1"/>
-        <onu_cfg
-                onu_cfg_id="4-1" up_max_bw="100000" down_max_bw="1000000"
-                up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0"
-                up_burst_size="512" down_burst_size="512" up_priority="1"/>
-    </onu>
-    <uni>
-        <onu_uni
-                onu_uni_id="1-1-1" onu_vlan_mode="1" onu_vlan_tag="101" onu_vlan_tpid="0x8100" policing_enable="0"
-                ds_enable="0" loop_detect="0"/>
-        <onu_uni
-                onu_uni_id="1-1-2" policing_enable="0" ds_enable="0" loop_detect="0"/>
-        <onu_uni
-                onu_uni_id="3-1-3" policing_enable="0" ds_enable="0" loop_detect="0"/>
-        <onu_uni
-                onu_uni_id="3-1-4" policing_enable="0" ds_enable="0" loop_detect="0"/>
-    </uni>
+   <onu>
+      <onu_cfg onu_cfg_id="3-1" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1"/>
+      <onu_cfg onu_cfg_id="4-1" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1"/>
+   </onu>
+   <uni>
+      <onu_uni onu_uni_id="1-1-2" policing_enable="0" ds_enable="0" loop_detect="0"/>
+      <onu_uni onu_uni_id="3-1-4" policing_enable="0" ds_enable="0" loop_detect="0"/>
+      <onu_uni onu_uni_id="1-1-1" onu_vlan_mode="1" onu_vlan_tag="101" onu_vlan_tpid="0x8100" policing_enable="0" ds_enable="0" loop_detect="0"/>
+      <onu_uni onu_uni_id="3-1-3" policing_enable="0" ds_enable="0" loop_detect="0"/>
+   </uni>
 </root>

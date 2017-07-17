@@ -141,15 +141,24 @@ public class ProfileOnuPanel extends UPanel {
 
     protected void initForm() {
         upMaxBwF.setValueScope(1, 1000000);
+        upMaxBwF.setDefaultValue(100000);
         downMaxBwF.setValueScope(1, 1000000);
-        upCommittedBwF.setValueScope(1, 1000000);
-        downCommittedBwF.setValueScope(1, 1000000);
+        downMaxBwF.setDefaultValue(100000);
+        upCommittedBwF.setValueScope(0, 1000000);
+        upCommittedBwF.setDefaultValue(0);
+        downCommittedBwF.setValueScope(0, 1000000);
+        upCommittedBwF.setDefaultValue(0);
         upBurstSizeF.setValueScope(1, 1000);
+        upBurstSizeF.setDefaultValue(1000);
         downBurstSizeF.setValueScope(1, 1000);
-        upPriorityF.setValueScope(1, 10);
+        downBurstSizeF.setDefaultValue(1000);
+        upPriorityF.setValueScope(0, 10);
+        upPriorityF.setDefaultValue(0);
         upFixBwF.setValueScope(0, 1000000);
+        upFixBwF.setDefaultValue(0);
 
-        mxuCVlanF.setValueScope(1, 4094);
+        mxuCVlanF.setValueScope(0, 4094);
+        mxuCVlanF.setValue(0);
         mxuSVlanF.setValueScope(0, 4094);
         mxuSVlanF.setValue(0);
         mxuPriorityF.setValueScope(0, 7);

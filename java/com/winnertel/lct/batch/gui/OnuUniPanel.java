@@ -13,6 +13,9 @@ import com.winnertel.lct.batch.proxy.XmlProxy;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+import java.util.Vector;
 
 import static com.winnertel.lct.batch.gui.TransformUtils.setNullableIntField;
 
@@ -31,22 +34,77 @@ public class OnuUniPanel extends UPanel {
     private final String loopDetectL = fStringMap.getString("utsDot3OltPortLoopbackDetection") + ": ";
 
     private StringTextField idField = new StringTextField();
-    private IntegerTextField vlanModeF = new IntegerTextField();
+    private int[] utsDot3OnuEtherPortVlanModeVList = new int[]{0, 1, 2, 3, 4};
+    private String[] utsDot3OnuEtherPortVlanModeTList = new String[]{
+            fStringMap.getString("transparent"),
+            fStringMap.getString("tag"),
+            fStringMap.getString("translation"),
+            fStringMap.getString("n1aggregation"),
+            fStringMap.getString("trunk")
+    };
+    private JComboBox vlanModeF = new JComboBox(utsDot3OnuEtherPortVlanModeTList);
     private IntegerTextField vlanTagF = new IntegerTextField();
     private IntegerTextField vlanTpidF = new IntegerTextField();
-    private IntegerTextField policingEnableF = new IntegerTextField();
-    private IntegerTextField policingCirF = new IntegerTextField();
-    private IntegerTextField policingCbsF = new IntegerTextField();
+
+    private int[] policingEnableVList = new int[]{1, 0};
+    private String[] policingEnableTList = new String[]{
+            fStringMap.getString("enable"),
+            fStringMap.getString("disable")
+    };
+    private JComboBox policingEnableF = new JComboBox(policingEnableTList);
+
+    private JComboBox policingCirF = new JComboBox(policingCirVals());
+    private JComboBox policingCbsF = new JComboBox(policingCbsVals());
     private IntegerTextField policingEbsF = new IntegerTextField();
-    private IntegerTextField dsCirF = new IntegerTextField();
-    private IntegerTextField dsPirF = new IntegerTextField();
-    private IntegerTextField dsEnableF = new IntegerTextField();
-    private IntegerTextField loopDetectF = new IntegerTextField();
+
+    private int[] dsEnableVList = new int[]{1, 0};
+    private String[] dsEnableTList = new String[]{
+            fStringMap.getString("enable"),
+            fStringMap.getString("disable")
+    };
+    private JComboBox dsEnableF = new JComboBox(dsEnableTList);
+
+    private JComboBox dsCirF = new JComboBox(dsCirPirVals());
+    private JComboBox dsPirF = new JComboBox(dsCirPirVals());
+
+    private int[] loopDetectVList = new int[]{1, 0};
+    private String[] loopDetectTList = new String[]{
+            fStringMap.getString("enable"),
+            fStringMap.getString("disable")
+    };
+    private JComboBox loopDetectF = new JComboBox(loopDetectTList);
 
 
     public OnuUniPanel(IApplication app) {
         super(app);
         init();
+    }
+
+    private Vector policingCirVals() {
+        Vector tmpVec = new Vector();
+        for (int i = 1000; i <= 127000; i += 1000) {
+            tmpVec.add(i);
+        }
+        return tmpVec;
+    }
+
+    private Vector policingCbsVals() {
+        Vector tmpVec = new Vector();
+        for (int i = 1536; i <= 65280; i += 256) {
+            tmpVec.add(new Integer(i));
+        }
+        return tmpVec;
+    }
+
+    private Vector dsCirPirVals() {
+        Vector tmpVec = new Vector();
+        for (int i = 0; i <= 1000; i += 128) {
+            tmpVec.add(new Integer(i));
+        }
+        for (int i = 1000; i <= 16777215; i += 1000) {
+            tmpVec.add(i);
+        }
+        return tmpVec;
     }
 
     public void initGui() {
@@ -76,6 +134,8 @@ public class OnuUniPanel extends UPanel {
         baseInfoPanel.add(policingEnableF);
         baseInfoPanel.add(new HSpacer());
 
+        policingEnableF.addItemListener(e -> policingEnable());
+
         baseInfoPanel.add(new JLabel(policingCirL));
         baseInfoPanel.add(policingCirF);
         baseInfoPanel.add(new HSpacer());
@@ -88,16 +148,18 @@ public class OnuUniPanel extends UPanel {
         baseInfoPanel.add(policingEbsF);
         baseInfoPanel.add(new HSpacer());
 
+        baseInfoPanel.add(new JLabel(dsEnableL));
+        baseInfoPanel.add(dsEnableF);
+        baseInfoPanel.add(new HSpacer());
+
+        dsEnableF.addItemListener(e -> dsEnable());
+
         baseInfoPanel.add(new JLabel(dsCirL));
         baseInfoPanel.add(dsCirF);
         baseInfoPanel.add(new HSpacer());
 
         baseInfoPanel.add(new JLabel(dsPirL));
         baseInfoPanel.add(dsPirF);
-        baseInfoPanel.add(new HSpacer());
-
-        baseInfoPanel.add(new JLabel(dsEnableL));
-        baseInfoPanel.add(dsEnableF);
         baseInfoPanel.add(new HSpacer());
 
         baseInfoPanel.add(new JLabel(loopDetectL));
@@ -120,6 +182,28 @@ public class OnuUniPanel extends UPanel {
         vlanTpidF.setValueScope(1, 65534);
     }
 
+    public void policingEnable() {
+        if (policingEnableF.getSelectedIndex() == 1) {
+            policingCirF.setEnabled(false);
+            policingCbsF.setEnabled(false);
+            policingEbsF.setEnabled(false);
+        } else {
+            policingCirF.setEnabled(true);
+            policingCbsF.setEnabled(true);
+            policingEbsF.setEnabled(true);
+        }
+    }
+
+    public void dsEnable() {
+        if (dsEnableF.getSelectedIndex() == 1) {
+            dsCirF.setEnabled(false);
+            dsPirF.setEnabled(false);
+        } else {
+            dsCirF.setEnabled(true);
+            dsPirF.setEnabled(true);
+        }
+    }
+
     public void refresh() {
         if (SnmpAction.IType.ADD.equals(fCommand)) {
             idField.setEditable(true);
@@ -132,18 +216,25 @@ public class OnuUniPanel extends UPanel {
 
             idField.setEditable(false);
             idField.setValue(m.getId());
-            setNullableIntField(vlanModeF, m.getVlanMode());
+            vlanModeF.setSelectedIndex(getIndexFromValue(utsDot3OnuEtherPortVlanModeVList, Integer.valueOf(m.getVlanMode())));
             setNullableIntField(vlanTagF, m.getVlanTag());
             vlanTpidF.setValue(TransformUtils.fromHexShort(m.getVlanTpid()));
-            setNullableIntField(policingEnableF, m.getPolicingEnable());
-            setNullableIntField(policingCirF, m.getPolicingCir());
-            setNullableIntField(policingCbsF, m.getPolicingCbs());
-            setNullableIntField(policingEbsF, m.getPolicingEbs());
-            setNullableIntField(dsCirF, m.getDsCir());
-            setNullableIntField(dsPirF, m.getDsPir());
-            setNullableIntField(dsEnableF, m.getDsEnable());
-            setNullableIntField(loopDetectF, m.getLoopDetect());
+
+            policingEnableF.setSelectedIndex(getIndexFromValue(policingEnableVList, Integer.valueOf(m.getPolicingEnable())));
+            if (policingEnableF.getSelectedIndex() == 0) {
+                policingCirF.setSelectedItem(Integer.valueOf(m.getPolicingCir()));
+                policingCbsF.setSelectedItem(Integer.valueOf(m.getPolicingCbs()));
+                setNullableIntField(policingEbsF, m.getPolicingEbs());
+            }
+            dsEnableF.setSelectedIndex(getIndexFromValue(dsEnableVList, Integer.valueOf(m.getDsEnable())));
+            if (dsEnableF.getSelectedIndex() == 0) {
+                dsCirF.setSelectedItem(Integer.valueOf(m.getDsCir()));
+                dsPirF.setSelectedItem(Integer.valueOf(m.getDsPir()));
+            }
+            loopDetectF.setSelectedIndex(getIndexFromValue(dsEnableVList, Integer.valueOf(m.getLoopDetect())));
         }
+        policingEnable();
+        dsEnable();
     }
 
     public void updateModel() {
@@ -155,16 +246,29 @@ public class OnuUniPanel extends UPanel {
         } else {
             model = (OnuUniBean) getModel();
         }
-        model.setVlanMode(String.valueOf(vlanModeF.getValue()));
+        model.setVlanMode(String.valueOf(utsDot3OnuEtherPortVlanModeVList[vlanModeF.getSelectedIndex()]));
         model.setVlanTag(String.valueOf(vlanTagF.getValue()));
         model.setVlanTpid(TransformUtils.toHexShort(vlanTpidF.getValue()));
-        model.setPolicingEnable(String.valueOf(policingEnableF.getValue()));
-        model.setPolicingCir(String.valueOf(policingCirF.getValue()));
-        model.setPolicingCbs(String.valueOf(policingCbsF.getValue()));
-        model.setPolicingEbs(String.valueOf(policingEbsF.getValue()));
-        model.setDsCir(String.valueOf(dsCirF.getValue()));
-        model.setDsPir(String.valueOf(dsPirF.getValue()));
-        model.setDsEnable(String.valueOf(dsEnableF.getValue()));
-        model.setLoopDetect(String.valueOf(loopDetectF.getValue()));
+        model.setPolicingEnable(String.valueOf(policingEnableVList[policingEnableF.getSelectedIndex()]));
+        if (policingEnableF.getSelectedIndex() == 0) {
+            model.setPolicingCir(String.valueOf(policingCirF.getSelectedItem()));
+            model.setPolicingCbs(String.valueOf(policingCbsF.getSelectedItem()));
+            model.setPolicingEbs(String.valueOf(policingEbsF.getValue()));
+        }
+        model.setDsEnable(String.valueOf(dsEnableVList[dsEnableF.getSelectedIndex()]));
+        if (dsEnableF.getSelectedIndex() == 0) {
+            model.setDsCir(String.valueOf(dsCirF.getSelectedItem()));
+            model.setDsPir(String.valueOf(dsPirF.getSelectedItem()));
+        }
+        model.setLoopDetect(String.valueOf(loopDetectVList[loopDetectF.getSelectedIndex()]));
+    }
+
+    public int getIndexFromValue(int[] list, int v) {
+        for (int i = 0; i != list.length; i++) {
+            if (list[i] == v)
+                return i;
+        }
+
+        return 0;
     }
 }

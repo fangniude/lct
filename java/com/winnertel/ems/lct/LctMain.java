@@ -25,7 +25,7 @@ public class LctMain {
 
     //TODO: need configuration here
     public static Object[] getSupportedTypes() {
-        return new String[]{"FBW2000"};
+        return new String[]{"OLT1000"};
     }
 
     public static boolean isSupportedNode(LctNode node) {
@@ -244,7 +244,7 @@ public class LctMain {
     //TODO: need configuration here
     private static class NodeTypes {
         private static String lookup(String type, String version) {
-            if ("FBW2000".equalsIgnoreCase(type) && "1.0.0".equalsIgnoreCase(version)) {
+            if ("OLT1000".equalsIgnoreCase(type) && "1.0.0".equalsIgnoreCase(version)) {
                 return "com.winnertel.ems.lct.impl.FBW2000LCTApplet";
             }
             return null;

@@ -72,16 +72,20 @@ public class OltSystemPanel extends UPanel {
         baseInfoPanel1.add(contactField);
         baseInfoPanel1.add(new HSpacer());
 
+        baseInfoPanel1.add(new JLabel(mgmtIpLabel));
+        baseInfoPanel1.add(mgmtIpField);
+        baseInfoPanel1.add(new HSpacer());
+
         baseInfoPanel1.add(new JLabel(mgmtVlanLabel));
         baseInfoPanel1.add(mgmtVlanField);
         baseInfoPanel1.add(new HSpacer());
 
-        baseInfoPanel1.add(new JLabel(macAgeingLabel));
-        baseInfoPanel1.add(macAgeingField);
-        baseInfoPanel1.add(new HSpacer());
-
         baseInfoPanel1.add(new JLabel(macAuthLabel));
         baseInfoPanel1.add(macAuthField);
+        baseInfoPanel1.add(new HSpacer());
+
+        baseInfoPanel1.add(new JLabel(macAgeingLabel));
+        baseInfoPanel1.add(macAgeingField);
         baseInfoPanel1.add(new HSpacer());
 
         baseInfoPanel1.add(new JLabel(vlanTransParentLabel));
@@ -90,10 +94,6 @@ public class OltSystemPanel extends UPanel {
 
         baseInfoPanel1.add(new JLabel(globalP2pLabel));
         baseInfoPanel1.add(globalP2pField);
-        baseInfoPanel1.add(new HSpacer());
-
-        baseInfoPanel1.add(new JLabel(mgmtIpLabel));
-        baseInfoPanel1.add(mgmtIpField);
         baseInfoPanel1.add(new HSpacer());
 
         JPanel allPanel = new JPanel();

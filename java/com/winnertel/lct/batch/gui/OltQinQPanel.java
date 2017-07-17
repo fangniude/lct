@@ -72,7 +72,7 @@ public class OltQinQPanel extends UPanel {
 
     protected void initForm() {
         startVlanField.setValueScope(2, 4094);
-        endVlanField.setValueScope(2, 4094);
+        endVlanField.setValueScope(0, 4094);
         newVlanField.setValueScope(2, 4094);
     }
 

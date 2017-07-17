@@ -67,7 +67,7 @@ public class OnuMacPanel extends UPanel {
                 idField.setEditable(false);
                 idField.setValue(mbean.getId());
                 macField.setValue(mbean.getMac());
-                descField.setValue(mbean.getDesc());
+                descField.setValue(TransformUtils.fromHex(mbean.getDesc()));
             }
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -75,16 +75,15 @@ public class OnuMacPanel extends UPanel {
     }
 
     public void updateModel() {
+        OnuMacBean model;
         if (SnmpAction.IType.ADD.equals(fCommand)) {
-            OnuMacBean model = new OnuMacBean(new XmlProxy(fApplication.getSnmpProxy().getTargetHost()));
+            model = new OnuMacBean(new XmlProxy(fApplication.getSnmpProxy().getTargetHost()));
             model.setId(String.valueOf(idField.getValue()));
-            model.setMac(macField.getMacString());
-            model.setDesc(descField.getValue());
             setModel(model);
         } else {
-            OnuMacBean model = (OnuMacBean) getModel();
-            model.setMac(macField.getMacString());
-            model.setDesc(descField.getValue());
+            model = (OnuMacBean) getModel();
         }
+        model.setMac(macField.getMacString());
+        model.setDesc(TransformUtils.toHex(descField.getValue()));
     }
 }
