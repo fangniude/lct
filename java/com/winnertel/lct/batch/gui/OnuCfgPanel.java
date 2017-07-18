@@ -20,7 +20,7 @@ import static com.winnertel.lct.batch.gui.TransformUtils.*;
 
 public class OnuCfgPanel extends UPanel {
 
-    private final String idLabel = fStringMap.getString("idLabel") + ": ";
+    private final String idLabel = fStringMap.getString("onuId") + ": ";
     private final String upMaxBwLabel = fStringMap.getString("utsDot3OnuUpstreamPir") + ": ";
     private final String downMaxBwLabel = fStringMap.getString("utsDot3OnuDownstreamPir") + ": ";
     private final String upCommittedBwLabel = fStringMap.getString("utsDot3OnuUpstreamCir") + ": ";
@@ -139,6 +139,7 @@ public class OnuCfgPanel extends UPanel {
     }
 
     protected void initForm() {
+        idField.setDefaultString("1-1");
         upMaxBwF.setValueScope(1, 1000000);
         upMaxBwF.setDefaultValue(100000);
         downMaxBwF.setValueScope(1, 1000000);

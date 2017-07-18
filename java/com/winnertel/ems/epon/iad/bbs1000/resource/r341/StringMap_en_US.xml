@@ -3899,6 +3899,8 @@
 
     <String key="id" value="ID" />
     <String key="idLabel" value="ID" />
+    <String key="onuId" value="ONU ID" />
+    <String key="onuUniId" value="ONU UNI端口"/>
     <String key="name" value="Name" />
     <String key="member" value="Port" />
     <String key="tagMember" value="Tagged Port" />

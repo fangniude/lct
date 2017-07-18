@@ -14,7 +14,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class OnuMacPanel extends UPanel {
-    private final String idLabel = fStringMap.getString("idLabel") + ": ";
+    private final String idLabel = fStringMap.getString("onuId") + ": ";
     private final String macLabel = fStringMap.getString("utsDot3ValidOnuMacAddr") + ": ";
     private final String descLabel = fStringMap.getString("utsDot3OnuDescription") + ": ";
 
@@ -52,6 +52,7 @@ public class OnuMacPanel extends UPanel {
     }
 
     protected void initForm() {
+        idField.setDefaultString("1-1");
     }
 
     public void refresh() {

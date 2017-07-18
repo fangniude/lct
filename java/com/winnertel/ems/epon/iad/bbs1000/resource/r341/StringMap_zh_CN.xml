@@ -4016,6 +4016,8 @@
 
     <String key="id" value="ID" />
     <String key="idLabel" value="ID" />
+    <String key="onuId" value="ONU ID" />
+    <String key="onuUniId" value="ONU UNI端口"/>
     <String key="name" value="名称" />
     <String key="member" value="端口" />
     <String key="tagMember" value="Tagged端口" />

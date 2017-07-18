@@ -18,7 +18,7 @@ import java.util.Vector;
 import static com.winnertel.lct.batch.gui.TransformUtils.setNullableIntField;
 
 public class ProfileUniPanel extends UPanel {
-    private final String idLabel = fStringMap.getString("idLabel") + ": ";
+    private final String idLabel = fStringMap.getString("onuUniId") + ": ";
     private final String vlanModeL = fStringMap.getString("utsDot3OnuEtherPortVlanMode") + ": ";
     private final String vlanTagL = fStringMap.getString("utsDot3OnuEtherPortVlanTag") + ": ";
     private final String vlanTpidL = fStringMap.getString("utsDot3OnuEtherPortVlanTPID") + ": ";
@@ -175,6 +175,7 @@ public class ProfileUniPanel extends UPanel {
     }
 
     protected void initForm() {
+        idField.setDefaultString("1-1-1");
         policingEbsF.setValueScope(0, 1522);
         vlanTagF.setValueScope(1, 4094);
         vlanTpidF.setValueScope(1, 65534);
