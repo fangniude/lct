@@ -118,25 +118,25 @@
                 <Field name="id" mib_property="id"/>
                 <Field name="upMaxBw" mib_property="upMaxBw"/>
                 <Field name="downMaxBw" mib_property="downMaxBw"/>
-                <Field name="upCommittedBw" mib_property="upCommittedBw"/>
-                <Field name="downCommittedBw" mib_property="downCommittedBw"/>
-                <Field name="upFixBw" mib_property="upFixBw"/>
-                <Field name="upBurstSize" mib_property="upBurstSize"/>
-                <Field name="downBurstSize" mib_property="downBurstSize"/>
-                <Field name="upPriority" mib_property="upPriority"/>
-                <Field name="mxuIpAddress" mib_property="mxuIpAddress"/>
-                <Field name="mxuIpMask" mib_property="mxuIpMask"/>
-                <Field name="mxuGateway" mib_property="mxuGateway"/>
-                <Field name="mxuCVlan" mib_property="mxuCVlan"/>
-                <Field name="mxuSVlan" mib_property="mxuSVlan"/>
-                <Field name="mxuPriority" mib_property="mxuPriority"/>
+                <!--<Field name="upCommittedBw" mib_property="upCommittedBw"/>-->
+                <!--<Field name="downCommittedBw" mib_property="downCommittedBw"/>-->
+                <!--<Field name="upFixBw" mib_property="upFixBw"/>-->
+                <!--<Field name="upBurstSize" mib_property="upBurstSize"/>-->
+                <!--<Field name="downBurstSize" mib_property="downBurstSize"/>-->
+                <!--<Field name="upPriority" mib_property="upPriority"/>-->
+                <!--<Field name="mxuIpAddress" mib_property="mxuIpAddress"/>-->
+                <!--<Field name="mxuIpMask" mib_property="mxuIpMask"/>-->
+                <!--<Field name="mxuGateway" mib_property="mxuGateway"/>-->
+                <!--<Field name="mxuCVlan" mib_property="mxuCVlan"/>-->
+                <!--<Field name="mxuSVlan" mib_property="mxuSVlan"/>-->
+                <!--<Field name="mxuPriority" mib_property="mxuPriority"/>-->
             </Table>
             <Button id="Add_ProfileOnuTable" type="Add" style="O|C">
                 <Panel action_id="Add_ProfileOnuTable_Log" class="com.winnertel.lct.batch.gui.ProfileEditPanel"/>
             </Button>
-            <Button id="Modify_ProfileOnuTable" type="Modify">
-                <Panel action_id="Modify_ProfileOnuTable_Log" class="com.winnertel.lct.batch.gui.ProfileEditPanel"/>
-            </Button>
+            <!--<Button id="Modify_ProfileOnuTable" type="Modify">-->
+                <!--<Panel action_id="Modify_ProfileOnuTable_Log" class="com.winnertel.lct.batch.gui.ProfileEditPanel"/>-->
+            <!--</Button>-->
             <Button id="Delete_ProfileOnuTable" type="Delete"/>
             <Button type="Refresh"/>
         </Panel>
@@ -148,21 +148,21 @@
                 <Field name="vlanMode" mib_property="vlanMode"/>
                 <Field name="vlanTag" mib_property="vlanTag"/>
                 <Field name="vlanTpid" mib_property="vlanTpid"/>
-                <Field name="policingEnable" mib_property="policingEnable"/>
-                <Field name="policingCir" mib_property="policingCir"/>
-                <Field name="policingCbs" mib_property="policingCbs"/>
-                <Field name="policingEbs" mib_property="policingEbs"/>
-                <Field name="dsEnable" mib_property="dsEnable"/>
-                <Field name="dsCir" mib_property="dsCir"/>
+                <!--<Field name="policingEnable" mib_property="policingEnable"/>-->
+                <!--<Field name="policingCir" mib_property="policingCir"/>-->
+                <!--<Field name="policingCbs" mib_property="policingCbs"/>-->
+                <!--<Field name="policingEbs" mib_property="policingEbs"/>-->
+                <!--<Field name="dsEnable" mib_property="dsEnable"/>-->
+                <!--<Field name="dsCir" mib_property="dsCir"/>-->
                 <Field name="dsPir" mib_property="dsPir"/>
-                <Field name="loopDetect" mib_property="loopDetect"/>
+                <!--<Field name="loopDetect" mib_property="loopDetect"/>-->
             </Table>
             <Button id="Add_ProfileUniTable" type="Add" style="O|C">
                 <Panel action_id="Add_ProfileUniTable_Log" class="com.winnertel.lct.batch.gui.ProfileEditPanel"/>
             </Button>
-            <Button id="Modify_ProfileUniTable" type="Modify">
-                <Panel action_id="Modify_ProfileUniTable_Log" class="com.winnertel.lct.batch.gui.ProfileEditPanel"/>
-            </Button>
+            <!--<Button id="Modify_ProfileUniTable" type="Modify">-->
+                <!--<Panel action_id="Modify_ProfileUniTable_Log" class="com.winnertel.lct.batch.gui.ProfileEditPanel"/>-->
+            <!--</Button>-->
             <Button id="Delete_ProfileUniTable" type="Delete"/>
             <Button type="Refresh"/>
         </Panel>
@@ -12474,8 +12474,8 @@
 
         <Field name="id" label="id"/>
         <Field name="name" label="name"/>
-        <Field name="member" label="member"/>
-        <Field name="tagMember" label="tagMember"/>
+        <Field name="member" label="utsLagExtDot1qVlanTaggedPortListPorts" formatter="com.winnertel.lct.batch.gui.formatter.VlanMemberFormatter"/>
+        <Field name="tagMember" label="utsLagExtDot1qVlanUnTaggedPortListPorts" formatter="com.winnertel.lct.batch.gui.formatter.VlanMemberFormatter"/>
 
         <Field name="id" label="id"/>
         <Field name="index" label="index"/>

@@ -1772,10 +1772,10 @@
     <String key="utsDot3OnuEtherPortPause" value="UNI 端口流控"/>
     <!--  <String key="utsDot3OnuEtherPortPhyAdminState" value="物理管理状态"/>  -->
     <String key="utsDot3OnuEtherPortPhyAdminCtrl" value="物理管理状态"/>
-    <String key="utsDot3OnuEtherPortPolicingCBS" value="端口承诺突发尺寸(Bytes)"/>
-    <String key="utsDot3OnuEtherPortPolicingCIR" value="入端口保证速率(Kbps)"/>
-    <String key="utsDot3OnuEtherPortPolicingEBS" value="端口额外突发大小(Bytes)"/>
-    <String key="utsDot3OnuEtherPortPolicingEnable" value="策略 "/>
+    <String key="utsDot3OnuEtherPortPolicingCBS" value="上行端口承诺突发尺寸(Bytes)"/>
+    <String key="utsDot3OnuEtherPortPolicingCIR" value="上行保证速率(Kbps)"/>
+    <String key="utsDot3OnuEtherPortPolicingEBS" value="上行端口额外突发大小(Bytes)"/>
+    <String key="utsDot3OnuEtherPortPolicingEnable" value="上行带宽使能"/>
     <String key="utsDot3OnuEtherPortVlanMode" value="VLAN模式"/>
     <String key="utsDot3OnuEtherPortVlanTPID" value="VLAN TPID"/>
     <String key="utsDot3OnuEtherPortVlanTag" value="VLAN"/>
@@ -1807,9 +1807,9 @@
     <String key="source-tag" value="源标Tag"/>
     <String key="source-vlan-number" value="源VLAN数目"/>
     <String key="utsDot3OnuEtherPortClassifiRuleClear" value="清除端口流分类规则"/>
-    <String key="utsDot3OnuEtherPortDSPolicingEnable" value="出端口策略"/>
-    <String key="utsDot3OnuEtherPortDSPolicingCIR" value="出端口保证速率(Kbps)"/>
-    <String key="utsDot3OnuEtherPortDSPolicingPIR" value="出端口最大速率(Kbps)"/>
+    <String key="utsDot3OnuEtherPortDSPolicingEnable" value="下行带宽使能"/>
+    <String key="utsDot3OnuEtherPortDSPolicingCIR" value="下行保证速率(Kbps)"/>
+    <String key="utsDot3OnuEtherPortDSPolicingPIR" value="下行最大速率(Kbps)"/>
 
     <String key="Basic_Info" value="基本设置"/>
     <String key="VLAN_Info" value="VLAN配置"/>
@@ -4009,7 +4009,7 @@
 
     <String key="mgmtVlanLabel" value="管理VLAN" />
     <String key="vlanTransParentLabel" value="VLAN透传" />
-    <String key="macAuthLabel" value="MAC认证" />
+    <String key="macAuthLabel" value="认证模式" />
     <String key="globalP2pLabel" value="全局P2P" />
     <String key="mgmtIpLabel" value="管理IP地址" />
 
@@ -4038,5 +4038,13 @@
     <String key="loidAuth" value="LOID认证" />
     <String key="loidPwd" value="LOID密码认证" />
     <String key="hybridAuth" value="混合认证" />
+
+
+    <String key="PON_Port" value="选择OLT PON 端口" />
+    <String key="ONU_PON_port_config" value="ONU PON端口配置" />
+    <String key="ONU_UNI_port_config" value="ONU 网口配置" />
+
+    <String key="ONU_PON_profile_table" value="ONU PON口模板" />
+    <String key="ONU_UNI_profile_table" value="ONU 网口模板" />
 
 </StringMap>

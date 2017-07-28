@@ -39,8 +39,21 @@ public class ProfilePanel extends UPanel {
         onuPanel = (SnmpTablePane) composer.composeSnmpTablePane("ProfileOnuTable_Panel");
         uniPanel = (SnmpTablePane) composer.composeSnmpTablePane("ProfileUniTable_Panel");
 
-        jTabbedPane.add(onuPanel);
-        jTabbedPane.add(uniPanel);
+
+        NTLayout onuLayout = new NTLayout(1, 1, NTLayout.FILL, NTLayout.CENTER, 5, 5);
+        onuLayout.setMargins(6, 10, 6, 10);
+        JPanel onu = new JPanel(onuLayout);
+        onu.setBorder(BorderFactory.createTitledBorder(fStringMap.getString("ONU_PON_profile_table")));
+        onu.add(onuPanel);
+
+        NTLayout uniLayout = new NTLayout(1, 1, NTLayout.FILL, NTLayout.CENTER, 5, 5);
+        uniLayout.setMargins(6, 10, 6, 10);
+        JPanel uni = new JPanel(uniLayout);
+        uni.setBorder(BorderFactory.createTitledBorder(fStringMap.getString("ONU_UNI_profile_table")));
+        uni.add(uniPanel);
+
+        jTabbedPane.add(onu);
+        jTabbedPane.add(uni);
 
         this.setLayout(new BorderLayout());
         this.add(jTabbedPane, BorderLayout.CENTER);

@@ -3892,7 +3892,7 @@
 
     <String key="mgmtVlanLabel" value="Management VLAN" />
     <String key="vlanTransParentLabel" value="VLAN Trans" />
-    <String key="macAuthLabel" value="MAC Auth" />
+    <String key="macAuthLabel" value="Auth Mode" />
     <String key="globalP2pLabel" value="Global P2P" />
     <String key="mgmtIpLabel" value="Management IP" />
 
@@ -3921,5 +3921,13 @@
     <String key="loidAuth" value="LOID Auth" />
     <String key="loidPwd" value="LOID Password Auth" />
     <String key="hybridAuth" value= "Hybrid Auth" />
+
+
+    <String key="PON_Port" value="Choose OLT PON Port" />
+    <String key="ONU_PON_port_config" value="ONU PON Port Config" />
+    <String key="ONU_UNI_port_config" value="ONU Ethernet Port Config" />
+
+    <String key="ONU_PON_profile_table" value="ONU PON Port Profile" />
+    <String key="ONU_UNI_profile_table" value="ONU Ethernet Port Profile" />
 
 </StringMap>

@@ -2,13 +2,18 @@ package com.winnertel.lct.batch.gui;
 
 import com.winnertel.em.framework.IApplication;
 import com.winnertel.em.framework.gui.swing.UPanel;
+import com.winnertel.em.framework.model.MibBeanException;
 import com.winnertel.em.standard.util.gui.input.IntegerTextField;
 import com.winnertel.em.standard.util.gui.layout.HSpacer;
 import com.winnertel.em.standard.util.gui.layout.NTLayout;
 import com.winnertel.em.standard.util.gui.layout.VSpacer;
+import com.winnertel.lct.batch.bean.ProfileOnuBean;
+import com.winnertel.lct.batch.bean.ProfileUniBean;
+import com.winnertel.lct.batch.proxy.XmlProxy;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
 import java.awt.*;
 import java.util.Arrays;
 import java.util.Vector;
@@ -53,7 +58,7 @@ public class ProfileEditPanel extends UPanel {
         NTLayout ponLayout = new NTLayout(1, 4, NTLayout.FILL, NTLayout.CENTER, 5, 5);
         layout.setMargins(6, 10, 6, 10);
         ponPanel.setLayout(ponLayout);
-        ponPanel.setBorder(BorderFactory.createTitledBorder("PON Port"));
+        ponPanel.setBorder(BorderFactory.createTitledBorder(fStringMap.getString("PON_Port")));
 
         ponPanel.add(pon1);
         ponPanel.add(pon2);
@@ -64,7 +69,7 @@ public class ProfileEditPanel extends UPanel {
         layout.setMargins(6, 10, 6, 10);
         JPanel onuPanel = new JPanel();
         onuPanel.setLayout(onuLayout);
-        onuPanel.setBorder(BorderFactory.createTitledBorder("ONU PON口配置"));
+        onuPanel.setBorder(BorderFactory.createTitledBorder(fStringMap.getString("ONU_PON_port_config")));
 
         onuPanel.add(new JLabel(upMaxBwLabel));
         onuPanel.add(upMaxBwF);
@@ -75,7 +80,7 @@ public class ProfileEditPanel extends UPanel {
         onuPanel.add(new HSpacer());
 
         Vector columnNames = new Vector();
-        columnNames.addAll(Arrays.asList("ID", "VLAN模式", "VLAN", "VLAN TPID", "下行最大速率(Kbps)"));
+        columnNames.addAll(Arrays.asList("ID", fStringMap.getString("utsDot3OnuEtherPortVlanMode"), fStringMap.getString("utsDot3OnuEtherPortVlanTag"), fStringMap.getString("utsDot3OnuEtherPortVlanTPID"), fStringMap.getString("utsDot3OnuEtherPortDSPolicingPIR")));
         Vector data = new Vector();
         for (int i = 0; i < 4; i++) {
             Vector<Object> row = new Vector<>();
@@ -94,7 +99,7 @@ public class ProfileEditPanel extends UPanel {
         layout.setMargins(6, 10, 6, 10);
         JPanel uniPanel = new JPanel();
         uniPanel.setLayout(uniLayout);
-        uniPanel.setBorder(BorderFactory.createTitledBorder("ONU网口配置"));
+        uniPanel.setBorder(BorderFactory.createTitledBorder(fStringMap.getString("ONU_UNI_port_config")));
         uniPanel.add(new JScrollPane(uniTable));
 
         baseInfoPanel.add(ponPanel);
@@ -119,6 +124,7 @@ public class ProfileEditPanel extends UPanel {
     }
 
     public void refresh() {
+        System.out.println("test");
 //        if (SnmpAction.IType.MODIFY.equals(fCommand)) {
 //            OnuCfgBean m = (OnuCfgBean) getModel();
 //            if (m == null) {
@@ -146,6 +152,18 @@ public class ProfileEditPanel extends UPanel {
     }
 
     public void updateModel() {
+        if (pon1.isSelected()) {
+            save(1);
+        }
+        if (pon2.isSelected()) {
+            save(2);
+        }
+        if (pon3.isSelected()) {
+            save(3);
+        }
+        if (pon4.isSelected()) {
+            save(4);
+        }
 //        OnuCfgBean model;
 //        if (SnmpAction.IType.ADD.equals(fCommand)) {
 //            model = new OnuCfgBean(new XmlProxy(fApplication.getSnmpProxy().getTargetHost()));
@@ -171,4 +189,48 @@ public class ProfileEditPanel extends UPanel {
 //        model.setMxuPriority(toHexByte(mxuPriorityF.getValue()));
     }
 
+    private void save(int i) {
+        try {
+            XmlProxy proxy = new XmlProxy(fApplication.getSnmpProxy().getTargetHost());
+
+            ProfileOnuBean onu = new ProfileOnuBean(proxy);
+            onu.setId(i + "-1");
+            onu.setUpMaxBw(String.valueOf(upMaxBwF.getValue()));
+            onu.setDownMaxBw(String.valueOf(downMaxBwF.getValue()));
+            onu.add();
+            setModel(onu);
+
+            TableModel model = uniTable.getModel();
+            for (int j = 0; j < 4; j++) {
+                ProfileUniBean uni = new ProfileUniBean(proxy);
+                uni.setId(i + "-1-" + (j + 1));
+                Object mode = model.getValueAt(j, 1);
+                Object vlan = model.getValueAt(j, 2);
+                Object tpid = model.getValueAt(j, 3);
+                Object dsPir = model.getValueAt(j, 4);
+
+                if (mode != null || vlan != null || tpid != null || dsPir != null) {
+                    uni.setVlanMode(String.valueOf(utsDot3OnuEtherPortVlanModeVList[getIndexFromValue(utsDot3OnuEtherPortVlanModeTList, String.valueOf(mode))]));
+                    uni.setVlanTag(String.valueOf(vlan));
+                    uni.setVlanTpid(String.valueOf(tpid));
+                    uni.setDsPir(String.valueOf(dsPir));
+                    uni.add();
+                }
+            }
+        } catch (MibBeanException e) {
+            e.printStackTrace();
+        } catch (RuntimeException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    public int getIndexFromValue(String[] list, String v) {
+        for (int i = 0; i != list.length; i++) {
+            if (list[i].equals(v))
+                return i;
+        }
+
+        return 0;
+    }
 }
