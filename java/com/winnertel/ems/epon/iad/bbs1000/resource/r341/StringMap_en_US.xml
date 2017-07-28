@@ -3915,5 +3915,11 @@
 
     <String key="Onu_Mac" value="ONU MAC Binding" />
 
+    <String key="disableAuth" value="Disable" />
+    <String key="macAuth" value="MAC Auth" />
+    <String key="macAuto" value="MAC Auto Auth" />
+    <String key="loidAuth" value="LOID Auth" />
+    <String key="loidPwd" value="LOID Password Auth" />
+    <String key="hybridAuth" value= "Hybrid Auth" />
 
 </StringMap>

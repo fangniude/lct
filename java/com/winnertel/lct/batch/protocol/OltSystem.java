@@ -22,7 +22,7 @@ public class OltSystem {
     private String mgmtVlan;
     @Attribute(name = "mac_ageing", required = false)
     private String macAgeing;
-    @Attribute(name = "mac_auth", required = false)
+    @Attribute(name = "onu_auth_mode", required = false)
     private String macAuth;
     @Attribute(name = "vlan_transparent", required = false)
     private String vlanTransParent;

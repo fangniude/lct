@@ -38,7 +38,17 @@ public class OltSystemPanel extends UPanel {
     private StringTextField contactField = new StringTextField();
     private IntegerTextField mgmtVlanField = new IntegerTextField();
     private IntegerTextField macAgeingField = new IntegerTextField();
-    private JComboBox macAuthField = new JComboBox(new Object[]{"enable", "disable"});
+
+    private int[] macAuthFieldVList = new int[]{0, 1, 2, 3, 4, 8};
+    private String[] macAuthFieldTList = new String[]{
+            fStringMap.getString("disableAuth"),
+            fStringMap.getString("macAuth"),
+            fStringMap.getString("macAuto"),
+            fStringMap.getString("loidAuth"),
+            fStringMap.getString("loidPwd"),
+            fStringMap.getString("hybridAuth")
+    };
+    private JComboBox macAuthField = new JComboBox(macAuthFieldTList);
     private JComboBox vlanTransParentField = new JComboBox(new Object[]{"enable", "disable"});
     private JComboBox globalP2pField = new JComboBox(new Object[]{"enable", "disable"});
     private IPAddressField mgmtIpField = new IPAddressField();
@@ -149,7 +159,14 @@ public class OltSystemPanel extends UPanel {
                 macAgeingField.setValue(0);
             }
         }
-        macAuthField.setSelectedItem(mbean.getMacAuth());
+        String macAuth = mbean.getMacAuth();
+        if (macAgeing != null && !macAgeing.trim().isEmpty()) {
+            try {
+                macAuthField.setSelectedIndex(getIndexFromValue(macAuthFieldVList, Integer.valueOf(macAuth)));
+            } catch (NumberFormatException e) {
+                macAuthField.setSelectedIndex(0);
+            }
+        }
         vlanTransParentField.setSelectedItem(mbean.getVlanTransParent());
         globalP2pField.setSelectedItem(mbean.getGlobalP2p());
         mgmtIpField.setValue(mbean.getMgmtIp());
@@ -162,9 +179,18 @@ public class OltSystemPanel extends UPanel {
         model.setContact(toHex(contactField.getValue()));
         model.setMgmtVlan(String.valueOf(mgmtVlanField.getValue()));
         model.setMacAgeing(String.valueOf(macAgeingField.getValue()));
-        model.setMacAuth(String.valueOf(macAuthField.getSelectedItem()));
+        model.setMacAuth(String.valueOf(macAuthFieldVList[macAuthField.getSelectedIndex()]));
         model.setVlanTransParent(String.valueOf(vlanTransParentField.getSelectedItem()));
         model.setGlobalP2p(String.valueOf(globalP2pField.getSelectedItem()));
         model.setMgmtIp(mgmtIpField.getIPString());
+    }
+
+    public int getIndexFromValue(int[] list, int v) {
+        for (int i = 0; i != list.length; i++) {
+            if (list[i] == v)
+                return i;
+        }
+
+        return 0;
     }
 }

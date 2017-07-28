@@ -342,6 +342,6 @@
     <TabbedPane id="Batch_Config">
         <Panel name="OltBase_Panel" class="com.winnertel.lct.batch.gui.OltBasePanel"/>
         <Panel name="OnuBase_Panel" class="com.winnertel.lct.batch.gui.OnuBasePanel"/>
-        <Panel name="OnuProfile_Panel" class="com.winnertel.lct.batch.gui.OnuProfilePanel"/>
+        <Panel name="OnuProfile_Panel" class="com.winnertel.lct.batch.gui.ProfilePanel"/>
     </TabbedPane>
 </TabbedPaneList>

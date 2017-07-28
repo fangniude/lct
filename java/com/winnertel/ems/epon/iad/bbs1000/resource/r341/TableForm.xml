@@ -132,10 +132,10 @@
                 <Field name="mxuPriority" mib_property="mxuPriority"/>
             </Table>
             <Button id="Add_ProfileOnuTable" type="Add" style="O|C">
-                <Panel action_id="Add_ProfileOnuTable_Log" class="com.winnertel.lct.batch.gui.ProfileOnuPanel"/>
+                <Panel action_id="Add_ProfileOnuTable_Log" class="com.winnertel.lct.batch.gui.ProfileEditPanel"/>
             </Button>
             <Button id="Modify_ProfileOnuTable" type="Modify">
-                <Panel action_id="Modify_ProfileOnuTable_Log" class="com.winnertel.lct.batch.gui.ProfileOnuPanel"/>
+                <Panel action_id="Modify_ProfileOnuTable_Log" class="com.winnertel.lct.batch.gui.ProfileEditPanel"/>
             </Button>
             <Button id="Delete_ProfileOnuTable" type="Delete"/>
             <Button type="Refresh"/>
@@ -158,10 +158,10 @@
                 <Field name="loopDetect" mib_property="loopDetect"/>
             </Table>
             <Button id="Add_ProfileUniTable" type="Add" style="O|C">
-                <Panel action_id="Add_ProfileUniTable_Log" class="com.winnertel.lct.batch.gui.ProfileUniPanel"/>
+                <Panel action_id="Add_ProfileUniTable_Log" class="com.winnertel.lct.batch.gui.ProfileEditPanel"/>
             </Button>
             <Button id="Modify_ProfileUniTable" type="Modify">
-                <Panel action_id="Modify_ProfileUniTable_Log" class="com.winnertel.lct.batch.gui.ProfileUniPanel"/>
+                <Panel action_id="Modify_ProfileUniTable_Log" class="com.winnertel.lct.batch.gui.ProfileEditPanel"/>
             </Button>
             <Button id="Delete_ProfileUniTable" type="Delete"/>
             <Button type="Refresh"/>

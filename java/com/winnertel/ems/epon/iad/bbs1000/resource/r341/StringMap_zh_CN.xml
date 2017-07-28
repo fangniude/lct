@@ -4032,4 +4032,11 @@
 
     <String key="Onu_Mac" value="ONU MAC绑定" />
 
+    <String key="disableAuth" value="禁用" />
+    <String key="macAuth" value="MAC认证" />
+    <String key="macAuto" value="MAC自动认证" />
+    <String key="loidAuth" value="LOID认证" />
+    <String key="loidPwd" value="LOID密码认证" />
+    <String key="hybridAuth" value="混合认证" />
+
 </StringMap>
