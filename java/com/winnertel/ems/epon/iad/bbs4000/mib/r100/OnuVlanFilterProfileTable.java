@@ -26,16 +26,16 @@ public class OnuVlanFilterProfileTable extends SnmpMibBean {
 
     protected void init() {
         initProperty(onuVlanFilterProfileIndex, new SnmpMibBeanProperty(onuVlanFilterProfileIndex,
-                ".1.3.6.1.4.1.41355.1.3.10.5.2.27.1.1", ISnmpConstant.GAUGE));
+                ".1.3.6.1.4.1.45121.1.3.10.5.2.27.1.1", ISnmpConstant.GAUGE));
         initProperty(onuVlanFilterProfileName, new SnmpMibBeanProperty(onuVlanFilterProfileName,
-                ".1.3.6.1.4.1.41355.1.3.10.5.2.27.1.2", ISnmpConstant.STRING));
+                ".1.3.6.1.4.1.45121.1.3.10.5.2.27.1.2", ISnmpConstant.STRING));
         initProperty(onuVlanFilterProfileTciEntryNumber, new SnmpMibBeanProperty(onuVlanFilterProfileTciEntryNumber,
-                ".1.3.6.1.4.1.41355.1.3.10.5.2.27.1.3", ISnmpConstant.GAUGE));
+                ".1.3.6.1.4.1.45121.1.3.10.5.2.27.1.3", ISnmpConstant.GAUGE));
         initProperty(onuVlanFilterProfileTciEntryList, new SnmpMibBeanProperty(onuVlanFilterProfileTciEntryList,
-                ".1.3.6.1.4.1.41355.1.3.10.5.2.27.1.4", ISnmpConstant.OCTETS));
+                ".1.3.6.1.4.1.45121.1.3.10.5.2.27.1.4", ISnmpConstant.OCTETS));
         initProperty(onuVlanFilterProfileForwardOperation, new SnmpMibBeanProperty(
-                onuVlanFilterProfileForwardOperation, ".1.3.6.1.4.1.41355.1.3.10.5.2.27.1.5", ISnmpConstant.GAUGE));
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.2.27.1.100",
+                onuVlanFilterProfileForwardOperation, ".1.3.6.1.4.1.45121.1.3.10.5.2.27.1.5", ISnmpConstant.GAUGE));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.2.27.1.100",
                 ISnmpConstant.INTEGER));
 
     }

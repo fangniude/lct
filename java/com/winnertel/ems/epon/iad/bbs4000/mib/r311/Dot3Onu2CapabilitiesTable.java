@@ -47,111 +47,111 @@ public class Dot3Onu2CapabilitiesTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsDot3Onu2CapabilitiesModuleId, new SnmpMibBeanProperty(
 				utsDot3Onu2CapabilitiesModuleId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapabilitiesDeviceId, new SnmpMibBeanProperty(
 				utsDot3Onu2CapabilitiesDeviceId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapabilitiesPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2CapabilitiesPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.3",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapabilitiesLogicalPortId,
 				new SnmpMibBeanProperty(utsDot3Onu2CapabilitiesLogicalPortId,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.4",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.4",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapabilitiesVersion, new SnmpMibBeanProperty(
 				utsDot3Onu2CapabilitiesVersion,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.5",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.5",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapabilitiesGEPortNumber,
 				new SnmpMibBeanProperty(utsDot3Onu2CapabilitiesGEPortNumber,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.6",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.6",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OnuOnu2CapabilitiesGEPortList,
 				new SnmpMibBeanProperty(utsDot3OnuOnu2CapabilitiesGEPortList,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.7",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.7",
 						ISnmpConstant.OCTETS));
 		initProperty(utsDot3Onu2CapabilitiesFEPortNumber,
 				new SnmpMibBeanProperty(utsDot3Onu2CapabilitiesFEPortNumber,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.8",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.8",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapabilitiesFEPortList,
 				new SnmpMibBeanProperty(utsDot3Onu2CapabilitiesFEPortList,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.9",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.9",
 						ISnmpConstant.OCTETS));
 		initProperty(utsDot3Onu2CapabilitiesPOTSPortNumber,
 				new SnmpMibBeanProperty(utsDot3Onu2CapabilitiesPOTSPortNumber,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.10",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.10",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapabilitiesE1PortNumber,
 				new SnmpMibBeanProperty(utsDot3Onu2CapabilitiesE1PortNumber,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.11",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.11",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapabilitiesUpsQueueNum,
 				new SnmpMibBeanProperty(utsDot3Onu2CapabilitiesUpsQueueNum,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.12",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.12",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapabilitiesMaxUpsQueueNum,
 				new SnmpMibBeanProperty(utsDot3Onu2CapabilitiesMaxUpsQueueNum,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.13",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.13",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapabilitiesDownsQueueNum,
 				new SnmpMibBeanProperty(utsDot3Onu2CapabilitiesDownsQueueNum,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.14",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.14",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapabilitiesMaxDownsQueueNum,
 				new SnmpMibBeanProperty(
 						utsDot3Onu2CapabilitiesMaxDownsQueueNum,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.15",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.15",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapabilitiesBatteryInstalled,
 				new SnmpMibBeanProperty(
 						utsDot3Onu2CapabilitiesBatteryInstalled,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.16",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.16",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapbilitiesOnuType, new SnmpMibBeanProperty(
 				utsDot3Onu2CapbilitiesOnuType,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.17",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.17",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapbilitiesMultiLlid, new SnmpMibBeanProperty(
 				utsDot3Onu2CapbilitiesMultiLlid,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.18",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.18",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapabilitiesProtectionType,
 				new SnmpMibBeanProperty(utsDot3Onu2CapabilitiesProtectionType,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.19",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.19",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapabilitiesPonIfNum, new SnmpMibBeanProperty(
 				utsDot3Onu2CapabilitiesPonIfNum,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.20",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.20",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapabilitiesSlotNum, new SnmpMibBeanProperty(
 				utsDot3Onu2CapabilitiesSlotNum,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.21",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.21",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapabilitesIfAttribute,
 				new SnmpMibBeanProperty(utsDot3Onu2CapabilitesIfAttribute,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.22",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.22",
 						ISnmpConstant.OCTETS));
 		initProperty(utsDot3Onu2CapabilitiesIpv6, new SnmpMibBeanProperty(
 				utsDot3Onu2CapabilitiesIpv6,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.23",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.23",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapabilitiesPowerSupplyControl,
 				new SnmpMibBeanProperty(
 						utsDot3Onu2CapabilitiesPowerSupplyControl,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.24",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.24",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapabilitiesServiceSLA,
 				new SnmpMibBeanProperty(utsDot3Onu2CapabilitiesServiceSLA,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.25",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.25",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CapabilitesIfAttributePerSlot,
 				new SnmpMibBeanProperty(
 						utsDot3Onu2CapabilitesIfAttributePerSlot,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.46.1.26",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.46.1.26",
 						ISnmpConstant.OCTETS));
 
 	}

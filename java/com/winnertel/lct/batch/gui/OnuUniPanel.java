@@ -13,8 +13,6 @@ import com.winnertel.lct.batch.proxy.XmlProxy;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
 import java.util.Vector;
 
 import static com.winnertel.lct.batch.gui.TransformUtils.setNullableIntField;
@@ -23,49 +21,54 @@ public class OnuUniPanel extends UPanel {
     private final String idLabel = fStringMap.getString("onuUniId") + ": ";
     private final String vlanModeL = fStringMap.getString("utsDot3OnuEtherPortVlanMode") + ": ";
     private final String vlanTagL = fStringMap.getString("utsDot3OnuEtherPortVlanTag") + ": ";
+    private final String passVlanL = fStringMap.getString("passVlan") + ": ";
     private final String vlanTpidL = fStringMap.getString("utsDot3OnuEtherPortVlanTPID") + ": ";
     private final String policingEnableL = fStringMap.getString("utsDot3OnuEtherPortPolicingEnable") + ": ";
-    private final String policingCirL = fStringMap.getString("utsDot3OnuEtherPortPolicingCIR") + ": ";
-    private final String policingCbsL = fStringMap.getString("utsDot3OnuEtherPortPolicingCBS") + ": ";
-    private final String policingEbsL = fStringMap.getString("utsDot3OnuEtherPortPolicingEBS") + ": ";
-    private final String dsCirL = fStringMap.getString("utsDot3OnuEtherPortDSPolicingCIR") + ": ";
-    private final String dsPirL = fStringMap.getString("utsDot3OnuEtherPortDSPolicingPIR") + ": ";
+    private final String policingCirL = fStringMap.getString("upPir") + ": ";
+    //    private final String policingCbsL = fStringMap.getString("utsDot3OnuEtherPortPolicingCBS") + ": ";
+//    private final String policingEbsL = fStringMap.getString("utsDot3OnuEtherPortPolicingEBS") + ": ";
     private final String dsEnableL = fStringMap.getString("utsDot3OnuEtherPortDSPolicingEnable") + ": ";
+    //    private final String dsCirL = fStringMap.getString("downPir") + ": ";
+    private final String dsPirL = fStringMap.getString("downPir") + ": ";
     private final String loopDetectL = fStringMap.getString("utsDot3OltPortLoopbackDetection") + ": ";
 
     private StringTextField idField = new StringTextField();
-    private int[] utsDot3OnuEtherPortVlanModeVList = new int[]{0, 1, 2, 3, 4};
+    private int[] utsDot3OnuEtherPortVlanModeVList = new int[]{0, 1,
+//            2, 3,
+            4};
     private String[] utsDot3OnuEtherPortVlanModeTList = new String[]{
             fStringMap.getString("transparent"),
             fStringMap.getString("tag"),
-            fStringMap.getString("translation"),
-            fStringMap.getString("n1aggregation"),
+//            fStringMap.getString("translation"),
+//            fStringMap.getString("n1aggregation"),
             fStringMap.getString("trunk")
     };
     private JComboBox vlanModeF = new JComboBox(utsDot3OnuEtherPortVlanModeTList);
     private IntegerTextField vlanTagF = new IntegerTextField();
-    private IntegerTextField vlanTpidF = new IntegerTextField();
+    private StringTextField passVlanF = new StringTextField();
+    private JComboBox vlanTpidF = new JComboBox(new Object[]{"0x8100", "0x9100"});
 
-    private int[] policingEnableVList = new int[]{1, 0};
+    private int[] policingEnableVList = new int[]{0, 1};
     private String[] policingEnableTList = new String[]{
-            fStringMap.getString("enable"),
-            fStringMap.getString("disable")
+            fStringMap.getString("disable"),
+            fStringMap.getString("enable")
     };
     private JComboBox policingEnableF = new JComboBox(policingEnableTList);
 
-    private JComboBox policingCirF = new JComboBox(policingCirVals());
-    private JComboBox policingCbsF = new JComboBox(policingCbsVals());
-    private IntegerTextField policingEbsF = new IntegerTextField();
+    //    private JComboBox policingCirF = new JComboBox(policingCirVals());
+//    private JComboBox policingCbsF = new JComboBox(policingCbsVals());
+    private IntegerTextField policingCirF = new IntegerTextField();
 
-    private int[] dsEnableVList = new int[]{1, 0};
+    private int[] dsEnableVList = new int[]{0, 1};
     private String[] dsEnableTList = new String[]{
-            fStringMap.getString("enable"),
-            fStringMap.getString("disable")
+            fStringMap.getString("disable"),
+            fStringMap.getString("enable")
     };
     private JComboBox dsEnableF = new JComboBox(dsEnableTList);
 
-    private JComboBox dsCirF = new JComboBox(dsCirPirVals());
-    private JComboBox dsPirF = new JComboBox(dsCirPirVals());
+    //    private JComboBox dsCirF = new JComboBox(dsCirPirVals());
+    private IntegerTextField dsPirF = new IntegerTextField();
+//    private JComboBox dsPirF = new JComboBox(dsCirPirVals());
 
     private int[] loopDetectVList = new int[]{1, 0};
     private String[] loopDetectTList = new String[]{
@@ -109,7 +112,7 @@ public class OnuUniPanel extends UPanel {
 
     public void initGui() {
         JPanel baseInfoPanel = new JPanel();
-        NTLayout layout = new NTLayout(12, 3, NTLayout.FILL, NTLayout.CENTER, 5, 5);
+        NTLayout layout = new NTLayout(13, 3, NTLayout.FILL, NTLayout.CENTER, 5, 5);
         layout.setMargins(6, 10, 6, 10);
         baseInfoPanel.setLayout(layout);
         baseInfoPanel.setBorder(BorderFactory.createEtchedBorder());
@@ -122,8 +125,14 @@ public class OnuUniPanel extends UPanel {
         baseInfoPanel.add(vlanModeF);
         baseInfoPanel.add(new HSpacer());
 
+        vlanModeF.addItemListener(e -> vlanModeChange());
+
         baseInfoPanel.add(new JLabel(vlanTagL));
         baseInfoPanel.add(vlanTagF);
+        baseInfoPanel.add(new HSpacer());
+
+        baseInfoPanel.add(new JLabel(passVlanL));
+        baseInfoPanel.add(passVlanF);
         baseInfoPanel.add(new HSpacer());
 
         baseInfoPanel.add(new JLabel(vlanTpidL));
@@ -140,23 +149,11 @@ public class OnuUniPanel extends UPanel {
         baseInfoPanel.add(policingCirF);
         baseInfoPanel.add(new HSpacer());
 
-        baseInfoPanel.add(new JLabel(policingCbsL));
-        baseInfoPanel.add(policingCbsF);
-        baseInfoPanel.add(new HSpacer());
-
-        baseInfoPanel.add(new JLabel(policingEbsL));
-        baseInfoPanel.add(policingEbsF);
-        baseInfoPanel.add(new HSpacer());
-
         baseInfoPanel.add(new JLabel(dsEnableL));
         baseInfoPanel.add(dsEnableF);
         baseInfoPanel.add(new HSpacer());
 
         dsEnableF.addItemListener(e -> dsEnable());
-
-        baseInfoPanel.add(new JLabel(dsCirL));
-        baseInfoPanel.add(dsCirF);
-        baseInfoPanel.add(new HSpacer());
 
         baseInfoPanel.add(new JLabel(dsPirL));
         baseInfoPanel.add(dsPirF);
@@ -177,30 +174,44 @@ public class OnuUniPanel extends UPanel {
     }
 
     protected void initForm() {
-        idField.setDefaultString("1-1-1");
-        policingEbsF.setValueScope(0, 1522);
-        vlanTagF.setValueScope(1, 4094);
-        vlanTpidF.setValueScope(1, 65534);
+        idField.setDefaultString("1/1/1/1");
+        vlanTagF.setValueScope(2, 4094);
+        policingCirF.setValueScope(256, 1000000);
+        dsPirF.setValueScope(256, 1000000);
+        vlanModeF.setSelectedIndex(0);
+        policingEnableF.setSelectedIndex(0);
+        dsEnableF.setSelectedIndex(0);
+    }
+
+    private void vlanModeChange() {
+        int str = utsDot3OnuEtherPortVlanModeVList[vlanModeF.getSelectedIndex()];
+        if (0 == str) {
+            vlanTagF.setEnabled(false);
+            passVlanF.setEnabled(false);
+            vlanTpidF.setEnabled(false);
+        } else if(1 == str) {
+            vlanTagF.setEnabled(true);
+            passVlanF.setEnabled(false);
+            vlanTpidF.setEnabled(true);
+        } else if (4 == str) {
+            vlanTagF.setEnabled(true);
+            passVlanF.setEnabled(true);
+            vlanTpidF.setEnabled(true);
+        }
     }
 
     public void policingEnable() {
-        if (policingEnableF.getSelectedIndex() == 1) {
+        if (policingEnableF.getSelectedIndex() == 0) {
             policingCirF.setEnabled(false);
-            policingCbsF.setEnabled(false);
-            policingEbsF.setEnabled(false);
         } else {
             policingCirF.setEnabled(true);
-            policingCbsF.setEnabled(true);
-            policingEbsF.setEnabled(true);
         }
     }
 
     public void dsEnable() {
-        if (dsEnableF.getSelectedIndex() == 1) {
-            dsCirF.setEnabled(false);
+        if (dsEnableF.getSelectedIndex() == 0) {
             dsPirF.setEnabled(false);
         } else {
-            dsCirF.setEnabled(true);
             dsPirF.setEnabled(true);
         }
     }
@@ -208,7 +219,9 @@ public class OnuUniPanel extends UPanel {
     public void refresh() {
         if (SnmpAction.IType.ADD.equals(fCommand)) {
             idField.setEditable(true);
-            return;
+            vlanModeF.setSelectedIndex(0);
+            policingEnableF.setSelectedIndex(0);
+            dsEnableF.setSelectedIndex(0);
         } else {
             OnuUniBean m = (OnuUniBean) getModel();
             if (m == null) {
@@ -216,24 +229,22 @@ public class OnuUniPanel extends UPanel {
             }
 
             idField.setEditable(false);
-            idField.setValue(m.getId());
+            idField.setValue(TransformUtils.disableUniId(m.getId()));
             vlanModeF.setSelectedIndex(getIndexFromValue(utsDot3OnuEtherPortVlanModeVList, Integer.valueOf(m.getVlanMode())));
             setNullableIntField(vlanTagF, m.getVlanTag());
-            vlanTpidF.setValue(TransformUtils.fromHexShort(m.getVlanTpid()));
+            vlanTpidF.setSelectedItem(m.getVlanTpid());
 
             policingEnableF.setSelectedIndex(getIndexFromValue(policingEnableVList, Integer.valueOf(m.getPolicingEnable())));
-            if (policingEnableF.getSelectedIndex() == 0) {
-                policingCirF.setSelectedItem(Integer.valueOf(m.getPolicingCir()));
-                policingCbsF.setSelectedItem(Integer.valueOf(m.getPolicingCbs()));
-                setNullableIntField(policingEbsF, m.getPolicingEbs());
+            if (policingEnableF.getSelectedIndex() == 1) {
+                policingCirF.setValue(Integer.valueOf(m.getPolicingCir()));
             }
             dsEnableF.setSelectedIndex(getIndexFromValue(dsEnableVList, Integer.valueOf(m.getDsEnable())));
-            if (dsEnableF.getSelectedIndex() == 0) {
-                dsCirF.setSelectedItem(Integer.valueOf(m.getDsCir()));
-                dsPirF.setSelectedItem(Integer.valueOf(m.getDsPir()));
+            if (dsEnableF.getSelectedIndex() == 1) {
+                dsPirF.setValue(Integer.valueOf(m.getDsPir()));
             }
             loopDetectF.setSelectedIndex(getIndexFromValue(dsEnableVList, Integer.valueOf(m.getLoopDetect())));
         }
+        vlanModeChange();
         policingEnable();
         dsEnable();
     }
@@ -242,24 +253,31 @@ public class OnuUniPanel extends UPanel {
         OnuUniBean model;
         if (SnmpAction.IType.ADD.equals(fCommand)) {
             model = new OnuUniBean(new XmlProxy(fApplication.getSnmpProxy().getTargetHost()));
-            model.setId(String.valueOf(idField.getValue()));
+            model.setId(TransformUtils.saveUniId(idField.getValue()));
             setModel(model);
         } else {
             model = (OnuUniBean) getModel();
         }
         model.setVlanMode(String.valueOf(utsDot3OnuEtherPortVlanModeVList[vlanModeF.getSelectedIndex()]));
-        model.setVlanTag(String.valueOf(vlanTagF.getValue()));
-        model.setVlanTpid(TransformUtils.toHexShort(vlanTpidF.getValue()));
+        if (vlanTagF.isEnabled()) {
+            model.setVlanTag(String.valueOf(vlanTagF.getValue()));
+        }
+        if(vlanTpidF.isEnabled()) {
+            model.setVlanTpid(String.valueOf(vlanTpidF.getSelectedItem()));
+        }
+        if (passVlanF.isEnabled()) {
+            model.setPassVlan(String.valueOf(passVlanF.getValue()));
+        }
         model.setPolicingEnable(String.valueOf(policingEnableVList[policingEnableF.getSelectedIndex()]));
-        if (policingEnableF.getSelectedIndex() == 0) {
-            model.setPolicingCir(String.valueOf(policingCirF.getSelectedItem()));
-            model.setPolicingCbs(String.valueOf(policingCbsF.getSelectedItem()));
-            model.setPolicingEbs(String.valueOf(policingEbsF.getValue()));
+        if (policingEnableF.getSelectedIndex() == 1) {
+            model.setPolicingCir(String.valueOf(policingCirF.getValue()));
+            model.setPolicingCbs("1000");
+            model.setPolicingEbs("1000");
         }
         model.setDsEnable(String.valueOf(dsEnableVList[dsEnableF.getSelectedIndex()]));
-        if (dsEnableF.getSelectedIndex() == 0) {
-            model.setDsCir(String.valueOf(dsCirF.getSelectedItem()));
-            model.setDsPir(String.valueOf(dsPirF.getSelectedItem()));
+        if (dsEnableF.getSelectedIndex() == 1) {
+            model.setDsCir(String.valueOf(dsPirF.getValue()));
+            model.setDsPir(String.valueOf(dsPirF.getValue()));
         }
         model.setLoopDetect(String.valueOf(loopDetectVList[loopDetectF.getSelectedIndex()]));
     }

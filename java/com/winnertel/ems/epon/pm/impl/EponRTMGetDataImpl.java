@@ -49,9 +49,9 @@ public class EponRTMGetDataImpl
         tmpOid = oid.toString();
 //        log.debug("OID get from UPM: " + tmpOid);
 
-        if(tmpOid.startsWith(".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1"))
+        if(tmpOid.startsWith(".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1"))
         {
-          //format: .1.3.6.1.4.1.41355.1800.4.2.1.1.1.1.84.1/1
+          //format: .1.3.6.1.4.1.45121.1800.4.2.1.1.1.1.84.1/1
           int index = tmpOid.lastIndexOf(".");
           if(index != -1)
           {
@@ -74,7 +74,7 @@ public class EponRTMGetDataImpl
         }
         else
         {
-          //format: .1.3.6.1.4.1.41355.1800.4.2.1.1.1.1.84.1/1
+          //format: .1.3.6.1.4.1.45121.1800.4.2.1.1.1.1.84.1/1
           int index = tmpOid.lastIndexOf(".");
           if(index != -1)
           {

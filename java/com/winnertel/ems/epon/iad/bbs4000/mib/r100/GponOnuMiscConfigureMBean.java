@@ -37,24 +37,24 @@ public class GponOnuMiscConfigureMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(onuCfgSlotNo, new SnmpMibBeanProperty(onuCfgSlotNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.1", ISnmpConstant.INTEGER));
-        initProperty(onuCfgPortNo, new SnmpMibBeanProperty(onuCfgPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.2", ISnmpConstant.INTEGER));
-        initProperty(onuCfgLogicalPortNo, new SnmpMibBeanProperty(onuCfgLogicalPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.3", ISnmpConstant.INTEGER));
-        initProperty(onuCfgBerIntervalConfiguration, new SnmpMibBeanProperty(onuCfgBerIntervalConfiguration, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.12", ISnmpConstant.GAUGE));
-        initProperty(onuCfgPowerLevel, new SnmpMibBeanProperty(onuCfgPowerLevel, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.13", ISnmpConstant.INTEGER));
-        initProperty(onuCfgTrafficManagementOption, new SnmpMibBeanProperty(onuCfgTrafficManagementOption, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.17", ISnmpConstant.INTEGER));
-        initProperty(onuCfgBatteryBackup, new SnmpMibBeanProperty(onuCfgBatteryBackup, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.18", ISnmpConstant.INTEGER));
-        initProperty(onuCfgTotalPriorityQueueNumber, new SnmpMibBeanProperty(onuCfgTotalPriorityQueueNumber, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.27", ISnmpConstant.GAUGE));
-        initProperty(onuCfgTotalTrafficSchedulerNumber, new SnmpMibBeanProperty(onuCfgTotalTrafficSchedulerNumber, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.28", ISnmpConstant.GAUGE));
-        initProperty(onuCfgTotalGEMPortNumber, new SnmpMibBeanProperty(onuCfgTotalGEMPortNumber, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.29", ISnmpConstant.GAUGE));
-        initProperty(onuCfgTotalTCONTNumber, new SnmpMibBeanProperty(onuCfgTotalTCONTNumber, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.30", ISnmpConstant.GAUGE));
-        initProperty(onuCfgTotalEthernetUNINumber, new SnmpMibBeanProperty(onuCfgTotalEthernetUNINumber, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.31", ISnmpConstant.GAUGE));
-        initProperty(onuCfgTotalPOTSUNINumber, new SnmpMibBeanProperty(onuCfgTotalPOTSUNINumber, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.32", ISnmpConstant.GAUGE));
-        initProperty(onuCfgFecTxEnable, new SnmpMibBeanProperty(onuCfgFecTxEnable, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.49", ISnmpConstant.INTEGER));
-        initProperty(onuCfgPiggybackDbaRep, new SnmpMibBeanProperty(onuCfgPiggybackDbaRep, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.51", ISnmpConstant.INTEGER));
-        initProperty(onuCfgWholeOnuDbaRep, new SnmpMibBeanProperty(onuCfgWholeOnuDbaRep, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.52", ISnmpConstant.INTEGER));
+        initProperty(onuCfgSlotNo, new SnmpMibBeanProperty(onuCfgSlotNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.1", ISnmpConstant.INTEGER));
+        initProperty(onuCfgPortNo, new SnmpMibBeanProperty(onuCfgPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.2", ISnmpConstant.INTEGER));
+        initProperty(onuCfgLogicalPortNo, new SnmpMibBeanProperty(onuCfgLogicalPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.3", ISnmpConstant.INTEGER));
+        initProperty(onuCfgBerIntervalConfiguration, new SnmpMibBeanProperty(onuCfgBerIntervalConfiguration, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.12", ISnmpConstant.GAUGE));
+        initProperty(onuCfgPowerLevel, new SnmpMibBeanProperty(onuCfgPowerLevel, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.13", ISnmpConstant.INTEGER));
+        initProperty(onuCfgTrafficManagementOption, new SnmpMibBeanProperty(onuCfgTrafficManagementOption, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.17", ISnmpConstant.INTEGER));
+        initProperty(onuCfgBatteryBackup, new SnmpMibBeanProperty(onuCfgBatteryBackup, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.18", ISnmpConstant.INTEGER));
+        initProperty(onuCfgTotalPriorityQueueNumber, new SnmpMibBeanProperty(onuCfgTotalPriorityQueueNumber, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.27", ISnmpConstant.GAUGE));
+        initProperty(onuCfgTotalTrafficSchedulerNumber, new SnmpMibBeanProperty(onuCfgTotalTrafficSchedulerNumber, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.28", ISnmpConstant.GAUGE));
+        initProperty(onuCfgTotalGEMPortNumber, new SnmpMibBeanProperty(onuCfgTotalGEMPortNumber, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.29", ISnmpConstant.GAUGE));
+        initProperty(onuCfgTotalTCONTNumber, new SnmpMibBeanProperty(onuCfgTotalTCONTNumber, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.30", ISnmpConstant.GAUGE));
+        initProperty(onuCfgTotalEthernetUNINumber, new SnmpMibBeanProperty(onuCfgTotalEthernetUNINumber, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.31", ISnmpConstant.GAUGE));
+        initProperty(onuCfgTotalPOTSUNINumber, new SnmpMibBeanProperty(onuCfgTotalPOTSUNINumber, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.32", ISnmpConstant.GAUGE));
+        initProperty(onuCfgFecTxEnable, new SnmpMibBeanProperty(onuCfgFecTxEnable, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.49", ISnmpConstant.INTEGER));
+        initProperty(onuCfgPiggybackDbaRep, new SnmpMibBeanProperty(onuCfgPiggybackDbaRep, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.51", ISnmpConstant.INTEGER));
+        initProperty(onuCfgWholeOnuDbaRep, new SnmpMibBeanProperty(onuCfgWholeOnuDbaRep, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.52", ISnmpConstant.INTEGER));
 
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.57", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.57", ISnmpConstant.INTEGER));
     }
 
     public Integer getOnuCfgSlotNo() {

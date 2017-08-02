@@ -29,40 +29,40 @@ public class PortBasedVLAN extends SnmpMibBean {
 
   protected void init() {
     initProperty(utsLagExtDot1qVlanIndex, new SnmpMibBeanProperty(
-        utsLagExtDot1qVlanIndex, ".1.3.6.1.4.1.41355.1800.2.2.1.4.1.1",
+        utsLagExtDot1qVlanIndex, ".1.3.6.1.4.1.45121.1800.2.2.1.4.1.1",
         ISnmpConstant.INTEGER));
     initProperty(utsLagExtDot1qVlanName, new SnmpMibBeanProperty(
-        utsLagExtDot1qVlanName, ".1.3.6.1.4.1.41355.1800.2.2.1.4.1.2",
+        utsLagExtDot1qVlanName, ".1.3.6.1.4.1.45121.1800.2.2.1.4.1.2",
         ISnmpConstant.STRING));
     initProperty(utsLagExtDot1qVlanPortListPorts, new SnmpMibBeanProperty(
         utsLagExtDot1qVlanPortListPorts,
-        ".1.3.6.1.4.1.41355.1800.2.2.1.4.1.3", ISnmpConstant.OCTETS));
+        ".1.3.6.1.4.1.45121.1800.2.2.1.4.1.3", ISnmpConstant.OCTETS));
     initProperty(utsLagExtDot1qVlanTaggedPortListPorts,
         new SnmpMibBeanProperty(utsLagExtDot1qVlanTaggedPortListPorts,
-            ".1.3.6.1.4.1.41355.1800.2.2.1.4.1.4",
+            ".1.3.6.1.4.1.45121.1800.2.2.1.4.1.4",
             ISnmpConstant.OCTETS));
     initProperty(utsLagExtDot1qVlanPortVidListPorts,
         new SnmpMibBeanProperty(utsLagExtDot1qVlanPortVidListPorts,
-            ".1.3.6.1.4.1.41355.1800.2.2.1.4.1.5",
+            ".1.3.6.1.4.1.45121.1800.2.2.1.4.1.5",
             ISnmpConstant.OCTETS));
     initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-        ".1.3.6.1.4.1.41355.1800.2.2.1.4.1.6", ISnmpConstant.INTEGER));
+        ".1.3.6.1.4.1.45121.1800.2.2.1.4.1.6", ISnmpConstant.INTEGER));
     initProperty(utsLagExtDot1qVlanUnTaggedPortListPorts,
         new SnmpMibBeanProperty(
             utsLagExtDot1qVlanUnTaggedPortListPorts,
-            ".1.3.6.1.4.1.41355.1800.2.2.1.4.1.7",
+            ".1.3.6.1.4.1.45121.1800.2.2.1.4.1.7",
             ISnmpConstant.OCTETS));
     initProperty(utsLagExtDot1qVlanIgmpSnoop, new SnmpMibBeanProperty(
         utsLagExtDot1qVlanIgmpSnoop,
-        ".1.3.6.1.4.1.41355.1800.2.2.1.4.1.8", ISnmpConstant.INTEGER));
+        ".1.3.6.1.4.1.45121.1800.2.2.1.4.1.8", ISnmpConstant.INTEGER));
 
     initProperty(utsLagExtDot1qVlanPPPoEPlus, new SnmpMibBeanProperty(
         utsLagExtDot1qVlanPPPoEPlus,
-        ".1.3.6.1.4.1.41355.1800.2.2.1.4.1.10", ISnmpConstant.INTEGER));
+        ".1.3.6.1.4.1.45121.1800.2.2.1.4.1.10", ISnmpConstant.INTEGER));
 
     initProperty(utsLagExtDot1qVlanL2DHCPOption82, new SnmpMibBeanProperty(
         utsLagExtDot1qVlanL2DHCPOption82,
-        ".1.3.6.1.4.1.41355.1800.2.2.1.4.1.11", ISnmpConstant.INTEGER));
+        ".1.3.6.1.4.1.45121.1800.2.2.1.4.1.11", ISnmpConstant.INTEGER));
   }
 
   public Integer getUtsLagExtDot1qVlanIndex() {

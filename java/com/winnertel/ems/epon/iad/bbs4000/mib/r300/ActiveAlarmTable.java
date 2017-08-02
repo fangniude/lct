@@ -31,21 +31,21 @@ public class ActiveAlarmTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsBbsAlarmActiveSequenceNumber, new SnmpMibBeanProperty(utsBbsAlarmActiveSequenceNumber, ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.1.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsBbsAlarmActiveProbableCause, new SnmpMibBeanProperty(utsBbsAlarmActiveProbableCause, ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.1.1.2", ISnmpConstant.COUNTER));
-        initProperty(utsBbsAlarmActiveSpecificProblem, new SnmpMibBeanProperty(utsBbsAlarmActiveSpecificProblem, ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.1.1.3", ISnmpConstant.COUNTER));
-        initProperty(utsBbsAlarmActiveEntityType, new SnmpMibBeanProperty(utsBbsAlarmActiveEntityType, ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.1.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsBbsAlarmActiveEntityInstance, new SnmpMibBeanProperty(utsBbsAlarmActiveEntityInstance, ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.1.1.5", ISnmpConstant.COUNTER));
-        initProperty(utsBbsAlarmActiveFirstOccurenceTime, new SnmpMibBeanProperty(utsBbsAlarmActiveFirstOccurenceTime, ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.1.1.6", ISnmpConstant.OCTETS));
-        initProperty(utsBbsAlarmActiveClass, new SnmpMibBeanProperty(utsBbsAlarmActiveClass, ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.1.1.7", ISnmpConstant.INTEGER));
-        initProperty(utsBbsAlarmActiveSeverity, new SnmpMibBeanProperty(utsBbsAlarmActiveSeverity, ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.1.1.8", ISnmpConstant.INTEGER));
-        initProperty(utsBbsAlarmActiveAcknowledge, new SnmpMibBeanProperty(utsBbsAlarmActiveAcknowledge, ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.1.1.9", ISnmpConstant.INTEGER));
-        initProperty(utsBbsAlarmActiveAdditionalText, new SnmpMibBeanProperty(utsBbsAlarmActiveAdditionalText, ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.1.1.10", ISnmpConstant.STRING));
-        initProperty(utsBbsAlarmActiveRaisingNumber, new SnmpMibBeanProperty(utsBbsAlarmActiveRaisingNumber, ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.1.1.11", ISnmpConstant.INTEGER));
-        initProperty(utsBbsAlarmActiveLastOccurenceTime, new SnmpMibBeanProperty(utsBbsAlarmActiveLastOccurenceTime, ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.1.1.12", ISnmpConstant.OCTETS));
-        initProperty(utsBbsAlarmActiveRepeats, new SnmpMibBeanProperty(utsBbsAlarmActiveRepeats, ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.1.1.13", ISnmpConstant.COUNTER));
-        initProperty(utsBbsAlarmActiveVersionId, new SnmpMibBeanProperty(utsBbsAlarmActiveVersionId, ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.1.1.14", ISnmpConstant.COUNTER));
-        initProperty(utsBbsAlarmActiveSessionId, new SnmpMibBeanProperty(utsBbsAlarmActiveSessionId, ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.1.1.15", ISnmpConstant.COUNTER));
+        initProperty(utsBbsAlarmActiveSequenceNumber, new SnmpMibBeanProperty(utsBbsAlarmActiveSequenceNumber, ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.1.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsBbsAlarmActiveProbableCause, new SnmpMibBeanProperty(utsBbsAlarmActiveProbableCause, ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.1.1.2", ISnmpConstant.COUNTER));
+        initProperty(utsBbsAlarmActiveSpecificProblem, new SnmpMibBeanProperty(utsBbsAlarmActiveSpecificProblem, ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.1.1.3", ISnmpConstant.COUNTER));
+        initProperty(utsBbsAlarmActiveEntityType, new SnmpMibBeanProperty(utsBbsAlarmActiveEntityType, ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.1.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsBbsAlarmActiveEntityInstance, new SnmpMibBeanProperty(utsBbsAlarmActiveEntityInstance, ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.1.1.5", ISnmpConstant.COUNTER));
+        initProperty(utsBbsAlarmActiveFirstOccurenceTime, new SnmpMibBeanProperty(utsBbsAlarmActiveFirstOccurenceTime, ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.1.1.6", ISnmpConstant.OCTETS));
+        initProperty(utsBbsAlarmActiveClass, new SnmpMibBeanProperty(utsBbsAlarmActiveClass, ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.1.1.7", ISnmpConstant.INTEGER));
+        initProperty(utsBbsAlarmActiveSeverity, new SnmpMibBeanProperty(utsBbsAlarmActiveSeverity, ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.1.1.8", ISnmpConstant.INTEGER));
+        initProperty(utsBbsAlarmActiveAcknowledge, new SnmpMibBeanProperty(utsBbsAlarmActiveAcknowledge, ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.1.1.9", ISnmpConstant.INTEGER));
+        initProperty(utsBbsAlarmActiveAdditionalText, new SnmpMibBeanProperty(utsBbsAlarmActiveAdditionalText, ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.1.1.10", ISnmpConstant.STRING));
+        initProperty(utsBbsAlarmActiveRaisingNumber, new SnmpMibBeanProperty(utsBbsAlarmActiveRaisingNumber, ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.1.1.11", ISnmpConstant.INTEGER));
+        initProperty(utsBbsAlarmActiveLastOccurenceTime, new SnmpMibBeanProperty(utsBbsAlarmActiveLastOccurenceTime, ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.1.1.12", ISnmpConstant.OCTETS));
+        initProperty(utsBbsAlarmActiveRepeats, new SnmpMibBeanProperty(utsBbsAlarmActiveRepeats, ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.1.1.13", ISnmpConstant.COUNTER));
+        initProperty(utsBbsAlarmActiveVersionId, new SnmpMibBeanProperty(utsBbsAlarmActiveVersionId, ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.1.1.14", ISnmpConstant.COUNTER));
+        initProperty(utsBbsAlarmActiveSessionId, new SnmpMibBeanProperty(utsBbsAlarmActiveSessionId, ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.1.1.15", ISnmpConstant.COUNTER));
 
     }
 

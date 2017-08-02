@@ -317,12 +317,12 @@ public class UnboundOnuMgmtMgrImpl extends UnicastRemoteObject implements Unboun
           (neType.equals("BBS4000") && neVersion.startsWith("1.0")))
       {
         //utsDot3DbaSlaBindingMacAddress
-        oidList = new String[]{".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.25." + ConfigUtility.generateIfIndex(onu.getCardId()+"/"+onu.getPortId()+"/"+onu.getLlId())};
+        oidList = new String[]{".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.25." + ConfigUtility.generateIfIndex(onu.getCardId()+"/"+onu.getPortId()+"/"+onu.getLlId())};
       }
       else
       {
         //utsDot3ValidOnuMacAddr
-        oidList = new String[]{".1.3.6.1.4.1.41355.1800.2.3.1.2.1.17.1.5." + onu.getCardId() + ".1." + onu.getPortId() + "." + onu.getLlId()};
+        oidList = new String[]{".1.3.6.1.4.1.45121.1800.2.3.1.2.1.17.1.5." + onu.getCardId() + ".1." + onu.getPortId() + "." + onu.getLlId()};
       }
 
       Object[] valueList = new SnmpVar[] {

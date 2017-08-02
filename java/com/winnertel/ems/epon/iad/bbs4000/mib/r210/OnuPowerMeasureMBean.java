@@ -25,12 +25,12 @@ public class OnuPowerMeasureMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3OnuOpticalPowerModuleId, new SnmpMibBeanProperty(utsDot3OnuOpticalPowerModuleId, ".1.3.6.1.4.1.41355.1800.2.5.1.1.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuOpticalPowerDeviceId, new SnmpMibBeanProperty(utsDot3OnuOpticalPowerDeviceId, ".1.3.6.1.4.1.41355.1800.2.5.1.1.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuOpticalPowerPortId, new SnmpMibBeanProperty(utsDot3OnuOpticalPowerPortId, ".1.3.6.1.4.1.41355.1800.2.5.1.1.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuOpticalPowerLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuOpticalPowerLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.5.1.1.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuOpticalPowerValue, new SnmpMibBeanProperty(utsDot3OnuOpticalPowerValue, ".1.3.6.1.4.1.41355.1800.2.5.1.1.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuOpticalPowerAdmin, new SnmpMibBeanProperty(utsDot3OnuOpticalPowerAdmin, ".1.3.6.1.4.1.41355.1800.2.5.1.1.1.6", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuOpticalPowerModuleId, new SnmpMibBeanProperty(utsDot3OnuOpticalPowerModuleId, ".1.3.6.1.4.1.45121.1800.2.5.1.1.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuOpticalPowerDeviceId, new SnmpMibBeanProperty(utsDot3OnuOpticalPowerDeviceId, ".1.3.6.1.4.1.45121.1800.2.5.1.1.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuOpticalPowerPortId, new SnmpMibBeanProperty(utsDot3OnuOpticalPowerPortId, ".1.3.6.1.4.1.45121.1800.2.5.1.1.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuOpticalPowerLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuOpticalPowerLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.5.1.1.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuOpticalPowerValue, new SnmpMibBeanProperty(utsDot3OnuOpticalPowerValue, ".1.3.6.1.4.1.45121.1800.2.5.1.1.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuOpticalPowerAdmin, new SnmpMibBeanProperty(utsDot3OnuOpticalPowerAdmin, ".1.3.6.1.4.1.45121.1800.2.5.1.1.1.6", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsDot3OnuOpticalPowerModuleId() {

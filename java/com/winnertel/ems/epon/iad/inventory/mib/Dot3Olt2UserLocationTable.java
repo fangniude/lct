@@ -27,10 +27,10 @@ public class Dot3Olt2UserLocationTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3Olt2UserLocationMacAddress, new SnmpMibBeanProperty(utsDot3Olt2UserLocationMacAddress, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.16.1.1", ISnmpConstant.MAC_ADDRESS));
-        initProperty(utsDot3Olt2UserLocationModuleId, new SnmpMibBeanProperty(utsDot3Olt2UserLocationModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.16.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Olt2UserLocationPortId, new SnmpMibBeanProperty(utsDot3Olt2UserLocationPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.16.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Olt2UserLocationLogicalPortId, new SnmpMibBeanProperty(utsDot3Olt2UserLocationLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.16.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Olt2UserLocationMacAddress, new SnmpMibBeanProperty(utsDot3Olt2UserLocationMacAddress, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.16.1.1", ISnmpConstant.MAC_ADDRESS));
+        initProperty(utsDot3Olt2UserLocationModuleId, new SnmpMibBeanProperty(utsDot3Olt2UserLocationModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.16.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Olt2UserLocationPortId, new SnmpMibBeanProperty(utsDot3Olt2UserLocationPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.16.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Olt2UserLocationLogicalPortId, new SnmpMibBeanProperty(utsDot3Olt2UserLocationLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.16.1.4", ISnmpConstant.INTEGER));
     }
 
     public byte[] getUtsDot3Olt2UserLocationMacAddress() {

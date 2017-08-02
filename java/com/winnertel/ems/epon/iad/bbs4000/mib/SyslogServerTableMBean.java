@@ -31,17 +31,17 @@ public class SyslogServerTableMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsSyslogServerId, new SnmpMibBeanProperty(utsSyslogServerId, ".1.3.6.1.4.1.41355.1800.2.1.1.3.2.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsSyslogServerIpAddress, new SnmpMibBeanProperty(utsSyslogServerIpAddress, ".1.3.6.1.4.1.41355.1800.2.1.1.3.2.1.2", ISnmpConstant.IP_ADDRESS));
-        initProperty(utsSyslogServerPort, new SnmpMibBeanProperty(utsSyslogServerPort, ".1.3.6.1.4.1.41355.1800.2.1.1.3.2.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsSyslogServerFacilityAuth, new SnmpMibBeanProperty(utsSyslogServerFacilityAuth, ".1.3.6.1.4.1.41355.1800.2.1.1.3.2.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsSyslogServerFacilityDhcp, new SnmpMibBeanProperty(utsSyslogServerFacilityDhcp, ".1.3.6.1.4.1.41355.1800.2.1.1.3.2.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsSyslogServerFacilityEthernet, new SnmpMibBeanProperty(utsSyslogServerFacilityEthernet, ".1.3.6.1.4.1.41355.1800.2.1.1.3.2.1.6", ISnmpConstant.INTEGER));
-        initProperty(utsSyslogServerFacilityPon, new SnmpMibBeanProperty(utsSyslogServerFacilityPon, ".1.3.6.1.4.1.41355.1800.2.1.1.3.2.1.7", ISnmpConstant.INTEGER));
-        initProperty(utsSyslogServerFacilitySnmp, new SnmpMibBeanProperty(utsSyslogServerFacilitySnmp, ".1.3.6.1.4.1.41355.1800.2.1.1.3.2.1.8", ISnmpConstant.INTEGER));
-        initProperty(utsSyslogServerFacilitySys, new SnmpMibBeanProperty(utsSyslogServerFacilitySys, ".1.3.6.1.4.1.41355.1800.2.1.1.3.2.1.9", ISnmpConstant.INTEGER));
-        initProperty(utsSyslogServerFacilitySyslog, new SnmpMibBeanProperty(utsSyslogServerFacilitySyslog, ".1.3.6.1.4.1.41355.1800.2.1.1.3.2.1.10", ISnmpConstant.INTEGER));
-        initProperty(utsSyslogServerFacilityUser, new SnmpMibBeanProperty(utsSyslogServerFacilityUser, ".1.3.6.1.4.1.41355.1800.2.1.1.3.2.1.11", ISnmpConstant.INTEGER));
+        initProperty(utsSyslogServerId, new SnmpMibBeanProperty(utsSyslogServerId, ".1.3.6.1.4.1.45121.1800.2.1.1.3.2.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsSyslogServerIpAddress, new SnmpMibBeanProperty(utsSyslogServerIpAddress, ".1.3.6.1.4.1.45121.1800.2.1.1.3.2.1.2", ISnmpConstant.IP_ADDRESS));
+        initProperty(utsSyslogServerPort, new SnmpMibBeanProperty(utsSyslogServerPort, ".1.3.6.1.4.1.45121.1800.2.1.1.3.2.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsSyslogServerFacilityAuth, new SnmpMibBeanProperty(utsSyslogServerFacilityAuth, ".1.3.6.1.4.1.45121.1800.2.1.1.3.2.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsSyslogServerFacilityDhcp, new SnmpMibBeanProperty(utsSyslogServerFacilityDhcp, ".1.3.6.1.4.1.45121.1800.2.1.1.3.2.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsSyslogServerFacilityEthernet, new SnmpMibBeanProperty(utsSyslogServerFacilityEthernet, ".1.3.6.1.4.1.45121.1800.2.1.1.3.2.1.6", ISnmpConstant.INTEGER));
+        initProperty(utsSyslogServerFacilityPon, new SnmpMibBeanProperty(utsSyslogServerFacilityPon, ".1.3.6.1.4.1.45121.1800.2.1.1.3.2.1.7", ISnmpConstant.INTEGER));
+        initProperty(utsSyslogServerFacilitySnmp, new SnmpMibBeanProperty(utsSyslogServerFacilitySnmp, ".1.3.6.1.4.1.45121.1800.2.1.1.3.2.1.8", ISnmpConstant.INTEGER));
+        initProperty(utsSyslogServerFacilitySys, new SnmpMibBeanProperty(utsSyslogServerFacilitySys, ".1.3.6.1.4.1.45121.1800.2.1.1.3.2.1.9", ISnmpConstant.INTEGER));
+        initProperty(utsSyslogServerFacilitySyslog, new SnmpMibBeanProperty(utsSyslogServerFacilitySyslog, ".1.3.6.1.4.1.45121.1800.2.1.1.3.2.1.10", ISnmpConstant.INTEGER));
+        initProperty(utsSyslogServerFacilityUser, new SnmpMibBeanProperty(utsSyslogServerFacilityUser, ".1.3.6.1.4.1.45121.1800.2.1.1.3.2.1.11", ISnmpConstant.INTEGER));
 
     }
 

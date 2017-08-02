@@ -30,51 +30,51 @@ public class Dot3Onu2VoipladTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsDot3Onu2VoipModuleId, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipModuleId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipDeviceId, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipDeviceId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.3",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipLogicalPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipLogicalPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.4",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.4",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipIadMac,
 				new SnmpMibBeanProperty(utsDot3Onu2VoipIadMac,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.5",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.5",
 						ISnmpConstant.STRING));
 		initProperty(utsDot3Onu2VoipIadCurrentProtocol,
 				new SnmpMibBeanProperty(utsDot3Onu2VoipIadCurrentProtocol,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.6",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.6",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipIadSwVerion,
 				new SnmpMibBeanProperty(utsDot3Onu2VoipIadSwVerion,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.7",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.7",
 						ISnmpConstant.STRING));
 		initProperty(utsDot3Onu2VoipIadSwDate,
 				new SnmpMibBeanProperty(utsDot3Onu2VoipIadSwDate,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.8",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.8",
 						ISnmpConstant.STRING));
 		initProperty(utsDot3Onu2VoipIadPortNum, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipIadPortNum,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.9",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.9",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipIadOperStatus, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipIadOperStatus,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.10",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.10",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipIadOperation, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipIadOperation,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.11",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.11",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipIadConfiguredProtocol,
 				new SnmpMibBeanProperty(utsDot3Onu2VoipIadConfiguredProtocol,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.12",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.12",
 						ISnmpConstant.INTEGER));
 
 	}

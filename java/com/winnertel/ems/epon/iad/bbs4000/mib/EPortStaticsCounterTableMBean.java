@@ -39,16 +39,16 @@ public class EPortStaticsCounterTableMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsEthIfExtIndex, new SnmpMibBeanProperty(utsEthIfExtIndex, ".1.3.6.1.4.1.41355.1800.4.1.1.1.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsEthIfHCInOctets, new SnmpMibBeanProperty(utsEthIfHCInOctets, ".1.3.6.1.4.1.41355.1800.4.1.1.1.1.62", ISnmpConstant.COUNTER64));
-        initProperty(utsEthIfHCInUcastPkts, new SnmpMibBeanProperty(utsEthIfHCInUcastPkts, ".1.3.6.1.4.1.41355.1800.4.1.1.1.1.63", ISnmpConstant.COUNTER64));
-        initProperty(utsEthIfHCInMulticastPkts, new SnmpMibBeanProperty(utsEthIfHCInMulticastPkts, ".1.3.6.1.4.1.41355.1800.4.1.1.1.1.64", ISnmpConstant.COUNTER64));
-        initProperty(utsEthIfHCInBroadcastPkts, new SnmpMibBeanProperty(utsEthIfHCInBroadcastPkts, ".1.3.6.1.4.1.41355.1800.4.1.1.1.1.65", ISnmpConstant.COUNTER64));
-        initProperty(utsEthIfHCOutOctets, new SnmpMibBeanProperty(utsEthIfHCOutOctets, ".1.3.6.1.4.1.41355.1800.4.1.1.1.1.66", ISnmpConstant.COUNTER64));
-        initProperty(utsEthIfHCOutUcastPkts, new SnmpMibBeanProperty(utsEthIfHCOutUcastPkts, ".1.3.6.1.4.1.41355.1800.4.1.1.1.1.67", ISnmpConstant.COUNTER64));
-        initProperty(utsEthIfHCOutMulticastPkts, new SnmpMibBeanProperty(utsEthIfHCOutMulticastPkts, ".1.3.6.1.4.1.41355.1800.4.1.1.1.1.68", ISnmpConstant.COUNTER64));
-        initProperty(utsEthIfHCOutBroadcastPkts, new SnmpMibBeanProperty(utsEthIfHCOutBroadcastPkts, ".1.3.6.1.4.1.41355.1800.4.1.1.1.1.69", ISnmpConstant.COUNTER64));
-        initProperty(utsPerfStaClearAll, new SnmpMibBeanProperty(utsPerfStaClearAll, ".1.3.6.1.4.1.41355.1800.4.4.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsEthIfExtIndex, new SnmpMibBeanProperty(utsEthIfExtIndex, ".1.3.6.1.4.1.45121.1800.4.1.1.1.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsEthIfHCInOctets, new SnmpMibBeanProperty(utsEthIfHCInOctets, ".1.3.6.1.4.1.45121.1800.4.1.1.1.1.62", ISnmpConstant.COUNTER64));
+        initProperty(utsEthIfHCInUcastPkts, new SnmpMibBeanProperty(utsEthIfHCInUcastPkts, ".1.3.6.1.4.1.45121.1800.4.1.1.1.1.63", ISnmpConstant.COUNTER64));
+        initProperty(utsEthIfHCInMulticastPkts, new SnmpMibBeanProperty(utsEthIfHCInMulticastPkts, ".1.3.6.1.4.1.45121.1800.4.1.1.1.1.64", ISnmpConstant.COUNTER64));
+        initProperty(utsEthIfHCInBroadcastPkts, new SnmpMibBeanProperty(utsEthIfHCInBroadcastPkts, ".1.3.6.1.4.1.45121.1800.4.1.1.1.1.65", ISnmpConstant.COUNTER64));
+        initProperty(utsEthIfHCOutOctets, new SnmpMibBeanProperty(utsEthIfHCOutOctets, ".1.3.6.1.4.1.45121.1800.4.1.1.1.1.66", ISnmpConstant.COUNTER64));
+        initProperty(utsEthIfHCOutUcastPkts, new SnmpMibBeanProperty(utsEthIfHCOutUcastPkts, ".1.3.6.1.4.1.45121.1800.4.1.1.1.1.67", ISnmpConstant.COUNTER64));
+        initProperty(utsEthIfHCOutMulticastPkts, new SnmpMibBeanProperty(utsEthIfHCOutMulticastPkts, ".1.3.6.1.4.1.45121.1800.4.1.1.1.1.68", ISnmpConstant.COUNTER64));
+        initProperty(utsEthIfHCOutBroadcastPkts, new SnmpMibBeanProperty(utsEthIfHCOutBroadcastPkts, ".1.3.6.1.4.1.45121.1800.4.1.1.1.1.69", ISnmpConstant.COUNTER64));
+        initProperty(utsPerfStaClearAll, new SnmpMibBeanProperty(utsPerfStaClearAll, ".1.3.6.1.4.1.45121.1800.4.4.1.1", ISnmpConstant.INTEGER));
 
     }
 

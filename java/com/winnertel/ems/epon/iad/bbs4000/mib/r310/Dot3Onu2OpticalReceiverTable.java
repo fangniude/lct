@@ -26,32 +26,32 @@ public class Dot3Onu2OpticalReceiverTable extends SnmpMibBean {
 		initProperty(utsDot3OnuOpticalReceiverModuleId,
 				new SnmpMibBeanProperty(
 						utsDot3OnuOpticalReceiverModuleId,
-						".1.3.6.1.4.1.41355.1800.2.5.1.4.1.1",
+						".1.3.6.1.4.1.45121.1800.2.5.1.4.1.1",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OnuOpticalReceiverDeviceId,
 				new SnmpMibBeanProperty(
 						utsDot3OnuOpticalReceiverDeviceId,
-						".1.3.6.1.4.1.41355.1800.2.5.1.4.1.2",
+						".1.3.6.1.4.1.45121.1800.2.5.1.4.1.2",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OnuOpticalReceiverPortId,
 				new SnmpMibBeanProperty(
 						utsDot3OnuOpticalReceiverPortId,
-						".1.3.6.1.4.1.41355.1800.2.5.1.4.1.3",
+						".1.3.6.1.4.1.45121.1800.2.5.1.4.1.3",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OnuOpticalReceiverLogicalPortId,
 				new SnmpMibBeanProperty(
 						utsDot3OnuOpticalReceiverLogicalPortId,
-						".1.3.6.1.4.1.41355.1800.2.5.1.4.1.4",
+						".1.3.6.1.4.1.45121.1800.2.5.1.4.1.4",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OnuOpticalReceiverInputPower,
 				new SnmpMibBeanProperty(
 						utsDot3OnuOpticalReceiverInputPower,
-						".1.3.6.1.4.1.41355.1800.2.5.1.4.1.5",
+						".1.3.6.1.4.1.45121.1800.2.5.1.4.1.5",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OnuOpticalReceiverOutputRFVoltage,
 				new SnmpMibBeanProperty(
 						utsDot3OnuOpticalReceiverOutputRFVoltage,
-						".1.3.6.1.4.1.41355.1800.2.5.1.4.1.6",
+						".1.3.6.1.4.1.45121.1800.2.5.1.4.1.6",
 						ISnmpConstant.INTEGER));
 	}
 

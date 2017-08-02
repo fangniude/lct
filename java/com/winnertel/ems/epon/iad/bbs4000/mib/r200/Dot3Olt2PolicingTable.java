@@ -35,17 +35,17 @@ public class Dot3Olt2PolicingTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsDot3OltModuleId, new SnmpMibBeanProperty(utsDot3OltModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.7.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltDeviceId, new SnmpMibBeanProperty(utsDot3OltDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.7.1.2", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltBcPoliceEnable, new SnmpMibBeanProperty(utsDot3OltBcPoliceEnable, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.7.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltBcPoliceRate, new SnmpMibBeanProperty(utsDot3OltBcPoliceRate, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.7.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltBcPoliceBurstSize, new SnmpMibBeanProperty(utsDot3OltBcPoliceBurstSize, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.7.1.5", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltUmcPoliceEnable, new SnmpMibBeanProperty(utsDot3OltUmcPoliceEnable, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.7.1.6", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltUmcPoliceRate, new SnmpMibBeanProperty(utsDot3OltUmcPoliceRate, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.7.1.7", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltUmcPoliceBurstSize, new SnmpMibBeanProperty(utsDot3OltUmcPoliceBurstSize, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.7.1.8", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltUucPoliceEnable, new SnmpMibBeanProperty(utsDot3OltUucPoliceEnable, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.7.1.9", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltUucPoliceRate, new SnmpMibBeanProperty(utsDot3OltUucPoliceRate, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.7.1.10", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltUucPoliceBurstSize, new SnmpMibBeanProperty(utsDot3OltUucPoliceBurstSize, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.7.1.11", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltModuleId, new SnmpMibBeanProperty(utsDot3OltModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.7.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltDeviceId, new SnmpMibBeanProperty(utsDot3OltDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.7.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltBcPoliceEnable, new SnmpMibBeanProperty(utsDot3OltBcPoliceEnable, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.7.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltBcPoliceRate, new SnmpMibBeanProperty(utsDot3OltBcPoliceRate, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.7.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltBcPoliceBurstSize, new SnmpMibBeanProperty(utsDot3OltBcPoliceBurstSize, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.7.1.5", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltUmcPoliceEnable, new SnmpMibBeanProperty(utsDot3OltUmcPoliceEnable, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.7.1.6", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltUmcPoliceRate, new SnmpMibBeanProperty(utsDot3OltUmcPoliceRate, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.7.1.7", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltUmcPoliceBurstSize, new SnmpMibBeanProperty(utsDot3OltUmcPoliceBurstSize, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.7.1.8", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltUucPoliceEnable, new SnmpMibBeanProperty(utsDot3OltUucPoliceEnable, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.7.1.9", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltUucPoliceRate, new SnmpMibBeanProperty(utsDot3OltUucPoliceRate, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.7.1.10", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltUucPoliceBurstSize, new SnmpMibBeanProperty(utsDot3OltUucPoliceBurstSize, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.7.1.11", ISnmpConstant.INTEGER));
 
   }
 

@@ -35,13 +35,13 @@ public class OnuVlanPriBitsUpTrafficMapProfTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(onuVlanPriBitsUpTrafficMapProfIndex1, new SnmpMibBeanProperty(onuVlanPriBitsUpTrafficMapProfIndex1, ".1.3.6.1.4.1.41355.1.3.10.5.2.7.1.1", ISnmpConstant.GAUGE));
-        initProperty(onuVlanPriBitsUpTrafficMapProfIndex2, new SnmpMibBeanProperty(onuVlanPriBitsUpTrafficMapProfIndex2, ".1.3.6.1.4.1.41355.1.3.10.5.2.7.1.2", ISnmpConstant.GAUGE));
-        initProperty(onuVlanPriBitsUpTrafficMapProfileName, new SnmpMibBeanProperty(onuVlanPriBitsUpTrafficMapProfileName, ".1.3.6.1.4.1.41355.1.3.10.5.2.7.1.3", ISnmpConstant.STRING));
-        initProperty(onuVlanPriBitsUpTrafficMapProfVlanPriorityBitMap, new SnmpMibBeanProperty(onuVlanPriBitsUpTrafficMapProfVlanPriorityBitMap, ".1.3.6.1.4.1.41355.1.3.10.5.2.7.1.4", ISnmpConstant.GAUGE));
-        initProperty(onuVlanPriBitsUpTrafficMapProfVirtualPortNo, new SnmpMibBeanProperty(onuVlanPriBitsUpTrafficMapProfVirtualPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.2.7.1.5", ISnmpConstant.INTEGER));
+        initProperty(onuVlanPriBitsUpTrafficMapProfIndex1, new SnmpMibBeanProperty(onuVlanPriBitsUpTrafficMapProfIndex1, ".1.3.6.1.4.1.45121.1.3.10.5.2.7.1.1", ISnmpConstant.GAUGE));
+        initProperty(onuVlanPriBitsUpTrafficMapProfIndex2, new SnmpMibBeanProperty(onuVlanPriBitsUpTrafficMapProfIndex2, ".1.3.6.1.4.1.45121.1.3.10.5.2.7.1.2", ISnmpConstant.GAUGE));
+        initProperty(onuVlanPriBitsUpTrafficMapProfileName, new SnmpMibBeanProperty(onuVlanPriBitsUpTrafficMapProfileName, ".1.3.6.1.4.1.45121.1.3.10.5.2.7.1.3", ISnmpConstant.STRING));
+        initProperty(onuVlanPriBitsUpTrafficMapProfVlanPriorityBitMap, new SnmpMibBeanProperty(onuVlanPriBitsUpTrafficMapProfVlanPriorityBitMap, ".1.3.6.1.4.1.45121.1.3.10.5.2.7.1.4", ISnmpConstant.GAUGE));
+        initProperty(onuVlanPriBitsUpTrafficMapProfVirtualPortNo, new SnmpMibBeanProperty(onuVlanPriBitsUpTrafficMapProfVirtualPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.2.7.1.5", ISnmpConstant.INTEGER));
 
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.2.7.1.6", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.2.7.1.6", ISnmpConstant.INTEGER));
     }
 
     public Long getOnuVlanPriBitsUpTrafficMapProfIndex1() {

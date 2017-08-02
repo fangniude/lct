@@ -38,15 +38,15 @@ public class IntfRateControlTable  extends SnmpMibBean
 
 		initProperty(utsIntfRateControlModuleId,
 				new SnmpMibBeanProperty(utsIntfRateControlModuleId,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.1",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.1",
 						ISnmpConstant.INTEGER));
 		initProperty(utsIntfRateControlPortId,
 				new SnmpMibBeanProperty(utsIntfRateControlPortId,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.2",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.2",
 						ISnmpConstant.INTEGER));
 		initProperty(utsIntfRateControlUplinkSpeed, new SnmpMibBeanProperty(
 				utsIntfRateControlUplinkSpeed,
-				".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.13",
+				".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.13",
 				ISnmpConstant.INTEGER));
 	}
   public Integer getIfIndex() {

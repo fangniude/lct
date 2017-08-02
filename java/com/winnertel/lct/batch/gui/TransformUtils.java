@@ -86,6 +86,26 @@ public class TransformUtils {
         }
     }
 
+    public static String saveOnuId(String display) {
+        String[] split = display.split("/");
+        return String.format("%s-%s", split[1], split[2]);
+    }
+
+    public static String disableOnuId(String save) {
+        String[] split = save.split("-");
+        return String.format("1/%s/%s", split[0], split[1]);
+    }
+
+    public static String saveUniId(String display) {
+        String[] split = display.split("/");
+        return String.format("%s-%s-%s", split[1], split[2], split[3]);
+    }
+
+    public static String disableUniId(String save) {
+        String[] split = save.split("-");
+        return String.format("1/%s/%s/%s", split[0], split[1], split[2]);
+    }
+
     public static void main(String[] args) {
         byte b = (byte) 255;
         int x = b & 0xff;

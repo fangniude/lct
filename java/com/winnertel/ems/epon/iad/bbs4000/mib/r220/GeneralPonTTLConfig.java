@@ -39,26 +39,26 @@ public class GeneralPonTTLConfig extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsBBSBPDUTermination, new SnmpMibBeanProperty(utsBBSBPDUTermination, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.15", ISnmpConstant.INTEGER));
-        initProperty(utsBBSSysSoftwareRateLimiting, new SnmpMibBeanProperty(utsBBSSysSoftwareRateLimiting, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.16", ISnmpConstant.INTEGER));
-        initProperty(utsBBSSysCpuUtilityAlarmThresholdTotal, new SnmpMibBeanProperty(utsBBSSysCpuUtilityAlarmThresholdTotal, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.18", ISnmpConstant.INTEGER));
-        initProperty(utsBBSSysCpuUtilityAlarmThresholdPerTask, new SnmpMibBeanProperty(utsBBSSysCpuUtilityAlarmThresholdPerTask, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.19", ISnmpConstant.INTEGER));
-        initProperty(utsBBSSysMemoryUtilityAlarmThreshold, new SnmpMibBeanProperty(utsBBSSysMemoryUtilityAlarmThreshold, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.20", ISnmpConstant.INTEGER));
-        initProperty(utsBBSSysARPAgingTime, new SnmpMibBeanProperty(utsBBSSysARPAgingTime, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.21", ISnmpConstant.INTEGER));
-        initProperty(utsBBSSysMACAgingTime, new SnmpMibBeanProperty(utsBBSSysMACAgingTime, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.22", ISnmpConstant.INTEGER));
-        initProperty(utsPonSysOlpMode, new SnmpMibBeanProperty(utsPonSysOlpMode, ".1.3.6.1.4.1.41355.1800.2.1.1.2.7", ISnmpConstant.INTEGER));
-        initProperty(utsBBSVlanVPNTPID, new SnmpMibBeanProperty(utsBBSVlanVPNTPID, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsBBSVlanVPNPRISource, new SnmpMibBeanProperty(utsBBSVlanVPNPRISource, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsBBSMaxFrameSize, new SnmpMibBeanProperty(utsBBSMaxFrameSize, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsBBSMgmtGratuitousArpLearning, new SnmpMibBeanProperty(utsBBSMgmtGratuitousArpLearning, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.38", ISnmpConstant.INTEGER));
-        initProperty(utsBBSMgmtTrafficTTL, new SnmpMibBeanProperty(utsBBSMgmtTrafficTTL, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.26", ISnmpConstant.INTEGER));
-        initProperty(utsBBSMgmtArpLearning, new SnmpMibBeanProperty(utsBBSMgmtArpLearning, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.45", ISnmpConstant.INTEGER));
-        initProperty(utsBBSMgmtIgmpProxySourceIP, new SnmpMibBeanProperty(utsBBSMgmtIgmpProxySourceIP, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.51", ISnmpConstant.IP_ADDRESS));
-        initProperty(utsBBSMgmtIGMProxySourceInnerVLAN, new SnmpMibBeanProperty(utsBBSMgmtIGMProxySourceInnerVLAN, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.56", ISnmpConstant.INTEGER));
-        initProperty(utsBBSMgmtIGMProxySourceOuterVLAN, new SnmpMibBeanProperty(utsBBSMgmtIGMProxySourceOuterVLAN, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.58", ISnmpConstant.INTEGER));
-        initProperty(utsBBSDosCtrlIcmpCheck, new SnmpMibBeanProperty(utsBBSDosCtrlIcmpCheck, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.6.1", ISnmpConstant.INTEGER)); //added by Zhou Chao, 2009/1/15 (only for BBS4000 v2.1.0)
-        initProperty(utsBBS4000R21DosCtrlIcmpPayloadSize, new SnmpMibBeanProperty(utsBBS4000R21DosCtrlIcmpPayloadSize, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.6.2", ISnmpConstant.INTEGER)); //added by Zhou Chao, 2009/1/15 (only for BBS4000 v2.1.0)
-        initProperty(utsBbsMacStationMoveSwitch, new SnmpMibBeanProperty(utsBbsMacStationMoveSwitch, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.11", ISnmpConstant.INTEGER)); //added by Zhou Chao, 2010/4/28 (only for BBS4000 v2.2.0)
+        initProperty(utsBBSBPDUTermination, new SnmpMibBeanProperty(utsBBSBPDUTermination, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.15", ISnmpConstant.INTEGER));
+        initProperty(utsBBSSysSoftwareRateLimiting, new SnmpMibBeanProperty(utsBBSSysSoftwareRateLimiting, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.16", ISnmpConstant.INTEGER));
+        initProperty(utsBBSSysCpuUtilityAlarmThresholdTotal, new SnmpMibBeanProperty(utsBBSSysCpuUtilityAlarmThresholdTotal, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.18", ISnmpConstant.INTEGER));
+        initProperty(utsBBSSysCpuUtilityAlarmThresholdPerTask, new SnmpMibBeanProperty(utsBBSSysCpuUtilityAlarmThresholdPerTask, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.19", ISnmpConstant.INTEGER));
+        initProperty(utsBBSSysMemoryUtilityAlarmThreshold, new SnmpMibBeanProperty(utsBBSSysMemoryUtilityAlarmThreshold, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.20", ISnmpConstant.INTEGER));
+        initProperty(utsBBSSysARPAgingTime, new SnmpMibBeanProperty(utsBBSSysARPAgingTime, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.21", ISnmpConstant.INTEGER));
+        initProperty(utsBBSSysMACAgingTime, new SnmpMibBeanProperty(utsBBSSysMACAgingTime, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.22", ISnmpConstant.INTEGER));
+        initProperty(utsPonSysOlpMode, new SnmpMibBeanProperty(utsPonSysOlpMode, ".1.3.6.1.4.1.45121.1800.2.1.1.2.7", ISnmpConstant.INTEGER));
+        initProperty(utsBBSVlanVPNTPID, new SnmpMibBeanProperty(utsBBSVlanVPNTPID, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsBBSVlanVPNPRISource, new SnmpMibBeanProperty(utsBBSVlanVPNPRISource, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsBBSMaxFrameSize, new SnmpMibBeanProperty(utsBBSMaxFrameSize, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsBBSMgmtGratuitousArpLearning, new SnmpMibBeanProperty(utsBBSMgmtGratuitousArpLearning, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.38", ISnmpConstant.INTEGER));
+        initProperty(utsBBSMgmtTrafficTTL, new SnmpMibBeanProperty(utsBBSMgmtTrafficTTL, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.26", ISnmpConstant.INTEGER));
+        initProperty(utsBBSMgmtArpLearning, new SnmpMibBeanProperty(utsBBSMgmtArpLearning, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.45", ISnmpConstant.INTEGER));
+        initProperty(utsBBSMgmtIgmpProxySourceIP, new SnmpMibBeanProperty(utsBBSMgmtIgmpProxySourceIP, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.51", ISnmpConstant.IP_ADDRESS));
+        initProperty(utsBBSMgmtIGMProxySourceInnerVLAN, new SnmpMibBeanProperty(utsBBSMgmtIGMProxySourceInnerVLAN, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.56", ISnmpConstant.INTEGER));
+        initProperty(utsBBSMgmtIGMProxySourceOuterVLAN, new SnmpMibBeanProperty(utsBBSMgmtIGMProxySourceOuterVLAN, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.58", ISnmpConstant.INTEGER));
+        initProperty(utsBBSDosCtrlIcmpCheck, new SnmpMibBeanProperty(utsBBSDosCtrlIcmpCheck, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.6.1", ISnmpConstant.INTEGER)); //added by Zhou Chao, 2009/1/15 (only for BBS4000 v2.1.0)
+        initProperty(utsBBS4000R21DosCtrlIcmpPayloadSize, new SnmpMibBeanProperty(utsBBS4000R21DosCtrlIcmpPayloadSize, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.6.2", ISnmpConstant.INTEGER)); //added by Zhou Chao, 2009/1/15 (only for BBS4000 v2.1.0)
+        initProperty(utsBbsMacStationMoveSwitch, new SnmpMibBeanProperty(utsBbsMacStationMoveSwitch, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.11", ISnmpConstant.INTEGER)); //added by Zhou Chao, 2010/4/28 (only for BBS4000 v2.2.0)
     }
 
     public Integer getUtsBBSBPDUTermination() {

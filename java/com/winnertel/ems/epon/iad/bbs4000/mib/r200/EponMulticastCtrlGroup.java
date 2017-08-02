@@ -37,29 +37,29 @@ public class EponMulticastCtrlGroup extends SnmpMibBean
 	protected void init()
 	{
 		initProperty(utsEponMulticastCtrlIpmcEnable,
-				new SnmpMibBeanProperty( utsEponMulticastCtrlIpmcEnable, ".1.3.6.1.4.1.41355.1800.2.2.1.5.1.1.6", ISnmpConstant.INTEGER));
+				new SnmpMibBeanProperty( utsEponMulticastCtrlIpmcEnable, ".1.3.6.1.4.1.45121.1800.2.2.1.5.1.1.6", ISnmpConstant.INTEGER));
 		initProperty(utsEponMulticastCtrlIgmpSnoopingStatus,
-				new SnmpMibBeanProperty(utsEponMulticastCtrlIgmpSnoopingStatus, ".1.3.6.1.4.1.41355.1800.2.2.1.5.1.1.7", ISnmpConstant.INTEGER));
+				new SnmpMibBeanProperty(utsEponMulticastCtrlIgmpSnoopingStatus, ".1.3.6.1.4.1.45121.1800.2.2.1.5.1.1.7", ISnmpConstant.INTEGER));
 		initProperty(utsEponMcastCtrlIgmpProxyStatus,
-				new SnmpMibBeanProperty( utsEponMcastCtrlIgmpProxyStatus, ".1.3.6.1.4.1.41355.1800.2.2.1.5.1.1.8", ISnmpConstant.INTEGER));
+				new SnmpMibBeanProperty( utsEponMcastCtrlIgmpProxyStatus, ".1.3.6.1.4.1.45121.1800.2.2.1.5.1.1.8", ISnmpConstant.INTEGER));
 		initProperty(utsEponMulticastCtrlSuperVidList,
-				new SnmpMibBeanProperty( utsEponMulticastCtrlSuperVidList, ".1.3.6.1.4.1.41355.1800.2.2.1.5.1.1.9", ISnmpConstant.OCTETS));
+				new SnmpMibBeanProperty( utsEponMulticastCtrlSuperVidList, ".1.3.6.1.4.1.45121.1800.2.2.1.5.1.1.9", ISnmpConstant.OCTETS));
 		initProperty( utsOltCtcMulticastCtrlMode,
-				new SnmpMibBeanProperty(utsOltCtcMulticastCtrlMode, ".1.3.6.1.4.1.41355.1800.2.4.3.1.3.1.2", ISnmpConstant.INTEGER));
+				new SnmpMibBeanProperty(utsOltCtcMulticastCtrlMode, ".1.3.6.1.4.1.45121.1800.2.4.3.1.3.1.2", ISnmpConstant.INTEGER));
     initProperty( utsBBSMgmtLastMembQueryIntvl,
-        new SnmpMibBeanProperty(utsBBSMgmtLastMembQueryIntvl, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.28", ISnmpConstant.INTEGER));
+        new SnmpMibBeanProperty(utsBBSMgmtLastMembQueryIntvl, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.28", ISnmpConstant.INTEGER));
     initProperty( utsBBSMgmtQueryInterval,
-        new SnmpMibBeanProperty(utsBBSMgmtQueryInterval, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.29", ISnmpConstant.INTEGER));
+        new SnmpMibBeanProperty(utsBBSMgmtQueryInterval, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.29", ISnmpConstant.INTEGER));
     initProperty( utsBBSMgmtQueryMaxRespTime,
-        new SnmpMibBeanProperty(utsBBSMgmtQueryMaxRespTime, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.30", ISnmpConstant.INTEGER));
+        new SnmpMibBeanProperty(utsBBSMgmtQueryMaxRespTime, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.30", ISnmpConstant.INTEGER));
     initProperty( utsBBSMgmtRobustness,
-        new SnmpMibBeanProperty(utsBBSMgmtRobustness, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.31", ISnmpConstant.INTEGER));
-    initProperty(utsOltCtcCdrServer, new SnmpMibBeanProperty(utsOltCtcCdrServer, ".1.3.6.1.4.1.41355.1800.2.4.3.2.1.1", ISnmpConstant.IP_ADDRESS));
-    initProperty(utsOltCtcCdrPort, new SnmpMibBeanProperty(utsOltCtcCdrPort, ".1.3.6.1.4.1.41355.1800.2.4.3.2.1.2", ISnmpConstant.INTEGER));
-    initProperty(utsOltCtcCdrReportInterval, new SnmpMibBeanProperty(utsOltCtcCdrReportInterval, ".1.3.6.1.4.1.41355.1800.2.4.3.2.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsOltCtcCdrReportCount, new SnmpMibBeanProperty(utsOltCtcCdrReportCount, ".1.3.6.1.4.1.41355.1800.2.4.3.2.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsOltCtcCdrForceReport, new SnmpMibBeanProperty(utsOltCtcCdrForceReport, ".1.3.6.1.4.1.41355.1800.2.4.3.2.1.5", ISnmpConstant.INTEGER));
-    initProperty(utsOltCtcCdrReportMode, new SnmpMibBeanProperty(utsOltCtcCdrReportMode, ".1.3.6.1.4.1.41355.1800.2.4.3.2.1.6", ISnmpConstant.INTEGER));
+        new SnmpMibBeanProperty(utsBBSMgmtRobustness, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.31", ISnmpConstant.INTEGER));
+    initProperty(utsOltCtcCdrServer, new SnmpMibBeanProperty(utsOltCtcCdrServer, ".1.3.6.1.4.1.45121.1800.2.4.3.2.1.1", ISnmpConstant.IP_ADDRESS));
+    initProperty(utsOltCtcCdrPort, new SnmpMibBeanProperty(utsOltCtcCdrPort, ".1.3.6.1.4.1.45121.1800.2.4.3.2.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsOltCtcCdrReportInterval, new SnmpMibBeanProperty(utsOltCtcCdrReportInterval, ".1.3.6.1.4.1.45121.1800.2.4.3.2.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsOltCtcCdrReportCount, new SnmpMibBeanProperty(utsOltCtcCdrReportCount, ".1.3.6.1.4.1.45121.1800.2.4.3.2.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsOltCtcCdrForceReport, new SnmpMibBeanProperty(utsOltCtcCdrForceReport, ".1.3.6.1.4.1.45121.1800.2.4.3.2.1.5", ISnmpConstant.INTEGER));
+    initProperty(utsOltCtcCdrReportMode, new SnmpMibBeanProperty(utsOltCtcCdrReportMode, ".1.3.6.1.4.1.45121.1800.2.4.3.2.1.6", ISnmpConstant.INTEGER));
   
 	}
 

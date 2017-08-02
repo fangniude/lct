@@ -119,15 +119,15 @@ public class SystemInfoMBean extends SnmpMibBean {
     }
 
     private static String translateNeType(String oid) {
-        if (oid.equals(".1.3.6.1.4.1.41355.1.3.10.2.1"))
+        if (oid.equals(".1.3.6.1.4.1.45121.1.3.10.2.1"))
             return "FBW2000";
-        else if (oid.equals(".1.3.6.1.4.1.41355.1.3.10.2.2"))
+        else if (oid.equals(".1.3.6.1.4.1.45121.1.3.10.2.2"))
             return "FBW3000";
-        else if (oid.equals(".1.3.6.1.4.1.41355.1.3.10.2.3"))
+        else if (oid.equals(".1.3.6.1.4.1.45121.1.3.10.2.3"))
             return "FBW5000";
-        else if (oid.equals(".1.3.6.1.4.1.41355.1.3.10.2.4"))
+        else if (oid.equals(".1.3.6.1.4.1.45121.1.3.10.2.4"))
             return "BBS2000";
-        else if (oid.equals(".1.3.6.1.4.1.41355.1.3.10.2.5"))
+        else if (oid.equals(".1.3.6.1.4.1.45121.1.3.10.2.5"))
             return "BBS5000";
         else
             return oid;

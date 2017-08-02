@@ -43,10 +43,10 @@ public class DHCPPoolIncludeTableMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDHCPPoolName, new SnmpMibBeanProperty(utsDHCPPoolName, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.2.1.1", ISnmpConstant.STRING));
-        initProperty(utsDHCPPoolIncludedLowIpAddress, new SnmpMibBeanProperty(utsDHCPPoolIncludedLowIpAddress, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.11.1.2", ISnmpConstant.STRING));
-        initProperty(utsDHCPPoolIncludedHighIpAddress, new SnmpMibBeanProperty(utsDHCPPoolIncludedHighIpAddress, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.11.1.3", ISnmpConstant.IP_ADDRESS));
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.11.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsDHCPPoolName, new SnmpMibBeanProperty(utsDHCPPoolName, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.2.1.1", ISnmpConstant.STRING));
+        initProperty(utsDHCPPoolIncludedLowIpAddress, new SnmpMibBeanProperty(utsDHCPPoolIncludedLowIpAddress, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.11.1.2", ISnmpConstant.STRING));
+        initProperty(utsDHCPPoolIncludedHighIpAddress, new SnmpMibBeanProperty(utsDHCPPoolIncludedHighIpAddress, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.11.1.3", ISnmpConstant.IP_ADDRESS));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.11.1.5", ISnmpConstant.INTEGER));
 
     }
 

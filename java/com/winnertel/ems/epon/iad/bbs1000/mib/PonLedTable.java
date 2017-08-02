@@ -24,14 +24,14 @@ public class PonLedTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsLedPonSlotLedDispSlotId, new SnmpMibBeanProperty(utsLedPonSlotLedDispSlotId, ".1.3.6.1.4.1.41355.1800.2.1.1.4.6.2.1.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsLedPonSlotLedDispPowLedStat, new SnmpMibBeanProperty(utsLedPonSlotLedDispPowLedStat, ".1.3.6.1.4.1.41355.1800.2.1.1.4.6.2.1.1.2", ISnmpConstant.INTEGER));
-    initProperty(utsLedPonSlotLedDispFaultLedStat, new SnmpMibBeanProperty(utsLedPonSlotLedDispFaultLedStat, ".1.3.6.1.4.1.41355.1800.2.1.1.4.6.2.1.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsLedPonSlotLedDispSwapLedStat, new SnmpMibBeanProperty(utsLedPonSlotLedDispSwapLedStat, ".1.3.6.1.4.1.41355.1800.2.1.1.4.6.2.1.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsLedPonSlotLedDispPonPort1LedStat, new SnmpMibBeanProperty(utsLedPonSlotLedDispPonPort1LedStat, ".1.3.6.1.4.1.41355.1800.2.1.1.4.6.2.1.1.5", ISnmpConstant.INTEGER));
-    initProperty(utsLedPonSlotLedDispPonPort2LedStat, new SnmpMibBeanProperty(utsLedPonSlotLedDispPonPort2LedStat, ".1.3.6.1.4.1.41355.1800.2.1.1.4.6.2.1.1.6", ISnmpConstant.INTEGER));
-    initProperty(utsLedPonSlotLedDispPonPort3LedStat, new SnmpMibBeanProperty(utsLedPonSlotLedDispPonPort3LedStat, ".1.3.6.1.4.1.41355.1800.2.1.1.4.6.2.1.1.7", ISnmpConstant.INTEGER));
-    initProperty(utsLedPonSlotLedDispPonPort4LedStat, new SnmpMibBeanProperty(utsLedPonSlotLedDispPonPort4LedStat, ".1.3.6.1.4.1.41355.1800.2.1.1.4.6.2.1.1.8", ISnmpConstant.INTEGER));
+    initProperty(utsLedPonSlotLedDispSlotId, new SnmpMibBeanProperty(utsLedPonSlotLedDispSlotId, ".1.3.6.1.4.1.45121.1800.2.1.1.4.6.2.1.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsLedPonSlotLedDispPowLedStat, new SnmpMibBeanProperty(utsLedPonSlotLedDispPowLedStat, ".1.3.6.1.4.1.45121.1800.2.1.1.4.6.2.1.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsLedPonSlotLedDispFaultLedStat, new SnmpMibBeanProperty(utsLedPonSlotLedDispFaultLedStat, ".1.3.6.1.4.1.45121.1800.2.1.1.4.6.2.1.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsLedPonSlotLedDispSwapLedStat, new SnmpMibBeanProperty(utsLedPonSlotLedDispSwapLedStat, ".1.3.6.1.4.1.45121.1800.2.1.1.4.6.2.1.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsLedPonSlotLedDispPonPort1LedStat, new SnmpMibBeanProperty(utsLedPonSlotLedDispPonPort1LedStat, ".1.3.6.1.4.1.45121.1800.2.1.1.4.6.2.1.1.5", ISnmpConstant.INTEGER));
+    initProperty(utsLedPonSlotLedDispPonPort2LedStat, new SnmpMibBeanProperty(utsLedPonSlotLedDispPonPort2LedStat, ".1.3.6.1.4.1.45121.1800.2.1.1.4.6.2.1.1.6", ISnmpConstant.INTEGER));
+    initProperty(utsLedPonSlotLedDispPonPort3LedStat, new SnmpMibBeanProperty(utsLedPonSlotLedDispPonPort3LedStat, ".1.3.6.1.4.1.45121.1800.2.1.1.4.6.2.1.1.7", ISnmpConstant.INTEGER));
+    initProperty(utsLedPonSlotLedDispPonPort4LedStat, new SnmpMibBeanProperty(utsLedPonSlotLedDispPonPort4LedStat, ".1.3.6.1.4.1.45121.1800.2.1.1.4.6.2.1.1.8", ISnmpConstant.INTEGER));
   }
 
   public Integer getUtsLedPonSlotLedDispSlotId() {

@@ -29,9 +29,9 @@ import java.util.Vector;
  */
 public class CreateFBW extends DefaultNodeCreator {
     static {
-        SnmpUtility.addNETypeMapping(".1.3.6.1.4.1.41355.1.3.10.2.2", "FBW3000");
-        SnmpUtility.addNETypeMapping(".1.3.6.1.4.1.41355.1.3.10.2.1", "FBW2000");
-        SnmpUtility.addNETypeMapping(".1.3.6.1.4.1.41355.1.3.10.2.3", "FBW5000");
+        SnmpUtility.addNETypeMapping(".1.3.6.1.4.1.45121.1.3.10.2.2", "FBW3000");
+        SnmpUtility.addNETypeMapping(".1.3.6.1.4.1.45121.1.3.10.2.1", "FBW2000");
+        SnmpUtility.addNETypeMapping(".1.3.6.1.4.1.45121.1.3.10.2.3", "FBW5000");
         SnmpUtility.addNETypeMapping(".1.3.6.1.4.1.17409.2.4.1.1.4", "CLT2161A");
     }
 
@@ -182,9 +182,9 @@ public class CreateFBW extends DefaultNodeCreator {
         try {
             if (neType.equalsIgnoreCase("FBW5000")) {
                 String[] oidList = new String[]{
-                        ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.6.13",
-                        ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.12.13",
-                        ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.12.14"
+                        ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.6.13",
+                        ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.12.13",
+                        ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.12.14"
                 };
 
                 target.setObjectIDList(oidList);
@@ -197,7 +197,7 @@ public class CreateFBW extends DefaultNodeCreator {
                     version = varBind[2].getVariable().getVarObject().toString();
                 }
             } else if (neType.equalsIgnoreCase("FBW3000") || neType.equalsIgnoreCase("FBW2000") ){
-                target.setSnmpOID(new SnmpOID(".1.3.6.1.4.1.41355.1800.2.1.1.1.1.7.3"));
+                target.setSnmpOID(new SnmpOID(".1.3.6.1.4.1.45121.1800.2.1.1.1.1.7.3"));
 
                 Object result = target.snmpGet();
                 if (result != null) {

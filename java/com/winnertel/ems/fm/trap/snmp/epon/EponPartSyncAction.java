@@ -151,7 +151,7 @@ public class EponPartSyncAction implements AlarmSyncAction {
             for (int i = 0; i < idList.size(); i++) {
                 int id = (Integer) idList.get(i);
                 try {
-                    String oids[] = {".1.3.6.1.4.1.41355.2.3.2.2.5.1.2." + id}; // utHistoryAlarmEntry
+                    String oids[] = {".1.3.6.1.4.1.45121.2.3.2.2.5.1.2." + id}; // utHistoryAlarmEntry
                     target.setObjectIDList(oids);
 
                     SnmpVar[] vbs = target.snmpGetVariables();
@@ -199,27 +199,27 @@ public class EponPartSyncAction implements AlarmSyncAction {
                 int id = (Integer) idList.get(i);
                 try {
                     String oids[] = new String[]{ // utsBbsAlarmTrapLogTable
-                            ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.2.1.2." + id, // 0:
+                            ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.2.1.2." + id, // 0:
                             // utsBbsAlarmTrapLogProbableCause
-                            ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.2.1.3." + id, // 1:
+                            ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.2.1.3." + id, // 1:
                             // utsBbsAlarmTrapLogSpecificProblem
-                            ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.2.1.4." + id, // 2:
+                            ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.2.1.4." + id, // 2:
                             // utsBbsAlarmTrapLogEntityType
-                            ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.2.1.5." + id, // 3:
+                            ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.2.1.5." + id, // 3:
                             // utsBbsAlarmTrapLogEntityInstance
-                            ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.2.1.6." + id, // 4:
+                            ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.2.1.6." + id, // 4:
                             // utsBbsAlarmTrapLogOccurenceTime
-                            ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.2.1.7." + id, // 5:
+                            ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.2.1.7." + id, // 5:
                             // utsBbsAlarmTrapLogClass
-                            ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.2.1.8." + id, // 6:
+                            ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.2.1.8." + id, // 6:
                             // utsBbsAlarmTrapLogSeverity
-                            ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.2.1.9." + id, // 7:
+                            ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.2.1.9." + id, // 7:
                             // utsBbsAlarmTrapLogCorrelationId
-                            ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.2.1.10." + id, // 8:
+                            ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.2.1.10." + id, // 8:
                             // utsBbsAlarmTrapLogAdditionalText
-                            ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.2.1.14." + id, // 9:
+                            ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.2.1.14." + id, // 9:
                             // utsBbsAlarmTrapLogVersionId
-                            ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.2.1.15." + id, // 10:
+                            ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.2.1.15." + id, // 10:
                             // utsBbsAlarmTrapLogSessionId
                     };
                     target.setObjectIDList(oids);
@@ -367,17 +367,17 @@ public class EponPartSyncAction implements AlarmSyncAction {
 //            for (int i = 0; i < idList.size(); i++) {
 //                int id = (Integer) idList.get(i);
 //                String oids[] = new String[]{ // utsGponAlarmTrapEntry
-//                        // ".1.3.6.1.4.1.41355.1.3.20.1.4.1.2.2.3.1.1",
+//                        // ".1.3.6.1.4.1.45121.1.3.20.1.4.1.2.2.3.1.1",
 //                        // //utsGponAlarmTrapSequenceNumber
-//                        ".1.3.6.1.4.1.41355.1.3.20.1.4.1.2.2.3.1.2." + id, // utsGponAlarmTrapProbableCause
-//                        ".1.3.6.1.4.1.41355.1.3.20.1.4.1.2.2.3.1.3." + id, // utsGponAlarmTrapSpecificProblem
-//                        ".1.3.6.1.4.1.41355.1.3.20.1.4.1.2.2.3.1.4." + id, // utsGponAlarmTrapEntityType
-//                        ".1.3.6.1.4.1.41355.1.3.20.1.4.1.2.2.3.1.5." + id, // utsGponAlarmTrapEntityInstance
-//                        ".1.3.6.1.4.1.41355.1.3.20.1.4.1.2.2.3.1.6." + id, // utsGponAlarmTrapOccurTime
-//                        ".1.3.6.1.4.1.41355.1.3.20.1.4.1.2.2.3.1.7." + id, // utsGponAlarmTrapClass
-//                        ".1.3.6.1.4.1.41355.1.3.20.1.4.1.2.2.3.1.9." + id, // utsGponAlarmTrapSeverity
-//                        ".1.3.6.1.4.1.41355.1.3.20.1.4.1.2.2.3.1.10." + id, // utsGponAlarmTrapCorrelationId
-//                        ".1.3.6.1.4.1.41355.1.3.20.1.4.1.2.2.3.1.11." + id, // utsGponAlarmTrapAdditionalText
+//                        ".1.3.6.1.4.1.45121.1.3.20.1.4.1.2.2.3.1.2." + id, // utsGponAlarmTrapProbableCause
+//                        ".1.3.6.1.4.1.45121.1.3.20.1.4.1.2.2.3.1.3." + id, // utsGponAlarmTrapSpecificProblem
+//                        ".1.3.6.1.4.1.45121.1.3.20.1.4.1.2.2.3.1.4." + id, // utsGponAlarmTrapEntityType
+//                        ".1.3.6.1.4.1.45121.1.3.20.1.4.1.2.2.3.1.5." + id, // utsGponAlarmTrapEntityInstance
+//                        ".1.3.6.1.4.1.45121.1.3.20.1.4.1.2.2.3.1.6." + id, // utsGponAlarmTrapOccurTime
+//                        ".1.3.6.1.4.1.45121.1.3.20.1.4.1.2.2.3.1.7." + id, // utsGponAlarmTrapClass
+//                        ".1.3.6.1.4.1.45121.1.3.20.1.4.1.2.2.3.1.9." + id, // utsGponAlarmTrapSeverity
+//                        ".1.3.6.1.4.1.45121.1.3.20.1.4.1.2.2.3.1.10." + id, // utsGponAlarmTrapCorrelationId
+//                        ".1.3.6.1.4.1.45121.1.3.20.1.4.1.2.2.3.1.11." + id, // utsGponAlarmTrapAdditionalText
 //                };
 //
 //                try {

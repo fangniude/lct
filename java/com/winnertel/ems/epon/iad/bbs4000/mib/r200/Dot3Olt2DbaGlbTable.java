@@ -28,10 +28,10 @@ public class Dot3Olt2DbaGlbTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsDot3OltModuleId, new SnmpMibBeanProperty(utsDot3OltModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.4.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltDeviceId, new SnmpMibBeanProperty(utsDot3OltDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.4.1.2", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltDbaMode, new SnmpMibBeanProperty(utsDot3OltDbaMode, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.4.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltDbaAlgorithm, new SnmpMibBeanProperty(utsDot3OltDbaAlgorithm, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.4.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltModuleId, new SnmpMibBeanProperty(utsDot3OltModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.4.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltDeviceId, new SnmpMibBeanProperty(utsDot3OltDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.4.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltDbaMode, new SnmpMibBeanProperty(utsDot3OltDbaMode, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.4.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltDbaAlgorithm, new SnmpMibBeanProperty(utsDot3OltDbaAlgorithm, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.4.1.4", ISnmpConstant.INTEGER));
 
   }
 

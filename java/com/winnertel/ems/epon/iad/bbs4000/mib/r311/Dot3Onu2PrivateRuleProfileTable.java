@@ -48,117 +48,117 @@ public class Dot3Onu2PrivateRuleProfileTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsDot3Onu2PrivateRuleIndex, new SnmpMibBeanProperty(
 				utsDot3Onu2PrivateRuleIndex,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PrivateRuleName, new SnmpMibBeanProperty(
 				utsDot3Onu2PrivateRuleName,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.2",
 				ISnmpConstant.STRING));
 		initProperty(utsDot3Onu2PrivateRuleBitmap, new SnmpMibBeanProperty(
 				utsDot3Onu2PrivateRuleBitmap,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.3",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.3",
 				ISnmpConstant.OCTETS));
 		initProperty(utsDot3Onu2PrivateRuleDMacMatchType,
 				new SnmpMibBeanProperty(utsDot3Onu2PrivateRuleDMacMatchType,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.4",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.4",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PrivateRuleDMac, new SnmpMibBeanProperty(
 				utsDot3Onu2PrivateRuleDMac,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.5",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.5",
 				ISnmpConstant.MAC_ADDRESS));
 		initProperty(utsDot3Onu2PrivateRuleSMacMatchType,
 				new SnmpMibBeanProperty(utsDot3Onu2PrivateRuleSMacMatchType,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.6",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.6",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PrivateRuleSMac, new SnmpMibBeanProperty(
 				utsDot3Onu2PrivateRuleSMac,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.7",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.7",
 				ISnmpConstant.MAC_ADDRESS));
 		initProperty(utsDot3Onu2PrivateRulePriMatchType,
 				new SnmpMibBeanProperty(utsDot3Onu2PrivateRulePriMatchType,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.8",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.8",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PrivateRulePri, new SnmpMibBeanProperty(
 				utsDot3Onu2PrivateRulePri,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.9",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.9",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PrivateRuleVlanMatchType,
 				new SnmpMibBeanProperty(utsDot3Onu2PrivateRuleVlanMatchType,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.10",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.10",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PrivateRuleVlanId, new SnmpMibBeanProperty(
 				utsDot3Onu2PrivateRuleVlanId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.11",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.11",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PrivateRuleEtherTypeMatchType,
 				new SnmpMibBeanProperty(
 						utsDot3Onu2PrivateRuleEtherTypeMatchType,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.12",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.12",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PrivateRuleEtherType, new SnmpMibBeanProperty(
 				utsDot3Onu2PrivateRuleEtherType,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.13",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.13",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PrivateRuleDIPMatchType,
 				new SnmpMibBeanProperty(utsDot3Onu2PrivateRuleDIPMatchType,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.14",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.14",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PrivateRuleDIP, new SnmpMibBeanProperty(
 				utsDot3Onu2PrivateRuleDIP,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.15",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.15",
 				ISnmpConstant.IP_ADDRESS));
 		initProperty(utsDot3Onu2PrivateRuleSIPMatchType,
 				new SnmpMibBeanProperty(utsDot3Onu2PrivateRuleSIPMatchType,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.16",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.16",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PrivateRuleSIP, new SnmpMibBeanProperty(
 				utsDot3Onu2PrivateRuleSIP,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.17",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.17",
 				ISnmpConstant.IP_ADDRESS));
 		initProperty(utsDot3Onu2PrivateRuleIpTypeMatchType,
 				new SnmpMibBeanProperty(utsDot3Onu2PrivateRuleIpTypeMatchType,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.18",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.18",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PrivateRuleIpType, new SnmpMibBeanProperty(
 				utsDot3Onu2PrivateRuleIpType,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.19",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.19",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PrivateRuleDscpMatchType,
 				new SnmpMibBeanProperty(utsDot3Onu2PrivateRuleDscpMatchType,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.20",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.20",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PrivateRuleDscp, new SnmpMibBeanProperty(
 				utsDot3Onu2PrivateRuleDscp,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.21",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.21",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PrivateRulePrecedenceMatchType,
 				new SnmpMibBeanProperty(
 						utsDot3Onu2PrivateRulePrecedenceMatchType,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.22",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.22",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PrivateRulePrecedence, new SnmpMibBeanProperty(
 				utsDot3Onu2PrivateRulePrecedence,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.23",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.23",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PrivateRuleSourePortMatchType,
 				new SnmpMibBeanProperty(
 						utsDot3Onu2PrivateRuleSourePortMatchType,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.24",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.24",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PrivateRuleSourcePort, new SnmpMibBeanProperty(
 				utsDot3Onu2PrivateRuleSourcePort,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.25",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.25",
 				ISnmpConstant.GAUGE));
 		initProperty(utsDot3Onu2PrivateRuleDstPortMatchType,
 				new SnmpMibBeanProperty(utsDot3Onu2PrivateRuleDstPortMatchType,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.26",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.26",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PrivateRuleDstPort, new SnmpMibBeanProperty(
 				utsDot3Onu2PrivateRuleDstPort,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.27",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.27",
 				ISnmpConstant.GAUGE));
 		initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.106.1.99",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.106.1.99",
 				ISnmpConstant.INTEGER));
 
 	}

@@ -37,14 +37,14 @@ public class DHCPIPBindingStatusTableMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDHCPPoolName, new SnmpMibBeanProperty(utsDHCPPoolName, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.2.1.1", ISnmpConstant.STRING));
-        initProperty(utsIpDHCPPoolBindingIpAddress, new SnmpMibBeanProperty(utsIpDHCPPoolBindingIpAddress, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.7.1.2", ISnmpConstant.STRING));
-        initProperty(utsIpDHCPPoolBindingVlanId, new SnmpMibBeanProperty(utsIpDHCPPoolBindingVlanId, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.7.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsIpDHCPPoolBindingState, new SnmpMibBeanProperty(utsIpDHCPPoolBindingState, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.7.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsIpDHCPPoolBindingType, new SnmpMibBeanProperty(utsIpDHCPPoolBindingType, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.7.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsIpDHCPPoolBindingHardwareAddress, new SnmpMibBeanProperty(utsIpDHCPPoolBindingHardwareAddress, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.7.1.6", ISnmpConstant.MAC_ADDRESS));
-        initProperty(utsIpDHCPPoolBindingLeaseExpiredTime, new SnmpMibBeanProperty(utsIpDHCPPoolBindingLeaseExpiredTime, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.7.1.7", ISnmpConstant.STRING));
-        initProperty(utsIpDHCPPoolBindingClear, new SnmpMibBeanProperty(utsIpDHCPPoolBindingClear, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.7.1.8", ISnmpConstant.INTEGER));
+        initProperty(utsDHCPPoolName, new SnmpMibBeanProperty(utsDHCPPoolName, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.2.1.1", ISnmpConstant.STRING));
+        initProperty(utsIpDHCPPoolBindingIpAddress, new SnmpMibBeanProperty(utsIpDHCPPoolBindingIpAddress, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.7.1.2", ISnmpConstant.STRING));
+        initProperty(utsIpDHCPPoolBindingVlanId, new SnmpMibBeanProperty(utsIpDHCPPoolBindingVlanId, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.7.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsIpDHCPPoolBindingState, new SnmpMibBeanProperty(utsIpDHCPPoolBindingState, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.7.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsIpDHCPPoolBindingType, new SnmpMibBeanProperty(utsIpDHCPPoolBindingType, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.7.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsIpDHCPPoolBindingHardwareAddress, new SnmpMibBeanProperty(utsIpDHCPPoolBindingHardwareAddress, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.7.1.6", ISnmpConstant.MAC_ADDRESS));
+        initProperty(utsIpDHCPPoolBindingLeaseExpiredTime, new SnmpMibBeanProperty(utsIpDHCPPoolBindingLeaseExpiredTime, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.7.1.7", ISnmpConstant.STRING));
+        initProperty(utsIpDHCPPoolBindingClear, new SnmpMibBeanProperty(utsIpDHCPPoolBindingClear, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.7.1.8", ISnmpConstant.INTEGER));
 
     }
 

@@ -47,63 +47,63 @@ public class OnuOltVlanTransProfTable extends SnmpMibBean {
     protected void init() {
        
         initProperty(onuOltVlanTransProfSlotNo, new SnmpMibBeanProperty(onuOltVlanTransProfSlotNo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.1", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.1", ISnmpConstant.INTEGER));
         initProperty(onuOltVlanTransProfPortNo, new SnmpMibBeanProperty(onuOltVlanTransProfPortNo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.2", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.2", ISnmpConstant.INTEGER));
         initProperty(onuOltVlanTransProfLogicalPortNo, new SnmpMibBeanProperty(onuOltVlanTransProfLogicalPortNo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.3", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.3", ISnmpConstant.INTEGER));
         initProperty(onuOltVlanTransProfOnuUniPortNo, new SnmpMibBeanProperty(onuOltVlanTransProfOnuUniPortNo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.4", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.4", ISnmpConstant.INTEGER));
         initProperty(onuOltVlanTransProfIndex1, new SnmpMibBeanProperty(onuOltVlanTransProfIndex1,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.10", ISnmpConstant.GAUGE));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.10", ISnmpConstant.GAUGE));
         initProperty(onuOltVlanTransProfIndex2, new SnmpMibBeanProperty(onuOltVlanTransProfIndex2,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.11", ISnmpConstant.GAUGE));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.11", ISnmpConstant.GAUGE));
         initProperty(onuOltVlanTransProfileName, new SnmpMibBeanProperty(onuOltVlanTransProfileName,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.12", ISnmpConstant.STRING));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.12", ISnmpConstant.STRING));
         initProperty(onuOltVlanTransProfDownstreamMode, new SnmpMibBeanProperty(onuOltVlanTransProfDownstreamMode,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.13", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.13", ISnmpConstant.INTEGER));
         initProperty(onuOltVlanTransProfInputTPID, new SnmpMibBeanProperty(onuOltVlanTransProfInputTPID,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.14", ISnmpConstant.GAUGE));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.14", ISnmpConstant.GAUGE));
         initProperty(onuOltVlanTransProfOutputTPID, new SnmpMibBeanProperty(onuOltVlanTransProfOutputTPID,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.15", ISnmpConstant.GAUGE));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.15", ISnmpConstant.GAUGE));
         initProperty(onuOltVlanTransProfFilterOuterPriority,
                 new SnmpMibBeanProperty(onuOltVlanTransProfFilterOuterPriority,
-                        ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.16", ISnmpConstant.GAUGE));
+                        ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.16", ISnmpConstant.GAUGE));
         initProperty(onuOltVlanTransProfFilterOuterVID, new SnmpMibBeanProperty(onuOltVlanTransProfFilterOuterVID,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.17", ISnmpConstant.GAUGE));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.17", ISnmpConstant.GAUGE));
         initProperty(onuOltVlanTransProfFilterOuterTPIDDE, new SnmpMibBeanProperty(
-                onuOltVlanTransProfFilterOuterTPIDDE, ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.18", ISnmpConstant.INTEGER));
+                onuOltVlanTransProfFilterOuterTPIDDE, ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.18", ISnmpConstant.INTEGER));
         initProperty(onuOltVlanTransProfFilterInnerPriority,
                 new SnmpMibBeanProperty(onuOltVlanTransProfFilterInnerPriority,
-                        ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.19", ISnmpConstant.GAUGE));
+                        ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.19", ISnmpConstant.GAUGE));
         initProperty(onuOltVlanTransProfFilterInnerVID, new SnmpMibBeanProperty(onuOltVlanTransProfFilterInnerVID,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.20", ISnmpConstant.GAUGE));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.20", ISnmpConstant.GAUGE));
         initProperty(onuOltVlanTransProfFilterInnerTPIDDE, new SnmpMibBeanProperty(
-                onuOltVlanTransProfFilterInnerTPIDDE, ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.21", ISnmpConstant.INTEGER));
+                onuOltVlanTransProfFilterInnerTPIDDE, ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.21", ISnmpConstant.INTEGER));
         initProperty(onuOltVlanTransProfFilterEthertype, new SnmpMibBeanProperty(onuOltVlanTransProfFilterEthertype,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.22", ISnmpConstant.GAUGE));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.22", ISnmpConstant.GAUGE));
         initProperty(onuOltVlanTransProfTreatmentTagsRemove,
                 new SnmpMibBeanProperty(onuOltVlanTransProfTreatmentTagsRemove,
-                        ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.23", ISnmpConstant.INTEGER));
+                        ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.23", ISnmpConstant.INTEGER));
         initProperty(onuOltVlanTransProfTreatmentOuterPriority, new SnmpMibBeanProperty(
-                onuOltVlanTransProfTreatmentOuterPriority, ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.24",
+                onuOltVlanTransProfTreatmentOuterPriority, ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.24",
                 ISnmpConstant.GAUGE));
         initProperty(onuOltVlanTransProfTreatmentOuterVID, new SnmpMibBeanProperty(
-                onuOltVlanTransProfTreatmentOuterVID, ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.25", ISnmpConstant.GAUGE));
+                onuOltVlanTransProfTreatmentOuterVID, ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.25", ISnmpConstant.GAUGE));
         initProperty(onuOltVlanTransProfTreatmentOuterTPIDDE, new SnmpMibBeanProperty(
-                onuOltVlanTransProfTreatmentOuterTPIDDE, ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.26",
+                onuOltVlanTransProfTreatmentOuterTPIDDE, ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.26",
                 ISnmpConstant.INTEGER));
         initProperty(onuOltVlanTransProfTreatmentInnerPriority, new SnmpMibBeanProperty(
-                onuOltVlanTransProfTreatmentInnerPriority, ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.27",
+                onuOltVlanTransProfTreatmentInnerPriority, ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.27",
                 ISnmpConstant.GAUGE));
         initProperty(onuOltVlanTransProfTreatmentInnerVID, new SnmpMibBeanProperty(
-                onuOltVlanTransProfTreatmentInnerVID, ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.28", ISnmpConstant.GAUGE));
+                onuOltVlanTransProfTreatmentInnerVID, ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.28", ISnmpConstant.GAUGE));
         initProperty(onuOltVlanTransProfTreatmentInnerTPIDDE, new SnmpMibBeanProperty(
-                onuOltVlanTransProfTreatmentInnerTPIDDE, ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.29",
+                onuOltVlanTransProfTreatmentInnerTPIDDE, ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.29",
                 ISnmpConstant.INTEGER));
         initProperty(onuOltVlanTransProfTreatmentTagsMode, new SnmpMibBeanProperty(
-                onuOltVlanTransProfTreatmentTagsMode, ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.30", ISnmpConstant.INTEGER));
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.1000.2.1.100",
+                onuOltVlanTransProfTreatmentTagsMode, ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.30", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.1000.2.1.100",
                 ISnmpConstant.INTEGER));
 
     }

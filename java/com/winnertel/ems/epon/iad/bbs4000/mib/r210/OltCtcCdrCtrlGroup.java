@@ -21,13 +21,13 @@ public class OltCtcCdrCtrlGroup extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsOltCtcCdrServer, new SnmpMibBeanProperty(utsOltCtcCdrServer, ".1.3.6.1.4.1.41355.1800.2.4.3.2.1.1", ISnmpConstant.IP_ADDRESS));
-    initProperty(utsOltCtcCdrPort, new SnmpMibBeanProperty(utsOltCtcCdrPort, ".1.3.6.1.4.1.41355.1800.2.4.3.2.1.2", ISnmpConstant.INTEGER));
-    initProperty(utsOltCtcCdrReportInterval, new SnmpMibBeanProperty(utsOltCtcCdrReportInterval, ".1.3.6.1.4.1.41355.1800.2.4.3.2.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsOltCtcCdrReportCount, new SnmpMibBeanProperty(utsOltCtcCdrReportCount, ".1.3.6.1.4.1.41355.1800.2.4.3.2.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsOltCtcCdrForceReport, new SnmpMibBeanProperty(utsOltCtcCdrForceReport, ".1.3.6.1.4.1.41355.1800.2.4.3.2.1.5", ISnmpConstant.INTEGER));
-    initProperty(utsOltCtcCdrReportMode, new SnmpMibBeanProperty(utsOltCtcCdrReportMode, ".1.3.6.1.4.1.41355.1800.2.4.3.2.1.6", ISnmpConstant.INTEGER));
-    initProperty(utsOltCtcCdrReportSwitch, new SnmpMibBeanProperty(utsOltCtcCdrReportSwitch, ".1.3.6.1.4.1.41355.1800.2.4.3.2.1.8", ISnmpConstant.INTEGER));
+    initProperty(utsOltCtcCdrServer, new SnmpMibBeanProperty(utsOltCtcCdrServer, ".1.3.6.1.4.1.45121.1800.2.4.3.2.1.1", ISnmpConstant.IP_ADDRESS));
+    initProperty(utsOltCtcCdrPort, new SnmpMibBeanProperty(utsOltCtcCdrPort, ".1.3.6.1.4.1.45121.1800.2.4.3.2.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsOltCtcCdrReportInterval, new SnmpMibBeanProperty(utsOltCtcCdrReportInterval, ".1.3.6.1.4.1.45121.1800.2.4.3.2.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsOltCtcCdrReportCount, new SnmpMibBeanProperty(utsOltCtcCdrReportCount, ".1.3.6.1.4.1.45121.1800.2.4.3.2.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsOltCtcCdrForceReport, new SnmpMibBeanProperty(utsOltCtcCdrForceReport, ".1.3.6.1.4.1.45121.1800.2.4.3.2.1.5", ISnmpConstant.INTEGER));
+    initProperty(utsOltCtcCdrReportMode, new SnmpMibBeanProperty(utsOltCtcCdrReportMode, ".1.3.6.1.4.1.45121.1800.2.4.3.2.1.6", ISnmpConstant.INTEGER));
+    initProperty(utsOltCtcCdrReportSwitch, new SnmpMibBeanProperty(utsOltCtcCdrReportSwitch, ".1.3.6.1.4.1.45121.1800.2.4.3.2.1.8", ISnmpConstant.INTEGER));
   }
 
   public String getUtsOltCtcCdrServer() {

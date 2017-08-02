@@ -21,9 +21,9 @@ public class SystemAdministrationBean extends SnmpMibBean {
     }
 
     protected void init() {
-      initProperty(utsBBSSysOperState, new SnmpMibBeanProperty(utsBBSSysOperState, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.1", ISnmpConstant.INTEGER));
-      initProperty(utsBBSSaveRunningConfigure, new SnmpMibBeanProperty(utsBBSSaveRunningConfigure, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.10", ISnmpConstant.INTEGER));
-      initProperty(utsBBSSysFactoryDefault, new SnmpMibBeanProperty(utsBBSSysFactoryDefault, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.23", ISnmpConstant.INTEGER));
+      initProperty(utsBBSSysOperState, new SnmpMibBeanProperty(utsBBSSysOperState, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.1", ISnmpConstant.INTEGER));
+      initProperty(utsBBSSaveRunningConfigure, new SnmpMibBeanProperty(utsBBSSaveRunningConfigure, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.10", ISnmpConstant.INTEGER));
+      initProperty(utsBBSSysFactoryDefault, new SnmpMibBeanProperty(utsBBSSysFactoryDefault, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.23", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsBBSSysOperState() {

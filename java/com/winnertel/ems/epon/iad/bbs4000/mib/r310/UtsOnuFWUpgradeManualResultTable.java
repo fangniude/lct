@@ -34,42 +34,42 @@ public class UtsOnuFWUpgradeManualResultTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsOnuFWUpgradeManualResultModule,
 				new SnmpMibBeanProperty(utsOnuFWUpgradeManualResultModule,
-						".1.3.6.1.4.1.41355.1800.2.3.1.7.15.1.1",
+						".1.3.6.1.4.1.45121.1800.2.3.1.7.15.1.1",
 						ISnmpConstant.INTEGER));
 		initProperty(utsOnuFWUpgradeManualResultPort,
 				new SnmpMibBeanProperty(utsOnuFWUpgradeManualResultPort,
-						".1.3.6.1.4.1.41355.1800.2.3.1.7.15.1.2",
+						".1.3.6.1.4.1.45121.1800.2.3.1.7.15.1.2",
 						ISnmpConstant.INTEGER));
 		initProperty(utsOnuFWUpgradeManualResultLport,
 				new SnmpMibBeanProperty(utsOnuFWUpgradeManualResultLport,
-						".1.3.6.1.4.1.41355.1800.2.3.1.7.15.1.3",
+						".1.3.6.1.4.1.45121.1800.2.3.1.7.15.1.3",
 						ISnmpConstant.INTEGER));
 		initProperty(utsOnuFWUpgradeManualResultComp,
 				new SnmpMibBeanProperty(utsOnuFWUpgradeManualResultComp,
-						".1.3.6.1.4.1.41355.1800.2.3.1.7.15.1.4",
+						".1.3.6.1.4.1.45121.1800.2.3.1.7.15.1.4",
 						ISnmpConstant.INTEGER));
 		initProperty(utsOnuFWUpgradeManualResultTargetVersion,
 				new SnmpMibBeanProperty(
 						utsOnuFWUpgradeManualResultTargetVersion,
-						".1.3.6.1.4.1.41355.1800.2.3.1.7.15.1.5",
+						".1.3.6.1.4.1.45121.1800.2.3.1.7.15.1.5",
 						ISnmpConstant.STRING));
 		initProperty(utsOnuFWUpgradeManualResultCurrentVersion,
 				new SnmpMibBeanProperty(
 						utsOnuFWUpgradeManualResultCurrentVersion,
-						".1.3.6.1.4.1.41355.1800.2.3.1.7.15.1.6",
+						".1.3.6.1.4.1.45121.1800.2.3.1.7.15.1.6",
 						ISnmpConstant.STRING));
 		initProperty(utsOnuFWUpgradeManualResultCurrentUpgStatus,
 				new SnmpMibBeanProperty(
 						utsOnuFWUpgradeManualResultCurrentUpgStatus,
-						".1.3.6.1.4.1.41355.1800.2.3.1.7.15.1.7",
+						".1.3.6.1.4.1.45121.1800.2.3.1.7.15.1.7",
 						ISnmpConstant.STRING));
 		initProperty(utsOnuFWUpgradeManualResultFailReason,
 				new SnmpMibBeanProperty(utsOnuFWUpgradeManualResultFailReason,
-						".1.3.6.1.4.1.41355.1800.2.3.1.7.15.1.8",
+						".1.3.6.1.4.1.45121.1800.2.3.1.7.15.1.8",
 						ISnmpConstant.STRING));
 		initProperty(utsOnuFWUpgradeManualResultCommit,
 				new SnmpMibBeanProperty(utsOnuFWUpgradeManualResultCommit,
-						".1.3.6.1.4.1.41355.1800.2.3.1.7.15.1.9",
+						".1.3.6.1.4.1.45121.1800.2.3.1.7.15.1.9",
 						ISnmpConstant.INTEGER));
 
 	}

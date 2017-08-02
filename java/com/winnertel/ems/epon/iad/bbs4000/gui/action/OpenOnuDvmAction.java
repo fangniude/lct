@@ -551,19 +551,19 @@ public class OpenOnuDvmAction extends SnmpAction implements ManagedWindow {
         String version = null;
         try {
             if (type != null && "ONU204i-h".equalsIgnoreCase(type)) {
-                target.setSnmpOID(new SnmpOID(".1.3.6.1.4.1.41355.1.3.10.100.33.2.2.1.0"));
+                target.setSnmpOID(new SnmpOID(".1.3.6.1.4.1.45121.1.3.10.100.33.2.2.1.0"));
             } else if (type != null && (type.startsWith("ONU4016i") || type.startsWith("ONU408t"))) {
-                target.setSnmpOID(new SnmpOID(".1.3.6.1.4.1.41355.1.3.10.100.1408.2.1.3.0")); //for NMS00069686, added by Zhouchao, 2010/10/13
+                target.setSnmpOID(new SnmpOID(".1.3.6.1.4.1.45121.1.3.10.100.1408.2.1.3.0")); //for NMS00069686, added by Zhouchao, 2010/10/13
             } else if (type != null && type.startsWith("ONU4024i")) {
-                target.setSnmpOID(new SnmpOID(".1.3.6.1.4.1.41355.1.3.10.100.4024.2.3.1.8.0"));
+                target.setSnmpOID(new SnmpOID(".1.3.6.1.4.1.45121.1.3.10.100.4024.2.3.1.8.0"));
             } else if (type != null && (type.equalsIgnoreCase("ONU204i-h R.h1") || type.startsWith("ONU204i-k7 R.a"))) {
                 target.setSnmpOID(new SnmpOID(".1.3.6.1.4.1.17409.2.3.4.1.1.13.0"));
             } else if (type != null && (type.startsWith("ONU204i") || type.startsWith("ONU2004-2") || type.equalsIgnoreCase("ONU2004i") || type.equalsIgnoreCase("ONU208"))) {
-                target.setSnmpOID(new SnmpOID(".1.3.6.1.4.1.41355.1.3.10.100.106.2.2.0"));
+                target.setSnmpOID(new SnmpOID(".1.3.6.1.4.1.45121.1.3.10.100.106.2.2.0"));
             } else if (type != null && type.startsWith("ONU404i")) {
-                target.setSnmpOID(new SnmpOID(".1.3.6.1.4.1.41355.1.3.10.100.17.2.2.1.0"));
+                target.setSnmpOID(new SnmpOID(".1.3.6.1.4.1.45121.1.3.10.100.17.2.2.1.0"));
             } else if (type != null && type.startsWith("ONU804i")) {
-                target.setSnmpOID(new SnmpOID(".1.3.6.1.4.1.41355.1.3.10.100.20.2.2.1.0"));
+                target.setSnmpOID(new SnmpOID(".1.3.6.1.4.1.45121.1.3.10.100.20.2.2.1.0"));
             } else if (type != null && "JS16B-v".equals(type) ||
                     "JS24B-v".equals(type)) {
                 // There is no version info in current SRS !
@@ -572,7 +572,7 @@ public class OpenOnuDvmAction extends SnmpAction implements ManagedWindow {
             } else if (type != null && type.startsWith("CLT2170") || type != null && type.startsWith("CLT2171")) {
                 target.setSnmpOID(new SnmpOID(".1.3.6.1.4.1.17409.2.4.1.1.6.0"));
             } else {
-                target.setSnmpOID(new SnmpOID(".1.3.6.1.4.1.41355.1.3.10.100.106.2.2.0"));
+                target.setSnmpOID(new SnmpOID(".1.3.6.1.4.1.45121.1.3.10.100.106.2.2.0"));
             }
 
             Object result = target.snmpGet();

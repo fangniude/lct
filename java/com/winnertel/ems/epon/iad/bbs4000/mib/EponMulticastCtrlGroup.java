@@ -35,15 +35,15 @@ public class EponMulticastCtrlGroup extends SnmpMibBean
 	protected void init()
 	{
 		initProperty(utsEponMulticastCtrlIpmcEnable, 
-				new SnmpMibBeanProperty( utsEponMulticastCtrlIpmcEnable, ".1.3.6.1.4.1.41355.1800.2.2.1.5.1.1.6", ISnmpConstant.INTEGER));
+				new SnmpMibBeanProperty( utsEponMulticastCtrlIpmcEnable, ".1.3.6.1.4.1.45121.1800.2.2.1.5.1.1.6", ISnmpConstant.INTEGER));
 		initProperty(utsEponMulticastCtrlIgmpSnoopingStatus, 
-				new SnmpMibBeanProperty(utsEponMulticastCtrlIgmpSnoopingStatus, ".1.3.6.1.4.1.41355.1800.2.2.1.5.1.1.7", ISnmpConstant.INTEGER));
+				new SnmpMibBeanProperty(utsEponMulticastCtrlIgmpSnoopingStatus, ".1.3.6.1.4.1.45121.1800.2.2.1.5.1.1.7", ISnmpConstant.INTEGER));
 		initProperty(utsEponMcastCtrlIgmpProxyStatus, 
-				new SnmpMibBeanProperty( utsEponMcastCtrlIgmpProxyStatus, ".1.3.6.1.4.1.41355.1800.2.2.1.5.1.1.8", ISnmpConstant.INTEGER));
+				new SnmpMibBeanProperty( utsEponMcastCtrlIgmpProxyStatus, ".1.3.6.1.4.1.45121.1800.2.2.1.5.1.1.8", ISnmpConstant.INTEGER));
 		initProperty(utsEponMulticastCtrlSuperVidList, 
-				new SnmpMibBeanProperty( utsEponMulticastCtrlSuperVidList, ".1.3.6.1.4.1.41355.1800.2.2.1.5.1.1.9", ISnmpConstant.STRING));
+				new SnmpMibBeanProperty( utsEponMulticastCtrlSuperVidList, ".1.3.6.1.4.1.45121.1800.2.2.1.5.1.1.9", ISnmpConstant.STRING));
 		initProperty( utsOltCtcMulticastCtrlMode, 
-				new SnmpMibBeanProperty(utsOltCtcMulticastCtrlMode, ".1.3.6.1.4.1.41355.1800.2.4.3.1.3.1.2", ISnmpConstant.INTEGER));
+				new SnmpMibBeanProperty(utsOltCtcMulticastCtrlMode, ".1.3.6.1.4.1.45121.1800.2.4.3.1.3.1.2", ISnmpConstant.INTEGER));
 	}
 
 	public Integer getUtsEponMulticastCtrlIpmcEnable()

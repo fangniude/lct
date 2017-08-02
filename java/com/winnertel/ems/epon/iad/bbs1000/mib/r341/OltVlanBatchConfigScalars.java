@@ -28,36 +28,36 @@ public class OltVlanBatchConfigScalars extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsOltVlanBatchConfigStart, new SnmpMibBeanProperty(
 				utsOltVlanBatchConfigStart,
-				".1.3.6.1.4.1.41355.1800.2.2.1.13.1", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.2.1.13.1", ISnmpConstant.INTEGER));
 		initProperty(utsOltVlanBatchConfigStop, new SnmpMibBeanProperty(
-				utsOltVlanBatchConfigStop, ".1.3.6.1.4.1.41355.1800.2.2.1.13.2",
+				utsOltVlanBatchConfigStop, ".1.3.6.1.4.1.45121.1800.2.2.1.13.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsOltVlanBatchConfigVlanName, new SnmpMibBeanProperty(
 				utsOltVlanBatchConfigVlanName,
-				".1.3.6.1.4.1.41355.1800.2.2.1.13.3", ISnmpConstant.STRING));
+				".1.3.6.1.4.1.45121.1800.2.2.1.13.3", ISnmpConstant.STRING));
 		initProperty(utsOltVlanBatchConfigTaggedPortListPorts,
 				new SnmpMibBeanProperty(
 						utsOltVlanBatchConfigTaggedPortListPorts,
-						".1.3.6.1.4.1.41355.1800.2.2.1.13.4",
+						".1.3.6.1.4.1.45121.1800.2.2.1.13.4",
 						ISnmpConstant.OCTETS));
 		initProperty(utsOltVlanBatchConfigUnTaggedPortListPorts,
 				new SnmpMibBeanProperty(
 						utsOltVlanBatchConfigUnTaggedPortListPorts,
-						".1.3.6.1.4.1.41355.1800.2.2.1.13.5",
+						".1.3.6.1.4.1.45121.1800.2.2.1.13.5",
 						ISnmpConstant.OCTETS));
 		initProperty(utsOltVlanBacthConfigIgmpSnoop, new SnmpMibBeanProperty(
 				utsOltVlanBacthConfigIgmpSnoop,
-				".1.3.6.1.4.1.41355.1800.2.2.1.13.6", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.2.1.13.6", ISnmpConstant.INTEGER));
 		initProperty(utsOltVlanBacthConfigPPPoEPlus, new SnmpMibBeanProperty(
 				utsOltVlanBacthConfigPPPoEPlus,
-				".1.3.6.1.4.1.41355.1800.2.2.1.13.7", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.2.1.13.7", ISnmpConstant.INTEGER));
 		initProperty(utsOltVlanBatchConfigL2DHCPOption82,
 				new SnmpMibBeanProperty(utsOltVlanBatchConfigL2DHCPOption82,
-						".1.3.6.1.4.1.41355.1800.2.2.1.13.8",
+						".1.3.6.1.4.1.45121.1800.2.2.1.13.8",
 						ISnmpConstant.INTEGER));
 		initProperty(utsOltVlanBatchConfigArpProxySwitch,
 				new SnmpMibBeanProperty(utsOltVlanBatchConfigArpProxySwitch,
-						".1.3.6.1.4.1.41355.1800.2.2.1.13.9",
+						".1.3.6.1.4.1.45121.1800.2.2.1.13.9",
 						ISnmpConstant.INTEGER));
 
 	}

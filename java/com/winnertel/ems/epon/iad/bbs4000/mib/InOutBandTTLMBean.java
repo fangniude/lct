@@ -29,11 +29,11 @@ public class InOutBandTTLMBean extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsBBSMgmtTrafficInBandTTL, new SnmpMibBeanProperty(
 				utsBBSMgmtTrafficInBandTTL,
-				".1.3.6.1.4.1.41355.1800.2.1.1.4.1.12",
+				".1.3.6.1.4.1.45121.1800.2.1.1.4.1.12",
 				ISnmpConstant.INTEGER));
 		initProperty(utsBBSMgmtTrafficOutBandTTL, new SnmpMibBeanProperty(
 				utsBBSMgmtTrafficOutBandTTL,
-				".1.3.6.1.4.1.41355.1800.2.1.1.4.1.13",
+				".1.3.6.1.4.1.45121.1800.2.1.1.4.1.13",
 				ISnmpConstant.INTEGER));
 
 	}

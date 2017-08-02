@@ -37,19 +37,19 @@ public class Dot3Olt2QosGlbTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsDot3OltModuleId, new SnmpMibBeanProperty(utsDot3OltModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.3.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltDeviceId, new SnmpMibBeanProperty(utsDot3OltDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.3.1.2", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltQoSMode, new SnmpMibBeanProperty(utsDot3OltQoSMode, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.3.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltQoSL2OverheadInclude, new SnmpMibBeanProperty(utsDot3OltQoSL2OverheadInclude, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.3.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltWREDEnable, new SnmpMibBeanProperty(utsDot3OltWREDEnable, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.3.1.5", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltSchedulingMode, new SnmpMibBeanProperty(utsDot3OltSchedulingMode, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.3.1.6", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltSchedulingWeight, new SnmpMibBeanProperty(utsDot3OltSchedulingWeight, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.3.1.7", ISnmpConstant.OCTETS));
-    initProperty(utsDot3OltDot1p2QueueMap, new SnmpMibBeanProperty(utsDot3OltDot1p2QueueMap, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.3.1.8", ISnmpConstant.OCTETS));
-    initProperty(utsDot3OltDscp2QueueMap, new SnmpMibBeanProperty(utsDot3OltDscp2QueueMap, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.3.1.9", ISnmpConstant.OCTETS));
-    initProperty(utsDot3OltDefaultTx802Dot1pValue, new SnmpMibBeanProperty(utsDot3OltDefaultTx802Dot1pValue, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.3.1.10", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltDefaultCosQueue, new SnmpMibBeanProperty(utsDot3OltDefaultCosQueue, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.3.1.11", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltTxDot1pRemark, new SnmpMibBeanProperty(utsDot3OltTxDot1pRemark, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.3.1.12", ISnmpConstant.OCTETS));
-    initProperty(utsDot3OltTxDscpRemark, new SnmpMibBeanProperty(utsDot3OltTxDscpRemark, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.3.1.13", ISnmpConstant.OCTETS));
+    initProperty(utsDot3OltModuleId, new SnmpMibBeanProperty(utsDot3OltModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.3.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltDeviceId, new SnmpMibBeanProperty(utsDot3OltDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.3.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltQoSMode, new SnmpMibBeanProperty(utsDot3OltQoSMode, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.3.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltQoSL2OverheadInclude, new SnmpMibBeanProperty(utsDot3OltQoSL2OverheadInclude, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.3.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltWREDEnable, new SnmpMibBeanProperty(utsDot3OltWREDEnable, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.3.1.5", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltSchedulingMode, new SnmpMibBeanProperty(utsDot3OltSchedulingMode, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.3.1.6", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltSchedulingWeight, new SnmpMibBeanProperty(utsDot3OltSchedulingWeight, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.3.1.7", ISnmpConstant.OCTETS));
+    initProperty(utsDot3OltDot1p2QueueMap, new SnmpMibBeanProperty(utsDot3OltDot1p2QueueMap, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.3.1.8", ISnmpConstant.OCTETS));
+    initProperty(utsDot3OltDscp2QueueMap, new SnmpMibBeanProperty(utsDot3OltDscp2QueueMap, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.3.1.9", ISnmpConstant.OCTETS));
+    initProperty(utsDot3OltDefaultTx802Dot1pValue, new SnmpMibBeanProperty(utsDot3OltDefaultTx802Dot1pValue, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.3.1.10", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltDefaultCosQueue, new SnmpMibBeanProperty(utsDot3OltDefaultCosQueue, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.3.1.11", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltTxDot1pRemark, new SnmpMibBeanProperty(utsDot3OltTxDot1pRemark, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.3.1.12", ISnmpConstant.OCTETS));
+    initProperty(utsDot3OltTxDscpRemark, new SnmpMibBeanProperty(utsDot3OltTxDscpRemark, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.3.1.13", ISnmpConstant.OCTETS));
   }
 
 

@@ -25,14 +25,14 @@ public class OltPonLinkCfgTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(oltPonLinkCfgSlotNo, new SnmpMibBeanProperty(oltPonLinkCfgSlotNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.3.1.1", ISnmpConstant.INTEGER));
-        initProperty(oltPonLinkCfgPortNo, new SnmpMibBeanProperty(oltPonLinkCfgPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.3.1.2", ISnmpConstant.INTEGER));
-        initProperty(oltPonLinkCfgAdministrativeState, new SnmpMibBeanProperty(oltPonLinkCfgAdministrativeState, ".1.3.6.1.4.1.41355.1.3.10.5.1.3.1.3", ISnmpConstant.INTEGER));
-        initProperty(oltPonLinkCfgOperationalState, new SnmpMibBeanProperty(oltPonLinkCfgOperationalState, ".1.3.6.1.4.1.41355.1.3.10.5.1.3.1.4", ISnmpConstant.INTEGER));
-        initProperty(oltPonLinkCfgProtocolProfileIndex, new SnmpMibBeanProperty(oltPonLinkCfgProtocolProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.1.3.1.5", ISnmpConstant.GAUGE));
-        initProperty(oltPonLinkCfgOnuDiscoveryMode, new SnmpMibBeanProperty(oltPonLinkCfgOnuDiscoveryMode, ".1.3.6.1.4.1.41355.1.3.10.5.1.3.1.6", ISnmpConstant.INTEGER));
-        initProperty(oltPonLinkCfgOnuDiscoveryInterval, new SnmpMibBeanProperty(oltPonLinkCfgOnuDiscoveryInterval, ".1.3.6.1.4.1.41355.1.3.10.5.1.3.1.7", ISnmpConstant.GAUGE));
-        initProperty(oltPonLinkCfgCycleTime, new SnmpMibBeanProperty(oltPonLinkCfgCycleTime, ".1.3.6.1.4.1.41355.1.3.10.5.1.3.1.8", ISnmpConstant.GAUGE));
+        initProperty(oltPonLinkCfgSlotNo, new SnmpMibBeanProperty(oltPonLinkCfgSlotNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.3.1.1", ISnmpConstant.INTEGER));
+        initProperty(oltPonLinkCfgPortNo, new SnmpMibBeanProperty(oltPonLinkCfgPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.3.1.2", ISnmpConstant.INTEGER));
+        initProperty(oltPonLinkCfgAdministrativeState, new SnmpMibBeanProperty(oltPonLinkCfgAdministrativeState, ".1.3.6.1.4.1.45121.1.3.10.5.1.3.1.3", ISnmpConstant.INTEGER));
+        initProperty(oltPonLinkCfgOperationalState, new SnmpMibBeanProperty(oltPonLinkCfgOperationalState, ".1.3.6.1.4.1.45121.1.3.10.5.1.3.1.4", ISnmpConstant.INTEGER));
+        initProperty(oltPonLinkCfgProtocolProfileIndex, new SnmpMibBeanProperty(oltPonLinkCfgProtocolProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.1.3.1.5", ISnmpConstant.GAUGE));
+        initProperty(oltPonLinkCfgOnuDiscoveryMode, new SnmpMibBeanProperty(oltPonLinkCfgOnuDiscoveryMode, ".1.3.6.1.4.1.45121.1.3.10.5.1.3.1.6", ISnmpConstant.INTEGER));
+        initProperty(oltPonLinkCfgOnuDiscoveryInterval, new SnmpMibBeanProperty(oltPonLinkCfgOnuDiscoveryInterval, ".1.3.6.1.4.1.45121.1.3.10.5.1.3.1.7", ISnmpConstant.GAUGE));
+        initProperty(oltPonLinkCfgCycleTime, new SnmpMibBeanProperty(oltPonLinkCfgCycleTime, ".1.3.6.1.4.1.45121.1.3.10.5.1.3.1.8", ISnmpConstant.GAUGE));
     }
 
     public Integer getOltPonLinkCfgSlotNo() {

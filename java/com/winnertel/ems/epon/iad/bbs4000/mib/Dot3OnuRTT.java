@@ -35,14 +35,14 @@ public class Dot3OnuRTT extends SnmpMibBean
 
 		initProperty(utsDot3OnuRegistrationState,
 				new SnmpMibBeanProperty(utsDot3OnuRegistrationState,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.1.1.4",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.1.1.4",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OnuRTT,
 				new SnmpMibBeanProperty(utsDot3OnuRTT,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.1.1.9",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.1.1.9",
 						ISnmpConstant.INTEGER));
 		initProperty( distance, new SnmpMibBeanProperty( distance,
-						".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.37",
+						".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.37",
 						ISnmpConstant.INTEGER));
 	}
 

@@ -27,27 +27,27 @@ public class Dot3Onu2CtcLpbkDetectTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsDot3Onu2CtcLpbkDetectModuleId, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcLpbkDetectModuleId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.35.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.35.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcLpbkDetectDeviceId, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcLpbkDetectDeviceId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.35.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.35.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcLpbkDetectPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcLpbkDetectPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.35.1.3",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.35.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcLpbkDetectLogicalPortId,
 				new SnmpMibBeanProperty(utsDot3Onu2CtcLpbkDetectLogicalPortId,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.35.1.4",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.35.1.4",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcLpbkDetectUniPort, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcLpbkDetectUniPort,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.35.1.5",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.35.1.5",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcLpbkDetectAction, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcLpbkDetectAction,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.35.1.6",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.35.1.6",
 				ISnmpConstant.INTEGER));
 
 	}

@@ -30,10 +30,10 @@ public class SysCommuTableMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsSysCommunityIndex, new SnmpMibBeanProperty(utsSysCommunityIndex, ".1.3.6.1.4.1.41355.1800.2.1.1.4.7.1.1.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsSysCommunityString, new SnmpMibBeanProperty(utsSysCommunityString, ".1.3.6.1.4.1.41355.1800.2.1.1.4.7.1.1.1.3", ISnmpConstant.STRING));
-        initProperty(utsSysCommunityAccess, new SnmpMibBeanProperty(utsSysCommunityAccess, ".1.3.6.1.4.1.41355.1800.2.1.1.4.7.1.1.1.4", ISnmpConstant.INTEGER));
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.1.1.4.7.1.1.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsSysCommunityIndex, new SnmpMibBeanProperty(utsSysCommunityIndex, ".1.3.6.1.4.1.45121.1800.2.1.1.4.7.1.1.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsSysCommunityString, new SnmpMibBeanProperty(utsSysCommunityString, ".1.3.6.1.4.1.45121.1800.2.1.1.4.7.1.1.1.3", ISnmpConstant.STRING));
+        initProperty(utsSysCommunityAccess, new SnmpMibBeanProperty(utsSysCommunityAccess, ".1.3.6.1.4.1.45121.1800.2.1.1.4.7.1.1.1.4", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.1.1.4.7.1.1.1.5", ISnmpConstant.INTEGER));
 
     }
 

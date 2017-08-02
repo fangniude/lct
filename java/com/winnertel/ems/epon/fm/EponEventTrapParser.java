@@ -93,7 +93,7 @@ public class EponEventTrapParser implements TrapParser {
         }
 
         // utFault trap
-        if (".1.3.6.1.4.1.41355.1800.3.2.0".equals(pdu.getEnterprise().getVarObject())) {
+        if (".1.3.6.1.4.1.45121.1800.3.2.0".equals(pdu.getEnterprise().getVarObject())) {
             if (pdu.getSpecificType() == 13) { // replace module diag status
                 pdu = replaceDiagSttus(pdu, 2);
             }
@@ -143,7 +143,7 @@ public class EponEventTrapParser implements TrapParser {
         }
 
         // onu2024 trap
-//        if (".1.3.6.1.4.1.41355.1.3.10.100.2.2.1.0".equals(pdu.getEnterprise().getVarObject())) {
+//        if (".1.3.6.1.4.1.45121.1.3.10.100.2.2.1.0".equals(pdu.getEnterprise().getVarObject())) {
 //            // trap swIpFilterRejectTrap
 //            if (pdu.getSpecificType() == 40) {
 //                pdu = replaceIpFilterRejectAttr(pdu);

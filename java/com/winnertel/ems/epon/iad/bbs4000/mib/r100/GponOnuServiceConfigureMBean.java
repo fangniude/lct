@@ -35,22 +35,22 @@ public class GponOnuServiceConfigureMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(onuCfgSlotNo, new SnmpMibBeanProperty(onuCfgSlotNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.1", ISnmpConstant.INTEGER));
-        initProperty(onuCfgPortNo, new SnmpMibBeanProperty(onuCfgPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.2", ISnmpConstant.INTEGER));
-        initProperty(onuCfgLogicalPortNo, new SnmpMibBeanProperty(onuCfgLogicalPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.3", ISnmpConstant.INTEGER));
-        initProperty(onuCfgServiceSubscription, new SnmpMibBeanProperty(onuCfgServiceSubscription, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.10", ISnmpConstant.GAUGE));
-        initProperty(onuCfgUpstreamTrafficMappingType, new SnmpMibBeanProperty(onuCfgUpstreamTrafficMappingType, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.6", ISnmpConstant.INTEGER));
-        initProperty(onuCfgUpstreamTrafficMappingProfileIndex, new SnmpMibBeanProperty(onuCfgUpstreamTrafficMappingProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.7", ISnmpConstant.GAUGE));
-        initProperty(onuCfgTcontVirtualPortBindingType, new SnmpMibBeanProperty(onuCfgTcontVirtualPortBindingType, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.8", ISnmpConstant.INTEGER));
-        initProperty(onuCfgTcontVirtualPortBindingProfileIndex, new SnmpMibBeanProperty(onuCfgTcontVirtualPortBindingProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.9", ISnmpConstant.GAUGE));
-        initProperty(onuCfgSecurityCapability, new SnmpMibBeanProperty(onuCfgSecurityCapability, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.25", ISnmpConstant.GAUGE));
-        initProperty(onuCfgSecurityMode, new SnmpMibBeanProperty(onuCfgSecurityMode, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.26", ISnmpConstant.GAUGE));
+        initProperty(onuCfgSlotNo, new SnmpMibBeanProperty(onuCfgSlotNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.1", ISnmpConstant.INTEGER));
+        initProperty(onuCfgPortNo, new SnmpMibBeanProperty(onuCfgPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.2", ISnmpConstant.INTEGER));
+        initProperty(onuCfgLogicalPortNo, new SnmpMibBeanProperty(onuCfgLogicalPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.3", ISnmpConstant.INTEGER));
+        initProperty(onuCfgServiceSubscription, new SnmpMibBeanProperty(onuCfgServiceSubscription, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.10", ISnmpConstant.GAUGE));
+        initProperty(onuCfgUpstreamTrafficMappingType, new SnmpMibBeanProperty(onuCfgUpstreamTrafficMappingType, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.6", ISnmpConstant.INTEGER));
+        initProperty(onuCfgUpstreamTrafficMappingProfileIndex, new SnmpMibBeanProperty(onuCfgUpstreamTrafficMappingProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.7", ISnmpConstant.GAUGE));
+        initProperty(onuCfgTcontVirtualPortBindingType, new SnmpMibBeanProperty(onuCfgTcontVirtualPortBindingType, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.8", ISnmpConstant.INTEGER));
+        initProperty(onuCfgTcontVirtualPortBindingProfileIndex, new SnmpMibBeanProperty(onuCfgTcontVirtualPortBindingProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.9", ISnmpConstant.GAUGE));
+        initProperty(onuCfgSecurityCapability, new SnmpMibBeanProperty(onuCfgSecurityCapability, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.25", ISnmpConstant.GAUGE));
+        initProperty(onuCfgSecurityMode, new SnmpMibBeanProperty(onuCfgSecurityMode, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.26", ISnmpConstant.GAUGE));
 
-        //initProperty(onuCfgOnuMulticastFilterMode, new SnmpMibBeanProperty(onuCfgOnuMulticastFilterMode, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.48", ISnmpConstant.INTEGER));
-        //initProperty(onuCfgOnuMulticastGemPortNo, new SnmpMibBeanProperty(onuCfgOnuMulticastGemPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.49", ISnmpConstant.GAUGE));
-        //initProperty(onuCfgOnuStaticMulticastGroupsProfileIndex, new SnmpMibBeanProperty(onuCfgOnuStaticMulticastGroupsProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.50", ISnmpConstant.GAUGE));
+        //initProperty(onuCfgOnuMulticastFilterMode, new SnmpMibBeanProperty(onuCfgOnuMulticastFilterMode, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.48", ISnmpConstant.INTEGER));
+        //initProperty(onuCfgOnuMulticastGemPortNo, new SnmpMibBeanProperty(onuCfgOnuMulticastGemPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.49", ISnmpConstant.GAUGE));
+        //initProperty(onuCfgOnuStaticMulticastGroupsProfileIndex, new SnmpMibBeanProperty(onuCfgOnuStaticMulticastGroupsProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.50", ISnmpConstant.GAUGE));
 
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.57", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.57", ISnmpConstant.INTEGER));
     }
 
     public Integer getOnuCfgSlotNo() {

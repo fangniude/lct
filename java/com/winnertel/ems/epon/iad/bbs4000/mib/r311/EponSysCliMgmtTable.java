@@ -27,27 +27,27 @@ public class EponSysCliMgmtTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsEponSysCliSessionId, new SnmpMibBeanProperty(
 				utsEponSysCliSessionId,
-				".1.3.6.1.4.1.41355.1800.2.1.1.4.11.1.1.1",
+				".1.3.6.1.4.1.45121.1800.2.1.1.4.11.1.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsEponSysCliUserAccount,
 				new SnmpMibBeanProperty(utsEponSysCliUserAccount,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.11.1.1.2",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.11.1.1.2",
 						ISnmpConstant.STRING));
 		initProperty(utsEponSysCliUserLoginTime,
 				new SnmpMibBeanProperty(utsEponSysCliUserLoginTime,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.11.1.1.3",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.11.1.1.3",
 						ISnmpConstant.OCTETS));
 		initProperty(utsEponSysCliUserIdleTime, new SnmpMibBeanProperty(
 				utsEponSysCliUserIdleTime,
-				".1.3.6.1.4.1.41355.1800.2.1.1.4.11.1.1.4",
+				".1.3.6.1.4.1.45121.1800.2.1.1.4.11.1.1.4",
 				ISnmpConstant.GAUGE));
 		initProperty(utsEponSysCliUserHostIp,
 				new SnmpMibBeanProperty(utsEponSysCliUserHostIp,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.11.1.1.5",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.11.1.1.5",
 						ISnmpConstant.IP_ADDRESS));
 		initProperty(utsEponSysCliUserLogoutForcely, new SnmpMibBeanProperty(
 				utsEponSysCliUserLogoutForcely,
-				".1.3.6.1.4.1.41355.1800.2.1.1.4.11.1.1.6",
+				".1.3.6.1.4.1.45121.1800.2.1.1.4.11.1.1.6",
 				ISnmpConstant.INTEGER));
 
 	}

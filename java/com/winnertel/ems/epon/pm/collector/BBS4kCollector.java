@@ -383,25 +383,25 @@ public class BBS4kCollector implements NEDataCollectorIntf
 
     if(measType.startsWith("GEBridgePortData"))     //GE port
     {
-      oid = ".1.3.6.1.4.1.41355.1800.4.1.1.1.1.100.";
+      oid = ".1.3.6.1.4.1.45121.1800.4.1.1.1.1.100.";
     }
     else if(measType.startsWith("PONOLTPortData") || measType.startsWith("PonOnuPortData"))     //OLT, ONU or ONU UNI Port
     {
-      oid = ".1.3.6.1.4.1.41355.1800.4.2.1.1.1.1.100.";
+      oid = ".1.3.6.1.4.1.45121.1800.4.2.1.1.1.1.100.";
     }
     else if(measType.startsWith("PonOnuUniPortData"))
     {
-      oid = ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.201.";
+      oid = ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.201.";
     }
     else if(measType.startsWith("SysMonitorData")) // don't need to enable the pm counters.
     {
       return;
     }
     else if(measType.startsWith("OLTOpticalLinkData")){
-    	oid = ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.100.";
+    	oid = ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.100.";
     }
     else if(measType.startsWith("ONUOpticalLinkData")){
-    	oid = ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.35.";
+    	oid = ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.35.";
     }
     else
     {
@@ -663,15 +663,15 @@ public class BBS4kCollector implements NEDataCollectorIntf
     }
     if(measType.startsWith("GEBridgePortData"))     //GE port
     {
-      oid = ".1.3.6.1.4.1.41355.1800.4.1.1.1.1.100.";
+      oid = ".1.3.6.1.4.1.45121.1800.4.1.1.1.1.100.";
     }
     else if(measType.startsWith("PONOLTPortData") || measType.startsWith("PonOnuPortData"))     //OLT or ONU
     {
-      oid = ".1.3.6.1.4.1.41355.1800.4.2.1.1.1.1.100.";
+      oid = ".1.3.6.1.4.1.45121.1800.4.2.1.1.1.1.100.";
     }
     else if(measType.startsWith("PonOnuUniPortData"))
     {
-      oid = ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.201.";
+      oid = ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.201.";
     }
     else
     {
@@ -856,15 +856,15 @@ public class BBS4kCollector implements NEDataCollectorIntf
 
     if(measType.startsWith("GEBridgePortData"))     //GE port
     {
-      oid = ".1.3.6.1.4.1.41355.1800.4.1.1.1.1.100.";
+      oid = ".1.3.6.1.4.1.45121.1800.4.1.1.1.1.100.";
     }
     else if(measType.startsWith("PONOLTPortData") || measType.startsWith("PonOnuPortData"))     //OLT or ONU
     {
-      oid = ".1.3.6.1.4.1.41355.1800.4.2.1.1.1.1.100.";
+      oid = ".1.3.6.1.4.1.45121.1800.4.2.1.1.1.1.100.";
     }
     else if(measType.startsWith("PonOnuUniPortData"))
     {
-      oid = ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.201.";
+      oid = ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.201.";
     }
     else
     {
@@ -1086,7 +1086,7 @@ public class BBS4kCollector implements NEDataCollectorIntf
       SnmpTargetExt target = new SnmpTargetExt(neIp, snmpPort, getCommunity, writeCommunity);
 
       //disable the TFTP PM on NE.
-      target.setValue(".1.3.6.1.4.1.41355.1800.4.4.1.2.0", new SnmpInt(2));
+      target.setValue(".1.3.6.1.4.1.45121.1800.4.4.1.2.0", new SnmpInt(2));
     }
     catch(Exception e)
     {

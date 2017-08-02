@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+   <onu>
+      <onu_attr onu_id="1-1" onu_mac="F8:FF:FF:FF:FF:FF" onu_desc="74657374"/>
+      <onu_cfg onu_cfg_id="1-1" up_max_bw="100000" down_max_bw="100000" up_committed_bw="0" down_committed_bw="0" up_fix_bw="0" up_burst_size="1000" down_burst_size="1000" up_priority="0" mxuMgmtGlb_ip_address="0x00000000" mxuMgmtGlb_ip_mask="0x00000000" mxuMgmtGlb_gateway="0x00000000" mxuMgmtGlb_cvlan="0x0000" mxuMgmtGlb_svlan="0x0000" mxuMgmtGlb_priority="0x05"/>
+   </onu>
+   <uni>
+      <onu_uni onu_uni_id="1-1-2" onu_vlan_mode="4" onu_vlan_tag="2" onu_vlan_trunk="200;201;" onu_vlan_tpid="0x9100" policing_enable="1" policing_cir="256" policing_cbs="1000" policing_ebs="1000" ds_cir="256" ds_pir="256" ds_enable="1" loop_detect="1"/>
+      <onu_uni onu_uni_id="1-1-1" onu_vlan_mode="1" onu_vlan_tag="2" onu_vlan_tpid="0x8100" policing_enable="1" policing_cir="256" policing_cbs="1000" policing_ebs="1000" ds_cir="256" ds_pir="256" ds_enable="1" loop_detect="1"/>
+   </uni>
+</root>

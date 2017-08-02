@@ -30,39 +30,39 @@ public class Dot3Onu2VoipPingTestTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsDot3Onu2VoipModuleId, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipModuleId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipDeviceId, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipDeviceId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.3",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipLogicalPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipLogicalPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.4",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.4",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipPingTestDestIp,
 				new SnmpMibBeanProperty(utsDot3Onu2VoipPingTestDestIp,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.61.1.1",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.61.1.1",
 						ISnmpConstant.IP_ADDRESS));
 		initProperty(utsDot3Onu2VoipPingTestAction, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipPingTestAction,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.61.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.61.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipPingTestTimes, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipPingTestTimes,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.61.1.3",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.61.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipPingTestPacketSize,
 				new SnmpMibBeanProperty(utsDot3Onu2VoipPingTestPacketSize,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.61.1.4",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.61.1.4",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipPingTestTimeout, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipPingTestTimeout,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.61.1.5",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.61.1.5",
 				ISnmpConstant.INTEGER));
 
 	}

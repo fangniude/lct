@@ -29,37 +29,37 @@ public class MulticastConfigure extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsDot3Onu2CtcModuleId, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcModuleId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcDeviceId, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcDeviceId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.3",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcLogicalPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcLogicalPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.4",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.4",
 				ISnmpConstant.INTEGER));
 
 		initProperty(utsDot3Onu2CtcMulticastSwitch, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcMulticastSwitch,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.27",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.27",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcMCastControlType, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcMCastControlType,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.28",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.28",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcMCastEntryNum, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcMCastEntryNum,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.29",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.29",
 				ISnmpConstant.INTEGER));
 		
 		initProperty(utsDot3Onu2CtcAdmin, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcAdmin,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.37",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.37",
 				ISnmpConstant.INTEGER));
 
 	}

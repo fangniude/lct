@@ -35,22 +35,22 @@ public class LgQosExtDscpTrustTable extends SnmpMibBean
 	{
 		initProperty(utsMLSQosExtDscpTrustIntfIndex, new SnmpMibBeanProperty(
 				utsMLSQosExtDscpTrustIntfIndex,
-				".1.3.6.1.4.1.41355.1800.2.4.1.1.6.1.1", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.4.1.1.6.1.1", ISnmpConstant.INTEGER));
 		initProperty(utsMLSQosExtDscpTrustModuleId, new SnmpMibBeanProperty(
 				utsMLSQosExtDscpTrustModuleId,
-				".1.3.6.1.4.1.41355.1800.2.4.1.1.6.1.2", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.4.1.1.6.1.2", ISnmpConstant.INTEGER));
 		initProperty(utsMLSQosExtDscpTrustPortId, new SnmpMibBeanProperty(
 				utsMLSQosExtDscpTrustPortId,
-				".1.3.6.1.4.1.41355.1800.2.4.1.1.6.1.3", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.4.1.1.6.1.3", ISnmpConstant.INTEGER));
 		initProperty(utsMLSQosExtDscpTrustLagPortId, new SnmpMibBeanProperty(
 				utsMLSQosExtDscpTrustLagPortId,
-				".1.3.6.1.4.1.41355.1800.2.4.1.1.6.1.4", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.4.1.1.6.1.4", ISnmpConstant.INTEGER));
 		initProperty(utsMLSQosExtDscpTrustMode, new SnmpMibBeanProperty(
 				utsMLSQosExtDscpTrustMode,
-				".1.3.6.1.4.1.41355.1800.2.4.1.1.6.1.5", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.4.1.1.6.1.5", ISnmpConstant.INTEGER));
 		initProperty(utsMLSQosExtDscpTrustIntfQosCtrl, new SnmpMibBeanProperty(
 				utsMLSQosExtDscpTrustIntfQosCtrl,
-				".1.3.6.1.4.1.41355.1800.2.4.1.1.6.1.6", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.4.1.1.6.1.6", ISnmpConstant.INTEGER));
 
 	}
 

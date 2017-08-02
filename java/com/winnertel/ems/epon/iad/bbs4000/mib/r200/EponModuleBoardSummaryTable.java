@@ -42,28 +42,28 @@ public class EponModuleBoardSummaryTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsEponModuleBoardPhyId, new SnmpMibBeanProperty(utsEponModuleBoardPhyId, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsEponModuleBoardType, new SnmpMibBeanProperty(utsEponModuleBoardType, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.2", ISnmpConstant.INTEGER));
-    initProperty(utsEponModulePhyPresenceStat, new SnmpMibBeanProperty(utsEponModulePhyPresenceStat, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsEponModuleAdminState, new SnmpMibBeanProperty(utsEponModuleAdminState, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsEponModuleOperationState, new SnmpMibBeanProperty(utsEponModuleOperationState, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.5", ISnmpConstant.INTEGER));
-    initProperty(utsEponModuleRedundancyState, new SnmpMibBeanProperty(utsEponModuleRedundancyState, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.6", ISnmpConstant.INTEGER));
-    initProperty(utsEponModulePhyicalUptime, new SnmpMibBeanProperty(utsEponModulePhyicalUptime, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.8", ISnmpConstant.TIME_TICKS));
-    initProperty(utsEponOpStateUptime, new SnmpMibBeanProperty(utsEponOpStateUptime, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.9", ISnmpConstant.TIME_TICKS));
-    initProperty(utsEponModuleCSMSwitchtime, new SnmpMibBeanProperty(utsEponModuleCSMSwitchtime, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.11", ISnmpConstant.TIME_TICKS));
-    initProperty(utsEponModuleBoardSwVer, new SnmpMibBeanProperty(utsEponModuleBoardSwVer, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.12", ISnmpConstant.STRING));
-    initProperty(utsEponModuleBoardBootromVer, new SnmpMibBeanProperty(utsEponModuleBoardBootromVer, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.13", ISnmpConstant.STRING));
-    initProperty(utsEponModuleBoardPassaveVer, new SnmpMibBeanProperty(utsEponModuleBoardPassaveVer, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.14", ISnmpConstant.STRING));
-    initProperty(utsEponModuleBoardCurTemp, new SnmpMibBeanProperty(utsEponModuleBoardCurTemp, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.15", ISnmpConstant.INTEGER));
-    initProperty(utsEponModuleBoardTempUpLimit, new SnmpMibBeanProperty(utsEponModuleBoardTempUpLimit, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.16", ISnmpConstant.INTEGER));
-    initProperty(utsEponModuleBoardTempUpClearLimit, new SnmpMibBeanProperty(utsEponModuleBoardTempUpClearLimit, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.17", ISnmpConstant.INTEGER));
-    initProperty(utsEponModuleBoardLastAdminStateChangetime, new SnmpMibBeanProperty(utsEponModuleBoardLastAdminStateChangetime, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.18", ISnmpConstant.TIME_TICKS));
-    initProperty(utsEponModuleBoardLastOperationStateChangetime, new SnmpMibBeanProperty(utsEponModuleBoardLastOperationStateChangetime, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.19", ISnmpConstant.TIME_TICKS));
-    initProperty(utsEponModuleBoardDisableCause, new SnmpMibBeanProperty(utsEponModuleBoardDisableCause, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.20", ISnmpConstant.INTEGER));
-    initProperty(utsEponModuleBoardHwVer, new SnmpMibBeanProperty(utsEponModuleBoardHwVer, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.21", ISnmpConstant.STRING));
-    initProperty(utsEponModuleBoardCpldVer, new SnmpMibBeanProperty(utsEponModuleBoardCpldVer, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.22", ISnmpConstant.STRING));
-    initProperty(utsEponModuleBoardSerialNumber, new SnmpMibBeanProperty(utsEponModuleBoardSerialNumber, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.23", ISnmpConstant.STRING));
-    initProperty(utsEponModuleBoard2424Information, new SnmpMibBeanProperty(utsEponModuleBoard2424Information, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.24", ISnmpConstant.STRING));
+    initProperty(utsEponModuleBoardPhyId, new SnmpMibBeanProperty(utsEponModuleBoardPhyId, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsEponModuleBoardType, new SnmpMibBeanProperty(utsEponModuleBoardType, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsEponModulePhyPresenceStat, new SnmpMibBeanProperty(utsEponModulePhyPresenceStat, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsEponModuleAdminState, new SnmpMibBeanProperty(utsEponModuleAdminState, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsEponModuleOperationState, new SnmpMibBeanProperty(utsEponModuleOperationState, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.5", ISnmpConstant.INTEGER));
+    initProperty(utsEponModuleRedundancyState, new SnmpMibBeanProperty(utsEponModuleRedundancyState, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.6", ISnmpConstant.INTEGER));
+    initProperty(utsEponModulePhyicalUptime, new SnmpMibBeanProperty(utsEponModulePhyicalUptime, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.8", ISnmpConstant.TIME_TICKS));
+    initProperty(utsEponOpStateUptime, new SnmpMibBeanProperty(utsEponOpStateUptime, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.9", ISnmpConstant.TIME_TICKS));
+    initProperty(utsEponModuleCSMSwitchtime, new SnmpMibBeanProperty(utsEponModuleCSMSwitchtime, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.11", ISnmpConstant.TIME_TICKS));
+    initProperty(utsEponModuleBoardSwVer, new SnmpMibBeanProperty(utsEponModuleBoardSwVer, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.12", ISnmpConstant.STRING));
+    initProperty(utsEponModuleBoardBootromVer, new SnmpMibBeanProperty(utsEponModuleBoardBootromVer, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.13", ISnmpConstant.STRING));
+    initProperty(utsEponModuleBoardPassaveVer, new SnmpMibBeanProperty(utsEponModuleBoardPassaveVer, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.14", ISnmpConstant.STRING));
+    initProperty(utsEponModuleBoardCurTemp, new SnmpMibBeanProperty(utsEponModuleBoardCurTemp, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.15", ISnmpConstant.INTEGER));
+    initProperty(utsEponModuleBoardTempUpLimit, new SnmpMibBeanProperty(utsEponModuleBoardTempUpLimit, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.16", ISnmpConstant.INTEGER));
+    initProperty(utsEponModuleBoardTempUpClearLimit, new SnmpMibBeanProperty(utsEponModuleBoardTempUpClearLimit, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.17", ISnmpConstant.INTEGER));
+    initProperty(utsEponModuleBoardLastAdminStateChangetime, new SnmpMibBeanProperty(utsEponModuleBoardLastAdminStateChangetime, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.18", ISnmpConstant.TIME_TICKS));
+    initProperty(utsEponModuleBoardLastOperationStateChangetime, new SnmpMibBeanProperty(utsEponModuleBoardLastOperationStateChangetime, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.19", ISnmpConstant.TIME_TICKS));
+    initProperty(utsEponModuleBoardDisableCause, new SnmpMibBeanProperty(utsEponModuleBoardDisableCause, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.20", ISnmpConstant.INTEGER));
+    initProperty(utsEponModuleBoardHwVer, new SnmpMibBeanProperty(utsEponModuleBoardHwVer, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.21", ISnmpConstant.STRING));
+    initProperty(utsEponModuleBoardCpldVer, new SnmpMibBeanProperty(utsEponModuleBoardCpldVer, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.22", ISnmpConstant.STRING));
+    initProperty(utsEponModuleBoardSerialNumber, new SnmpMibBeanProperty(utsEponModuleBoardSerialNumber, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.23", ISnmpConstant.STRING));
+    initProperty(utsEponModuleBoard2424Information, new SnmpMibBeanProperty(utsEponModuleBoard2424Information, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.24", ISnmpConstant.STRING));
   }
 
 

@@ -27,14 +27,14 @@ public class OnuUPUTMProfTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(onuUsrPortUpTrafficMapProfIndex1, new SnmpMibBeanProperty(onuUsrPortUpTrafficMapProfIndex1, ".1.3.6.1.4.1.41355.1.3.10.5.2.6.1.1", ISnmpConstant.GAUGE));
-        initProperty(onuUsrPortUpTrafficMapProfIndex2, new SnmpMibBeanProperty(onuUsrPortUpTrafficMapProfIndex2, ".1.3.6.1.4.1.41355.1.3.10.5.2.6.1.2", ISnmpConstant.GAUGE));
-        initProperty(onuUsrPortUpTrafficMapProfileName, new SnmpMibBeanProperty(onuUsrPortUpTrafficMapProfileName, ".1.3.6.1.4.1.41355.1.3.10.5.2.6.1.3", ISnmpConstant.STRING));
-        initProperty(onuUsrPortUpTrafficMapProfPhysicalPortType, new SnmpMibBeanProperty(onuUsrPortUpTrafficMapProfPhysicalPortType, ".1.3.6.1.4.1.41355.1.3.10.5.2.6.1.4", ISnmpConstant.INTEGER));
-        initProperty(onuUsrPortUpTrafficMapProfPhysicalPortNo, new SnmpMibBeanProperty(onuUsrPortUpTrafficMapProfPhysicalPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.2.6.1.5", ISnmpConstant.INTEGER));
-        initProperty(onuUsrPortUpTrafficMapProfVirtualPortNo, new SnmpMibBeanProperty(onuUsrPortUpTrafficMapProfVirtualPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.2.6.1.6", ISnmpConstant.INTEGER));
+        initProperty(onuUsrPortUpTrafficMapProfIndex1, new SnmpMibBeanProperty(onuUsrPortUpTrafficMapProfIndex1, ".1.3.6.1.4.1.45121.1.3.10.5.2.6.1.1", ISnmpConstant.GAUGE));
+        initProperty(onuUsrPortUpTrafficMapProfIndex2, new SnmpMibBeanProperty(onuUsrPortUpTrafficMapProfIndex2, ".1.3.6.1.4.1.45121.1.3.10.5.2.6.1.2", ISnmpConstant.GAUGE));
+        initProperty(onuUsrPortUpTrafficMapProfileName, new SnmpMibBeanProperty(onuUsrPortUpTrafficMapProfileName, ".1.3.6.1.4.1.45121.1.3.10.5.2.6.1.3", ISnmpConstant.STRING));
+        initProperty(onuUsrPortUpTrafficMapProfPhysicalPortType, new SnmpMibBeanProperty(onuUsrPortUpTrafficMapProfPhysicalPortType, ".1.3.6.1.4.1.45121.1.3.10.5.2.6.1.4", ISnmpConstant.INTEGER));
+        initProperty(onuUsrPortUpTrafficMapProfPhysicalPortNo, new SnmpMibBeanProperty(onuUsrPortUpTrafficMapProfPhysicalPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.2.6.1.5", ISnmpConstant.INTEGER));
+        initProperty(onuUsrPortUpTrafficMapProfVirtualPortNo, new SnmpMibBeanProperty(onuUsrPortUpTrafficMapProfVirtualPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.2.6.1.6", ISnmpConstant.INTEGER));
 
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.2.6.1.7", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.2.6.1.7", ISnmpConstant.INTEGER));
     }
 
     public Long getOnuUsrPortUpTrafficMapProfIndex1() {

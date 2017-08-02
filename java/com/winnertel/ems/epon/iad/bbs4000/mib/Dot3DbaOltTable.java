@@ -43,34 +43,34 @@ public class Dot3DbaOltTable extends SnmpMibBean
 				".1.3.6.1.2.1.2.2.1.1", ISnmpConstant.INTEGER));
 		initProperty(utsDot3DbaOltModuleId,
 				new SnmpMibBeanProperty(utsDot3DbaOltModuleId,
-						".1.3.6.1.4.1.41355.1800.2.3.1.4.1.1.1.1",
+						".1.3.6.1.4.1.45121.1800.2.3.1.4.1.1.1.1",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3DbaOltPortId, new SnmpMibBeanProperty(
-				utsDot3DbaOltPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.4.1.1.1.2",
+				utsDot3DbaOltPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.4.1.1.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3DbaOltAlgorithm,
 				new SnmpMibBeanProperty(utsDot3DbaOltAlgorithm,
-						".1.3.6.1.4.1.41355.1800.2.3.1.4.1.1.1.3",
+						".1.3.6.1.4.1.45121.1800.2.3.1.4.1.1.1.3",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3DbaOltDiscoverySize,
 				new SnmpMibBeanProperty(utsDot3DbaOltDiscoverySize,
-						".1.3.6.1.4.1.41355.1800.2.3.1.4.1.1.1.4",
+						".1.3.6.1.4.1.45121.1800.2.3.1.4.1.1.1.4",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3DbaOltDiscoveryFreq,
 				new SnmpMibBeanProperty(utsDot3DbaOltDiscoveryFreq,
-						".1.3.6.1.4.1.41355.1800.2.3.1.4.1.1.1.5",
+						".1.3.6.1.4.1.45121.1800.2.3.1.4.1.1.1.5",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3DbaOltCycleSize,
 				new SnmpMibBeanProperty(utsDot3DbaOltCycleSize,
-						".1.3.6.1.4.1.41355.1800.2.3.1.4.1.1.1.6",
+						".1.3.6.1.4.1.45121.1800.2.3.1.4.1.1.1.6",
 						ISnmpConstant.INTEGER));
 //		initProperty(utsDot3DbaOltPlatoCycleSize,
 //				new SnmpMibBeanProperty(utsDot3DbaOltPlatoCycleSize,
-//						".1.3.6.1.4.1.41355.1800.2.3.1.4.1.1.1.7",
+//						".1.3.6.1.4.1.45121.1800.2.3.1.4.1.1.1.7",
 //						ISnmpConstant.INTEGER));
 //		initProperty(utsDot3DbaOltPlatoDiscoveryFreq,
 //				new SnmpMibBeanProperty(utsDot3DbaOltPlatoDiscoveryFreq,
-//						".1.3.6.1.4.1.41355.1800.2.3.1.4.1.1.1.8",
+//						".1.3.6.1.4.1.45121.1800.2.3.1.4.1.1.1.8",
 //						ISnmpConstant.INTEGER));
 
 	}

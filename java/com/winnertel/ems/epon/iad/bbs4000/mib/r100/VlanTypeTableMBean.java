@@ -25,15 +25,15 @@ public class VlanTypeTableMBean extends SnmpMibBean {
 
 	protected void init() {
 		initProperty(vlanTypeNewSVLAN, new SnmpMibBeanProperty(
-				vlanTypeNewSVLAN, ".1.3.6.1.4.1.41355.1.3.10.5.2.24.1.1",
+				vlanTypeNewSVLAN, ".1.3.6.1.4.1.45121.1.3.10.5.2.24.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(vlanTypeNewCVLAN, new SnmpMibBeanProperty(
-				vlanTypeNewCVLAN, ".1.3.6.1.4.1.41355.1.3.10.5.2.24.1.2",
+				vlanTypeNewCVLAN, ".1.3.6.1.4.1.45121.1.3.10.5.2.24.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(vlanType, new SnmpMibBeanProperty(vlanType,
-				".1.3.6.1.4.1.41355.1.3.10.5.2.24.1.3", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1.3.10.5.2.24.1.3", ISnmpConstant.INTEGER));
 		initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-				".1.3.6.1.4.1.41355.1.3.10.5.2.24.1.4", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1.3.10.5.2.24.1.4", ISnmpConstant.INTEGER));
 
 	}
 

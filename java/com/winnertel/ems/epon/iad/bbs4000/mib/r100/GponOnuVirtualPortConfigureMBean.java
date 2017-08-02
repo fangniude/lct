@@ -35,22 +35,22 @@ public class GponOnuVirtualPortConfigureMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(onuVirtualPortCfgSlotNo, new SnmpMibBeanProperty(onuVirtualPortCfgSlotNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.6.1.1", ISnmpConstant.INTEGER));
-        initProperty(onuVirtualPortCfgPortNo, new SnmpMibBeanProperty(onuVirtualPortCfgPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.6.1.2", ISnmpConstant.INTEGER));
-        initProperty(onuVirtualPortCfgLogicalPortNo, new SnmpMibBeanProperty(onuVirtualPortCfgLogicalPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.6.1.3", ISnmpConstant.INTEGER));
-        initProperty(onuVirtualPortCfgVirtualPortNo, new SnmpMibBeanProperty(onuVirtualPortCfgVirtualPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.6.1.4", ISnmpConstant.INTEGER));
-        initProperty(onuVirtualPortCfgAdministrativeState, new SnmpMibBeanProperty(onuVirtualPortCfgAdministrativeState, ".1.3.6.1.4.1.41355.1.3.10.5.1.6.1.5", ISnmpConstant.INTEGER));
-        initProperty(onuVirtualPortCfgOperationalState, new SnmpMibBeanProperty(onuVirtualPortCfgOperationalState, ".1.3.6.1.4.1.41355.1.3.10.5.1.6.1.6", ISnmpConstant.INTEGER));
-        initProperty(onuVirtualPortCfgTcontIndex, new SnmpMibBeanProperty(onuVirtualPortCfgTcontIndex, ".1.3.6.1.4.1.41355.1.3.10.5.1.6.1.7", ISnmpConstant.GAUGE));
-        //initProperty(onuVirtualPortCfgMacLimit, new SnmpMibBeanProperty(onuVirtualPortCfgMacLimit, ".1.3.6.1.4.1.41355.1.3.10.5.1.6.1.8", ISnmpConstant.GAUGE));
-        initProperty(onuVirtualPortCfgoltVLANTranslationProfileIndex, new SnmpMibBeanProperty(onuVirtualPortCfgoltVLANTranslationProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.1.6.1.8", ISnmpConstant.GAUGE));
-        initProperty(onuVirtualPortCfgOltGEMPortNo, new SnmpMibBeanProperty(onuVirtualPortCfgOltGEMPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.6.1.9", ISnmpConstant.GAUGE));
-        initProperty(onuVirtualPortCfgOltAllocID, new SnmpMibBeanProperty(onuVirtualPortCfgOltAllocID, ".1.3.6.1.4.1.41355.1.3.10.5.1.6.1.10", ISnmpConstant.GAUGE));
-        initProperty(onuVirtualPortCfgOnuMACFilterProfileIndex, new SnmpMibBeanProperty(onuVirtualPortCfgOnuMACFilterProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.1.6.1.11", ISnmpConstant.GAUGE));
-        initProperty(onuVirtualPortCfgOnuMACFilterPreassignProfileIndex, new SnmpMibBeanProperty(onuVirtualPortCfgOnuMACFilterPreassignProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.1.6.1.12", ISnmpConstant.GAUGE));
-        //initProperty(onuVirtualPortCfgOnuVlanFilterProfileIndex, new SnmpMibBeanProperty(onuVirtualPortCfgOnuVlanFilterProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.1.6.1.14", ISnmpConstant.GAUGE)); //(Reserved)
+        initProperty(onuVirtualPortCfgSlotNo, new SnmpMibBeanProperty(onuVirtualPortCfgSlotNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.6.1.1", ISnmpConstant.INTEGER));
+        initProperty(onuVirtualPortCfgPortNo, new SnmpMibBeanProperty(onuVirtualPortCfgPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.6.1.2", ISnmpConstant.INTEGER));
+        initProperty(onuVirtualPortCfgLogicalPortNo, new SnmpMibBeanProperty(onuVirtualPortCfgLogicalPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.6.1.3", ISnmpConstant.INTEGER));
+        initProperty(onuVirtualPortCfgVirtualPortNo, new SnmpMibBeanProperty(onuVirtualPortCfgVirtualPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.6.1.4", ISnmpConstant.INTEGER));
+        initProperty(onuVirtualPortCfgAdministrativeState, new SnmpMibBeanProperty(onuVirtualPortCfgAdministrativeState, ".1.3.6.1.4.1.45121.1.3.10.5.1.6.1.5", ISnmpConstant.INTEGER));
+        initProperty(onuVirtualPortCfgOperationalState, new SnmpMibBeanProperty(onuVirtualPortCfgOperationalState, ".1.3.6.1.4.1.45121.1.3.10.5.1.6.1.6", ISnmpConstant.INTEGER));
+        initProperty(onuVirtualPortCfgTcontIndex, new SnmpMibBeanProperty(onuVirtualPortCfgTcontIndex, ".1.3.6.1.4.1.45121.1.3.10.5.1.6.1.7", ISnmpConstant.GAUGE));
+        //initProperty(onuVirtualPortCfgMacLimit, new SnmpMibBeanProperty(onuVirtualPortCfgMacLimit, ".1.3.6.1.4.1.45121.1.3.10.5.1.6.1.8", ISnmpConstant.GAUGE));
+        initProperty(onuVirtualPortCfgoltVLANTranslationProfileIndex, new SnmpMibBeanProperty(onuVirtualPortCfgoltVLANTranslationProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.1.6.1.8", ISnmpConstant.GAUGE));
+        initProperty(onuVirtualPortCfgOltGEMPortNo, new SnmpMibBeanProperty(onuVirtualPortCfgOltGEMPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.6.1.9", ISnmpConstant.GAUGE));
+        initProperty(onuVirtualPortCfgOltAllocID, new SnmpMibBeanProperty(onuVirtualPortCfgOltAllocID, ".1.3.6.1.4.1.45121.1.3.10.5.1.6.1.10", ISnmpConstant.GAUGE));
+        initProperty(onuVirtualPortCfgOnuMACFilterProfileIndex, new SnmpMibBeanProperty(onuVirtualPortCfgOnuMACFilterProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.1.6.1.11", ISnmpConstant.GAUGE));
+        initProperty(onuVirtualPortCfgOnuMACFilterPreassignProfileIndex, new SnmpMibBeanProperty(onuVirtualPortCfgOnuMACFilterPreassignProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.1.6.1.12", ISnmpConstant.GAUGE));
+        //initProperty(onuVirtualPortCfgOnuVlanFilterProfileIndex, new SnmpMibBeanProperty(onuVirtualPortCfgOnuVlanFilterProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.1.6.1.14", ISnmpConstant.GAUGE)); //(Reserved)
 
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.1.6.1.13", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.1.6.1.13", ISnmpConstant.INTEGER));
     }
 
     public Integer getOnuVirtualPortCfgSlotNo() {

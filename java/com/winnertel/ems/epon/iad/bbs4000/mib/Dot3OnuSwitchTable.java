@@ -28,16 +28,16 @@ public class Dot3OnuSwitchTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3OnuSwitchModuleId, new SnmpMibBeanProperty(utsDot3OnuSwitchModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.3.1.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuSwitchPortId, new SnmpMibBeanProperty(utsDot3OnuSwitchPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.3.1.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuSwitchLlid, new SnmpMibBeanProperty(utsDot3OnuSwitchLlid, ".1.3.6.1.4.1.41355.1800.2.3.1.2.3.1.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuSwitchMngStatus, new SnmpMibBeanProperty(utsDot3OnuSwitchMngStatus, ".1.3.6.1.4.1.41355.1800.2.3.1.2.3.1.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuSwitchIpAddress, new SnmpMibBeanProperty(utsDot3OnuSwitchIpAddress, ".1.3.6.1.4.1.41355.1800.2.3.1.2.3.1.1.5", ISnmpConstant.IP_ADDRESS));
-        initProperty(utsDot3OnuSwtichType, new SnmpMibBeanProperty(utsDot3OnuSwtichType, ".1.3.6.1.4.1.41355.1800.2.3.1.2.3.1.1.6", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuSwitchFirmwareVer, new SnmpMibBeanProperty(utsDot3OnuSwitchFirmwareVer, ".1.3.6.1.4.1.41355.1800.2.3.1.2.3.1.1.7", ISnmpConstant.STRING));
-        initProperty(utsDot3OnuSwitchMacAddr, new SnmpMibBeanProperty(utsDot3OnuSwitchMacAddr, ".1.3.6.1.4.1.41355.1800.2.3.1.2.3.1.1.8", ISnmpConstant.MAC_ADDRESS));
-        initProperty(utsDot3OnuSwitchMngVlan, new SnmpMibBeanProperty(utsDot3OnuSwitchMngVlan, ".1.3.6.1.4.1.41355.1800.2.3.1.2.3.1.1.9", ISnmpConstant.INTEGER));
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.3.1.2.3.1.1.10", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuSwitchModuleId, new SnmpMibBeanProperty(utsDot3OnuSwitchModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.3.1.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuSwitchPortId, new SnmpMibBeanProperty(utsDot3OnuSwitchPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.3.1.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuSwitchLlid, new SnmpMibBeanProperty(utsDot3OnuSwitchLlid, ".1.3.6.1.4.1.45121.1800.2.3.1.2.3.1.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuSwitchMngStatus, new SnmpMibBeanProperty(utsDot3OnuSwitchMngStatus, ".1.3.6.1.4.1.45121.1800.2.3.1.2.3.1.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuSwitchIpAddress, new SnmpMibBeanProperty(utsDot3OnuSwitchIpAddress, ".1.3.6.1.4.1.45121.1800.2.3.1.2.3.1.1.5", ISnmpConstant.IP_ADDRESS));
+        initProperty(utsDot3OnuSwtichType, new SnmpMibBeanProperty(utsDot3OnuSwtichType, ".1.3.6.1.4.1.45121.1800.2.3.1.2.3.1.1.6", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuSwitchFirmwareVer, new SnmpMibBeanProperty(utsDot3OnuSwitchFirmwareVer, ".1.3.6.1.4.1.45121.1800.2.3.1.2.3.1.1.7", ISnmpConstant.STRING));
+        initProperty(utsDot3OnuSwitchMacAddr, new SnmpMibBeanProperty(utsDot3OnuSwitchMacAddr, ".1.3.6.1.4.1.45121.1800.2.3.1.2.3.1.1.8", ISnmpConstant.MAC_ADDRESS));
+        initProperty(utsDot3OnuSwitchMngVlan, new SnmpMibBeanProperty(utsDot3OnuSwitchMngVlan, ".1.3.6.1.4.1.45121.1800.2.3.1.2.3.1.1.9", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.3.1.2.3.1.1.10", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsDot3OnuSwitchModuleId() {

@@ -27,20 +27,20 @@ public class OnuVlanTypeTable extends SnmpMibBean {
 
     protected void init() {
         initProperty(onuVlanTypeSlotNo, new SnmpMibBeanProperty(onuVlanTypeSlotNo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.1.1.1", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.1.1.1", ISnmpConstant.INTEGER));
         initProperty(onuVlanTypePortNo, new SnmpMibBeanProperty(onuVlanTypePortNo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.1.1.2", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.1.1.2", ISnmpConstant.INTEGER));
         initProperty(onuVlanTypeLogicalPortNo, new SnmpMibBeanProperty(onuVlanTypeLogicalPortNo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.1.1.3", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.1.1.3", ISnmpConstant.INTEGER));
         initProperty(onuVlanTypeVirtualPortNo, new SnmpMibBeanProperty(onuVlanTypeVirtualPortNo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.1.1.4", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.1.1.4", ISnmpConstant.INTEGER));
         initProperty(onuVlanTypeNewSVLAN, new SnmpMibBeanProperty(onuVlanTypeNewSVLAN,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.1.1.5", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.1.1.5", ISnmpConstant.INTEGER));
         initProperty(onuVlanTypeNewCVLAN, new SnmpMibBeanProperty(onuVlanTypeNewCVLAN,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.1.1.6", ISnmpConstant.INTEGER));
-        initProperty(onuVlanType, new SnmpMibBeanProperty(onuVlanType, ".1.3.6.1.4.1.41355.1.3.10.5.1000.1.1.7",
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.1.1.6", ISnmpConstant.INTEGER));
+        initProperty(onuVlanType, new SnmpMibBeanProperty(onuVlanType, ".1.3.6.1.4.1.45121.1.3.10.5.1000.1.1.7",
                 ISnmpConstant.INTEGER));
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.1000.1.1.100",
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.1000.1.1.100",
                 ISnmpConstant.INTEGER));
 
     }

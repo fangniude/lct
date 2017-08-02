@@ -33,21 +33,21 @@ public class LinkAggregation extends SnmpMibBean
 	{
 		initProperty(utsLagExtDot3adAggGroupId, new SnmpMibBeanProperty(
 				utsLagExtDot3adAggGroupId,
-				".1.3.6.1.4.1.41355.1800.2.2.1.2.1.1", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.2.1.2.1.1", ISnmpConstant.INTEGER));
 		initProperty(utsLagExtDot3adAggName, new SnmpMibBeanProperty(
-				utsLagExtDot3adAggName, ".1.3.6.1.4.1.41355.1800.2.2.1.2.1.2",
+				utsLagExtDot3adAggName, ".1.3.6.1.4.1.45121.1800.2.2.1.2.1.2",
 				ISnmpConstant.STRING));
 		initProperty(utsLagExtDot3adAggPerLinkSpeed, new SnmpMibBeanProperty(
 				utsLagExtDot3adAggPerLinkSpeed,
-				".1.3.6.1.4.1.41355.1800.2.2.1.2.1.3", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.2.1.2.1.3", ISnmpConstant.INTEGER));
 		initProperty(utsLagExtDot3adAggPortListPorts, new SnmpMibBeanProperty(
 				utsLagExtDot3adAggPortListPorts,
-				".1.3.6.1.4.1.41355.1800.2.2.1.2.1.4", ISnmpConstant.OCTETS));
+				".1.3.6.1.4.1.45121.1800.2.2.1.2.1.4", ISnmpConstant.OCTETS));
 		initProperty(utsLagExtDot3adAggRtag, new SnmpMibBeanProperty(
-				utsLagExtDot3adAggRtag, ".1.3.6.1.4.1.41355.1800.2.2.1.2.1.6",
+				utsLagExtDot3adAggRtag, ".1.3.6.1.4.1.45121.1800.2.2.1.2.1.6",
 				ISnmpConstant.INTEGER));
 		initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-				".1.3.6.1.4.1.41355.1800.2.2.1.2.1.9", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.2.1.2.1.9", ISnmpConstant.INTEGER));
 
 	}
 

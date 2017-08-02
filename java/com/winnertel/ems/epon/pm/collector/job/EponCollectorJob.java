@@ -115,7 +115,7 @@ public class EponCollectorJob implements Job
 
       if(measType.startsWith("OLTThroughput"))
       {
-        oids = new String[]{".1.3.6.1.4.1.41355.1800.4.2.1.1.1.1.86", ".1.3.6.1.4.1.41355.1800.4.2.1.1.1.1.87"};
+        oids = new String[]{".1.3.6.1.4.1.45121.1800.4.2.1.1.1.1.86", ".1.3.6.1.4.1.45121.1800.4.2.1.1.1.1.87"};
         //retrieve all the data from NE.
         String[][] oidValues = snmpTarget.getTable(oids);
         indices = snmpTarget.getMibIndexes();
@@ -160,8 +160,8 @@ public class EponCollectorJob implements Job
         {
           indices[i] = "" + PmUtil.generateIfIndex((String)measInstances.get(i));
 
-          oids = new String[]{".1.3.6.1.4.1.41355.1800.4.2.1.1.1.1.86." + indices[i], ".1.3.6.1.4.1.41355.1800.4.2.1.1.1.1.87." + indices[i],
-                              ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.5." + indices[i], ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.27." + indices[i]};
+          oids = new String[]{".1.3.6.1.4.1.45121.1800.4.2.1.1.1.1.86." + indices[i], ".1.3.6.1.4.1.45121.1800.4.2.1.1.1.1.87." + indices[i],
+                              ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.5." + indices[i], ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.27." + indices[i]};
 
           String[] oidValue = snmpTarget.getValues(oids);
 

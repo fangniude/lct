@@ -25,11 +25,11 @@ public class GponOltMultiGroupToMultiVlanMapMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(oltMultiGrouptoMultiVlanMapIndex, new SnmpMibBeanProperty(oltMultiGrouptoMultiVlanMapIndex, ".1.3.6.1.4.1.41355.1.3.10.5.2.16.1.1", ISnmpConstant.GAUGE));
-        initProperty(oltMultiGrouptoMultiVlanMapMulticastGroupAddressStart, new SnmpMibBeanProperty(oltMultiGrouptoMultiVlanMapMulticastGroupAddressStart, ".1.3.6.1.4.1.41355.1.3.10.5.2.16.1.2", ISnmpConstant.IP_ADDRESS));
-        initProperty(oltMultiGrouptoMultiVlanMapMulticastGroupAddressStop, new SnmpMibBeanProperty(oltMultiGrouptoMultiVlanMapMulticastGroupAddressStop, ".1.3.6.1.4.1.41355.1.3.10.5.2.16.1.3", ISnmpConstant.IP_ADDRESS));
-        initProperty(oltMultiGrouptoMultiVlanMapVlanID, new SnmpMibBeanProperty(oltMultiGrouptoMultiVlanMapVlanID, ".1.3.6.1.4.1.41355.1.3.10.5.2.16.1.4", ISnmpConstant.INTEGER));
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.2.16.1.5", ISnmpConstant.INTEGER));
+        initProperty(oltMultiGrouptoMultiVlanMapIndex, new SnmpMibBeanProperty(oltMultiGrouptoMultiVlanMapIndex, ".1.3.6.1.4.1.45121.1.3.10.5.2.16.1.1", ISnmpConstant.GAUGE));
+        initProperty(oltMultiGrouptoMultiVlanMapMulticastGroupAddressStart, new SnmpMibBeanProperty(oltMultiGrouptoMultiVlanMapMulticastGroupAddressStart, ".1.3.6.1.4.1.45121.1.3.10.5.2.16.1.2", ISnmpConstant.IP_ADDRESS));
+        initProperty(oltMultiGrouptoMultiVlanMapMulticastGroupAddressStop, new SnmpMibBeanProperty(oltMultiGrouptoMultiVlanMapMulticastGroupAddressStop, ".1.3.6.1.4.1.45121.1.3.10.5.2.16.1.3", ISnmpConstant.IP_ADDRESS));
+        initProperty(oltMultiGrouptoMultiVlanMapVlanID, new SnmpMibBeanProperty(oltMultiGrouptoMultiVlanMapVlanID, ".1.3.6.1.4.1.45121.1.3.10.5.2.16.1.4", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.2.16.1.5", ISnmpConstant.INTEGER));
     }
 
     public Long getOltMultiGrouptoMultiVlanMapIndex() {

@@ -40,17 +40,17 @@ public class OnuStaticMultiGroupProfTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(onuStaticMultiGroupProfIndex1, new SnmpMibBeanProperty(onuStaticMultiGroupProfIndex1, ".1.3.6.1.4.1.41355.1.3.10.5.2.18.1.1", ISnmpConstant.GAUGE));
-        initProperty(onuStaticMultiGroupProfIndex2, new SnmpMibBeanProperty(onuStaticMultiGroupProfIndex2, ".1.3.6.1.4.1.41355.1.3.10.5.2.18.1.2", ISnmpConstant.GAUGE));
-        initProperty(onuStaticMultiGroupProfileName, new SnmpMibBeanProperty(onuStaticMultiGroupProfileName, ".1.3.6.1.4.1.41355.1.3.10.5.2.18.1.3", ISnmpConstant.STRING));
-        initProperty(onuStaticMultiGroupProfMulticastGemPortNo, new SnmpMibBeanProperty(onuStaticMultiGroupProfMulticastGemPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.2.18.1.4", ISnmpConstant.GAUGE));
-        initProperty(onuStaticMultiGroupProfMulticastVLANID, new SnmpMibBeanProperty(onuStaticMultiGroupProfMulticastVLANID, ".1.3.6.1.4.1.41355.1.3.10.5.2.18.1.5", ISnmpConstant.GAUGE));
-        initProperty(onuStaticMultiGroupProfSourceIPAddress, new SnmpMibBeanProperty(onuStaticMultiGroupProfSourceIPAddress, ".1.3.6.1.4.1.41355.1.3.10.5.2.18.1.6", ISnmpConstant.IP_ADDRESS));
-        initProperty(onuStaticMultiGroupProfMulticastGroupAddressStart, new SnmpMibBeanProperty(onuStaticMultiGroupProfMulticastGroupAddressStart, ".1.3.6.1.4.1.41355.1.3.10.5.2.18.1.7", ISnmpConstant.IP_ADDRESS));
-        initProperty(onuStaticMultiGroupProfMulticastGroupAddressStop, new SnmpMibBeanProperty(onuStaticMultiGroupProfMulticastGroupAddressStop, ".1.3.6.1.4.1.41355.1.3.10.5.2.18.1.8", ISnmpConstant.IP_ADDRESS));
-        initProperty(onuStaticMultiGroupProfImputedGroupBandwidth, new SnmpMibBeanProperty(onuStaticMultiGroupProfImputedGroupBandwidth, ".1.3.6.1.4.1.41355.1.3.10.5.2.18.1.9", ISnmpConstant.GAUGE));
+        initProperty(onuStaticMultiGroupProfIndex1, new SnmpMibBeanProperty(onuStaticMultiGroupProfIndex1, ".1.3.6.1.4.1.45121.1.3.10.5.2.18.1.1", ISnmpConstant.GAUGE));
+        initProperty(onuStaticMultiGroupProfIndex2, new SnmpMibBeanProperty(onuStaticMultiGroupProfIndex2, ".1.3.6.1.4.1.45121.1.3.10.5.2.18.1.2", ISnmpConstant.GAUGE));
+        initProperty(onuStaticMultiGroupProfileName, new SnmpMibBeanProperty(onuStaticMultiGroupProfileName, ".1.3.6.1.4.1.45121.1.3.10.5.2.18.1.3", ISnmpConstant.STRING));
+        initProperty(onuStaticMultiGroupProfMulticastGemPortNo, new SnmpMibBeanProperty(onuStaticMultiGroupProfMulticastGemPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.2.18.1.4", ISnmpConstant.GAUGE));
+        initProperty(onuStaticMultiGroupProfMulticastVLANID, new SnmpMibBeanProperty(onuStaticMultiGroupProfMulticastVLANID, ".1.3.6.1.4.1.45121.1.3.10.5.2.18.1.5", ISnmpConstant.GAUGE));
+        initProperty(onuStaticMultiGroupProfSourceIPAddress, new SnmpMibBeanProperty(onuStaticMultiGroupProfSourceIPAddress, ".1.3.6.1.4.1.45121.1.3.10.5.2.18.1.6", ISnmpConstant.IP_ADDRESS));
+        initProperty(onuStaticMultiGroupProfMulticastGroupAddressStart, new SnmpMibBeanProperty(onuStaticMultiGroupProfMulticastGroupAddressStart, ".1.3.6.1.4.1.45121.1.3.10.5.2.18.1.7", ISnmpConstant.IP_ADDRESS));
+        initProperty(onuStaticMultiGroupProfMulticastGroupAddressStop, new SnmpMibBeanProperty(onuStaticMultiGroupProfMulticastGroupAddressStop, ".1.3.6.1.4.1.45121.1.3.10.5.2.18.1.8", ISnmpConstant.IP_ADDRESS));
+        initProperty(onuStaticMultiGroupProfImputedGroupBandwidth, new SnmpMibBeanProperty(onuStaticMultiGroupProfImputedGroupBandwidth, ".1.3.6.1.4.1.45121.1.3.10.5.2.18.1.9", ISnmpConstant.GAUGE));
 
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.2.18.1.10", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.2.18.1.10", ISnmpConstant.INTEGER));
     }
 
     public Long getOnuStaticMultiGroupProfIndex1() {

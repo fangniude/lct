@@ -29,17 +29,17 @@ public class MduSnmpConfTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3Onu2CtcMduSnmpConfModuleId, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.33.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcMduSnmpConfDeviceId, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.33.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcMduSnmpConfPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.33.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcMduSnmpConfLogicalPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.33.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcMduSnmpConfSnmpVer, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfSnmpVer, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.33.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcMduSnmpConfTrapHost, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfTrapHost, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.33.1.6", ISnmpConstant.STRING));
-        initProperty(utsDot3Onu2CtcMduSnmpConfTrapPort, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfTrapPort, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.33.1.7", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcMduSnmpConfSnmpPort, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfSnmpPort, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.33.1.8", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcMduSnmpConfSecurityName, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfSecurityName, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.33.1.9", ISnmpConstant.STRING));
-        initProperty(utsDot3Onu2CtcMduSnmpConfCommunityRead, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfCommunityRead, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.33.1.10", ISnmpConstant.STRING));
-        initProperty(utsDot3Onu2CtcMduSnmpConfCommunityWrite, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfCommunityWrite, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.33.1.11", ISnmpConstant.STRING));
+        initProperty(utsDot3Onu2CtcMduSnmpConfModuleId, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.33.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcMduSnmpConfDeviceId, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.33.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcMduSnmpConfPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.33.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcMduSnmpConfLogicalPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.33.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcMduSnmpConfSnmpVer, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfSnmpVer, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.33.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcMduSnmpConfTrapHost, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfTrapHost, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.33.1.6", ISnmpConstant.STRING));
+        initProperty(utsDot3Onu2CtcMduSnmpConfTrapPort, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfTrapPort, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.33.1.7", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcMduSnmpConfSnmpPort, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfSnmpPort, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.33.1.8", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcMduSnmpConfSecurityName, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfSecurityName, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.33.1.9", ISnmpConstant.STRING));
+        initProperty(utsDot3Onu2CtcMduSnmpConfCommunityRead, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfCommunityRead, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.33.1.10", ISnmpConstant.STRING));
+        initProperty(utsDot3Onu2CtcMduSnmpConfCommunityWrite, new SnmpMibBeanProperty(utsDot3Onu2CtcMduSnmpConfCommunityWrite, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.33.1.11", ISnmpConstant.STRING));
 
     }
 

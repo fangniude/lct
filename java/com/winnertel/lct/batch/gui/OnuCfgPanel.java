@@ -139,7 +139,7 @@ public class OnuCfgPanel extends UPanel {
     }
 
     protected void initForm() {
-        idField.setDefaultString("1-1");
+        idField.setDefaultString("1/1/1");
         upMaxBwF.setValueScope(1, 1000000);
         upMaxBwF.setDefaultValue(100000);
         downMaxBwF.setValueScope(1, 1000000);
@@ -148,9 +148,9 @@ public class OnuCfgPanel extends UPanel {
         upCommittedBwF.setDefaultValue(0);
         downCommittedBwF.setValueScope(0, 1000000);
         upCommittedBwF.setDefaultValue(0);
-        upBurstSizeF.setValueScope(1, 1000);
+        upBurstSizeF.setValueScope(1, 100000);
         upBurstSizeF.setDefaultValue(1000);
-        downBurstSizeF.setValueScope(1, 1000);
+        downBurstSizeF.setValueScope(1, 100000);
         downBurstSizeF.setDefaultValue(1000);
         upPriorityF.setValueScope(0, 10);
         upPriorityF.setDefaultValue(0);
@@ -192,7 +192,7 @@ public class OnuCfgPanel extends UPanel {
             }
 
             idField.setEditable(false);
-            idField.setValue(m.getId());
+            idField.setValue(TransformUtils.disableOnuId(m.getId()));
             setNullableIntField(upMaxBwF, m.getUpMaxBw());
             setNullableIntField(downMaxBwF, m.getDownMaxBw());
             setNullableIntField(upCommittedBwF, m.getUpCommittedBw());
@@ -215,7 +215,7 @@ public class OnuCfgPanel extends UPanel {
         OnuCfgBean model;
         if (SnmpAction.IType.ADD.equals(fCommand)) {
             model = new OnuCfgBean(new XmlProxy(fApplication.getSnmpProxy().getTargetHost()));
-            model.setId(String.valueOf(idField.getValue()));
+            model.setId(TransformUtils.saveOnuId(idField.getValue()));
             setModel(model);
         } else {
             model = (OnuCfgBean) getModel();

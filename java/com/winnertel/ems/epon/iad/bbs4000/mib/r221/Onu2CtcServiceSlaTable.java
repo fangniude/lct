@@ -35,22 +35,22 @@ public class Onu2CtcServiceSlaTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3Onu2CtcServiceSlaModuleId, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.40.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcServiceSlaDeviceId, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.40.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcServiceSlaPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.40.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcServiceSlaLogicalPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.40.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcServiceSlaModuleId, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.40.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcServiceSlaDeviceId, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.40.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcServiceSlaPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.40.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcServiceSlaLogicalPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.40.1.4", ISnmpConstant.INTEGER));
 
-        initProperty(utsDot3Onu2CtcServiceSlaOperation, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaOperation, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.40.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcServiceSlaBestEffortSchedule, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaBestEffortSchedule, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.40.1.6", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcServiceSlaHighPriorityValue, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaHighPriorityValue, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.40.1.7", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcServiceSlaCycleLength, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaCycleLength, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.40.1.8", ISnmpConstant.INTEGER));
-        //initProperty(utsDot3Onu2CtcServiceSlaServiceNumbers, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaServiceNumbers, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.40.1.9", ISnmpConstant.INTEGER));
-        //initProperty(utsDot3Onu2CtcServiceSlaQueue, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaQueue, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.40.1.10", ISnmpConstant.STRING));
-        initProperty(utsDot3Onu2CtcServiceSlaFixPktSize, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaFixPktSize, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.40.1.11", ISnmpConstant.OCTETS));
-        initProperty(utsDot3Onu2CtcServiceSlaFixBw, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaFixBw, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.40.1.12", ISnmpConstant.OCTETS));
-        initProperty(utsDot3Onu2CtcServiceSlaGuaranteedBw, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaGuaranteedBw, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.40.1.13", ISnmpConstant.OCTETS));
-        initProperty(utsDot3Onu2CtcServiceSlaBestEffortBw, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaBestEffortBw, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.40.1.14", ISnmpConstant.OCTETS));
-        initProperty(utsDot3Onu2CtcServiceSlaWrrWeight, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaWrrWeight, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.40.1.15", ISnmpConstant.OCTETS));
+        initProperty(utsDot3Onu2CtcServiceSlaOperation, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaOperation, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.40.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcServiceSlaBestEffortSchedule, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaBestEffortSchedule, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.40.1.6", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcServiceSlaHighPriorityValue, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaHighPriorityValue, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.40.1.7", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcServiceSlaCycleLength, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaCycleLength, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.40.1.8", ISnmpConstant.INTEGER));
+        //initProperty(utsDot3Onu2CtcServiceSlaServiceNumbers, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaServiceNumbers, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.40.1.9", ISnmpConstant.INTEGER));
+        //initProperty(utsDot3Onu2CtcServiceSlaQueue, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaQueue, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.40.1.10", ISnmpConstant.STRING));
+        initProperty(utsDot3Onu2CtcServiceSlaFixPktSize, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaFixPktSize, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.40.1.11", ISnmpConstant.OCTETS));
+        initProperty(utsDot3Onu2CtcServiceSlaFixBw, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaFixBw, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.40.1.12", ISnmpConstant.OCTETS));
+        initProperty(utsDot3Onu2CtcServiceSlaGuaranteedBw, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaGuaranteedBw, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.40.1.13", ISnmpConstant.OCTETS));
+        initProperty(utsDot3Onu2CtcServiceSlaBestEffortBw, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaBestEffortBw, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.40.1.14", ISnmpConstant.OCTETS));
+        initProperty(utsDot3Onu2CtcServiceSlaWrrWeight, new SnmpMibBeanProperty(utsDot3Onu2CtcServiceSlaWrrWeight, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.40.1.15", ISnmpConstant.OCTETS));
     }
 
     public Integer getUtsDot3Onu2CtcServiceSlaModuleId() {

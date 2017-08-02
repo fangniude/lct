@@ -17,7 +17,7 @@ public class OnuSwitchTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsDot3OnuSwitchIpAddress, new SnmpMibBeanProperty(utsDot3OnuSwitchIpAddress, ".1.3.6.1.4.1.41355.1800.2.3.1.2.3.1.1.5", ISnmpConstant.IP_ADDRESS));
+    initProperty(utsDot3OnuSwitchIpAddress, new SnmpMibBeanProperty(utsDot3OnuSwitchIpAddress, ".1.3.6.1.4.1.45121.1800.2.3.1.2.3.1.1.5", ISnmpConstant.IP_ADDRESS));
   }
 
   public Integer getUtsDot3OnuSwitchModuleId() {

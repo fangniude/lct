@@ -32,19 +32,19 @@ public class Dot3Onu2CtcEtherPortRateTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3OnuModuleId, new SnmpMibBeanProperty(utsDot3OnuModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.11.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuDeviceId, new SnmpMibBeanProperty(utsDot3OnuDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.11.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuPortId, new SnmpMibBeanProperty(utsDot3OnuPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.11.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.11.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuEtherPortIndex, new SnmpMibBeanProperty(utsDot3OnuEtherPortIndex, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.11.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuEtherPortPause, new SnmpMibBeanProperty(utsDot3OnuEtherPortPause, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.11.1.31", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuEtherPortPolicingEnable, new SnmpMibBeanProperty(utsDot3OnuEtherPortPolicingEnable, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.11.1.32", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuEtherPortPolicingCIR, new SnmpMibBeanProperty(utsDot3OnuEtherPortPolicingCIR, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.11.1.33", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuEtherPortPolicingCBS, new SnmpMibBeanProperty(utsDot3OnuEtherPortPolicingCBS, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.11.1.34", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuEtherPortPolicingEBS, new SnmpMibBeanProperty(utsDot3OnuEtherPortPolicingEBS, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.11.1.35", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuEtherPortDSPolicingEnable, new SnmpMibBeanProperty(utsDot3OnuEtherPortDSPolicingEnable, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.11.1.47", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuEtherPortDSPolicingCIR, new SnmpMibBeanProperty(utsDot3OnuEtherPortDSPolicingCIR, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.11.1.48", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuEtherPortDSPolicingPIR, new SnmpMibBeanProperty(utsDot3OnuEtherPortDSPolicingPIR, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.11.1.49", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuModuleId, new SnmpMibBeanProperty(utsDot3OnuModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.11.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuDeviceId, new SnmpMibBeanProperty(utsDot3OnuDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.11.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuPortId, new SnmpMibBeanProperty(utsDot3OnuPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.11.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.11.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuEtherPortIndex, new SnmpMibBeanProperty(utsDot3OnuEtherPortIndex, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.11.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuEtherPortPause, new SnmpMibBeanProperty(utsDot3OnuEtherPortPause, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.11.1.31", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuEtherPortPolicingEnable, new SnmpMibBeanProperty(utsDot3OnuEtherPortPolicingEnable, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.11.1.32", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuEtherPortPolicingCIR, new SnmpMibBeanProperty(utsDot3OnuEtherPortPolicingCIR, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.11.1.33", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuEtherPortPolicingCBS, new SnmpMibBeanProperty(utsDot3OnuEtherPortPolicingCBS, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.11.1.34", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuEtherPortPolicingEBS, new SnmpMibBeanProperty(utsDot3OnuEtherPortPolicingEBS, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.11.1.35", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuEtherPortDSPolicingEnable, new SnmpMibBeanProperty(utsDot3OnuEtherPortDSPolicingEnable, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.11.1.47", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuEtherPortDSPolicingCIR, new SnmpMibBeanProperty(utsDot3OnuEtherPortDSPolicingCIR, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.11.1.48", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuEtherPortDSPolicingPIR, new SnmpMibBeanProperty(utsDot3OnuEtherPortDSPolicingPIR, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.11.1.49", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsDot3OnuModuleId() {

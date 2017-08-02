@@ -35,71 +35,71 @@ public class HistoryAlarmTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsBbsAlarmHistorySequenceNumber, new SnmpMibBeanProperty(
 				utsBbsAlarmHistorySequenceNumber,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.3.1.1",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.3.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsBbsAlarmHistoryProbableCause, new SnmpMibBeanProperty(
 				utsBbsAlarmHistoryProbableCause,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.3.1.2",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.3.1.2",
 				ISnmpConstant.COUNTER));
 		initProperty(utsBbsAlarmHistorySpecificProblem,
 				new SnmpMibBeanProperty(utsBbsAlarmHistorySpecificProblem,
-						".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.3.1.3",
+						".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.3.1.3",
 						ISnmpConstant.COUNTER));
 		initProperty(utsBbsAlarmHistoryEntityType, new SnmpMibBeanProperty(
 				utsBbsAlarmHistoryEntityType,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.3.1.4",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.3.1.4",
 				ISnmpConstant.INTEGER));
 		initProperty(utsBbsAlarmHistoryEntityInstance, new SnmpMibBeanProperty(
 				utsBbsAlarmHistoryEntityInstance,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.3.1.5",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.3.1.5",
 				ISnmpConstant.COUNTER));
 		initProperty(utsBbsAlarmHistoryFirstOccurenceTime,
 				new SnmpMibBeanProperty(utsBbsAlarmHistoryFirstOccurenceTime,
-						".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.3.1.6",
+						".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.3.1.6",
 						ISnmpConstant.OCTETS));
 		initProperty(utsBbsAlarmHistoryClass, new SnmpMibBeanProperty(
 				utsBbsAlarmHistoryClass,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.3.1.7",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.3.1.7",
 				ISnmpConstant.INTEGER));
 		initProperty(utsBbsAlarmHistorySeverity, new SnmpMibBeanProperty(
 				utsBbsAlarmHistorySeverity,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.3.1.8",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.3.1.8",
 				ISnmpConstant.INTEGER));
 		initProperty(utsBbsAlarmHistoryCorrelationId, new SnmpMibBeanProperty(
 				utsBbsAlarmHistoryCorrelationId,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.3.1.9",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.3.1.9",
 				ISnmpConstant.COUNTER));
 		initProperty(utsBbsAlarmHistoryAdditionalText, new SnmpMibBeanProperty(
 				utsBbsAlarmHistoryAdditionalText,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.3.1.10",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.3.1.10",
 				ISnmpConstant.STRING));
 		initProperty(utsBbsAlarmHistoryRaisingNumber, new SnmpMibBeanProperty(
 				utsBbsAlarmHistoryRaisingNumber,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.3.1.11",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.3.1.11",
 				ISnmpConstant.INTEGER));
 		initProperty(utsBbsAlarmHistoryLastOccurenceTime,
 				new SnmpMibBeanProperty(utsBbsAlarmHistoryLastOccurenceTime,
-						".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.3.1.12",
+						".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.3.1.12",
 						ISnmpConstant.OCTETS));
 		initProperty(utsBbsAlarmHistoryRepeats, new SnmpMibBeanProperty(
 				utsBbsAlarmHistoryRepeats,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.3.1.13",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.3.1.13",
 				ISnmpConstant.COUNTER));
 		initProperty(utsBbsAlarmHistoryVersionId, new SnmpMibBeanProperty(
 				utsBbsAlarmHistoryVersionId,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.3.1.14",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.3.1.14",
 				ISnmpConstant.COUNTER));
 		initProperty(utsBbsAlarmHistorySessionId, new SnmpMibBeanProperty(
 				utsBbsAlarmHistorySessionId,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.3.1.15",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.3.1.15",
 				ISnmpConstant.COUNTER));
 		initProperty(utsBbsAlarmHistoryClearTime, new SnmpMibBeanProperty(
 				utsBbsAlarmHistoryClearTime,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.3.1.16",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.3.1.16",
 				ISnmpConstant.OCTETS));
 		initProperty(utsBbsAlarmHistoryClearFlag, new SnmpMibBeanProperty(
 				utsBbsAlarmHistoryClearFlag,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.2.3.1.17",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.2.3.1.17",
 				ISnmpConstant.INTEGER));
 
 	}

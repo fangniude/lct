@@ -29,17 +29,17 @@ public class Dot3Onu2CtcClassifiAppTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3OnuClassifiAppModuleId, new SnmpMibBeanProperty(utsDot3OnuClassifiAppModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.16.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuClassifiAppDeviceId, new SnmpMibBeanProperty(utsDot3OnuClassifiAppDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.16.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuClassifiAppPortId, new SnmpMibBeanProperty(utsDot3OnuClassifiAppPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.16.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuClassifiAppLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuClassifiAppLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.16.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuClassifiAppPortIndex, new SnmpMibBeanProperty(utsDot3OnuClassifiAppPortIndex, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.16.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuClassifiAppClassId, new SnmpMibBeanProperty(utsDot3OnuClassifiAppClassId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.16.1.6", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuClassifiAppFieldId, new SnmpMibBeanProperty(utsDot3OnuClassifiAppFieldId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.16.1.7", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuClassifiAppPrecedence, new SnmpMibBeanProperty(utsDot3OnuClassifiAppPrecedence, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.16.1.8", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuClassifiAppQueueMapped, new SnmpMibBeanProperty(utsDot3OnuClassifiAppQueueMapped, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.16.1.9", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuClassifiAppPriMark, new SnmpMibBeanProperty(utsDot3OnuClassifiAppPriMark, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.16.1.10", ISnmpConstant.INTEGER));
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.16.1.11", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuClassifiAppModuleId, new SnmpMibBeanProperty(utsDot3OnuClassifiAppModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.16.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuClassifiAppDeviceId, new SnmpMibBeanProperty(utsDot3OnuClassifiAppDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.16.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuClassifiAppPortId, new SnmpMibBeanProperty(utsDot3OnuClassifiAppPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.16.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuClassifiAppLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuClassifiAppLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.16.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuClassifiAppPortIndex, new SnmpMibBeanProperty(utsDot3OnuClassifiAppPortIndex, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.16.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuClassifiAppClassId, new SnmpMibBeanProperty(utsDot3OnuClassifiAppClassId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.16.1.6", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuClassifiAppFieldId, new SnmpMibBeanProperty(utsDot3OnuClassifiAppFieldId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.16.1.7", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuClassifiAppPrecedence, new SnmpMibBeanProperty(utsDot3OnuClassifiAppPrecedence, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.16.1.8", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuClassifiAppQueueMapped, new SnmpMibBeanProperty(utsDot3OnuClassifiAppQueueMapped, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.16.1.9", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuClassifiAppPriMark, new SnmpMibBeanProperty(utsDot3OnuClassifiAppPriMark, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.16.1.10", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.16.1.11", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsDot3OnuClassifiAppModuleId() {

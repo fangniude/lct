@@ -34,36 +34,36 @@ public class EponArpTable extends SnmpMibBean {
 
     protected void init() {
         initProperty(utsEponArpIpAddress, new SnmpMibBeanProperty(
-                utsEponArpIpAddress, ".1.3.6.1.4.1.41355.1800.2.2.1.6.8.1.1.1",
+                utsEponArpIpAddress, ".1.3.6.1.4.1.45121.1800.2.2.1.6.8.1.1.1",
                 ISnmpConstant.STRING));
         initProperty(utsEponArpMacAddress, new SnmpMibBeanProperty(
-                utsEponArpMacAddress, ".1.3.6.1.4.1.41355.1800.2.2.1.6.8.1.1.2",
+                utsEponArpMacAddress, ".1.3.6.1.4.1.45121.1800.2.2.1.6.8.1.1.2",
                 ISnmpConstant.MAC_ADDRESS));
         initProperty(utsEponArpIntfType, new SnmpMibBeanProperty(
-                utsEponArpIntfType, ".1.3.6.1.4.1.41355.1800.2.2.1.6.8.1.1.3",
+                utsEponArpIntfType, ".1.3.6.1.4.1.45121.1800.2.2.1.6.8.1.1.3",
                 ISnmpConstant.INTEGER));
         initProperty(utsEponArpModuleId, new SnmpMibBeanProperty(
-                utsEponArpModuleId, ".1.3.6.1.4.1.41355.1800.2.2.1.6.8.1.1.4",
+                utsEponArpModuleId, ".1.3.6.1.4.1.45121.1800.2.2.1.6.8.1.1.4",
                 ISnmpConstant.INTEGER));
         initProperty(utsEponArpPortId, new SnmpMibBeanProperty(
-                utsEponArpPortId, ".1.3.6.1.4.1.41355.1800.2.2.1.6.8.1.1.5",
+                utsEponArpPortId, ".1.3.6.1.4.1.45121.1800.2.2.1.6.8.1.1.5",
                 ISnmpConstant.INTEGER));
         initProperty(utsEponArpLinkAggGroupId,
                 new SnmpMibBeanProperty(utsEponArpLinkAggGroupId,
-                        ".1.3.6.1.4.1.41355.1800.2.2.1.6.8.1.1.6",
+                        ".1.3.6.1.4.1.45121.1800.2.2.1.6.8.1.1.6",
                         ISnmpConstant.INTEGER));
         initProperty(utsEponArpVlanId, new SnmpMibBeanProperty(
-                utsEponArpVlanId, ".1.3.6.1.4.1.41355.1800.2.2.1.6.8.1.1.7",
+                utsEponArpVlanId, ".1.3.6.1.4.1.45121.1800.2.2.1.6.8.1.1.7",
                 ISnmpConstant.INTEGER));
         initProperty(utsEponArpItemType, new SnmpMibBeanProperty(
-                utsEponArpItemType, ".1.3.6.1.4.1.41355.1800.2.2.1.6.8.1.1.8",
+                utsEponArpItemType, ".1.3.6.1.4.1.45121.1800.2.2.1.6.8.1.1.8",
                 ISnmpConstant.INTEGER));
         initProperty(utsEponArpVlanSubVlanId,
                 new SnmpMibBeanProperty(utsEponArpVlanSubVlanId,
-                        ".1.3.6.1.4.1.41355.1800.2.2.1.6.8.1.1.9",
+                        ".1.3.6.1.4.1.45121.1800.2.2.1.6.8.1.1.9",
                         ISnmpConstant.INTEGER));
         initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-                ".1.3.6.1.4.1.41355.1800.2.2.1.6.8.1.1.10",
+                ".1.3.6.1.4.1.45121.1800.2.2.1.6.8.1.1.10",
                 ISnmpConstant.INTEGER));
 
     }

@@ -41,16 +41,16 @@ public class OnuLoopbackMBean extends SnmpMibBean {
 
 		initProperty(utsDot3OnuRegistrationState, new SnmpMibBeanProperty(
 				utsDot3OnuRegistrationState,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.1.1.4",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.1.1.4",
 				ISnmpConstant.INTEGER));
 
 		initProperty(utsDot3OnuPonLoopbackTestStatus, new SnmpMibBeanProperty(
 				utsDot3OnuPonLoopbackTestStatus,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.1.1.17",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.1.1.17",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3OnuPonLoopbackTestVlanId, new SnmpMibBeanProperty(
 				utsDot3OnuPonLoopbackTestVlanId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.1.1.18",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.1.1.18",
 				ISnmpConstant.INTEGER));
 	}
 

@@ -33,15 +33,15 @@ public class OnuCtcMulticastTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsDot3OnuMCastModuleId, new SnmpMibBeanProperty(utsDot3OnuMCastModuleId, ".1.3.6.1.4.1.41355.1800.2.4.3.1.6.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuMCastDeviceId, new SnmpMibBeanProperty(utsDot3OnuMCastDeviceId, ".1.3.6.1.4.1.41355.1800.2.4.3.1.6.1.2", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuMCastPortId, new SnmpMibBeanProperty(utsDot3OnuMCastPortId, ".1.3.6.1.4.1.41355.1800.2.4.3.1.6.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuMCastLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuMCastLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.4.3.1.6.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuMCastEtherPortId, new SnmpMibBeanProperty(utsDot3OnuMCastEtherPortId, ".1.3.6.1.4.1.41355.1800.2.4.3.1.6.1.5", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuMCastGroup, new SnmpMibBeanProperty(utsDot3OnuMCastGroup, ".1.3.6.1.4.1.41355.1800.2.4.3.1.6.1.6", ISnmpConstant.STRING));
-    initProperty(utsDot3OnuMCastMVlan, new SnmpMibBeanProperty(utsDot3OnuMCastMVlan, ".1.3.6.1.4.1.41355.1800.2.4.3.1.6.1.7", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuMCastAuthType, new SnmpMibBeanProperty(utsDot3OnuMCastAuthType, ".1.3.6.1.4.1.41355.1800.2.4.3.1.6.1.8", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuMCastDuration, new SnmpMibBeanProperty(utsDot3OnuMCastDuration, ".1.3.6.1.4.1.41355.1800.2.4.3.1.6.1.9", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuMCastModuleId, new SnmpMibBeanProperty(utsDot3OnuMCastModuleId, ".1.3.6.1.4.1.45121.1800.2.4.3.1.6.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuMCastDeviceId, new SnmpMibBeanProperty(utsDot3OnuMCastDeviceId, ".1.3.6.1.4.1.45121.1800.2.4.3.1.6.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuMCastPortId, new SnmpMibBeanProperty(utsDot3OnuMCastPortId, ".1.3.6.1.4.1.45121.1800.2.4.3.1.6.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuMCastLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuMCastLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.4.3.1.6.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuMCastEtherPortId, new SnmpMibBeanProperty(utsDot3OnuMCastEtherPortId, ".1.3.6.1.4.1.45121.1800.2.4.3.1.6.1.5", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuMCastGroup, new SnmpMibBeanProperty(utsDot3OnuMCastGroup, ".1.3.6.1.4.1.45121.1800.2.4.3.1.6.1.6", ISnmpConstant.STRING));
+    initProperty(utsDot3OnuMCastMVlan, new SnmpMibBeanProperty(utsDot3OnuMCastMVlan, ".1.3.6.1.4.1.45121.1800.2.4.3.1.6.1.7", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuMCastAuthType, new SnmpMibBeanProperty(utsDot3OnuMCastAuthType, ".1.3.6.1.4.1.45121.1800.2.4.3.1.6.1.8", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuMCastDuration, new SnmpMibBeanProperty(utsDot3OnuMCastDuration, ".1.3.6.1.4.1.45121.1800.2.4.3.1.6.1.9", ISnmpConstant.INTEGER));
 
   }
 

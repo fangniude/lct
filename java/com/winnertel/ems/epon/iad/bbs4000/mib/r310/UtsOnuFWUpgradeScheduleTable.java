@@ -28,12 +28,12 @@ public class UtsOnuFWUpgradeScheduleTable extends SnmpMibBean {
     }
 
     protected void init() {
-	initProperty(utsOnuFWUpgradeScheduleTime, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleTime, ".1.3.6.1.4.1.41355.1800.2.3.1.7.13.1.1", ISnmpConstant.OCTETS));
-	initProperty(utsOnuFWUpgradeScheduleDuration, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleDuration, ".1.3.6.1.4.1.41355.1800.2.3.1.7.13.1.2", ISnmpConstant.INTEGER));
-	initProperty(utsOnuFWUpgradeScheduleOnuList, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleOnuList, ".1.3.6.1.4.1.41355.1800.2.3.1.7.13.1.3", ISnmpConstant.OCTETS));
-	initProperty(utsOnuFWUpgradeScheduleUpgradeAction, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleUpgradeAction, ".1.3.6.1.4.1.41355.1800.2.3.1.7.13.1.4", ISnmpConstant.INTEGER));
-	initProperty(utsOnuFWUpgradeScheduleCurrentStatus, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleCurrentStatus, ".1.3.6.1.4.1.41355.1800.2.3.1.7.13.1.5", ISnmpConstant.STRING));
-	initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.3.1.7.13.1.100", ISnmpConstant.INTEGER));
+	initProperty(utsOnuFWUpgradeScheduleTime, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleTime, ".1.3.6.1.4.1.45121.1800.2.3.1.7.13.1.1", ISnmpConstant.OCTETS));
+	initProperty(utsOnuFWUpgradeScheduleDuration, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleDuration, ".1.3.6.1.4.1.45121.1800.2.3.1.7.13.1.2", ISnmpConstant.INTEGER));
+	initProperty(utsOnuFWUpgradeScheduleOnuList, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleOnuList, ".1.3.6.1.4.1.45121.1800.2.3.1.7.13.1.3", ISnmpConstant.OCTETS));
+	initProperty(utsOnuFWUpgradeScheduleUpgradeAction, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleUpgradeAction, ".1.3.6.1.4.1.45121.1800.2.3.1.7.13.1.4", ISnmpConstant.INTEGER));
+	initProperty(utsOnuFWUpgradeScheduleCurrentStatus, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleCurrentStatus, ".1.3.6.1.4.1.45121.1800.2.3.1.7.13.1.5", ISnmpConstant.STRING));
+	initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.3.1.7.13.1.100", ISnmpConstant.INTEGER));
 
     }
 

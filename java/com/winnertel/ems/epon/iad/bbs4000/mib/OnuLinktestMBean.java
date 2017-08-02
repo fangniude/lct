@@ -67,71 +67,71 @@ public class OnuLinktestMBean extends SnmpMibBean {
 
 		initProperty(utsDot3OnuOAMLinktestTotalFrame, new SnmpMibBeanProperty(
 				utsDot3OnuOAMLinktestTotalFrame,
-				".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.23",
+				".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.23",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3OnuOAMLinktestFrameSize, new SnmpMibBeanProperty(
 				utsDot3OnuOAMLinktestFrameSize,
-				".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.24",
+				".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.24",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3OnuOAMLinktestDelayMeasureEnable,
 				new SnmpMibBeanProperty(
 						utsDot3OnuOAMLinktestDelayMeasureEnable,
-						".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.25",
+						".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.25",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OnuOAMLinktestVLANTagEnable,
 				new SnmpMibBeanProperty(utsDot3OnuOAMLinktestVLANTagEnable,
-						".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.26",
+						".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.26",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OnuOAMLinktestVLANTagPriority,
 				new SnmpMibBeanProperty(utsDot3OnuOAMLinktestVLANTagPriority,
-						".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.27",
+						".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.27",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OnuOAMLinktestVLANTagVID, new SnmpMibBeanProperty(
 				utsDot3OnuOAMLinktestVLANTagVID,
-				".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.28",
+				".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.28",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3OnuOAMLinktestFrameSent, new SnmpMibBeanProperty(
 				utsDot3OnuOAMLinktestFrameSent,
-				".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.29",
+				".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.29",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3OnuOAMLinktestFrameReceived,
 				new SnmpMibBeanProperty(utsDot3OnuOAMLinktestFrameReceived,
-						".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.30",
+						".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.30",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OnuOAMLinktestErrFrameReceived,
 				new SnmpMibBeanProperty(utsDot3OnuOAMLinktestErrFrameReceived,
-						".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.31",
+						".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.31",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OnuOAMLinktestMinDelay, new SnmpMibBeanProperty(
 				utsDot3OnuOAMLinktestMinDelay,
-				".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.32",
+				".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.32",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3OnuOAMLinktestMeanDelay, new SnmpMibBeanProperty(
 				utsDot3OnuOAMLinktestMeanDelay,
-				".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.33",
+				".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.33",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3OnuOAMLinktestMaxDelay, new SnmpMibBeanProperty(
 				utsDot3OnuOAMLinktestMaxDelay,
-				".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.34",
+				".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.34",
 				ISnmpConstant.INTEGER));
 
 		initProperty(utsDot3OnuOAMStartTest, new SnmpMibBeanProperty(
 				utsDot3OnuOAMStartTest,
-				".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.38",
+				".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.38",
 				ISnmpConstant.INTEGER));
 		
 		initProperty(utsDot3OnuOAMLinkTestStatus, new SnmpMibBeanProperty(
 				utsDot3OnuOAMLinkTestStatus,
-				".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.39",
+				".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.39",
 				ISnmpConstant.INTEGER));
 		
 		initProperty(utsDot3OnuOAMLinkTestStationId, new SnmpMibBeanProperty(
 				utsDot3OnuOAMLinkTestStationId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.40",
+				".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.40",
 				ISnmpConstant.STRING));
 		initProperty(utsDot3OnuOAMLinkTestResultStr, new SnmpMibBeanProperty(
 				utsDot3OnuOAMLinkTestResultStr,
-				".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.41",
+				".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.41",
 				ISnmpConstant.STRING));
 	}
 

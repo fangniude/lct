@@ -24,8 +24,8 @@ public class PerfStaOperGroup extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsPerfStaClearAll, new SnmpMibBeanProperty(utsPerfStaClearAll, ".1.3.6.1.4.1.41355.1800.4.4.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsPerfStaPMEnable, new SnmpMibBeanProperty(utsPerfStaPMEnable, ".1.3.6.1.4.1.41355.1800.4.4.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsPerfStaClearAll, new SnmpMibBeanProperty(utsPerfStaClearAll, ".1.3.6.1.4.1.45121.1800.4.4.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsPerfStaPMEnable, new SnmpMibBeanProperty(utsPerfStaPMEnable, ".1.3.6.1.4.1.45121.1800.4.4.1.2", ISnmpConstant.INTEGER));
   }
 
   public Integer getUtsPerfStaClearAll() {

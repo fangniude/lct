@@ -29,13 +29,13 @@ public class Onu2CtcCombinedFeaturesFaxCfg extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcCombinedFeaturesModuleId, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcCombinedFeaturesModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.1", ISnmpConstant.INTEGER));
-        initProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcCombinedFeaturesDeviceId, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcCombinedFeaturesDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.2", ISnmpConstant.INTEGER));
-        initProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcCombinedFeaturesPortId, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcCombinedFeaturesPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.3", ISnmpConstant.INTEGER));
-        initProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcCombinedFeaturesLogicalPortId, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcCombinedFeaturesLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.4", ISnmpConstant.INTEGER));
+        initProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcCombinedFeaturesModuleId, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcCombinedFeaturesModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.1", ISnmpConstant.INTEGER));
+        initProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcCombinedFeaturesDeviceId, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcCombinedFeaturesDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.2", ISnmpConstant.INTEGER));
+        initProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcCombinedFeaturesPortId, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcCombinedFeaturesPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.3", ISnmpConstant.INTEGER));
+        initProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcCombinedFeaturesLogicalPortId, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcCombinedFeaturesLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.4", ISnmpConstant.INTEGER));
 
-        initProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcFaxmodemCfgT38Mode, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcFaxmodemCfgT38Mode, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.301", ISnmpConstant.INTEGER));
-        initProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcFaxmodemCfgCtrl, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcFaxmodemCfgCtrl, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.302", ISnmpConstant.INTEGER));
+        initProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcFaxmodemCfgT38Mode, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcFaxmodemCfgT38Mode, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.301", ISnmpConstant.INTEGER));
+        initProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcFaxmodemCfgCtrl, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesFaxCfg.utsDot3Onu2CtcFaxmodemCfgCtrl, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.302", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsDot3Onu2CtcCombinedFeaturesModuleId() {

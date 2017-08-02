@@ -90,7 +90,7 @@ public class EponTCAJob implements Job
       try
       {
         String index = jobInfo.oid.substring(jobInfo.oid.lastIndexOf(".") + 1, jobInfo.oid.length());
-        String oid = ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.5." + index;
+        String oid = ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.5." + index;
         String bandwidth = snmpTarget.getValue(oid);
 
         if(measItem.equals("utsPonIfExtStatsPonOctetsTxThroughput"))

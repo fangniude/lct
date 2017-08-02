@@ -23,14 +23,14 @@ public class UtsDot3Onu2AlarmProfileTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsDot3Onu2AlarmProfileIndex, new SnmpMibBeanProperty(
 				utsDot3Onu2AlarmProfileIndex,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.43.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.43.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2AlarmProfileName,
 				new SnmpMibBeanProperty(utsDot3Onu2AlarmProfileName,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.43.1.2",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.43.1.2",
 						ISnmpConstant.STRING));
 		initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.43.1.100",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.43.1.100",
 				ISnmpConstant.INTEGER));
 
 	}

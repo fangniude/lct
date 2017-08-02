@@ -35,20 +35,20 @@ public class Dot3OltOpmOltDataTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3OltOpmOltDataModuleID, new SnmpMibBeanProperty(utsDot3OltOpmOltDataModuleID, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OltOpmOltDataPortId, new SnmpMibBeanProperty(utsDot3OltOpmOltDataPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OltOpmOltDataTemperature, new SnmpMibBeanProperty(utsDot3OltOpmOltDataTemperature, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OltOpmOltDataVoltage, new SnmpMibBeanProperty(utsDot3OltOpmOltDataVoltage, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OltOpmOltDataBiasCurrent, new SnmpMibBeanProperty(utsDot3OltOpmOltDataBiasCurrent, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OltOpmOltDataTxPower, new SnmpMibBeanProperty(utsDot3OltOpmOltDataTxPower, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.6", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OltOpmVoltageMinThreshold, new SnmpMibBeanProperty(utsDot3OltOpmVoltageMinThreshold, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.7", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OltOpmVoltageMaxThreshold, new SnmpMibBeanProperty(utsDot3OltOpmVoltageMaxThreshold, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.8", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OltOpmBiasCurrentMinThreshold, new SnmpMibBeanProperty(utsDot3OltOpmBiasCurrentMinThreshold, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.9", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OltOpmBiasCurrentMaxThreshold, new SnmpMibBeanProperty(utsDot3OltOpmBiasCurrentMaxThreshold, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.10", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OltOpmTemperatureMinThreshold, new SnmpMibBeanProperty(utsDot3OltOpmTemperatureMinThreshold, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.11", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OltOpmTemperatureMaxThreshold, new SnmpMibBeanProperty(utsDot3OltOpmTemperatureMaxThreshold, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.12", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OltOpmTxPowerMinThreshold, new SnmpMibBeanProperty(utsDot3OltOpmTxPowerMinThreshold, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.13", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OltOpmTxPowerMaxThreshold, new SnmpMibBeanProperty(utsDot3OltOpmTxPowerMaxThreshold, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.14", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OltOpmOltDataModuleID, new SnmpMibBeanProperty(utsDot3OltOpmOltDataModuleID, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OltOpmOltDataPortId, new SnmpMibBeanProperty(utsDot3OltOpmOltDataPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OltOpmOltDataTemperature, new SnmpMibBeanProperty(utsDot3OltOpmOltDataTemperature, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OltOpmOltDataVoltage, new SnmpMibBeanProperty(utsDot3OltOpmOltDataVoltage, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OltOpmOltDataBiasCurrent, new SnmpMibBeanProperty(utsDot3OltOpmOltDataBiasCurrent, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OltOpmOltDataTxPower, new SnmpMibBeanProperty(utsDot3OltOpmOltDataTxPower, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.6", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OltOpmVoltageMinThreshold, new SnmpMibBeanProperty(utsDot3OltOpmVoltageMinThreshold, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.7", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OltOpmVoltageMaxThreshold, new SnmpMibBeanProperty(utsDot3OltOpmVoltageMaxThreshold, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.8", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OltOpmBiasCurrentMinThreshold, new SnmpMibBeanProperty(utsDot3OltOpmBiasCurrentMinThreshold, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.9", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OltOpmBiasCurrentMaxThreshold, new SnmpMibBeanProperty(utsDot3OltOpmBiasCurrentMaxThreshold, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.10", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OltOpmTemperatureMinThreshold, new SnmpMibBeanProperty(utsDot3OltOpmTemperatureMinThreshold, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.11", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OltOpmTemperatureMaxThreshold, new SnmpMibBeanProperty(utsDot3OltOpmTemperatureMaxThreshold, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.12", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OltOpmTxPowerMinThreshold, new SnmpMibBeanProperty(utsDot3OltOpmTxPowerMinThreshold, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.13", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OltOpmTxPowerMaxThreshold, new SnmpMibBeanProperty(utsDot3OltOpmTxPowerMaxThreshold, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.14", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsDot3OltOpmOltDataModuleID() {

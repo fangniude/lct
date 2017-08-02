@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
-<Product name="OLT1000" path="com/winnertel/ems/epon/iad/bbs1000/resource/">
+<Product name="OLT" path="com/winnertel/ems/epon/iad/bbs1000/resource/">
     <CommunitySelector class=""/>
 
     <DeviceManager version="1.0.0" path="r341/">

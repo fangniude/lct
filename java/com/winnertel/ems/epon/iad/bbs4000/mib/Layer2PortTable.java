@@ -48,37 +48,37 @@ public class Layer2PortTable extends SnmpMibBean
 		initProperty(ifIndex, new SnmpMibBeanProperty(ifIndex,
 				".1.3.6.1.2.1.2.2.1.1", ISnmpConstant.INTEGER));
 		initProperty(utsEthIfExtModuleId, new SnmpMibBeanProperty(
-				utsEthIfExtModuleId, ".1.3.6.1.4.1.41355.1800.2.2.1.1.1.1",
+				utsEthIfExtModuleId, ".1.3.6.1.4.1.45121.1800.2.2.1.1.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsEthIfExtPortId, new SnmpMibBeanProperty(
-				utsEthIfExtPortId, ".1.3.6.1.4.1.41355.1800.2.2.1.1.1.2",
+				utsEthIfExtPortId, ".1.3.6.1.4.1.45121.1800.2.2.1.1.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsEthIfExtLinkAggGroupId, new SnmpMibBeanProperty(
 				utsEthIfExtLinkAggGroupId,
-				".1.3.6.1.4.1.41355.1800.2.2.1.1.1.3", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.2.1.1.1.3", ISnmpConstant.INTEGER));
 		initProperty(utsEthIfExtLoopbackPortId, new SnmpMibBeanProperty(
 				utsEthIfExtLoopbackPortId,
-				".1.3.6.1.4.1.41355.1800.2.2.1.1.1.4", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.2.1.1.1.4", ISnmpConstant.INTEGER));
 		initProperty(utsEthIfExtVlanId, new SnmpMibBeanProperty(
-				utsEthIfExtVlanId, ".1.3.6.1.4.1.41355.1800.2.2.1.1.1.5",
+				utsEthIfExtVlanId, ".1.3.6.1.4.1.45121.1800.2.2.1.1.1.5",
 				ISnmpConstant.INTEGER));
 		initProperty(utsEthIfExtPortType, new SnmpMibBeanProperty(
-				utsEthIfExtPortType, ".1.3.6.1.4.1.41355.1800.2.2.1.1.1.6",
+				utsEthIfExtPortType, ".1.3.6.1.4.1.45121.1800.2.2.1.1.1.6",
 				ISnmpConstant.INTEGER));
 		initProperty(utsEthIfExtIpAddress, new SnmpMibBeanProperty(
-				utsEthIfExtIpAddress, ".1.3.6.1.4.1.41355.1800.2.2.1.1.1.7",
+				utsEthIfExtIpAddress, ".1.3.6.1.4.1.45121.1800.2.2.1.1.1.7",
 				ISnmpConstant.IP_ADDRESS));
 		initProperty(utsEthIfExtIpNetmask, new SnmpMibBeanProperty(
-				utsEthIfExtIpNetmask, ".1.3.6.1.4.1.41355.1800.2.2.1.1.1.8",
+				utsEthIfExtIpNetmask, ".1.3.6.1.4.1.45121.1800.2.2.1.1.1.8",
 				ISnmpConstant.IP_ADDRESS));
 		initProperty(utsEthIfExtSwitchMode, new SnmpMibBeanProperty(
-				utsEthIfExtSwitchMode, ".1.3.6.1.4.1.41355.1800.2.2.1.1.1.9",
+				utsEthIfExtSwitchMode, ".1.3.6.1.4.1.45121.1800.2.2.1.1.1.9",
 				ISnmpConstant.INTEGER));
 		initProperty(utsEthIfExtAdminStatus, new SnmpMibBeanProperty(
-				utsEthIfExtAdminStatus, ".1.3.6.1.4.1.41355.1800.2.2.1.1.1.10",
+				utsEthIfExtAdminStatus, ".1.3.6.1.4.1.45121.1800.2.2.1.1.1.10",
 				ISnmpConstant.INTEGER));
 		initProperty(utsEthIfExtIfIndex, new SnmpMibBeanProperty(
-				utsEthIfExtIfIndex, ".1.3.6.1.4.1.41355.1800.2.2.1.1.1.11",
+				utsEthIfExtIfIndex, ".1.3.6.1.4.1.45121.1800.2.2.1.1.1.11",
 				ISnmpConstant.INTEGER));
 
 	}

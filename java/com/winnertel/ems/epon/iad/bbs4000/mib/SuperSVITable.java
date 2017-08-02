@@ -26,13 +26,13 @@ public class SuperSVITable extends SnmpMibBean
 	protected void init()
 	{
 		initProperty(utsIntfSuperSVIVlanId, new SnmpMibBeanProperty(
-				utsIntfSuperSVIVlanId, ".1.3.6.1.4.1.41355.1800.2.2.1.6.1.1.1",
+				utsIntfSuperSVIVlanId, ".1.3.6.1.4.1.45121.1800.2.2.1.6.1.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsIntfSuperSVIVlanMemberBitmap, new SnmpMibBeanProperty(
 				utsIntfSuperSVIVlanMemberBitmap,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.1.1.2", ISnmpConstant.OCTETS));
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.1.1.2", ISnmpConstant.OCTETS));
 		initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.1.1.3", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.1.1.3", ISnmpConstant.INTEGER));
 
 	}
 

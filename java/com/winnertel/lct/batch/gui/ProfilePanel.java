@@ -39,6 +39,9 @@ public class ProfilePanel extends UPanel {
         onuPanel = (SnmpTablePane) composer.composeSnmpTablePane("ProfileOnuTable_Panel");
         uniPanel = (SnmpTablePane) composer.composeSnmpTablePane("ProfileUniTable_Panel");
 
+        onuPanel.setPreferredSize(new Dimension(600, 200));
+        uniPanel.setPreferredSize(new Dimension(600, 300));
+
 
         NTLayout onuLayout = new NTLayout(1, 1, NTLayout.FILL, NTLayout.CENTER, 5, 5);
         onuLayout.setMargins(6, 10, 6, 10);

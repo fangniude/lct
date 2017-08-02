@@ -52,7 +52,7 @@ public class OnuMacPanel extends UPanel {
     }
 
     protected void initForm() {
-        idField.setDefaultString("1-1");
+        idField.setDefaultString("1/1/1");
     }
 
     public void refresh() {
@@ -66,7 +66,7 @@ public class OnuMacPanel extends UPanel {
                 }
 
                 idField.setEditable(false);
-                idField.setValue(mbean.getId());
+                idField.setValue(TransformUtils.disableOnuId(mbean.getId()));
                 macField.setValue(mbean.getMac());
                 descField.setValue(TransformUtils.fromHex(mbean.getDesc()));
             }
@@ -79,7 +79,7 @@ public class OnuMacPanel extends UPanel {
         OnuMacBean model;
         if (SnmpAction.IType.ADD.equals(fCommand)) {
             model = new OnuMacBean(new XmlProxy(fApplication.getSnmpProxy().getTargetHost()));
-            model.setId(String.valueOf(idField.getValue()));
+            model.setId(TransformUtils.saveOnuId(idField.getValue()));
             setModel(model);
         } else {
             model = (OnuMacBean) getModel();

@@ -28,18 +28,18 @@ public class GeneralConfiguration extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsBBSBPDUTermination, new SnmpMibBeanProperty(utsBBSBPDUTermination, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.15", ISnmpConstant.INTEGER));
-        initProperty(utsBBSSysSoftwareRateLimiting, new SnmpMibBeanProperty(utsBBSSysSoftwareRateLimiting, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.16", ISnmpConstant.INTEGER));
-        //initProperty(utsBBSSysHardwareRateLimiting, new SnmpMibBeanProperty(utsBBSSysHardwareRateLimiting, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.17", ISnmpConstant.INTEGER));
-        initProperty(utsBBSSysCpuUtilityAlarmThresholdTotal, new SnmpMibBeanProperty(utsBBSSysCpuUtilityAlarmThresholdTotal, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.18", ISnmpConstant.INTEGER));
-        initProperty(utsBBSSysCpuUtilityAlarmThresholdPerTask, new SnmpMibBeanProperty(utsBBSSysCpuUtilityAlarmThresholdPerTask, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.19", ISnmpConstant.INTEGER));
-        initProperty(utsBBSSysMemoryUtilityAlarmThreshold, new SnmpMibBeanProperty(utsBBSSysMemoryUtilityAlarmThreshold, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.20", ISnmpConstant.INTEGER));
-        initProperty(utsBBSSysARPAgingTime, new SnmpMibBeanProperty(utsBBSSysARPAgingTime, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.21", ISnmpConstant.INTEGER));
-        initProperty(utsBBSSysMACAgingTime, new SnmpMibBeanProperty(utsBBSSysMACAgingTime, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.22", ISnmpConstant.INTEGER));
-        //initProperty(utsPonSysOltMACAgingTime, new SnmpMibBeanProperty(utsPonSysOltMACAgingTime, ".1.3.6.1.4.1.41355.1800.2.1.1.2.5", ISnmpConstant.INTEGER));
-        initProperty(utsPonSysOlpMode, new SnmpMibBeanProperty(utsPonSysOlpMode, ".1.3.6.1.4.1.41355.1800.2.1.1.2.7", ISnmpConstant.INTEGER));
-        initProperty(utsPonSysDot1adTPID, new SnmpMibBeanProperty(utsPonSysDot1adTPID, ".1.3.6.1.4.1.41355.1800.2.1.1.2.8", ISnmpConstant.INTEGER));
-        initProperty(utsBBSMgmtONUSNumberSwitch, new SnmpMibBeanProperty(utsBBSMgmtONUSNumberSwitch, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.59", ISnmpConstant.INTEGER));
+        initProperty(utsBBSBPDUTermination, new SnmpMibBeanProperty(utsBBSBPDUTermination, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.15", ISnmpConstant.INTEGER));
+        initProperty(utsBBSSysSoftwareRateLimiting, new SnmpMibBeanProperty(utsBBSSysSoftwareRateLimiting, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.16", ISnmpConstant.INTEGER));
+        //initProperty(utsBBSSysHardwareRateLimiting, new SnmpMibBeanProperty(utsBBSSysHardwareRateLimiting, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.17", ISnmpConstant.INTEGER));
+        initProperty(utsBBSSysCpuUtilityAlarmThresholdTotal, new SnmpMibBeanProperty(utsBBSSysCpuUtilityAlarmThresholdTotal, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.18", ISnmpConstant.INTEGER));
+        initProperty(utsBBSSysCpuUtilityAlarmThresholdPerTask, new SnmpMibBeanProperty(utsBBSSysCpuUtilityAlarmThresholdPerTask, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.19", ISnmpConstant.INTEGER));
+        initProperty(utsBBSSysMemoryUtilityAlarmThreshold, new SnmpMibBeanProperty(utsBBSSysMemoryUtilityAlarmThreshold, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.20", ISnmpConstant.INTEGER));
+        initProperty(utsBBSSysARPAgingTime, new SnmpMibBeanProperty(utsBBSSysARPAgingTime, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.21", ISnmpConstant.INTEGER));
+        initProperty(utsBBSSysMACAgingTime, new SnmpMibBeanProperty(utsBBSSysMACAgingTime, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.22", ISnmpConstant.INTEGER));
+        //initProperty(utsPonSysOltMACAgingTime, new SnmpMibBeanProperty(utsPonSysOltMACAgingTime, ".1.3.6.1.4.1.45121.1800.2.1.1.2.5", ISnmpConstant.INTEGER));
+        initProperty(utsPonSysOlpMode, new SnmpMibBeanProperty(utsPonSysOlpMode, ".1.3.6.1.4.1.45121.1800.2.1.1.2.7", ISnmpConstant.INTEGER));
+        initProperty(utsPonSysDot1adTPID, new SnmpMibBeanProperty(utsPonSysDot1adTPID, ".1.3.6.1.4.1.45121.1800.2.1.1.2.8", ISnmpConstant.INTEGER));
+        initProperty(utsBBSMgmtONUSNumberSwitch, new SnmpMibBeanProperty(utsBBSMgmtONUSNumberSwitch, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.59", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsBBSBPDUTermination() {

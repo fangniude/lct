@@ -27,13 +27,13 @@ public class ChassisConfGroup extends SnmpMibBean {
   }
 
   protected void init() {
-      initProperty(utsBBSChassisPwrType, new SnmpMibBeanProperty(utsBBSChassisPwrType, ".1.3.6.1.4.1.41355.1800.2.1.1.4.4.1", ISnmpConstant.INTEGER));
-      initProperty(utsBBSChassisPwrLowSlot, new SnmpMibBeanProperty(utsBBSChassisPwrLowSlot, ".1.3.6.1.4.1.41355.1800.2.1.1.4.4.2", ISnmpConstant.INTEGER));
-      initProperty(utsBBSChassisPwrHighSlot, new SnmpMibBeanProperty(utsBBSChassisPwrHighSlot, ".1.3.6.1.4.1.41355.1800.2.1.1.4.4.3", ISnmpConstant.INTEGER));
-      initProperty(utsBBSChassisInternalPowerStat, new SnmpMibBeanProperty(utsBBSChassisInternalPowerStat, ".1.3.6.1.4.1.41355.1800.2.1.1.4.4.4", ISnmpConstant.INTEGER));
-      initProperty(utsBBSChassisFanTrayStat, new SnmpMibBeanProperty(utsBBSChassisFanTrayStat, ".1.3.6.1.4.1.41355.1800.2.1.1.4.4.5", ISnmpConstant.INTEGER));
-      initProperty(utsBBSChassisTempCur, new SnmpMibBeanProperty(utsBBSChassisTempCur, ".1.3.6.1.4.1.41355.1800.2.1.1.4.4.6", ISnmpConstant.INTEGER));
-      initProperty(utsBBSChassisTempUpLimit, new SnmpMibBeanProperty(utsBBSChassisTempUpLimit, ".1.3.6.1.4.1.41355.1800.2.1.1.4.4.7", ISnmpConstant.INTEGER));
+      initProperty(utsBBSChassisPwrType, new SnmpMibBeanProperty(utsBBSChassisPwrType, ".1.3.6.1.4.1.45121.1800.2.1.1.4.4.1", ISnmpConstant.INTEGER));
+      initProperty(utsBBSChassisPwrLowSlot, new SnmpMibBeanProperty(utsBBSChassisPwrLowSlot, ".1.3.6.1.4.1.45121.1800.2.1.1.4.4.2", ISnmpConstant.INTEGER));
+      initProperty(utsBBSChassisPwrHighSlot, new SnmpMibBeanProperty(utsBBSChassisPwrHighSlot, ".1.3.6.1.4.1.45121.1800.2.1.1.4.4.3", ISnmpConstant.INTEGER));
+      initProperty(utsBBSChassisInternalPowerStat, new SnmpMibBeanProperty(utsBBSChassisInternalPowerStat, ".1.3.6.1.4.1.45121.1800.2.1.1.4.4.4", ISnmpConstant.INTEGER));
+      initProperty(utsBBSChassisFanTrayStat, new SnmpMibBeanProperty(utsBBSChassisFanTrayStat, ".1.3.6.1.4.1.45121.1800.2.1.1.4.4.5", ISnmpConstant.INTEGER));
+      initProperty(utsBBSChassisTempCur, new SnmpMibBeanProperty(utsBBSChassisTempCur, ".1.3.6.1.4.1.45121.1800.2.1.1.4.4.6", ISnmpConstant.INTEGER));
+      initProperty(utsBBSChassisTempUpLimit, new SnmpMibBeanProperty(utsBBSChassisTempUpLimit, ".1.3.6.1.4.1.45121.1800.2.1.1.4.4.7", ISnmpConstant.INTEGER));
   }
 
 

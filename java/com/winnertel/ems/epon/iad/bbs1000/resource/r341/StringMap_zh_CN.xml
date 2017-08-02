@@ -1778,7 +1778,7 @@
     <String key="utsDot3OnuEtherPortPolicingEnable" value="上行带宽使能"/>
     <String key="utsDot3OnuEtherPortVlanMode" value="VLAN模式"/>
     <String key="utsDot3OnuEtherPortVlanTPID" value="VLAN TPID"/>
-    <String key="utsDot3OnuEtherPortVlanTag" value="VLAN"/>
+    <String key="utsDot3OnuEtherPortVlanTag" value="PORT VLAN"/>
     <String key="utsDot3OnuEtherPortVlanTranslation" value="VLAN转换"/>
     <String key="utsDot3OnuEtherPortVlanTranslation" value="VLAN转换[TPID , VLAN]"/>
     <String key="utsDot3OnuEtherPortVlanNaggregationNumber" value="VLAN N:1聚合数"/>
@@ -4032,9 +4032,9 @@
 
     <String key="Onu_Mac" value="ONU MAC绑定" />
 
-    <String key="disableAuth" value="禁用" />
-    <String key="macAuth" value="MAC认证" />
-    <String key="macAuto" value="MAC自动认证" />
+    <String key="disableAuth" value="MAC自由认证" />
+    <String key="macAuth" value="MAC手动绑定" />
+    <String key="macAuto" value="MAC自动绑定" />
     <String key="loidAuth" value="LOID认证" />
     <String key="loidPwd" value="LOID密码认证" />
     <String key="hybridAuth" value="混合认证" />
@@ -4046,5 +4046,9 @@
 
     <String key="ONU_PON_profile_table" value="ONU PON口模板" />
     <String key="ONU_UNI_profile_table" value="ONU 网口模板" />
+
+    <String key="passVlan" value="PASS VLAN" />
+    <String key="upPir" value="上行最大带宽(Kbps)" />
+    <String key="downPir" value="下行最大带宽(Kbps)" />
 
 </StringMap>

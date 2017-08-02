@@ -22,10 +22,10 @@ public class PonBackupMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsSrcPonModuleId, new SnmpMibBeanProperty(utsSrcPonModuleId, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.12.1", ISnmpConstant.INTEGER));
-        initProperty(utsSrcPonPortId, new SnmpMibBeanProperty(utsSrcPonPortId, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.12.2", ISnmpConstant.INTEGER));
-        initProperty(utsBackupPonModuleId, new SnmpMibBeanProperty(utsBackupPonModuleId, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.12.3", ISnmpConstant.INTEGER));
-        initProperty(utsBackupPonPortId, new SnmpMibBeanProperty(utsBackupPonPortId, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.12.4", ISnmpConstant.INTEGER));
+        initProperty(utsSrcPonModuleId, new SnmpMibBeanProperty(utsSrcPonModuleId, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.12.1", ISnmpConstant.INTEGER));
+        initProperty(utsSrcPonPortId, new SnmpMibBeanProperty(utsSrcPonPortId, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.12.2", ISnmpConstant.INTEGER));
+        initProperty(utsBackupPonModuleId, new SnmpMibBeanProperty(utsBackupPonModuleId, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.12.3", ISnmpConstant.INTEGER));
+        initProperty(utsBackupPonPortId, new SnmpMibBeanProperty(utsBackupPonPortId, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.12.4", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsSrcPonModuleId() {

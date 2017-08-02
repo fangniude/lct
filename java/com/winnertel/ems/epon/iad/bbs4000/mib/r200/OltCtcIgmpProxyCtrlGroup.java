@@ -23,7 +23,7 @@ public class OltCtcIgmpProxyCtrlGroup extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsOltCtcIgmpProxyVlan, new SnmpMibBeanProperty(utsOltCtcIgmpProxyVlan, ".1.3.6.1.4.1.41355.1800.2.4.3.1.3.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsOltCtcIgmpProxyVlan, new SnmpMibBeanProperty(utsOltCtcIgmpProxyVlan, ".1.3.6.1.4.1.45121.1800.2.4.3.1.3.1.1", ISnmpConstant.INTEGER));
 
   }
 

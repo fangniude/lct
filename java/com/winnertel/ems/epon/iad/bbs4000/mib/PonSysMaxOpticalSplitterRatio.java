@@ -18,7 +18,7 @@ public class PonSysMaxOpticalSplitterRatio extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsPonSysMaxOpticalSplitterRatio, new SnmpMibBeanProperty(
 				utsPonSysMaxOpticalSplitterRatio,
-				".1.3.6.1.4.1.41355.1800.2.1.1.2.11", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.1.1.2.11", ISnmpConstant.INTEGER));
 	}
 
 	public Integer getUtsPonSysMaxOpticalSplitterRatio() {

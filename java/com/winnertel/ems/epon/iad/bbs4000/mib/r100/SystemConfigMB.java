@@ -30,23 +30,23 @@ public class SystemConfigMB extends SnmpMibBean {
 
   protected void init() {
     initProperty(gponSysCfgFdbAgingTimer, new SnmpMibBeanProperty(
-        gponSysCfgFdbAgingTimer, ".1.3.6.1.4.1.41355.1.3.10.5.1.1.1",
+        gponSysCfgFdbAgingTimer, ".1.3.6.1.4.1.45121.1.3.10.5.1.1.1",
         ISnmpConstant.GAUGE));
     initProperty(gponSysCfgIgmpProxyRoutingMode, new SnmpMibBeanProperty(
-        gponSysCfgIgmpProxyRoutingMode, ".1.3.6.1.4.1.41355.1.3.10.5.1.1.2",
+        gponSysCfgIgmpProxyRoutingMode, ".1.3.6.1.4.1.45121.1.3.10.5.1.1.2",
         ISnmpConstant.INTEGER));
     initProperty(gponSysCfgAuthenticationMethod, new SnmpMibBeanProperty(
-        gponSysCfgAuthenticationMethod, ".1.3.6.1.4.1.41355.1.3.10.5.1.1.3",
+        gponSysCfgAuthenticationMethod, ".1.3.6.1.4.1.45121.1.3.10.5.1.1.3",
         ISnmpConstant.INTEGER));
     initProperty(gponSysCfgEncryptionMode, new SnmpMibBeanProperty(
-        gponSysCfgEncryptionMode, ".1.3.6.1.4.1.41355.1.3.10.5.1.1.4",
+        gponSysCfgEncryptionMode, ".1.3.6.1.4.1.45121.1.3.10.5.1.1.4",
         ISnmpConstant.INTEGER));
     initProperty(gponSysCfgKeyExchangeInterval, new SnmpMibBeanProperty(
-        gponSysCfgKeyExchangeInterval, ".1.3.6.1.4.1.41355.1.3.10.5.1.1.5",
+        gponSysCfgKeyExchangeInterval, ".1.3.6.1.4.1.45121.1.3.10.5.1.1.5",
         ISnmpConstant.GAUGE));
     initProperty(gponSysCfgDownstreamBroadcastGEMPortNo,
         new SnmpMibBeanProperty(gponSysCfgDownstreamBroadcastGEMPortNo,
-            ".1.3.6.1.4.1.41355.1.3.10.5.1.1.6", ISnmpConstant.GAUGE));
+            ".1.3.6.1.4.1.45121.1.3.10.5.1.1.6", ISnmpConstant.GAUGE));
 
   }
 

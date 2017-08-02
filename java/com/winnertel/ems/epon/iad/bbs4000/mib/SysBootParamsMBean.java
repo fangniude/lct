@@ -41,35 +41,35 @@ public class SysBootParamsMBean extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsBBSSysBootMethod, new SnmpMibBeanProperty(
 				utsBBSSysBootMethod,
-				".1.3.6.1.4.1.41355.1800.2.1.1.4.1.2",
+				".1.3.6.1.4.1.45121.1800.2.1.1.4.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsBBSSysBootFileName, new SnmpMibBeanProperty(
 				utsBBSSysBootFileName,
-				".1.3.6.1.4.1.41355.1800.2.1.1.4.1.3",
+				".1.3.6.1.4.1.45121.1800.2.1.1.4.1.3",
 				ISnmpConstant.STRING));
 		initProperty(utsBBSOutBandInterfaceIpAddr, new SnmpMibBeanProperty(
 				utsBBSOutBandInterfaceIpAddr,
-				".1.3.6.1.4.1.41355.1800.2.1.1.4.1.4",
+				".1.3.6.1.4.1.45121.1800.2.1.1.4.1.4",
 				ISnmpConstant.IP_ADDRESS));
 		initProperty(utsBBSOutbandInterfaceIpMask, new SnmpMibBeanProperty(
 				utsBBSOutbandInterfaceIpMask,
-				".1.3.6.1.4.1.41355.1800.2.1.1.4.1.5",
+				".1.3.6.1.4.1.45121.1800.2.1.1.4.1.5",
 				ISnmpConstant.IP_ADDRESS));
 		initProperty(utsBBSOutbandInterfaceNextHop, new SnmpMibBeanProperty(
 				utsBBSOutbandInterfaceNextHop,
-				".1.3.6.1.4.1.41355.1800.2.1.1.4.1.6",
+				".1.3.6.1.4.1.45121.1800.2.1.1.4.1.6",
 				ISnmpConstant.IP_ADDRESS));
 		initProperty(utsBBSBootFTPUserName, new SnmpMibBeanProperty(
 				utsBBSBootFTPUserName,
-				".1.3.6.1.4.1.41355.1800.2.1.1.4.1.7",
+				".1.3.6.1.4.1.45121.1800.2.1.1.4.1.7",
 				ISnmpConstant.STRING));
 		initProperty(utsBBSBootFTPPassword, new SnmpMibBeanProperty(
 				utsBBSBootFTPPassword,
-				".1.3.6.1.4.1.41355.1800.2.1.1.4.1.8",
+				".1.3.6.1.4.1.45121.1800.2.1.1.4.1.8",
 				ISnmpConstant.STRING));
 		initProperty(utsBBSBootFTPServerIpAddress, new SnmpMibBeanProperty(
 				utsBBSBootFTPServerIpAddress,
-				".1.3.6.1.4.1.41355.1800.2.1.1.4.1.9",
+				".1.3.6.1.4.1.45121.1800.2.1.1.4.1.9",
 				ISnmpConstant.IP_ADDRESS));
 	}
 

@@ -31,20 +31,20 @@ public class PONProtectionMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsPonTrunckProtectionGroupId, new SnmpMibBeanProperty(utsPonTrunckProtectionGroupId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.12.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsPonTrunckProtectionName, new SnmpMibBeanProperty(utsPonTrunckProtectionName, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.12.1.2", ISnmpConstant.STRING));
-        //initProperty(utsPonTrunckProtectionPort1ModuleId, new SnmpMibBeanProperty(utsPonTrunckProtectionPort1ModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.12.1.3", ISnmpConstant.INTEGER));
-        //initProperty(utsPonTrunckProtectionPort1DeviceId, new SnmpMibBeanProperty(utsPonTrunckProtectionPort1DeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.12.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsPonTrunckProtectionPort1PortId, new SnmpMibBeanProperty(utsPonTrunckProtectionPort1PortId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.12.1.5", ISnmpConstant.INTEGER));
-        //initProperty(utsPonTrunckProtectionPort2ModuleId, new SnmpMibBeanProperty(utsPonTrunckProtectionPort2ModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.12.1.6", ISnmpConstant.INTEGER));
-        //initProperty(utsPonTrunckProtectionPort2DeviceId, new SnmpMibBeanProperty(utsPonTrunckProtectionPort2DeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.12.1.7", ISnmpConstant.INTEGER));
-        initProperty(utsPonTrunckProtectionPort2PortId, new SnmpMibBeanProperty(utsPonTrunckProtectionPort2PortId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.12.1.8", ISnmpConstant.INTEGER));
-        initProperty(utsPonTrunckProtectionPort1Status, new SnmpMibBeanProperty(utsPonTrunckProtectionPort1Status, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.12.1.9", ISnmpConstant.INTEGER));
-        initProperty(utsPonTrunckProtectionPort2Status, new SnmpMibBeanProperty(utsPonTrunckProtectionPort2Status, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.12.1.10", ISnmpConstant.INTEGER));
-        initProperty(utsPonTrunckProtectionPortSwitchOver, new SnmpMibBeanProperty(utsPonTrunckProtectionPortSwitchOver, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.12.1.11", ISnmpConstant.INTEGER));
-        initProperty(utsPonTrunckProtectionPortSwitchOverResult, new SnmpMibBeanProperty(utsPonTrunckProtectionPortSwitchOverResult, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.12.1.12", ISnmpConstant.INTEGER));
-        initProperty(utsPonTrunckProtectionMode, new SnmpMibBeanProperty(utsPonTrunckProtectionMode, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.12.1.13", ISnmpConstant.INTEGER));
-        initProperty(utsPonTrunckProtectionRowStatus, new SnmpMibBeanProperty(utsPonTrunckProtectionRowStatus, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.12.1.15", ISnmpConstant.INTEGER));
+        initProperty(utsPonTrunckProtectionGroupId, new SnmpMibBeanProperty(utsPonTrunckProtectionGroupId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.12.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsPonTrunckProtectionName, new SnmpMibBeanProperty(utsPonTrunckProtectionName, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.12.1.2", ISnmpConstant.STRING));
+        //initProperty(utsPonTrunckProtectionPort1ModuleId, new SnmpMibBeanProperty(utsPonTrunckProtectionPort1ModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.12.1.3", ISnmpConstant.INTEGER));
+        //initProperty(utsPonTrunckProtectionPort1DeviceId, new SnmpMibBeanProperty(utsPonTrunckProtectionPort1DeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.12.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsPonTrunckProtectionPort1PortId, new SnmpMibBeanProperty(utsPonTrunckProtectionPort1PortId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.12.1.5", ISnmpConstant.INTEGER));
+        //initProperty(utsPonTrunckProtectionPort2ModuleId, new SnmpMibBeanProperty(utsPonTrunckProtectionPort2ModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.12.1.6", ISnmpConstant.INTEGER));
+        //initProperty(utsPonTrunckProtectionPort2DeviceId, new SnmpMibBeanProperty(utsPonTrunckProtectionPort2DeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.12.1.7", ISnmpConstant.INTEGER));
+        initProperty(utsPonTrunckProtectionPort2PortId, new SnmpMibBeanProperty(utsPonTrunckProtectionPort2PortId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.12.1.8", ISnmpConstant.INTEGER));
+        initProperty(utsPonTrunckProtectionPort1Status, new SnmpMibBeanProperty(utsPonTrunckProtectionPort1Status, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.12.1.9", ISnmpConstant.INTEGER));
+        initProperty(utsPonTrunckProtectionPort2Status, new SnmpMibBeanProperty(utsPonTrunckProtectionPort2Status, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.12.1.10", ISnmpConstant.INTEGER));
+        initProperty(utsPonTrunckProtectionPortSwitchOver, new SnmpMibBeanProperty(utsPonTrunckProtectionPortSwitchOver, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.12.1.11", ISnmpConstant.INTEGER));
+        initProperty(utsPonTrunckProtectionPortSwitchOverResult, new SnmpMibBeanProperty(utsPonTrunckProtectionPortSwitchOverResult, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.12.1.12", ISnmpConstant.INTEGER));
+        initProperty(utsPonTrunckProtectionMode, new SnmpMibBeanProperty(utsPonTrunckProtectionMode, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.12.1.13", ISnmpConstant.INTEGER));
+        initProperty(utsPonTrunckProtectionRowStatus, new SnmpMibBeanProperty(utsPonTrunckProtectionRowStatus, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.12.1.15", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsPonTrunckProtectionGroupId() {

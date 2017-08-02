@@ -58,118 +58,118 @@ public class UtsDot3Onu2OPTDTable extends SnmpMibBean {
   protected void init() {
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisModuleId,
         new SnmpMibBeanProperty(utsDot3OnuOpticalTransceiverDiagnosisModuleId,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.1", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.1", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisDeviceId,
         new SnmpMibBeanProperty(utsDot3OnuOpticalTransceiverDiagnosisDeviceId,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.2", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.2", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisPortId,
         new SnmpMibBeanProperty(utsDot3OnuOpticalTransceiverDiagnosisPortId,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.3", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.3", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisLogicalPortId,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisLogicalPortId,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.4", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.4", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisTemperature,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisTemperature,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.5", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.5", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisVoltage,
         new SnmpMibBeanProperty(utsDot3OnuOpticalTransceiverDiagnosisVoltage,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.6", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.6", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisTxBiasCurrent,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisTxBiasCurrent,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.7", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.7", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisTxPower,
         new SnmpMibBeanProperty(utsDot3OnuOpticalTransceiverDiagnosisTxPower,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.8", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.8", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisRxPower,
         new SnmpMibBeanProperty(utsDot3OnuOpticalTransceiverDiagnosisRxPower,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.9", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.9", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisAlarmOperation,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisAlarmOperation,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.12", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.12", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisTempHighAlarm,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisTempHighAlarm,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.15", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.15", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisTempLowAlarm,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisTempLowAlarm,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.16", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.16", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisTempHighWarning,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisTempHighWarning,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.17", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.17", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisTempLowWarning,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisTempLowWarning,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.18", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.18", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisVoltageHighAlarm,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisVoltageHighAlarm,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.19", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.19", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisVoltageLowAlarm,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisVoltageLowAlarm,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.20", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.20", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisVoltageHighWarning,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisVoltageHighWarning,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.21", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.21", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisVoltageLowWarning,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisVoltageLowWarning,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.22", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.22", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisBiasHighAlarm,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisBiasHighAlarm,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.23", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.23", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisBiasLowAlarm,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisBiasLowAlarm,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.24", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.24", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisBiasHighWarning,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisBiasHighWarning,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.25", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.25", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisBiasLowWarning,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisBiasLowWarning,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.26", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.26", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisTxPowerHighAlarm,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisTxPowerHighAlarm,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.27", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.27", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisTxPowerLowAlarm,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisTxPowerLowAlarm,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.28", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.28", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisTxPowerHighWarning,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisTxPowerHighWarning,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.29", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.29", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisTxPowerLowWarning,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisTxPowerLowWarning,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.30", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.30", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisRxPowerHighAlarm,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisRxPowerHighAlarm,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.31", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.31", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisRxPowerLowAlarm,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisRxPowerLowAlarm,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.32", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.32", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisRxPowerHighWarning,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisRxPowerHighWarning,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.33", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.33", ISnmpConstant.INTEGER));
     initProperty(utsDot3OnuOpticalTransceiverDiagnosisRxPowerLowWarning,
         new SnmpMibBeanProperty(
             utsDot3OnuOpticalTransceiverDiagnosisRxPowerLowWarning,
-            ".1.3.6.1.4.1.41355.1800.2.5.1.3.1.34", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1800.2.5.1.3.1.34", ISnmpConstant.INTEGER));
 
   }
 

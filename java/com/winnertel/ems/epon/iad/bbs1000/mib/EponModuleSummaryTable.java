@@ -18,7 +18,7 @@ public class EponModuleSummaryTable extends SnmpMibBean
   private final String utsEponModuleBoardVer = "utsEponModuleBoardVer";
   private final String utsEponModuleBoardAction = "utsEponModuleBoardAction";
 
-  private String fTableOid = ".1.3.6.1.4.1.41355.1800.2.1.1.1.1";
+  private String fTableOid = ".1.3.6.1.4.1.45121.1800.2.1.1.1.1";
 
   public EponModuleSummaryTable(ISnmpProxy aSnmpProxy)
   {

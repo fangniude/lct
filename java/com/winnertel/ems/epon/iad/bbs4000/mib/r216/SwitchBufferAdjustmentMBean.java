@@ -23,11 +23,11 @@ public class SwitchBufferAdjustmentMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsSwitchBufferAdjustmentUplinkPorts, new SnmpMibBeanProperty(utsSwitchBufferAdjustmentUplinkPorts, ".1.3.6.1.4.1.41355.1800.2.1.1.4.9.1", ISnmpConstant.OCTETS));
-        initProperty(utsSwitchBufferAdjustmentDownlinkPorts, new SnmpMibBeanProperty(utsSwitchBufferAdjustmentDownlinkPorts, ".1.3.6.1.4.1.41355.1800.2.1.1.4.9.2", ISnmpConstant.OCTETS));
-        initProperty(utsSwitchBufferAdjustmentUsedCoS, new SnmpMibBeanProperty(utsSwitchBufferAdjustmentUsedCoS, ".1.3.6.1.4.1.41355.1800.2.1.1.4.9.3", ISnmpConstant.INTEGER));
-        //initProperty(utsSwitchBufferAdjustmentUsedCoS, new SnmpMibBeanProperty(utsSwitchBufferAdjustmentUsedCoS, ".1.3.6.1.4.1.41355.1800.2.1.1.4.9.3", ISnmpConstant.OCTETS));
-        initProperty(utsSwitchBufferAdjustmentUsedCoSWeight, new SnmpMibBeanProperty(utsSwitchBufferAdjustmentUsedCoSWeight, ".1.3.6.1.4.1.41355.1800.2.1.1.4.9.4", ISnmpConstant.OCTETS));
+        initProperty(utsSwitchBufferAdjustmentUplinkPorts, new SnmpMibBeanProperty(utsSwitchBufferAdjustmentUplinkPorts, ".1.3.6.1.4.1.45121.1800.2.1.1.4.9.1", ISnmpConstant.OCTETS));
+        initProperty(utsSwitchBufferAdjustmentDownlinkPorts, new SnmpMibBeanProperty(utsSwitchBufferAdjustmentDownlinkPorts, ".1.3.6.1.4.1.45121.1800.2.1.1.4.9.2", ISnmpConstant.OCTETS));
+        initProperty(utsSwitchBufferAdjustmentUsedCoS, new SnmpMibBeanProperty(utsSwitchBufferAdjustmentUsedCoS, ".1.3.6.1.4.1.45121.1800.2.1.1.4.9.3", ISnmpConstant.INTEGER));
+        //initProperty(utsSwitchBufferAdjustmentUsedCoS, new SnmpMibBeanProperty(utsSwitchBufferAdjustmentUsedCoS, ".1.3.6.1.4.1.45121.1800.2.1.1.4.9.3", ISnmpConstant.OCTETS));
+        initProperty(utsSwitchBufferAdjustmentUsedCoSWeight, new SnmpMibBeanProperty(utsSwitchBufferAdjustmentUsedCoSWeight, ".1.3.6.1.4.1.45121.1800.2.1.1.4.9.4", ISnmpConstant.OCTETS));
     }
 
     public byte[] getUtsSwitchBufferAdjustmentUplinkPorts() {

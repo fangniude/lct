@@ -32,13 +32,13 @@ public class MonitorSessionControlTableMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty( utsMonitorSessionID, new SnmpMibBeanProperty( utsMonitorSessionID, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.2.1.5.3.1.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsMonitorSessionModule, new SnmpMibBeanProperty(utsMonitorSessionModule, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.2.1.5.3.1.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsMonitorSessionPort, new SnmpMibBeanProperty(utsMonitorSessionPort, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.2.1.5.3.1.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsMonitorSessionIngressPortBitLists, new SnmpMibBeanProperty(utsMonitorSessionIngressPortBitLists, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.2.1.5.3.1.1.4", ISnmpConstant.OCTETS));
-        initProperty(utsMonitorSessionEngressPortBitLists, new SnmpMibBeanProperty(utsMonitorSessionEngressPortBitLists, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.2.1.5.3.1.1.5", ISnmpConstant.OCTETS));
-//        initProperty( utsMonitorSessionActive, new SnmpMibBeanProperty( utsMonitorSessionActive, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.2.1.5.3.1.1.6", ISnmpConstant.INTEGER));
-        initProperty( ROW_STATUS, new SnmpMibBeanProperty( ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.2.1.5.3.1.1.7", ISnmpConstant.INTEGER));
+        initProperty( utsMonitorSessionID, new SnmpMibBeanProperty( utsMonitorSessionID, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.2.1.5.3.1.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsMonitorSessionModule, new SnmpMibBeanProperty(utsMonitorSessionModule, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.2.1.5.3.1.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsMonitorSessionPort, new SnmpMibBeanProperty(utsMonitorSessionPort, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.2.1.5.3.1.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsMonitorSessionIngressPortBitLists, new SnmpMibBeanProperty(utsMonitorSessionIngressPortBitLists, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.2.1.5.3.1.1.4", ISnmpConstant.OCTETS));
+        initProperty(utsMonitorSessionEngressPortBitLists, new SnmpMibBeanProperty(utsMonitorSessionEngressPortBitLists, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.2.1.5.3.1.1.5", ISnmpConstant.OCTETS));
+//        initProperty( utsMonitorSessionActive, new SnmpMibBeanProperty( utsMonitorSessionActive, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.2.1.5.3.1.1.6", ISnmpConstant.INTEGER));
+        initProperty( ROW_STATUS, new SnmpMibBeanProperty( ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.2.1.5.3.1.1.7", ISnmpConstant.INTEGER));
     }
     public Integer getUtsMonitorSessionID() {
             return ( Integer)  getIndex(0);

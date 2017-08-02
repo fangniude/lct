@@ -44,50 +44,50 @@ public class GponOltOlsCfgTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(oltOlsCfgSlotNo, new SnmpMibBeanProperty(oltOlsCfgSlotNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.1",
+        initProperty(oltOlsCfgSlotNo, new SnmpMibBeanProperty(oltOlsCfgSlotNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.1",
                 ISnmpConstant.INTEGER));
-        initProperty(oltOlsCfgPortNo, new SnmpMibBeanProperty(oltOlsCfgPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.2",
+        initProperty(oltOlsCfgPortNo, new SnmpMibBeanProperty(oltOlsCfgPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.2",
                 ISnmpConstant.INTEGER));
         initProperty(oltOlsTemperature, new SnmpMibBeanProperty(oltOlsTemperature,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.11", ISnmpConstant.INTEGER));
-        initProperty(oltOlsVoltage, new SnmpMibBeanProperty(oltOlsVoltage, ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.12",
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.11", ISnmpConstant.INTEGER));
+        initProperty(oltOlsVoltage, new SnmpMibBeanProperty(oltOlsVoltage, ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.12",
                 ISnmpConstant.INTEGER));
         initProperty(oltOlsBiasCurrent, new SnmpMibBeanProperty(oltOlsBiasCurrent,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.13", ISnmpConstant.INTEGER));
-        initProperty(oltOlsTxPower, new SnmpMibBeanProperty(oltOlsTxPower, ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.14",
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.13", ISnmpConstant.INTEGER));
+        initProperty(oltOlsTxPower, new SnmpMibBeanProperty(oltOlsTxPower, ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.14",
                 ISnmpConstant.INTEGER));
         initProperty(oltOlsTempThresholdAlarmHi, new SnmpMibBeanProperty(oltOlsTempThresholdAlarmHi,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.16", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.16", ISnmpConstant.INTEGER));
         initProperty(oltOlsTempThresholdAlarmLo, new SnmpMibBeanProperty(oltOlsTempThresholdAlarmLo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.17", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.17", ISnmpConstant.INTEGER));
         initProperty(oltOlsVoltageThresholdAlarmHi, new SnmpMibBeanProperty(oltOlsVoltageThresholdAlarmHi,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.18", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.18", ISnmpConstant.INTEGER));
         initProperty(oltOlsVoltageThresholdAlarmLo, new SnmpMibBeanProperty(oltOlsVoltageThresholdAlarmLo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.19", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.19", ISnmpConstant.INTEGER));
         initProperty(oltOlsBiasCurrentThresholdAlarmHi, new SnmpMibBeanProperty(oltOlsBiasCurrentThresholdAlarmHi,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.20", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.20", ISnmpConstant.INTEGER));
         initProperty(oltOlsBiasCurrentThresholdAlarmLo, new SnmpMibBeanProperty(oltOlsBiasCurrentThresholdAlarmLo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.21", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.21", ISnmpConstant.INTEGER));
         initProperty(oltOlsTxPowerThresholdAlarmHi, new SnmpMibBeanProperty(oltOlsTxPowerThresholdAlarmHi,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.22", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.22", ISnmpConstant.INTEGER));
         initProperty(oltOlsTxPowerThresholdAlarmLo, new SnmpMibBeanProperty(oltOlsTxPowerThresholdAlarmLo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.23", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.23", ISnmpConstant.INTEGER));
         initProperty(oltOlsTempThresholdWarningHi, new SnmpMibBeanProperty(oltOlsTempThresholdWarningHi,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.26", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.26", ISnmpConstant.INTEGER));
         initProperty(oltOlsTempThresholdWarningLo, new SnmpMibBeanProperty(oltOlsTempThresholdWarningLo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.27", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.27", ISnmpConstant.INTEGER));
         initProperty(oltOlsVoltageThresholdWarningHi, new SnmpMibBeanProperty(oltOlsVoltageThresholdWarningHi,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.28", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.28", ISnmpConstant.INTEGER));
         initProperty(oltOlsVoltageThresholdWarningLo, new SnmpMibBeanProperty(oltOlsVoltageThresholdWarningLo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.29", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.29", ISnmpConstant.INTEGER));
         initProperty(oltOlsBiasCurrentThresholdWarningHi, new SnmpMibBeanProperty(oltOlsBiasCurrentThresholdWarningHi,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.30", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.30", ISnmpConstant.INTEGER));
         initProperty(oltOlsBiasCurrentThresholdWarningLo, new SnmpMibBeanProperty(oltOlsBiasCurrentThresholdWarningLo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.31", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.31", ISnmpConstant.INTEGER));
         initProperty(oltOlsTxPowerThresholdWarningHi, new SnmpMibBeanProperty(oltOlsTxPowerThresholdWarningHi,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.32", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.32", ISnmpConstant.INTEGER));
         initProperty(oltOlsTxPowerThresholdWarningLo, new SnmpMibBeanProperty(oltOlsTxPowerThresholdWarningLo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.11.1.33", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.11.1.33", ISnmpConstant.INTEGER));
 
     }
 

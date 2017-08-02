@@ -22,11 +22,11 @@ public class AcuExternalAlarmTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsBbsAcuExternalAlarmIndex, new SnmpMibBeanProperty(utsBbsAcuExternalAlarmIndex, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.10.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsBbsAcuExternalAlarmEnable, new SnmpMibBeanProperty(utsBbsAcuExternalAlarmEnable, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.10.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsBbsAcuExternalAlarmDescription, new SnmpMibBeanProperty(utsBbsAcuExternalAlarmDescription, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.10.1.3", ISnmpConstant.OCTETS)); //modified by Zhou Chao, 2009/6/19
-        initProperty(utsBbsAcuExternalAlarmSeverity, new SnmpMibBeanProperty(utsBbsAcuExternalAlarmSeverity, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.10.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsBbsAcuExternalAlarmReportCriteria, new SnmpMibBeanProperty(utsBbsAcuExternalAlarmReportCriteria, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.10.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsBbsAcuExternalAlarmIndex, new SnmpMibBeanProperty(utsBbsAcuExternalAlarmIndex, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.10.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsBbsAcuExternalAlarmEnable, new SnmpMibBeanProperty(utsBbsAcuExternalAlarmEnable, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.10.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsBbsAcuExternalAlarmDescription, new SnmpMibBeanProperty(utsBbsAcuExternalAlarmDescription, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.10.1.3", ISnmpConstant.OCTETS)); //modified by Zhou Chao, 2009/6/19
+        initProperty(utsBbsAcuExternalAlarmSeverity, new SnmpMibBeanProperty(utsBbsAcuExternalAlarmSeverity, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.10.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsBbsAcuExternalAlarmReportCriteria, new SnmpMibBeanProperty(utsBbsAcuExternalAlarmReportCriteria, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.10.1.5", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsBbsAcuExternalAlarmIndex() {

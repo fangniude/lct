@@ -49,54 +49,54 @@ public class IgmpInterfaceTable extends SnmpMibBean
 	protected void init()
 	{
 		initProperty(utsIgmpIntfIfIndex, new SnmpMibBeanProperty(
-				utsIgmpIntfIfIndex, ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.1.1.1",
+				utsIgmpIntfIfIndex, ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.1.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsIgmpIntfVersion, new SnmpMibBeanProperty(
-				utsIgmpIntfVersion, ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.1.1.2",
+				utsIgmpIntfVersion, ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.1.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsIgmpIntfQuerier, new SnmpMibBeanProperty(
-				utsIgmpIntfQuerier, ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.1.1.3",
+				utsIgmpIntfQuerier, ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.1.1.3",
 				ISnmpConstant.STRING));
 		initProperty(utsIgmpIntfGrpMembInterval,
 				new SnmpMibBeanProperty(utsIgmpIntfGrpMembInterval,
-						".1.3.6.1.4.1.41355.1800.2.2.1.6.9.1.1.4",
+						".1.3.6.1.4.1.45121.1800.2.2.1.6.9.1.1.4",
 						ISnmpConstant.INTEGER));
 		initProperty(utsIgmpIntfLastMembQueryIntvl,
 				new SnmpMibBeanProperty(utsIgmpIntfLastMembQueryIntvl,
-						".1.3.6.1.4.1.41355.1800.2.2.1.6.9.1.1.5",
+						".1.3.6.1.4.1.45121.1800.2.2.1.6.9.1.1.5",
 						ISnmpConstant.INTEGER));
 		initProperty(utsIgmpIntfQueryInterval,
 				new SnmpMibBeanProperty(utsIgmpIntfQueryInterval,
-						".1.3.6.1.4.1.41355.1800.2.2.1.6.9.1.1.6",
+						".1.3.6.1.4.1.45121.1800.2.2.1.6.9.1.1.6",
 						ISnmpConstant.INTEGER));
 		initProperty(utsIgmpIntfQueryMaxRespTime,
 				new SnmpMibBeanProperty(utsIgmpIntfQueryMaxRespTime,
-						".1.3.6.1.4.1.41355.1800.2.2.1.6.9.1.1.7",
+						".1.3.6.1.4.1.45121.1800.2.2.1.6.9.1.1.7",
 						ISnmpConstant.INTEGER));
 		initProperty(utsIgmpIntfRobustness,
 				new SnmpMibBeanProperty(utsIgmpIntfRobustness,
-						".1.3.6.1.4.1.41355.1800.2.2.1.6.9.1.1.8",
+						".1.3.6.1.4.1.45121.1800.2.2.1.6.9.1.1.8",
 						ISnmpConstant.INTEGER));
 		initProperty(utsIgmpIntfStartupQueryIntval,
 				new SnmpMibBeanProperty(utsIgmpIntfStartupQueryIntval,
-						".1.3.6.1.4.1.41355.1800.2.2.1.6.9.1.1.9",
+						".1.3.6.1.4.1.45121.1800.2.2.1.6.9.1.1.9",
 						ISnmpConstant.INTEGER));
 		initProperty(utsIgmpIntfUnsolictReportIntval, new SnmpMibBeanProperty(
 				utsIgmpIntfUnsolictReportIntval,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.9.1.1.10",
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.9.1.1.10",
 				ISnmpConstant.INTEGER));
 		initProperty(utsIgmpIntfGroups, new SnmpMibBeanProperty(
-				utsIgmpIntfGroups, ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.1.1.11",
+				utsIgmpIntfGroups, ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.1.1.11",
 				ISnmpConstant.INTEGER));
 		initProperty(utsIgmpIntfProxyStatus, new SnmpMibBeanProperty(
 				utsIgmpIntfProxyStatus,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.9.1.1.12",
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.9.1.1.12",
 				ISnmpConstant.INTEGER));
 //		initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-//				".1.3.6.1.4.1.41355.1800.2.2.1.6.9.1.1.13",
+//				".1.3.6.1.4.1.45121.1800.2.2.1.6.9.1.1.13",
 //				ISnmpConstant.INTEGER));
 //        initProperty(utsIgmpIntfStatus,new SnmpMibBeanProperty(utsIgmpIntfStatus,
-//                ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.1.1.13",ISnmpConstant.INTEGER));
+//                ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.1.1.13",ISnmpConstant.INTEGER));
 	}
 
 	public String getUtsIgmpIntfIfIndex()

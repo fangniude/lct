@@ -31,28 +31,28 @@ public class IgmpCacheTable extends SnmpMibBean
     protected void init()
     {
         initProperty(utsIgmpCacheIfIndex, new SnmpMibBeanProperty(
-                utsIgmpCacheIfIndex, ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.2.1.1",
+                utsIgmpCacheIfIndex, ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.2.1.1",
                 ISnmpConstant.INTEGER));
         initProperty(utsIgmpCacheGroupAddress, new SnmpMibBeanProperty(
                 utsIgmpCacheGroupAddress,
-                ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.2.1.2", ISnmpConstant.IP_ADDRESS));
+                ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.2.1.2", ISnmpConstant.IP_ADDRESS));
 
 //        initProperty(utsIgmpCacheSourceAddress, new SnmpMibBeanProperty(
-//                utsIgmpCacheSourceAddress, ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.2.1.3",
+//                utsIgmpCacheSourceAddress, ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.2.1.3",
 //                ISnmpConstant.IP_ADDRESS));
         initProperty(utsIgmpCacheType, new SnmpMibBeanProperty(
-                utsIgmpCacheType, ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.2.1.6",
+                utsIgmpCacheType, ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.2.1.6",
                 ISnmpConstant.INTEGER));
         initProperty(utsIgmpCacheLastReporter, new SnmpMibBeanProperty(
                 utsIgmpCacheLastReporter,
-                ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.2.1.11", ISnmpConstant.STRING));
+                ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.2.1.11", ISnmpConstant.STRING));
         initProperty(utsIgmpCacheExpiryTime,
                 new SnmpMibBeanProperty(utsIgmpCacheExpiryTime,
-                        ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.2.1.16",
+                        ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.2.1.16",
                         ISnmpConstant.TIME_TICKS));
         initProperty(ROW_STATUS,
                 new SnmpMibBeanProperty(ROW_STATUS,
-                        ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.2.1.100",
+                        ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.2.1.100",
                         ISnmpConstant.INTEGER));
 
     }

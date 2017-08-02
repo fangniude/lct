@@ -116,8 +116,8 @@ public class BBS4kThroughputJob implements Job
           String[] split = ((String)measInstances.get(i)).split("/");
           String index = new StringBuffer(split[0]).append(".1.").append(split[1]).append(".").append("0").toString();
 
-          oids = new String[]{".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.30." + index, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.31." + index,
-                              ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.5." + index, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.6." + index};
+          oids = new String[]{".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.30." + index, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.31." + index,
+                              ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.5." + index, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.6." + index};
 
           String[] oidValue = snmpTarget.getValues(oids);
 
@@ -156,9 +156,9 @@ public class BBS4kThroughputJob implements Job
           String[] split = ((String)measInstances.get(i)).split("/");
           String index = new StringBuffer(split[0]).append(".1.").append(split[1]).append(".").append(split[2]).toString();
 
-          oids = new String[]{".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.30." + index, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.31." + index,
-                              ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.5." + index, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.6." + index,
-                              ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.5.1.5." + index, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.5.1.6." + index};
+          oids = new String[]{".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.30." + index, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.31." + index,
+                              ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.5." + index, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.6." + index,
+                              ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.5.1.5." + index, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.5.1.6." + index};
 
           String[] oidValue = snmpTarget.getValues(oids);
 

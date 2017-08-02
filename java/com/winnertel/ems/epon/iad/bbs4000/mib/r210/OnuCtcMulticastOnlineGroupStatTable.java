@@ -24,11 +24,11 @@ public class OnuCtcMulticastOnlineGroupStatTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3OnuMCastOnlineGroupStatModuleId, new SnmpMibBeanProperty(utsDot3OnuMCastOnlineGroupStatModuleId, ".1.3.6.1.4.1.41355.1800.2.4.3.1.8.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuMCastOnlineGroupStatDeviceId, new SnmpMibBeanProperty(utsDot3OnuMCastOnlineGroupStatDeviceId, ".1.3.6.1.4.1.41355.1800.2.4.3.1.8.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuMCastOnlineGroupStatPortId, new SnmpMibBeanProperty(utsDot3OnuMCastOnlineGroupStatPortId, ".1.3.6.1.4.1.41355.1800.2.4.3.1.8.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuMCastOnlineGroupStatLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuMCastOnlineGroupStatLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.4.3.1.8.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuMCastOnlineGroupStatNumber, new SnmpMibBeanProperty(utsDot3OnuMCastOnlineGroupStatNumber, ".1.3.6.1.4.1.41355.1800.2.4.3.1.8.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuMCastOnlineGroupStatModuleId, new SnmpMibBeanProperty(utsDot3OnuMCastOnlineGroupStatModuleId, ".1.3.6.1.4.1.45121.1800.2.4.3.1.8.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuMCastOnlineGroupStatDeviceId, new SnmpMibBeanProperty(utsDot3OnuMCastOnlineGroupStatDeviceId, ".1.3.6.1.4.1.45121.1800.2.4.3.1.8.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuMCastOnlineGroupStatPortId, new SnmpMibBeanProperty(utsDot3OnuMCastOnlineGroupStatPortId, ".1.3.6.1.4.1.45121.1800.2.4.3.1.8.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuMCastOnlineGroupStatLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuMCastOnlineGroupStatLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.4.3.1.8.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuMCastOnlineGroupStatNumber, new SnmpMibBeanProperty(utsDot3OnuMCastOnlineGroupStatNumber, ".1.3.6.1.4.1.45121.1800.2.4.3.1.8.1.5", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsDot3OnuMCastOnlineGroupStatModuleId() {

@@ -35,17 +35,17 @@ public class Onu2CtcAlarmReportingTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3Onu2CtcAlarmReportingModuleId, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.39.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcAlarmReportingDeviceId, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.39.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcAlarmReportingPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.39.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcAlarmReportingLogicalPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.39.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcAlarmReportingAlarmId, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingAlarmId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.39.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcAlarmReportingOnuPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingOnuPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.39.1.6", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcAlarmReportingAlarmObjects, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingAlarmObjects, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.39.1.7", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcAlarmReportingAlarmAdmin, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingAlarmAdmin, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.39.1.8", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcAlarmReportingThresholdSupport, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingThresholdSupport, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.39.1.9", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcAlarmReportingThresholdRaise, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingThresholdRaise, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.39.1.10", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcAlarmReportingThresholdClear, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingThresholdClear, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.39.1.11", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcAlarmReportingModuleId, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.39.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcAlarmReportingDeviceId, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.39.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcAlarmReportingPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.39.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcAlarmReportingLogicalPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.39.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcAlarmReportingAlarmId, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingAlarmId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.39.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcAlarmReportingOnuPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingOnuPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.39.1.6", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcAlarmReportingAlarmObjects, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingAlarmObjects, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.39.1.7", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcAlarmReportingAlarmAdmin, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingAlarmAdmin, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.39.1.8", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcAlarmReportingThresholdSupport, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingThresholdSupport, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.39.1.9", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcAlarmReportingThresholdRaise, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingThresholdRaise, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.39.1.10", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcAlarmReportingThresholdClear, new SnmpMibBeanProperty(utsDot3Onu2CtcAlarmReportingThresholdClear, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.39.1.11", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsDot3Onu2CtcAlarmReportingModuleId() {

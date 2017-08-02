@@ -29,11 +29,11 @@ public class BBS4000OnuMibBean extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsDot3Onu2CtcModuleId, new SnmpMibBeanProperty(utsDot3Onu2CtcModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.14.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsDot3Onu2CtcDeviceId, new SnmpMibBeanProperty(utsDot3Onu2CtcDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.14.1.2", ISnmpConstant.INTEGER));
-    initProperty(utsDot3Onu2CtcPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.14.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsDot3Onu2CtcLogicalPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.14.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsDot3Onu2DbaQueueSetNum, new SnmpMibBeanProperty(utsDot3Onu2DbaQueueSetNum, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.14.1.5", ISnmpConstant.INTEGER));
+    initProperty(utsDot3Onu2CtcModuleId, new SnmpMibBeanProperty(utsDot3Onu2CtcModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.14.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsDot3Onu2CtcDeviceId, new SnmpMibBeanProperty(utsDot3Onu2CtcDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.14.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsDot3Onu2CtcPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.14.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsDot3Onu2CtcLogicalPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.14.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsDot3Onu2DbaQueueSetNum, new SnmpMibBeanProperty(utsDot3Onu2DbaQueueSetNum, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.14.1.5", ISnmpConstant.INTEGER));
   }
 
 

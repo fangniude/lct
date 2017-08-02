@@ -28,16 +28,16 @@ public class DHCPRelay extends SnmpMibBean
 	protected void init()
 	{
 		initProperty(utsDHCPRelayOption82, new SnmpMibBeanProperty(
-				utsDHCPRelayOption82, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.1.2",
+				utsDHCPRelayOption82, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDHCPRelayInforChk, new SnmpMibBeanProperty(
-				utsDHCPRelayInforChk, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.1.3",
+				utsDHCPRelayInforChk, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDHCPRelayPolicy, new SnmpMibBeanProperty(
-				utsDHCPRelayPolicy, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.1.4",
+				utsDHCPRelayPolicy, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.1.4",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDHCPRelayMaxhop, new SnmpMibBeanProperty(
-				utsDHCPRelayMaxhop, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.1.5",
+				utsDHCPRelayMaxhop, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.1.5",
 				ISnmpConstant.INTEGER));
 
 	}

@@ -30,21 +30,21 @@ public class EthIntelligentLinkTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsEthIntelligentLinkGroupId, new SnmpMibBeanProperty(utsEthIntelligentLinkGroupId, ".1.3.6.1.4.1.41355.1800.2.2.1.15.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsEthIntelligentLinkGroupName, new SnmpMibBeanProperty(utsEthIntelligentLinkGroupName, ".1.3.6.1.4.1.41355.1800.2.2.1.15.1.2", ISnmpConstant.STRING));
-    initProperty(utsEthIntelligentLinkMasterPortType, new SnmpMibBeanProperty(utsEthIntelligentLinkMasterPortType, ".1.3.6.1.4.1.41355.1800.2.2.1.15.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsEthIntelligentLinkMasterPortModuleId, new SnmpMibBeanProperty(utsEthIntelligentLinkMasterPortModuleId, ".1.3.6.1.4.1.41355.1800.2.2.1.15.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsEthIntelligentLinkMasterPortDeviceId, new SnmpMibBeanProperty(utsEthIntelligentLinkMasterPortDeviceId, ".1.3.6.1.4.1.41355.1800.2.2.1.15.1.5", ISnmpConstant.INTEGER));
-    initProperty(utsEthIntelligentLinkMasterPortPortId, new SnmpMibBeanProperty(utsEthIntelligentLinkMasterPortPortId, ".1.3.6.1.4.1.41355.1800.2.2.1.15.1.6", ISnmpConstant.INTEGER));
-    initProperty(utsEthIntelligentLinkMasterLinkAggGroupId, new SnmpMibBeanProperty(utsEthIntelligentLinkMasterLinkAggGroupId, ".1.3.6.1.4.1.41355.1800.2.2.1.15.1.7", ISnmpConstant.INTEGER));
-    initProperty(utsEthIntelligentLinkSlavePortType, new SnmpMibBeanProperty(utsEthIntelligentLinkSlavePortType, ".1.3.6.1.4.1.41355.1800.2.2.1.15.1.8", ISnmpConstant.INTEGER));
-    initProperty(utsEthIntelligentLinkSlavePortModuleId, new SnmpMibBeanProperty(utsEthIntelligentLinkSlavePortModuleId, ".1.3.6.1.4.1.41355.1800.2.2.1.15.1.9", ISnmpConstant.INTEGER));
-    initProperty(utsEthIntelligentLinkSlavePortDeviceId, new SnmpMibBeanProperty(utsEthIntelligentLinkSlavePortDeviceId, ".1.3.6.1.4.1.41355.1800.2.2.1.15.1.10", ISnmpConstant.INTEGER));
-    initProperty(utsEthIntelligentLinkSlavePortPortId, new SnmpMibBeanProperty(utsEthIntelligentLinkSlavePortPortId, ".1.3.6.1.4.1.41355.1800.2.2.1.15.1.11", ISnmpConstant.INTEGER));
-    initProperty(utsEthIntelligentLinkSlaveLinkAggGroupId, new SnmpMibBeanProperty(utsEthIntelligentLinkSlaveLinkAggGroupId, ".1.3.6.1.4.1.41355.1800.2.2.1.15.1.12", ISnmpConstant.INTEGER));
-    initProperty(utsEthIntelligentLinkMasterPortStatus, new SnmpMibBeanProperty(utsEthIntelligentLinkMasterPortStatus, ".1.3.6.1.4.1.41355.1800.2.2.1.15.1.13", ISnmpConstant.INTEGER));
-    initProperty(utsEthIntelligentLinkSlavePortStatus, new SnmpMibBeanProperty(utsEthIntelligentLinkSlavePortStatus, ".1.3.6.1.4.1.41355.1800.2.2.1.15.1.14", ISnmpConstant.INTEGER));
-    initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.2.1.15.1.15", ISnmpConstant.INTEGER));
+    initProperty(utsEthIntelligentLinkGroupId, new SnmpMibBeanProperty(utsEthIntelligentLinkGroupId, ".1.3.6.1.4.1.45121.1800.2.2.1.15.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsEthIntelligentLinkGroupName, new SnmpMibBeanProperty(utsEthIntelligentLinkGroupName, ".1.3.6.1.4.1.45121.1800.2.2.1.15.1.2", ISnmpConstant.STRING));
+    initProperty(utsEthIntelligentLinkMasterPortType, new SnmpMibBeanProperty(utsEthIntelligentLinkMasterPortType, ".1.3.6.1.4.1.45121.1800.2.2.1.15.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsEthIntelligentLinkMasterPortModuleId, new SnmpMibBeanProperty(utsEthIntelligentLinkMasterPortModuleId, ".1.3.6.1.4.1.45121.1800.2.2.1.15.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsEthIntelligentLinkMasterPortDeviceId, new SnmpMibBeanProperty(utsEthIntelligentLinkMasterPortDeviceId, ".1.3.6.1.4.1.45121.1800.2.2.1.15.1.5", ISnmpConstant.INTEGER));
+    initProperty(utsEthIntelligentLinkMasterPortPortId, new SnmpMibBeanProperty(utsEthIntelligentLinkMasterPortPortId, ".1.3.6.1.4.1.45121.1800.2.2.1.15.1.6", ISnmpConstant.INTEGER));
+    initProperty(utsEthIntelligentLinkMasterLinkAggGroupId, new SnmpMibBeanProperty(utsEthIntelligentLinkMasterLinkAggGroupId, ".1.3.6.1.4.1.45121.1800.2.2.1.15.1.7", ISnmpConstant.INTEGER));
+    initProperty(utsEthIntelligentLinkSlavePortType, new SnmpMibBeanProperty(utsEthIntelligentLinkSlavePortType, ".1.3.6.1.4.1.45121.1800.2.2.1.15.1.8", ISnmpConstant.INTEGER));
+    initProperty(utsEthIntelligentLinkSlavePortModuleId, new SnmpMibBeanProperty(utsEthIntelligentLinkSlavePortModuleId, ".1.3.6.1.4.1.45121.1800.2.2.1.15.1.9", ISnmpConstant.INTEGER));
+    initProperty(utsEthIntelligentLinkSlavePortDeviceId, new SnmpMibBeanProperty(utsEthIntelligentLinkSlavePortDeviceId, ".1.3.6.1.4.1.45121.1800.2.2.1.15.1.10", ISnmpConstant.INTEGER));
+    initProperty(utsEthIntelligentLinkSlavePortPortId, new SnmpMibBeanProperty(utsEthIntelligentLinkSlavePortPortId, ".1.3.6.1.4.1.45121.1800.2.2.1.15.1.11", ISnmpConstant.INTEGER));
+    initProperty(utsEthIntelligentLinkSlaveLinkAggGroupId, new SnmpMibBeanProperty(utsEthIntelligentLinkSlaveLinkAggGroupId, ".1.3.6.1.4.1.45121.1800.2.2.1.15.1.12", ISnmpConstant.INTEGER));
+    initProperty(utsEthIntelligentLinkMasterPortStatus, new SnmpMibBeanProperty(utsEthIntelligentLinkMasterPortStatus, ".1.3.6.1.4.1.45121.1800.2.2.1.15.1.13", ISnmpConstant.INTEGER));
+    initProperty(utsEthIntelligentLinkSlavePortStatus, new SnmpMibBeanProperty(utsEthIntelligentLinkSlavePortStatus, ".1.3.6.1.4.1.45121.1800.2.2.1.15.1.14", ISnmpConstant.INTEGER));
+    initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.2.1.15.1.15", ISnmpConstant.INTEGER));
   }
 
   public Integer getUtsEthIntelligentLinkGroupId() {

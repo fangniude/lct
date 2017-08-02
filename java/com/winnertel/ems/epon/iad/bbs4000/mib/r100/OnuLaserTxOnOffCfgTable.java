@@ -27,13 +27,13 @@ public class OnuLaserTxOnOffCfgTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(onuLaserTxOnOffCfgSlotNo, new SnmpMibBeanProperty(onuLaserTxOnOffCfgSlotNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.15.1.1", ISnmpConstant.INTEGER));
-        initProperty(onuLaserTxOnOffCfgPortNo, new SnmpMibBeanProperty(onuLaserTxOnOffCfgPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.15.1.2", ISnmpConstant.INTEGER));
-        initProperty(onuLaserTxOnOffCfgLogicalPortNo, new SnmpMibBeanProperty(onuLaserTxOnOffCfgLogicalPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.15.1.3", ISnmpConstant.INTEGER));
-        initProperty(onuLaserTxOnOffCfgSwitch, new SnmpMibBeanProperty(onuLaserTxOnOffCfgSwitch, ".1.3.6.1.4.1.41355.1.3.10.5.1.15.1.11", ISnmpConstant.INTEGER));
-        initProperty(onuLaserTxOnOffCfgOnTimer, new SnmpMibBeanProperty(onuLaserTxOnOffCfgOnTimer, ".1.3.6.1.4.1.41355.1.3.10.5.1.15.1.12", ISnmpConstant.GAUGE));
-        initProperty(onuLaserTxOnOffCfgLaserTxStatus, new SnmpMibBeanProperty(onuLaserTxOnOffCfgLaserTxStatus, ".1.3.6.1.4.1.41355.1.3.10.5.1.15.1.13", ISnmpConstant.INTEGER));
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.1.15.1.100", ISnmpConstant.INTEGER));
+        initProperty(onuLaserTxOnOffCfgSlotNo, new SnmpMibBeanProperty(onuLaserTxOnOffCfgSlotNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.15.1.1", ISnmpConstant.INTEGER));
+        initProperty(onuLaserTxOnOffCfgPortNo, new SnmpMibBeanProperty(onuLaserTxOnOffCfgPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.15.1.2", ISnmpConstant.INTEGER));
+        initProperty(onuLaserTxOnOffCfgLogicalPortNo, new SnmpMibBeanProperty(onuLaserTxOnOffCfgLogicalPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.15.1.3", ISnmpConstant.INTEGER));
+        initProperty(onuLaserTxOnOffCfgSwitch, new SnmpMibBeanProperty(onuLaserTxOnOffCfgSwitch, ".1.3.6.1.4.1.45121.1.3.10.5.1.15.1.11", ISnmpConstant.INTEGER));
+        initProperty(onuLaserTxOnOffCfgOnTimer, new SnmpMibBeanProperty(onuLaserTxOnOffCfgOnTimer, ".1.3.6.1.4.1.45121.1.3.10.5.1.15.1.12", ISnmpConstant.GAUGE));
+        initProperty(onuLaserTxOnOffCfgLaserTxStatus, new SnmpMibBeanProperty(onuLaserTxOnOffCfgLaserTxStatus, ".1.3.6.1.4.1.45121.1.3.10.5.1.15.1.13", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.1.15.1.100", ISnmpConstant.INTEGER));
     }
 
     public Integer getOnuLaserTxOnOffCfgSlotNo() {

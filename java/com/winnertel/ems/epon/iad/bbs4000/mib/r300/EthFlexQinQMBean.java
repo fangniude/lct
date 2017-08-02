@@ -42,28 +42,28 @@ public class EthFlexQinQMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsEthFlexQinQModuleId, new SnmpMibBeanProperty(utsEthFlexQinQModuleId, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsEthFlexQinQDeviceId, new SnmpMibBeanProperty(utsEthFlexQinQDeviceId, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsEthFlexQinQPortId, new SnmpMibBeanProperty(utsEthFlexQinQPortId, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsEthFlexQinQEtherType, new SnmpMibBeanProperty(utsEthFlexQinQEtherType, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsEthFlexQinQSourceCCos, new SnmpMibBeanProperty(utsEthFlexQinQSourceCCos, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.6", ISnmpConstant.INTEGER));
-        initProperty(utsEthFlexQinQSourceCVID, new SnmpMibBeanProperty(utsEthFlexQinQSourceCVID, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.7", ISnmpConstant.INTEGER));
-        initProperty(utsEthFlexQinQSourceCTPID, new SnmpMibBeanProperty(utsEthFlexQinQSourceCTPID, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.8", ISnmpConstant.INTEGER));
-        initProperty(utsEthFlexQinQSourceSCos, new SnmpMibBeanProperty(utsEthFlexQinQSourceSCos, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.9", ISnmpConstant.INTEGER));
-        initProperty(utsEthFlexQinQSourceSVID, new SnmpMibBeanProperty(utsEthFlexQinQSourceSVID, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.10", ISnmpConstant.INTEGER));
-        initProperty(utsEthFlexQinQSourceSTPID, new SnmpMibBeanProperty(utsEthFlexQinQSourceSTPID, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.11", ISnmpConstant.INTEGER));
-        initProperty(utsEthFlexQinQSourceTagMode, new SnmpMibBeanProperty(utsEthFlexQinQSourceTagMode, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.12", ISnmpConstant.INTEGER));
-        initProperty(utsEthFlexQinQDestinationSTPID, new SnmpMibBeanProperty(utsEthFlexQinQDestinationSTPID, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.13", ISnmpConstant.INTEGER));
-        initProperty(utsEthFlexQinQDestinationSCosAction, new SnmpMibBeanProperty(utsEthFlexQinQDestinationSCosAction, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.14", ISnmpConstant.INTEGER));
-        initProperty(utsEthFlexQinQDestinationSVID, new SnmpMibBeanProperty(utsEthFlexQinQDestinationSVID, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.15", ISnmpConstant.INTEGER));
-        initProperty(utsEthFlexQinQDestinationCTPID, new SnmpMibBeanProperty(utsEthFlexQinQDestinationCTPID, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.16", ISnmpConstant.INTEGER));
-        initProperty(utsEthFlexQinQDestinationCCosAction, new SnmpMibBeanProperty(utsEthFlexQinQDestinationCCosAction, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.17", ISnmpConstant.INTEGER));
-        initProperty(utsEthFlexQinQDestinationCVID, new SnmpMibBeanProperty(utsEthFlexQinQDestinationCVID, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.18", ISnmpConstant.INTEGER));
-        initProperty(utsEthFlexQinQDestinationAppointSCos, new SnmpMibBeanProperty(utsEthFlexQinQDestinationAppointSCos, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.19", ISnmpConstant.INTEGER));
-        initProperty(utsEthFlexQinQDestinationAppointCCos, new SnmpMibBeanProperty(utsEthFlexQinQDestinationAppointCCos, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.20", ISnmpConstant.INTEGER));
-        initProperty(utsEthFlexQinQDestinationTagMode, new SnmpMibBeanProperty(utsEthFlexQinQDestinationTagMode, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.21", ISnmpConstant.INTEGER));
-        initProperty(utsEthFlexQinQDestinationSTagProperty, new SnmpMibBeanProperty(utsEthFlexQinQDestinationSTagProperty, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.22", ISnmpConstant.INTEGER));
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.2.1.16.1.23", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQModuleId, new SnmpMibBeanProperty(utsEthFlexQinQModuleId, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQDeviceId, new SnmpMibBeanProperty(utsEthFlexQinQDeviceId, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQPortId, new SnmpMibBeanProperty(utsEthFlexQinQPortId, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQEtherType, new SnmpMibBeanProperty(utsEthFlexQinQEtherType, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQSourceCCos, new SnmpMibBeanProperty(utsEthFlexQinQSourceCCos, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.6", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQSourceCVID, new SnmpMibBeanProperty(utsEthFlexQinQSourceCVID, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.7", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQSourceCTPID, new SnmpMibBeanProperty(utsEthFlexQinQSourceCTPID, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.8", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQSourceSCos, new SnmpMibBeanProperty(utsEthFlexQinQSourceSCos, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.9", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQSourceSVID, new SnmpMibBeanProperty(utsEthFlexQinQSourceSVID, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.10", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQSourceSTPID, new SnmpMibBeanProperty(utsEthFlexQinQSourceSTPID, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.11", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQSourceTagMode, new SnmpMibBeanProperty(utsEthFlexQinQSourceTagMode, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.12", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQDestinationSTPID, new SnmpMibBeanProperty(utsEthFlexQinQDestinationSTPID, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.13", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQDestinationSCosAction, new SnmpMibBeanProperty(utsEthFlexQinQDestinationSCosAction, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.14", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQDestinationSVID, new SnmpMibBeanProperty(utsEthFlexQinQDestinationSVID, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.15", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQDestinationCTPID, new SnmpMibBeanProperty(utsEthFlexQinQDestinationCTPID, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.16", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQDestinationCCosAction, new SnmpMibBeanProperty(utsEthFlexQinQDestinationCCosAction, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.17", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQDestinationCVID, new SnmpMibBeanProperty(utsEthFlexQinQDestinationCVID, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.18", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQDestinationAppointSCos, new SnmpMibBeanProperty(utsEthFlexQinQDestinationAppointSCos, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.19", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQDestinationAppointCCos, new SnmpMibBeanProperty(utsEthFlexQinQDestinationAppointCCos, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.20", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQDestinationTagMode, new SnmpMibBeanProperty(utsEthFlexQinQDestinationTagMode, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.21", ISnmpConstant.INTEGER));
+        initProperty(utsEthFlexQinQDestinationSTagProperty, new SnmpMibBeanProperty(utsEthFlexQinQDestinationSTagProperty, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.22", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.2.1.16.1.23", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsEthFlexQinQModuleId() {

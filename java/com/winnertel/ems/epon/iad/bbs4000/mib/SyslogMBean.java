@@ -21,9 +21,9 @@ public class SyslogMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsSyslogFormat, new SnmpMibBeanProperty(utsSyslogFormat, ".1.3.6.1.4.1.41355.1800.2.1.1.3.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsSyslogConsoleSeverity, new SnmpMibBeanProperty(utsSyslogConsoleSeverity, ".1.3.6.1.4.1.41355.1800.2.1.1.3.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsSyslogFlashSeverity, new SnmpMibBeanProperty(utsSyslogFlashSeverity, ".1.3.6.1.4.1.41355.1800.2.1.1.3.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsSyslogFormat, new SnmpMibBeanProperty(utsSyslogFormat, ".1.3.6.1.4.1.45121.1800.2.1.1.3.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsSyslogConsoleSeverity, new SnmpMibBeanProperty(utsSyslogConsoleSeverity, ".1.3.6.1.4.1.45121.1800.2.1.1.3.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsSyslogFlashSeverity, new SnmpMibBeanProperty(utsSyslogFlashSeverity, ".1.3.6.1.4.1.45121.1800.2.1.1.3.1.3", ISnmpConstant.INTEGER));
 
     }
 

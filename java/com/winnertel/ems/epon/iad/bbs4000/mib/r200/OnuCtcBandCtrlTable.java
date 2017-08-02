@@ -30,17 +30,17 @@ public class OnuCtcBandCtrlTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3OnuModuleId, new SnmpMibBeanProperty(utsDot3OnuModuleId, ".1.3.6.1.4.1.41355.1800.2.4.3.1.2.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuDeviceId, new SnmpMibBeanProperty(utsDot3OnuDeviceId, ".1.3.6.1.4.1.41355.1800.2.4.3.1.2.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuPortId, new SnmpMibBeanProperty(utsDot3OnuPortId, ".1.3.6.1.4.1.41355.1800.2.4.3.1.2.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.4.3.1.2.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuEtherPortIndex, new SnmpMibBeanProperty(utsDot3OnuEtherPortIndex, ".1.3.6.1.4.1.41355.1800.2.4.3.1.2.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuMaxBand, new SnmpMibBeanProperty(utsDot3OnuMaxBand, ".1.3.6.1.4.1.41355.1800.2.4.3.1.2.1.6", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuPreviewLength, new SnmpMibBeanProperty(utsDot3OnuPreviewLength, ".1.3.6.1.4.1.41355.1800.2.4.3.1.2.1.7", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuPreviewCount, new SnmpMibBeanProperty(utsDot3OnuPreviewCount, ".1.3.6.1.4.1.41355.1800.2.4.3.1.2.1.8", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuPreviewInterval, new SnmpMibBeanProperty(utsDot3OnuPreviewInterval, ".1.3.6.1.4.1.41355.1800.2.4.3.1.2.1.9", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuPreviewResetTime, new SnmpMibBeanProperty(utsDot3OnuPreviewResetTime, ".1.3.6.1.4.1.41355.1800.2.4.3.1.2.1.10", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuMGroupJoinNum, new SnmpMibBeanProperty(utsDot3OnuMGroupJoinNum, ".1.3.6.1.4.1.41355.1800.2.4.3.1.2.1.11", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuModuleId, new SnmpMibBeanProperty(utsDot3OnuModuleId, ".1.3.6.1.4.1.45121.1800.2.4.3.1.2.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuDeviceId, new SnmpMibBeanProperty(utsDot3OnuDeviceId, ".1.3.6.1.4.1.45121.1800.2.4.3.1.2.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuPortId, new SnmpMibBeanProperty(utsDot3OnuPortId, ".1.3.6.1.4.1.45121.1800.2.4.3.1.2.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.4.3.1.2.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuEtherPortIndex, new SnmpMibBeanProperty(utsDot3OnuEtherPortIndex, ".1.3.6.1.4.1.45121.1800.2.4.3.1.2.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuMaxBand, new SnmpMibBeanProperty(utsDot3OnuMaxBand, ".1.3.6.1.4.1.45121.1800.2.4.3.1.2.1.6", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuPreviewLength, new SnmpMibBeanProperty(utsDot3OnuPreviewLength, ".1.3.6.1.4.1.45121.1800.2.4.3.1.2.1.7", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuPreviewCount, new SnmpMibBeanProperty(utsDot3OnuPreviewCount, ".1.3.6.1.4.1.45121.1800.2.4.3.1.2.1.8", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuPreviewInterval, new SnmpMibBeanProperty(utsDot3OnuPreviewInterval, ".1.3.6.1.4.1.45121.1800.2.4.3.1.2.1.9", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuPreviewResetTime, new SnmpMibBeanProperty(utsDot3OnuPreviewResetTime, ".1.3.6.1.4.1.45121.1800.2.4.3.1.2.1.10", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuMGroupJoinNum, new SnmpMibBeanProperty(utsDot3OnuMGroupJoinNum, ".1.3.6.1.4.1.45121.1800.2.4.3.1.2.1.11", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsDot3OnuModuleId() {

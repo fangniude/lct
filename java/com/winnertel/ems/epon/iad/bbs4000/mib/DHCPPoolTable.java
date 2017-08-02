@@ -39,30 +39,30 @@ public class DHCPPoolTable extends SnmpMibBean
 	protected void init()
 	{
 		initProperty(utsDHCPPoolName, new SnmpMibBeanProperty(utsDHCPPoolName,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.3.2.1.1", ISnmpConstant.STRING));
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.3.2.1.1", ISnmpConstant.STRING));
 		initProperty(utsDHCPPoolDomainName, new SnmpMibBeanProperty(
 				utsDHCPPoolDomainName,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.3.2.1.2", ISnmpConstant.STRING));
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.3.2.1.2", ISnmpConstant.STRING));
 		initProperty(utsDHCPPoolNetworkAddress, new SnmpMibBeanProperty(
 				utsDHCPPoolNetworkAddress,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.3.2.1.3", ISnmpConstant.IP_ADDRESS));
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.3.2.1.3", ISnmpConstant.IP_ADDRESS));
 		initProperty(utsDHCPPoolNetworkMask, new SnmpMibBeanProperty(
 				utsDHCPPoolNetworkMask,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.3.2.1.4", ISnmpConstant.IP_ADDRESS));
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.3.2.1.4", ISnmpConstant.IP_ADDRESS));
 		initProperty(utsDHCPPoolClassId, new SnmpMibBeanProperty(
-				utsDHCPPoolClassId, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.2.1.5",
+				utsDHCPPoolClassId, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.2.1.5",
 				ISnmpConstant.STRING));
 		initProperty(utsDHCPPoolLeaseTime, new SnmpMibBeanProperty(
-				utsDHCPPoolLeaseTime, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.2.1.6",
+				utsDHCPPoolLeaseTime, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.2.1.6",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDHCPPoolMeritDump, new SnmpMibBeanProperty(
-				utsDHCPPoolMeritDump, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.2.1.7",
+				utsDHCPPoolMeritDump, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.2.1.7",
 				ISnmpConstant.STRING));
 		initProperty(utsDHCPPoolRootPath, new SnmpMibBeanProperty(
-				utsDHCPPoolRootPath, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.2.1.8",
+				utsDHCPPoolRootPath, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.2.1.8",
 				ISnmpConstant.STRING));
 		initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.3.2.1.11",
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.3.2.1.11",
 				ISnmpConstant.INTEGER));
 
 	}

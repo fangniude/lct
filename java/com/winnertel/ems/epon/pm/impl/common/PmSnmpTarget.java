@@ -665,7 +665,7 @@ public class PmSnmpTarget {
             String version = SnmpUtility.getNeVersion(ipAddress, port, getCommunity);
 
             //TODO: change OID
-            String[] indices = {".1.3.6.1.4.1.41355.1.3.20.1.3.1.3.1.3"}; //oltPonLinkAdministrativeState
+            String[] indices = {".1.3.6.1.4.1.45121.1.3.20.1.3.1.3.1.3"}; //oltPonLinkAdministrativeState
             Object[][] l2StateList = null;
             String[] l2List = null;
 
@@ -700,7 +700,7 @@ public class PmSnmpTarget {
             String version = SnmpUtility.getNeVersion(ipAddress, port, getCommunity);
 
             //TODO: change OID
-            String[] indices = {".1.3.6.1.4.1.41355.1.3.20.1.3.1.3.1.3"}; //oltPonLinkAdministrativeState
+            String[] indices = {".1.3.6.1.4.1.45121.1.3.20.1.3.1.3.1.3"}; //oltPonLinkAdministrativeState
             Object[][] l2StateList = null;
             String[] l2List = null;
 
@@ -735,7 +735,7 @@ public class PmSnmpTarget {
             String version = SnmpUtility.getNeVersion(ipAddress, port, getCommunity);
 
             //TODO: change OID
-            String[] indices = {".1.3.6.1.4.1.41355.1.3.20.1.3.1.4.1.7"}; //onuCfgProfileIndex
+            String[] indices = {".1.3.6.1.4.1.45121.1.3.20.1.3.1.4.1.7"}; //onuCfgProfileIndex
             Object[][] l2StateList = null;
             String[] l2List = null;
 
@@ -770,7 +770,7 @@ public class PmSnmpTarget {
             String version = SnmpUtility.getNeVersion(ipAddress, port, getCommunity);
 
             //TODO: change OID
-            String[] indices = {".1.3.6.1.4.1.41355.1.3.20.1.3.1.4.1.7"}; //onuCfgProfileIndex
+            String[] indices = {".1.3.6.1.4.1.45121.1.3.20.1.3.1.4.1.7"}; //onuCfgProfileIndex
             Object[][] l2StateList = null;
             String[] l2List = null;
 
@@ -876,7 +876,7 @@ public class PmSnmpTarget {
             String version = SnmpUtility.getNeVersion(ipAddress, port, getCommunity);
             if (type != null && type.startsWith("BBS1000"))  //BBS1000+
             {
-                String[] indices = {".1.3.6.1.4.1.41355.1800.2.1.1.1.1.3"}; //utsEponModuleBoardState
+                String[] indices = {".1.3.6.1.4.1.45121.1800.2.1.1.1.1.3"}; //utsEponModuleBoardState
                 Object[][] l2StateList = null;
                 String[] l2List = null;
 
@@ -927,7 +927,7 @@ public class PmSnmpTarget {
                     rtn.add(pair);
                 }
             } else {
-                String[] indices = {".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1.3"};//utsEponModulePhyPresenceStat
+                String[] indices = {".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1.3"};//utsEponModulePhyPresenceStat
                 Object[][] l2StateList = null;
                 String[] l2List = null;
 
@@ -972,7 +972,7 @@ public class PmSnmpTarget {
 	    	//String type = SnmpUtility.getNeType(ipAddress, port, getCommunity);
 	    	//String version = SnmpUtility.getNeVersion(ipAddress, port, getCommunity);
 	
-	        String[] indices = {".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.3"}; //utsDot3OltOpmOltDataTemperature
+	        String[] indices = {".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.3"}; //utsDot3OltOpmOltDataTemperature
 	        Object[][] oltStateList = null;
 	        String[] onuList = null;
 	
@@ -1010,7 +1010,7 @@ public class PmSnmpTarget {
             String version = SnmpUtility.getNeVersion(ipAddress, port, getCommunity);
             if (type != null && type.startsWith("BBS1000"))  //BBS1000+
             {
-                String[] indices = {".1.3.6.1.4.1.41355.1800.2.3.1.1.1.1.1.3"}; //utsDot3OltOperStatus
+                String[] indices = {".1.3.6.1.4.1.45121.1800.2.3.1.1.1.1.1.3"}; //utsDot3OltOperStatus
                 Object[][] oltStateList = null;
                 String[] oltList = null;
 
@@ -1033,7 +1033,7 @@ public class PmSnmpTarget {
                     rtn.add(pair);
                 }
             } else if(type != null && type.startsWith("BBS4000") && version != null && version.startsWith("1.0")) {   //BBS4000 v1.0(GPON)
-                String[] indices = {".1.3.6.1.4.1.41355.1.3.10.5.1.3.1.4"}; //oltPonLinkCfgOperationalState
+                String[] indices = {".1.3.6.1.4.1.45121.1.3.10.5.1.3.1.4"}; //oltPonLinkCfgOperationalState
                 Object[][] oltStateList = null;
                 String[] cardList = null;
 
@@ -1083,7 +1083,7 @@ public class PmSnmpTarget {
                     rtn.add(pair);
                 }
             } else {
-                String[] indices = {".1.3.6.1.4.1.41355.1800.2.3.1.1.3.2.1.4"}; //utsDot3OltOperState
+                String[] indices = {".1.3.6.1.4.1.45121.1800.2.3.1.1.3.2.1.4"}; //utsDot3OltOperState
                 Object[][] oltStateList = null;
                 String[] onuList = null;
 
@@ -1126,7 +1126,7 @@ public class PmSnmpTarget {
 	    	//String version = SnmpUtility.getNeVersion(ipAddress, port, getCommunity);
 	
 
-            String[] indices = {".1.3.6.1.4.1.41355.1800.2.5.1.3.1.5"}; //using utsDot3OnuOpticalTransceiverDiagnosisTemperature to get onu instance.
+            String[] indices = {".1.3.6.1.4.1.45121.1800.2.5.1.3.1.5"}; //using utsDot3OnuOpticalTransceiverDiagnosisTemperature to get onu instance.
             Object[][] onuStateList = null;
             String[] onuList = null;
 
@@ -1165,7 +1165,7 @@ public class PmSnmpTarget {
             String type = SnmpUtility.getNeType(ipAddress, port, getCommunity);
             String version = SnmpUtility.getNeVersion(ipAddress, port, getCommunity);
             if (type != null && type.startsWith("BBS1000+") && version != null && version.startsWith("2.3")) {
-                String[] indices = {".1.3.6.1.4.1.41355.1800.2.3.1.2.1.1.1.4"};//utsDot3OnuRegistrationState
+                String[] indices = {".1.3.6.1.4.1.45121.1800.2.3.1.2.1.1.1.4"};//utsDot3OnuRegistrationState
                 Object[][] onuStateList = null;
                 String[] onuList = null;
 
@@ -1193,7 +1193,7 @@ public class PmSnmpTarget {
                     rtn.add(pair);
                 }
             } else if(type != null && type.startsWith("BBS4000") && version != null && version.startsWith("1.0")) { //BBS4000 v1.0.x(GPON)
-                String[] indices = {".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.5"}; //using onuCfgPrimaryStatus to get onu instance.
+                String[] indices = {".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.5"}; //using onuCfgPrimaryStatus to get onu instance.
                 Object[][] onuStateList = null;
                 String[] onuList = null;
 
@@ -1242,7 +1242,7 @@ public class PmSnmpTarget {
                     rtn.add(pair);
                 }
             } else {
-                String[] indices = {".1.3.6.1.4.1.41355.1800.2.3.1.2.1.5.1.5"}; //using utsDot3OnuUpstreamPir to get onu instance.
+                String[] indices = {".1.3.6.1.4.1.45121.1800.2.3.1.2.1.5.1.5"}; //using utsDot3OnuUpstreamPir to get onu instance.
                 Object[][] onuStateList = null;
                 String[] onuList = null;
 
@@ -1280,7 +1280,7 @@ public class PmSnmpTarget {
         List rtn = new ArrayList();
 
         try {
-            String[] indices = {".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.8"}; //using utsDot3Onu2SerialNumber to get onu instance.
+            String[] indices = {".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.8"}; //using utsDot3Onu2SerialNumber to get onu instance.
             Object[][] valueList = null;
             String[] onuList = null;
 
@@ -1331,7 +1331,7 @@ public class PmSnmpTarget {
         List rtn = new ArrayList();
 
         try {
-            String[] indices = {".1.3.6.1.4.1.41355.1.3.10.100.4024.3.1.1.1.3"}; //using portType to get port instance.
+            String[] indices = {".1.3.6.1.4.1.45121.1.3.10.100.4024.3.1.1.1.3"}; //using portType to get port instance.
             Object[][] valueList = null;
             String[] portList = null;
 

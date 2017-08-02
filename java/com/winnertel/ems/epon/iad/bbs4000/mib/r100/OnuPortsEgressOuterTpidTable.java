@@ -27,13 +27,13 @@ public class OnuPortsEgressOuterTpidTable extends SnmpMibBean {
 
     protected void init() {
         initProperty(onuPortsEgressOuterTpidSlotNo, new SnmpMibBeanProperty(onuPortsEgressOuterTpidSlotNo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.4.1", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.4.1", ISnmpConstant.INTEGER));
         initProperty(onuPortsEgressOuterTpidPortNo, new SnmpMibBeanProperty(onuPortsEgressOuterTpidPortNo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.4.2", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.4.2", ISnmpConstant.INTEGER));
         initProperty(onuPortsEgressOuterTpidLogicalPortNo, new SnmpMibBeanProperty(
-                onuPortsEgressOuterTpidLogicalPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1000.4.3", ISnmpConstant.INTEGER));
+                onuPortsEgressOuterTpidLogicalPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1000.4.3", ISnmpConstant.INTEGER));
         initProperty(onuPortsEgressOuterTpid, new SnmpMibBeanProperty(onuPortsEgressOuterTpid,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.4.10", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.4.10", ISnmpConstant.INTEGER));
 
     }
 

@@ -42,24 +42,24 @@ public class DHCPServerStatsMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsIpDhcpServerStatsFreeBindings, new SnmpMibBeanProperty(utsIpDhcpServerStatsFreeBindings, ".1.3.6.1.4.1.41355.1800.4.3.1.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsIpDhcpServerStatsAutoBindings, new SnmpMibBeanProperty(utsIpDhcpServerStatsAutoBindings, ".1.3.6.1.4.1.41355.1800.4.3.1.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsIpDhcpServerStatsExpiredBindings, new SnmpMibBeanProperty(utsIpDhcpServerStatsExpiredBindings, ".1.3.6.1.4.1.41355.1800.4.3.1.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsIpDhcpServerStatsOfferBindings, new SnmpMibBeanProperty(utsIpDhcpServerStatsOfferBindings, ".1.3.6.1.4.1.41355.1800.4.3.1.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsIpDhcpServerStatsManualFree, new SnmpMibBeanProperty(utsIpDhcpServerStatsManualFree, ".1.3.6.1.4.1.41355.1800.4.3.1.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsIpDhcpServerStatsManualBindings, new SnmpMibBeanProperty(utsIpDhcpServerStatsManualBindings, ".1.3.6.1.4.1.41355.1800.4.3.1.1.6", ISnmpConstant.INTEGER));
-        initProperty(utsIpDhcpServerStatsManualExpired, new SnmpMibBeanProperty(utsIpDhcpServerStatsManualExpired, ".1.3.6.1.4.1.41355.1800.4.3.1.1.7", ISnmpConstant.INTEGER));
-        initProperty(utsIpDhcpServerStatsManualOffer, new SnmpMibBeanProperty(utsIpDhcpServerStatsManualOffer, ".1.3.6.1.4.1.41355.1800.4.3.1.1.8", ISnmpConstant.INTEGER));
-        initProperty(utsIpDhcpServerStatsDiscoverPackets, new SnmpMibBeanProperty(utsIpDhcpServerStatsDiscoverPackets, ".1.3.6.1.4.1.41355.1800.4.3.1.1.9", ISnmpConstant.INTEGER));
-        initProperty(utsIpDhcpServerStatsRequestPackets, new SnmpMibBeanProperty(utsIpDhcpServerStatsRequestPackets, ".1.3.6.1.4.1.41355.1800.4.3.1.1.10", ISnmpConstant.INTEGER));
-        initProperty(utsIpDhcpServerStatsReleasePackets, new SnmpMibBeanProperty(utsIpDhcpServerStatsReleasePackets, ".1.3.6.1.4.1.41355.1800.4.3.1.1.11", ISnmpConstant.INTEGER));
-        initProperty(utsIpDhcpServerStatsDeclinePackets, new SnmpMibBeanProperty(utsIpDhcpServerStatsDeclinePackets, ".1.3.6.1.4.1.41355.1800.4.3.1.1.12", ISnmpConstant.INTEGER));
-        initProperty(utsIpDhcpServerStatsInformPackets, new SnmpMibBeanProperty(utsIpDhcpServerStatsInformPackets, ".1.3.6.1.4.1.41355.1800.4.3.1.1.13", ISnmpConstant.INTEGER));
-        initProperty(utsIpDhcpServerStatsinvalidPackets, new SnmpMibBeanProperty(utsIpDhcpServerStatsinvalidPackets, ".1.3.6.1.4.1.41355.1800.4.3.1.1.14", ISnmpConstant.INTEGER));
-        initProperty(utsIpDhcpServerStatsOfferPackets, new SnmpMibBeanProperty(utsIpDhcpServerStatsOfferPackets, ".1.3.6.1.4.1.41355.1800.4.3.1.1.15", ISnmpConstant.INTEGER));
-        initProperty(utsIpDhcpServerStatsAckPackets, new SnmpMibBeanProperty(utsIpDhcpServerStatsAckPackets, ".1.3.6.1.4.1.41355.1800.4.3.1.1.16", ISnmpConstant.INTEGER));
-        initProperty(utsIpDhcpServerStatsNakPackets, new SnmpMibBeanProperty(utsIpDhcpServerStatsNakPackets, ".1.3.6.1.4.1.41355.1800.4.3.1.1.17", ISnmpConstant.INTEGER));
-        initProperty(utsIpDhcpServerStatsReplyPackets, new SnmpMibBeanProperty(utsIpDhcpServerStatsReplyPackets, ".1.3.6.1.4.1.41355.1800.4.3.1.1.18", ISnmpConstant.INTEGER));
+        initProperty(utsIpDhcpServerStatsFreeBindings, new SnmpMibBeanProperty(utsIpDhcpServerStatsFreeBindings, ".1.3.6.1.4.1.45121.1800.4.3.1.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsIpDhcpServerStatsAutoBindings, new SnmpMibBeanProperty(utsIpDhcpServerStatsAutoBindings, ".1.3.6.1.4.1.45121.1800.4.3.1.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsIpDhcpServerStatsExpiredBindings, new SnmpMibBeanProperty(utsIpDhcpServerStatsExpiredBindings, ".1.3.6.1.4.1.45121.1800.4.3.1.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsIpDhcpServerStatsOfferBindings, new SnmpMibBeanProperty(utsIpDhcpServerStatsOfferBindings, ".1.3.6.1.4.1.45121.1800.4.3.1.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsIpDhcpServerStatsManualFree, new SnmpMibBeanProperty(utsIpDhcpServerStatsManualFree, ".1.3.6.1.4.1.45121.1800.4.3.1.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsIpDhcpServerStatsManualBindings, new SnmpMibBeanProperty(utsIpDhcpServerStatsManualBindings, ".1.3.6.1.4.1.45121.1800.4.3.1.1.6", ISnmpConstant.INTEGER));
+        initProperty(utsIpDhcpServerStatsManualExpired, new SnmpMibBeanProperty(utsIpDhcpServerStatsManualExpired, ".1.3.6.1.4.1.45121.1800.4.3.1.1.7", ISnmpConstant.INTEGER));
+        initProperty(utsIpDhcpServerStatsManualOffer, new SnmpMibBeanProperty(utsIpDhcpServerStatsManualOffer, ".1.3.6.1.4.1.45121.1800.4.3.1.1.8", ISnmpConstant.INTEGER));
+        initProperty(utsIpDhcpServerStatsDiscoverPackets, new SnmpMibBeanProperty(utsIpDhcpServerStatsDiscoverPackets, ".1.3.6.1.4.1.45121.1800.4.3.1.1.9", ISnmpConstant.INTEGER));
+        initProperty(utsIpDhcpServerStatsRequestPackets, new SnmpMibBeanProperty(utsIpDhcpServerStatsRequestPackets, ".1.3.6.1.4.1.45121.1800.4.3.1.1.10", ISnmpConstant.INTEGER));
+        initProperty(utsIpDhcpServerStatsReleasePackets, new SnmpMibBeanProperty(utsIpDhcpServerStatsReleasePackets, ".1.3.6.1.4.1.45121.1800.4.3.1.1.11", ISnmpConstant.INTEGER));
+        initProperty(utsIpDhcpServerStatsDeclinePackets, new SnmpMibBeanProperty(utsIpDhcpServerStatsDeclinePackets, ".1.3.6.1.4.1.45121.1800.4.3.1.1.12", ISnmpConstant.INTEGER));
+        initProperty(utsIpDhcpServerStatsInformPackets, new SnmpMibBeanProperty(utsIpDhcpServerStatsInformPackets, ".1.3.6.1.4.1.45121.1800.4.3.1.1.13", ISnmpConstant.INTEGER));
+        initProperty(utsIpDhcpServerStatsinvalidPackets, new SnmpMibBeanProperty(utsIpDhcpServerStatsinvalidPackets, ".1.3.6.1.4.1.45121.1800.4.3.1.1.14", ISnmpConstant.INTEGER));
+        initProperty(utsIpDhcpServerStatsOfferPackets, new SnmpMibBeanProperty(utsIpDhcpServerStatsOfferPackets, ".1.3.6.1.4.1.45121.1800.4.3.1.1.15", ISnmpConstant.INTEGER));
+        initProperty(utsIpDhcpServerStatsAckPackets, new SnmpMibBeanProperty(utsIpDhcpServerStatsAckPackets, ".1.3.6.1.4.1.45121.1800.4.3.1.1.16", ISnmpConstant.INTEGER));
+        initProperty(utsIpDhcpServerStatsNakPackets, new SnmpMibBeanProperty(utsIpDhcpServerStatsNakPackets, ".1.3.6.1.4.1.45121.1800.4.3.1.1.17", ISnmpConstant.INTEGER));
+        initProperty(utsIpDhcpServerStatsReplyPackets, new SnmpMibBeanProperty(utsIpDhcpServerStatsReplyPackets, ".1.3.6.1.4.1.45121.1800.4.3.1.1.18", ISnmpConstant.INTEGER));
 
     }
 

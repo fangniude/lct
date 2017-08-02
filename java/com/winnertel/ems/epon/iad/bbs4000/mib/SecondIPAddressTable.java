@@ -28,16 +28,16 @@ public class SecondIPAddressTable extends SnmpMibBean
 	protected void init()
 	{
 		initProperty(utsIfSecondIpIfIndex, new SnmpMibBeanProperty(
-				utsIfSecondIpIfIndex, ".1.3.6.1.4.1.41355.1800.2.2.1.7.1.1",
+				utsIfSecondIpIfIndex, ".1.3.6.1.4.1.45121.1800.2.2.1.7.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsIfSecondIpAddress, new SnmpMibBeanProperty(
-				utsIfSecondIpAddress, ".1.3.6.1.4.1.41355.1800.2.2.1.7.1.7",
+				utsIfSecondIpAddress, ".1.3.6.1.4.1.45121.1800.2.2.1.7.1.7",
 				ISnmpConstant.STRING));
 		initProperty(utsIfSecondIpNetmask, new SnmpMibBeanProperty(
-				utsIfSecondIpNetmask, ".1.3.6.1.4.1.41355.1800.2.2.1.7.1.8",
+				utsIfSecondIpNetmask, ".1.3.6.1.4.1.45121.1800.2.2.1.7.1.8",
 				ISnmpConstant.STRING));
 		initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-				".1.3.6.1.4.1.41355.1800.2.2.1.7.1.9", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.2.1.7.1.9", ISnmpConstant.INTEGER));
 
 	}
 

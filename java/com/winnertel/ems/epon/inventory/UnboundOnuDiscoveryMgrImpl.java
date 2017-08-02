@@ -109,13 +109,13 @@ public class UnboundOnuDiscoveryMgrImpl {
         // retrieve all unbound onu data from NE.
         String[] oidList = {
             //utsDot3UnboundOnuModuleId
-            ".1.3.6.1.4.1.41355.1800.2.3.1.2.2.1.1.1",
+            ".1.3.6.1.4.1.45121.1800.2.3.1.2.2.1.1.1",
             //utsDot3UnboundOnuPortId
-            ".1.3.6.1.4.1.41355.1800.2.3.1.2.2.1.1.2",
+            ".1.3.6.1.4.1.45121.1800.2.3.1.2.2.1.1.2",
             //utsDot3UnboundOnuLlid
-            ".1.3.6.1.4.1.41355.1800.2.3.1.2.2.1.1.3",
+            ".1.3.6.1.4.1.45121.1800.2.3.1.2.2.1.1.3",
             //utsDot3UnboundOnuPonMacAddr
-            ".1.3.6.1.4.1.41355.1800.2.3.1.2.2.1.1.4"
+            ".1.3.6.1.4.1.45121.1800.2.3.1.2.2.1.1.4"
         };
 
         Object[][] result = target.getTable(oidList);
@@ -151,13 +151,13 @@ public class UnboundOnuDiscoveryMgrImpl {
       // retrieve all unbound onu data from NE.
       String[] oidList = {
           //utsDot3UnboundOnuModuleId
-          ".1.3.6.1.4.1.41355.1800.2.3.1.2.2.1.1.1",
+          ".1.3.6.1.4.1.45121.1800.2.3.1.2.2.1.1.1",
           //utsDot3UnboundOnuPortId
-          ".1.3.6.1.4.1.41355.1800.2.3.1.2.2.1.1.2",
+          ".1.3.6.1.4.1.45121.1800.2.3.1.2.2.1.1.2",
           //utsDot3UnboundOnuLlid
-          ".1.3.6.1.4.1.41355.1800.2.3.1.2.2.1.1.3",
+          ".1.3.6.1.4.1.45121.1800.2.3.1.2.2.1.1.3",
           //utsDot3UnboundOnuPonMacAddr
-          ".1.3.6.1.4.1.41355.1800.2.3.1.2.2.1.1.4"
+          ".1.3.6.1.4.1.45121.1800.2.3.1.2.2.1.1.4"
       };
 
       Object[][] result = target.getTable(oidList);

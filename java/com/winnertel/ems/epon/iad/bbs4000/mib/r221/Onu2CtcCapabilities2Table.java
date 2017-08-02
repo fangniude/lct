@@ -33,17 +33,17 @@ public class Onu2CtcCapabilities2Table extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3OnuCtcCapabilities2ModuleId, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2ModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.41.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuCtcCapabilities2DeviceId, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2DeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.41.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuCtcCapabilities2PortId, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2PortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.41.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuCtcCapabilities2LogicalPortId, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2LogicalPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.41.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuCtcCapabilities2OnuType, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2OnuType, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.41.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuCtcCapabilities2MultiLlid, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2MultiLlid, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.41.1.6", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuCtcCapabilities2ProtectionType, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2ProtectionType, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.41.1.7", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuCtcCapabilities2PonifNum, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2PonifNum, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.41.1.8", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuCtcCapabilities2SlotNum, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2SlotNum, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.41.1.9", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuCtcCapabilities2IntfAttribute, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2IntfAttribute, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.41.1.11", ISnmpConstant.OCTETS));
-        initProperty(utsDot3OnuCtcCapabilities2BackupBattery, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2BackupBattery, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.41.1.12", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuCtcCapabilities2ModuleId, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2ModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.41.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuCtcCapabilities2DeviceId, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2DeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.41.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuCtcCapabilities2PortId, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2PortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.41.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuCtcCapabilities2LogicalPortId, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2LogicalPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.41.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuCtcCapabilities2OnuType, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2OnuType, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.41.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuCtcCapabilities2MultiLlid, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2MultiLlid, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.41.1.6", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuCtcCapabilities2ProtectionType, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2ProtectionType, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.41.1.7", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuCtcCapabilities2PonifNum, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2PonifNum, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.41.1.8", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuCtcCapabilities2SlotNum, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2SlotNum, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.41.1.9", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuCtcCapabilities2IntfAttribute, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2IntfAttribute, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.41.1.11", ISnmpConstant.OCTETS));
+        initProperty(utsDot3OnuCtcCapabilities2BackupBattery, new SnmpMibBeanProperty(utsDot3OnuCtcCapabilities2BackupBattery, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.41.1.12", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsDot3OnuCtcCapabilities2ModuleId() {

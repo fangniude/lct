@@ -52,27 +52,27 @@ public class OnuPingMBean extends SnmpMibBean {
 
 		initProperty(utsDot3OnuOAMPingElapsedTime, new SnmpMibBeanProperty(
 				utsDot3OnuOAMPingElapsedTime,
-				".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.36",
+				".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.36",
 				ISnmpConstant.INTEGER));
 
 		initProperty(utsDot3OnuOAMStartTest, new SnmpMibBeanProperty(
 				utsDot3OnuOAMStartTest,
-				".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.38",
+				".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.38",
 				ISnmpConstant.INTEGER));
 
 		initProperty(utsDot3OnuOAMPingStatus, new SnmpMibBeanProperty(
 				utsDot3OnuOAMPingStatus,
-				".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.42",
+				".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.42",
 				ISnmpConstant.INTEGER));
 
 		initProperty(utsDot3OnuOAMPingStationId, new SnmpMibBeanProperty(
 				utsDot3OnuOAMPingStationId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.43",
+				".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.43",
 				ISnmpConstant.STRING));
 
 		initProperty(utsDot3OnuOAMPingResultStr, new SnmpMibBeanProperty(
 				utsDot3OnuOAMPingResultStr,
-				".1.3.6.1.4.1.41355.1800.2.3.1.3.1.1.1.44",
+				".1.3.6.1.4.1.45121.1800.2.3.1.3.1.1.1.44",
 				ISnmpConstant.STRING));
 
 	}

@@ -27,29 +27,29 @@ public class UtsDot3Onu2AlarmProfileSettingTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsDot3Onu2AlarmProfileIndex, new SnmpMibBeanProperty(
 				utsDot3Onu2AlarmProfileIndex,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.43.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.43.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2AlarmId, new SnmpMibBeanProperty(
-				utsDot3Onu2AlarmId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.44.1.1",
+				utsDot3Onu2AlarmId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.44.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2AlarmInstance, new SnmpMibBeanProperty(
 				utsDot3Onu2AlarmInstance,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.44.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.44.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2AlarmAdmin, new SnmpMibBeanProperty(
 				utsDot3Onu2AlarmAdmin,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.44.1.3",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.44.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2AlarmRaiseThreshold, new SnmpMibBeanProperty(
 				utsDot3Onu2AlarmRaiseThreshold,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.44.1.4",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.44.1.4",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2AlarmClearThreshold, new SnmpMibBeanProperty(
 				utsDot3Onu2AlarmClearThreshold,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.44.1.5",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.44.1.5",
 				ISnmpConstant.INTEGER));
 		initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.44.1.100",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.44.1.100",
 				ISnmpConstant.INTEGER));
 
 	}

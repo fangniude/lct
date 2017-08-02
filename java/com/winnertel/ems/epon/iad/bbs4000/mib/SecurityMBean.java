@@ -54,36 +54,36 @@ public class SecurityMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3Security8021xRadiusSecondaryCliAcctSharedKey, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSecondaryCliAcctSharedKey, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.34", ISnmpConstant.STRING));
-        initProperty(utsDot3Security8021xRadiusAutoSwitch, new SnmpMibBeanProperty(utsDot3Security8021xRadiusAutoSwitch, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Security8021xRadiusRetryTimes, new SnmpMibBeanProperty(utsDot3Security8021xRadiusRetryTimes, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Security8021xRadiusTimeout, new SnmpMibBeanProperty(utsDot3Security8021xRadiusTimeout, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Security8021xRadiusBackToPrimary, new SnmpMibBeanProperty(utsDot3Security8021xRadiusBackToPrimary, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Security8021xRadiusRealm, new SnmpMibBeanProperty(utsDot3Security8021xRadiusRealm, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.5", ISnmpConstant.STRING));
-        initProperty(utsDot3Security8021xRadiusNasIpAddress, new SnmpMibBeanProperty(utsDot3Security8021xRadiusNasIpAddress, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.6", ISnmpConstant.IP_ADDRESS));
-        initProperty(utsDot3Security8021xRadiusSvrPrimaryOnuAuthIP, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrPrimaryOnuAuthIP, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.11", ISnmpConstant.IP_ADDRESS));
-        initProperty(utsDot3Security8021xRadiusSvrPrimaryOnuAuthPort, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrPrimaryOnuAuthPort, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.12", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Security8021xRadiusPrimaryOnuAuthSharedKey, new SnmpMibBeanProperty(utsDot3Security8021xRadiusPrimaryOnuAuthSharedKey, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.13", ISnmpConstant.STRING));
-        initProperty(utsDot3Security8021xRadiusSvrSecondaryOnuAuthIP, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrSecondaryOnuAuthIP, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.14", ISnmpConstant.IP_ADDRESS));
-        initProperty(utsDot3Security8021xRadiusSvrSecondaryOnuAuthPort, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrSecondaryOnuAuthPort, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.15", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Security8021xRadiusSecondaryOnuAuthSharedKey, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSecondaryOnuAuthSharedKey, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.16", ISnmpConstant.STRING));
-        initProperty(utsDot3Security8021xRadiusSvrPrimaryOnuAcctIP, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrPrimaryOnuAcctIP, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.17", ISnmpConstant.IP_ADDRESS));
-        initProperty(utsDot3Security8021xRadiusSvrPrimaryOnuAcctPort, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrPrimaryOnuAcctPort, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.18", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Security8021xRadiusPrimaryOnuAcctSharedKey, new SnmpMibBeanProperty(utsDot3Security8021xRadiusPrimaryOnuAcctSharedKey, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.19", ISnmpConstant.STRING));
-        initProperty(utsDot3Security8021xRadiusSvrSecondaryOnuAcctIP, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrSecondaryOnuAcctIP, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.20", ISnmpConstant.IP_ADDRESS));
-        initProperty(utsDot3Security8021xRadiusSvrSecondaryOnuAcctPort, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrSecondaryOnuAcctPort, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.21", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Security8021xRadiusSecondaryOnuAcctSharedKey, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSecondaryOnuAcctSharedKey, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.22", ISnmpConstant.STRING));
-        initProperty(utsDot3Security8021xRadiusSvrPrimaryCliAuthIP, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrPrimaryCliAuthIP, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.23", ISnmpConstant.IP_ADDRESS));
-        initProperty(utsDot3Security8021xRadiusSvrPrimaryCliAuthPort, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrPrimaryCliAuthPort, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.24", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Security8021xRadiusPrimaryCliAuthSharedKey, new SnmpMibBeanProperty(utsDot3Security8021xRadiusPrimaryCliAuthSharedKey, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.25", ISnmpConstant.STRING));
-        initProperty(utsDot3Security8021xRadiusSvrSecondaryCliAuthIP, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrSecondaryCliAuthIP, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.26", ISnmpConstant.IP_ADDRESS));
-        initProperty(utsDot3Security8021xRadiusSvrSecondaryCliAuthPort, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrSecondaryCliAuthPort, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.27", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Security8021xRadiusSecondaryCliAuthSharedKey, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSecondaryCliAuthSharedKey, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.28", ISnmpConstant.STRING));
-        initProperty(utsDot3Security8021xRadiusSvrPrimaryCliAcctIP, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrPrimaryCliAcctIP, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.29", ISnmpConstant.IP_ADDRESS));
-        initProperty(utsDot3Security8021xRadiusSvrPrimaryCliAcctPort, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrPrimaryCliAcctPort, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.30", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Security8021xRadiusPrimaryCliAcctSharedKey, new SnmpMibBeanProperty(utsDot3Security8021xRadiusPrimaryCliAcctSharedKey, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.31", ISnmpConstant.STRING));
-        initProperty(utsDot3Security8021xRadiusSvrSecondaryCliAcctIP, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrSecondaryCliAcctIP, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.32", ISnmpConstant.IP_ADDRESS));
-        initProperty(utsDot3Security8021xRadiusSvrSecondaryCliAcctPort, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrSecondaryCliAcctPort, ".1.3.6.1.4.1.41355.1800.5.1.1.1.2.1.33", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Security8021xRadiusSecondaryCliAcctSharedKey, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSecondaryCliAcctSharedKey, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.34", ISnmpConstant.STRING));
+        initProperty(utsDot3Security8021xRadiusAutoSwitch, new SnmpMibBeanProperty(utsDot3Security8021xRadiusAutoSwitch, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Security8021xRadiusRetryTimes, new SnmpMibBeanProperty(utsDot3Security8021xRadiusRetryTimes, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Security8021xRadiusTimeout, new SnmpMibBeanProperty(utsDot3Security8021xRadiusTimeout, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Security8021xRadiusBackToPrimary, new SnmpMibBeanProperty(utsDot3Security8021xRadiusBackToPrimary, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Security8021xRadiusRealm, new SnmpMibBeanProperty(utsDot3Security8021xRadiusRealm, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.5", ISnmpConstant.STRING));
+        initProperty(utsDot3Security8021xRadiusNasIpAddress, new SnmpMibBeanProperty(utsDot3Security8021xRadiusNasIpAddress, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.6", ISnmpConstant.IP_ADDRESS));
+        initProperty(utsDot3Security8021xRadiusSvrPrimaryOnuAuthIP, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrPrimaryOnuAuthIP, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.11", ISnmpConstant.IP_ADDRESS));
+        initProperty(utsDot3Security8021xRadiusSvrPrimaryOnuAuthPort, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrPrimaryOnuAuthPort, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.12", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Security8021xRadiusPrimaryOnuAuthSharedKey, new SnmpMibBeanProperty(utsDot3Security8021xRadiusPrimaryOnuAuthSharedKey, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.13", ISnmpConstant.STRING));
+        initProperty(utsDot3Security8021xRadiusSvrSecondaryOnuAuthIP, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrSecondaryOnuAuthIP, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.14", ISnmpConstant.IP_ADDRESS));
+        initProperty(utsDot3Security8021xRadiusSvrSecondaryOnuAuthPort, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrSecondaryOnuAuthPort, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.15", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Security8021xRadiusSecondaryOnuAuthSharedKey, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSecondaryOnuAuthSharedKey, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.16", ISnmpConstant.STRING));
+        initProperty(utsDot3Security8021xRadiusSvrPrimaryOnuAcctIP, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrPrimaryOnuAcctIP, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.17", ISnmpConstant.IP_ADDRESS));
+        initProperty(utsDot3Security8021xRadiusSvrPrimaryOnuAcctPort, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrPrimaryOnuAcctPort, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.18", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Security8021xRadiusPrimaryOnuAcctSharedKey, new SnmpMibBeanProperty(utsDot3Security8021xRadiusPrimaryOnuAcctSharedKey, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.19", ISnmpConstant.STRING));
+        initProperty(utsDot3Security8021xRadiusSvrSecondaryOnuAcctIP, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrSecondaryOnuAcctIP, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.20", ISnmpConstant.IP_ADDRESS));
+        initProperty(utsDot3Security8021xRadiusSvrSecondaryOnuAcctPort, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrSecondaryOnuAcctPort, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.21", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Security8021xRadiusSecondaryOnuAcctSharedKey, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSecondaryOnuAcctSharedKey, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.22", ISnmpConstant.STRING));
+        initProperty(utsDot3Security8021xRadiusSvrPrimaryCliAuthIP, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrPrimaryCliAuthIP, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.23", ISnmpConstant.IP_ADDRESS));
+        initProperty(utsDot3Security8021xRadiusSvrPrimaryCliAuthPort, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrPrimaryCliAuthPort, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.24", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Security8021xRadiusPrimaryCliAuthSharedKey, new SnmpMibBeanProperty(utsDot3Security8021xRadiusPrimaryCliAuthSharedKey, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.25", ISnmpConstant.STRING));
+        initProperty(utsDot3Security8021xRadiusSvrSecondaryCliAuthIP, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrSecondaryCliAuthIP, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.26", ISnmpConstant.IP_ADDRESS));
+        initProperty(utsDot3Security8021xRadiusSvrSecondaryCliAuthPort, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrSecondaryCliAuthPort, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.27", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Security8021xRadiusSecondaryCliAuthSharedKey, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSecondaryCliAuthSharedKey, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.28", ISnmpConstant.STRING));
+        initProperty(utsDot3Security8021xRadiusSvrPrimaryCliAcctIP, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrPrimaryCliAcctIP, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.29", ISnmpConstant.IP_ADDRESS));
+        initProperty(utsDot3Security8021xRadiusSvrPrimaryCliAcctPort, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrPrimaryCliAcctPort, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.30", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Security8021xRadiusPrimaryCliAcctSharedKey, new SnmpMibBeanProperty(utsDot3Security8021xRadiusPrimaryCliAcctSharedKey, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.31", ISnmpConstant.STRING));
+        initProperty(utsDot3Security8021xRadiusSvrSecondaryCliAcctIP, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrSecondaryCliAcctIP, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.32", ISnmpConstant.IP_ADDRESS));
+        initProperty(utsDot3Security8021xRadiusSvrSecondaryCliAcctPort, new SnmpMibBeanProperty(utsDot3Security8021xRadiusSvrSecondaryCliAcctPort, ".1.3.6.1.4.1.45121.1800.5.1.1.1.2.1.33", ISnmpConstant.INTEGER));
     }
 
 

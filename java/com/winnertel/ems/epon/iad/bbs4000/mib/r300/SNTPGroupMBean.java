@@ -21,13 +21,13 @@ public class SNTPGroupMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsSNTPServiceState, new SnmpMibBeanProperty(utsSNTPServiceState, ".1.3.6.1.4.1.41355.1800.2.2.1.6.4.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsSNTPPollInterval, new SnmpMibBeanProperty(utsSNTPPollInterval, ".1.3.6.1.4.1.41355.1800.2.2.1.6.4.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsSNTPTimeZone, new SnmpMibBeanProperty(utsSNTPTimeZone, ".1.3.6.1.4.1.41355.1800.2.2.1.6.4.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsSNTPClockSync, new SnmpMibBeanProperty(utsSNTPClockSync, ".1.3.6.1.4.1.41355.1800.2.2.1.6.4.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsSNTPCurrentTime, new SnmpMibBeanProperty(utsSNTPCurrentTime, ".1.3.6.1.4.1.41355.1800.2.2.1.6.4.1.5", ISnmpConstant.STRING));
-        initProperty(utsSNTPLastUpdateTime, new SnmpMibBeanProperty(utsSNTPLastUpdateTime, ".1.3.6.1.4.1.41355.1800.2.2.1.6.4.1.6", ISnmpConstant.STRING));
-        initProperty(utsSNTPTimeZoneMinuteOffset, new SnmpMibBeanProperty(utsSNTPTimeZoneMinuteOffset, ".1.3.6.1.4.1.41355.1800.2.2.1.6.4.1.7", ISnmpConstant.INTEGER));
+        initProperty(utsSNTPServiceState, new SnmpMibBeanProperty(utsSNTPServiceState, ".1.3.6.1.4.1.45121.1800.2.2.1.6.4.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsSNTPPollInterval, new SnmpMibBeanProperty(utsSNTPPollInterval, ".1.3.6.1.4.1.45121.1800.2.2.1.6.4.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsSNTPTimeZone, new SnmpMibBeanProperty(utsSNTPTimeZone, ".1.3.6.1.4.1.45121.1800.2.2.1.6.4.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsSNTPClockSync, new SnmpMibBeanProperty(utsSNTPClockSync, ".1.3.6.1.4.1.45121.1800.2.2.1.6.4.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsSNTPCurrentTime, new SnmpMibBeanProperty(utsSNTPCurrentTime, ".1.3.6.1.4.1.45121.1800.2.2.1.6.4.1.5", ISnmpConstant.STRING));
+        initProperty(utsSNTPLastUpdateTime, new SnmpMibBeanProperty(utsSNTPLastUpdateTime, ".1.3.6.1.4.1.45121.1800.2.2.1.6.4.1.6", ISnmpConstant.STRING));
+        initProperty(utsSNTPTimeZoneMinuteOffset, new SnmpMibBeanProperty(utsSNTPTimeZoneMinuteOffset, ".1.3.6.1.4.1.45121.1800.2.2.1.6.4.1.7", ISnmpConstant.INTEGER));
     }
 
 

@@ -29,12 +29,12 @@ public class OnuConfigWoOamTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsOnuSlotId, new SnmpMibBeanProperty(utsOnuSlotId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.4.1.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsOnuPortId, new SnmpMibBeanProperty(utsOnuPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.4.1.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsOnuLogicalPortId, new SnmpMibBeanProperty(utsOnuLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.4.1.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsOnuCtcExtOamEnable, new SnmpMibBeanProperty(utsOnuCtcExtOamEnable, ".1.3.6.1.4.1.41355.1800.2.3.1.2.4.3.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsOnuDescription, new SnmpMibBeanProperty(utsOnuDescription, ".1.3.6.1.4.1.41355.1800.2.3.1.2.4.3.1.2", ISnmpConstant.STRING));
-        initProperty(utsOnuAdminStatus, new SnmpMibBeanProperty(utsOnuAdminStatus, ".1.3.6.1.4.1.41355.1800.2.3.1.2.4.3.1.32", ISnmpConstant.INTEGER));
+        initProperty(utsOnuSlotId, new SnmpMibBeanProperty(utsOnuSlotId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.4.1.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsOnuPortId, new SnmpMibBeanProperty(utsOnuPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.4.1.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsOnuLogicalPortId, new SnmpMibBeanProperty(utsOnuLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.4.1.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsOnuCtcExtOamEnable, new SnmpMibBeanProperty(utsOnuCtcExtOamEnable, ".1.3.6.1.4.1.45121.1800.2.3.1.2.4.3.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsOnuDescription, new SnmpMibBeanProperty(utsOnuDescription, ".1.3.6.1.4.1.45121.1800.2.3.1.2.4.3.1.2", ISnmpConstant.STRING));
+        initProperty(utsOnuAdminStatus, new SnmpMibBeanProperty(utsOnuAdminStatus, ".1.3.6.1.4.1.45121.1800.2.3.1.2.4.3.1.32", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsOnuSlotId() {

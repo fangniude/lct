@@ -43,29 +43,29 @@ public class GponOnuBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(onuCfgSlotNo, new SnmpMibBeanProperty(onuCfgSlotNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.1", ISnmpConstant.INTEGER));
-        initProperty(onuCfgPortNo, new SnmpMibBeanProperty(onuCfgPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.2", ISnmpConstant.INTEGER));
-        initProperty(onuCfgLogicalPortNo, new SnmpMibBeanProperty(onuCfgLogicalPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.3", ISnmpConstant.INTEGER));
-        initProperty(onuCfgPrimaryStatus, new SnmpMibBeanProperty(onuCfgPrimaryStatus, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.5", ISnmpConstant.INTEGER));
-        initProperty(onuCfgVendorID, new SnmpMibBeanProperty(onuCfgVendorID, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.14", ISnmpConstant.STRING));
-        initProperty(onuCfgVersion, new SnmpMibBeanProperty(onuCfgVersion, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.15", ISnmpConstant.STRING));
-        initProperty(onuCfgSerialNumber, new SnmpMibBeanProperty(onuCfgSerialNumber, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.16", ISnmpConstant.STRING));
-        initProperty(onuCfgAdministrativeState, new SnmpMibBeanProperty(onuCfgAdministrativeState, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.19", ISnmpConstant.INTEGER));
-        initProperty(onuCfgOperationalState, new SnmpMibBeanProperty(onuCfgOperationalState, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.20", ISnmpConstant.INTEGER));
-        initProperty(onuCfgEquipmentID, new SnmpMibBeanProperty(onuCfgEquipmentID, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.21", ISnmpConstant.STRING));
-        initProperty(onuCfgOmccVersion, new SnmpMibBeanProperty(onuCfgOmccVersion, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.22", ISnmpConstant.INTEGER));
-        initProperty(onuCfgOnuHardwareType, new SnmpMibBeanProperty(onuCfgOnuHardwareType, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.23", ISnmpConstant.GAUGE));
-        initProperty(onuCfgOnuHardwareRevision, new SnmpMibBeanProperty(onuCfgOnuHardwareRevision, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.24", ISnmpConstant.GAUGE));
-        initProperty(onuCfgOnuImageInstance0Version, new SnmpMibBeanProperty(onuCfgOnuImageInstance0Version, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.34", ISnmpConstant.STRING));
-        initProperty(onuCfgOnuImageInstance0Valid, new SnmpMibBeanProperty(onuCfgOnuImageInstance0Valid, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.35", ISnmpConstant.INTEGER));
-        initProperty(onuCfgOnuImageInstance0Activate, new SnmpMibBeanProperty(onuCfgOnuImageInstance0Activate, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.36", ISnmpConstant.INTEGER));
-        initProperty(onuCfgOnuImageInstance0Commit, new SnmpMibBeanProperty(onuCfgOnuImageInstance0Commit, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.37", ISnmpConstant.INTEGER));
-        initProperty(onuCfgOnuImageInstance1Version, new SnmpMibBeanProperty(onuCfgOnuImageInstance1Version, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.38", ISnmpConstant.STRING));
-        initProperty(onuCfgOnuImageInstance1Valid, new SnmpMibBeanProperty(onuCfgOnuImageInstance1Valid, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.39", ISnmpConstant.INTEGER));
-        initProperty(onuCfgOnuImageInstance1Activate, new SnmpMibBeanProperty(onuCfgOnuImageInstance1Activate, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.40", ISnmpConstant.INTEGER));
-        initProperty(onuCfgOnuImageInstance1Commit, new SnmpMibBeanProperty(onuCfgOnuImageInstance1Commit, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.41", ISnmpConstant.INTEGER));
-        initProperty(onuCfgOnuMacAddress, new SnmpMibBeanProperty(onuCfgOnuMacAddress, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.42", ISnmpConstant.STRING));
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.57", ISnmpConstant.INTEGER));
+        initProperty(onuCfgSlotNo, new SnmpMibBeanProperty(onuCfgSlotNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.1", ISnmpConstant.INTEGER));
+        initProperty(onuCfgPortNo, new SnmpMibBeanProperty(onuCfgPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.2", ISnmpConstant.INTEGER));
+        initProperty(onuCfgLogicalPortNo, new SnmpMibBeanProperty(onuCfgLogicalPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.3", ISnmpConstant.INTEGER));
+        initProperty(onuCfgPrimaryStatus, new SnmpMibBeanProperty(onuCfgPrimaryStatus, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.5", ISnmpConstant.INTEGER));
+        initProperty(onuCfgVendorID, new SnmpMibBeanProperty(onuCfgVendorID, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.14", ISnmpConstant.STRING));
+        initProperty(onuCfgVersion, new SnmpMibBeanProperty(onuCfgVersion, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.15", ISnmpConstant.STRING));
+        initProperty(onuCfgSerialNumber, new SnmpMibBeanProperty(onuCfgSerialNumber, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.16", ISnmpConstant.STRING));
+        initProperty(onuCfgAdministrativeState, new SnmpMibBeanProperty(onuCfgAdministrativeState, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.19", ISnmpConstant.INTEGER));
+        initProperty(onuCfgOperationalState, new SnmpMibBeanProperty(onuCfgOperationalState, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.20", ISnmpConstant.INTEGER));
+        initProperty(onuCfgEquipmentID, new SnmpMibBeanProperty(onuCfgEquipmentID, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.21", ISnmpConstant.STRING));
+        initProperty(onuCfgOmccVersion, new SnmpMibBeanProperty(onuCfgOmccVersion, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.22", ISnmpConstant.INTEGER));
+        initProperty(onuCfgOnuHardwareType, new SnmpMibBeanProperty(onuCfgOnuHardwareType, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.23", ISnmpConstant.GAUGE));
+        initProperty(onuCfgOnuHardwareRevision, new SnmpMibBeanProperty(onuCfgOnuHardwareRevision, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.24", ISnmpConstant.GAUGE));
+        initProperty(onuCfgOnuImageInstance0Version, new SnmpMibBeanProperty(onuCfgOnuImageInstance0Version, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.34", ISnmpConstant.STRING));
+        initProperty(onuCfgOnuImageInstance0Valid, new SnmpMibBeanProperty(onuCfgOnuImageInstance0Valid, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.35", ISnmpConstant.INTEGER));
+        initProperty(onuCfgOnuImageInstance0Activate, new SnmpMibBeanProperty(onuCfgOnuImageInstance0Activate, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.36", ISnmpConstant.INTEGER));
+        initProperty(onuCfgOnuImageInstance0Commit, new SnmpMibBeanProperty(onuCfgOnuImageInstance0Commit, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.37", ISnmpConstant.INTEGER));
+        initProperty(onuCfgOnuImageInstance1Version, new SnmpMibBeanProperty(onuCfgOnuImageInstance1Version, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.38", ISnmpConstant.STRING));
+        initProperty(onuCfgOnuImageInstance1Valid, new SnmpMibBeanProperty(onuCfgOnuImageInstance1Valid, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.39", ISnmpConstant.INTEGER));
+        initProperty(onuCfgOnuImageInstance1Activate, new SnmpMibBeanProperty(onuCfgOnuImageInstance1Activate, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.40", ISnmpConstant.INTEGER));
+        initProperty(onuCfgOnuImageInstance1Commit, new SnmpMibBeanProperty(onuCfgOnuImageInstance1Commit, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.41", ISnmpConstant.INTEGER));
+        initProperty(onuCfgOnuMacAddress, new SnmpMibBeanProperty(onuCfgOnuMacAddress, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.42", ISnmpConstant.STRING));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.57", ISnmpConstant.INTEGER));
     }
 
     public Integer getOnuCfgSlotNo() {

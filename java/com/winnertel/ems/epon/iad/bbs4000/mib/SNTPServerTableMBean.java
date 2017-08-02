@@ -25,11 +25,11 @@ public class SNTPServerTableMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsSNTPServerId, new SnmpMibBeanProperty(utsSNTPServerId, ".1.3.6.1.4.1.41355.1800.2.2.1.6.4.2.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsSNTPServerIpAddress, new SnmpMibBeanProperty(utsSNTPServerIpAddress, ".1.3.6.1.4.1.41355.1800.2.2.1.6.4.2.1.2", ISnmpConstant.IP_ADDRESS));
-        initProperty(utsSNTPServerState, new SnmpMibBeanProperty(utsSNTPServerState, ".1.3.6.1.4.1.41355.1800.2.2.1.6.4.2.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsSNTPServerVersion, new SnmpMibBeanProperty(utsSNTPServerVersion, ".1.3.6.1.4.1.41355.1800.2.2.1.6.4.2.1.4", ISnmpConstant.STRING));
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.2.1.6.4.2.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsSNTPServerId, new SnmpMibBeanProperty(utsSNTPServerId, ".1.3.6.1.4.1.45121.1800.2.2.1.6.4.2.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsSNTPServerIpAddress, new SnmpMibBeanProperty(utsSNTPServerIpAddress, ".1.3.6.1.4.1.45121.1800.2.2.1.6.4.2.1.2", ISnmpConstant.IP_ADDRESS));
+        initProperty(utsSNTPServerState, new SnmpMibBeanProperty(utsSNTPServerState, ".1.3.6.1.4.1.45121.1800.2.2.1.6.4.2.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsSNTPServerVersion, new SnmpMibBeanProperty(utsSNTPServerVersion, ".1.3.6.1.4.1.45121.1800.2.2.1.6.4.2.1.4", ISnmpConstant.STRING));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.2.1.6.4.2.1.5", ISnmpConstant.INTEGER));
 
     }
 

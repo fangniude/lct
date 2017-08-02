@@ -3,6 +3,7 @@ package com.winnertel.lct.batch.gui;
 import com.winnertel.em.framework.IApplication;
 import com.winnertel.em.framework.gui.swing.UPanel;
 import com.winnertel.em.framework.model.MibBeanException;
+import com.winnertel.em.standard.snmp.gui.SnmpTablePane;
 import com.winnertel.em.standard.util.gui.input.IntegerTextField;
 import com.winnertel.em.standard.util.gui.layout.HSpacer;
 import com.winnertel.em.standard.util.gui.layout.NTLayout;
@@ -30,12 +31,14 @@ public class ProfileEditPanel extends UPanel {
     private IntegerTextField upMaxBwF = new IntegerTextField();
     private IntegerTextField downMaxBwF = new IntegerTextField();
 
-    int[] utsDot3OnuEtherPortVlanModeVList = new int[]{0, 1, 2, 3, 4};
+    int[] utsDot3OnuEtherPortVlanModeVList = new int[]{0, 1,
+//            2, 3,
+            4};
     String[] utsDot3OnuEtherPortVlanModeTList = new String[]{
             fStringMap.getString("transparent"),
             fStringMap.getString("tag"),
-            fStringMap.getString("translation"),
-            fStringMap.getString("n1aggregation"),
+//            fStringMap.getString("translation"),
+//            fStringMap.getString("n1aggregation"),
             fStringMap.getString("trunk")
     };
 
@@ -80,7 +83,7 @@ public class ProfileEditPanel extends UPanel {
         onuPanel.add(new HSpacer());
 
         Vector columnNames = new Vector();
-        columnNames.addAll(Arrays.asList("ID", fStringMap.getString("utsDot3OnuEtherPortVlanMode"), fStringMap.getString("utsDot3OnuEtherPortVlanTag"), fStringMap.getString("utsDot3OnuEtherPortVlanTPID"), fStringMap.getString("utsDot3OnuEtherPortDSPolicingPIR")));
+        columnNames.addAll(Arrays.asList("ID", fStringMap.getString("utsDot3OnuEtherPortVlanMode"), fStringMap.getString("utsDot3OnuEtherPortVlanTag"), fStringMap.getString("utsDot3OnuEtherPortVlanTPID"), fStringMap.getString("passVlan"), fStringMap.getString("upPir"), fStringMap.getString("downPir")));
         Vector data = new Vector();
         for (int i = 0; i < 4; i++) {
             Vector<Object> row = new Vector<>();
@@ -92,8 +95,11 @@ public class ProfileEditPanel extends UPanel {
         uniTable.setPreferredScrollableViewportSize(new Dimension(400, 65));
 
         uniTable.getColumnModel().getColumn(0).setPreferredWidth(20);
-        uniTable.getColumnModel().getColumn(4).setPreferredWidth(100);
+        uniTable.getColumnModel().getColumn(5).setPreferredWidth(100);
+        uniTable.getColumnModel().getColumn(6).setPreferredWidth(100);
         uniTable.getColumnModel().getColumn(1).setCellEditor(new DefaultCellEditor(new JComboBox(utsDot3OnuEtherPortVlanModeTList)));
+
+        uniTable.getColumnModel().getColumn(3).setCellEditor(new DefaultCellEditor(new JComboBox(new Object[]{"0x8100", "0x9100"})));
 
         NTLayout uniLayout = new NTLayout(1, 1, NTLayout.FILL, NTLayout.CENTER, 5, 5);
         layout.setMargins(6, 10, 6, 10);
@@ -124,7 +130,7 @@ public class ProfileEditPanel extends UPanel {
     }
 
     public void refresh() {
-        System.out.println("test");
+//        System.out.println("test");
 //        if (SnmpAction.IType.MODIFY.equals(fCommand)) {
 //            OnuCfgBean m = (OnuCfgBean) getModel();
 //            if (m == null) {
@@ -194,11 +200,11 @@ public class ProfileEditPanel extends UPanel {
             XmlProxy proxy = new XmlProxy(fApplication.getSnmpProxy().getTargetHost());
 
             ProfileOnuBean onu = new ProfileOnuBean(proxy);
+            setModel(onu);
             onu.setId(i + "-1");
             onu.setUpMaxBw(String.valueOf(upMaxBwF.getValue()));
             onu.setDownMaxBw(String.valueOf(downMaxBwF.getValue()));
-            onu.add();
-            setModel(onu);
+//            onu.add();
 
             TableModel model = uniTable.getModel();
             for (int j = 0; j < 4; j++) {
@@ -207,13 +213,36 @@ public class ProfileEditPanel extends UPanel {
                 Object mode = model.getValueAt(j, 1);
                 Object vlan = model.getValueAt(j, 2);
                 Object tpid = model.getValueAt(j, 3);
-                Object dsPir = model.getValueAt(j, 4);
+                Object passVlan = model.getValueAt(j, 4);
+                Object upPir = model.getValueAt(j, 5);
+                Object dsPir = model.getValueAt(j, 6);
 
-                if (mode != null || vlan != null || tpid != null || dsPir != null) {
+                if (mode != null || vlan != null || passVlan != null || tpid != null || upPir != null || dsPir != null) {
                     uni.setVlanMode(String.valueOf(utsDot3OnuEtherPortVlanModeVList[getIndexFromValue(utsDot3OnuEtherPortVlanModeTList, String.valueOf(mode))]));
-                    uni.setVlanTag(String.valueOf(vlan));
-                    uni.setVlanTpid(String.valueOf(tpid));
-                    uni.setDsPir(String.valueOf(dsPir));
+                    if ("1".equals(uni.getVlanMode())) {
+                        uni.setVlanTag(String.valueOf(vlan));
+                        uni.setVlanTpid(String.valueOf(tpid));
+                    } else if ("4".equals(uni.getVlanMode())) {
+                        uni.setVlanTag(String.valueOf(vlan));
+                        uni.setVlanTpid(String.valueOf(tpid));
+                        uni.setPassVlan(String.valueOf(passVlan));
+                    }
+                    if (upPir != null) {
+                        uni.setPolicingEnable("1");
+                        uni.setPolicingCir(String.valueOf(upPir));
+                        uni.setPolicingCbs("1000");
+                        uni.setPolicingEbs("1000");
+                    } else {
+                        uni.setPolicingEnable("0");
+                    }
+
+                    if (dsPir != null) {
+                        uni.setDsEnable("1");
+                        uni.setDsPir(String.valueOf(dsPir));
+                        uni.setDsCir(String.valueOf(dsPir));
+                    } else {
+                        uni.setDsEnable("0");
+                    }
                     uni.add();
                 }
             }
@@ -224,6 +253,13 @@ public class ProfileEditPanel extends UPanel {
         }
     }
 
+    @Override
+    public void afterUpdateModel() {
+        super.afterUpdateModel();
+        SnmpTablePane snmpTablePane = (SnmpTablePane) this.getTable().getParent().getParent().getParent();
+        ProfilePanel profilePanel = (ProfilePanel) snmpTablePane.getParent().getParent().getParent();
+        profilePanel.refresh();
+    }
 
     public int getIndexFromValue(String[] list, String v) {
         for (int i = 0; i != list.length; i++) {

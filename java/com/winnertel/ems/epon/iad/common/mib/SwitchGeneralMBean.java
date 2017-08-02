@@ -41,16 +41,16 @@ public class SwitchGeneralMBean extends SnmpMibBean {
 	protected void init() {
 		
 						
-       	initProperty(sysMaintLocalFile, new SnmpMibBeanProperty(sysMaintLocalFile, ".1.3.6.1.4.1.41355.1.3.10.100.106.1.1", ISnmpConstant.INTEGER));
-        initProperty(sysMaintRemoteFile, new SnmpMibBeanProperty(sysMaintRemoteFile, ".1.3.6.1.4.1.41355.1.3.10.100.106.1.2", ISnmpConstant.STRING));
-        initProperty(sysMaintFileSize, new SnmpMibBeanProperty(sysMaintFileSize, ".1.3.6.1.4.1.41355.1.3.10.100.106.1.3", ISnmpConstant.INTEGER));
-        initProperty(sysMaintTftpServer, new SnmpMibBeanProperty(sysMaintTftpServer,  ".1.3.6.1.4.1.41355.1.3.10.100.106.1.4", ISnmpConstant.IP_ADDRESS));
-        initProperty(sysMaintOperation, new SnmpMibBeanProperty(sysMaintOperation, ".1.3.6.1.4.1.41355.1.3.10.100.106.1.5", ISnmpConstant.INTEGER));
-        initProperty(sysMaintTransSize, new SnmpMibBeanProperty(sysMaintTransSize, ".1.3.6.1.4.1.41355.1.3.10.100.106.1.6", ISnmpConstant.INTEGER));
-        initProperty(sysMaintOperResult, new SnmpMibBeanProperty(sysMaintOperResult, ".1.3.6.1.4.1.41355.1.3.10.100.106.1.7", ISnmpConstant.INTEGER));
-        initProperty(sysMaintEraseFile, new SnmpMibBeanProperty(sysMaintEraseFile, ".1.3.6.1.4.1.41355.1.3.10.100.106.1.8", ISnmpConstant.INTEGER));
-        initProperty(sysMaintWriteMemory, new SnmpMibBeanProperty(sysMaintWriteMemory,  ".1.3.6.1.4.1.41355.1.3.10.100.106.1.9", ISnmpConstant.INTEGER));
-        initProperty(sysMaintReset, new SnmpMibBeanProperty(sysMaintReset, ".1.3.6.1.4.1.41355.1.3.10.100.106.1.10", ISnmpConstant.INTEGER));
+       	initProperty(sysMaintLocalFile, new SnmpMibBeanProperty(sysMaintLocalFile, ".1.3.6.1.4.1.45121.1.3.10.100.106.1.1", ISnmpConstant.INTEGER));
+        initProperty(sysMaintRemoteFile, new SnmpMibBeanProperty(sysMaintRemoteFile, ".1.3.6.1.4.1.45121.1.3.10.100.106.1.2", ISnmpConstant.STRING));
+        initProperty(sysMaintFileSize, new SnmpMibBeanProperty(sysMaintFileSize, ".1.3.6.1.4.1.45121.1.3.10.100.106.1.3", ISnmpConstant.INTEGER));
+        initProperty(sysMaintTftpServer, new SnmpMibBeanProperty(sysMaintTftpServer,  ".1.3.6.1.4.1.45121.1.3.10.100.106.1.4", ISnmpConstant.IP_ADDRESS));
+        initProperty(sysMaintOperation, new SnmpMibBeanProperty(sysMaintOperation, ".1.3.6.1.4.1.45121.1.3.10.100.106.1.5", ISnmpConstant.INTEGER));
+        initProperty(sysMaintTransSize, new SnmpMibBeanProperty(sysMaintTransSize, ".1.3.6.1.4.1.45121.1.3.10.100.106.1.6", ISnmpConstant.INTEGER));
+        initProperty(sysMaintOperResult, new SnmpMibBeanProperty(sysMaintOperResult, ".1.3.6.1.4.1.45121.1.3.10.100.106.1.7", ISnmpConstant.INTEGER));
+        initProperty(sysMaintEraseFile, new SnmpMibBeanProperty(sysMaintEraseFile, ".1.3.6.1.4.1.45121.1.3.10.100.106.1.8", ISnmpConstant.INTEGER));
+        initProperty(sysMaintWriteMemory, new SnmpMibBeanProperty(sysMaintWriteMemory,  ".1.3.6.1.4.1.45121.1.3.10.100.106.1.9", ISnmpConstant.INTEGER));
+        initProperty(sysMaintReset, new SnmpMibBeanProperty(sysMaintReset, ".1.3.6.1.4.1.45121.1.3.10.100.106.1.10", ISnmpConstant.INTEGER));
 
 	}
 

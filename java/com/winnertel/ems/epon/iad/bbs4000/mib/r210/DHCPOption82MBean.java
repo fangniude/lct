@@ -20,12 +20,12 @@ public class DHCPOption82MBean extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsBBSMgmtOption82FormatModeSetting, new SnmpMibBeanProperty(utsBBSMgmtOption82FormatModeSetting, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.33", ISnmpConstant.INTEGER));
-    initProperty(utsBBSMgmtOption82DefaultCircuitID, new SnmpMibBeanProperty(utsBBSMgmtOption82DefaultCircuitID, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.34", ISnmpConstant.STRING));
-    initProperty(utsBBSMgmtOption82CustomizedCircuitID, new SnmpMibBeanProperty(utsBBSMgmtOption82CustomizedCircuitID, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.35", ISnmpConstant.STRING));
-    initProperty(utsBBSMgmtOption82DefaultRemoteID, new SnmpMibBeanProperty(utsBBSMgmtOption82DefaultRemoteID, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.36", ISnmpConstant.STRING));
-    initProperty(utsBBSMgmtOption82CustomizedRemoteID, new SnmpMibBeanProperty(utsBBSMgmtOption82CustomizedRemoteID, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.37", ISnmpConstant.STRING));
-    initProperty(utsBBSMgmtOption82CtcAccessNodeIdentifier, new SnmpMibBeanProperty(utsBBSMgmtOption82CtcAccessNodeIdentifier, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.43", ISnmpConstant.STRING));
+    initProperty(utsBBSMgmtOption82FormatModeSetting, new SnmpMibBeanProperty(utsBBSMgmtOption82FormatModeSetting, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.33", ISnmpConstant.INTEGER));
+    initProperty(utsBBSMgmtOption82DefaultCircuitID, new SnmpMibBeanProperty(utsBBSMgmtOption82DefaultCircuitID, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.34", ISnmpConstant.STRING));
+    initProperty(utsBBSMgmtOption82CustomizedCircuitID, new SnmpMibBeanProperty(utsBBSMgmtOption82CustomizedCircuitID, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.35", ISnmpConstant.STRING));
+    initProperty(utsBBSMgmtOption82DefaultRemoteID, new SnmpMibBeanProperty(utsBBSMgmtOption82DefaultRemoteID, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.36", ISnmpConstant.STRING));
+    initProperty(utsBBSMgmtOption82CustomizedRemoteID, new SnmpMibBeanProperty(utsBBSMgmtOption82CustomizedRemoteID, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.37", ISnmpConstant.STRING));
+    initProperty(utsBBSMgmtOption82CtcAccessNodeIdentifier, new SnmpMibBeanProperty(utsBBSMgmtOption82CtcAccessNodeIdentifier, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.43", ISnmpConstant.STRING));
   }
 
   public Integer getUtsBBSMgmtOption82FormatModeSetting() {

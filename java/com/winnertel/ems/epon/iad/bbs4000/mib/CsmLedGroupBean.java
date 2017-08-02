@@ -38,7 +38,7 @@ public class CsmLedGroupBean extends SnmpMibBean
   public static final String utsBBSLEDCSMBEmsPortLinkLedState = "utsBBSLEDCSMBEmsPortLinkLedState";
   public static final String utsBBSLEDCSMBEmsPortSpeedLedState = "utsBBSLEDCSMBEmsPortSpeedLedState";
 
-  private String fTableOid = ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.6.1";
+  private String fTableOid = ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.6.1";
 
   public CsmLedGroupBean(ISnmpProxy aSnmpProxy)
   {

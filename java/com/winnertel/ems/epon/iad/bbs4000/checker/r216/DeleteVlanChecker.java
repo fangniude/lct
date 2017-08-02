@@ -59,7 +59,7 @@ public class DeleteVlanChecker  extends BaseChecker
     try
     {
 /**
-      String[] oids = new String[]{ ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.14.0" };
+      String[] oids = new String[]{ ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.14.0" };
       Object[] rowData = fApplication.getSnmpProxy().loadRow( oids );
 
       int mode = 0;
@@ -73,7 +73,7 @@ public class DeleteVlanChecker  extends BaseChecker
       if( mode == 2 )  //unique-tag-handling-mode
       {
 */
-    	String[]oids = new String[]{ ".1.3.6.1.4.1.41355.1800.2.1.1.2.1.0" };
+    	String[]oids = new String[]{ ".1.3.6.1.4.1.45121.1800.2.1.1.2.1.0" };
         Object[] value = fApplication.getSnmpProxy().loadRow( oids );
           //modified by Zhou Chao, 2008/8/23
         if( value != null && value.length != 0 && value[0] != null )

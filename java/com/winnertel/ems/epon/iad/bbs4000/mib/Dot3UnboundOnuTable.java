@@ -34,19 +34,19 @@ public class Dot3UnboundOnuTable extends SnmpMibBean
 	{
 		initProperty(utsDot3UnboundOnuModuleId,
 				new SnmpMibBeanProperty(utsDot3UnboundOnuModuleId,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.2.1.1.1",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.2.1.1.1",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3UnboundOnuPortId,
 				new SnmpMibBeanProperty(utsDot3UnboundOnuPortId,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.2.1.1.2",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.2.1.1.2",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3UnboundOnuLlid,
 				new SnmpMibBeanProperty(utsDot3UnboundOnuLlid,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.2.1.1.3",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.2.1.1.3",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3UnboundOnuPonMacAddr, new SnmpMibBeanProperty(
 				utsDot3UnboundOnuPonMacAddr,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.2.1.1.4", ISnmpConstant.MAC_ADDRESS));
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.2.1.1.4", ISnmpConstant.MAC_ADDRESS));
 
 	}
 

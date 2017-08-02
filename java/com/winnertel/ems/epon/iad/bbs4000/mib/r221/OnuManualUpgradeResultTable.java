@@ -27,17 +27,17 @@ public class OnuManualUpgradeResultTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3OnuFWUpgradeResultIndex, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeResultIndex, ".1.3.6.1.4.1.41355.1800.2.3.1.7.4.1.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuFWUpgradeResultUpgMode, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeResultUpgMode, ".1.3.6.1.4.1.41355.1800.2.3.1.7.4.1.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuFWUpgradeResultModule, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeResultModule, ".1.3.6.1.4.1.41355.1800.2.3.1.7.4.1.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuFWUpgradeResultPort, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeResultPort, ".1.3.6.1.4.1.41355.1800.2.3.1.7.4.1.1.6", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuFWUpgradeResultLogicalPort, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeResultLogicalPort, ".1.3.6.1.4.1.41355.1800.2.3.1.7.4.1.1.7", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuFWUpgradeResultStatus, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeResultStatus, ".1.3.6.1.4.1.41355.1800.2.3.1.7.4.1.1.8", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuFWUpgradeResultStationId, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeResultStationId, ".1.3.6.1.4.1.41355.1800.2.3.1.7.4.1.1.9", ISnmpConstant.STRING));
-        initProperty(utsDot3OnuFWUpgradeResultTargetVer, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeResultTargetVer, ".1.3.6.1.4.1.41355.1800.2.3.1.7.4.1.1.10", ISnmpConstant.STRING));
-        initProperty(utsDot3OnuFWUpgradeResultCurrVer, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeResultCurrVer, ".1.3.6.1.4.1.41355.1800.2.3.1.7.4.1.1.11", ISnmpConstant.STRING));
-        initProperty(utsDot3OnuFWUpgradeResultFinalState, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeResultFinalState, ".1.3.6.1.4.1.41355.1800.2.3.1.7.4.1.1.12", ISnmpConstant.STRING));
-        initProperty(utsDot3CtcTftpOamUpgradeResultIfCommitted, new SnmpMibBeanProperty(utsDot3CtcTftpOamUpgradeResultIfCommitted, ".1.3.6.1.4.1.41355.1800.2.3.1.7.4.1.1.13", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuFWUpgradeResultIndex, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeResultIndex, ".1.3.6.1.4.1.45121.1800.2.3.1.7.4.1.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuFWUpgradeResultUpgMode, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeResultUpgMode, ".1.3.6.1.4.1.45121.1800.2.3.1.7.4.1.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuFWUpgradeResultModule, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeResultModule, ".1.3.6.1.4.1.45121.1800.2.3.1.7.4.1.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuFWUpgradeResultPort, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeResultPort, ".1.3.6.1.4.1.45121.1800.2.3.1.7.4.1.1.6", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuFWUpgradeResultLogicalPort, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeResultLogicalPort, ".1.3.6.1.4.1.45121.1800.2.3.1.7.4.1.1.7", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuFWUpgradeResultStatus, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeResultStatus, ".1.3.6.1.4.1.45121.1800.2.3.1.7.4.1.1.8", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuFWUpgradeResultStationId, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeResultStationId, ".1.3.6.1.4.1.45121.1800.2.3.1.7.4.1.1.9", ISnmpConstant.STRING));
+        initProperty(utsDot3OnuFWUpgradeResultTargetVer, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeResultTargetVer, ".1.3.6.1.4.1.45121.1800.2.3.1.7.4.1.1.10", ISnmpConstant.STRING));
+        initProperty(utsDot3OnuFWUpgradeResultCurrVer, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeResultCurrVer, ".1.3.6.1.4.1.45121.1800.2.3.1.7.4.1.1.11", ISnmpConstant.STRING));
+        initProperty(utsDot3OnuFWUpgradeResultFinalState, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeResultFinalState, ".1.3.6.1.4.1.45121.1800.2.3.1.7.4.1.1.12", ISnmpConstant.STRING));
+        initProperty(utsDot3CtcTftpOamUpgradeResultIfCommitted, new SnmpMibBeanProperty(utsDot3CtcTftpOamUpgradeResultIfCommitted, ".1.3.6.1.4.1.45121.1800.2.3.1.7.4.1.1.13", ISnmpConstant.INTEGER));
     }
 
 

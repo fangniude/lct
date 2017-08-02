@@ -39,30 +39,30 @@ public class OltGponProtocolProfTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(oltGponProtocolProfProtocolPofileIndex, new SnmpMibBeanProperty(oltGponProtocolProfProtocolPofileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.1", ISnmpConstant.GAUGE));
-        initProperty(oltGponProtocolProfProfileName, new SnmpMibBeanProperty(oltGponProtocolProfProfileName, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.2", ISnmpConstant.STRING));
-        initProperty(oltGponProtocolProfMinRoundTripPropagationDelay, new SnmpMibBeanProperty(oltGponProtocolProfMinRoundTripPropagationDelay, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.3", ISnmpConstant.GAUGE));
-        initProperty(oltGponProtocolProfMinONUResponseTime, new SnmpMibBeanProperty(oltGponProtocolProfMinONUResponseTime, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.4", ISnmpConstant.GAUGE));
-        initProperty(oltGponProtocolProfNumberEqDMeasurementCycle, new SnmpMibBeanProperty(oltGponProtocolProfNumberEqDMeasurementCycle, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.5", ISnmpConstant.GAUGE));
-        initProperty(oltGponProtocolProfDefaultPowerLevelMode, new SnmpMibBeanProperty(oltGponProtocolProfDefaultPowerLevelMode, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.6", ISnmpConstant.INTEGER));
-        initProperty(oltGponProtocolProfDriftControlInterval, new SnmpMibBeanProperty(oltGponProtocolProfDriftControlInterval, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.7", ISnmpConstant.GAUGE));
-        initProperty(oltGponProtocolProfDriftControlLimit, new SnmpMibBeanProperty(oltGponProtocolProfDriftControlLimit, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.8", ISnmpConstant.GAUGE));
-        initProperty(oltGponProtocolProfGuardBits, new SnmpMibBeanProperty(oltGponProtocolProfGuardBits, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.9", ISnmpConstant.GAUGE));
-        initProperty(oltGponProtocolProfReportingGEMBlockSize, new SnmpMibBeanProperty(oltGponProtocolProfReportingGEMBlockSize, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.10", ISnmpConstant.GAUGE));
-        initProperty(oltGponProtocolProfUpstreamBERInterval, new SnmpMibBeanProperty(oltGponProtocolProfUpstreamBERInterval, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.11", ISnmpConstant.GAUGE));
-        initProperty(oltGponProtocolProfDownstreamBERInterval, new SnmpMibBeanProperty(oltGponProtocolProfDownstreamBERInterval, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.12", ISnmpConstant.GAUGE));
-        initProperty(oltGponProtocolProfThresholdBERSF, new SnmpMibBeanProperty(oltGponProtocolProfThresholdBERSF, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.13", ISnmpConstant.GAUGE));
-        initProperty(oltGponProtocolProfThresholdBERSD, new SnmpMibBeanProperty(oltGponProtocolProfThresholdBERSD, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.14", ISnmpConstant.GAUGE));
-        initProperty(oltGponProtocolProfAckTimeout, new SnmpMibBeanProperty(oltGponProtocolProfAckTimeout, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.15", ISnmpConstant.GAUGE));
-        initProperty(oltGponProtocolProfPlsMaxAllocSize, new SnmpMibBeanProperty(oltGponProtocolProfPlsMaxAllocSize, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.16", ISnmpConstant.GAUGE));
-        initProperty(oltGponProtocolProfNumberTxPreamble, new SnmpMibBeanProperty(oltGponProtocolProfNumberTxPreamble, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.17", ISnmpConstant.STRING));
-        initProperty(oltGponProtocolProfPreamblePatterns, new SnmpMibBeanProperty(oltGponProtocolProfPreamblePatterns, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.18", ISnmpConstant.GAUGE));
-        initProperty(oltGponProtocolProfFecTxEnable, new SnmpMibBeanProperty(oltGponProtocolProfFecTxEnable, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.19", ISnmpConstant.INTEGER));
-        initProperty(oltGponProtocolProfKeyExchange, new SnmpMibBeanProperty(oltGponProtocolProfKeyExchange, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.20", ISnmpConstant.INTEGER));
-        initProperty(oltGponProtocolProfPasswordRequest, new SnmpMibBeanProperty(oltGponProtocolProfPasswordRequest, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.21", ISnmpConstant.INTEGER));
-        initProperty(oltGponProtocolProfDisableOnu, new SnmpMibBeanProperty(oltGponProtocolProfDisableOnu, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.22", ISnmpConstant.INTEGER));
+        initProperty(oltGponProtocolProfProtocolPofileIndex, new SnmpMibBeanProperty(oltGponProtocolProfProtocolPofileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.1", ISnmpConstant.GAUGE));
+        initProperty(oltGponProtocolProfProfileName, new SnmpMibBeanProperty(oltGponProtocolProfProfileName, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.2", ISnmpConstant.STRING));
+        initProperty(oltGponProtocolProfMinRoundTripPropagationDelay, new SnmpMibBeanProperty(oltGponProtocolProfMinRoundTripPropagationDelay, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.3", ISnmpConstant.GAUGE));
+        initProperty(oltGponProtocolProfMinONUResponseTime, new SnmpMibBeanProperty(oltGponProtocolProfMinONUResponseTime, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.4", ISnmpConstant.GAUGE));
+        initProperty(oltGponProtocolProfNumberEqDMeasurementCycle, new SnmpMibBeanProperty(oltGponProtocolProfNumberEqDMeasurementCycle, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.5", ISnmpConstant.GAUGE));
+        initProperty(oltGponProtocolProfDefaultPowerLevelMode, new SnmpMibBeanProperty(oltGponProtocolProfDefaultPowerLevelMode, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.6", ISnmpConstant.INTEGER));
+        initProperty(oltGponProtocolProfDriftControlInterval, new SnmpMibBeanProperty(oltGponProtocolProfDriftControlInterval, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.7", ISnmpConstant.GAUGE));
+        initProperty(oltGponProtocolProfDriftControlLimit, new SnmpMibBeanProperty(oltGponProtocolProfDriftControlLimit, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.8", ISnmpConstant.GAUGE));
+        initProperty(oltGponProtocolProfGuardBits, new SnmpMibBeanProperty(oltGponProtocolProfGuardBits, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.9", ISnmpConstant.GAUGE));
+        initProperty(oltGponProtocolProfReportingGEMBlockSize, new SnmpMibBeanProperty(oltGponProtocolProfReportingGEMBlockSize, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.10", ISnmpConstant.GAUGE));
+        initProperty(oltGponProtocolProfUpstreamBERInterval, new SnmpMibBeanProperty(oltGponProtocolProfUpstreamBERInterval, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.11", ISnmpConstant.GAUGE));
+        initProperty(oltGponProtocolProfDownstreamBERInterval, new SnmpMibBeanProperty(oltGponProtocolProfDownstreamBERInterval, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.12", ISnmpConstant.GAUGE));
+        initProperty(oltGponProtocolProfThresholdBERSF, new SnmpMibBeanProperty(oltGponProtocolProfThresholdBERSF, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.13", ISnmpConstant.GAUGE));
+        initProperty(oltGponProtocolProfThresholdBERSD, new SnmpMibBeanProperty(oltGponProtocolProfThresholdBERSD, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.14", ISnmpConstant.GAUGE));
+        initProperty(oltGponProtocolProfAckTimeout, new SnmpMibBeanProperty(oltGponProtocolProfAckTimeout, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.15", ISnmpConstant.GAUGE));
+        initProperty(oltGponProtocolProfPlsMaxAllocSize, new SnmpMibBeanProperty(oltGponProtocolProfPlsMaxAllocSize, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.16", ISnmpConstant.GAUGE));
+        initProperty(oltGponProtocolProfNumberTxPreamble, new SnmpMibBeanProperty(oltGponProtocolProfNumberTxPreamble, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.17", ISnmpConstant.STRING));
+        initProperty(oltGponProtocolProfPreamblePatterns, new SnmpMibBeanProperty(oltGponProtocolProfPreamblePatterns, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.18", ISnmpConstant.GAUGE));
+        initProperty(oltGponProtocolProfFecTxEnable, new SnmpMibBeanProperty(oltGponProtocolProfFecTxEnable, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.19", ISnmpConstant.INTEGER));
+        initProperty(oltGponProtocolProfKeyExchange, new SnmpMibBeanProperty(oltGponProtocolProfKeyExchange, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.20", ISnmpConstant.INTEGER));
+        initProperty(oltGponProtocolProfPasswordRequest, new SnmpMibBeanProperty(oltGponProtocolProfPasswordRequest, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.21", ISnmpConstant.INTEGER));
+        initProperty(oltGponProtocolProfDisableOnu, new SnmpMibBeanProperty(oltGponProtocolProfDisableOnu, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.22", ISnmpConstant.INTEGER));
 
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.1.4.1.23", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.1.4.1.23", ISnmpConstant.INTEGER));
     }
 
     public Long getOltGponProtocolProfProtocolPofileIndex() {

@@ -26,18 +26,18 @@ public class VlanToGEMPorMapTable extends SnmpMibBean {
   protected void init() {
     initProperty(oltMultiVlantoMultiGEMPorMapIndex, new SnmpMibBeanProperty(
         oltMultiVlantoMultiGEMPorMapIndex,
-        ".1.3.6.1.4.1.41355.1.3.10.5.2.17.1.1", ISnmpConstant.GAUGE));
+        ".1.3.6.1.4.1.45121.1.3.10.5.2.17.1.1", ISnmpConstant.GAUGE));
     initProperty(multicastVLANIDStart, new SnmpMibBeanProperty(
-        multicastVLANIDStart, ".1.3.6.1.4.1.41355.1.3.10.5.2.17.1.2",
+        multicastVLANIDStart, ".1.3.6.1.4.1.45121.1.3.10.5.2.17.1.2",
         ISnmpConstant.GAUGE));
     initProperty(multicastVLANIDStop, new SnmpMibBeanProperty(
-        multicastVLANIDStop, ".1.3.6.1.4.1.41355.1.3.10.5.2.17.1.3",
+        multicastVLANIDStop, ".1.3.6.1.4.1.45121.1.3.10.5.2.17.1.3",
         ISnmpConstant.GAUGE));
     initProperty(oltMultiVlantoMultiGEMPorMapOltGEMPortNo,
         new SnmpMibBeanProperty(oltMultiVlantoMultiGEMPorMapOltGEMPortNo,
-            ".1.3.6.1.4.1.41355.1.3.10.5.2.17.1.4", ISnmpConstant.GAUGE));
+            ".1.3.6.1.4.1.45121.1.3.10.5.2.17.1.4", ISnmpConstant.GAUGE));
     initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-        ".1.3.6.1.4.1.41355.1.3.10.5.2.17.1.5", ISnmpConstant.INTEGER));
+        ".1.3.6.1.4.1.45121.1.3.10.5.2.17.1.5", ISnmpConstant.INTEGER));
 
   }
 

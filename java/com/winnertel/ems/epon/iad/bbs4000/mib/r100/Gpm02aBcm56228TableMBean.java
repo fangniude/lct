@@ -25,10 +25,10 @@ public class Gpm02aBcm56228TableMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsGpm02aBcm56228ModuleId, new SnmpMibBeanProperty(utsGpm02aBcm56228ModuleId, ".1.3.6.1.4.1.41355.1.3.10.16.2.1.3.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsGpm02aBcm56228DeviceId, new SnmpMibBeanProperty(utsGpm02aBcm56228DeviceId, ".1.3.6.1.4.1.41355.1.3.10.16.2.1.3.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsGpm02aBcm56228SchedulingMode, new SnmpMibBeanProperty(utsGpm02aBcm56228SchedulingMode, ".1.3.6.1.4.1.41355.1.3.10.16.2.1.3.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsGpm02aBcm56228SchedulingWeight, new SnmpMibBeanProperty(utsGpm02aBcm56228SchedulingWeight, ".1.3.6.1.4.1.41355.1.3.10.16.2.1.3.1.4", ISnmpConstant.OCTETS));
+        initProperty(utsGpm02aBcm56228ModuleId, new SnmpMibBeanProperty(utsGpm02aBcm56228ModuleId, ".1.3.6.1.4.1.45121.1.3.10.16.2.1.3.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsGpm02aBcm56228DeviceId, new SnmpMibBeanProperty(utsGpm02aBcm56228DeviceId, ".1.3.6.1.4.1.45121.1.3.10.16.2.1.3.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsGpm02aBcm56228SchedulingMode, new SnmpMibBeanProperty(utsGpm02aBcm56228SchedulingMode, ".1.3.6.1.4.1.45121.1.3.10.16.2.1.3.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsGpm02aBcm56228SchedulingWeight, new SnmpMibBeanProperty(utsGpm02aBcm56228SchedulingWeight, ".1.3.6.1.4.1.45121.1.3.10.16.2.1.3.1.4", ISnmpConstant.OCTETS));
     }
 
     public Integer getUtsGpm02aBcm56228ModuleId() {

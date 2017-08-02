@@ -1,5 +1,6 @@
 package com.winnertel.lct.batch.gui;
 
+import com.jgoodies.common.base.Strings;
 import com.winnertel.em.framework.IApplication;
 import com.winnertel.em.framework.gui.action.BaseAction;
 import com.winnertel.em.framework.gui.swing.UPanel;
@@ -39,18 +40,26 @@ public class OltSystemPanel extends UPanel {
     private IntegerTextField mgmtVlanField = new IntegerTextField();
     private IntegerTextField macAgeingField = new IntegerTextField();
 
-    private int[] macAuthFieldVList = new int[]{0, 1, 2, 3, 4, 8};
+//    private int[] macAuthFieldVList = new int[]{0, 1, 2
+////            , 3, 4, 8
+//    };
+
+
+    private String[] macAuthFieldVList = new String[]{"disable", "mac_auth", "mac_auto"
+//            , "loid_auth", "loid_paswd_auth", "hybrid_auth"
+//            , 3, 4, 8
+    };
     private String[] macAuthFieldTList = new String[]{
             fStringMap.getString("disableAuth"),
             fStringMap.getString("macAuth"),
             fStringMap.getString("macAuto"),
-            fStringMap.getString("loidAuth"),
-            fStringMap.getString("loidPwd"),
-            fStringMap.getString("hybridAuth")
+//            fStringMap.getString("loidAuth"),
+//            fStringMap.getString("loidPwd"),
+//            fStringMap.getString("hybridAuth")
     };
     private JComboBox macAuthField = new JComboBox(macAuthFieldTList);
     private JComboBox vlanTransParentField = new JComboBox(new Object[]{"enable", "disable"});
-    private JComboBox globalP2pField = new JComboBox(new Object[]{"enable", "disable"});
+    private JComboBox globalP2pField = new JComboBox(new Object[]{"disable", "enable"});
     private IPAddressField mgmtIpField = new IPAddressField();
 
 
@@ -129,6 +138,10 @@ public class OltSystemPanel extends UPanel {
     protected void initForm() {
         mgmtVlanField.setValueScope(0, 4094);
         macAgeingField.setValueScope(0, 2400);
+        mgmtVlanField.setDefaultValue(0);
+        macAgeingField.setDefaultValue(300);
+        vlanTransParentField.setSelectedIndex(0);
+        globalP2pField.setSelectedIndex(0);
     }
 
     public void refresh() {
@@ -160,15 +173,23 @@ public class OltSystemPanel extends UPanel {
             }
         }
         String macAuth = mbean.getMacAuth();
-        if (macAgeing != null && !macAgeing.trim().isEmpty()) {
-            try {
-                macAuthField.setSelectedIndex(getIndexFromValue(macAuthFieldVList, Integer.valueOf(macAuth)));
-            } catch (NumberFormatException e) {
-                macAuthField.setSelectedIndex(0);
-            }
+        if (Strings.isNotEmpty(macAuth)) {
+            macAuthField.setSelectedIndex(getIndexFromValue(macAuthFieldVList, macAuth));
+        } else {
+            macAuthField.setSelectedIndex(0);
         }
-        vlanTransParentField.setSelectedItem(mbean.getVlanTransParent());
-        globalP2pField.setSelectedItem(mbean.getGlobalP2p());
+        String vlanTransParent = mbean.getVlanTransParent();
+        if(Strings.isNotEmpty(vlanTransParent)) {
+            vlanTransParentField.setSelectedItem(vlanTransParent);
+        } else {
+            vlanTransParentField.setSelectedIndex(0);
+        }
+        String globalP2p = mbean.getGlobalP2p();
+        if (Strings.isNotEmpty(globalP2p)) {
+            globalP2pField.setSelectedItem(globalP2p);
+        } else {
+            globalP2pField.setSelectedIndex(0);
+        }
         mgmtIpField.setValue(mbean.getMgmtIp());
     }
 
@@ -179,15 +200,15 @@ public class OltSystemPanel extends UPanel {
         model.setContact(toHex(contactField.getValue()));
         model.setMgmtVlan(String.valueOf(mgmtVlanField.getValue()));
         model.setMacAgeing(String.valueOf(macAgeingField.getValue()));
-        model.setMacAuth(String.valueOf(macAuthFieldVList[macAuthField.getSelectedIndex()]));
+        model.setMacAuth(macAuthFieldVList[macAuthField.getSelectedIndex()]);
         model.setVlanTransParent(String.valueOf(vlanTransParentField.getSelectedItem()));
         model.setGlobalP2p(String.valueOf(globalP2pField.getSelectedItem()));
         model.setMgmtIp(mgmtIpField.getIPString());
     }
 
-    public int getIndexFromValue(int[] list, int v) {
+    public int getIndexFromValue(String[] list, String v) {
         for (int i = 0; i != list.length; i++) {
-            if (list[i] == v)
+            if (list[i].equals(v))
                 return i;
         }
 

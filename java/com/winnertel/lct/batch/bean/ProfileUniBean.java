@@ -64,6 +64,13 @@ public class ProfileUniBean extends SnmpMibBean {
         setProperty(ProfileUni.Field.vlanTag, vlanTag);
     }
 
+    public String getPassVlan() {
+        return getProperty(ProfileUni.Field.passVlan);
+    }
+
+    public void setPassVlan(String passVlan) {
+        setProperty(ProfileUni.Field.passVlan, passVlan);
+    }
     public String getVlanTpid() {
         return getProperty(ProfileUni.Field.vlanTpid);
     }

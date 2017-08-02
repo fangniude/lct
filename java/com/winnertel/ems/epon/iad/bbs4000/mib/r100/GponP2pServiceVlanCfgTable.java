@@ -21,8 +21,8 @@ public class GponP2pServiceVlanCfgTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(p2pServiceVlan, new SnmpMibBeanProperty(p2pServiceVlan, ".1.3.6.1.4.1.41355.1.3.10.5.1002.1.1.1", ISnmpConstant.INTEGER));
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.1002.1.1.100", ISnmpConstant.INTEGER));
+        initProperty(p2pServiceVlan, new SnmpMibBeanProperty(p2pServiceVlan, ".1.3.6.1.4.1.45121.1.3.10.5.1002.1.1.1", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.1002.1.1.100", ISnmpConstant.INTEGER));
     }
 
     public Integer getP2pServiceVlan() {

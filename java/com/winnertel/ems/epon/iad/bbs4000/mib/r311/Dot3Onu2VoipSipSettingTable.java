@@ -44,88 +44,88 @@ public class Dot3Onu2VoipSipSettingTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsDot3Onu2CtcCombinedFeaturesModuleId, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcCombinedFeaturesModuleId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcCombinedFeaturesDeviceId, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcCombinedFeaturesDeviceId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcCombinedFeaturesPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcCombinedFeaturesPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.3",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcCombinedFeaturesLogicalPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcCombinedFeaturesLogicalPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.4",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.4",
 				ISnmpConstant.INTEGER));
 		
 		initProperty(utsDot3Onu2CtcSipMgPort, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcSipMgPort,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.261",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.261",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcSipProxyServIp,
 				new SnmpMibBeanProperty(utsDot3Onu2CtcSipProxyServIp,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.262",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.262",
 						ISnmpConstant.IP_ADDRESS));
 		initProperty(utsDot3Onu2CtcSipProxyServComPort,
 				new SnmpMibBeanProperty(utsDot3Onu2CtcSipProxyServComPort,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.263",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.263",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcSipBackupProxyServIp,
 				new SnmpMibBeanProperty(utsDot3Onu2CtcSipBackupProxyServIp,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.264",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.264",
 						ISnmpConstant.IP_ADDRESS));
 		initProperty(utsDot3Onu2CtcSipBackupProxyServComPort,
 				new SnmpMibBeanProperty(utsDot3Onu2CtcSipBackupProxyServComPort,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.265",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.265",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcSipActiveProxyServ,
 				new SnmpMibBeanProperty(utsDot3Onu2CtcSipActiveProxyServ,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.266",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.266",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcSipRegServIp,
 				new SnmpMibBeanProperty(utsDot3Onu2CtcSipRegServIp,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.267",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.267",
 						ISnmpConstant.IP_ADDRESS));
 		initProperty(utsDot3Onu2CtcSipRegServComPort,
 				new SnmpMibBeanProperty(utsDot3Onu2CtcSipRegServComPort,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.268",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.268",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcSipBackupRegServIp,
 				new SnmpMibBeanProperty(utsDot3Onu2CtcSipBackupRegServIp,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.269",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.269",
 						ISnmpConstant.IP_ADDRESS));
 		initProperty(utsDot3Onu2CtcSipBackupRegServComPort,
 				new SnmpMibBeanProperty(utsDot3Onu2CtcSipBackupRegServComPort,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.270",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.270",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcSipOutBoundServIp, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcSipOutBoundServIp,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.271",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.271",
 				ISnmpConstant.IP_ADDRESS));
 		initProperty(utsDot3Onu2CtcSipOutBoundServPort,
 				new SnmpMibBeanProperty(utsDot3Onu2CtcSipOutBoundServPort,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.272",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.272",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcSipRegInterval, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcSipRegInterval,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.273",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.273",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcSipHeartbeatSwitch,
 				new SnmpMibBeanProperty(utsDot3Onu2CtcSipHeartbeatSwitch,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.274",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.274",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcSipHeartbeatCycle, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcSipHeartbeatCycle,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.275",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.275",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcSipHeartbeatCount, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcSipHeartbeatCount,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.276",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.276",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcSipDigitmap, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcSipDigitmap,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.361",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.361",
 				ISnmpConstant.STRING));
 
 	}

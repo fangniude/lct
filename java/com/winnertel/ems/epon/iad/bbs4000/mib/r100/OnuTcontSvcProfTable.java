@@ -26,22 +26,22 @@ public class OnuTcontSvcProfTable extends SnmpMibBean {
 
   protected void init() {
     initProperty(onuTcontServiceProfileIndex, new SnmpMibBeanProperty(
-        onuTcontServiceProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.2.2.1.1",
+        onuTcontServiceProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.2.2.1.1",
         ISnmpConstant.GAUGE));
     initProperty(onuTcontSvcProfileName, new SnmpMibBeanProperty(
-        onuTcontSvcProfileName, ".1.3.6.1.4.1.41355.1.3.10.5.2.2.1.2",
+        onuTcontSvcProfileName, ".1.3.6.1.4.1.45121.1.3.10.5.2.2.1.2",
         ISnmpConstant.STRING));
     initProperty(upstreamBandwidthProfileIndex, new SnmpMibBeanProperty(
-        upstreamBandwidthProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.2.2.1.3",
+        upstreamBandwidthProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.2.2.1.3",
         ISnmpConstant.GAUGE));
     initProperty(upstreamQueuingSchedulingType, new SnmpMibBeanProperty(
-        upstreamQueuingSchedulingType, ".1.3.6.1.4.1.41355.1.3.10.5.2.2.1.4",
+        upstreamQueuingSchedulingType, ".1.3.6.1.4.1.45121.1.3.10.5.2.2.1.4",
         ISnmpConstant.INTEGER));
     initProperty(dbruMode, new SnmpMibBeanProperty(
-            dbruMode, ".1.3.6.1.4.1.41355.1.3.10.5.2.2.1.5",
+            dbruMode, ".1.3.6.1.4.1.45121.1.3.10.5.2.2.1.5",
             ISnmpConstant.GAUGE));
     initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-            ".1.3.6.1.4.1.41355.1.3.10.5.2.2.1.100", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1.3.10.5.2.2.1.100", ISnmpConstant.INTEGER));
   }
 
   public Long getOnuTcontServiceProfileIndex() {

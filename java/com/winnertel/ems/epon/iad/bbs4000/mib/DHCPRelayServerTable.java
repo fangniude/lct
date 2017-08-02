@@ -30,19 +30,19 @@ public class DHCPRelayServerTable extends SnmpMibBean
 	protected void init()
 	{
 		initProperty(utsDHCPRelayIfIndex, new SnmpMibBeanProperty(
-				utsDHCPRelayIfIndex, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.12.1.1",ISnmpConstant.INTEGER));
+				utsDHCPRelayIfIndex, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.12.1.1",ISnmpConstant.INTEGER));
 		initProperty(utsDHCPRelayServerID,
-				new SnmpMibBeanProperty(utsDHCPRelayServerID,".1.3.6.1.4.1.41355.1800.2.2.1.6.3.12.1.2",
+				new SnmpMibBeanProperty(utsDHCPRelayServerID,".1.3.6.1.4.1.45121.1800.2.2.1.6.3.12.1.2",
 						ISnmpConstant.IP_ADDRESS));
 		initProperty(utsDHCPRelayGateway, new SnmpMibBeanProperty(
-				utsDHCPRelayGateway, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.12.1.3",
+				utsDHCPRelayGateway, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.12.1.3",
 				ISnmpConstant.IP_ADDRESS));
 		initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.3.12.1.4",
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.3.12.1.4",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDHCPRelaySecondServer,
 				new SnmpMibBeanProperty(utsDHCPRelaySecondServer,
-						".1.3.6.1.4.1.41355.1800.2.2.1.6.3.12.1.5",
+						".1.3.6.1.4.1.45121.1800.2.2.1.6.3.12.1.5",
 						ISnmpConstant.IP_ADDRESS));
 
 	}

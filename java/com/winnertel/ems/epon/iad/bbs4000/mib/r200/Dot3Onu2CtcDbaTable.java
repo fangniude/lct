@@ -32,19 +32,19 @@ public class Dot3Onu2CtcDbaTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3OnuModuleId, new SnmpMibBeanProperty(utsDot3OnuModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.14.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuDeviceId, new SnmpMibBeanProperty(utsDot3OnuDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.14.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuPortId, new SnmpMibBeanProperty(utsDot3OnuPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.14.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.14.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2DbaQueueSetNum, new SnmpMibBeanProperty(utsDot3Onu2DbaQueueSetNum, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.14.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2DbaQueueBitmap1, new SnmpMibBeanProperty(utsDot3Onu2DbaQueueBitmap1, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.14.1.7", ISnmpConstant.OCTETS));
-        initProperty(utsDot3Onu2DbaQueueSetThreshold1, new SnmpMibBeanProperty(utsDot3Onu2DbaQueueSetThreshold1, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.14.1.8", ISnmpConstant.OCTETS));
-        initProperty(utsDot3Onu2DbaQueueBitmap2, new SnmpMibBeanProperty(utsDot3Onu2DbaQueueBitmap2, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.14.1.9", ISnmpConstant.OCTETS));
-        initProperty(utsDot3Onu2DbaQueueSetThreshold2, new SnmpMibBeanProperty(utsDot3Onu2DbaQueueSetThreshold2, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.14.1.10", ISnmpConstant.OCTETS));
-        initProperty(utsDot3Onu2DbaQueueBitmap3, new SnmpMibBeanProperty(utsDot3Onu2DbaQueueBitmap3, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.14.1.11", ISnmpConstant.OCTETS));
-        initProperty(utsDot3Onu2DbaQueueSetThreshold3, new SnmpMibBeanProperty(utsDot3Onu2DbaQueueSetThreshold3, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.14.1.12", ISnmpConstant.OCTETS));
-        initProperty(utsDot3Onu2DbaQueueBitmap4, new SnmpMibBeanProperty(utsDot3Onu2DbaQueueBitmap4, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.14.1.13", ISnmpConstant.OCTETS));
-        initProperty(utsDot3Onu2DbaQueueSetThreshold4, new SnmpMibBeanProperty(utsDot3Onu2DbaQueueSetThreshold4, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.14.1.14", ISnmpConstant.OCTETS));
+        initProperty(utsDot3OnuModuleId, new SnmpMibBeanProperty(utsDot3OnuModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.14.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuDeviceId, new SnmpMibBeanProperty(utsDot3OnuDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.14.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuPortId, new SnmpMibBeanProperty(utsDot3OnuPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.14.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.14.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2DbaQueueSetNum, new SnmpMibBeanProperty(utsDot3Onu2DbaQueueSetNum, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.14.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2DbaQueueBitmap1, new SnmpMibBeanProperty(utsDot3Onu2DbaQueueBitmap1, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.14.1.7", ISnmpConstant.OCTETS));
+        initProperty(utsDot3Onu2DbaQueueSetThreshold1, new SnmpMibBeanProperty(utsDot3Onu2DbaQueueSetThreshold1, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.14.1.8", ISnmpConstant.OCTETS));
+        initProperty(utsDot3Onu2DbaQueueBitmap2, new SnmpMibBeanProperty(utsDot3Onu2DbaQueueBitmap2, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.14.1.9", ISnmpConstant.OCTETS));
+        initProperty(utsDot3Onu2DbaQueueSetThreshold2, new SnmpMibBeanProperty(utsDot3Onu2DbaQueueSetThreshold2, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.14.1.10", ISnmpConstant.OCTETS));
+        initProperty(utsDot3Onu2DbaQueueBitmap3, new SnmpMibBeanProperty(utsDot3Onu2DbaQueueBitmap3, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.14.1.11", ISnmpConstant.OCTETS));
+        initProperty(utsDot3Onu2DbaQueueSetThreshold3, new SnmpMibBeanProperty(utsDot3Onu2DbaQueueSetThreshold3, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.14.1.12", ISnmpConstant.OCTETS));
+        initProperty(utsDot3Onu2DbaQueueBitmap4, new SnmpMibBeanProperty(utsDot3Onu2DbaQueueBitmap4, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.14.1.13", ISnmpConstant.OCTETS));
+        initProperty(utsDot3Onu2DbaQueueSetThreshold4, new SnmpMibBeanProperty(utsDot3Onu2DbaQueueSetThreshold4, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.14.1.14", ISnmpConstant.OCTETS));
     }
 
     public Integer getUtsDot3OnuModuleId() {

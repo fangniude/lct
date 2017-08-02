@@ -34,15 +34,15 @@ public class UtsOnuFWUpgradeScheduleResultTable extends SnmpMibBean {
     }
 
     protected void init() {
-	initProperty(utsOnuFWUpgradeScheduleResultTime, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleResultTime, ".1.3.6.1.4.1.41355.1800.2.3.1.7.16.1.1", ISnmpConstant.OCTETS));
-	initProperty(utsOnuFWUpgradeScheduleResultComp, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleResultComp, ".1.3.6.1.4.1.41355.1800.2.3.1.7.16.1.2", ISnmpConstant.INTEGER));
-	initProperty(utsOnuFWUpgradeScheduleResultModule, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleResultModule, ".1.3.6.1.4.1.41355.1800.2.3.1.7.16.1.3", ISnmpConstant.INTEGER));
-	initProperty(utsOnuFWUpgradeScheduleResultPort, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleResultPort, ".1.3.6.1.4.1.41355.1800.2.3.1.7.16.1.4", ISnmpConstant.INTEGER));
-	initProperty(utsOnuFWUpgradeScheduleResultLport, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleResultLport, ".1.3.6.1.4.1.41355.1800.2.3.1.7.16.1.5", ISnmpConstant.INTEGER));
-	initProperty(utsOnuFWUpgradeScheduleResultTargetVersion, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleResultTargetVersion, ".1.3.6.1.4.1.41355.1800.2.3.1.7.16.1.6", ISnmpConstant.STRING));
-	initProperty(utsOnuFWUpgradeScheduleResultCurrentVersion, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleResultCurrentVersion, ".1.3.6.1.4.1.41355.1800.2.3.1.7.16.1.7", ISnmpConstant.STRING));
-	initProperty(utsOnuFWUpgradeScheduleResultCurrentUpgStatus, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleResultCurrentUpgStatus, ".1.3.6.1.4.1.41355.1800.2.3.1.7.16.1.8", ISnmpConstant.STRING));
-	initProperty(utsOnuFWUpgradeScheduleResultFailReason, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleResultFailReason, ".1.3.6.1.4.1.41355.1800.2.3.1.7.16.1.9", ISnmpConstant.STRING));
+	initProperty(utsOnuFWUpgradeScheduleResultTime, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleResultTime, ".1.3.6.1.4.1.45121.1800.2.3.1.7.16.1.1", ISnmpConstant.OCTETS));
+	initProperty(utsOnuFWUpgradeScheduleResultComp, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleResultComp, ".1.3.6.1.4.1.45121.1800.2.3.1.7.16.1.2", ISnmpConstant.INTEGER));
+	initProperty(utsOnuFWUpgradeScheduleResultModule, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleResultModule, ".1.3.6.1.4.1.45121.1800.2.3.1.7.16.1.3", ISnmpConstant.INTEGER));
+	initProperty(utsOnuFWUpgradeScheduleResultPort, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleResultPort, ".1.3.6.1.4.1.45121.1800.2.3.1.7.16.1.4", ISnmpConstant.INTEGER));
+	initProperty(utsOnuFWUpgradeScheduleResultLport, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleResultLport, ".1.3.6.1.4.1.45121.1800.2.3.1.7.16.1.5", ISnmpConstant.INTEGER));
+	initProperty(utsOnuFWUpgradeScheduleResultTargetVersion, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleResultTargetVersion, ".1.3.6.1.4.1.45121.1800.2.3.1.7.16.1.6", ISnmpConstant.STRING));
+	initProperty(utsOnuFWUpgradeScheduleResultCurrentVersion, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleResultCurrentVersion, ".1.3.6.1.4.1.45121.1800.2.3.1.7.16.1.7", ISnmpConstant.STRING));
+	initProperty(utsOnuFWUpgradeScheduleResultCurrentUpgStatus, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleResultCurrentUpgStatus, ".1.3.6.1.4.1.45121.1800.2.3.1.7.16.1.8", ISnmpConstant.STRING));
+	initProperty(utsOnuFWUpgradeScheduleResultFailReason, new SnmpMibBeanProperty(utsOnuFWUpgradeScheduleResultFailReason, ".1.3.6.1.4.1.45121.1800.2.3.1.7.16.1.9", ISnmpConstant.STRING));
 
     }
 

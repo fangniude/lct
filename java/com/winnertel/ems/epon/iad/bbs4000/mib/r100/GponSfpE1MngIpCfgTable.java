@@ -26,11 +26,11 @@ public class GponSfpE1MngIpCfgTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(GponSfpE1MngIpCfgTable.sfpE1MngIpCfgSlotNo, new SnmpMibBeanProperty(GponSfpE1MngIpCfgTable.sfpE1MngIpCfgSlotNo, ".1.3.6.1.4.1.41355.1.3.10.5.1001.1.1.1", ISnmpConstant.INTEGER));
-        initProperty(GponSfpE1MngIpCfgTable.sfpE1MngIpCfgPortNo, new SnmpMibBeanProperty(GponSfpE1MngIpCfgTable.sfpE1MngIpCfgPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1001.1.1.2", ISnmpConstant.INTEGER));
-        initProperty(GponSfpE1MngIpCfgTable.sfpE1MngIpCfgMngIpAddress, new SnmpMibBeanProperty(GponSfpE1MngIpCfgTable.sfpE1MngIpCfgMngIpAddress, ".1.3.6.1.4.1.41355.1.3.10.5.1001.1.1.11", ISnmpConstant.IP_ADDRESS));
-        initProperty(GponSfpE1MngIpCfgTable.sfpE1MngIpCfgMngIpMask, new SnmpMibBeanProperty(GponSfpE1MngIpCfgTable.sfpE1MngIpCfgMngIpMask, ".1.3.6.1.4.1.41355.1.3.10.5.1001.1.1.12", ISnmpConstant.IP_ADDRESS));
-        initProperty(GponSfpE1MngIpCfgTable.sfpE1MngIpCfgMngIpDefaultGw, new SnmpMibBeanProperty(GponSfpE1MngIpCfgTable.sfpE1MngIpCfgMngIpDefaultGw, ".1.3.6.1.4.1.41355.1.3.10.5.1001.1.1.13", ISnmpConstant.IP_ADDRESS));
+        initProperty(GponSfpE1MngIpCfgTable.sfpE1MngIpCfgSlotNo, new SnmpMibBeanProperty(GponSfpE1MngIpCfgTable.sfpE1MngIpCfgSlotNo, ".1.3.6.1.4.1.45121.1.3.10.5.1001.1.1.1", ISnmpConstant.INTEGER));
+        initProperty(GponSfpE1MngIpCfgTable.sfpE1MngIpCfgPortNo, new SnmpMibBeanProperty(GponSfpE1MngIpCfgTable.sfpE1MngIpCfgPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1001.1.1.2", ISnmpConstant.INTEGER));
+        initProperty(GponSfpE1MngIpCfgTable.sfpE1MngIpCfgMngIpAddress, new SnmpMibBeanProperty(GponSfpE1MngIpCfgTable.sfpE1MngIpCfgMngIpAddress, ".1.3.6.1.4.1.45121.1.3.10.5.1001.1.1.11", ISnmpConstant.IP_ADDRESS));
+        initProperty(GponSfpE1MngIpCfgTable.sfpE1MngIpCfgMngIpMask, new SnmpMibBeanProperty(GponSfpE1MngIpCfgTable.sfpE1MngIpCfgMngIpMask, ".1.3.6.1.4.1.45121.1.3.10.5.1001.1.1.12", ISnmpConstant.IP_ADDRESS));
+        initProperty(GponSfpE1MngIpCfgTable.sfpE1MngIpCfgMngIpDefaultGw, new SnmpMibBeanProperty(GponSfpE1MngIpCfgTable.sfpE1MngIpCfgMngIpDefaultGw, ".1.3.6.1.4.1.45121.1.3.10.5.1001.1.1.13", ISnmpConstant.IP_ADDRESS));
     }
 
     public Integer getSfpE1MngIpCfgSlotNo() {

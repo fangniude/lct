@@ -32,42 +32,42 @@ public class GponOnuMulticastOperProfTable extends SnmpMibBean {
     protected void init() {
         initProperty(onuMulticastOperProfileIndex, new SnmpMibBeanProperty(
                 onuMulticastOperProfileIndex,
-                ".1.3.6.1.4.1.41355.1.3.10.5.2.25.1.1", ISnmpConstant.GAUGE));
+                ".1.3.6.1.4.1.45121.1.3.10.5.2.25.1.1", ISnmpConstant.GAUGE));
         initProperty(onuMulticastOperProfileName, new SnmpMibBeanProperty(
                 onuMulticastOperProfileName,
-                ".1.3.6.1.4.1.41355.1.3.10.5.2.25.1.2", ISnmpConstant.STRING));
+                ".1.3.6.1.4.1.45121.1.3.10.5.2.25.1.2", ISnmpConstant.STRING));
         initProperty(onuMulticastOperProfIgmpVersion, new SnmpMibBeanProperty(
                 onuMulticastOperProfIgmpVersion,
-                ".1.3.6.1.4.1.41355.1.3.10.5.2.25.1.3", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.2.25.1.3", ISnmpConstant.INTEGER));
         initProperty(onuMulticastOperProfMulticastControlMode,
                 new SnmpMibBeanProperty(
                         onuMulticastOperProfMulticastControlMode,
-                        ".1.3.6.1.4.1.41355.1.3.10.5.2.25.1.4",
+                        ".1.3.6.1.4.1.45121.1.3.10.5.2.25.1.4",
                         ISnmpConstant.INTEGER));
         initProperty(onuMulticastOperProfFastLeaveMode,
                 new SnmpMibBeanProperty(onuMulticastOperProfFastLeaveMode,
-                        ".1.3.6.1.4.1.41355.1.3.10.5.2.25.1.5",
+                        ".1.3.6.1.4.1.45121.1.3.10.5.2.25.1.5",
                         ISnmpConstant.INTEGER));
         initProperty(onuMulticastOperProfUpstreamIGMPTCI,
                 new SnmpMibBeanProperty(onuMulticastOperProfUpstreamIGMPTCI,
-                        ".1.3.6.1.4.1.41355.1.3.10.5.2.25.1.6",
+                        ".1.3.6.1.4.1.45121.1.3.10.5.2.25.1.6",
                         ISnmpConstant.GAUGE));
         initProperty(onuMulticastOperProfUpstreamIGMPTagControl,
                 new SnmpMibBeanProperty(
                         onuMulticastOperProfUpstreamIGMPTagControl,
-                        ".1.3.6.1.4.1.41355.1.3.10.5.2.25.1.7",
+                        ".1.3.6.1.4.1.45121.1.3.10.5.2.25.1.7",
                         ISnmpConstant.GAUGE));
         initProperty(onuMulticastOperProfMaxSimultaneousGroup,
                 new SnmpMibBeanProperty(
                         onuMulticastOperProfMaxSimultaneousGroup,
-                        ".1.3.6.1.4.1.41355.1.3.10.5.2.25.1.8",
+                        ".1.3.6.1.4.1.45121.1.3.10.5.2.25.1.8",
                         ISnmpConstant.GAUGE));
         initProperty(onuMulticastOperProfMulticastTagStrip,
                 new SnmpMibBeanProperty(onuMulticastOperProfMulticastTagStrip,
-                        ".1.3.6.1.4.1.41355.1.3.10.5.2.25.1.9",
+                        ".1.3.6.1.4.1.45121.1.3.10.5.2.25.1.9",
                         ISnmpConstant.INTEGER));
         initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-                ".1.3.6.1.4.1.41355.1.3.10.5.2.25.1.10", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.2.25.1.10", ISnmpConstant.INTEGER));
 
     }
 

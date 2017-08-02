@@ -27,14 +27,14 @@ public class OnuCtcMulticastStatForUserPortTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3OnuMCastStatForUserPortModuleId, new SnmpMibBeanProperty(utsDot3OnuMCastStatForUserPortModuleId, ".1.3.6.1.4.1.41355.1800.2.4.3.1.9.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuMCastStatForUserPortDeviceId, new SnmpMibBeanProperty(utsDot3OnuMCastStatForUserPortDeviceId, ".1.3.6.1.4.1.41355.1800.2.4.3.1.9.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuMCastStatForUserPortPortId, new SnmpMibBeanProperty(utsDot3OnuMCastStatForUserPortPortId, ".1.3.6.1.4.1.41355.1800.2.4.3.1.9.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuMCastStatForUserPortLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuMCastStatForUserPortLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.4.3.1.9.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuMCastStatForUserPortEthernetPortId, new SnmpMibBeanProperty(utsDot3OnuMCastStatForUserPortEthernetPortId, ".1.3.6.1.4.1.41355.1800.2.4.3.1.9.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuMCastStatForUserPortViewNumber, new SnmpMibBeanProperty(utsDot3OnuMCastStatForUserPortViewNumber, ".1.3.6.1.4.1.41355.1800.2.4.3.1.9.1.6", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuMCastStatForUserPortTotalTime, new SnmpMibBeanProperty(utsDot3OnuMCastStatForUserPortTotalTime, ".1.3.6.1.4.1.41355.1800.2.4.3.1.9.1.7", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuMCastStatForUserPortAverageTime, new SnmpMibBeanProperty(utsDot3OnuMCastStatForUserPortAverageTime, ".1.3.6.1.4.1.41355.1800.2.4.3.1.9.1.8", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuMCastStatForUserPortModuleId, new SnmpMibBeanProperty(utsDot3OnuMCastStatForUserPortModuleId, ".1.3.6.1.4.1.45121.1800.2.4.3.1.9.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuMCastStatForUserPortDeviceId, new SnmpMibBeanProperty(utsDot3OnuMCastStatForUserPortDeviceId, ".1.3.6.1.4.1.45121.1800.2.4.3.1.9.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuMCastStatForUserPortPortId, new SnmpMibBeanProperty(utsDot3OnuMCastStatForUserPortPortId, ".1.3.6.1.4.1.45121.1800.2.4.3.1.9.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuMCastStatForUserPortLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuMCastStatForUserPortLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.4.3.1.9.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuMCastStatForUserPortEthernetPortId, new SnmpMibBeanProperty(utsDot3OnuMCastStatForUserPortEthernetPortId, ".1.3.6.1.4.1.45121.1800.2.4.3.1.9.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuMCastStatForUserPortViewNumber, new SnmpMibBeanProperty(utsDot3OnuMCastStatForUserPortViewNumber, ".1.3.6.1.4.1.45121.1800.2.4.3.1.9.1.6", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuMCastStatForUserPortTotalTime, new SnmpMibBeanProperty(utsDot3OnuMCastStatForUserPortTotalTime, ".1.3.6.1.4.1.45121.1800.2.4.3.1.9.1.7", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuMCastStatForUserPortAverageTime, new SnmpMibBeanProperty(utsDot3OnuMCastStatForUserPortAverageTime, ".1.3.6.1.4.1.45121.1800.2.4.3.1.9.1.8", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsDot3OnuMCastStatForUserPortModuleId() {

@@ -27,29 +27,29 @@ public class ActiveAlarmTable extends SnmpMibBean {
 
 	protected void init() {
 		initProperty(epActiveAlarmEntryID, new SnmpMibBeanProperty(epActiveAlarmEntryID,
-				".1.3.6.1.4.1.41355.1800.3.1.1.4.4.1.1", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.3.1.1.4.4.1.1", ISnmpConstant.INTEGER));
 		initProperty(epActiveAlarmObjectID, new SnmpMibBeanProperty(epActiveAlarmObjectID,
-				".1.3.6.1.4.1.41355.1800.3.1.1.4.4.1.2", ISnmpConstant.OBJID));
+				".1.3.6.1.4.1.45121.1800.3.1.1.4.4.1.2", ISnmpConstant.OBJID));
 		initProperty(epActiveAlarmSourceMO, new SnmpMibBeanProperty(epActiveAlarmSourceMO,
-				".1.3.6.1.4.1.41355.1800.3.1.1.4.4.1.3", ISnmpConstant.STRING));
+				".1.3.6.1.4.1.45121.1800.3.1.1.4.4.1.3", ISnmpConstant.STRING));
 		initProperty(epActiveAlarmSeqNo, new SnmpMibBeanProperty(
-				epActiveAlarmSeqNo, ".1.3.6.1.4.1.41355.1800.3.1.1.4.4.1.4",
+				epActiveAlarmSeqNo, ".1.3.6.1.4.1.45121.1800.3.1.1.4.4.1.4",
 				ISnmpConstant.GAUGE));
 		initProperty(epActiveAlarmFirstDectetTime, new SnmpMibBeanProperty(epActiveAlarmFirstDectetTime,
-				".1.3.6.1.4.1.41355.1800.3.1.1.4.4.1.5", ISnmpConstant.OCTETS));
+				".1.3.6.1.4.1.45121.1800.3.1.1.4.4.1.5", ISnmpConstant.OCTETS));
 		initProperty(epActiveAlarmLastReportTime, new SnmpMibBeanProperty(
-				epActiveAlarmLastReportTime, ".1.3.6.1.4.1.41355.1800.3.1.1.4.4.1.6",
+				epActiveAlarmLastReportTime, ".1.3.6.1.4.1.45121.1800.3.1.1.4.4.1.6",
 				ISnmpConstant.OCTETS));
 		initProperty(epActiveAlarmRepeatedNumbers, new SnmpMibBeanProperty(epActiveAlarmRepeatedNumbers,
-				".1.3.6.1.4.1.41355.1800.3.1.1.4.4.1.7", ISnmpConstant.COUNTER));
+				".1.3.6.1.4.1.45121.1800.3.1.1.4.4.1.7", ISnmpConstant.COUNTER));
 		initProperty(epActiveAlarmSeverity, new SnmpMibBeanProperty(
-				epActiveAlarmSeverity, ".1.3.6.1.4.1.41355.1800.3.1.1.4.4.1.8",
+				epActiveAlarmSeverity, ".1.3.6.1.4.1.45121.1800.3.1.1.4.4.1.8",
 				ISnmpConstant.INTEGER));
 		initProperty(epActiveAlarmFirstTrapPDU, new SnmpMibBeanProperty(
-				epActiveAlarmFirstTrapPDU, ".1.3.6.1.4.1.41355.1800.3.1.1.4.4.1.9",
+				epActiveAlarmFirstTrapPDU, ".1.3.6.1.4.1.45121.1800.3.1.1.4.4.1.9",
 				ISnmpConstant.OCTETS));
 //		initProperty(epActiveAlarmClearingFlag, new SnmpMibBeanProperty(epActiveAlarmClearingFlag,
-//				".1.3.6.1.4.1.41355.1800.3.1.1.4.4.1.10", ISnmpConstant.INTEGER));
+//				".1.3.6.1.4.1.45121.1800.3.1.1.4.4.1.10", ISnmpConstant.INTEGER));
 
 	}
 
@@ -168,15 +168,15 @@ public class ActiveAlarmTable extends SnmpMibBean {
 	}
 	
 //	private static String translateNeType(String oid) {
-//        if (oid.equals(".1.3.6.1.4.1.41355.1.3.10.2.1"))
+//        if (oid.equals(".1.3.6.1.4.1.45121.1.3.10.2.1"))
 //            return "BBS1000";
-//        else if (oid.equals(".1.3.6.1.4.1.41355.1.3.10.2.2"))
+//        else if (oid.equals(".1.3.6.1.4.1.45121.1.3.10.2.2"))
 //            return "FBW3000";
-//        else if (oid.equals(".1.3.6.1.4.1.41355.1.3.10.2.3"))
+//        else if (oid.equals(".1.3.6.1.4.1.45121.1.3.10.2.3"))
 //            return "FBW5000";
-//        else if (oid.equals(".1.3.6.1.4.1.41355.1.3.10.2.4"))
+//        else if (oid.equals(".1.3.6.1.4.1.45121.1.3.10.2.4"))
 //            return "BBS2000";
-//        else if (oid.equals(".1.3.6.1.4.1.41355.1.3.10.2.5"))
+//        else if (oid.equals(".1.3.6.1.4.1.45121.1.3.10.2.5"))
 //            return "BBS5000";
 //        else
 //            return oid;

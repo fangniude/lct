@@ -571,14 +571,14 @@ public class ShelfView implements ActionListener
     <Trap mibid=".1.3.6.1.6.3.1.1.5.4"></Trap>
 
     <!-- utsFanNormal -->
-    <Trap mibid=".1.3.6.1.4.1.41355.1.3.10.200.6.3.1.0.36"></Trap>
+    <Trap mibid=".1.3.6.1.4.1.45121.1.3.10.200.6.3.1.0.36"></Trap>
     <!-- utsFanAbnormal -->
-    <Trap mibid=".1.3.6.1.4.1.41355.1.3.10.200.6.3.1.0.38"></Trap>
+    <Trap mibid=".1.3.6.1.4.1.45121.1.3.10.200.6.3.1.0.38"></Trap>
 
     <!-- utsBBS4000CardInsertAlarm -->
-    <Trap mibid=".1.3.6.1.4.1.41355.1.3.10.200.6.3.1.0.36"></Trap>
+    <Trap mibid=".1.3.6.1.4.1.45121.1.3.10.200.6.3.1.0.36"></Trap>
     <!-- utsBBS4000CardRemoveAlarm -->
-    <Trap mibid=".1.3.6.1.4.1.41355.1.3.10.200.6.3.1.0.38"></Trap>
+    <Trap mibid=".1.3.6.1.4.1.45121.1.3.10.200.6.3.1.0.38"></Trap>
 */
     String type = pdu.getVariable(1).getVarObject().toString();
     if(type.equals(".1.3.6.1.6.3.1.1.5.3") || type.equals(".1.3.6.1.6.3.1.1.5.4")) //linkdown/linkup
@@ -587,14 +587,14 @@ public class ShelfView implements ActionListener
       bean.setIfIndex(new Integer(pdu.getVariableBinding(2).getVariable().toString()));
       bean.setIfAdminStatus(new Integer(pdu.getVariableBinding(3).getVariable().toString()));
     }
-    else if(type.equals(".1.3.6.1.4.1.41355.1.3.10.200.6.3.1.0.36")) //utsBBS4000CardInsertAlarm
+    else if(type.equals(".1.3.6.1.4.1.45121.1.3.10.200.6.3.1.0.36")) //utsBBS4000CardInsertAlarm
     {
       BBS1000CardMibBean bean = new BBS1000CardMibBean(theApplication.getSnmpProxy());
       bean.setUtsEponModuleBoardPhyId(new Integer(pdu.getVariableBinding(9).getVariable().getVarObject().toString()));
       bean.setUtsEponModuleBoardType(new Integer(pdu.getVariableBinding(10).getVariable().getVarObject().toString()));
       bean.setUtsEponModuleBoardState(new Integer(3)); //installed
     }
-    else if(type.equals(".1.3.6.1.4.1.41355.1.3.10.200.6.3.1.0.38")) //utsBBS4000CardRemoveAlarm
+    else if(type.equals(".1.3.6.1.4.1.45121.1.3.10.200.6.3.1.0.38")) //utsBBS4000CardRemoveAlarm
     {
       BBS1000CardMibBean bean = new BBS1000CardMibBean(theApplication.getSnmpProxy());
       bean.setUtsEponModuleBoardPhyId(new Integer(pdu.getVariableBinding(9).getVariable().getVarObject().toString()));

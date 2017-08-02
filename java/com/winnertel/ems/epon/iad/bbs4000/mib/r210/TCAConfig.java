@@ -23,13 +23,13 @@ public class TCAConfig extends SnmpMibBean{
 
   @Override
   protected void init() {
-    initProperty(utsBBSSysCpuUtilityAlarmThresholdTotal, new SnmpMibBeanProperty(utsBBSSysCpuUtilityAlarmThresholdTotal, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.18", ISnmpConstant.INTEGER));
-    initProperty(utsBBSSysCpuUtilityAlarmThresholdPerTask, new SnmpMibBeanProperty(utsBBSSysCpuUtilityAlarmThresholdPerTask, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.19", ISnmpConstant.INTEGER));
-    initProperty(utsBBSSysMemoryUtilityAlarmThreshold, new SnmpMibBeanProperty(utsBBSSysMemoryUtilityAlarmThreshold, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.20", ISnmpConstant.INTEGER));
-    initProperty(utsPonSysReceiveSensitivityMax, new SnmpMibBeanProperty(utsPonSysReceiveSensitivityMax, ".1.3.6.1.4.1.41355.1800.2.1.1.2.9", ISnmpConstant.INTEGER));
-    initProperty(utsPonSysOverloadOpticalPower, new SnmpMibBeanProperty(utsPonSysOverloadOpticalPower, ".1.3.6.1.4.1.41355.1800.2.1.1.2.10", ISnmpConstant.INTEGER));
-    initProperty(utsBBSMgmtUplinkBandwidthThreshold, new SnmpMibBeanProperty(utsBBSMgmtUplinkBandwidthThreshold, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.54", ISnmpConstant.INTEGER));
-    initProperty(utsBBSMgmtUniBandwidthThreshold, new SnmpMibBeanProperty(utsBBSMgmtUniBandwidthThreshold, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.55", ISnmpConstant.INTEGER));
+    initProperty(utsBBSSysCpuUtilityAlarmThresholdTotal, new SnmpMibBeanProperty(utsBBSSysCpuUtilityAlarmThresholdTotal, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.18", ISnmpConstant.INTEGER));
+    initProperty(utsBBSSysCpuUtilityAlarmThresholdPerTask, new SnmpMibBeanProperty(utsBBSSysCpuUtilityAlarmThresholdPerTask, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.19", ISnmpConstant.INTEGER));
+    initProperty(utsBBSSysMemoryUtilityAlarmThreshold, new SnmpMibBeanProperty(utsBBSSysMemoryUtilityAlarmThreshold, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.20", ISnmpConstant.INTEGER));
+    initProperty(utsPonSysReceiveSensitivityMax, new SnmpMibBeanProperty(utsPonSysReceiveSensitivityMax, ".1.3.6.1.4.1.45121.1800.2.1.1.2.9", ISnmpConstant.INTEGER));
+    initProperty(utsPonSysOverloadOpticalPower, new SnmpMibBeanProperty(utsPonSysOverloadOpticalPower, ".1.3.6.1.4.1.45121.1800.2.1.1.2.10", ISnmpConstant.INTEGER));
+    initProperty(utsBBSMgmtUplinkBandwidthThreshold, new SnmpMibBeanProperty(utsBBSMgmtUplinkBandwidthThreshold, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.54", ISnmpConstant.INTEGER));
+    initProperty(utsBBSMgmtUniBandwidthThreshold, new SnmpMibBeanProperty(utsBBSMgmtUniBandwidthThreshold, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.55", ISnmpConstant.INTEGER));
   }
   
   public Integer getUtsBBSSysCpuUtilityAlarmThresholdTotal() {

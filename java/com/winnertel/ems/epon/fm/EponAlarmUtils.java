@@ -17,7 +17,7 @@ import java.util.Date;
 
 public class EponAlarmUtils {
 
-    public static final String EPON_ALARM_SESSION_OID = ".1.3.6.1.4.1.41355.1800.2.1.2.1.45";
+    public static final String EPON_ALARM_SESSION_OID = ".1.3.6.1.4.1.45121.1800.2.1.2.1.45";
     public static final String COLD_START = ".1.3.6.1.6.3.1.1.5.1";
     public static final String WARM_START = ".1.3.6.1.6.3.1.1.5.2";
 

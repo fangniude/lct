@@ -69,7 +69,7 @@ public class InterfaceTableGEMtMBean extends SnmpMibBean {
     initProperty(ifOutErrors, new SnmpMibBeanProperty(ifOutErrors, ".1.3.6.1.2.1.2.2.1.20", ISnmpConstant.COUNTER));
     initProperty(ifOutQLen, new SnmpMibBeanProperty(ifOutQLen, ".1.3.6.1.2.1.2.2.1.21", ISnmpConstant.COUNTER));
     initProperty(ifSpecific, new SnmpMibBeanProperty(ifSpecific, ".1.3.6.1.2.1.2.2.1.22", ISnmpConstant.OBJID));
-    initProperty(utsEthIfExtDescription, new SnmpMibBeanProperty(utsEthIfExtDescription, ".1.3.6.1.4.1.41355.1800.2.2.1.1.1.12", ISnmpConstant.STRING));
+    initProperty(utsEthIfExtDescription, new SnmpMibBeanProperty(utsEthIfExtDescription, ".1.3.6.1.4.1.45121.1800.2.2.1.1.1.12", ISnmpConstant.STRING));
   }
 
 

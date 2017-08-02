@@ -30,39 +30,39 @@ public class Dot3Onu2OperationTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsDot3Onu2MacAgingTimeModuleId, new SnmpMibBeanProperty(
 				utsDot3Onu2MacAgingTimeModuleId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.55.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.55.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2MacAgingTimeDeviceId, new SnmpMibBeanProperty(
 				utsDot3Onu2MacAgingTimeDeviceId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.55.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.55.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2MacAgingTimePortId, new SnmpMibBeanProperty(
 				utsDot3Onu2MacAgingTimePortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.55.1.3",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.55.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2MacAgingTimeLogicalPortId,
 				new SnmpMibBeanProperty(utsDot3Onu2MacAgingTimeLogicalPortId,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.55.1.4",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.55.1.4",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2ConfigActions, new SnmpMibBeanProperty(
 				utsDot3Onu2ConfigActions,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.60.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.60.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PowerControlActions, new SnmpMibBeanProperty(
 				utsDot3Onu2PowerControlActions,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.60.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.60.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PowerControlMode, new SnmpMibBeanProperty(
 				utsDot3Onu2PowerControlMode,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.60.1.3",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.60.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2PowerControlOnuId,
 				new SnmpMibBeanProperty(utsDot3Onu2PowerControlOnuId,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.60.1.4",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.60.1.4",
 						ISnmpConstant.MAC_ADDRESS));
 		initProperty(utsDot3Onu2PowerControlTxId, new SnmpMibBeanProperty(
 				utsDot3Onu2PowerControlTxId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.60.1.5",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.60.1.5",
 				ISnmpConstant.INTEGER));
 
 	}

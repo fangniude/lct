@@ -39,21 +39,21 @@ public class Dot3Olt2Table extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsDot3OltModuleId, new SnmpMibBeanProperty(utsDot3OltModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.1.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltDeviceId, new SnmpMibBeanProperty(utsDot3OltDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.1.1.2", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltStatus, new SnmpMibBeanProperty(utsDot3OltStatus, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.1.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltMACAddress, new SnmpMibBeanProperty(utsDot3OltMACAddress, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.1.1.4", ISnmpConstant.MAC_ADDRESS));
-    initProperty(utsDot3OltPortIsolation, new SnmpMibBeanProperty(utsDot3OltPortIsolation, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.1.1.6", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltDot1adEnable, new SnmpMibBeanProperty(utsDot3OltDot1adEnable, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.1.1.7", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltDot1adTPID, new SnmpMibBeanProperty(utsDot3OltDot1adTPID, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.1.1.8", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltDot1xMode, new SnmpMibBeanProperty(utsDot3OltDot1xMode, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.1.1.9", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltMPCPTimeout, new SnmpMibBeanProperty(utsDot3OltMPCPTimeout, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.1.1.10", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltNNIFlowControlTxEnable, new SnmpMibBeanProperty(utsDot3OltNNIFlowControlTxEnable, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.1.1.11", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltNNIFlowControlRxEnable, new SnmpMibBeanProperty(utsDot3OltNNIFlowControlRxEnable, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.1.1.12", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltNNIFlowControlLowTreshold, new SnmpMibBeanProperty(utsDot3OltNNIFlowControlLowTreshold, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.1.1.13", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltNNIFlowControlHighTreshold, new SnmpMibBeanProperty(utsDot3OltNNIFlowControlHighTreshold, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.1.1.14", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltEncryptionMode, new SnmpMibBeanProperty(utsDot3OltEncryptionMode, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.1.1.16", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltEncryptionRekeyTimer, new SnmpMibBeanProperty(utsDot3OltEncryptionRekeyTimer, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.1.1.17", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltModuleId, new SnmpMibBeanProperty(utsDot3OltModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.1.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltDeviceId, new SnmpMibBeanProperty(utsDot3OltDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.1.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltStatus, new SnmpMibBeanProperty(utsDot3OltStatus, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.1.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltMACAddress, new SnmpMibBeanProperty(utsDot3OltMACAddress, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.1.1.4", ISnmpConstant.MAC_ADDRESS));
+    initProperty(utsDot3OltPortIsolation, new SnmpMibBeanProperty(utsDot3OltPortIsolation, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.1.1.6", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltDot1adEnable, new SnmpMibBeanProperty(utsDot3OltDot1adEnable, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.1.1.7", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltDot1adTPID, new SnmpMibBeanProperty(utsDot3OltDot1adTPID, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.1.1.8", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltDot1xMode, new SnmpMibBeanProperty(utsDot3OltDot1xMode, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.1.1.9", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltMPCPTimeout, new SnmpMibBeanProperty(utsDot3OltMPCPTimeout, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.1.1.10", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltNNIFlowControlTxEnable, new SnmpMibBeanProperty(utsDot3OltNNIFlowControlTxEnable, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.1.1.11", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltNNIFlowControlRxEnable, new SnmpMibBeanProperty(utsDot3OltNNIFlowControlRxEnable, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.1.1.12", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltNNIFlowControlLowTreshold, new SnmpMibBeanProperty(utsDot3OltNNIFlowControlLowTreshold, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.1.1.13", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltNNIFlowControlHighTreshold, new SnmpMibBeanProperty(utsDot3OltNNIFlowControlHighTreshold, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.1.1.14", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltEncryptionMode, new SnmpMibBeanProperty(utsDot3OltEncryptionMode, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.1.1.16", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltEncryptionRekeyTimer, new SnmpMibBeanProperty(utsDot3OltEncryptionRekeyTimer, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.1.1.17", ISnmpConstant.INTEGER));
   }
 
 

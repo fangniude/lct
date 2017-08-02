@@ -549,7 +549,7 @@ public class PortBasedVLANPanel extends UPanel {
         
         try {
         	/*
-            String[] oids = new String[]{".1.3.6.1.4.1.41355.1800.2.1.1.4.1.14.0"};
+            String[] oids = new String[]{".1.3.6.1.4.1.45121.1800.2.1.1.4.1.14.0"};
             Object[] rowData = fApplication.getSnmpProxy().loadRow(oids);
             int mode = 0;
             if (rowData != null && rowData.length != 0) {
@@ -557,7 +557,7 @@ public class PortBasedVLANPanel extends UPanel {
             }
             if (mode == 2) { // unique-tag-handling-mode
             */
-        	String[]oids = new String[]{".1.3.6.1.4.1.41355.1800.2.1.1.2.1.0"};
+        	String[]oids = new String[]{".1.3.6.1.4.1.45121.1800.2.1.1.2.1.0"};
                 Object[] value = fApplication.getSnmpProxy().loadRow(oids);
                 if (value != null && value.length != 0) {
                     int onuVlanBaseID = Integer.parseInt(value[0].toString());

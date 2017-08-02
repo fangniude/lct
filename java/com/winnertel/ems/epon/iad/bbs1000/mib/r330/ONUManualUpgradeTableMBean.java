@@ -19,8 +19,8 @@ public class ONUManualUpgradeTableMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3OnuUpgradeForceManualPortListBitMap, new SnmpMibBeanProperty(utsDot3OnuUpgradeForceManualPortListBitMap, ".1.3.6.1.4.1.41355.1800.2.3.1.7.1.1.3", ISnmpConstant.OCTETS));
-        initProperty(utsDot3OnuUpgradeNormalManualPortListBitMap, new SnmpMibBeanProperty(utsDot3OnuUpgradeNormalManualPortListBitMap, ".1.3.6.1.4.1.41355.1800.2.3.1.7.1.1.4", ISnmpConstant.OCTETS));
+        initProperty(utsDot3OnuUpgradeForceManualPortListBitMap, new SnmpMibBeanProperty(utsDot3OnuUpgradeForceManualPortListBitMap, ".1.3.6.1.4.1.45121.1800.2.3.1.7.1.1.3", ISnmpConstant.OCTETS));
+        initProperty(utsDot3OnuUpgradeNormalManualPortListBitMap, new SnmpMibBeanProperty(utsDot3OnuUpgradeNormalManualPortListBitMap, ".1.3.6.1.4.1.45121.1800.2.3.1.7.1.1.4", ISnmpConstant.OCTETS));
     }
 
     public byte[] getUtsDot3OnuUpgradeForceManualPortListBitMap() {

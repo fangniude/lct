@@ -64,6 +64,15 @@ public class OnuUniBean extends SnmpMibBean {
         setProperty(OnuUni.Field.vlanTag, vlanTag);
     }
 
+
+    public String getPassVlan() {
+        return getProperty(OnuUni.Field.passVlan);
+    }
+
+    public void setPassVlan(String passVlan) {
+        setProperty(OnuUni.Field.passVlan, passVlan);
+    }
+
     public String getVlanTpid() {
         return getProperty(OnuUni.Field.vlanTpid);
     }

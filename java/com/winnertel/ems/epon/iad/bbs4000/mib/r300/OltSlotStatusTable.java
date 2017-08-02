@@ -36,12 +36,12 @@ public class OltSlotStatusTable extends SnmpMibBean
     protected void init()
     {
         initProperty(oltSlotStatusSlotNo, new SnmpMibBeanProperty(oltSlotStatusSlotNo,
-            ".1.3.6.1.4.1.41355.1.3.10.5.1.2.1.1", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1.3.10.5.1.2.1.1", ISnmpConstant.INTEGER));
         initProperty(oltSlotStatusOperationalState, new SnmpMibBeanProperty(
-            oltSlotStatusOperationalState, ".1.3.6.1.4.1.41355.1.3.10.5.1.2.1.2",
+            oltSlotStatusOperationalState, ".1.3.6.1.4.1.45121.1.3.10.5.1.2.1.2",
             ISnmpConstant.INTEGER));
         initProperty(oltSlotStatusOltFirmwareVersion, new SnmpMibBeanProperty(
-            oltSlotStatusOltFirmwareVersion, ".1.3.6.1.4.1.41355.1.3.10.5.1.2.1.3",
+            oltSlotStatusOltFirmwareVersion, ".1.3.6.1.4.1.45121.1.3.10.5.1.2.1.3",
             ISnmpConstant.GAUGE));
         
     }

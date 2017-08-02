@@ -462,7 +462,7 @@ class WindowListener extends WindowAdapter {
                 if(applet.getParameter("neType").startsWith("CLT")){
                     oidList = new String[]{".1.3.6.1.4.1.17409.2.4.1.3.8.0"};
                 }else {
-                    oidList = new String[]{".1.3.6.1.4.1.41355.1.3.10.100.106.1.9.0"};
+                    oidList = new String[]{".1.3.6.1.4.1.45121.1.3.10.100.106.1.9.0"};
                 }
                 Integer[] valList = new Integer[]{1};
                 byte[] typeList = new byte[]{2};

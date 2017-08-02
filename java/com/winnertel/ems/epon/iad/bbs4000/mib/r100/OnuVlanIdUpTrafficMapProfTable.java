@@ -36,14 +36,14 @@ public class OnuVlanIdUpTrafficMapProfTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(onuVlanIdUpTrafficMapProfIndex1, new SnmpMibBeanProperty(onuVlanIdUpTrafficMapProfIndex1, ".1.3.6.1.4.1.41355.1.3.10.5.2.8.1.1", ISnmpConstant.GAUGE));
-        initProperty(onuVlanIdUpTrafficMapProfIndex2, new SnmpMibBeanProperty(onuVlanIdUpTrafficMapProfIndex2, ".1.3.6.1.4.1.41355.1.3.10.5.2.8.1.2", ISnmpConstant.GAUGE));
-        initProperty(onuVlanIdUpTrafficMapProfileName, new SnmpMibBeanProperty(onuVlanIdUpTrafficMapProfileName, ".1.3.6.1.4.1.41355.1.3.10.5.2.8.1.3", ISnmpConstant.STRING));
-        initProperty(onuVlanIdUpTrafficMapProfVlanIDStart, new SnmpMibBeanProperty(onuVlanIdUpTrafficMapProfVlanIDStart, ".1.3.6.1.4.1.41355.1.3.10.5.2.8.1.4", ISnmpConstant.GAUGE));
-        initProperty(onuVlanIdUpTrafficMapProfVlanIDStop, new SnmpMibBeanProperty(onuVlanIdUpTrafficMapProfVlanIDStop, ".1.3.6.1.4.1.41355.1.3.10.5.2.8.1.5", ISnmpConstant.GAUGE));
-        initProperty(onuVlanIdUpTrafficMapProfVirtualPortNo, new SnmpMibBeanProperty(onuVlanIdUpTrafficMapProfVirtualPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.2.8.1.6", ISnmpConstant.INTEGER));
+        initProperty(onuVlanIdUpTrafficMapProfIndex1, new SnmpMibBeanProperty(onuVlanIdUpTrafficMapProfIndex1, ".1.3.6.1.4.1.45121.1.3.10.5.2.8.1.1", ISnmpConstant.GAUGE));
+        initProperty(onuVlanIdUpTrafficMapProfIndex2, new SnmpMibBeanProperty(onuVlanIdUpTrafficMapProfIndex2, ".1.3.6.1.4.1.45121.1.3.10.5.2.8.1.2", ISnmpConstant.GAUGE));
+        initProperty(onuVlanIdUpTrafficMapProfileName, new SnmpMibBeanProperty(onuVlanIdUpTrafficMapProfileName, ".1.3.6.1.4.1.45121.1.3.10.5.2.8.1.3", ISnmpConstant.STRING));
+        initProperty(onuVlanIdUpTrafficMapProfVlanIDStart, new SnmpMibBeanProperty(onuVlanIdUpTrafficMapProfVlanIDStart, ".1.3.6.1.4.1.45121.1.3.10.5.2.8.1.4", ISnmpConstant.GAUGE));
+        initProperty(onuVlanIdUpTrafficMapProfVlanIDStop, new SnmpMibBeanProperty(onuVlanIdUpTrafficMapProfVlanIDStop, ".1.3.6.1.4.1.45121.1.3.10.5.2.8.1.5", ISnmpConstant.GAUGE));
+        initProperty(onuVlanIdUpTrafficMapProfVirtualPortNo, new SnmpMibBeanProperty(onuVlanIdUpTrafficMapProfVirtualPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.2.8.1.6", ISnmpConstant.INTEGER));
 
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.2.8.1.7", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.2.8.1.7", ISnmpConstant.INTEGER));
     }
 
     public Long getOnuVlanIdUpTrafficMapProfIndex1() {

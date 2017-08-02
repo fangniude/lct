@@ -21,10 +21,10 @@ public class DHCPGeneral extends SnmpMibBean
 	protected void init()
 	{
 //		initProperty(utsDHCPServiceState, new SnmpMibBeanProperty(
-//				utsDHCPServiceState, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.1.1",
+//				utsDHCPServiceState, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.1.1",
 //				ISnmpConstant.INTEGER));
 		initProperty(utsDHCPServiceMode, new SnmpMibBeanProperty(
-				utsDHCPServiceMode, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.1.6",
+				utsDHCPServiceMode, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.1.6",
 				ISnmpConstant.INTEGER));
 
 	}

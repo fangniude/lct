@@ -22,7 +22,7 @@ public class BBS4000CardMibBean extends SnmpMibBean
   public static final String utsEponModuleBoardHwVer = "utsEponModuleBoardHwVer";
   public static final String utsEponModuleBoardSerialNumber = "utsEponModuleBoardSerialNumber";
 
-  private String fTableOid = ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.1.1";
+  private String fTableOid = ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.1.1";
 
   public BBS4000CardMibBean(ISnmpProxy aSnmpProxy)
   {

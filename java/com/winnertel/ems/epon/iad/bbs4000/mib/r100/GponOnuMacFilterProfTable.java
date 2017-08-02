@@ -24,13 +24,13 @@ public class GponOnuMacFilterProfTable extends SnmpMibBean {
 
     protected void init() {
         // TODO Auto-generated method stub
-        initProperty(onuMacFilterProfIndex1, new SnmpMibBeanProperty(onuMacFilterProfIndex1, ".1.3.6.1.4.1.41355.1.3.10.5.2.14.1.1", ISnmpConstant.GAUGE));
-        initProperty(onuMacFilterProfIndex2, new SnmpMibBeanProperty(onuMacFilterProfIndex2, ".1.3.6.1.4.1.41355.1.3.10.5.2.14.1.2", ISnmpConstant.GAUGE));
-        initProperty(onuMacFilterProfileName, new SnmpMibBeanProperty(onuMacFilterProfileName, ".1.3.6.1.4.1.41355.1.3.10.5.2.14.1.3", ISnmpConstant.STRING));
-        initProperty(onuMacFilterProfMacAddress, new SnmpMibBeanProperty(onuMacFilterProfMacAddress, ".1.3.6.1.4.1.41355.1.3.10.5.2.14.1.4", ISnmpConstant.MAC_ADDRESS));
-        initProperty(onuMacFilterProfFilterForward, new SnmpMibBeanProperty(onuMacFilterProfFilterForward, ".1.3.6.1.4.1.41355.1.3.10.5.2.14.1.5", ISnmpConstant.INTEGER));
+        initProperty(onuMacFilterProfIndex1, new SnmpMibBeanProperty(onuMacFilterProfIndex1, ".1.3.6.1.4.1.45121.1.3.10.5.2.14.1.1", ISnmpConstant.GAUGE));
+        initProperty(onuMacFilterProfIndex2, new SnmpMibBeanProperty(onuMacFilterProfIndex2, ".1.3.6.1.4.1.45121.1.3.10.5.2.14.1.2", ISnmpConstant.GAUGE));
+        initProperty(onuMacFilterProfileName, new SnmpMibBeanProperty(onuMacFilterProfileName, ".1.3.6.1.4.1.45121.1.3.10.5.2.14.1.3", ISnmpConstant.STRING));
+        initProperty(onuMacFilterProfMacAddress, new SnmpMibBeanProperty(onuMacFilterProfMacAddress, ".1.3.6.1.4.1.45121.1.3.10.5.2.14.1.4", ISnmpConstant.MAC_ADDRESS));
+        initProperty(onuMacFilterProfFilterForward, new SnmpMibBeanProperty(onuMacFilterProfFilterForward, ".1.3.6.1.4.1.45121.1.3.10.5.2.14.1.5", ISnmpConstant.INTEGER));
 
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.2.14.1.6", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.2.14.1.6", ISnmpConstant.INTEGER));
     }
 
     public void setOnuMacFilterProfIndex1(Long aOnuMacFilterProfIndex1) {

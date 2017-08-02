@@ -39,100 +39,100 @@ public class Dot3OltOpmThreshold extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsDot3OltOpmVoltageMinAlarmThreshold,
 				new SnmpMibBeanProperty(utsDot3OltOpmVoltageMinAlarmThreshold,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.10.1",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.10.1",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmVoltageMaxAlarmThreshold,
 				new SnmpMibBeanProperty(utsDot3OltOpmVoltageMaxAlarmThreshold,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.10.2",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.10.2",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmBiasCurrentMinAlarmThreshold,
 				new SnmpMibBeanProperty(
 						utsDot3OltOpmBiasCurrentMinAlarmThreshold,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.10.3",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.10.3",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmBiasCurrentMaxAlarmThreshold,
 				new SnmpMibBeanProperty(
 						utsDot3OltOpmBiasCurrentMaxAlarmThreshold,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.10.4",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.10.4",
 						ISnmpConstant.INTEGER));
 
 		initProperty(utsDot3OltOpmTemperatureMinAlarmThreshold,
 				new SnmpMibBeanProperty(
 						utsDot3OltOpmTemperatureMinAlarmThreshold,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.10.5",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.10.5",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmTemperatureMaxAlarmThreshold,
 				new SnmpMibBeanProperty(
 						utsDot3OltOpmTemperatureMaxAlarmThreshold,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.10.6",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.10.6",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmTxPowerMinAlarmThreshold,
 				new SnmpMibBeanProperty(utsDot3OltOpmTxPowerMinAlarmThreshold,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.10.7",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.10.7",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmTxPowerMaxAlarmThreshold,
 				new SnmpMibBeanProperty(utsDot3OltOpmTxPowerMaxAlarmThreshold,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.10.8",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.10.8",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmVoltageMinWarningThreshold,
 				new SnmpMibBeanProperty(
 						utsDot3OltOpmVoltageMinWarningThreshold,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.10.9",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.10.9",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmVoltageMaxWarningThreshold,
 				new SnmpMibBeanProperty(
 						utsDot3OltOpmVoltageMaxWarningThreshold,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.10.10",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.10.10",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmBiasCurrentMinWarningThreshold,
 				new SnmpMibBeanProperty(
 						utsDot3OltOpmBiasCurrentMinWarningThreshold,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.10.11",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.10.11",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmBiasCurrentMaxWarningThreshold,
 				new SnmpMibBeanProperty(
 						utsDot3OltOpmBiasCurrentMaxWarningThreshold,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.10.12",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.10.12",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmTemperatureMinWarningThreshold,
 				new SnmpMibBeanProperty(
 						utsDot3OltOpmTemperatureMinWarningThreshold,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.10.13",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.10.13",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmTemperatureMaxWarningThreshold,
 				new SnmpMibBeanProperty(
 						utsDot3OltOpmTemperatureMaxWarningThreshold,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.10.14",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.10.14",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmTxPowerMinWarningThreshold,
 				new SnmpMibBeanProperty(
 						utsDot3OltOpmTxPowerMinWarningThreshold,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.10.15",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.10.15",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmTxPowerMaxWarningThreshold,
 				new SnmpMibBeanProperty(
 						utsDot3OltOpmTxPowerMaxWarningThreshold,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.10.16",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.10.16",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmOnuRxPowerMinAlarmThreshold,
 				new SnmpMibBeanProperty(
 						utsDot3OltOpmOnuRxPowerMinAlarmThreshold,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.10.17",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.10.17",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmOnuRxPowerMaxAlarmThreshold,
 				new SnmpMibBeanProperty(
 						utsDot3OltOpmOnuRxPowerMaxAlarmThreshold,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.10.18",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.10.18",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmOnuRxPowerMinWarningThreshold,
 				new SnmpMibBeanProperty(
 						utsDot3OltOpmOnuRxPowerMinWarningThreshold,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.10.19",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.10.19",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmOnuRxPowerMaxWarningThreshold,
 				new SnmpMibBeanProperty(
 						utsDot3OltOpmOnuRxPowerMaxWarningThreshold,
-						".1.3.6.1.4.1.41355.1800.2.1.1.4.10.20",
+						".1.3.6.1.4.1.45121.1800.2.1.1.4.10.20",
 						ISnmpConstant.INTEGER));
 	}
 

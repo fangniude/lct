@@ -15,8 +15,8 @@ import java.util.Map;
 
 public class EponPollData implements PollData{
 
-	private static final String EPON_FME_SESSION_ID = ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.39.0";
-	private static final String EPON_FME_ALARM_LAST_SEQ_NO = ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.40.0";
+	private static final String EPON_FME_SESSION_ID = ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.39.0";
+	private static final String EPON_FME_ALARM_LAST_SEQ_NO = ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.40.0";
 	private static final String ALARM_LAST_SEQUENCE_NUMBER = ".1.3.6.1.4.1.17409.2.2.11.2.11.0";
 
 	public Map poll( String moName ){

@@ -37,18 +37,18 @@ public class Dot3boundOnuTable extends SnmpMibBean
 				".1.3.6.1.2.1.2.2.1.1", ISnmpConstant.INTEGER));
 		initProperty(utsDot3DbaSlaModuleId,
 				new SnmpMibBeanProperty(utsDot3DbaSlaModuleId,
-						".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.1",
+						".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.1",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3DbaSlaPortId, new SnmpMibBeanProperty(
-				utsDot3DbaSlaPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.2",
+				utsDot3DbaSlaPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3DbaSlaLogicalPortId,
 				new SnmpMibBeanProperty(utsDot3DbaSlaLogicalPortId,
-						".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.3",
+						".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.3",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot3DbaSlaBindingMacAddress,
 				new SnmpMibBeanProperty(utsDot3DbaSlaBindingMacAddress,
-						".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.25",
+						".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.25",
 						ISnmpConstant.MAC_ADDRESS));
 	}
 

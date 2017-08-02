@@ -28,10 +28,10 @@ public class OltGlbMulticastGroupTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsOltGlbMulticastGroupMVlan, new SnmpMibBeanProperty(utsOltGlbMulticastGroupMVlan, ".1.3.6.1.4.1.41355.1800.2.4.3.1.5.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsOltGlbMulticastGroupIpAddrStart, new SnmpMibBeanProperty(utsOltGlbMulticastGroupIpAddrStart, ".1.3.6.1.4.1.41355.1800.2.4.3.1.5.1.2", ISnmpConstant.IP_ADDRESS));
-    initProperty(utsOltGlbMulticastGroupIpAddrEnd, new SnmpMibBeanProperty(utsOltGlbMulticastGroupIpAddrEnd, ".1.3.6.1.4.1.41355.1800.2.4.3.1.5.1.3", ISnmpConstant.IP_ADDRESS));
-    initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.4.3.1.5.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsOltGlbMulticastGroupMVlan, new SnmpMibBeanProperty(utsOltGlbMulticastGroupMVlan, ".1.3.6.1.4.1.45121.1800.2.4.3.1.5.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsOltGlbMulticastGroupIpAddrStart, new SnmpMibBeanProperty(utsOltGlbMulticastGroupIpAddrStart, ".1.3.6.1.4.1.45121.1800.2.4.3.1.5.1.2", ISnmpConstant.IP_ADDRESS));
+    initProperty(utsOltGlbMulticastGroupIpAddrEnd, new SnmpMibBeanProperty(utsOltGlbMulticastGroupIpAddrEnd, ".1.3.6.1.4.1.45121.1800.2.4.3.1.5.1.3", ISnmpConstant.IP_ADDRESS));
+    initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.4.3.1.5.1.4", ISnmpConstant.INTEGER));
   }
 
 

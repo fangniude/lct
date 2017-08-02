@@ -28,30 +28,30 @@ public class Dot3Onu2UniStaticMacTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsDot3Onu2Ctc3UniModuleId, new SnmpMibBeanProperty(
 				utsDot3Onu2Ctc3UniModuleId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.56.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.56.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2Ctc3UniDeviceId, new SnmpMibBeanProperty(
 				utsDot3Onu2Ctc3UniDeviceId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.56.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.56.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2Ctc3UniPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2Ctc3UniPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.56.1.3",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.56.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2Ctc3UniLogicalPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2Ctc3UniLogicalPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.56.1.4",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.56.1.4",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2Ctc3UniPhyPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2Ctc3UniPhyPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.56.1.5",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.56.1.5",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2UniStaticMacAddress, new SnmpMibBeanProperty(
 				utsDot3Onu2UniStaticMacAddress,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.103.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.103.1.1",
 				ISnmpConstant.MAC_ADDRESS));
 		initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.103.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.103.1.2",
 				ISnmpConstant.INTEGER));
 
 	}

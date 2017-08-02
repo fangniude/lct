@@ -74,6 +74,10 @@ public class OltQinQPanel extends UPanel {
         startVlanField.setValueScope(2, 4094);
         endVlanField.setValueScope(0, 4094);
         newVlanField.setValueScope(2, 4094);
+
+        startVlanField.setDefaultValue(2);
+        endVlanField.setDefaultValue(0);
+        etherTypeField.setDefaultString("0x0");
     }
 
     public void refresh() {

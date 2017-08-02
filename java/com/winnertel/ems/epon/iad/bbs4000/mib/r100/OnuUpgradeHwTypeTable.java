@@ -27,25 +27,25 @@ public class OnuUpgradeHwTypeTable extends SnmpMibBean {
 
   protected void init() {
     initProperty(onuUpgradeHwTypeHwType, new SnmpMibBeanProperty(
-        onuUpgradeHwTypeHwType, ".1.3.6.1.4.1.41355.1.3.10.5.2.23.1.1",
+        onuUpgradeHwTypeHwType, ".1.3.6.1.4.1.45121.1.3.10.5.2.23.1.1",
         ISnmpConstant.INTEGER));
     initProperty(onuUpgradeHwTypeOnuUpgradeTarget, new SnmpMibBeanProperty(
         onuUpgradeHwTypeOnuUpgradeTarget,
-        ".1.3.6.1.4.1.41355.1.3.10.5.2.23.1.2", ISnmpConstant.INTEGER));
+        ".1.3.6.1.4.1.45121.1.3.10.5.2.23.1.2", ISnmpConstant.INTEGER));
     initProperty(onuUpgradeHwTypeMethod, new SnmpMibBeanProperty(
-        onuUpgradeHwTypeMethod, ".1.3.6.1.4.1.41355.1.3.10.5.2.23.1.3",
+        onuUpgradeHwTypeMethod, ".1.3.6.1.4.1.45121.1.3.10.5.2.23.1.3",
         ISnmpConstant.INTEGER));
       initProperty(onuUpgradeHwTypeHwRevision, new SnmpMibBeanProperty(
-          onuUpgradeHwTypeHwRevision, ".1.3.6.1.4.1.41355.1.3.10.5.2.23.1.4",
+          onuUpgradeHwTypeHwRevision, ".1.3.6.1.4.1.45121.1.3.10.5.2.23.1.4",
           ISnmpConstant.STRING));
     initProperty(onuUpgradeHwTypeFwRevision, new SnmpMibBeanProperty(
-        onuUpgradeHwTypeFwRevision, ".1.3.6.1.4.1.41355.1.3.10.5.2.23.1.5",
+        onuUpgradeHwTypeFwRevision, ".1.3.6.1.4.1.45121.1.3.10.5.2.23.1.5",
         ISnmpConstant.STRING));
     initProperty(onuUpgradeHwTypeImageName, new SnmpMibBeanProperty(
-        onuUpgradeHwTypeImageName, ".1.3.6.1.4.1.41355.1.3.10.5.2.23.1.6",
+        onuUpgradeHwTypeImageName, ".1.3.6.1.4.1.45121.1.3.10.5.2.23.1.6",
         ISnmpConstant.STRING));
     initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-        ".1.3.6.1.4.1.41355.1.3.10.5.2.23.1.7", ISnmpConstant.INTEGER));
+        ".1.3.6.1.4.1.45121.1.3.10.5.2.23.1.7", ISnmpConstant.INTEGER));
 
   }
 

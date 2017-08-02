@@ -37,21 +37,21 @@ public class Dot3OltRegisteredOnuTable extends SnmpMibBean
 		initProperty(ifIndex, new SnmpMibBeanProperty(ifIndex,
 				".1.3.6.1.2.1.2.2.1.1", ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltModuleId, new SnmpMibBeanProperty(
-				utsDot3OltModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.1.1.1.1",
+				utsDot3OltModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.1.1.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltPortId, new SnmpMibBeanProperty(
-				utsDot3OltPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.1.1.1.2",
+				utsDot3OltPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.1.1.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOperStatus, new SnmpMibBeanProperty(
-				utsDot3OltOperStatus, ".1.3.6.1.4.1.41355.1800.2.3.1.1.1.1.1.3",
+				utsDot3OltOperStatus, ".1.3.6.1.4.1.45121.1800.2.3.1.1.1.1.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltAdminStatus, new SnmpMibBeanProperty(
 				utsDot3OltAdminStatus,
-				".1.3.6.1.4.1.41355.1800.2.3.1.1.1.1.1.19",
+				".1.3.6.1.4.1.45121.1800.2.3.1.1.1.1.1.19",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltRegisteredONUCount, new SnmpMibBeanProperty(
 				utsDot3OltRegisteredONUCount,
-				".1.3.6.1.4.1.41355.1800.2.3.1.1.1.1.1.21",
+				".1.3.6.1.4.1.45121.1800.2.3.1.1.1.1.1.21",
 				ISnmpConstant.INTEGER));
 	}
 

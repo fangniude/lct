@@ -19,9 +19,9 @@ public class EthVlanTransparentTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsEthVlanTransparentSwitch, new SnmpMibBeanProperty(utsEthVlanTransparentSwitch, ".1.3.6.1.4.1.41355.1800.2.2.1.12.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsEthVlanTransparentOuterVID, new SnmpMibBeanProperty(utsEthVlanTransparentOuterVID, ".1.3.6.1.4.1.41355.1800.2.2.1.12.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsEthVlanTransparentTagMode, new SnmpMibBeanProperty(utsEthVlanTransparentTagMode, ".1.3.6.1.4.1.41355.1800.2.2.1.12.1.5", ISnmpConstant.INTEGER));
+    initProperty(utsEthVlanTransparentSwitch, new SnmpMibBeanProperty(utsEthVlanTransparentSwitch, ".1.3.6.1.4.1.45121.1800.2.2.1.12.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsEthVlanTransparentOuterVID, new SnmpMibBeanProperty(utsEthVlanTransparentOuterVID, ".1.3.6.1.4.1.45121.1800.2.2.1.12.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsEthVlanTransparentTagMode, new SnmpMibBeanProperty(utsEthVlanTransparentTagMode, ".1.3.6.1.4.1.45121.1800.2.2.1.12.1.5", ISnmpConstant.INTEGER));
   }
 
   public Integer getIfIndex() {

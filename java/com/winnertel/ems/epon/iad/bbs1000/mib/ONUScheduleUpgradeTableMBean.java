@@ -31,12 +31,12 @@ public class ONUScheduleUpgradeTableMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3OnuFWUpgradeStartingHour, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeStartingHour, ".1.3.6.1.4.1.41355.1800.2.3.1.7.3.1.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuFWUpgradeStartingMinute, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeStartingMinute, ".1.3.6.1.4.1.41355.1800.2.3.1.7.3.1.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuFWUpgradeDuration, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeDuration, ".1.3.6.1.4.1.41355.1800.2.3.1.7.3.1.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuFWUpgradePortListBitMap, new SnmpMibBeanProperty(utsDot3OnuFWUpgradePortListBitMap, ".1.3.6.1.4.1.41355.1800.2.3.1.7.3.1.1.5", ISnmpConstant.OCTETS));
-        initProperty(utsDot3OnuFWUpgradeOption, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeOption, ".1.3.6.1.4.1.41355.1800.2.3.1.7.3.1.1.6", ISnmpConstant.INTEGER));
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.3.1.7.3.1.1.7", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuFWUpgradeStartingHour, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeStartingHour, ".1.3.6.1.4.1.45121.1800.2.3.1.7.3.1.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuFWUpgradeStartingMinute, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeStartingMinute, ".1.3.6.1.4.1.45121.1800.2.3.1.7.3.1.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuFWUpgradeDuration, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeDuration, ".1.3.6.1.4.1.45121.1800.2.3.1.7.3.1.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuFWUpgradePortListBitMap, new SnmpMibBeanProperty(utsDot3OnuFWUpgradePortListBitMap, ".1.3.6.1.4.1.45121.1800.2.3.1.7.3.1.1.5", ISnmpConstant.OCTETS));
+        initProperty(utsDot3OnuFWUpgradeOption, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeOption, ".1.3.6.1.4.1.45121.1800.2.3.1.7.3.1.1.6", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.3.1.7.3.1.1.7", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsDot3OnuFWUpgradeStartingHour() {

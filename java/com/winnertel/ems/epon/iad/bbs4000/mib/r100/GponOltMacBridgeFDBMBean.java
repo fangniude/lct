@@ -30,15 +30,15 @@ public class GponOltMacBridgeFDBMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(oltMacBridgeFDBSlotNo, new SnmpMibBeanProperty(oltMacBridgeFDBSlotNo, ".1.3.6.1.4.1.41355.1.3.10.5.2.13.1.1", ISnmpConstant.INTEGER));
-        initProperty(oltMacBridgeFDBPortNo, new SnmpMibBeanProperty(oltMacBridgeFDBPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.2.13.1.2", ISnmpConstant.INTEGER));
-        initProperty(oltMacBridgeFDBLogicalPortNo, new SnmpMibBeanProperty(oltMacBridgeFDBLogicalPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.2.13.1.3", ISnmpConstant.INTEGER));
-        initProperty(oltMacBridgeFDBVirtualPortNo, new SnmpMibBeanProperty(oltMacBridgeFDBVirtualPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.2.13.1.4", ISnmpConstant.INTEGER));
-        initProperty(oltMacBridgeFDBMacAddress, new SnmpMibBeanProperty(oltMacBridgeFDBMacAddress, ".1.3.6.1.4.1.41355.1.3.10.5.2.13.1.5", ISnmpConstant.STRING));
-        initProperty(oltMacBridgeFDBVlanID, new SnmpMibBeanProperty(oltMacBridgeFDBVlanID, ".1.3.6.1.4.1.41355.1.3.10.5.2.13.1.6", ISnmpConstant.INTEGER));
-        initProperty(oltMacBridgeFDoltGEMPortNo, new SnmpMibBeanProperty(oltMacBridgeFDoltGEMPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.2.13.1.7", ISnmpConstant.INTEGER));
-        initProperty(oltMacBridgeFDBdynamicStatic, new SnmpMibBeanProperty(oltMacBridgeFDBdynamicStatic, ".1.3.6.1.4.1.41355.1.3.10.5.2.13.1.8", ISnmpConstant.INTEGER));
-        initProperty(oltMacBridgeFDBage, new SnmpMibBeanProperty(oltMacBridgeFDBage, ".1.3.6.1.4.1.41355.1.3.10.5.2.13.1.9", ISnmpConstant.INTEGER));
+        initProperty(oltMacBridgeFDBSlotNo, new SnmpMibBeanProperty(oltMacBridgeFDBSlotNo, ".1.3.6.1.4.1.45121.1.3.10.5.2.13.1.1", ISnmpConstant.INTEGER));
+        initProperty(oltMacBridgeFDBPortNo, new SnmpMibBeanProperty(oltMacBridgeFDBPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.2.13.1.2", ISnmpConstant.INTEGER));
+        initProperty(oltMacBridgeFDBLogicalPortNo, new SnmpMibBeanProperty(oltMacBridgeFDBLogicalPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.2.13.1.3", ISnmpConstant.INTEGER));
+        initProperty(oltMacBridgeFDBVirtualPortNo, new SnmpMibBeanProperty(oltMacBridgeFDBVirtualPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.2.13.1.4", ISnmpConstant.INTEGER));
+        initProperty(oltMacBridgeFDBMacAddress, new SnmpMibBeanProperty(oltMacBridgeFDBMacAddress, ".1.3.6.1.4.1.45121.1.3.10.5.2.13.1.5", ISnmpConstant.STRING));
+        initProperty(oltMacBridgeFDBVlanID, new SnmpMibBeanProperty(oltMacBridgeFDBVlanID, ".1.3.6.1.4.1.45121.1.3.10.5.2.13.1.6", ISnmpConstant.INTEGER));
+        initProperty(oltMacBridgeFDoltGEMPortNo, new SnmpMibBeanProperty(oltMacBridgeFDoltGEMPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.2.13.1.7", ISnmpConstant.INTEGER));
+        initProperty(oltMacBridgeFDBdynamicStatic, new SnmpMibBeanProperty(oltMacBridgeFDBdynamicStatic, ".1.3.6.1.4.1.45121.1.3.10.5.2.13.1.8", ISnmpConstant.INTEGER));
+        initProperty(oltMacBridgeFDBage, new SnmpMibBeanProperty(oltMacBridgeFDBage, ".1.3.6.1.4.1.45121.1.3.10.5.2.13.1.9", ISnmpConstant.INTEGER));
     }
 
     public Integer getOltMacBridgeFDBSlotNo() {

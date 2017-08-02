@@ -27,12 +27,12 @@ public class Dot3Onu2CtcValidOnuMacTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3OnuValidOnuMacModuleId, new SnmpMibBeanProperty(utsDot3OnuValidOnuMacModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.17.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuValidOnuMacDeviceId, new SnmpMibBeanProperty(utsDot3OnuValidOnuMacDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.17.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuValidOnuMacPortId, new SnmpMibBeanProperty(utsDot3OnuValidOnuMacPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.17.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuValidOnuMacAppLPortId, new SnmpMibBeanProperty(utsDot3OnuValidOnuMacAppLPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.17.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsDot3ValidOnuMacAddr, new SnmpMibBeanProperty(utsDot3ValidOnuMacAddr, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.17.1.5", ISnmpConstant.MAC_ADDRESS));
-        //initProperty(utsDot3Onu2ConfiguredOnuType, new SnmpMibBeanProperty(utsDot3Onu2ConfiguredOnuType, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.17.1.6", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuValidOnuMacModuleId, new SnmpMibBeanProperty(utsDot3OnuValidOnuMacModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.17.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuValidOnuMacDeviceId, new SnmpMibBeanProperty(utsDot3OnuValidOnuMacDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.17.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuValidOnuMacPortId, new SnmpMibBeanProperty(utsDot3OnuValidOnuMacPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.17.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuValidOnuMacAppLPortId, new SnmpMibBeanProperty(utsDot3OnuValidOnuMacAppLPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.17.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3ValidOnuMacAddr, new SnmpMibBeanProperty(utsDot3ValidOnuMacAddr, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.17.1.5", ISnmpConstant.MAC_ADDRESS));
+        //initProperty(utsDot3Onu2ConfiguredOnuType, new SnmpMibBeanProperty(utsDot3Onu2ConfiguredOnuType, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.17.1.6", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsDot3OnuValidOnuMacModuleId() {

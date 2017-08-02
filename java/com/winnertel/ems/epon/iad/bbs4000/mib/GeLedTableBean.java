@@ -28,7 +28,7 @@ public class GeLedTableBean extends SnmpMibBean
   public static final String utsLedGEPortSlotLedDispPort3LinkLedStat = "utsLedGEPortSlotLedDispPort3LinkLedStat";
   public static final String utsLedGEPortSlotLedDispPort4LinkLedStat = "utsLedGEPortSlotLedDispPort4LinkLedStat";
 
-  private String fTableOid = ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.6.3.1.1";
+  private String fTableOid = ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.6.3.1.1";
 
   public GeLedTableBean(ISnmpProxy aSnmpProxy)
   {

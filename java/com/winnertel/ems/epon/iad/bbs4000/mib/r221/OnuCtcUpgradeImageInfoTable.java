@@ -21,12 +21,12 @@ public class OnuCtcUpgradeImageInfoTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsCtcTftpOamOnuUpgradeImageInfoVendorInfo, new SnmpMibBeanProperty(utsCtcTftpOamOnuUpgradeImageInfoVendorInfo, ".1.3.6.1.4.1.41355.1800.2.3.1.7.5.1.1", ISnmpConstant.STRING));
-        initProperty(utsCtcTftpOamOnuUpgradeImageInfoOnuType, new SnmpMibBeanProperty(utsCtcTftpOamOnuUpgradeImageInfoOnuType, ".1.3.6.1.4.1.41355.1800.2.3.1.7.5.1.2", ISnmpConstant.STRING));
-        initProperty(utsCtcTftpOamOnuUpgradeImageInfoImageName, new SnmpMibBeanProperty(utsCtcTftpOamOnuUpgradeImageInfoImageName, ".1.3.6.1.4.1.41355.1800.2.3.1.7.5.1.3", ISnmpConstant.STRING));
-        initProperty(utsCtcTftpOamOnuUpgradeImageInfoImageVersion, new SnmpMibBeanProperty(utsCtcTftpOamOnuUpgradeImageInfoImageVersion, ".1.3.6.1.4.1.41355.1800.2.3.1.7.5.1.4", ISnmpConstant.STRING));
-        initProperty(utsCtcTftpOamOnuUpgradeImageInfoImageDate, new SnmpMibBeanProperty(utsCtcTftpOamOnuUpgradeImageInfoImageDate, ".1.3.6.1.4.1.41355.1800.2.3.1.7.5.1.5", ISnmpConstant.STRING));
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.3.1.7.5.1.100", ISnmpConstant.INTEGER));
+        initProperty(utsCtcTftpOamOnuUpgradeImageInfoVendorInfo, new SnmpMibBeanProperty(utsCtcTftpOamOnuUpgradeImageInfoVendorInfo, ".1.3.6.1.4.1.45121.1800.2.3.1.7.5.1.1", ISnmpConstant.STRING));
+        initProperty(utsCtcTftpOamOnuUpgradeImageInfoOnuType, new SnmpMibBeanProperty(utsCtcTftpOamOnuUpgradeImageInfoOnuType, ".1.3.6.1.4.1.45121.1800.2.3.1.7.5.1.2", ISnmpConstant.STRING));
+        initProperty(utsCtcTftpOamOnuUpgradeImageInfoImageName, new SnmpMibBeanProperty(utsCtcTftpOamOnuUpgradeImageInfoImageName, ".1.3.6.1.4.1.45121.1800.2.3.1.7.5.1.3", ISnmpConstant.STRING));
+        initProperty(utsCtcTftpOamOnuUpgradeImageInfoImageVersion, new SnmpMibBeanProperty(utsCtcTftpOamOnuUpgradeImageInfoImageVersion, ".1.3.6.1.4.1.45121.1800.2.3.1.7.5.1.4", ISnmpConstant.STRING));
+        initProperty(utsCtcTftpOamOnuUpgradeImageInfoImageDate, new SnmpMibBeanProperty(utsCtcTftpOamOnuUpgradeImageInfoImageDate, ".1.3.6.1.4.1.45121.1800.2.3.1.7.5.1.5", ISnmpConstant.STRING));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.3.1.7.5.1.100", ISnmpConstant.INTEGER));
     }
 
     public String getUtsCtcTftpOamOnuUpgradeImageInfoVendorInfo() {

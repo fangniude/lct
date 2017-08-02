@@ -39,55 +39,55 @@ public class OnuUpgradeTandRTable extends SnmpMibBean {
 
   protected void init() {
     initProperty(onuUpgradeTaskandResultIndex, new SnmpMibBeanProperty(
-        onuUpgradeTaskandResultIndex, ".1.3.6.1.4.1.41355.1.3.10.5.2.22.1.1",
+        onuUpgradeTaskandResultIndex, ".1.3.6.1.4.1.45121.1.3.10.5.2.22.1.1",
         ISnmpConstant.GAUGE));
     initProperty(onuUpgradeTaskandResultOnuUpgradeTarget,
         new SnmpMibBeanProperty(onuUpgradeTaskandResultOnuUpgradeTarget,
-            ".1.3.6.1.4.1.41355.1.3.10.5.2.22.1.2", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1.3.10.5.2.22.1.2", ISnmpConstant.INTEGER));
     initProperty(onuUpgradeTaskandResultOnuUpgradeMethod,
         new SnmpMibBeanProperty(onuUpgradeTaskandResultOnuUpgradeMethod,
-            ".1.3.6.1.4.1.41355.1.3.10.5.2.22.1.3", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1.3.10.5.2.22.1.3", ISnmpConstant.INTEGER));
     initProperty(onuUpgradeTaskandResultOnuUpgradeOption,
         new SnmpMibBeanProperty(onuUpgradeTaskandResultOnuUpgradeOption,
-            ".1.3.6.1.4.1.41355.1.3.10.5.2.22.1.4", ISnmpConstant.INTEGER));
+            ".1.3.6.1.4.1.45121.1.3.10.5.2.22.1.4", ISnmpConstant.INTEGER));
     initProperty(onuUpgradeTaskStatus, new SnmpMibBeanProperty(
-        onuUpgradeTaskStatus, ".1.3.6.1.4.1.41355.1.3.10.5.2.22.1.5",
+        onuUpgradeTaskStatus, ".1.3.6.1.4.1.45121.1.3.10.5.2.22.1.5",
         ISnmpConstant.INTEGER));
     initProperty(onuUpgradeImageInstance, new SnmpMibBeanProperty(
-        onuUpgradeImageInstance, ".1.3.6.1.4.1.41355.1.3.10.5.2.22.1.6",
+        onuUpgradeImageInstance, ".1.3.6.1.4.1.45121.1.3.10.5.2.22.1.6",
         ISnmpConstant.INTEGER));
     initProperty(onuUpgradeRebootMode, new SnmpMibBeanProperty(
-        onuUpgradeRebootMode, ".1.3.6.1.4.1.41355.1.3.10.5.2.22.1.7",
+        onuUpgradeRebootMode, ".1.3.6.1.4.1.45121.1.3.10.5.2.22.1.7",
         ISnmpConstant.INTEGER));
     initProperty(onuUpgradeScheduledTime, new SnmpMibBeanProperty(
-        onuUpgradeScheduledTime, ".1.3.6.1.4.1.41355.1.3.10.5.2.22.1.8",
+        onuUpgradeScheduledTime, ".1.3.6.1.4.1.45121.1.3.10.5.2.22.1.8",
         ISnmpConstant.STRING));
     initProperty(onuUpgradeRebooScheduledTime, new SnmpMibBeanProperty(
-        onuUpgradeRebooScheduledTime, ".1.3.6.1.4.1.41355.1.3.10.5.2.22.1.9",
+        onuUpgradeRebooScheduledTime, ".1.3.6.1.4.1.45121.1.3.10.5.2.22.1.9",
         ISnmpConstant.STRING));
     initProperty(onuUpgradeParticipantPortListBitMap, new SnmpMibBeanProperty(
         onuUpgradeParticipantPortListBitMap,
-        ".1.3.6.1.4.1.41355.1.3.10.5.2.22.1.10", ISnmpConstant.OCTETS));
+        ".1.3.6.1.4.1.45121.1.3.10.5.2.22.1.10", ISnmpConstant.OCTETS));
     initProperty(onuUpgradeImageInstancePortListBitMap,
         new SnmpMibBeanProperty(onuUpgradeImageInstancePortListBitMap,
-            ".1.3.6.1.4.1.41355.1.3.10.5.2.22.1.11", ISnmpConstant.OCTETS));
+            ".1.3.6.1.4.1.45121.1.3.10.5.2.22.1.11", ISnmpConstant.OCTETS));
     initProperty(onuUpgradeProgressDownloadPortListBitMap,
         new SnmpMibBeanProperty(onuUpgradeProgressDownloadPortListBitMap,
-            ".1.3.6.1.4.1.41355.1.3.10.5.2.22.1.12", ISnmpConstant.OCTETS));
+            ".1.3.6.1.4.1.45121.1.3.10.5.2.22.1.12", ISnmpConstant.OCTETS));
     initProperty(onuUpgradeProgressActivatePortListBitMap,
         new SnmpMibBeanProperty(onuUpgradeProgressActivatePortListBitMap,
-            ".1.3.6.1.4.1.41355.1.3.10.5.2.22.1.13", ISnmpConstant.OCTETS));
+            ".1.3.6.1.4.1.45121.1.3.10.5.2.22.1.13", ISnmpConstant.OCTETS));
     initProperty(onuUpgradeProgressCommitPortListBitMap,
         new SnmpMibBeanProperty(onuUpgradeProgressCommitPortListBitMap,
-            ".1.3.6.1.4.1.41355.1.3.10.5.2.22.1.14", ISnmpConstant.OCTETS));
+            ".1.3.6.1.4.1.45121.1.3.10.5.2.22.1.14", ISnmpConstant.OCTETS));
     initProperty(onuUpgradeProgressFinalPortListBitMap,
         new SnmpMibBeanProperty(onuUpgradeProgressFinalPortListBitMap,
-            ".1.3.6.1.4.1.41355.1.3.10.5.2.22.1.15", ISnmpConstant.OCTETS));
+            ".1.3.6.1.4.1.45121.1.3.10.5.2.22.1.15", ISnmpConstant.OCTETS));
     initProperty(onuUpgradeResultPortListBitMap, new SnmpMibBeanProperty(
-        onuUpgradeResultPortListBitMap, ".1.3.6.1.4.1.41355.1.3.10.5.2.22.1.16",
+        onuUpgradeResultPortListBitMap, ".1.3.6.1.4.1.45121.1.3.10.5.2.22.1.16",
         ISnmpConstant.OCTETS));
     initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-        ".1.3.6.1.4.1.41355.1.3.10.5.2.22.1.17", ISnmpConstant.INTEGER));
+        ".1.3.6.1.4.1.45121.1.3.10.5.2.22.1.17", ISnmpConstant.INTEGER));
 
   }
   

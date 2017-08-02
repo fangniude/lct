@@ -45,7 +45,7 @@ public class EponTCAJobFactory
 //      log.debug("Instance is NE type, index = 0");
       jobInfo.oid = oid + ".0";
     }
-    else if(oid.startsWith(".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1"))
+    else if(oid.startsWith(".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1"))
     {
       String[] split = measObj.getName().split("/");
 

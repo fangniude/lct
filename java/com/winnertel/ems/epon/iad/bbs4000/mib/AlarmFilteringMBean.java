@@ -19,8 +19,8 @@ public class AlarmFilteringMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utAlarmFilteringType, new SnmpMibBeanProperty(utAlarmFilteringType, ".1.3.6.1.4.1.41355.1800.3.1.1.4.3.2", ISnmpConstant.INTEGER));
-        initProperty(utAlarmFilteringSeverity, new SnmpMibBeanProperty(utAlarmFilteringSeverity, ".1.3.6.1.4.1.41355.1800.3.1.1.4.3.1", ISnmpConstant.INTEGER));
+        initProperty(utAlarmFilteringType, new SnmpMibBeanProperty(utAlarmFilteringType, ".1.3.6.1.4.1.45121.1800.3.1.1.4.3.2", ISnmpConstant.INTEGER));
+        initProperty(utAlarmFilteringSeverity, new SnmpMibBeanProperty(utAlarmFilteringSeverity, ".1.3.6.1.4.1.45121.1800.3.1.1.4.3.1", ISnmpConstant.INTEGER));
     }
 
     public String getUtAlarmFilteringType() {

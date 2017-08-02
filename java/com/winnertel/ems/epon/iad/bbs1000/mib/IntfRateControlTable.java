@@ -42,24 +42,24 @@ public class IntfRateControlTable extends SnmpMibBean {
 
     protected void init() {
         initProperty(ifIndex, new SnmpMibBeanProperty(ifIndex, ".1.3.6.1.2.1.2.2.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsIntfRateControlModuleId, new SnmpMibBeanProperty(utsIntfRateControlModuleId, ".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsIntfRateControlPortId, new SnmpMibBeanProperty(utsIntfRateControlPortId, ".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsIntfRateControlMcastEnable, new SnmpMibBeanProperty(utsIntfRateControlMcastEnable, ".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsIntfRateControlMcastLimit, new SnmpMibBeanProperty(utsIntfRateControlMcastLimit, ".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsIntfRateControlBcastEnable, new SnmpMibBeanProperty(utsIntfRateControlBcastEnable, ".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsIntfRateControlBcastLimit, new SnmpMibBeanProperty(utsIntfRateControlBcastLimit, ".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.6", ISnmpConstant.INTEGER));
-        initProperty(utsIntfRateControlUnicastEnable, new SnmpMibBeanProperty(utsIntfRateControlUnicastEnable, ".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.7", ISnmpConstant.INTEGER));
-        initProperty(utsIntfRateControlUnicastLimit, new SnmpMibBeanProperty(utsIntfRateControlUnicastLimit, ".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.8", ISnmpConstant.INTEGER));
-        initProperty(utsIntfRateLimitIngressBandwidth, new SnmpMibBeanProperty(utsIntfRateLimitIngressBandwidth, ".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.9", ISnmpConstant.INTEGER));
-        initProperty(utsIntfRateLimitEgressBandwidth, new SnmpMibBeanProperty(utsIntfRateLimitEgressBandwidth, ".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.10", ISnmpConstant.INTEGER));
-        //initProperty(utsIntfRateControlMaxFrameSize, new SnmpMibBeanProperty(utsIntfRateControlMaxFrameSize, ".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.11", ISnmpConstant.INTEGER));
-        initProperty(utsIntfRateControlIsolationCtrl, new SnmpMibBeanProperty(utsIntfRateControlIsolationCtrl, ".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.12", ISnmpConstant.INTEGER));
-        initProperty(utsIntfRateControlUplinkSpeed, new SnmpMibBeanProperty(utsIntfRateControlUplinkSpeed, ".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.13", ISnmpConstant.INTEGER));
-        initProperty(utsIntfRateControlVlanIngressFilter, new SnmpMibBeanProperty(utsIntfRateControlVlanIngressFilter, ".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.14", ISnmpConstant.INTEGER));
-        initProperty(utsIntfRateControlUplinkTranceiverType, new SnmpMibBeanProperty(utsIntfRateControlUplinkTranceiverType, ".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.15", ISnmpConstant.INTEGER));
-        initProperty(utsIntfRateControlAutoNegotiation, new SnmpMibBeanProperty(utsIntfRateControlAutoNegotiation, ".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.16", ISnmpConstant.INTEGER));
-        initProperty(utsIntfRateLimitIngressBurstSize, new SnmpMibBeanProperty(utsIntfRateLimitIngressBurstSize, ".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.17", ISnmpConstant.INTEGER));
-        initProperty(utsIntfRateLimitEgressBurstSize, new SnmpMibBeanProperty(utsIntfRateLimitEgressBurstSize, ".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.18", ISnmpConstant.INTEGER));
+        initProperty(utsIntfRateControlModuleId, new SnmpMibBeanProperty(utsIntfRateControlModuleId, ".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsIntfRateControlPortId, new SnmpMibBeanProperty(utsIntfRateControlPortId, ".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsIntfRateControlMcastEnable, new SnmpMibBeanProperty(utsIntfRateControlMcastEnable, ".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsIntfRateControlMcastLimit, new SnmpMibBeanProperty(utsIntfRateControlMcastLimit, ".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsIntfRateControlBcastEnable, new SnmpMibBeanProperty(utsIntfRateControlBcastEnable, ".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsIntfRateControlBcastLimit, new SnmpMibBeanProperty(utsIntfRateControlBcastLimit, ".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.6", ISnmpConstant.INTEGER));
+        initProperty(utsIntfRateControlUnicastEnable, new SnmpMibBeanProperty(utsIntfRateControlUnicastEnable, ".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.7", ISnmpConstant.INTEGER));
+        initProperty(utsIntfRateControlUnicastLimit, new SnmpMibBeanProperty(utsIntfRateControlUnicastLimit, ".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.8", ISnmpConstant.INTEGER));
+        initProperty(utsIntfRateLimitIngressBandwidth, new SnmpMibBeanProperty(utsIntfRateLimitIngressBandwidth, ".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.9", ISnmpConstant.INTEGER));
+        initProperty(utsIntfRateLimitEgressBandwidth, new SnmpMibBeanProperty(utsIntfRateLimitEgressBandwidth, ".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.10", ISnmpConstant.INTEGER));
+        //initProperty(utsIntfRateControlMaxFrameSize, new SnmpMibBeanProperty(utsIntfRateControlMaxFrameSize, ".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.11", ISnmpConstant.INTEGER));
+        initProperty(utsIntfRateControlIsolationCtrl, new SnmpMibBeanProperty(utsIntfRateControlIsolationCtrl, ".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.12", ISnmpConstant.INTEGER));
+        initProperty(utsIntfRateControlUplinkSpeed, new SnmpMibBeanProperty(utsIntfRateControlUplinkSpeed, ".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.13", ISnmpConstant.INTEGER));
+        initProperty(utsIntfRateControlVlanIngressFilter, new SnmpMibBeanProperty(utsIntfRateControlVlanIngressFilter, ".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.14", ISnmpConstant.INTEGER));
+        initProperty(utsIntfRateControlUplinkTranceiverType, new SnmpMibBeanProperty(utsIntfRateControlUplinkTranceiverType, ".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.15", ISnmpConstant.INTEGER));
+        initProperty(utsIntfRateControlAutoNegotiation, new SnmpMibBeanProperty(utsIntfRateControlAutoNegotiation, ".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.16", ISnmpConstant.INTEGER));
+        initProperty(utsIntfRateLimitIngressBurstSize, new SnmpMibBeanProperty(utsIntfRateLimitIngressBurstSize, ".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.17", ISnmpConstant.INTEGER));
+        initProperty(utsIntfRateLimitEgressBurstSize, new SnmpMibBeanProperty(utsIntfRateLimitEgressBurstSize, ".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.18", ISnmpConstant.INTEGER));
     }
 
     public Integer getIfIndex() {

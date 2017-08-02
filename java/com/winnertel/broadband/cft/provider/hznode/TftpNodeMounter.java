@@ -70,8 +70,8 @@ public class TftpNodeMounter extends Mounter {
             if (saveSuccess(proxy, dir)) {
                 Thread.sleep(2000);
                 String[] valueList = {
-                        ".1.3.6.1.4.1.41355.1800.2.1.1.4.3.3.0",
-                        ".1.3.6.1.4.1.41355.1800.2.1.1.4.3.8.0"
+                        ".1.3.6.1.4.1.45121.1800.2.1.1.4.3.3.0",
+                        ".1.3.6.1.4.1.45121.1800.2.1.1.4.3.8.0"
                 };
 
                 StringBuffer sb = new StringBuffer();
@@ -101,8 +101,8 @@ public class TftpNodeMounter extends Mounter {
 
     private boolean saveSuccess(SnmpProxy proxy, String dir) throws DefaultSnmpException {
         String[] oidsList = {
-                ".1.3.6.1.4.1.41355.1800.2.1.1.4.3.2.0",
-                ".1.3.6.1.4.1.41355.1800.2.1.1.4.3.1.0"
+                ".1.3.6.1.4.1.45121.1800.2.1.1.4.3.2.0",
+                ".1.3.6.1.4.1.45121.1800.2.1.1.4.3.1.0"
         };
 
         Object[] valueList = {

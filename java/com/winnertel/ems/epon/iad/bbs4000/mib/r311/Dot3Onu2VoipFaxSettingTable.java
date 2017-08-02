@@ -28,28 +28,28 @@ public class Dot3Onu2VoipFaxSettingTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsDot3Onu2CtcCombinedFeaturesModuleId, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcCombinedFeaturesModuleId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcCombinedFeaturesDeviceId, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcCombinedFeaturesDeviceId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcCombinedFeaturesPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcCombinedFeaturesPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.3",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcCombinedFeaturesLogicalPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcCombinedFeaturesLogicalPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.4",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.4",
 				ISnmpConstant.INTEGER));
 		
 		initProperty(utsDot3Onu2CtcFaxmodemCfgT38Mode, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcFaxmodemCfgT38Mode,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.301",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.301",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2CtcFaxmodemCfgCtrl, new SnmpMibBeanProperty(
 				utsDot3Onu2CtcFaxmodemCfgCtrl,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.302",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.302",
 				ISnmpConstant.INTEGER));
 
 	}

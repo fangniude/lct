@@ -32,25 +32,25 @@ public class GponOnuVoipSvcProTable extends SnmpMibBean {
 
   protected void init() {
     initProperty(onuVoipSvcProfileIndex, new SnmpMibBeanProperty(
-        onuVoipSvcProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.2.20.1.1",
+        onuVoipSvcProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.2.20.1.1",
         ISnmpConstant.GAUGE));
     initProperty(onuVoipSvcProfileName, new SnmpMibBeanProperty(
-        onuVoipSvcProfileName, ".1.3.6.1.4.1.41355.1.3.10.5.2.20.1.2",
+        onuVoipSvcProfileName, ".1.3.6.1.4.1.45121.1.3.10.5.2.20.1.2",
         ISnmpConstant.STRING));
     initProperty(onuVoIPVirtualPortNo, new SnmpMibBeanProperty(
-        onuVoIPVirtualPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.2.20.1.3",
+        onuVoIPVirtualPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.2.20.1.3",
         ISnmpConstant.INTEGER));
     initProperty(onuVoIPConfigMethod, new SnmpMibBeanProperty(
-        onuVoIPConfigMethod, ".1.3.6.1.4.1.41355.1.3.10.5.2.20.1.4",
+        onuVoIPConfigMethod, ".1.3.6.1.4.1.45121.1.3.10.5.2.20.1.4",
         ISnmpConstant.INTEGER));
     initProperty(onuVoIPConfigServerAddress, new SnmpMibBeanProperty(
-        onuVoIPConfigServerAddress, ".1.3.6.1.4.1.41355.1.3.10.5.2.20.1.5",
+        onuVoIPConfigServerAddress, ".1.3.6.1.4.1.45121.1.3.10.5.2.20.1.5",
         ISnmpConstant.IP_ADDRESS));
     initProperty(onuVoIPConfigScriptLocation, new SnmpMibBeanProperty(
-        onuVoIPConfigScriptLocation, ".1.3.6.1.4.1.41355.1.3.10.5.2.20.1.6",
+        onuVoIPConfigScriptLocation, ".1.3.6.1.4.1.45121.1.3.10.5.2.20.1.6",
         ISnmpConstant.STRING));
     initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-        ".1.3.6.1.4.1.41355.1.3.10.5.2.20.1.7", ISnmpConstant.INTEGER));
+        ".1.3.6.1.4.1.45121.1.3.10.5.2.20.1.7", ISnmpConstant.INTEGER));
 
   }
 

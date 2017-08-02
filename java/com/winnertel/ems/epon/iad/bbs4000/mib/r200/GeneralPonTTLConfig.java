@@ -35,24 +35,24 @@ public class GeneralPonTTLConfig extends SnmpMibBean{
   }
 
   protected void init() {
-    initProperty(utsBBSBPDUTermination, new SnmpMibBeanProperty(utsBBSBPDUTermination, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.15",        ISnmpConstant.INTEGER));
-    initProperty(utsBBSSysSoftwareRateLimiting, new SnmpMibBeanProperty(utsBBSSysSoftwareRateLimiting, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.16", ISnmpConstant.INTEGER));
-    initProperty(utsBBSSysCpuUtilityAlarmThresholdTotal, new SnmpMibBeanProperty(utsBBSSysCpuUtilityAlarmThresholdTotal, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.18", ISnmpConstant.INTEGER));
-    initProperty(utsBBSSysCpuUtilityAlarmThresholdPerTask, new SnmpMibBeanProperty(utsBBSSysCpuUtilityAlarmThresholdPerTask, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.19", ISnmpConstant.INTEGER));
-    initProperty(utsBBSSysMemoryUtilityAlarmThreshold, new SnmpMibBeanProperty(utsBBSSysMemoryUtilityAlarmThreshold, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.20", ISnmpConstant.INTEGER));
-    initProperty(utsBBSSysARPAgingTime, new SnmpMibBeanProperty(utsBBSSysARPAgingTime, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.21", ISnmpConstant.INTEGER));
-    initProperty(utsBBSSysMACAgingTime, new SnmpMibBeanProperty(utsBBSSysMACAgingTime, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.22", ISnmpConstant.INTEGER));
-    initProperty(utsPonSysOlpMode, new SnmpMibBeanProperty(utsPonSysOlpMode, ".1.3.6.1.4.1.41355.1800.2.1.1.2.7", ISnmpConstant.INTEGER));
-    initProperty(utsBBSVlanVPNTPID, new SnmpMibBeanProperty(utsBBSVlanVPNTPID, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsBBSVlanVPNPRISource, new SnmpMibBeanProperty(utsBBSVlanVPNPRISource, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsBBSMaxFrameSize, new SnmpMibBeanProperty(utsBBSMaxFrameSize, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsPonSysLocalAuthentication, new SnmpMibBeanProperty(utsPonSysLocalAuthentication, ".1.3.6.1.4.1.41355.1800.2.1.1.2.2", ISnmpConstant.INTEGER));
-    initProperty(utsPonSysLogicalPortStrictBinging, new SnmpMibBeanProperty(utsPonSysLogicalPortStrictBinging, ".1.3.6.1.4.1.41355.1800.2.1.1.2.3", ISnmpConstant.INTEGER));
-    initProperty(utsPonSysSlaSynchronization, new SnmpMibBeanProperty(utsPonSysSlaSynchronization, ".1.3.6.1.4.1.41355.1800.2.1.1.2.4", ISnmpConstant.INTEGER));
-    initProperty(utsPonSysOltMACAgingTime, new SnmpMibBeanProperty(utsPonSysOltMACAgingTime, ".1.3.6.1.4.1.41355.1800.2.1.1.2.5", ISnmpConstant.INTEGER));
-    initProperty(utsPonSysOnuAuthTimeOut, new SnmpMibBeanProperty(utsPonSysOnuAuthTimeOut, ".1.3.6.1.4.1.41355.1800.2.1.1.2.6", ISnmpConstant.INTEGER));
-    initProperty(utsPonSysDot1adTPID, new SnmpMibBeanProperty(utsPonSysDot1adTPID, ".1.3.6.1.4.1.41355.1800.2.1.1.2.8", ISnmpConstant.INTEGER));
-    initProperty(utsBBSMgmtTrafficTTL, new SnmpMibBeanProperty(utsBBSMgmtTrafficTTL, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.26", ISnmpConstant.INTEGER));
+    initProperty(utsBBSBPDUTermination, new SnmpMibBeanProperty(utsBBSBPDUTermination, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.15",        ISnmpConstant.INTEGER));
+    initProperty(utsBBSSysSoftwareRateLimiting, new SnmpMibBeanProperty(utsBBSSysSoftwareRateLimiting, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.16", ISnmpConstant.INTEGER));
+    initProperty(utsBBSSysCpuUtilityAlarmThresholdTotal, new SnmpMibBeanProperty(utsBBSSysCpuUtilityAlarmThresholdTotal, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.18", ISnmpConstant.INTEGER));
+    initProperty(utsBBSSysCpuUtilityAlarmThresholdPerTask, new SnmpMibBeanProperty(utsBBSSysCpuUtilityAlarmThresholdPerTask, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.19", ISnmpConstant.INTEGER));
+    initProperty(utsBBSSysMemoryUtilityAlarmThreshold, new SnmpMibBeanProperty(utsBBSSysMemoryUtilityAlarmThreshold, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.20", ISnmpConstant.INTEGER));
+    initProperty(utsBBSSysARPAgingTime, new SnmpMibBeanProperty(utsBBSSysARPAgingTime, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.21", ISnmpConstant.INTEGER));
+    initProperty(utsBBSSysMACAgingTime, new SnmpMibBeanProperty(utsBBSSysMACAgingTime, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.22", ISnmpConstant.INTEGER));
+    initProperty(utsPonSysOlpMode, new SnmpMibBeanProperty(utsPonSysOlpMode, ".1.3.6.1.4.1.45121.1800.2.1.1.2.7", ISnmpConstant.INTEGER));
+    initProperty(utsBBSVlanVPNTPID, new SnmpMibBeanProperty(utsBBSVlanVPNTPID, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsBBSVlanVPNPRISource, new SnmpMibBeanProperty(utsBBSVlanVPNPRISource, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsBBSMaxFrameSize, new SnmpMibBeanProperty(utsBBSMaxFrameSize, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsPonSysLocalAuthentication, new SnmpMibBeanProperty(utsPonSysLocalAuthentication, ".1.3.6.1.4.1.45121.1800.2.1.1.2.2", ISnmpConstant.INTEGER));
+    initProperty(utsPonSysLogicalPortStrictBinging, new SnmpMibBeanProperty(utsPonSysLogicalPortStrictBinging, ".1.3.6.1.4.1.45121.1800.2.1.1.2.3", ISnmpConstant.INTEGER));
+    initProperty(utsPonSysSlaSynchronization, new SnmpMibBeanProperty(utsPonSysSlaSynchronization, ".1.3.6.1.4.1.45121.1800.2.1.1.2.4", ISnmpConstant.INTEGER));
+    initProperty(utsPonSysOltMACAgingTime, new SnmpMibBeanProperty(utsPonSysOltMACAgingTime, ".1.3.6.1.4.1.45121.1800.2.1.1.2.5", ISnmpConstant.INTEGER));
+    initProperty(utsPonSysOnuAuthTimeOut, new SnmpMibBeanProperty(utsPonSysOnuAuthTimeOut, ".1.3.6.1.4.1.45121.1800.2.1.1.2.6", ISnmpConstant.INTEGER));
+    initProperty(utsPonSysDot1adTPID, new SnmpMibBeanProperty(utsPonSysDot1adTPID, ".1.3.6.1.4.1.45121.1800.2.1.1.2.8", ISnmpConstant.INTEGER));
+    initProperty(utsBBSMgmtTrafficTTL, new SnmpMibBeanProperty(utsBBSMgmtTrafficTTL, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.26", ISnmpConstant.INTEGER));
   }
 
   public Integer getUtsBBSBPDUTermination() {

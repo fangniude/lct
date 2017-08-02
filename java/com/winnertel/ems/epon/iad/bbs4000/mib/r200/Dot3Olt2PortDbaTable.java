@@ -30,12 +30,12 @@ public class Dot3Olt2PortDbaTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsDot3OltPortDbaModuleId, new SnmpMibBeanProperty(utsDot3OltPortDbaModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.11.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltPortDbaDeviceId, new SnmpMibBeanProperty(utsDot3OltPortDbaDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.11.1.2", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltPortDbaPortId, new SnmpMibBeanProperty(utsDot3OltPortDbaPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.11.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltPortDbaCycleSize, new SnmpMibBeanProperty(utsDot3OltPortDbaCycleSize, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.11.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltPortDbaDiscoveryFreq, new SnmpMibBeanProperty(utsDot3OltPortDbaDiscoveryFreq, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.11.1.5", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltPortDbaDiscoverySize, new SnmpMibBeanProperty(utsDot3OltPortDbaDiscoverySize, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.11.1.6", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltPortDbaModuleId, new SnmpMibBeanProperty(utsDot3OltPortDbaModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.11.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltPortDbaDeviceId, new SnmpMibBeanProperty(utsDot3OltPortDbaDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.11.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltPortDbaPortId, new SnmpMibBeanProperty(utsDot3OltPortDbaPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.11.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltPortDbaCycleSize, new SnmpMibBeanProperty(utsDot3OltPortDbaCycleSize, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.11.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltPortDbaDiscoveryFreq, new SnmpMibBeanProperty(utsDot3OltPortDbaDiscoveryFreq, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.11.1.5", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltPortDbaDiscoverySize, new SnmpMibBeanProperty(utsDot3OltPortDbaDiscoverySize, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.11.1.6", ISnmpConstant.INTEGER));
 
   }
 

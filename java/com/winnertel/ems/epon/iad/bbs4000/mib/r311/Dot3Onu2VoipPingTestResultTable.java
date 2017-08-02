@@ -33,51 +33,51 @@ public class Dot3Onu2VoipPingTestResultTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsDot3Onu2VoipModuleId, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipModuleId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipDeviceId, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipDeviceId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.3",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipLogicalPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipLogicalPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.4",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.4",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipPingTestResult, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipPingTestResult,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.62.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.62.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipPingTxPackets, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipPingTxPackets,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.62.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.62.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipPingRxPackets, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipPingRxPackets,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.62.1.3",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.62.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipPingLostPackets, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipPingLostPackets,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.62.1.4",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.62.1.4",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipPingLostPktRatio, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipPingLostPktRatio,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.62.1.5",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.62.1.5",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipPingMinDelay, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipPingMinDelay,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.62.1.6",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.62.1.6",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipPingMaxDelay, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipPingMaxDelay,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.62.1.7",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.62.1.7",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipPingAvgDelay, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipPingAvgDelay,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.62.1.8",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.62.1.8",
 				ISnmpConstant.INTEGER));
 
 	}

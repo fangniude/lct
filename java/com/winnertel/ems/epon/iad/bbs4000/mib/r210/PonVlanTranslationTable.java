@@ -23,14 +23,14 @@ public class PonVlanTranslationTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsPonVlanTranslationModuleID, new SnmpMibBeanProperty(utsPonVlanTranslationModuleID, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.15.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsPonVlanTranslationDeviceID, new SnmpMibBeanProperty(utsPonVlanTranslationDeviceID, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.15.1.2", ISnmpConstant.INTEGER));
-    initProperty(utsPonVlanTranslationPortID, new SnmpMibBeanProperty(utsPonVlanTranslationPortID, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.15.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsPonVlanTranslationLogicPortID, new SnmpMibBeanProperty(utsPonVlanTranslationLogicPortID, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.15.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsPonVlanTranslationOldVID, new SnmpMibBeanProperty(utsPonVlanTranslationOldVID, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.15.1.5", ISnmpConstant.INTEGER));
-    initProperty(utsPonVlanTranslationNewVID, new SnmpMibBeanProperty(utsPonVlanTranslationNewVID, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.15.1.6", ISnmpConstant.INTEGER));
-    initProperty(utsPonVlanTranslationNewCos, new SnmpMibBeanProperty(utsPonVlanTranslationNewCos, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.15.1.7", ISnmpConstant.INTEGER));
-    initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.15.1.8", ISnmpConstant.INTEGER));
+    initProperty(utsPonVlanTranslationModuleID, new SnmpMibBeanProperty(utsPonVlanTranslationModuleID, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.15.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsPonVlanTranslationDeviceID, new SnmpMibBeanProperty(utsPonVlanTranslationDeviceID, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.15.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsPonVlanTranslationPortID, new SnmpMibBeanProperty(utsPonVlanTranslationPortID, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.15.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsPonVlanTranslationLogicPortID, new SnmpMibBeanProperty(utsPonVlanTranslationLogicPortID, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.15.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsPonVlanTranslationOldVID, new SnmpMibBeanProperty(utsPonVlanTranslationOldVID, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.15.1.5", ISnmpConstant.INTEGER));
+    initProperty(utsPonVlanTranslationNewVID, new SnmpMibBeanProperty(utsPonVlanTranslationNewVID, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.15.1.6", ISnmpConstant.INTEGER));
+    initProperty(utsPonVlanTranslationNewCos, new SnmpMibBeanProperty(utsPonVlanTranslationNewCos, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.15.1.7", ISnmpConstant.INTEGER));
+    initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.15.1.8", ISnmpConstant.INTEGER));
   }
 
   public Integer getUtsPonVlanTranslationModuleID() {

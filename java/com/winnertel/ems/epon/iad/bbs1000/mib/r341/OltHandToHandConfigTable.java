@@ -22,18 +22,18 @@ public class OltHandToHandConfigTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsOltHandToHandConfigModuleId, new SnmpMibBeanProperty(
 				utsOltHandToHandConfigModuleId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.1.3.20.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.1.3.20.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsOltHandToHandConfigPortId, new SnmpMibBeanProperty(
 				utsOltHandToHandConfigPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.1.3.20.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.1.3.20.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsOltHandToHandConfigUplinkPorts,
 				new SnmpMibBeanProperty(utsOltHandToHandConfigUplinkPorts,
-						".1.3.6.1.4.1.41355.1800.2.3.1.1.3.20.1.3",
+						".1.3.6.1.4.1.45121.1800.2.3.1.1.3.20.1.3",
 						ISnmpConstant.OCTETS));
 		initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-				".1.3.6.1.4.1.41355.1800.2.3.1.1.3.20.1.100",
+				".1.3.6.1.4.1.45121.1800.2.3.1.1.3.20.1.100",
 				ISnmpConstant.INTEGER));
 	}
 

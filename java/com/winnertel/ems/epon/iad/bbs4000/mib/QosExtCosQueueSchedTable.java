@@ -27,13 +27,13 @@ public class QosExtCosQueueSchedTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsMLSQosExtCosQueueSchedIntfIndex, new SnmpMibBeanProperty(utsMLSQosExtCosQueueSchedIntfIndex, ".1.3.6.1.4.1.41355.1800.2.4.1.1.2.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsMLSQosExtCosQueueSchedModuleId, new SnmpMibBeanProperty(utsMLSQosExtCosQueueSchedModuleId, ".1.3.6.1.4.1.41355.1800.2.4.1.1.2.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsMLSQosExtCosQueueSchedPortId, new SnmpMibBeanProperty(utsMLSQosExtCosQueueSchedPortId, ".1.3.6.1.4.1.41355.1800.2.4.1.1.2.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsMLSQosExtCosQueueSchedLagPortId, new SnmpMibBeanProperty(utsMLSQosExtCosQueueSchedLagPortId, ".1.3.6.1.4.1.41355.1800.2.4.1.1.2.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsMLSQosExtCosQueueSchedQueueNum, new SnmpMibBeanProperty(utsMLSQosExtCosQueueSchedQueueNum, ".1.3.6.1.4.1.41355.1800.2.4.1.1.2.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsMLSQosExtCosQueueSchedWeight, new SnmpMibBeanProperty(utsMLSQosExtCosQueueSchedWeight, ".1.3.6.1.4.1.41355.1800.2.4.1.1.2.1.6", ISnmpConstant.INTEGER));
-        initProperty(utsMLSQosExtCosQueueSchedMode, new SnmpMibBeanProperty(utsMLSQosExtCosQueueSchedMode, ".1.3.6.1.4.1.41355.1800.2.4.1.1.2.1.7", ISnmpConstant.INTEGER));
+        initProperty(utsMLSQosExtCosQueueSchedIntfIndex, new SnmpMibBeanProperty(utsMLSQosExtCosQueueSchedIntfIndex, ".1.3.6.1.4.1.45121.1800.2.4.1.1.2.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsMLSQosExtCosQueueSchedModuleId, new SnmpMibBeanProperty(utsMLSQosExtCosQueueSchedModuleId, ".1.3.6.1.4.1.45121.1800.2.4.1.1.2.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsMLSQosExtCosQueueSchedPortId, new SnmpMibBeanProperty(utsMLSQosExtCosQueueSchedPortId, ".1.3.6.1.4.1.45121.1800.2.4.1.1.2.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsMLSQosExtCosQueueSchedLagPortId, new SnmpMibBeanProperty(utsMLSQosExtCosQueueSchedLagPortId, ".1.3.6.1.4.1.45121.1800.2.4.1.1.2.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsMLSQosExtCosQueueSchedQueueNum, new SnmpMibBeanProperty(utsMLSQosExtCosQueueSchedQueueNum, ".1.3.6.1.4.1.45121.1800.2.4.1.1.2.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsMLSQosExtCosQueueSchedWeight, new SnmpMibBeanProperty(utsMLSQosExtCosQueueSchedWeight, ".1.3.6.1.4.1.45121.1800.2.4.1.1.2.1.6", ISnmpConstant.INTEGER));
+        initProperty(utsMLSQosExtCosQueueSchedMode, new SnmpMibBeanProperty(utsMLSQosExtCosQueueSchedMode, ".1.3.6.1.4.1.45121.1800.2.4.1.1.2.1.7", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsMLSQosExtCosQueueSchedIntfIndex() {

@@ -29,19 +29,19 @@ public class InternalGEPort extends SnmpMibBean
 	{
 		initProperty(utsIntfRateControlUplinkSpeed, new SnmpMibBeanProperty(
 				utsIntfRateControlUplinkSpeed,
-				".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.13",
+				".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.13",
 				ISnmpConstant.INTEGER));
 		initProperty(utsIntfRateControlVlanIngressFilter,
 				new SnmpMibBeanProperty(utsIntfRateControlVlanIngressFilter,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.14",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.14",
 						ISnmpConstant.INTEGER));
 		initProperty(utsIntfRateControlUplinkTranceiverType,
 				new SnmpMibBeanProperty(utsIntfRateControlUplinkTranceiverType,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.15",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.15",
 						ISnmpConstant.INTEGER));
 		initProperty(utsIntfRateControlAutoNegotiation,
 				new SnmpMibBeanProperty(utsIntfRateControlAutoNegotiation,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.16",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.16",
 						ISnmpConstant.INTEGER));
 
 	}

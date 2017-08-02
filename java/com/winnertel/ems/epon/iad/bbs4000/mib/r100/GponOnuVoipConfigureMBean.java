@@ -28,15 +28,15 @@ public class GponOnuVoipConfigureMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(onuCfgSlotNo, new SnmpMibBeanProperty(onuCfgSlotNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.1", ISnmpConstant.INTEGER));
-        initProperty(onuCfgPortNo, new SnmpMibBeanProperty(onuCfgPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.2", ISnmpConstant.INTEGER));
-        initProperty(onuCfgLogicalPortNo, new SnmpMibBeanProperty(onuCfgLogicalPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.3", ISnmpConstant.INTEGER));
-        initProperty(onuCfgOnuVoIPBindingType, new SnmpMibBeanProperty(onuCfgOnuVoIPBindingType, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.53", ISnmpConstant.INTEGER));
-        initProperty(onuCfgOnuVoIPUserName, new SnmpMibBeanProperty(onuCfgOnuVoIPUserName, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.54", ISnmpConstant.STRING));
-        initProperty(onuCfgOnuVoIPPassword, new SnmpMibBeanProperty(onuCfgOnuVoIPPassword, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.55", ISnmpConstant.STRING));
-        initProperty(onuCfgOnuVoIPServiceProfileIndex, new SnmpMibBeanProperty(onuCfgOnuVoIPServiceProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.56", ISnmpConstant.GAUGE));
+        initProperty(onuCfgSlotNo, new SnmpMibBeanProperty(onuCfgSlotNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.1", ISnmpConstant.INTEGER));
+        initProperty(onuCfgPortNo, new SnmpMibBeanProperty(onuCfgPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.2", ISnmpConstant.INTEGER));
+        initProperty(onuCfgLogicalPortNo, new SnmpMibBeanProperty(onuCfgLogicalPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.3", ISnmpConstant.INTEGER));
+        initProperty(onuCfgOnuVoIPBindingType, new SnmpMibBeanProperty(onuCfgOnuVoIPBindingType, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.53", ISnmpConstant.INTEGER));
+        initProperty(onuCfgOnuVoIPUserName, new SnmpMibBeanProperty(onuCfgOnuVoIPUserName, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.54", ISnmpConstant.STRING));
+        initProperty(onuCfgOnuVoIPPassword, new SnmpMibBeanProperty(onuCfgOnuVoIPPassword, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.55", ISnmpConstant.STRING));
+        initProperty(onuCfgOnuVoIPServiceProfileIndex, new SnmpMibBeanProperty(onuCfgOnuVoIPServiceProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.56", ISnmpConstant.GAUGE));
 
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.57", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.57", ISnmpConstant.INTEGER));
     }
 
     public Integer getOnuCfgSlotNo() {

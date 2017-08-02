@@ -27,27 +27,27 @@ public class Dot3Onu2VoipTimerTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsDot3Onu2VoipModuleId, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipModuleId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipDeviceId, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipDeviceId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.3",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipLogicalPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipLogicalPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.4",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.4",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipLongTimer, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipLongTimer,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.63.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.63.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipShortTimer, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipShortTimer,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.63.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.63.1.2",
 				ISnmpConstant.INTEGER));
 
 	}

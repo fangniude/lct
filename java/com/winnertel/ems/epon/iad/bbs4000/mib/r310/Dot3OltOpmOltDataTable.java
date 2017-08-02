@@ -32,31 +32,31 @@ public class Dot3OltOpmOltDataTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsDot3OltOpmOltDataModuleID, new SnmpMibBeanProperty(
 				utsDot3OltOpmOltDataModuleID,
-				".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmOltDataPortId, new SnmpMibBeanProperty(
 				utsDot3OltOpmOltDataPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmOltDataTemperature, new SnmpMibBeanProperty(
 				utsDot3OltOpmOltDataTemperature,
-				".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.3",
+				".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmOltDataVoltage, new SnmpMibBeanProperty(
 				utsDot3OltOpmOltDataVoltage,
-				".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.4",
+				".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.4",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmOltDataBiasCurrent, new SnmpMibBeanProperty(
 				utsDot3OltOpmOltDataBiasCurrent,
-				".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.5",
+				".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.5",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmOltDataTxPower, new SnmpMibBeanProperty(
 				utsDot3OltOpmOltDataTxPower,
-				".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.6",
+				".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.6",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3OltOpmPmSwitch, new SnmpMibBeanProperty(
 				utsDot3OltOpmPmSwitch,
-				".1.3.6.1.4.1.41355.1800.2.3.1.1.3.18.1.100",
+				".1.3.6.1.4.1.45121.1800.2.3.1.1.3.18.1.100",
 				ISnmpConstant.INTEGER));
 	}
 

@@ -19,8 +19,8 @@ public class OnuMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(systemType, new SnmpMibBeanProperty(systemType, ".1.3.6.1.4.1.41355.1.3.10.100.106.2.1", ISnmpConstant.STRING));
-        initProperty(sysSoftwareVer, new SnmpMibBeanProperty(sysSoftwareVer, ".1.3.6.1.4.1.41355.1.3.10.100.106.2.2", ISnmpConstant.STRING));
+        initProperty(systemType, new SnmpMibBeanProperty(systemType, ".1.3.6.1.4.1.45121.1.3.10.100.106.2.1", ISnmpConstant.STRING));
+        initProperty(sysSoftwareVer, new SnmpMibBeanProperty(sysSoftwareVer, ".1.3.6.1.4.1.45121.1.3.10.100.106.2.2", ISnmpConstant.STRING));
     }
 
 

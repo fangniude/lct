@@ -33,23 +33,23 @@ public class GponOltOls2CfgTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(oltOls2CfgSlotNo, new SnmpMibBeanProperty(oltOls2CfgSlotNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.12.1.1",
+        initProperty(oltOls2CfgSlotNo, new SnmpMibBeanProperty(oltOls2CfgSlotNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.12.1.1",
                 ISnmpConstant.INTEGER));
-        initProperty(oltOls2CfgPortNo, new SnmpMibBeanProperty(oltOls2CfgPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.12.1.2",
+        initProperty(oltOls2CfgPortNo, new SnmpMibBeanProperty(oltOls2CfgPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.12.1.2",
                 ISnmpConstant.INTEGER));
         initProperty(oltOls2CfgLogicalPortNo, new SnmpMibBeanProperty(oltOls2CfgLogicalPortNo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.12.1.3", ISnmpConstant.INTEGER));
-        initProperty(oltOls2RxPower, new SnmpMibBeanProperty(oltOls2RxPower, ".1.3.6.1.4.1.41355.1.3.10.5.1.12.1.15",
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.12.1.3", ISnmpConstant.INTEGER));
+        initProperty(oltOls2RxPower, new SnmpMibBeanProperty(oltOls2RxPower, ".1.3.6.1.4.1.45121.1.3.10.5.1.12.1.15",
                 ISnmpConstant.INTEGER));
         initProperty(oltOls2RxPowerThresholdAlarmHi, new SnmpMibBeanProperty(oltOls2RxPowerThresholdAlarmHi,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.12.1.24", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.12.1.24", ISnmpConstant.INTEGER));
         initProperty(oltOls2RxPowerThresholdAlarmLo, new SnmpMibBeanProperty(oltOls2RxPowerThresholdAlarmLo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.12.1.25", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.12.1.25", ISnmpConstant.INTEGER));
         initProperty(oltOls2RxPowerThresholdWarningHi, new SnmpMibBeanProperty(oltOls2RxPowerThresholdWarningHi,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.12.1.34", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.12.1.34", ISnmpConstant.INTEGER));
         initProperty(oltOls2RxPowerThresholdWarningLo, new SnmpMibBeanProperty(oltOls2RxPowerThresholdWarningLo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.12.1.35", ISnmpConstant.INTEGER));
-        initProperty(oltOls2Enable, new SnmpMibBeanProperty(oltOls2Enable, ".1.3.6.1.4.1.41355.1.3.10.5.1.12.1.99",
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.12.1.35", ISnmpConstant.INTEGER));
+        initProperty(oltOls2Enable, new SnmpMibBeanProperty(oltOls2Enable, ".1.3.6.1.4.1.45121.1.3.10.5.1.12.1.99",
                 ISnmpConstant.INTEGER));
 
     }

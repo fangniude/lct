@@ -27,12 +27,12 @@ public class Dot3OltOpmOnuRxPowerTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3OltOpmOnuRxPowerModuleID, new SnmpMibBeanProperty(utsDot3OltOpmOnuRxPowerModuleID, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.19.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OltOpmOnuRxPowerPortId, new SnmpMibBeanProperty(utsDot3OltOpmOnuRxPowerPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.19.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OltOpmOnuRxPowerLogicalPortId, new SnmpMibBeanProperty(utsDot3OltOpmOnuRxPowerLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.19.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OltOpmOnuRxPower, new SnmpMibBeanProperty(utsDot3OltOpmOnuRxPower, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.19.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OltOpmOnuRxPowerMinThreshold, new SnmpMibBeanProperty(utsDot3OltOpmOnuRxPowerMinThreshold, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.19.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OltOpmOnuRxPowerMaxThreshold, new SnmpMibBeanProperty(utsDot3OltOpmOnuRxPowerMaxThreshold, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.19.1.6", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OltOpmOnuRxPowerModuleID, new SnmpMibBeanProperty(utsDot3OltOpmOnuRxPowerModuleID, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.19.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OltOpmOnuRxPowerPortId, new SnmpMibBeanProperty(utsDot3OltOpmOnuRxPowerPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.19.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OltOpmOnuRxPowerLogicalPortId, new SnmpMibBeanProperty(utsDot3OltOpmOnuRxPowerLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.19.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OltOpmOnuRxPower, new SnmpMibBeanProperty(utsDot3OltOpmOnuRxPower, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.19.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OltOpmOnuRxPowerMinThreshold, new SnmpMibBeanProperty(utsDot3OltOpmOnuRxPowerMinThreshold, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.19.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OltOpmOnuRxPowerMaxThreshold, new SnmpMibBeanProperty(utsDot3OltOpmOnuRxPowerMaxThreshold, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.19.1.6", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsDot3OltOpmOnuRxPowerModuleID() {

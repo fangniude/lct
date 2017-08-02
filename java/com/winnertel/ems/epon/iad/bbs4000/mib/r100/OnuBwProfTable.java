@@ -27,20 +27,20 @@ public class OnuBwProfTable extends SnmpMibBean {
 
   protected void init() {
     initProperty(bandwidthProfileIndex, new SnmpMibBeanProperty(
-        bandwidthProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.2.4.1.1",
+        bandwidthProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.2.4.1.1",
         ISnmpConstant.GAUGE));
     initProperty(onuBwProfileName, new SnmpMibBeanProperty(onuBwProfileName,
-        ".1.3.6.1.4.1.41355.1.3.10.5.2.4.1.2", ISnmpConstant.STRING));
+        ".1.3.6.1.4.1.45121.1.3.10.5.2.4.1.2", ISnmpConstant.STRING));
     initProperty(trafficType, new SnmpMibBeanProperty(trafficType,
-        ".1.3.6.1.4.1.41355.1.3.10.5.2.4.1.3", ISnmpConstant.INTEGER));
+        ".1.3.6.1.4.1.45121.1.3.10.5.2.4.1.3", ISnmpConstant.INTEGER));
     initProperty(fixedBandwidth, new SnmpMibBeanProperty(fixedBandwidth,
-        ".1.3.6.1.4.1.41355.1.3.10.5.2.4.1.4", ISnmpConstant.GAUGE));
+        ".1.3.6.1.4.1.45121.1.3.10.5.2.4.1.4", ISnmpConstant.GAUGE));
     initProperty(assuredBandwidth, new SnmpMibBeanProperty(assuredBandwidth,
-        ".1.3.6.1.4.1.41355.1.3.10.5.2.4.1.5", ISnmpConstant.GAUGE));
+        ".1.3.6.1.4.1.45121.1.3.10.5.2.4.1.5", ISnmpConstant.GAUGE));
     initProperty(maximumBandwidth, new SnmpMibBeanProperty(maximumBandwidth,
-        ".1.3.6.1.4.1.41355.1.3.10.5.2.4.1.6", ISnmpConstant.GAUGE));
+        ".1.3.6.1.4.1.45121.1.3.10.5.2.4.1.6", ISnmpConstant.GAUGE));
     initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-        ".1.3.6.1.4.1.41355.1.3.10.5.2.4.1.7", ISnmpConstant.INTEGER));
+        ".1.3.6.1.4.1.45121.1.3.10.5.2.4.1.7", ISnmpConstant.INTEGER));
 
   }
 

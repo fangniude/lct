@@ -70,67 +70,67 @@ public class Dot3DbaSlaTable extends SnmpMibBean {
                 ".1.3.6.1.2.1.2.2.1.1", ISnmpConstant.INTEGER));
         initProperty(utsDot3DbaSlaModuleId,
                 new SnmpMibBeanProperty(utsDot3DbaSlaModuleId,
-                        ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.1",
+                        ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.1",
                         ISnmpConstant.INTEGER));
-        initProperty(utsDot3DbaSlaPortId, new SnmpMibBeanProperty(utsDot3DbaSlaPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.2",
+        initProperty(utsDot3DbaSlaPortId, new SnmpMibBeanProperty(utsDot3DbaSlaPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.2",
                 ISnmpConstant.INTEGER));
         initProperty(utsDot3DbaSlaLogicalPortId,
                 new SnmpMibBeanProperty(utsDot3DbaSlaLogicalPortId,
-                        ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.3",
+                        ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.3",
                         ISnmpConstant.INTEGER));
         initProperty(utsDot3DbaSlaUpCommittedBandwidth,
                 new SnmpMibBeanProperty(utsDot3DbaSlaUpCommittedBandwidth,
-                        ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.4",
+                        ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.4",
                         ISnmpConstant.INTEGER));
         initProperty(utsDot3DbaSlaUpMaxBandwidth,
                 new SnmpMibBeanProperty(utsDot3DbaSlaUpMaxBandwidth,
-                        ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.5",
+                        ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.5",
                         ISnmpConstant.INTEGER));
-        initProperty(utsDot3DbaSlaVLANID, new SnmpMibBeanProperty(utsDot3DbaSlaVLANID, ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.13",
+        initProperty(utsDot3DbaSlaVLANID, new SnmpMibBeanProperty(utsDot3DbaSlaVLANID, ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.13",
                 ISnmpConstant.INTEGER));
         initProperty(utsDot3DbaSlaUNIMaxMACAddress, new SnmpMibBeanProperty(utsDot3DbaSlaUNIMaxMACAddress,
-                ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.14",
+                ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.14",
                 ISnmpConstant.INTEGER));
         initProperty(utsDot3DbaSlaIPAddress,
                 new SnmpMibBeanProperty(utsDot3DbaSlaIPAddress,
-                        ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.17",
+                        ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.17",
                         ISnmpConstant.STRING));
         initProperty(utsDot3DbaSlaSubnetMask,
                 new SnmpMibBeanProperty(utsDot3DbaSlaSubnetMask,
-                        ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.18",
+                        ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.18",
                         ISnmpConstant.STRING));
         initProperty(utsDot3DbaSlaCallingStationId,
                 new SnmpMibBeanProperty(utsDot3DbaSlaCallingStationId,
-                        ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.23",
+                        ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.23",
                         ISnmpConstant.MAC_ADDRESS));
         initProperty(utsDot3DbaSlaPlatoClass, new SnmpMibBeanProperty(utsDot3DbaSlaPlatoClass,
-                ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.24",
+                ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.24",
                 ISnmpConstant.INTEGER));
         initProperty(utsDot3DbaSlaBindingMacAddress,
                 new SnmpMibBeanProperty(utsDot3DbaSlaBindingMacAddress,
-                        ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.25",
+                        ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.25",
                         ISnmpConstant.MAC_ADDRESS));
         initProperty(utsDot3DbaSlaDownPolicingEnable, new SnmpMibBeanProperty(utsDot3DbaSlaDownPolicingEnable,
-                ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.26",
+                ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.26",
                 ISnmpConstant.INTEGER));
         initProperty(utsDot3DbaSlaDownMaxBandwidth, new SnmpMibBeanProperty(utsDot3DbaSlaDownMaxBandwidth,
-                ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.27",
+                ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.27",
                 ISnmpConstant.INTEGER));
         initProperty(utsDot3DbaSlaDownMaxBurstSize, new SnmpMibBeanProperty(utsDot3DbaSlaDownMaxBurstSize,
-                ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.28",
+                ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.28",
                 ISnmpConstant.INTEGER));
         initProperty(utsDot3DbaSlaP2PPolicingEnable, new SnmpMibBeanProperty(utsDot3DbaSlaP2PPolicingEnable,
-                ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.36",
+                ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.36",
                 ISnmpConstant.INTEGER));
         initProperty(utsDot3DbaSlaP2PPolicingONUList,
                 new SnmpMibBeanProperty(utsDot3DbaSlaP2PPolicingONUList,
-                        ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.37",
+                        ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.37",
                         ISnmpConstant.OCTETS));
         initProperty(utsDot3DbaSlaP2PMaxBandwidth, new SnmpMibBeanProperty(utsDot3DbaSlaP2PMaxBandwidth,
-                ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.38",
+                ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.38",
                 ISnmpConstant.INTEGER));
         initProperty(utsDot3DbaSlaP2PMaxBurstSize, new SnmpMibBeanProperty(utsDot3DbaSlaP2PMaxBurstSize,
-                ".1.3.6.1.4.1.41355.1800.2.3.1.4.2.1.1.39",
+                ".1.3.6.1.4.1.45121.1800.2.3.1.4.2.1.1.39",
                 ISnmpConstant.INTEGER));
 
     }

@@ -42,27 +42,27 @@ public class Dot3Onu2CtcConfigure extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3OnuCtcModuleId, new SnmpMibBeanProperty(utsDot3OnuCtcModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuCtcDeviceId, new SnmpMibBeanProperty(utsDot3OnuCtcDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuCtcPortId, new SnmpMibBeanProperty(utsDot3OnuCtcPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuCtcLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuCtcLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuCtcModuleId, new SnmpMibBeanProperty(utsDot3OnuCtcModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuCtcDeviceId, new SnmpMibBeanProperty(utsDot3OnuCtcDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuCtcPortId, new SnmpMibBeanProperty(utsDot3OnuCtcPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuCtcLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuCtcLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.4", ISnmpConstant.INTEGER));
 
-        initProperty(utsDot3Onu2CtcAdmin, new SnmpMibBeanProperty(utsDot3Onu2CtcAdmin, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.37", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuFECAbility, new SnmpMibBeanProperty(utsDot3OnuFECAbility, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.24", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuFECMode, new SnmpMibBeanProperty(utsDot3OnuFECMode, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.25", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcEncryptTraffic, new SnmpMibBeanProperty(utsDot3Onu2CtcEncryptTraffic, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.34", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcPVid, new SnmpMibBeanProperty(utsDot3Onu2CtcPVid, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.39", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcMaxMacAddress, new SnmpMibBeanProperty(utsDot3Onu2CtcMaxMacAddress, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.40", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2EthernetPortAlarmReversion, new SnmpMibBeanProperty(utsDot3Onu2EthernetPortAlarmReversion, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.56", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2SNumberValid, new SnmpMibBeanProperty(utsDot3Onu2SNumberValid, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.61", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2SNumberForService, new SnmpMibBeanProperty(utsDot3Onu2SNumberForService, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.62", ISnmpConstant.STRING));
-        initProperty(utsDot3Onu2dot1xUserName, new SnmpMibBeanProperty(utsDot3Onu2dot1xUserName, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.66", ISnmpConstant.STRING));
-        initProperty(utsDot3Onu2dot1xPassword, new SnmpMibBeanProperty(utsDot3Onu2dot1xPassword, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.68", ISnmpConstant.STRING));
-        //initProperty(utsDot3Onu2LoidAuthLoid, new SnmpMibBeanProperty(utsDot3Onu2LoidAuthLoid, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.71", ISnmpConstant.STRING));
-        //initProperty(utsDot3Onu2LoidAuthPassword, new SnmpMibBeanProperty(utsDot3Onu2LoidAuthPassword, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.72", ISnmpConstant.STRING));
-        //initProperty(utsDot3OnuCatvSwitch, new SnmpMibBeanProperty(utsDot3OnuCatvSwitch, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.101", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcAdmin, new SnmpMibBeanProperty(utsDot3Onu2CtcAdmin, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.37", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuFECAbility, new SnmpMibBeanProperty(utsDot3OnuFECAbility, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.24", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuFECMode, new SnmpMibBeanProperty(utsDot3OnuFECMode, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.25", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcEncryptTraffic, new SnmpMibBeanProperty(utsDot3Onu2CtcEncryptTraffic, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.34", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcPVid, new SnmpMibBeanProperty(utsDot3Onu2CtcPVid, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.39", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcMaxMacAddress, new SnmpMibBeanProperty(utsDot3Onu2CtcMaxMacAddress, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.40", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2EthernetPortAlarmReversion, new SnmpMibBeanProperty(utsDot3Onu2EthernetPortAlarmReversion, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.56", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2SNumberValid, new SnmpMibBeanProperty(utsDot3Onu2SNumberValid, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.61", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2SNumberForService, new SnmpMibBeanProperty(utsDot3Onu2SNumberForService, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.62", ISnmpConstant.STRING));
+        initProperty(utsDot3Onu2dot1xUserName, new SnmpMibBeanProperty(utsDot3Onu2dot1xUserName, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.66", ISnmpConstant.STRING));
+        initProperty(utsDot3Onu2dot1xPassword, new SnmpMibBeanProperty(utsDot3Onu2dot1xPassword, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.68", ISnmpConstant.STRING));
+        //initProperty(utsDot3Onu2LoidAuthLoid, new SnmpMibBeanProperty(utsDot3Onu2LoidAuthLoid, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.71", ISnmpConstant.STRING));
+        //initProperty(utsDot3Onu2LoidAuthPassword, new SnmpMibBeanProperty(utsDot3Onu2LoidAuthPassword, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.72", ISnmpConstant.STRING));
+        //initProperty(utsDot3OnuCatvSwitch, new SnmpMibBeanProperty(utsDot3OnuCatvSwitch, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.101", ISnmpConstant.INTEGER));
 
-        initProperty(utsDot3Onu2CtcReset, new SnmpMibBeanProperty(utsDot3Onu2CtcReset, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.10.1.32", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcReset, new SnmpMibBeanProperty(utsDot3Onu2CtcReset, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.10.1.32", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsDot3OnuCtcModuleId() {

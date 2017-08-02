@@ -36,14 +36,14 @@ public class FileSystemGroup extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsFileSystemCommand, new SnmpMibBeanProperty(utsFileSystemCommand, ".1.3.6.1.4.1.41355.1800.2.1.1.4.3.1", ISnmpConstant.INTEGER));
-        initProperty(utsFileSystemListDirectory, new SnmpMibBeanProperty(utsFileSystemListDirectory, ".1.3.6.1.4.1.41355.1800.2.1.1.4.3.2", ISnmpConstant.STRING));
-        initProperty(utsFileSystemListDirectoryResult, new SnmpMibBeanProperty(utsFileSystemListDirectoryResult, ".1.3.6.1.4.1.41355.1800.2.1.1.4.3.3", ISnmpConstant.STRING));
-        initProperty(utsFileSystemSrcFileName, new SnmpMibBeanProperty(utsFileSystemSrcFileName, ".1.3.6.1.4.1.41355.1800.2.1.1.4.3.4", ISnmpConstant.STRING));
-        initProperty(utsFileSystemDstFileName, new SnmpMibBeanProperty(utsFileSystemDstFileName, ".1.3.6.1.4.1.41355.1800.2.1.1.4.3.5", ISnmpConstant.STRING));
-        initProperty(utsFileSystemCommandStatus, new SnmpMibBeanProperty(utsFileSystemCommandStatus, ".1.3.6.1.4.1.41355.1800.2.1.1.4.3.6", ISnmpConstant.INTEGER));
-        initProperty(utsFileSystemCommandStationId, new SnmpMibBeanProperty(utsFileSystemCommandStationId, ".1.3.6.1.4.1.41355.1800.2.1.1.4.3.7", ISnmpConstant.STRING));
-        initProperty(utsFileSystemListDirectoryResultEndFlag, new SnmpMibBeanProperty(utsFileSystemListDirectoryResultEndFlag, ".1.3.6.1.4.1.41355.1800.2.1.1.4.3.8", ISnmpConstant.INTEGER));
+        initProperty(utsFileSystemCommand, new SnmpMibBeanProperty(utsFileSystemCommand, ".1.3.6.1.4.1.45121.1800.2.1.1.4.3.1", ISnmpConstant.INTEGER));
+        initProperty(utsFileSystemListDirectory, new SnmpMibBeanProperty(utsFileSystemListDirectory, ".1.3.6.1.4.1.45121.1800.2.1.1.4.3.2", ISnmpConstant.STRING));
+        initProperty(utsFileSystemListDirectoryResult, new SnmpMibBeanProperty(utsFileSystemListDirectoryResult, ".1.3.6.1.4.1.45121.1800.2.1.1.4.3.3", ISnmpConstant.STRING));
+        initProperty(utsFileSystemSrcFileName, new SnmpMibBeanProperty(utsFileSystemSrcFileName, ".1.3.6.1.4.1.45121.1800.2.1.1.4.3.4", ISnmpConstant.STRING));
+        initProperty(utsFileSystemDstFileName, new SnmpMibBeanProperty(utsFileSystemDstFileName, ".1.3.6.1.4.1.45121.1800.2.1.1.4.3.5", ISnmpConstant.STRING));
+        initProperty(utsFileSystemCommandStatus, new SnmpMibBeanProperty(utsFileSystemCommandStatus, ".1.3.6.1.4.1.45121.1800.2.1.1.4.3.6", ISnmpConstant.INTEGER));
+        initProperty(utsFileSystemCommandStationId, new SnmpMibBeanProperty(utsFileSystemCommandStationId, ".1.3.6.1.4.1.45121.1800.2.1.1.4.3.7", ISnmpConstant.STRING));
+        initProperty(utsFileSystemListDirectoryResultEndFlag, new SnmpMibBeanProperty(utsFileSystemListDirectoryResultEndFlag, ".1.3.6.1.4.1.45121.1800.2.1.1.4.3.8", ISnmpConstant.INTEGER));
     }
 
 

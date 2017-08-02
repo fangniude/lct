@@ -35,22 +35,22 @@ public class QosExtDscpCosMapTable extends SnmpMibBean
 	{
 		initProperty(utsMLSQosExtDscpCosMapIntfIndex, new SnmpMibBeanProperty(
 				utsMLSQosExtDscpCosMapIntfIndex,
-				".1.3.6.1.4.1.41355.1800.2.4.1.1.3.1.1", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.4.1.1.3.1.1", ISnmpConstant.INTEGER));
 		initProperty(utsMLSQosExtDscpCosMapModuleId, new SnmpMibBeanProperty(
 				utsMLSQosExtDscpCosMapModuleId,
-				".1.3.6.1.4.1.41355.1800.2.4.1.1.3.1.2", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.4.1.1.3.1.2", ISnmpConstant.INTEGER));
 		initProperty(utsMLSQosExtDscpCosMapPortId, new SnmpMibBeanProperty(
 				utsMLSQosExtDscpCosMapPortId,
-				".1.3.6.1.4.1.41355.1800.2.4.1.1.3.1.3", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.4.1.1.3.1.3", ISnmpConstant.INTEGER));
 		initProperty(utsMLSQosExtDscpCosMapLagPortId, new SnmpMibBeanProperty(
 				utsMLSQosExtDscpCosMapLagPortId,
-				".1.3.6.1.4.1.41355.1800.2.4.1.1.3.1.4", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.4.1.1.3.1.4", ISnmpConstant.INTEGER));
 		initProperty(utsMLSQosExtDscpCosMapDscpVal, new SnmpMibBeanProperty(
 				utsMLSQosExtDscpCosMapDscpVal,
-				".1.3.6.1.4.1.41355.1800.2.4.1.1.3.1.5", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.4.1.1.3.1.5", ISnmpConstant.INTEGER));
 		initProperty(utsMLSQosExtDscpCosMapCosVal, new SnmpMibBeanProperty(
 				utsMLSQosExtDscpCosMapCosVal,
-				".1.3.6.1.4.1.41355.1800.2.4.1.1.3.1.6", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.4.1.1.3.1.6", ISnmpConstant.INTEGER));
 
 	}
 

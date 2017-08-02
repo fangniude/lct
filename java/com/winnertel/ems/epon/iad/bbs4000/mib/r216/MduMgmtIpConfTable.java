@@ -33,16 +33,16 @@ public class MduMgmtIpConfTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3Onu2CtcMduMgmtIpConfModuleId, new SnmpMibBeanProperty(utsDot3Onu2CtcMduMgmtIpConfModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.32.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcMduMgmtIpConfDeviceId, new SnmpMibBeanProperty(utsDot3Onu2CtcMduMgmtIpConfDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.32.1.2", ISnmpConstant.STRING));
-        initProperty(utsDot3Onu2CtcMduMgmtIpConfPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcMduMgmtIpConfPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.32.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcMduMgmtIpConfLogicalPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcMduMgmtIpConfLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.32.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcMduMgmtIpConfIpAddr, new SnmpMibBeanProperty(utsDot3Onu2CtcMduMgmtIpConfIpAddr, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.32.1.5", ISnmpConstant.IP_ADDRESS));
-        initProperty(utsDot3Onu2CtcMduMgmtIpConfIpMask, new SnmpMibBeanProperty(utsDot3Onu2CtcMduMgmtIpConfIpMask, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.32.1.6", ISnmpConstant.IP_ADDRESS));
-        initProperty(utsDot3Onu2CtcMduMgmtIpConfGw, new SnmpMibBeanProperty(utsDot3Onu2CtcMduMgmtIpConfGw, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.32.1.7", ISnmpConstant.IP_ADDRESS));
-        initProperty(utsDot3Onu2CtcMduMgmtIpConfCvlan, new SnmpMibBeanProperty(utsDot3Onu2CtcMduMgmtIpConfCvlan, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.32.1.8", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcMduMgmtIpConfSvlan, new SnmpMibBeanProperty(utsDot3Onu2CtcMduMgmtIpConfSvlan, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.32.1.9", ISnmpConstant.INTEGER));
-        initProperty(utsDot3Onu2CtcMduMgmtIpConfDataPrio, new SnmpMibBeanProperty(utsDot3Onu2CtcMduMgmtIpConfDataPrio, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.32.1.10", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcMduMgmtIpConfModuleId, new SnmpMibBeanProperty(utsDot3Onu2CtcMduMgmtIpConfModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.32.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcMduMgmtIpConfDeviceId, new SnmpMibBeanProperty(utsDot3Onu2CtcMduMgmtIpConfDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.32.1.2", ISnmpConstant.STRING));
+        initProperty(utsDot3Onu2CtcMduMgmtIpConfPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcMduMgmtIpConfPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.32.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcMduMgmtIpConfLogicalPortId, new SnmpMibBeanProperty(utsDot3Onu2CtcMduMgmtIpConfLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.32.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcMduMgmtIpConfIpAddr, new SnmpMibBeanProperty(utsDot3Onu2CtcMduMgmtIpConfIpAddr, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.32.1.5", ISnmpConstant.IP_ADDRESS));
+        initProperty(utsDot3Onu2CtcMduMgmtIpConfIpMask, new SnmpMibBeanProperty(utsDot3Onu2CtcMduMgmtIpConfIpMask, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.32.1.6", ISnmpConstant.IP_ADDRESS));
+        initProperty(utsDot3Onu2CtcMduMgmtIpConfGw, new SnmpMibBeanProperty(utsDot3Onu2CtcMduMgmtIpConfGw, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.32.1.7", ISnmpConstant.IP_ADDRESS));
+        initProperty(utsDot3Onu2CtcMduMgmtIpConfCvlan, new SnmpMibBeanProperty(utsDot3Onu2CtcMduMgmtIpConfCvlan, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.32.1.8", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcMduMgmtIpConfSvlan, new SnmpMibBeanProperty(utsDot3Onu2CtcMduMgmtIpConfSvlan, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.32.1.9", ISnmpConstant.INTEGER));
+        initProperty(utsDot3Onu2CtcMduMgmtIpConfDataPrio, new SnmpMibBeanProperty(utsDot3Onu2CtcMduMgmtIpConfDataPrio, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.32.1.10", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsDot3Onu2CtcMduMgmtIpConfModuleId() {

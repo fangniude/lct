@@ -31,17 +31,17 @@ public class OnuUPCUTMProfTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(onuUsrPortCoSUpTrafficMapProfIndex1, new SnmpMibBeanProperty(onuUsrPortCoSUpTrafficMapProfIndex1, ".1.3.6.1.4.1.41355.1.3.10.5.2.10.1.1", ISnmpConstant.GAUGE));
-        initProperty(onuUsrPortCoSUpTrafficMapProfIndex2, new SnmpMibBeanProperty(onuUsrPortCoSUpTrafficMapProfIndex2, ".1.3.6.1.4.1.41355.1.3.10.5.2.10.1.2", ISnmpConstant.GAUGE));
-        initProperty(onuUsrPortCoSUpTrafficMapProfileName, new SnmpMibBeanProperty(onuUsrPortCoSUpTrafficMapProfileName, ".1.3.6.1.4.1.41355.1.3.10.5.2.10.1.3", ISnmpConstant.STRING));
-        initProperty(cosSelection, new SnmpMibBeanProperty(cosSelection, ".1.3.6.1.4.1.41355.1.3.10.5.2.10.1.4", ISnmpConstant.INTEGER));
-        initProperty(onuUsrPortCoSUpTrafficMapProfPhysicalPortType, new SnmpMibBeanProperty(onuUsrPortCoSUpTrafficMapProfPhysicalPortType, ".1.3.6.1.4.1.41355.1.3.10.5.2.10.1.5", ISnmpConstant.GAUGE));
-        initProperty(onuUsrPortCoSUpTrafficMapProfPhysicalPortNo, new SnmpMibBeanProperty(onuUsrPortCoSUpTrafficMapProfPhysicalPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.2.10.1.6", ISnmpConstant.INTEGER));
-        initProperty(onuUsrPortCoSUpTrafficMapProfVlanPriorityBitMap, new SnmpMibBeanProperty(onuUsrPortCoSUpTrafficMapProfVlanPriorityBitMap, ".1.3.6.1.4.1.41355.1.3.10.5.2.10.1.7", ISnmpConstant.GAUGE));
-        initProperty(dscpBitMap, new SnmpMibBeanProperty(dscpBitMap, ".1.3.6.1.4.1.41355.1.3.10.5.2.10.1.8", ISnmpConstant.COUNTER64));
-        initProperty(onuUsrPortCoSUpTrafficMapProfVirtualPortNo, new SnmpMibBeanProperty(onuUsrPortCoSUpTrafficMapProfVirtualPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.2.10.1.9", ISnmpConstant.INTEGER));
+        initProperty(onuUsrPortCoSUpTrafficMapProfIndex1, new SnmpMibBeanProperty(onuUsrPortCoSUpTrafficMapProfIndex1, ".1.3.6.1.4.1.45121.1.3.10.5.2.10.1.1", ISnmpConstant.GAUGE));
+        initProperty(onuUsrPortCoSUpTrafficMapProfIndex2, new SnmpMibBeanProperty(onuUsrPortCoSUpTrafficMapProfIndex2, ".1.3.6.1.4.1.45121.1.3.10.5.2.10.1.2", ISnmpConstant.GAUGE));
+        initProperty(onuUsrPortCoSUpTrafficMapProfileName, new SnmpMibBeanProperty(onuUsrPortCoSUpTrafficMapProfileName, ".1.3.6.1.4.1.45121.1.3.10.5.2.10.1.3", ISnmpConstant.STRING));
+        initProperty(cosSelection, new SnmpMibBeanProperty(cosSelection, ".1.3.6.1.4.1.45121.1.3.10.5.2.10.1.4", ISnmpConstant.INTEGER));
+        initProperty(onuUsrPortCoSUpTrafficMapProfPhysicalPortType, new SnmpMibBeanProperty(onuUsrPortCoSUpTrafficMapProfPhysicalPortType, ".1.3.6.1.4.1.45121.1.3.10.5.2.10.1.5", ISnmpConstant.GAUGE));
+        initProperty(onuUsrPortCoSUpTrafficMapProfPhysicalPortNo, new SnmpMibBeanProperty(onuUsrPortCoSUpTrafficMapProfPhysicalPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.2.10.1.6", ISnmpConstant.INTEGER));
+        initProperty(onuUsrPortCoSUpTrafficMapProfVlanPriorityBitMap, new SnmpMibBeanProperty(onuUsrPortCoSUpTrafficMapProfVlanPriorityBitMap, ".1.3.6.1.4.1.45121.1.3.10.5.2.10.1.7", ISnmpConstant.GAUGE));
+        initProperty(dscpBitMap, new SnmpMibBeanProperty(dscpBitMap, ".1.3.6.1.4.1.45121.1.3.10.5.2.10.1.8", ISnmpConstant.COUNTER64));
+        initProperty(onuUsrPortCoSUpTrafficMapProfVirtualPortNo, new SnmpMibBeanProperty(onuUsrPortCoSUpTrafficMapProfVirtualPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.2.10.1.9", ISnmpConstant.INTEGER));
 
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.2.10.1.10", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.2.10.1.10", ISnmpConstant.INTEGER));
     }
 
     public Long getOnuUsrPortCoSUpTrafficMapProfIndex1() {

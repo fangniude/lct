@@ -29,16 +29,16 @@ public class OnuLpDetectCfgTable extends SnmpMibBean {
 
     protected void init() {
         initProperty(onuLpDetectCfgSlotNo, new SnmpMibBeanProperty(onuLpDetectCfgSlotNo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.14.1.1", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.14.1.1", ISnmpConstant.INTEGER));
         initProperty(onuLpDetectCfgPortNo, new SnmpMibBeanProperty(onuLpDetectCfgPortNo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.14.1.2", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.14.1.2", ISnmpConstant.INTEGER));
         initProperty(onuLpDetectCfgLogicalPortNo, new SnmpMibBeanProperty(onuLpDetectCfgLogicalPortNo,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.14.1.3", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.14.1.3", ISnmpConstant.INTEGER));
         initProperty(onuLpDetectCfgEnable, new SnmpMibBeanProperty(onuLpDetectCfgEnable,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.14.1.11", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.14.1.11", ISnmpConstant.INTEGER));
         initProperty(onuLpDetectCfgRecoveryTimer, new SnmpMibBeanProperty(onuLpDetectCfgRecoveryTimer,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1.14.1.12", ISnmpConstant.GAUGE));
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.1.14.1.100",
+                ".1.3.6.1.4.1.45121.1.3.10.5.1.14.1.12", ISnmpConstant.GAUGE));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.1.14.1.100",
                 ISnmpConstant.INTEGER));
 
     }

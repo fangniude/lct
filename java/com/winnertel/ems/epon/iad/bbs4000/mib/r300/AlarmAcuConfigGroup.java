@@ -17,9 +17,9 @@ public class AlarmAcuConfigGroup extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsBbsAlarmAcuLedControl, new SnmpMibBeanProperty(utsBbsAlarmAcuLedControl, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.8", ISnmpConstant.OCTETS));
-        initProperty(utsBbsAlarmAcuAudioControl, new SnmpMibBeanProperty(utsBbsAlarmAcuAudioControl, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.9", ISnmpConstant.INTEGER));
-        initProperty(utsBbsAlarmAcuAudioMute, new SnmpMibBeanProperty(utsBbsAlarmAcuAudioMute, ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.1.11", ISnmpConstant.INTEGER));
+        initProperty(utsBbsAlarmAcuLedControl, new SnmpMibBeanProperty(utsBbsAlarmAcuLedControl, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.8", ISnmpConstant.OCTETS));
+        initProperty(utsBbsAlarmAcuAudioControl, new SnmpMibBeanProperty(utsBbsAlarmAcuAudioControl, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.9", ISnmpConstant.INTEGER));
+        initProperty(utsBbsAlarmAcuAudioMute, new SnmpMibBeanProperty(utsBbsAlarmAcuAudioMute, ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.1.11", ISnmpConstant.INTEGER));
     }
 
     public byte[] getUtsBbsAlarmAcuLedControl() {

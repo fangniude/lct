@@ -51,59 +51,59 @@ public class RSTPPort extends SnmpMibBean
 	{
 		initProperty(utsEponDot1dStpPortIntfIndex,
 				new SnmpMibBeanProperty(utsEponDot1dStpPortIntfIndex,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.4.2.1.1",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.4.2.1.1",
 						ISnmpConstant.INTEGER));
 		initProperty(utsEponDot1dStpPortVlanID,
 				new SnmpMibBeanProperty(utsEponDot1dStpPortVlanID,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.4.2.1.2",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.4.2.1.2",
 						ISnmpConstant.INTEGER));
 		initProperty(utsEponDot1dStpModuleID,
 				new SnmpMibBeanProperty(utsEponDot1dStpModuleID,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.4.2.1.3",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.4.2.1.3",
 						ISnmpConstant.INTEGER));
 		initProperty(utsEponDot1dStpPortID,
 				new SnmpMibBeanProperty(utsEponDot1dStpPortID,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.4.2.1.4",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.4.2.1.4",
 						ISnmpConstant.INTEGER));
 		initProperty(utsEponDot1dStpPortLagID,
 				new SnmpMibBeanProperty(utsEponDot1dStpPortLagID,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.4.2.1.5",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.4.2.1.5",
 						ISnmpConstant.INTEGER));
 		initProperty(utsEponDot1dStpPortPriority,
 				new SnmpMibBeanProperty(utsEponDot1dStpPortPriority,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.4.2.1.6",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.4.2.1.6",
 						ISnmpConstant.INTEGER));
 		initProperty(utsEponDot1dStpPortState,
 				new SnmpMibBeanProperty(utsEponDot1dStpPortState,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.4.2.1.7",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.4.2.1.7",
 						ISnmpConstant.INTEGER));
 		initProperty(utsEponDot1dStpPortEnable,
 				new SnmpMibBeanProperty(utsEponDot1dStpPortEnable,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.4.2.1.8",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.4.2.1.8",
 						ISnmpConstant.INTEGER));
 		initProperty(utsEponDot1dStpPortPathCost,
 				new SnmpMibBeanProperty(utsEponDot1dStpPortPathCost,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.4.2.1.9",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.4.2.1.9",
 						ISnmpConstant.INTEGER));
 		initProperty(utsEponDot1dStpPortDesignatedRoot,
 				new SnmpMibBeanProperty(utsEponDot1dStpPortDesignatedRoot,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.4.2.1.10",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.4.2.1.10",
 						ISnmpConstant.OCTETS));
 		initProperty(utsEponDot1dStpPortDesignatedCost,
 				new SnmpMibBeanProperty(utsEponDot1dStpPortDesignatedCost,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.4.2.1.11",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.4.2.1.11",
 						ISnmpConstant.INTEGER));
 		initProperty(utsEponDot1dStpPortDesignatedBridge,
 				new SnmpMibBeanProperty(utsEponDot1dStpPortDesignatedBridge,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.4.2.1.12",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.4.2.1.12",
 						ISnmpConstant.OCTETS));
 		initProperty(utsEponDot1dStpPortDesignatedPort,
 				new SnmpMibBeanProperty(utsEponDot1dStpPortDesignatedPort,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.4.2.1.13",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.4.2.1.13",
 						ISnmpConstant.OCTETS));
 		initProperty(utsEponDot1dStpPortFastEnable, new SnmpMibBeanProperty(
 				utsEponDot1dStpPortFastEnable,
-				".1.3.6.1.4.1.41355.1800.2.2.1.5.4.2.1.15",
+				".1.3.6.1.4.1.45121.1800.2.2.1.5.4.2.1.15",
 				ISnmpConstant.INTEGER));
 
 	}

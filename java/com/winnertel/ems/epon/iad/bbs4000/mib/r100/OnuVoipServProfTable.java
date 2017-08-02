@@ -35,12 +35,12 @@ public class OnuVoipServProfTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(onuVoipServProfileName, new SnmpMibBeanProperty(onuVoipServProfileName, ".1.3.6.1.4.1.41355.1.3.10.5.2.20.1.2", ISnmpConstant.STRING));
-        initProperty(onuVoIPVirtualPortNo, new SnmpMibBeanProperty(onuVoIPVirtualPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.2.20.1.3", ISnmpConstant.INTEGER));
-        initProperty(onuVoIPConfigMethod, new SnmpMibBeanProperty(onuVoIPConfigMethod, ".1.3.6.1.4.1.41355.1.3.10.5.2.20.1.4", ISnmpConstant.INTEGER));
-        initProperty(onuVoIPConfigServerAddress, new SnmpMibBeanProperty(onuVoIPConfigServerAddress, ".1.3.6.1.4.1.41355.1.3.10.5.2.20.1.5", ISnmpConstant.IP_ADDRESS));
+        initProperty(onuVoipServProfileName, new SnmpMibBeanProperty(onuVoipServProfileName, ".1.3.6.1.4.1.45121.1.3.10.5.2.20.1.2", ISnmpConstant.STRING));
+        initProperty(onuVoIPVirtualPortNo, new SnmpMibBeanProperty(onuVoIPVirtualPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.2.20.1.3", ISnmpConstant.INTEGER));
+        initProperty(onuVoIPConfigMethod, new SnmpMibBeanProperty(onuVoIPConfigMethod, ".1.3.6.1.4.1.45121.1.3.10.5.2.20.1.4", ISnmpConstant.INTEGER));
+        initProperty(onuVoIPConfigServerAddress, new SnmpMibBeanProperty(onuVoIPConfigServerAddress, ".1.3.6.1.4.1.45121.1.3.10.5.2.20.1.5", ISnmpConstant.IP_ADDRESS));
 
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.2.20.1.6", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.2.20.1.6", ISnmpConstant.INTEGER));
     }
 
     public Long getVoipServiceProfileIndex() {

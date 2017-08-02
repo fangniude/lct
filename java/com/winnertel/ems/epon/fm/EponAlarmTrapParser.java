@@ -112,7 +112,7 @@ public class EponAlarmTrapParser implements TrapParser {
         }
 
         // utFault trap
-        if (".1.3.6.1.4.1.41355.1800.3.2.0".equals(pdu.getEnterprise().getVarObject())) {
+        if (".1.3.6.1.4.1.45121.1800.3.2.0".equals(pdu.getEnterprise().getVarObject())) {
             if (pdu.getSpecificType() == 6 || pdu.getSpecificType() == 7) { // replace
                                                                             // fan
                                                                             // module
@@ -157,7 +157,7 @@ public class EponAlarmTrapParser implements TrapParser {
             }
         }
 
-        if (".1.3.6.1.4.1.41355.1.3.10.200.6.3.1.0".equals(pdu.getEnterprise().getVarObject())) {
+        if (".1.3.6.1.4.1.45121.1.3.10.200.6.3.1.0".equals(pdu.getEnterprise().getVarObject())) {
             if (pdu.getSpecificType() == 16 || pdu.getSpecificType() == 18) {
                 pdu = replaceBBS4000FanNumber(pdu);
             }
@@ -325,7 +325,7 @@ public class EponAlarmTrapParser implements TrapParser {
             System.out.println("IP=" + ip + "; moName=" + neName + "; Type=" + neType);
 
             //
-            if (".1.3.6.1.4.1.41355.1800.3.2.0".equals(snmppdu.getEnterprise().getVarObject())) {
+            if (".1.3.6.1.4.1.45121.1800.3.2.0".equals(snmppdu.getEnterprise().getVarObject())) {
                 if (snmppdu.getSpecificType() == 1022 || snmppdu.getSpecificType() == 1023) {
                     String version = prop.getProperty("swVersion", "");
 
@@ -422,7 +422,7 @@ public class EponAlarmTrapParser implements TrapParser {
         for (int i = 1; i < vbs; i++) {
             SnmpOID oid = pdu.getObjectID(i);
             SnmpVar value = pdu.getVariable(i);
-            if (oid.toString().startsWith(".1.3.6.1.4.1.41355.2.3.2.2.2.1.2")) {
+            if (oid.toString().startsWith(".1.3.6.1.4.1.45121.2.3.2.2.2.1.2")) {
                 result = SnmpUtil.getLongFromDataTimeByte(value.toBytes());
             }
         }
@@ -494,7 +494,7 @@ public class EponAlarmTrapParser implements TrapParser {
 
     protected Alarm replaceOnuMacAddress(Alarm alarm, SnmpPDU pdu) {
         // utFault trap
-        if (".1.3.6.1.4.1.41355.1800.3.2.0".equals(pdu.getEnterprise().getVarObject())) {
+        if (".1.3.6.1.4.1.45121.1800.3.2.0".equals(pdu.getEnterprise().getVarObject())) {
             if (pdu.getSpecificType() == 6 || pdu.getSpecificType() == 7) { // replace
                                                                             // fan
                                                                             // module

@@ -47,47 +47,47 @@ public class LinkAggregationControl extends SnmpMibBean
 	{
 		initProperty(utsIntfRateControlUplinkSpeed, new SnmpMibBeanProperty(
 				utsIntfRateControlUplinkSpeed,
-				".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.13",
+				".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.13",
 				ISnmpConstant.INTEGER));
 		initProperty(utsIntfRateControlVlanIngressFilter,
 				new SnmpMibBeanProperty(utsIntfRateControlVlanIngressFilter,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.14",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.14",
 						ISnmpConstant.INTEGER));
 		initProperty(utsIntfRateControlUplinkTranceiverType,
 				new SnmpMibBeanProperty(utsIntfRateControlUplinkTranceiverType,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.15",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.15",
 						ISnmpConstant.INTEGER));
 		initProperty(utsIntfRateControlAutoNegotiation,
 				new SnmpMibBeanProperty(utsIntfRateControlAutoNegotiation,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.3.1.1.16",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.3.1.1.16",
 						ISnmpConstant.INTEGER));
 		initProperty(utsSwitchPortExtIfNum, new SnmpMibBeanProperty(
-				utsSwitchPortExtIfNum, ".1.3.6.1.4.1.41355.1800.2.2.1.8.1.1",
+				utsSwitchPortExtIfNum, ".1.3.6.1.4.1.45121.1800.2.2.1.8.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsSwitchPortExtModuleId, new SnmpMibBeanProperty(
-				utsSwitchPortExtModuleId, ".1.3.6.1.4.1.41355.1800.2.2.1.8.1.2",
+				utsSwitchPortExtModuleId, ".1.3.6.1.4.1.45121.1800.2.2.1.8.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsSwitchPortExtPortId, new SnmpMibBeanProperty(
-				utsSwitchPortExtPortId, ".1.3.6.1.4.1.41355.1800.2.2.1.8.1.3",
+				utsSwitchPortExtPortId, ".1.3.6.1.4.1.45121.1800.2.2.1.8.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsSwitchPortExtLAGId, new SnmpMibBeanProperty(
-				utsSwitchPortExtLAGId, ".1.3.6.1.4.1.41355.1800.2.2.1.8.1.4",
+				utsSwitchPortExtLAGId, ".1.3.6.1.4.1.45121.1800.2.2.1.8.1.4",
 				ISnmpConstant.INTEGER));
 		initProperty(utsSwitchPortExtPortType, new SnmpMibBeanProperty(
-				utsSwitchPortExtPortType, ".1.3.6.1.4.1.41355.1800.2.2.1.8.1.5",
+				utsSwitchPortExtPortType, ".1.3.6.1.4.1.45121.1800.2.2.1.8.1.5",
 				ISnmpConstant.INTEGER));
 		initProperty(utsSwitchPortExtACLDefAction, new SnmpMibBeanProperty(
 				utsSwitchPortExtACLDefAction,
-				".1.3.6.1.4.1.41355.1800.2.2.1.8.1.6", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.2.1.8.1.6", ISnmpConstant.INTEGER));
 		initProperty(utsSwitchPortExtAdmFlowControlRx, new SnmpMibBeanProperty(
 				utsSwitchPortExtAdmFlowControlRx,
-				".1.3.6.1.4.1.41355.1800.2.2.1.8.1.7", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.2.1.8.1.7", ISnmpConstant.INTEGER));
 		initProperty(utsSwitchPortExtAdmFlowControlTx, new SnmpMibBeanProperty(
 				utsSwitchPortExtAdmFlowControlTx,
-				".1.3.6.1.4.1.41355.1800.2.2.1.8.1.9", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.2.1.8.1.9", ISnmpConstant.INTEGER));
 		initProperty(utsSwitchPortExtIpMuticastFilter, new SnmpMibBeanProperty(
 				utsSwitchPortExtIpMuticastFilter,
-				".1.3.6.1.4.1.41355.1800.2.2.1.8.1.11", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.2.1.8.1.11", ISnmpConstant.INTEGER));
 
 	}
 

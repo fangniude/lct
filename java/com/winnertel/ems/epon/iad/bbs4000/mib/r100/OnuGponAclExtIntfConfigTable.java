@@ -31,34 +31,34 @@ public class OnuGponAclExtIntfConfigTable extends SnmpMibBean {
     protected void init() {
 
         initProperty(onuGponAclExtIntfConfigIntfNum, new SnmpMibBeanProperty(
-                onuGponAclExtIntfConfigIntfNum, ".1.3.6.1.4.1.41355.1.3.10.5.1000.3.1.1",
+                onuGponAclExtIntfConfigIntfNum, ".1.3.6.1.4.1.45121.1.3.10.5.1000.3.1.1",
                 ISnmpConstant.INTEGER));
         initProperty(onuGponAclExtIntfConfigIntfModule, new SnmpMibBeanProperty(
-                onuGponAclExtIntfConfigIntfModule, ".1.3.6.1.4.1.41355.1.3.10.5.1000.3.1.5",
+                onuGponAclExtIntfConfigIntfModule, ".1.3.6.1.4.1.45121.1.3.10.5.1000.3.1.5",
                 ISnmpConstant.INTEGER));
         initProperty(onuGponAclExtIntfConfigIntfPort, new SnmpMibBeanProperty(
-                onuGponAclExtIntfConfigIntfPort, ".1.3.6.1.4.1.41355.1.3.10.5.1000.3.1.6",
+                onuGponAclExtIntfConfigIntfPort, ".1.3.6.1.4.1.45121.1.3.10.5.1000.3.1.6",
                 ISnmpConstant.INTEGER));
         initProperty(onuGponAclExtIntfConfigIntfLagGrpId, new SnmpMibBeanProperty(
-                onuGponAclExtIntfConfigIntfLagGrpId, ".1.3.6.1.4.1.41355.1.3.10.5.1000.3.1.7",
+                onuGponAclExtIntfConfigIntfLagGrpId, ".1.3.6.1.4.1.45121.1.3.10.5.1000.3.1.7",
                 ISnmpConstant.INTEGER));
         initProperty(onuGponAclExtIntfConfigIntfFilterType, new SnmpMibBeanProperty(
-                onuGponAclExtIntfConfigIntfFilterType, ".1.3.6.1.4.1.41355.1.3.10.5.1000.3.1.8",
+                onuGponAclExtIntfConfigIntfFilterType, ".1.3.6.1.4.1.45121.1.3.10.5.1000.3.1.8",
                 ISnmpConstant.INTEGER));
         initProperty(onuGponAclExtIntfConfigApplProfileId, new SnmpMibBeanProperty(
-                onuGponAclExtIntfConfigApplProfileId, ".1.3.6.1.4.1.41355.1.3.10.5.1000.3.1.9",
+                onuGponAclExtIntfConfigApplProfileId, ".1.3.6.1.4.1.45121.1.3.10.5.1000.3.1.9",
                 ISnmpConstant.INTEGER));
         initProperty(onuGponAclExtIntfConfigFlowDirection, new SnmpMibBeanProperty(
-                onuGponAclExtIntfConfigFlowDirection, ".1.3.6.1.4.1.41355.1.3.10.5.1000.3.1.4",
+                onuGponAclExtIntfConfigFlowDirection, ".1.3.6.1.4.1.45121.1.3.10.5.1000.3.1.4",
                 ISnmpConstant.INTEGER));
         initProperty(onuGponAclExtIntfConfigOnuId, new SnmpMibBeanProperty(
-                onuGponAclExtIntfConfigOnuId, ".1.3.6.1.4.1.41355.1.3.10.5.1000.3.1.2",
+                onuGponAclExtIntfConfigOnuId, ".1.3.6.1.4.1.45121.1.3.10.5.1000.3.1.2",
                 ISnmpConstant.INTEGER));
         initProperty(onuGponAclExtIntfConfigVPId, new SnmpMibBeanProperty(
-                onuGponAclExtIntfConfigVPId, ".1.3.6.1.4.1.41355.1.3.10.5.1000.3.1.3",
+                onuGponAclExtIntfConfigVPId, ".1.3.6.1.4.1.45121.1.3.10.5.1000.3.1.3",
                 ISnmpConstant.INTEGER));
         initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-                ".1.3.6.1.4.1.41355.1.3.10.5.1000.3.1.100", ISnmpConstant.INTEGER));
+                ".1.3.6.1.4.1.45121.1.3.10.5.1000.3.1.100", ISnmpConstant.INTEGER));
     }
     
     public String getOnuGponAclExtIntfConfigIntfNum() {

@@ -32,16 +32,16 @@ public class Dot3Olt2AclConfTable extends SnmpMibBean {
     }
 
     protected void init() {
-	initProperty(utsDot3OltAclConfModuleId, new SnmpMibBeanProperty(utsDot3OltAclConfModuleId, ".1.3.6.1.4.1.41355.1800.2.4.2.5.1.1", ISnmpConstant.INTEGER));
-	initProperty(utsDot3OltAclConfDeviceId, new SnmpMibBeanProperty(utsDot3OltAclConfDeviceId, ".1.3.6.1.4.1.41355.1800.2.4.2.5.1.2", ISnmpConstant.INTEGER));
-	initProperty(utsDot3OltAclConfPonPort, new SnmpMibBeanProperty(utsDot3OltAclConfPonPort, ".1.3.6.1.4.1.41355.1800.2.4.2.5.1.4", ISnmpConstant.INTEGER));
-	initProperty(utsDot3OltAclConfLlidPort, new SnmpMibBeanProperty(utsDot3OltAclConfLlidPort, ".1.3.6.1.4.1.41355.1800.2.4.2.5.1.5", ISnmpConstant.INTEGER));
-	initProperty(utsDot3OltAclConfProfId, new SnmpMibBeanProperty(utsDot3OltAclConfProfId, ".1.3.6.1.4.1.41355.1800.2.4.2.5.1.6", ISnmpConstant.INTEGER));
-	// initProperty(utsDot3OltAclConfUpstream, new SnmpMibBeanProperty(utsDot3OltAclConfUpstream, ".1.3.6.1.4.1.41355.1800.2.4.2.5.1.7", ISnmpConstant.INTEGER));
-	// initProperty(utsDot3OltAclConfDownstream, new SnmpMibBeanProperty(utsDot3OltAclConfDownstream, ".1.3.6.1.4.1.41355.1800.2.4.2.5.1.8", ISnmpConstant.INTEGER));
-	// initProperty(utsDot3OltAclConfDir, new SnmpMibBeanProperty(utsDot3OltAclConfDir, ".1.3.6.1.4.1.41355.1800.2.4.2.5.1.7", ISnmpConstant.INTEGER));
-	initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.4.2.5.1.9", ISnmpConstant.INTEGER));
-	initProperty(utsDot3OltAclConfRowStatus, new SnmpMibBeanProperty(utsDot3OltAclConfRowStatus, ".1.3.6.1.4.1.41355.1800.2.4.2.5.1.9", ISnmpConstant.INTEGER));
+	initProperty(utsDot3OltAclConfModuleId, new SnmpMibBeanProperty(utsDot3OltAclConfModuleId, ".1.3.6.1.4.1.45121.1800.2.4.2.5.1.1", ISnmpConstant.INTEGER));
+	initProperty(utsDot3OltAclConfDeviceId, new SnmpMibBeanProperty(utsDot3OltAclConfDeviceId, ".1.3.6.1.4.1.45121.1800.2.4.2.5.1.2", ISnmpConstant.INTEGER));
+	initProperty(utsDot3OltAclConfPonPort, new SnmpMibBeanProperty(utsDot3OltAclConfPonPort, ".1.3.6.1.4.1.45121.1800.2.4.2.5.1.4", ISnmpConstant.INTEGER));
+	initProperty(utsDot3OltAclConfLlidPort, new SnmpMibBeanProperty(utsDot3OltAclConfLlidPort, ".1.3.6.1.4.1.45121.1800.2.4.2.5.1.5", ISnmpConstant.INTEGER));
+	initProperty(utsDot3OltAclConfProfId, new SnmpMibBeanProperty(utsDot3OltAclConfProfId, ".1.3.6.1.4.1.45121.1800.2.4.2.5.1.6", ISnmpConstant.INTEGER));
+	// initProperty(utsDot3OltAclConfUpstream, new SnmpMibBeanProperty(utsDot3OltAclConfUpstream, ".1.3.6.1.4.1.45121.1800.2.4.2.5.1.7", ISnmpConstant.INTEGER));
+	// initProperty(utsDot3OltAclConfDownstream, new SnmpMibBeanProperty(utsDot3OltAclConfDownstream, ".1.3.6.1.4.1.45121.1800.2.4.2.5.1.8", ISnmpConstant.INTEGER));
+	// initProperty(utsDot3OltAclConfDir, new SnmpMibBeanProperty(utsDot3OltAclConfDir, ".1.3.6.1.4.1.45121.1800.2.4.2.5.1.7", ISnmpConstant.INTEGER));
+	initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.4.2.5.1.9", ISnmpConstant.INTEGER));
+	initProperty(utsDot3OltAclConfRowStatus, new SnmpMibBeanProperty(utsDot3OltAclConfRowStatus, ".1.3.6.1.4.1.45121.1800.2.4.2.5.1.9", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsDot3OltAclConfModuleId() {

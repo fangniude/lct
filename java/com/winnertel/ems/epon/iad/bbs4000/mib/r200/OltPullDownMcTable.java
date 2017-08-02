@@ -27,9 +27,9 @@ public class OltPullDownMcTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsOltPullDownMcGroupIpAddr, new SnmpMibBeanProperty(utsOltPullDownMcGroupIpAddr, ".1.3.6.1.4.1.41355.1800.2.4.3.1.4.1.1", ISnmpConstant.IP_ADDRESS));
-    initProperty(utsOltPullDownMcGroupMVlan, new SnmpMibBeanProperty(utsOltPullDownMcGroupMVlan, ".1.3.6.1.4.1.41355.1800.2.4.3.1.4.1.2", ISnmpConstant.INTEGER));
-    initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.4.3.1.4.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsOltPullDownMcGroupIpAddr, new SnmpMibBeanProperty(utsOltPullDownMcGroupIpAddr, ".1.3.6.1.4.1.45121.1800.2.4.3.1.4.1.1", ISnmpConstant.IP_ADDRESS));
+    initProperty(utsOltPullDownMcGroupMVlan, new SnmpMibBeanProperty(utsOltPullDownMcGroupMVlan, ".1.3.6.1.4.1.45121.1800.2.4.3.1.4.1.2", ISnmpConstant.INTEGER));
+    initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.4.3.1.4.1.3", ISnmpConstant.INTEGER));
 
   }
 

@@ -50,51 +50,51 @@ public class IpRouteTable extends SnmpMibBean
 	protected void init()
 	{
 		initProperty(utsIpRouteEntryIndex, new SnmpMibBeanProperty(
-				utsIpRouteEntryIndex, ".1.3.6.1.4.1.41355.1800.2.2.1.6.6.1.1.1",
+				utsIpRouteEntryIndex, ".1.3.6.1.4.1.45121.1800.2.2.1.6.6.1.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsIpRouteEntryOwner, new SnmpMibBeanProperty(
-				utsIpRouteEntryOwner, ".1.3.6.1.4.1.41355.1800.2.2.1.6.6.1.1.2",
+				utsIpRouteEntryOwner, ".1.3.6.1.4.1.45121.1800.2.2.1.6.6.1.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsIpRouteEntryIpAddr, new SnmpMibBeanProperty(
 				utsIpRouteEntryIpAddr,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.6.1.1.3", ISnmpConstant.IP_ADDRESS));
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.6.1.1.3", ISnmpConstant.IP_ADDRESS));
 		initProperty(utsIpRouteEntryIpMask, new SnmpMibBeanProperty(
 				utsIpRouteEntryIpMask,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.6.1.1.4", ISnmpConstant.IP_ADDRESS));
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.6.1.1.4", ISnmpConstant.IP_ADDRESS));
 		initProperty(utsIpRouteEntryType, new SnmpMibBeanProperty(
-				utsIpRouteEntryType, ".1.3.6.1.4.1.41355.1800.2.2.1.6.6.1.1.5",
+				utsIpRouteEntryType, ".1.3.6.1.4.1.45121.1800.2.2.1.6.6.1.1.5",
 				ISnmpConstant.INTEGER));
 		initProperty(utsIpRouteEntryCost, new SnmpMibBeanProperty(
-				utsIpRouteEntryCost, ".1.3.6.1.4.1.41355.1800.2.2.1.6.6.1.1.6",
+				utsIpRouteEntryCost, ".1.3.6.1.4.1.45121.1800.2.2.1.6.6.1.1.6",
 				ISnmpConstant.INTEGER));
 		initProperty(utsIpRouteEntryNextHop1, new SnmpMibBeanProperty(
 				utsIpRouteEntryNextHop1,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.6.1.1.7", ISnmpConstant.STRING));
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.6.1.1.7", ISnmpConstant.STRING));
 		initProperty(utsIpRouteEntryNextHop2, new SnmpMibBeanProperty(
 				utsIpRouteEntryNextHop2,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.6.1.1.8", ISnmpConstant.STRING));
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.6.1.1.8", ISnmpConstant.STRING));
 		initProperty(utsIpRouteEntryNextHop3, new SnmpMibBeanProperty(
 				utsIpRouteEntryNextHop3,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.6.1.1.9", ISnmpConstant.STRING));
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.6.1.1.9", ISnmpConstant.STRING));
 		initProperty(utsIpRouteEntryNextHop4,
 				new SnmpMibBeanProperty(utsIpRouteEntryNextHop4,
-						".1.3.6.1.4.1.41355.1800.2.2.1.6.6.1.1.10",
+						".1.3.6.1.4.1.45121.1800.2.2.1.6.6.1.1.10",
 						ISnmpConstant.STRING));
 		initProperty(utsIpRouteEntryVlanId1, new SnmpMibBeanProperty(
 				utsIpRouteEntryVlanId1,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.6.1.1.23",
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.6.1.1.23",
 				ISnmpConstant.INTEGER));
 		initProperty(utsIpRouteEntryVlanId2, new SnmpMibBeanProperty(
 				utsIpRouteEntryVlanId2,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.6.1.1.24",
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.6.1.1.24",
 				ISnmpConstant.INTEGER));
 		initProperty(utsIpRouteEntryVlanId3, new SnmpMibBeanProperty(
 				utsIpRouteEntryVlanId3,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.6.1.1.25",
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.6.1.1.25",
 				ISnmpConstant.INTEGER));
 		initProperty(utsIpRouteEntryVlanId4, new SnmpMibBeanProperty(
 				utsIpRouteEntryVlanId4,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.6.1.1.26",
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.6.1.1.26",
 				ISnmpConstant.INTEGER));
 
 	}

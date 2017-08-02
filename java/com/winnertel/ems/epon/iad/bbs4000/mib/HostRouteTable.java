@@ -41,36 +41,36 @@ public class HostRouteTable extends SnmpMibBean
 	{
 		initProperty(utsHostRouteIpAddress, new SnmpMibBeanProperty(
 				utsHostRouteIpAddress,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.5.1.1.1", ISnmpConstant.IP_ADDRESS));
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.5.1.1.1", ISnmpConstant.IP_ADDRESS));
 		initProperty(utsHostRouteType, new SnmpMibBeanProperty(
-				utsHostRouteType, ".1.3.6.1.4.1.41355.1800.2.2.1.6.5.1.1.2",
+				utsHostRouteType, ".1.3.6.1.4.1.45121.1800.2.2.1.6.5.1.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsHostRouteModuleId, new SnmpMibBeanProperty(
-				utsHostRouteModuleId, ".1.3.6.1.4.1.41355.1800.2.2.1.6.5.1.1.3",
+				utsHostRouteModuleId, ".1.3.6.1.4.1.45121.1800.2.2.1.6.5.1.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsHostRoutePortId, new SnmpMibBeanProperty(
-				utsHostRoutePortId, ".1.3.6.1.4.1.41355.1800.2.2.1.6.5.1.1.4",
+				utsHostRoutePortId, ".1.3.6.1.4.1.45121.1800.2.2.1.6.5.1.1.4",
 				ISnmpConstant.INTEGER));
 		initProperty(utsHostRouteLinkAggGroupId,
 				new SnmpMibBeanProperty(utsHostRouteLinkAggGroupId,
-						".1.3.6.1.4.1.41355.1800.2.2.1.6.5.1.1.5",
+						".1.3.6.1.4.1.45121.1800.2.2.1.6.5.1.1.5",
 						ISnmpConstant.INTEGER));
 		initProperty(utsHostRouteVlanId, new SnmpMibBeanProperty(
-				utsHostRouteVlanId, ".1.3.6.1.4.1.41355.1800.2.2.1.6.5.1.1.6",
+				utsHostRouteVlanId, ".1.3.6.1.4.1.45121.1800.2.2.1.6.5.1.1.6",
 				ISnmpConstant.INTEGER));
 		initProperty(utsHostRouteArpType, new SnmpMibBeanProperty(
-				utsHostRouteArpType, ".1.3.6.1.4.1.41355.1800.2.2.1.6.5.1.1.7",
+				utsHostRouteArpType, ".1.3.6.1.4.1.45121.1800.2.2.1.6.5.1.1.7",
 				ISnmpConstant.INTEGER));
 		initProperty(utsHostRouteVlanSubVlanId,
 				new SnmpMibBeanProperty(utsHostRouteVlanSubVlanId,
-						".1.3.6.1.4.1.41355.1800.2.2.1.6.5.1.1.8",
+						".1.3.6.1.4.1.45121.1800.2.2.1.6.5.1.1.8",
 						ISnmpConstant.INTEGER));
 		initProperty(utsHostRouteMacAddress, new SnmpMibBeanProperty(
 				utsHostRouteMacAddress,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.5.1.1.9", ISnmpConstant.MAC_ADDRESS));
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.5.1.1.9", ISnmpConstant.MAC_ADDRESS));
 		
 		initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-				".1.3.6.1.4.1.41355.1800.2.2.1.6.5.1.1.10",
+				".1.3.6.1.4.1.45121.1800.2.2.1.6.5.1.1.10",
 				ISnmpConstant.INTEGER));
 
 	}

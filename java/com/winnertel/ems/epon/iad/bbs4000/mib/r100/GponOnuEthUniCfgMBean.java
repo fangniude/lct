@@ -38,25 +38,25 @@ public class GponOnuEthUniCfgMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(onuEthUniCfgSlotNo, new SnmpMibBeanProperty(onuEthUniCfgSlotNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.7.1.1", ISnmpConstant.INTEGER));
-        initProperty(onuEthUniCfgPortNo, new SnmpMibBeanProperty(onuEthUniCfgPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.7.1.2", ISnmpConstant.INTEGER));
-        initProperty(onuEthUniCfgLogicalPortNo, new SnmpMibBeanProperty(onuEthUniCfgLogicalPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.7.1.3", ISnmpConstant.INTEGER));
-        initProperty(onuEthUniCfgPhysicalPortNo, new SnmpMibBeanProperty(onuEthUniCfgPhysicalPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.7.1.4", ISnmpConstant.INTEGER));
-        initProperty(onuEthUniCfgAdministrativeState, new SnmpMibBeanProperty(onuEthUniCfgAdministrativeState, ".1.3.6.1.4.1.41355.1.3.10.5.1.7.1.5", ISnmpConstant.INTEGER));
-        initProperty(onuEthUniCfgOperationalState, new SnmpMibBeanProperty(onuEthUniCfgOperationalState, ".1.3.6.1.4.1.41355.1.3.10.5.1.7.1.6", ISnmpConstant.INTEGER));
-        initProperty(onuEthUniCfgOnuVLANTranslationProfileIndex, new SnmpMibBeanProperty(onuEthUniCfgOnuVLANTranslationProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.1.7.1.7", ISnmpConstant.GAUGE));
-        initProperty(onuEthUniCfgOnuMulticastOperationProfileIndex, new SnmpMibBeanProperty(onuEthUniCfgOnuMulticastOperationProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.1.7.1.8", ISnmpConstant.GAUGE));
-        initProperty(onuEthUniCfgOnuStaticMulticastGroupsProfileIndex, new SnmpMibBeanProperty(onuEthUniCfgOnuStaticMulticastGroupsProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.1.7.1.9", ISnmpConstant.GAUGE));
-        initProperty(onuEthUniCfgEthernetUNIProfileIndex, new SnmpMibBeanProperty(onuEthUniCfgEthernetUNIProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.1.7.1.10", ISnmpConstant.GAUGE));
-        initProperty(onuEthUniCfgLoopback, new SnmpMibBeanProperty(onuEthUniCfgLoopback, ".1.3.6.1.4.1.41355.1.3.10.5.1.7.1.11", ISnmpConstant.INTEGER));
-        initProperty(onuEthUniCfgSensedType, new SnmpMibBeanProperty(onuEthUniCfgSensedType, ".1.3.6.1.4.1.41355.1.3.10.5.1.7.1.12", ISnmpConstant.GAUGE));
-        initProperty(onuEthUniCfgIndConfiguration, new SnmpMibBeanProperty(onuEthUniCfgIndConfiguration, ".1.3.6.1.4.1.41355.1.3.10.5.1.7.1.13", ISnmpConstant.INTEGER));
-        initProperty(onuEthUniCfgOnuMACFilterProfileIndex, new SnmpMibBeanProperty(onuEthUniCfgOnuMACFilterProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.1.7.1.14", ISnmpConstant.GAUGE));
-        initProperty(onuEthUniCfgOnuMACFilterPreassignProfileIndex, new SnmpMibBeanProperty(onuEthUniCfgOnuMACFilterPreassignProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.1.7.1.15", ISnmpConstant.GAUGE));
-        initProperty(onuEthUniCfgmacLimit, new SnmpMibBeanProperty(onuEthUniCfgmacLimit, ".1.3.6.1.4.1.41355.1.3.10.5.1.7.1.16", ISnmpConstant.GAUGE));
-        initProperty(onuEthUniCfgOnuVlanFilterProfileIndex, new SnmpMibBeanProperty(onuEthUniCfgOnuVlanFilterProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.1.7.1.18", ISnmpConstant.GAUGE));
+        initProperty(onuEthUniCfgSlotNo, new SnmpMibBeanProperty(onuEthUniCfgSlotNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.7.1.1", ISnmpConstant.INTEGER));
+        initProperty(onuEthUniCfgPortNo, new SnmpMibBeanProperty(onuEthUniCfgPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.7.1.2", ISnmpConstant.INTEGER));
+        initProperty(onuEthUniCfgLogicalPortNo, new SnmpMibBeanProperty(onuEthUniCfgLogicalPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.7.1.3", ISnmpConstant.INTEGER));
+        initProperty(onuEthUniCfgPhysicalPortNo, new SnmpMibBeanProperty(onuEthUniCfgPhysicalPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.7.1.4", ISnmpConstant.INTEGER));
+        initProperty(onuEthUniCfgAdministrativeState, new SnmpMibBeanProperty(onuEthUniCfgAdministrativeState, ".1.3.6.1.4.1.45121.1.3.10.5.1.7.1.5", ISnmpConstant.INTEGER));
+        initProperty(onuEthUniCfgOperationalState, new SnmpMibBeanProperty(onuEthUniCfgOperationalState, ".1.3.6.1.4.1.45121.1.3.10.5.1.7.1.6", ISnmpConstant.INTEGER));
+        initProperty(onuEthUniCfgOnuVLANTranslationProfileIndex, new SnmpMibBeanProperty(onuEthUniCfgOnuVLANTranslationProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.1.7.1.7", ISnmpConstant.GAUGE));
+        initProperty(onuEthUniCfgOnuMulticastOperationProfileIndex, new SnmpMibBeanProperty(onuEthUniCfgOnuMulticastOperationProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.1.7.1.8", ISnmpConstant.GAUGE));
+        initProperty(onuEthUniCfgOnuStaticMulticastGroupsProfileIndex, new SnmpMibBeanProperty(onuEthUniCfgOnuStaticMulticastGroupsProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.1.7.1.9", ISnmpConstant.GAUGE));
+        initProperty(onuEthUniCfgEthernetUNIProfileIndex, new SnmpMibBeanProperty(onuEthUniCfgEthernetUNIProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.1.7.1.10", ISnmpConstant.GAUGE));
+        initProperty(onuEthUniCfgLoopback, new SnmpMibBeanProperty(onuEthUniCfgLoopback, ".1.3.6.1.4.1.45121.1.3.10.5.1.7.1.11", ISnmpConstant.INTEGER));
+        initProperty(onuEthUniCfgSensedType, new SnmpMibBeanProperty(onuEthUniCfgSensedType, ".1.3.6.1.4.1.45121.1.3.10.5.1.7.1.12", ISnmpConstant.GAUGE));
+        initProperty(onuEthUniCfgIndConfiguration, new SnmpMibBeanProperty(onuEthUniCfgIndConfiguration, ".1.3.6.1.4.1.45121.1.3.10.5.1.7.1.13", ISnmpConstant.INTEGER));
+        initProperty(onuEthUniCfgOnuMACFilterProfileIndex, new SnmpMibBeanProperty(onuEthUniCfgOnuMACFilterProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.1.7.1.14", ISnmpConstant.GAUGE));
+        initProperty(onuEthUniCfgOnuMACFilterPreassignProfileIndex, new SnmpMibBeanProperty(onuEthUniCfgOnuMACFilterPreassignProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.1.7.1.15", ISnmpConstant.GAUGE));
+        initProperty(onuEthUniCfgmacLimit, new SnmpMibBeanProperty(onuEthUniCfgmacLimit, ".1.3.6.1.4.1.45121.1.3.10.5.1.7.1.16", ISnmpConstant.GAUGE));
+        initProperty(onuEthUniCfgOnuVlanFilterProfileIndex, new SnmpMibBeanProperty(onuEthUniCfgOnuVlanFilterProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.1.7.1.18", ISnmpConstant.GAUGE));
 
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.1.7.1.17", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.1.7.1.17", ISnmpConstant.INTEGER));
     }
 
     public Integer getOnuEthUniCfgSlotNo() {

@@ -24,16 +24,16 @@ public class GlobalLedMibBean extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsBBSLEDSysPowerLedState, new SnmpMibBeanProperty(utsBBSLEDSysPowerLedState, ".1.3.6.1.4.1.41355.1800.2.1.1.4.6.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsBBSLEDSystemLedState, new SnmpMibBeanProperty(utsBBSLEDSystemLedState, ".1.3.6.1.4.1.41355.1800.2.1.1.4.6.1.2", ISnmpConstant.INTEGER));
-    initProperty(utsBBSLEDFanLedState, new SnmpMibBeanProperty(utsBBSLEDFanLedState, ".1.3.6.1.4.1.41355.1800.2.1.1.4.6.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsBBSLEDAlarmCriticalLedState, new SnmpMibBeanProperty(utsBBSLEDAlarmCriticalLedState, ".1.3.6.1.4.1.41355.1800.2.1.1.4.6.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsBBSLEDAlarmMajorLedState, new SnmpMibBeanProperty(utsBBSLEDAlarmMajorLedState, ".1.3.6.1.4.1.41355.1800.2.1.1.4.6.1.5", ISnmpConstant.INTEGER));
-    initProperty(utsBBSLEDAlarmMinorLedState, new SnmpMibBeanProperty(utsBBSLEDAlarmMinorLedState, ".1.3.6.1.4.1.41355.1800.2.1.1.4.6.1.6", ISnmpConstant.INTEGER));
-    initProperty(utsBBSLEDGsmUplinkSFP1State, new SnmpMibBeanProperty(utsBBSLEDGsmUplinkSFP1State, ".1.3.6.1.4.1.41355.1800.2.1.1.4.6.1.7", ISnmpConstant.INTEGER));
-    initProperty(utsBBSLEDGsmUplinkSFP2State, new SnmpMibBeanProperty(utsBBSLEDGsmUplinkSFP2State, ".1.3.6.1.4.1.41355.1800.2.1.1.4.6.1.8", ISnmpConstant.INTEGER));
-    initProperty(utsBBSLEDGsmUplinkSFP3State, new SnmpMibBeanProperty(utsBBSLEDGsmUplinkSFP3State, ".1.3.6.1.4.1.41355.1800.2.1.1.4.6.1.9", ISnmpConstant.INTEGER));
-    initProperty(utsBBSLEDGsmUplinkSFP4State, new SnmpMibBeanProperty(utsBBSLEDGsmUplinkSFP4State, ".1.3.6.1.4.1.41355.1800.2.1.1.4.6.1.10", ISnmpConstant.INTEGER));
+    initProperty(utsBBSLEDSysPowerLedState, new SnmpMibBeanProperty(utsBBSLEDSysPowerLedState, ".1.3.6.1.4.1.45121.1800.2.1.1.4.6.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsBBSLEDSystemLedState, new SnmpMibBeanProperty(utsBBSLEDSystemLedState, ".1.3.6.1.4.1.45121.1800.2.1.1.4.6.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsBBSLEDFanLedState, new SnmpMibBeanProperty(utsBBSLEDFanLedState, ".1.3.6.1.4.1.45121.1800.2.1.1.4.6.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsBBSLEDAlarmCriticalLedState, new SnmpMibBeanProperty(utsBBSLEDAlarmCriticalLedState, ".1.3.6.1.4.1.45121.1800.2.1.1.4.6.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsBBSLEDAlarmMajorLedState, new SnmpMibBeanProperty(utsBBSLEDAlarmMajorLedState, ".1.3.6.1.4.1.45121.1800.2.1.1.4.6.1.5", ISnmpConstant.INTEGER));
+    initProperty(utsBBSLEDAlarmMinorLedState, new SnmpMibBeanProperty(utsBBSLEDAlarmMinorLedState, ".1.3.6.1.4.1.45121.1800.2.1.1.4.6.1.6", ISnmpConstant.INTEGER));
+    initProperty(utsBBSLEDGsmUplinkSFP1State, new SnmpMibBeanProperty(utsBBSLEDGsmUplinkSFP1State, ".1.3.6.1.4.1.45121.1800.2.1.1.4.6.1.7", ISnmpConstant.INTEGER));
+    initProperty(utsBBSLEDGsmUplinkSFP2State, new SnmpMibBeanProperty(utsBBSLEDGsmUplinkSFP2State, ".1.3.6.1.4.1.45121.1800.2.1.1.4.6.1.8", ISnmpConstant.INTEGER));
+    initProperty(utsBBSLEDGsmUplinkSFP3State, new SnmpMibBeanProperty(utsBBSLEDGsmUplinkSFP3State, ".1.3.6.1.4.1.45121.1800.2.1.1.4.6.1.9", ISnmpConstant.INTEGER));
+    initProperty(utsBBSLEDGsmUplinkSFP4State, new SnmpMibBeanProperty(utsBBSLEDGsmUplinkSFP4State, ".1.3.6.1.4.1.45121.1800.2.1.1.4.6.1.10", ISnmpConstant.INTEGER));
   }
 
 

@@ -29,35 +29,35 @@ public class EventLogTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsBbsEventLogSequenceNumber, new SnmpMibBeanProperty(
 				utsBbsEventLogSequenceNumber,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.3.1.1.1",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.3.1.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsBbsEventLogEntityType, new SnmpMibBeanProperty(
 				utsBbsEventLogEntityType,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.3.1.1.2",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.3.1.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsBbsEventLogEntityInstance, new SnmpMibBeanProperty(
 				utsBbsEventLogEntityInstance,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.3.1.1.3",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.3.1.1.3",
 				ISnmpConstant.COUNTER));
 		initProperty(utsBbsEventLogOccurenceTime, new SnmpMibBeanProperty(
 				utsBbsEventLogOccurenceTime,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.3.1.1.4",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.3.1.1.4",
 				ISnmpConstant.OCTETS));
 		initProperty(utsBbsEventLogType, new SnmpMibBeanProperty(
 				utsBbsEventLogType,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.3.1.1.5",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.3.1.1.5",
 				ISnmpConstant.COUNTER));
 		initProperty(utsBbsEventLogInfo, new SnmpMibBeanProperty(
 				utsBbsEventLogInfo,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.3.1.1.6",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.3.1.1.6",
 				ISnmpConstant.STRING));
 		initProperty(utsBbsEventLogVersionId, new SnmpMibBeanProperty(
 				utsBbsEventLogVersionId,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.3.1.1.7",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.3.1.1.7",
 				ISnmpConstant.COUNTER));
 		initProperty(utsBbsEventLogSessionId, new SnmpMibBeanProperty(
 				utsBbsEventLogSessionId,
-				".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.1.2.3.1.1.8",
+				".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.1.2.3.1.1.8",
 				ISnmpConstant.COUNTER));
 
 	}

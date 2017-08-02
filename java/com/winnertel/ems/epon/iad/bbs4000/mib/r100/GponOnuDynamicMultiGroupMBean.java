@@ -26,15 +26,15 @@ public class GponOnuDynamicMultiGroupMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(onuDynamicMultiGroupSlotNo, new SnmpMibBeanProperty(onuDynamicMultiGroupSlotNo, ".1.3.6.1.4.1.41355.1.3.10.5.2.19.1.1", ISnmpConstant.INTEGER));
-        initProperty(onuDynamicMultiGroupPortNo, new SnmpMibBeanProperty(onuDynamicMultiGroupPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.2.19.1.2", ISnmpConstant.INTEGER));
-        initProperty(onuDynamicMultiGroupLogicalPortNo, new SnmpMibBeanProperty(onuDynamicMultiGroupLogicalPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.2.19.1.3", ISnmpConstant.INTEGER));
-        initProperty(onuDynamicMultiGroupPhysicalPortNo, new SnmpMibBeanProperty(onuDynamicMultiGroupPhysicalPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.2.19.1.4", ISnmpConstant.INTEGER));
-        initProperty(onuDynamicMulticastGroupAddress, new SnmpMibBeanProperty(onuDynamicMulticastGroupAddress, ".1.3.6.1.4.1.41355.1.3.10.5.2.19.1.5", ISnmpConstant.STRING));
-        initProperty(onuDynamicMultiGroupVlanID, new SnmpMibBeanProperty(onuDynamicMultiGroupVlanID, ".1.3.6.1.4.1.41355.1.3.10.5.2.19.1.6", ISnmpConstant.INTEGER));
-        initProperty(onuDynamicMultiGroupSourceIPAddress, new SnmpMibBeanProperty(onuDynamicMultiGroupSourceIPAddress, ".1.3.6.1.4.1.41355.1.3.10.5.2.19.1.7", ISnmpConstant.IP_ADDRESS));
-        initProperty(onuDynamicMultiGroupVirtualPortNo, new SnmpMibBeanProperty(onuDynamicMultiGroupVirtualPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.2.19.1.8", ISnmpConstant.GAUGE));
-        initProperty(onuDynamicMultiGroupOltGEMPortNo, new SnmpMibBeanProperty(onuDynamicMultiGroupOltGEMPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.2.19.1.9", ISnmpConstant.GAUGE));
+        initProperty(onuDynamicMultiGroupSlotNo, new SnmpMibBeanProperty(onuDynamicMultiGroupSlotNo, ".1.3.6.1.4.1.45121.1.3.10.5.2.19.1.1", ISnmpConstant.INTEGER));
+        initProperty(onuDynamicMultiGroupPortNo, new SnmpMibBeanProperty(onuDynamicMultiGroupPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.2.19.1.2", ISnmpConstant.INTEGER));
+        initProperty(onuDynamicMultiGroupLogicalPortNo, new SnmpMibBeanProperty(onuDynamicMultiGroupLogicalPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.2.19.1.3", ISnmpConstant.INTEGER));
+        initProperty(onuDynamicMultiGroupPhysicalPortNo, new SnmpMibBeanProperty(onuDynamicMultiGroupPhysicalPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.2.19.1.4", ISnmpConstant.INTEGER));
+        initProperty(onuDynamicMulticastGroupAddress, new SnmpMibBeanProperty(onuDynamicMulticastGroupAddress, ".1.3.6.1.4.1.45121.1.3.10.5.2.19.1.5", ISnmpConstant.STRING));
+        initProperty(onuDynamicMultiGroupVlanID, new SnmpMibBeanProperty(onuDynamicMultiGroupVlanID, ".1.3.6.1.4.1.45121.1.3.10.5.2.19.1.6", ISnmpConstant.INTEGER));
+        initProperty(onuDynamicMultiGroupSourceIPAddress, new SnmpMibBeanProperty(onuDynamicMultiGroupSourceIPAddress, ".1.3.6.1.4.1.45121.1.3.10.5.2.19.1.7", ISnmpConstant.IP_ADDRESS));
+        initProperty(onuDynamicMultiGroupVirtualPortNo, new SnmpMibBeanProperty(onuDynamicMultiGroupVirtualPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.2.19.1.8", ISnmpConstant.GAUGE));
+        initProperty(onuDynamicMultiGroupOltGEMPortNo, new SnmpMibBeanProperty(onuDynamicMultiGroupOltGEMPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.2.19.1.9", ISnmpConstant.GAUGE));
     }
 
     public Integer getOnuDynamicMultiGroupSlotNo() {

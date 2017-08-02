@@ -30,8 +30,8 @@ public class QosExtCosQueMapMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsMLSQosExtCosPriority, new SnmpMibBeanProperty(utsMLSQosExtCosPriority, ".1.3.6.1.4.1.41355.1800.2.4.1.1.1.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsMLSQosExtCosQueueNum, new SnmpMibBeanProperty(utsMLSQosExtCosQueueNum, ".1.3.6.1.4.1.41355.1800.2.4.1.1.1.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsMLSQosExtCosPriority, new SnmpMibBeanProperty(utsMLSQosExtCosPriority, ".1.3.6.1.4.1.45121.1800.2.4.1.1.1.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsMLSQosExtCosQueueNum, new SnmpMibBeanProperty(utsMLSQosExtCosQueueNum, ".1.3.6.1.4.1.45121.1800.2.4.1.1.1.1.2", ISnmpConstant.INTEGER));
 
     }
 

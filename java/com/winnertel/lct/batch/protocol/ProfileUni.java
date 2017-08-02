@@ -9,7 +9,7 @@ import java.util.Map;
 @Root(name = "onu_uni", strict = false)
 public class ProfileUni {
     public enum Field {
-        vlanMode, vlanTag, vlanTpid, policingEnable, policingCir, policingCbs, policingEbs, dsCir, dsPir, dsEnable, loopDetect
+        vlanMode, vlanTag, passVlan, vlanTpid, policingEnable, policingCir, policingCbs, policingEbs, dsCir, dsPir, dsEnable, loopDetect
     }
 
     @Attribute(name = "onu_uni_id", required = false)
@@ -20,6 +20,9 @@ public class ProfileUni {
 
     @Attribute(name = "onu_vlan_tag", required = false)
     private String vlanTag;
+
+    @Attribute(name = "onu_vlan_trunk", required = false)
+    private String passVlan;
 
     @Attribute(name = "onu_vlan_tpid", required = false)
     private String vlanTpid;
@@ -71,6 +74,7 @@ public class ProfileUni {
         map.put("index.0", id);
         map.put(Field.vlanMode.name(), vlanMode);
         map.put(Field.vlanTag.name(), vlanTag);
+        map.put(Field.passVlan.name(), passVlan);
         map.put(Field.vlanTpid.name(), vlanTpid);
         map.put(Field.policingEnable.name(), policingEnable);
         map.put(Field.policingCir.name(), policingCir);
@@ -88,6 +92,7 @@ public class ProfileUni {
         uni.setId(valueOf(map.get("index.0")));
         uni.setVlanMode(valueOf(map.get(Field.vlanMode.name())));
         uni.setVlanTag(valueOf(map.get(Field.vlanTag.name())));
+        uni.setPassVlan(valueOf(map.get(Field.passVlan.name())));
         uni.setVlanTpid(valueOf(map.get(Field.vlanTpid.name())));
         uni.setPolicingEnable(valueOf(map.get(Field.policingEnable.name())));
         uni.setPolicingCir(valueOf(map.get(Field.policingCir.name())));
@@ -130,6 +135,14 @@ public class ProfileUni {
 
     public void setVlanTag(String vlanTag) {
         this.vlanTag = vlanTag;
+    }
+
+    public String getPassVlan() {
+        return passVlan;
+    }
+
+    public void setPassVlan(String passVlan) {
+        this.passVlan = passVlan;
     }
 
     public String getVlanTpid() {

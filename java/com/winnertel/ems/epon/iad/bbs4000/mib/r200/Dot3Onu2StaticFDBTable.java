@@ -33,15 +33,15 @@ public class Dot3Onu2StaticFDBTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsDot3OnuStaticFDBModuleId, new SnmpMibBeanProperty(utsDot3OnuStaticFDBModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.18.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuStaticFDBDeviceId, new SnmpMibBeanProperty(utsDot3OnuStaticFDBDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.18.1.2", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuStaticFDBPortId, new SnmpMibBeanProperty(utsDot3OnuStaticFDBPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.18.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuStaticFDBLPortId, new SnmpMibBeanProperty(utsDot3OnuStaticFDBLPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.18.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuStaticFDBDstMacAddr, new SnmpMibBeanProperty(utsDot3OnuStaticFDBDstMacAddr, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.18.1.5", ISnmpConstant.MAC_ADDRESS));
-    initProperty(utsDot3OnuStaticFDBVlanId, new SnmpMibBeanProperty(utsDot3OnuStaticFDBVlanId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.18.1.6", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuStaticFDBEgressPort, new SnmpMibBeanProperty(utsDot3OnuStaticFDBEgressPort, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.18.1.7", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuStaticFDBFunction, new SnmpMibBeanProperty(utsDot3OnuStaticFDBFunction, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.18.1.8", ISnmpConstant.INTEGER));
-    initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.18.1.9", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuStaticFDBModuleId, new SnmpMibBeanProperty(utsDot3OnuStaticFDBModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.18.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuStaticFDBDeviceId, new SnmpMibBeanProperty(utsDot3OnuStaticFDBDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.18.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuStaticFDBPortId, new SnmpMibBeanProperty(utsDot3OnuStaticFDBPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.18.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuStaticFDBLPortId, new SnmpMibBeanProperty(utsDot3OnuStaticFDBLPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.18.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuStaticFDBDstMacAddr, new SnmpMibBeanProperty(utsDot3OnuStaticFDBDstMacAddr, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.18.1.5", ISnmpConstant.MAC_ADDRESS));
+    initProperty(utsDot3OnuStaticFDBVlanId, new SnmpMibBeanProperty(utsDot3OnuStaticFDBVlanId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.18.1.6", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuStaticFDBEgressPort, new SnmpMibBeanProperty(utsDot3OnuStaticFDBEgressPort, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.18.1.7", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuStaticFDBFunction, new SnmpMibBeanProperty(utsDot3OnuStaticFDBFunction, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.18.1.8", ISnmpConstant.INTEGER));
+    initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.18.1.9", ISnmpConstant.INTEGER));
   }
 
 

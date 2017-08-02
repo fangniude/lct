@@ -33,7 +33,7 @@ public class PonLedTableBean extends SnmpMibBean
   public static final String utsLedPonSlotLedDispPonPort4OprLedStat = "utsLedPonSlotLedDispPonPort4OprLedStat";
   public static final String utsLedPonSlotLedDispPonPort4FaultLedStat = "utsLedPonSlotLedDispPonPort4FaultLedStat";
 
-  private String fTableOid = ".1.3.6.1.4.1.41355.1.3.10.200.6.2.1.1.4.6.2.1.1";
+  private String fTableOid = ".1.3.6.1.4.1.45121.1.3.10.200.6.2.1.1.4.6.2.1.1";
 
   public PonLedTableBean(ISnmpProxy aSnmpProxy)
   {

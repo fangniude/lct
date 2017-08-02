@@ -25,11 +25,11 @@ public class OnuLoopbackTestTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsDot3OltModuleId, new SnmpMibBeanProperty(utsDot3OltModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.2.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltDeviceId, new SnmpMibBeanProperty(utsDot3OltDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.2.1.2", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltPortId, new SnmpMibBeanProperty(utsDot3OltPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.2.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltPortLoopbackDetection, new SnmpMibBeanProperty(utsDot3OltPortLoopbackDetection, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.2.1.24", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OltPortLoopbackDetectionControl, new SnmpMibBeanProperty(utsDot3OltPortLoopbackDetectionControl, ".1.3.6.1.4.1.41355.1800.2.3.1.1.3.2.1.26", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltModuleId, new SnmpMibBeanProperty(utsDot3OltModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.2.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltDeviceId, new SnmpMibBeanProperty(utsDot3OltDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.2.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltPortId, new SnmpMibBeanProperty(utsDot3OltPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.2.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltPortLoopbackDetection, new SnmpMibBeanProperty(utsDot3OltPortLoopbackDetection, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.2.1.24", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OltPortLoopbackDetectionControl, new SnmpMibBeanProperty(utsDot3OltPortLoopbackDetectionControl, ".1.3.6.1.4.1.45121.1800.2.3.1.1.3.2.1.26", ISnmpConstant.INTEGER));
   }
 
   public Integer getUtsDot3OltModuleId() {

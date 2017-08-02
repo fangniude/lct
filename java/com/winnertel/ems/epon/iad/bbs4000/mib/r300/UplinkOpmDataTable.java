@@ -27,13 +27,13 @@ public class UplinkOpmDataTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsUplinkOpmDataModuleID, new SnmpMibBeanProperty(utsUplinkOpmDataModuleID, ".1.3.6.1.4.1.41355.1800.2.2.1.17.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsUplinkOpmDataPortId, new SnmpMibBeanProperty(utsUplinkOpmDataPortId, ".1.3.6.1.4.1.41355.1800.2.2.1.17.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsUplinkOpmDataTemperature, new SnmpMibBeanProperty(utsUplinkOpmDataTemperature, ".1.3.6.1.4.1.41355.1800.2.2.1.17.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsUplinkOpmDataVoltage, new SnmpMibBeanProperty(utsUplinkOpmDataVoltage, ".1.3.6.1.4.1.41355.1800.2.2.1.17.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsUplinkOpmDataBiasCurrent, new SnmpMibBeanProperty(utsUplinkOpmDataBiasCurrent, ".1.3.6.1.4.1.41355.1800.2.2.1.17.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsUplinkOpmDataTxPower, new SnmpMibBeanProperty(utsUplinkOpmDataTxPower, ".1.3.6.1.4.1.41355.1800.2.2.1.17.1.6", ISnmpConstant.INTEGER));
-        initProperty(utsUplinkOpmDataRxPower, new SnmpMibBeanProperty(utsUplinkOpmDataRxPower, ".1.3.6.1.4.1.41355.1800.2.2.1.17.1.7", ISnmpConstant.INTEGER));
+        initProperty(utsUplinkOpmDataModuleID, new SnmpMibBeanProperty(utsUplinkOpmDataModuleID, ".1.3.6.1.4.1.45121.1800.2.2.1.17.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsUplinkOpmDataPortId, new SnmpMibBeanProperty(utsUplinkOpmDataPortId, ".1.3.6.1.4.1.45121.1800.2.2.1.17.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsUplinkOpmDataTemperature, new SnmpMibBeanProperty(utsUplinkOpmDataTemperature, ".1.3.6.1.4.1.45121.1800.2.2.1.17.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsUplinkOpmDataVoltage, new SnmpMibBeanProperty(utsUplinkOpmDataVoltage, ".1.3.6.1.4.1.45121.1800.2.2.1.17.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsUplinkOpmDataBiasCurrent, new SnmpMibBeanProperty(utsUplinkOpmDataBiasCurrent, ".1.3.6.1.4.1.45121.1800.2.2.1.17.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsUplinkOpmDataTxPower, new SnmpMibBeanProperty(utsUplinkOpmDataTxPower, ".1.3.6.1.4.1.45121.1800.2.2.1.17.1.6", ISnmpConstant.INTEGER));
+        initProperty(utsUplinkOpmDataRxPower, new SnmpMibBeanProperty(utsUplinkOpmDataRxPower, ".1.3.6.1.4.1.45121.1800.2.2.1.17.1.7", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsUplinkOpmDataModuleID() {

@@ -33,15 +33,15 @@ public class Dot3Onu2CtcLpBkGroup extends SnmpMibBean
   }
 
   protected void init() {
-    initProperty(utsDot3OnuLpBkModuleId, new SnmpMibBeanProperty(utsDot3OnuLpBkModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.22.1", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuLpBkDeviceId, new SnmpMibBeanProperty(utsDot3OnuLpBkDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.22.2", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuLpBkPortId, new SnmpMibBeanProperty(utsDot3OnuLpBkPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.22.3", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuLpBkLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuLpBkLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.22.4", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuLpBkMode, new SnmpMibBeanProperty(utsDot3OnuLpBkMode, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.22.5", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuLpBkPacketSize, new SnmpMibBeanProperty(utsDot3OnuLpBkPacketSize, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.22.6", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuLpBkPacketNum, new SnmpMibBeanProperty(utsDot3OnuLpBkPacketNum, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.22.7", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuLpBkStart, new SnmpMibBeanProperty(utsDot3OnuLpBkStart, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.22.8", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuLpBkResult, new SnmpMibBeanProperty(utsDot3OnuLpBkResult, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.22.10", ISnmpConstant.STRING));
+    initProperty(utsDot3OnuLpBkModuleId, new SnmpMibBeanProperty(utsDot3OnuLpBkModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.22.1", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuLpBkDeviceId, new SnmpMibBeanProperty(utsDot3OnuLpBkDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.22.2", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuLpBkPortId, new SnmpMibBeanProperty(utsDot3OnuLpBkPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.22.3", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuLpBkLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuLpBkLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.22.4", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuLpBkMode, new SnmpMibBeanProperty(utsDot3OnuLpBkMode, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.22.5", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuLpBkPacketSize, new SnmpMibBeanProperty(utsDot3OnuLpBkPacketSize, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.22.6", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuLpBkPacketNum, new SnmpMibBeanProperty(utsDot3OnuLpBkPacketNum, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.22.7", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuLpBkStart, new SnmpMibBeanProperty(utsDot3OnuLpBkStart, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.22.8", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuLpBkResult, new SnmpMibBeanProperty(utsDot3OnuLpBkResult, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.22.10", ISnmpConstant.STRING));
   }
 
 

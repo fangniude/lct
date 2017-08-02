@@ -30,25 +30,25 @@ public class IgmpCacheTable extends SnmpMibBean {
 
     protected void init() {
         initProperty(utsIgmpCacheIfIndex, new SnmpMibBeanProperty(
-                utsIgmpCacheIfIndex, ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.2.1.1",
+                utsIgmpCacheIfIndex, ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.2.1.1",
                 ISnmpConstant.INTEGER));
         initProperty(utsIgmpCacheGroupAddress, new SnmpMibBeanProperty(
                 utsIgmpCacheGroupAddress,
-                ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.2.1.2", ISnmpConstant.STRING));
+                ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.2.1.2", ISnmpConstant.STRING));
 
         initProperty(utsIgmpCacheType, new SnmpMibBeanProperty(
-                utsIgmpCacheType, ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.2.1.3",
+                utsIgmpCacheType, ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.2.1.3",
                 ISnmpConstant.INTEGER));
         initProperty(utsIgmpCacheLastReporter, new SnmpMibBeanProperty(
                 utsIgmpCacheLastReporter,
-                ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.2.1.4", ISnmpConstant.STRING));
+                ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.2.1.4", ISnmpConstant.STRING));
         initProperty(utsIgmpCacheExpiryTime,
                 new SnmpMibBeanProperty(utsIgmpCacheExpiryTime,
-                        ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.2.1.5",
+                        ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.2.1.5",
                         ISnmpConstant.TIME_TICKS));
         initProperty(ROW_STATUS,
                 new SnmpMibBeanProperty(ROW_STATUS,
-                        ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.2.1.6",
+                        ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.2.1.6",
                         ISnmpConstant.INTEGER));
 
     }

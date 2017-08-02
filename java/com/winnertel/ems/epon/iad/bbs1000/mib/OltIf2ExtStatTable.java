@@ -59,39 +59,39 @@ public class OltIf2ExtStatTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsPonIf2ExtStatModule, new SnmpMibBeanProperty(utsPonIf2ExtStatModule, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsPonIf2ExtStatDevice, new SnmpMibBeanProperty(utsPonIf2ExtStatDevice, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.2", ISnmpConstant.INTEGER));
-    initProperty(utsPonIf2ExtStatPort, new SnmpMibBeanProperty(utsPonIf2ExtStatPort, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsPonIf2ExtStatLogicalLinkId, new SnmpMibBeanProperty(utsPonIf2ExtStatLogicalLinkId, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsPonIfExtSysFrameTxOk, new SnmpMibBeanProperty(utsPonIfExtSysFrameTxOk, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.5", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtSysFrameRxOk, new SnmpMibBeanProperty(utsPonIfExtSysFrameRxOk, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.6", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtSysFrameTxErr, new SnmpMibBeanProperty(utsPonIfExtSysFrameTxErr, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.7", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtSysFrameRxErr, new SnmpMibBeanProperty(utsPonIfExtSysFrameRxErr, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.8", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtSysFrameTxUnicast, new SnmpMibBeanProperty(utsPonIfExtSysFrameTxUnicast, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.9", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtSysFrameRxUnicast, new SnmpMibBeanProperty(utsPonIfExtSysFrameRxUnicast, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.10", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtSysFrameTxMulticast, new SnmpMibBeanProperty(utsPonIfExtSysFrameTxMulticast, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.11", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtSysFrameRxMulticast, new SnmpMibBeanProperty(utsPonIfExtSysFrameRxMulticast, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.12", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtSysFrameTxBroadcast, new SnmpMibBeanProperty(utsPonIfExtSysFrameTxBroadcast, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.13", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtSysFrameRxBroadcast, new SnmpMibBeanProperty(utsPonIfExtSysFrameRxBroadcast, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.14", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtSysOctetTxOk, new SnmpMibBeanProperty(utsPonIfExtSysOctetTxOk, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.30", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtSysOctetRxOk, new SnmpMibBeanProperty(utsPonIfExtSysOctetRxOk, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.31", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtPonFrameTxOk, new SnmpMibBeanProperty(utsPonIfExtPonFrameTxOk, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.60", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtPonFrameRxOk, new SnmpMibBeanProperty(utsPonIfExtPonFrameRxOk, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.61", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtPonOctetTxOk, new SnmpMibBeanProperty(utsPonIfExtPonOctetTxOk, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.80", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtPonOctetRxOk, new SnmpMibBeanProperty(utsPonIfExtPonOctetRxOk, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.81", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtEponFrameRxReport, new SnmpMibBeanProperty(utsPonIfExtEponFrameRxReport, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.100", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtEponFrameTxReport, new SnmpMibBeanProperty(utsPonIfExtEponFrameTxReport, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.101", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtEponFrameRxGate, new SnmpMibBeanProperty(utsPonIfExtEponFrameRxGate, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.102", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtEponFrameTxGate, new SnmpMibBeanProperty(utsPonIfExtEponFrameTxGate, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.103", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtEponFrameRxRegReq, new SnmpMibBeanProperty(utsPonIfExtEponFrameRxRegReq, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.104", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtEponFrameTxRegReq, new SnmpMibBeanProperty(utsPonIfExtEponFrameTxRegReq, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.105", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtEponFrameRxReg, new SnmpMibBeanProperty(utsPonIfExtEponFrameRxReg, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.106", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtEponFrameTxReg, new SnmpMibBeanProperty(utsPonIfExtEponFrameTxReg, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.107", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtEponFrameRxRegAck, new SnmpMibBeanProperty(utsPonIfExtEponFrameRxRegAck, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.108", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtEponFrameTxRegAck, new SnmpMibBeanProperty(utsPonIfExtEponFrameTxRegAck, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.109", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtEponFrameCrc8Error, new SnmpMibBeanProperty(utsPonIfExtEponFrameCrc8Error, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.110", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtEponFrameSldError, new SnmpMibBeanProperty(utsPonIfExtEponFrameSldError, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.111", ISnmpConstant.COUNTER64));
-    initProperty(utsPonIfExtStatPMStatus, new SnmpMibBeanProperty(utsPonIfExtStatPMStatus, ".1.3.6.1.4.1.41355.1800.4.2.1.1.6.1.200", ISnmpConstant.INTEGER));
+    initProperty(utsPonIf2ExtStatModule, new SnmpMibBeanProperty(utsPonIf2ExtStatModule, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsPonIf2ExtStatDevice, new SnmpMibBeanProperty(utsPonIf2ExtStatDevice, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsPonIf2ExtStatPort, new SnmpMibBeanProperty(utsPonIf2ExtStatPort, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsPonIf2ExtStatLogicalLinkId, new SnmpMibBeanProperty(utsPonIf2ExtStatLogicalLinkId, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsPonIfExtSysFrameTxOk, new SnmpMibBeanProperty(utsPonIfExtSysFrameTxOk, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.5", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtSysFrameRxOk, new SnmpMibBeanProperty(utsPonIfExtSysFrameRxOk, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.6", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtSysFrameTxErr, new SnmpMibBeanProperty(utsPonIfExtSysFrameTxErr, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.7", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtSysFrameRxErr, new SnmpMibBeanProperty(utsPonIfExtSysFrameRxErr, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.8", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtSysFrameTxUnicast, new SnmpMibBeanProperty(utsPonIfExtSysFrameTxUnicast, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.9", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtSysFrameRxUnicast, new SnmpMibBeanProperty(utsPonIfExtSysFrameRxUnicast, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.10", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtSysFrameTxMulticast, new SnmpMibBeanProperty(utsPonIfExtSysFrameTxMulticast, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.11", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtSysFrameRxMulticast, new SnmpMibBeanProperty(utsPonIfExtSysFrameRxMulticast, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.12", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtSysFrameTxBroadcast, new SnmpMibBeanProperty(utsPonIfExtSysFrameTxBroadcast, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.13", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtSysFrameRxBroadcast, new SnmpMibBeanProperty(utsPonIfExtSysFrameRxBroadcast, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.14", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtSysOctetTxOk, new SnmpMibBeanProperty(utsPonIfExtSysOctetTxOk, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.30", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtSysOctetRxOk, new SnmpMibBeanProperty(utsPonIfExtSysOctetRxOk, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.31", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtPonFrameTxOk, new SnmpMibBeanProperty(utsPonIfExtPonFrameTxOk, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.60", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtPonFrameRxOk, new SnmpMibBeanProperty(utsPonIfExtPonFrameRxOk, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.61", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtPonOctetTxOk, new SnmpMibBeanProperty(utsPonIfExtPonOctetTxOk, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.80", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtPonOctetRxOk, new SnmpMibBeanProperty(utsPonIfExtPonOctetRxOk, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.81", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtEponFrameRxReport, new SnmpMibBeanProperty(utsPonIfExtEponFrameRxReport, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.100", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtEponFrameTxReport, new SnmpMibBeanProperty(utsPonIfExtEponFrameTxReport, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.101", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtEponFrameRxGate, new SnmpMibBeanProperty(utsPonIfExtEponFrameRxGate, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.102", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtEponFrameTxGate, new SnmpMibBeanProperty(utsPonIfExtEponFrameTxGate, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.103", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtEponFrameRxRegReq, new SnmpMibBeanProperty(utsPonIfExtEponFrameRxRegReq, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.104", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtEponFrameTxRegReq, new SnmpMibBeanProperty(utsPonIfExtEponFrameTxRegReq, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.105", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtEponFrameRxReg, new SnmpMibBeanProperty(utsPonIfExtEponFrameRxReg, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.106", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtEponFrameTxReg, new SnmpMibBeanProperty(utsPonIfExtEponFrameTxReg, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.107", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtEponFrameRxRegAck, new SnmpMibBeanProperty(utsPonIfExtEponFrameRxRegAck, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.108", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtEponFrameTxRegAck, new SnmpMibBeanProperty(utsPonIfExtEponFrameTxRegAck, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.109", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtEponFrameCrc8Error, new SnmpMibBeanProperty(utsPonIfExtEponFrameCrc8Error, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.110", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtEponFrameSldError, new SnmpMibBeanProperty(utsPonIfExtEponFrameSldError, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.111", ISnmpConstant.COUNTER64));
+    initProperty(utsPonIfExtStatPMStatus, new SnmpMibBeanProperty(utsPonIfExtStatPMStatus, ".1.3.6.1.4.1.45121.1800.4.2.1.1.6.1.200", ISnmpConstant.INTEGER));
 
   }
 

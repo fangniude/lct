@@ -33,20 +33,20 @@ public class OnuMacFilterPreassignProTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(onuMacFilterPreassignProfileIndex, new SnmpMibBeanProperty(onuMacFilterPreassignProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.2.26.1.1", ISnmpConstant.GAUGE));
-        initProperty(onuMacFilterPreassignProfileName, new SnmpMibBeanProperty(onuMacFilterPreassignProfileName, ".1.3.6.1.4.1.41355.1.3.10.5.2.26.1.2", ISnmpConstant.STRING));
-        initProperty(onuMacFilterPreassignProfIPv4Multicast, new SnmpMibBeanProperty(onuMacFilterPreassignProfIPv4Multicast, ".1.3.6.1.4.1.41355.1.3.10.5.2.26.1.3", ISnmpConstant.INTEGER));
-        initProperty(onuMacFilterPreassignProfIPv6Multicast, new SnmpMibBeanProperty(onuMacFilterPreassignProfIPv6Multicast, ".1.3.6.1.4.1.41355.1.3.10.5.2.26.1.4", ISnmpConstant.INTEGER));
-        initProperty(onuMacFilterPreassignProfIPv4Broadcast, new SnmpMibBeanProperty(onuMacFilterPreassignProfIPv4Broadcast, ".1.3.6.1.4.1.41355.1.3.10.5.2.26.1.5", ISnmpConstant.INTEGER));
-        initProperty(onuMacFilterPreassignProfRARP, new SnmpMibBeanProperty(onuMacFilterPreassignProfRARP, ".1.3.6.1.4.1.41355.1.3.10.5.2.26.1.6", ISnmpConstant.INTEGER));
-        initProperty(onuMacFilterPreassignProfIPX, new SnmpMibBeanProperty(onuMacFilterPreassignProfIPX, ".1.3.6.1.4.1.41355.1.3.10.5.2.26.1.7", ISnmpConstant.INTEGER));
-        initProperty(onuMacFilterPreassignProfNetBEUI, new SnmpMibBeanProperty(onuMacFilterPreassignProfNetBEUI, ".1.3.6.1.4.1.41355.1.3.10.5.2.26.1.8", ISnmpConstant.INTEGER));
-        initProperty(onuMacFilterPreassignProfAppleTalk, new SnmpMibBeanProperty(onuMacFilterPreassignProfAppleTalk, ".1.3.6.1.4.1.41355.1.3.10.5.2.26.1.9", ISnmpConstant.INTEGER));
-        initProperty(onuMacFilterPreassignProfBridgeManagemenInformation, new SnmpMibBeanProperty(onuMacFilterPreassignProfBridgeManagemenInformation, ".1.3.6.1.4.1.41355.1.3.10.5.2.26.1.10", ISnmpConstant.INTEGER));
-        initProperty(onuMacFilterPreassignProfARP, new SnmpMibBeanProperty(onuMacFilterPreassignProfARP, ".1.3.6.1.4.1.41355.1.3.10.5.2.26.1.11", ISnmpConstant.INTEGER));
-        initProperty(onuMacFilterPreassignProfPPPoEBroadcast, new SnmpMibBeanProperty(onuMacFilterPreassignProfPPPoEBroadcast, ".1.3.6.1.4.1.41355.1.3.10.5.2.26.1.12", ISnmpConstant.INTEGER));
+        initProperty(onuMacFilterPreassignProfileIndex, new SnmpMibBeanProperty(onuMacFilterPreassignProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.2.26.1.1", ISnmpConstant.GAUGE));
+        initProperty(onuMacFilterPreassignProfileName, new SnmpMibBeanProperty(onuMacFilterPreassignProfileName, ".1.3.6.1.4.1.45121.1.3.10.5.2.26.1.2", ISnmpConstant.STRING));
+        initProperty(onuMacFilterPreassignProfIPv4Multicast, new SnmpMibBeanProperty(onuMacFilterPreassignProfIPv4Multicast, ".1.3.6.1.4.1.45121.1.3.10.5.2.26.1.3", ISnmpConstant.INTEGER));
+        initProperty(onuMacFilterPreassignProfIPv6Multicast, new SnmpMibBeanProperty(onuMacFilterPreassignProfIPv6Multicast, ".1.3.6.1.4.1.45121.1.3.10.5.2.26.1.4", ISnmpConstant.INTEGER));
+        initProperty(onuMacFilterPreassignProfIPv4Broadcast, new SnmpMibBeanProperty(onuMacFilterPreassignProfIPv4Broadcast, ".1.3.6.1.4.1.45121.1.3.10.5.2.26.1.5", ISnmpConstant.INTEGER));
+        initProperty(onuMacFilterPreassignProfRARP, new SnmpMibBeanProperty(onuMacFilterPreassignProfRARP, ".1.3.6.1.4.1.45121.1.3.10.5.2.26.1.6", ISnmpConstant.INTEGER));
+        initProperty(onuMacFilterPreassignProfIPX, new SnmpMibBeanProperty(onuMacFilterPreassignProfIPX, ".1.3.6.1.4.1.45121.1.3.10.5.2.26.1.7", ISnmpConstant.INTEGER));
+        initProperty(onuMacFilterPreassignProfNetBEUI, new SnmpMibBeanProperty(onuMacFilterPreassignProfNetBEUI, ".1.3.6.1.4.1.45121.1.3.10.5.2.26.1.8", ISnmpConstant.INTEGER));
+        initProperty(onuMacFilterPreassignProfAppleTalk, new SnmpMibBeanProperty(onuMacFilterPreassignProfAppleTalk, ".1.3.6.1.4.1.45121.1.3.10.5.2.26.1.9", ISnmpConstant.INTEGER));
+        initProperty(onuMacFilterPreassignProfBridgeManagemenInformation, new SnmpMibBeanProperty(onuMacFilterPreassignProfBridgeManagemenInformation, ".1.3.6.1.4.1.45121.1.3.10.5.2.26.1.10", ISnmpConstant.INTEGER));
+        initProperty(onuMacFilterPreassignProfARP, new SnmpMibBeanProperty(onuMacFilterPreassignProfARP, ".1.3.6.1.4.1.45121.1.3.10.5.2.26.1.11", ISnmpConstant.INTEGER));
+        initProperty(onuMacFilterPreassignProfPPPoEBroadcast, new SnmpMibBeanProperty(onuMacFilterPreassignProfPPPoEBroadcast, ".1.3.6.1.4.1.45121.1.3.10.5.2.26.1.12", ISnmpConstant.INTEGER));
 
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.2.26.1.13", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.2.26.1.13", ISnmpConstant.INTEGER));
     }
 
     public Long getOnuMacFilterPreassignProfileIndex() {

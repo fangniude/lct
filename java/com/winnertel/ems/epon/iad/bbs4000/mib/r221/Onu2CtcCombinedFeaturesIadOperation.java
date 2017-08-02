@@ -26,12 +26,12 @@ public class Onu2CtcCombinedFeaturesIadOperation extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(Onu2CtcCombinedFeaturesIadOperation.utsDot3Onu2CtcCombinedFeaturesModuleId, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesIadOperation.utsDot3Onu2CtcCombinedFeaturesModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.1", ISnmpConstant.INTEGER));
-        initProperty(Onu2CtcCombinedFeaturesIadOperation.utsDot3Onu2CtcCombinedFeaturesDeviceId, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesIadOperation.utsDot3Onu2CtcCombinedFeaturesDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.2", ISnmpConstant.INTEGER));
-        initProperty(Onu2CtcCombinedFeaturesIadOperation.utsDot3Onu2CtcCombinedFeaturesPortId, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesIadOperation.utsDot3Onu2CtcCombinedFeaturesPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.3", ISnmpConstant.INTEGER));
-        initProperty(Onu2CtcCombinedFeaturesIadOperation.utsDot3Onu2CtcCombinedFeaturesLogicalPortId, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesIadOperation.utsDot3Onu2CtcCombinedFeaturesLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.4", ISnmpConstant.INTEGER));
+        initProperty(Onu2CtcCombinedFeaturesIadOperation.utsDot3Onu2CtcCombinedFeaturesModuleId, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesIadOperation.utsDot3Onu2CtcCombinedFeaturesModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.1", ISnmpConstant.INTEGER));
+        initProperty(Onu2CtcCombinedFeaturesIadOperation.utsDot3Onu2CtcCombinedFeaturesDeviceId, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesIadOperation.utsDot3Onu2CtcCombinedFeaturesDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.2", ISnmpConstant.INTEGER));
+        initProperty(Onu2CtcCombinedFeaturesIadOperation.utsDot3Onu2CtcCombinedFeaturesPortId, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesIadOperation.utsDot3Onu2CtcCombinedFeaturesPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.3", ISnmpConstant.INTEGER));
+        initProperty(Onu2CtcCombinedFeaturesIadOperation.utsDot3Onu2CtcCombinedFeaturesLogicalPortId, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesIadOperation.utsDot3Onu2CtcCombinedFeaturesLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.4", ISnmpConstant.INTEGER));
 
-        initProperty(Onu2CtcCombinedFeaturesIadOperation.utsDot3Onu2CtcIadOperation, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesIadOperation.utsDot3Onu2CtcIadOperation, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.34.1.332", ISnmpConstant.INTEGER));
+        initProperty(Onu2CtcCombinedFeaturesIadOperation.utsDot3Onu2CtcIadOperation, new SnmpMibBeanProperty(Onu2CtcCombinedFeaturesIadOperation.utsDot3Onu2CtcIadOperation, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.34.1.332", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsDot3Onu2CtcCombinedFeaturesModuleId() {

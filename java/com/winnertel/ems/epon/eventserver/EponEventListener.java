@@ -47,13 +47,13 @@ public class EponEventListener implements TrapParser {
                     SnmpOID oid = pdu.getObjectID(i);
                     SnmpVar value = pdu.getVariable(i);
 
-                    String utsBbsAlarmSeverity = ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.2.2.7";
+                    String utsBbsAlarmSeverity = ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.2.2.7";
                     if (oid.toString().equals(utsBbsAlarmSeverity)) {
                         severity = Integer.parseInt(value.toString());
                     }
 
-                    String utsBbsAlarmEntityType = ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.2.2.5";
-                    String utsBbsAlarmEntityInstance = ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.2.2.6";
+                    String utsBbsAlarmEntityType = ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.2.2.5";
+                    String utsBbsAlarmEntityInstance = ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.2.2.6";
                     if (oid.toString().equals(utsBbsAlarmEntityType)) {
                         entityType = Integer.parseInt(value.toString());
                     }
@@ -61,14 +61,14 @@ public class EponEventListener implements TrapParser {
                         activeEntity = Integer.parseInt(value.toValue().toString());
                     }
 
-                    String utsBbsAlarmAdditionalText = ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.2.2.13";
+                    String utsBbsAlarmAdditionalText = ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.2.2.13";
                     if (oid.toString().equals(utsBbsAlarmAdditionalText)) {
                         additionalInfo = value.toString().trim();
                     }
 
                     if (vbs >= 13) { //alarm
-                        String utsBbsAlarmProbableCause = ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.2.2.8";
-                        String utsBbsAlarmSpecificProblem = ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.2.2.9";
+                        String utsBbsAlarmProbableCause = ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.2.2.8";
+                        String utsBbsAlarmSpecificProblem = ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.2.2.9";
                         if (oid.toString().equals(utsBbsAlarmProbableCause)) {
                             pc = Integer.parseInt(value.toString());
                         }
@@ -76,12 +76,12 @@ public class EponEventListener implements TrapParser {
                             sp = Integer.parseInt(value.toString());
                         }
 
-                        String utsBbsAlarmCorrelationId = ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.2.2.11";
+                        String utsBbsAlarmCorrelationId = ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.2.2.11";
                         if (oid.toString().equals(utsBbsAlarmCorrelationId)) {
                             raiseFlag = Integer.parseInt(value.toString());
                         }
                     } else if (vbs == 9 || vbs == 10) { //event, 9 for 3.1, 10 for 2.2
-                        String utsBbsEventType = ".1.3.6.1.4.1.41355.1.3.10.200.6.7.1.2.2.14";
+                        String utsBbsEventType = ".1.3.6.1.4.1.45121.1.3.10.200.6.7.1.2.2.14";
                         if (oid.toString().equals(utsBbsEventType)) {
                             eventType = Integer.parseInt(value.toString());
                         }
@@ -223,13 +223,13 @@ public class EponEventListener implements TrapParser {
             return true;
         //} else if (oid.equals(".1.3.6.1.6.3.1.1.5.1")) { //coldStart
         //    return true;
-        } else if (oid.equals(".1.3.6.1.4.1.41355.1.3.10.5.3.2.1.1")) { //lOSi
+        } else if (oid.equals(".1.3.6.1.4.1.45121.1.3.10.5.3.2.1.1")) { //lOSi
             return true;
-        } else if (oid.equals(".1.3.6.1.4.1.41355.1.3.10.5.3.2.1.2")) { //rLOSi
+        } else if (oid.equals(".1.3.6.1.4.1.45121.1.3.10.5.3.2.1.2")) { //rLOSi
             return true;
-        } else if (oid.equals(".1.3.6.1.4.1.41355.1.3.10.5.3.2.1.17")) { //dGi
+        } else if (oid.equals(".1.3.6.1.4.1.45121.1.3.10.5.3.2.1.17")) { //dGi
             return true;
-        } else if (oid.equals(".1.3.6.1.4.1.41355.1.3.10.5.3.2.1.18")) { //rDGi
+        } else if (oid.equals(".1.3.6.1.4.1.45121.1.3.10.5.3.2.1.18")) { //rDGi
             return true;
         }
 

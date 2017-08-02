@@ -24,15 +24,15 @@ public class UtsOnuUpgradeRuleTable extends SnmpMibBean {
     }
 
     protected void init() {
-	initProperty(utsOnuUpgradeRuleOnuType, new SnmpMibBeanProperty(utsOnuUpgradeRuleOnuType, ".1.3.6.1.4.1.41355.1800.2.3.1.7.11.1.1", ISnmpConstant.INTEGER));
-	initProperty(utsOnuUpgradeRuleHwComp, new SnmpMibBeanProperty(utsOnuUpgradeRuleHwComp, ".1.3.6.1.4.1.41355.1800.2.3.1.7.11.1.2", ISnmpConstant.INTEGER));
-	initProperty(utsOnuUpgradeRuleUpgradeMethod, new SnmpMibBeanProperty(utsOnuUpgradeRuleUpgradeMethod, ".1.3.6.1.4.1.41355.1800.2.3.1.7.11.1.3", ISnmpConstant.INTEGER));
-	initProperty(utsOnuUpgradeRuleSwVersino, new SnmpMibBeanProperty(utsOnuUpgradeRuleSwVersino, ".1.3.6.1.4.1.41355.1800.2.3.1.7.11.1.4", ISnmpConstant.STRING));
-	initProperty(utsOnuUpgradeRuleFtpPath, new SnmpMibBeanProperty(utsOnuUpgradeRuleFtpPath, ".1.3.6.1.4.1.41355.1800.2.3.1.7.11.1.5", ISnmpConstant.STRING));
-	initProperty(utsOnuUpgradeRuleFtpServerIp, new SnmpMibBeanProperty(utsOnuUpgradeRuleFtpServerIp, ".1.3.6.1.4.1.41355.1800.2.3.1.7.11.1.6", ISnmpConstant.IP_ADDRESS));
-	initProperty(utsOnuUpgradeRuleFtpUsername, new SnmpMibBeanProperty(utsOnuUpgradeRuleFtpUsername, ".1.3.6.1.4.1.41355.1800.2.3.1.7.11.1.7", ISnmpConstant.STRING));
-	initProperty(utsOnuUpgradeRuleFtpPassword, new SnmpMibBeanProperty(utsOnuUpgradeRuleFtpPassword, ".1.3.6.1.4.1.41355.1800.2.3.1.7.11.1.8", ISnmpConstant.STRING));
-	initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.3.1.7.11.1.100", ISnmpConstant.INTEGER));
+	initProperty(utsOnuUpgradeRuleOnuType, new SnmpMibBeanProperty(utsOnuUpgradeRuleOnuType, ".1.3.6.1.4.1.45121.1800.2.3.1.7.11.1.1", ISnmpConstant.INTEGER));
+	initProperty(utsOnuUpgradeRuleHwComp, new SnmpMibBeanProperty(utsOnuUpgradeRuleHwComp, ".1.3.6.1.4.1.45121.1800.2.3.1.7.11.1.2", ISnmpConstant.INTEGER));
+	initProperty(utsOnuUpgradeRuleUpgradeMethod, new SnmpMibBeanProperty(utsOnuUpgradeRuleUpgradeMethod, ".1.3.6.1.4.1.45121.1800.2.3.1.7.11.1.3", ISnmpConstant.INTEGER));
+	initProperty(utsOnuUpgradeRuleSwVersino, new SnmpMibBeanProperty(utsOnuUpgradeRuleSwVersino, ".1.3.6.1.4.1.45121.1800.2.3.1.7.11.1.4", ISnmpConstant.STRING));
+	initProperty(utsOnuUpgradeRuleFtpPath, new SnmpMibBeanProperty(utsOnuUpgradeRuleFtpPath, ".1.3.6.1.4.1.45121.1800.2.3.1.7.11.1.5", ISnmpConstant.STRING));
+	initProperty(utsOnuUpgradeRuleFtpServerIp, new SnmpMibBeanProperty(utsOnuUpgradeRuleFtpServerIp, ".1.3.6.1.4.1.45121.1800.2.3.1.7.11.1.6", ISnmpConstant.IP_ADDRESS));
+	initProperty(utsOnuUpgradeRuleFtpUsername, new SnmpMibBeanProperty(utsOnuUpgradeRuleFtpUsername, ".1.3.6.1.4.1.45121.1800.2.3.1.7.11.1.7", ISnmpConstant.STRING));
+	initProperty(utsOnuUpgradeRuleFtpPassword, new SnmpMibBeanProperty(utsOnuUpgradeRuleFtpPassword, ".1.3.6.1.4.1.45121.1800.2.3.1.7.11.1.8", ISnmpConstant.STRING));
+	initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.3.1.7.11.1.100", ISnmpConstant.INTEGER));
 
     }
 

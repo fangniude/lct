@@ -27,25 +27,25 @@ public class PerformanceManagementConfigTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(epPonIf2ExtManageStatId, new SnmpMibBeanProperty(
 				epPonIf2ExtManageStatId,
-				".1.3.6.1.4.1.41355.1800.4.2.1.1.9.1",
+				".1.3.6.1.4.1.45121.1800.4.2.1.1.9.1",
 				ISnmpConstant.OCTETS
 				));
 		initProperty(epPonIf2ExtManageStatStartTime, new SnmpMibBeanProperty(
 				epPonIf2ExtManageStatStartTime,
-				".1.3.6.1.4.1.41355.1800.4.2.1.1.9.2",
+				".1.3.6.1.4.1.45121.1800.4.2.1.1.9.2",
 				ISnmpConstant.OCTETS
 				));
 		initProperty(epPonIf2ExtManageStatMeasureCyc, new SnmpMibBeanProperty(
 				epPonIf2ExtManageStatMeasureCyc,
-				".1.3.6.1.4.1.41355.1800.4.2.1.1.9.3",
+				".1.3.6.1.4.1.45121.1800.4.2.1.1.9.3",
 				ISnmpConstant.INTEGER));
 		initProperty(epPonIf2ExtManageStatTaskState, new SnmpMibBeanProperty(
 				epPonIf2ExtManageStatTaskState,
-				".1.3.6.1.4.1.41355.1800.4.2.1.1.9.4",
+				".1.3.6.1.4.1.45121.1800.4.2.1.1.9.4",
 				ISnmpConstant.INTEGER));
 		initProperty(epPonIf2ExtManageStatMO, new SnmpMibBeanProperty(
 				epPonIf2ExtManageStatMO,
-				".1.3.6.1.4.1.41355.1800.4.2.1.1.9.5",
+				".1.3.6.1.4.1.45121.1800.4.2.1.1.9.5",
 				ISnmpConstant.INTEGER));
 	}
 

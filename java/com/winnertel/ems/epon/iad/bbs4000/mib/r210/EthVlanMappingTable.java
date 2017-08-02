@@ -21,12 +21,12 @@ public class EthVlanMappingTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsEthVlanMappingModuleID, new SnmpMibBeanProperty(utsEthVlanMappingModuleID, ".1.3.6.1.4.1.41355.1800.2.2.1.11.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsEthVlanMappingPortID, new SnmpMibBeanProperty(utsEthVlanMappingPortID, ".1.3.6.1.4.1.41355.1800.2.2.1.11.1.2", ISnmpConstant.INTEGER));
-    initProperty(utsEthVlanMappingInnerVID, new SnmpMibBeanProperty(utsEthVlanMappingInnerVID, ".1.3.6.1.4.1.41355.1800.2.2.1.11.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsEthVlanMappingOuterVID, new SnmpMibBeanProperty(utsEthVlanMappingOuterVID, ".1.3.6.1.4.1.41355.1800.2.2.1.11.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsEthVlanMappingTagMode, new SnmpMibBeanProperty(utsEthVlanMappingTagMode, ".1.3.6.1.4.1.41355.1800.2.2.1.11.1.5", ISnmpConstant.INTEGER));
-    initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.2.1.11.1.6", ISnmpConstant.INTEGER));
+    initProperty(utsEthVlanMappingModuleID, new SnmpMibBeanProperty(utsEthVlanMappingModuleID, ".1.3.6.1.4.1.45121.1800.2.2.1.11.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsEthVlanMappingPortID, new SnmpMibBeanProperty(utsEthVlanMappingPortID, ".1.3.6.1.4.1.45121.1800.2.2.1.11.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsEthVlanMappingInnerVID, new SnmpMibBeanProperty(utsEthVlanMappingInnerVID, ".1.3.6.1.4.1.45121.1800.2.2.1.11.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsEthVlanMappingOuterVID, new SnmpMibBeanProperty(utsEthVlanMappingOuterVID, ".1.3.6.1.4.1.45121.1800.2.2.1.11.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsEthVlanMappingTagMode, new SnmpMibBeanProperty(utsEthVlanMappingTagMode, ".1.3.6.1.4.1.45121.1800.2.2.1.11.1.5", ISnmpConstant.INTEGER));
+    initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.2.1.11.1.6", ISnmpConstant.INTEGER));
   }
 
   public String getUtsEthVlanMappingIfIndex() {

@@ -31,17 +31,17 @@ public class OnuDbaProfileTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3DbaProfileId, new SnmpMibBeanProperty(utsDot3DbaProfileId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.36.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsDot3DbaProfileName, new SnmpMibBeanProperty(utsDot3DbaProfileName, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.36.1.2", ISnmpConstant.STRING));
-        initProperty(utsDot3DbaProfileUpCir, new SnmpMibBeanProperty(utsDot3DbaProfileUpCir, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.36.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDot3DbaProfileUpFir, new SnmpMibBeanProperty(utsDot3DbaProfileUpFir, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.36.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsDot3DbaProfileUpPir, new SnmpMibBeanProperty(utsDot3DbaProfileUpPir, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.36.1.5", ISnmpConstant.INTEGER));
-        initProperty(utsDot3DbaProfileUpBurst, new SnmpMibBeanProperty(utsDot3DbaProfileUpBurst, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.36.1.6", ISnmpConstant.INTEGER));
-        initProperty(utsDot3DbaProfileUpPriority, new SnmpMibBeanProperty(utsDot3DbaProfileUpPriority, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.36.1.7", ISnmpConstant.INTEGER));
-        initProperty(utsDot3DbaProfileDownCir, new SnmpMibBeanProperty(utsDot3DbaProfileDownCir, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.36.1.8", ISnmpConstant.INTEGER));
-        initProperty(utsDot3DbaProfileDownPir, new SnmpMibBeanProperty(utsDot3DbaProfileDownPir, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.36.1.9", ISnmpConstant.INTEGER));
-        initProperty(utsDot3DbaProfileDownBurst, new SnmpMibBeanProperty(utsDot3DbaProfileDownBurst, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.36.1.10", ISnmpConstant.INTEGER));
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.36.1.100", ISnmpConstant.INTEGER));
+        initProperty(utsDot3DbaProfileId, new SnmpMibBeanProperty(utsDot3DbaProfileId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.36.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsDot3DbaProfileName, new SnmpMibBeanProperty(utsDot3DbaProfileName, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.36.1.2", ISnmpConstant.STRING));
+        initProperty(utsDot3DbaProfileUpCir, new SnmpMibBeanProperty(utsDot3DbaProfileUpCir, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.36.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3DbaProfileUpFir, new SnmpMibBeanProperty(utsDot3DbaProfileUpFir, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.36.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDot3DbaProfileUpPir, new SnmpMibBeanProperty(utsDot3DbaProfileUpPir, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.36.1.5", ISnmpConstant.INTEGER));
+        initProperty(utsDot3DbaProfileUpBurst, new SnmpMibBeanProperty(utsDot3DbaProfileUpBurst, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.36.1.6", ISnmpConstant.INTEGER));
+        initProperty(utsDot3DbaProfileUpPriority, new SnmpMibBeanProperty(utsDot3DbaProfileUpPriority, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.36.1.7", ISnmpConstant.INTEGER));
+        initProperty(utsDot3DbaProfileDownCir, new SnmpMibBeanProperty(utsDot3DbaProfileDownCir, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.36.1.8", ISnmpConstant.INTEGER));
+        initProperty(utsDot3DbaProfileDownPir, new SnmpMibBeanProperty(utsDot3DbaProfileDownPir, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.36.1.9", ISnmpConstant.INTEGER));
+        initProperty(utsDot3DbaProfileDownBurst, new SnmpMibBeanProperty(utsDot3DbaProfileDownBurst, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.36.1.10", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.36.1.100", ISnmpConstant.INTEGER));
     }
 
     public Integer getUtsDot3DbaProfileId() {

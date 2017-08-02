@@ -32,11 +32,11 @@ public class DHCPMBindingTableMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDHCPPoolName, new SnmpMibBeanProperty(utsDHCPPoolName, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.2.1.1", ISnmpConstant.STRING));
-        initProperty(utsDHCPPoolManualBindIpAddress, new SnmpMibBeanProperty(utsDHCPPoolManualBindIpAddress, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.6.1.2", ISnmpConstant.STRING));
-        initProperty(utsDHCPPoolManualBindVlanId, new SnmpMibBeanProperty(utsDHCPPoolManualBindVlanId, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.6.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsDHCPPoolManualBindHardwareAddress, new SnmpMibBeanProperty(utsDHCPPoolManualBindHardwareAddress, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.6.1.4", ISnmpConstant.MAC_ADDRESS));
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.6.1.6", ISnmpConstant.INTEGER));
+        initProperty(utsDHCPPoolName, new SnmpMibBeanProperty(utsDHCPPoolName, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.2.1.1", ISnmpConstant.STRING));
+        initProperty(utsDHCPPoolManualBindIpAddress, new SnmpMibBeanProperty(utsDHCPPoolManualBindIpAddress, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.6.1.2", ISnmpConstant.STRING));
+        initProperty(utsDHCPPoolManualBindVlanId, new SnmpMibBeanProperty(utsDHCPPoolManualBindVlanId, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.6.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsDHCPPoolManualBindHardwareAddress, new SnmpMibBeanProperty(utsDHCPPoolManualBindHardwareAddress, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.6.1.4", ISnmpConstant.MAC_ADDRESS));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.6.1.6", ISnmpConstant.INTEGER));
 
     }
 

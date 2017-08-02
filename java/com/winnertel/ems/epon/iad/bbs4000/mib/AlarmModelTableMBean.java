@@ -33,13 +33,13 @@ public class AlarmModelTableMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utAlarmModelOID, new SnmpMibBeanProperty(utAlarmModelOID, ".1.3.6.1.4.1.41355.1800.3.1.1.4.1.1.1", ISnmpConstant.OBJID));
-        initProperty(utAlarmModelSeverity, new SnmpMibBeanProperty(utAlarmModelSeverity, ".1.3.6.1.4.1.41355.1800.3.1.1.4.1.1.2", ISnmpConstant.INTEGER));
-        initProperty(utAlarmModelType, new SnmpMibBeanProperty(utAlarmModelType, ".1.3.6.1.4.1.41355.1800.3.1.1.4.1.1.3", ISnmpConstant.INTEGER));
-        initProperty(utAlarmModelProbableCause, new SnmpMibBeanProperty(utAlarmModelProbableCause, ".1.3.6.1.4.1.41355.1800.3.1.1.4.1.1.4", ISnmpConstant.INTEGER));
-        initProperty(utAlarmModelClearType, new SnmpMibBeanProperty(utAlarmModelClearType, ".1.3.6.1.4.1.41355.1800.3.1.1.4.1.1.5", ISnmpConstant.INTEGER));
-        initProperty(utAlarmModelResourceType, new SnmpMibBeanProperty(utAlarmModelResourceType, ".1.3.6.1.4.1.41355.1800.3.1.1.4.1.1.6", ISnmpConstant.INTEGER));
-        initProperty(utAlarmModelFilteredFlag, new SnmpMibBeanProperty(utAlarmModelFilteredFlag, ".1.3.6.1.4.1.41355.1800.3.1.1.4.1.1.7", ISnmpConstant.INTEGER));
+        initProperty(utAlarmModelOID, new SnmpMibBeanProperty(utAlarmModelOID, ".1.3.6.1.4.1.45121.1800.3.1.1.4.1.1.1", ISnmpConstant.OBJID));
+        initProperty(utAlarmModelSeverity, new SnmpMibBeanProperty(utAlarmModelSeverity, ".1.3.6.1.4.1.45121.1800.3.1.1.4.1.1.2", ISnmpConstant.INTEGER));
+        initProperty(utAlarmModelType, new SnmpMibBeanProperty(utAlarmModelType, ".1.3.6.1.4.1.45121.1800.3.1.1.4.1.1.3", ISnmpConstant.INTEGER));
+        initProperty(utAlarmModelProbableCause, new SnmpMibBeanProperty(utAlarmModelProbableCause, ".1.3.6.1.4.1.45121.1800.3.1.1.4.1.1.4", ISnmpConstant.INTEGER));
+        initProperty(utAlarmModelClearType, new SnmpMibBeanProperty(utAlarmModelClearType, ".1.3.6.1.4.1.45121.1800.3.1.1.4.1.1.5", ISnmpConstant.INTEGER));
+        initProperty(utAlarmModelResourceType, new SnmpMibBeanProperty(utAlarmModelResourceType, ".1.3.6.1.4.1.45121.1800.3.1.1.4.1.1.6", ISnmpConstant.INTEGER));
+        initProperty(utAlarmModelFilteredFlag, new SnmpMibBeanProperty(utAlarmModelFilteredFlag, ".1.3.6.1.4.1.45121.1800.3.1.1.4.1.1.7", ISnmpConstant.INTEGER));
 
     }
 

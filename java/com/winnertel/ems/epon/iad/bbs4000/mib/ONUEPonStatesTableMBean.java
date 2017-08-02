@@ -35,11 +35,11 @@ public class ONUEPonStatesTableMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsPonIfExtIndex, new SnmpMibBeanProperty(utsPonIfExtIndex, ".1.3.6.1.4.1.41355.1800.4.2.1.1.1.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsPonIfExtStatsFramePonTxOk, new SnmpMibBeanProperty(utsPonIfExtStatsFramePonTxOk, ".1.3.6.1.4.1.41355.1800.4.2.1.1.1.1.80", ISnmpConstant.COUNTER64));
-        initProperty(utsPonIfExtStatsFramePonRxOk, new SnmpMibBeanProperty(utsPonIfExtStatsFramePonRxOk, ".1.3.6.1.4.1.41355.1800.4.2.1.1.1.1.81", ISnmpConstant.COUNTER64));
-        initProperty(utsPonIfExtStatsFramePonRxErr, new SnmpMibBeanProperty(utsPonIfExtStatsFramePonRxErr, ".1.3.6.1.4.1.41355.1800.4.2.1.1.1.1.82", ISnmpConstant.COUNTER64));
-        initProperty(utsPerfStaClearAll, new SnmpMibBeanProperty(utsPerfStaClearAll, ".1.3.6.1.4.1.41355.1800.4.4.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsPonIfExtIndex, new SnmpMibBeanProperty(utsPonIfExtIndex, ".1.3.6.1.4.1.45121.1800.4.2.1.1.1.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsPonIfExtStatsFramePonTxOk, new SnmpMibBeanProperty(utsPonIfExtStatsFramePonTxOk, ".1.3.6.1.4.1.45121.1800.4.2.1.1.1.1.80", ISnmpConstant.COUNTER64));
+        initProperty(utsPonIfExtStatsFramePonRxOk, new SnmpMibBeanProperty(utsPonIfExtStatsFramePonRxOk, ".1.3.6.1.4.1.45121.1800.4.2.1.1.1.1.81", ISnmpConstant.COUNTER64));
+        initProperty(utsPonIfExtStatsFramePonRxErr, new SnmpMibBeanProperty(utsPonIfExtStatsFramePonRxErr, ".1.3.6.1.4.1.45121.1800.4.2.1.1.1.1.82", ISnmpConstant.COUNTER64));
+        initProperty(utsPerfStaClearAll, new SnmpMibBeanProperty(utsPerfStaClearAll, ".1.3.6.1.4.1.45121.1800.4.4.1.1", ISnmpConstant.INTEGER));
 
     }
 

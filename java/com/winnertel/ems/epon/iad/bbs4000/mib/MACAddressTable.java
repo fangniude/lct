@@ -39,30 +39,30 @@ public class MACAddressTable extends SnmpMibBean
 	{
 		initProperty(utsLagExtLinkAggMacInterface, new SnmpMibBeanProperty(
 				utsLagExtLinkAggMacInterface,
-				".1.3.6.1.4.1.41355.1800.2.2.1.3.1.1", ISnmpConstant.STRING));
+				".1.3.6.1.4.1.45121.1800.2.2.1.3.1.1", ISnmpConstant.STRING));
 		initProperty(utsLagExtLinkAggMacModule, new SnmpMibBeanProperty(
 				utsLagExtLinkAggMacModule,
-				".1.3.6.1.4.1.41355.1800.2.2.1.3.1.2", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.2.1.3.1.2", ISnmpConstant.INTEGER));
 		initProperty(utsLagExtLinkAggMacPort, new SnmpMibBeanProperty(
-				utsLagExtLinkAggMacPort, ".1.3.6.1.4.1.41355.1800.2.2.1.3.1.3",
+				utsLagExtLinkAggMacPort, ".1.3.6.1.4.1.45121.1800.2.2.1.3.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsLagExtLinkAggMacVlanId, new SnmpMibBeanProperty(
 				utsLagExtLinkAggMacVlanId,
-				".1.3.6.1.4.1.41355.1800.2.2.1.3.1.4", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.2.1.3.1.4", ISnmpConstant.INTEGER));
 		initProperty(utsLagExtLinkAggMacIsStatic, new SnmpMibBeanProperty(
 				utsLagExtLinkAggMacIsStatic,
-				".1.3.6.1.4.1.41355.1800.2.2.1.3.1.5", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.2.1.3.1.5", ISnmpConstant.INTEGER));
 		initProperty(utsLagExtLinkAggMacIntfType, new SnmpMibBeanProperty(
 				utsLagExtLinkAggMacIntfType,
-				".1.3.6.1.4.1.41355.1800.2.2.1.3.1.6", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.2.1.3.1.6", ISnmpConstant.INTEGER));
 		initProperty(utsLagExtLinkAggMacTrunkId, new SnmpMibBeanProperty(
 				utsLagExtLinkAggMacTrunkId,
-				".1.3.6.1.4.1.41355.1800.2.2.1.3.1.7", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.2.1.3.1.7", ISnmpConstant.INTEGER));
 		initProperty(utsLagExtLinkAggMacAddress, new SnmpMibBeanProperty(
 				utsLagExtLinkAggMacAddress,
-				".1.3.6.1.4.1.41355.1800.2.2.1.3.1.8", ISnmpConstant.MAC_ADDRESS));
+				".1.3.6.1.4.1.45121.1800.2.2.1.3.1.8", ISnmpConstant.MAC_ADDRESS));
 		initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-				".1.3.6.1.4.1.41355.1800.2.2.1.3.1.9", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.2.1.3.1.9", ISnmpConstant.INTEGER));
 
 	}
 

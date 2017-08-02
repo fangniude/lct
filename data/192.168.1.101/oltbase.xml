@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+   <system>
+      <system_node system_name="68616E67" system_location="7A686F75" system_contact="313331" mgmt_vlan="0" mac_ageing="300" onu_auth_mode="mac_auth" vlan_transparent="enable" global_p2p="disable" mgmt_ip="0.0.0.0"/>
+   </system>
+   <vlan>
+      <olt_vlan vlan_id="2" vlan_name="test" vlan_member="0x03" vlan_tagmember="0x01"/>
+   </vlan>
+   <qinq>
+      <olt_qinq pon_id="1" qinq_index="1" qinq_startvlan="2" qinq_endvlan="0" qinq_ethertype="0x0" qinq_newvlan="2"/>
+   </qinq>
+</root>

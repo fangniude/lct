@@ -53,56 +53,56 @@ public class RSTPGeneral extends SnmpMibBean
 	{
 		initProperty(utsEponDot1dStpBridgeVlanID,
 				new SnmpMibBeanProperty(utsEponDot1dStpBridgeVlanID,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.4.1.1.1",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.4.1.1.1",
 						ISnmpConstant.INTEGER));
 		initProperty(utsDot1dStpPriority, new SnmpMibBeanProperty(
-				utsDot1dStpPriority, ".1.3.6.1.4.1.41355.1800.2.2.1.5.4.1.1.2",
+				utsDot1dStpPriority, ".1.3.6.1.4.1.45121.1800.2.2.1.5.4.1.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot1dStpTimeSinceTopologyChange,
 				new SnmpMibBeanProperty(utsDot1dStpTimeSinceTopologyChange,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.4.1.1.3",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.4.1.1.3",
 						ISnmpConstant.TIME_TICKS));
 		initProperty(utsDot1dStpTopChanges,
 				new SnmpMibBeanProperty(utsDot1dStpTopChanges,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.4.1.1.4",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.4.1.1.4",
 						ISnmpConstant.COUNTER));
 		initProperty(utsDot1dStpDesignatedRoot, new SnmpMibBeanProperty(
 				utsDot1dStpDesignatedRoot,
-				".1.3.6.1.4.1.41355.1800.2.2.1.5.4.1.1.5", ISnmpConstant.OCTETS));
+				".1.3.6.1.4.1.45121.1800.2.2.1.5.4.1.1.5", ISnmpConstant.OCTETS));
 		initProperty(utsDot1dStpRootCost, new SnmpMibBeanProperty(
-				utsDot1dStpRootCost, ".1.3.6.1.4.1.41355.1800.2.2.1.5.4.1.1.6",
+				utsDot1dStpRootCost, ".1.3.6.1.4.1.45121.1800.2.2.1.5.4.1.1.6",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot1dStpRootPort, new SnmpMibBeanProperty(
-				utsDot1dStpRootPort, ".1.3.6.1.4.1.41355.1800.2.2.1.5.4.1.1.7",
+				utsDot1dStpRootPort, ".1.3.6.1.4.1.45121.1800.2.2.1.5.4.1.1.7",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot1dStpMaxAge, new SnmpMibBeanProperty(
-				utsDot1dStpMaxAge, ".1.3.6.1.4.1.41355.1800.2.2.1.5.4.1.1.8",
+				utsDot1dStpMaxAge, ".1.3.6.1.4.1.45121.1800.2.2.1.5.4.1.1.8",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot1dStpHelloTime, new SnmpMibBeanProperty(
-				utsDot1dStpHelloTime, ".1.3.6.1.4.1.41355.1800.2.2.1.5.4.1.1.9",
+				utsDot1dStpHelloTime, ".1.3.6.1.4.1.45121.1800.2.2.1.5.4.1.1.9",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot1dStpHoldTime, new SnmpMibBeanProperty(
-				utsDot1dStpHoldTime, ".1.3.6.1.4.1.41355.1800.2.2.1.5.4.1.1.10",
+				utsDot1dStpHoldTime, ".1.3.6.1.4.1.45121.1800.2.2.1.5.4.1.1.10",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot1dStpForwardDelay, new SnmpMibBeanProperty(
 				utsDot1dStpForwardDelay,
-				".1.3.6.1.4.1.41355.1800.2.2.1.5.4.1.1.11",
+				".1.3.6.1.4.1.45121.1800.2.2.1.5.4.1.1.11",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot1dStpBridgeMaxAge, new SnmpMibBeanProperty(
 				utsDot1dStpBridgeMaxAge,
-				".1.3.6.1.4.1.41355.1800.2.2.1.5.4.1.1.12",
+				".1.3.6.1.4.1.45121.1800.2.2.1.5.4.1.1.12",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot1dStpBridgeHelloTime, new SnmpMibBeanProperty(
 				utsDot1dStpBridgeHelloTime,
-				".1.3.6.1.4.1.41355.1800.2.2.1.5.4.1.1.13",
+				".1.3.6.1.4.1.45121.1800.2.2.1.5.4.1.1.13",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot1dStpBridgeForwardDelay, new SnmpMibBeanProperty(
 				utsDot1dStpBridgeForwardDelay,
-				".1.3.6.1.4.1.41355.1800.2.2.1.5.4.1.1.14",
+				".1.3.6.1.4.1.45121.1800.2.2.1.5.4.1.1.14",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot1dStpBridgeOwnBridgeID,
 				new SnmpMibBeanProperty(utsDot1dStpBridgeOwnBridgeID,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.4.1.1.15",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.4.1.1.15",
 						ISnmpConstant.OCTETS));
 
 	}

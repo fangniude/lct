@@ -33,40 +33,40 @@ public class OnuVPorSvcProfTable extends SnmpMibBean {
 
   protected void init() {
     initProperty(virtualPortServiceProfileIndex, new SnmpMibBeanProperty(
-        virtualPortServiceProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.2.3.1.1",
+        virtualPortServiceProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.2.3.1.1",
         ISnmpConstant.GAUGE));
     initProperty(onuVPorSvcProfileName, new SnmpMibBeanProperty(
-        onuVPorSvcProfileName, ".1.3.6.1.4.1.41355.1.3.10.5.2.3.1.2",
+        onuVPorSvcProfileName, ".1.3.6.1.4.1.45121.1.3.10.5.2.3.1.2",
         ISnmpConstant.STRING));
     initProperty(upstreamTrafficMappingType, new SnmpMibBeanProperty(
-        upstreamTrafficMappingType, ".1.3.6.1.4.1.41355.1.3.10.5.2.3.1.3",
+        upstreamTrafficMappingType, ".1.3.6.1.4.1.45121.1.3.10.5.2.3.1.3",
         ISnmpConstant.GAUGE));
     initProperty(typeOfService, new SnmpMibBeanProperty(typeOfService,
-        ".1.3.6.1.4.1.41355.1.3.10.5.2.3.1.4", ISnmpConstant.INTEGER));
+        ".1.3.6.1.4.1.45121.1.3.10.5.2.3.1.4", ISnmpConstant.INTEGER));
     initProperty(encryptionMode, new SnmpMibBeanProperty(encryptionMode,
-        ".1.3.6.1.4.1.41355.1.3.10.5.2.3.1.5", ISnmpConstant.INTEGER));
+        ".1.3.6.1.4.1.45121.1.3.10.5.2.3.1.5", ISnmpConstant.INTEGER));
     initProperty(onuVPortSvcProfUpstreamBandwidthProfileIndex, new SnmpMibBeanProperty(onuVPortSvcProfUpstreamBandwidthProfileIndex,
-            ".1.3.6.1.4.1.41355.1.3.10.5.2.3.1.6", ISnmpConstant.GAUGE));
+            ".1.3.6.1.4.1.45121.1.3.10.5.2.3.1.6", ISnmpConstant.GAUGE));
     initProperty(upstreamFlowPriority, new SnmpMibBeanProperty(
-        upstreamFlowPriority, ".1.3.6.1.4.1.41355.1.3.10.5.2.3.1.7",
+        upstreamFlowPriority, ".1.3.6.1.4.1.45121.1.3.10.5.2.3.1.7",
         ISnmpConstant.GAUGE));
     initProperty(upstreamFlowWeight, new SnmpMibBeanProperty(
-        upstreamFlowWeight, ".1.3.6.1.4.1.41355.1.3.10.5.2.3.1.8",
+        upstreamFlowWeight, ".1.3.6.1.4.1.45121.1.3.10.5.2.3.1.8",
         ISnmpConstant.GAUGE));
     initProperty(upstreamRateControlSchedulerProfileIndex,
         new SnmpMibBeanProperty(upstreamRateControlSchedulerProfileIndex,
-            ".1.3.6.1.4.1.41355.1.3.10.5.2.3.1.9", ISnmpConstant.GAUGE));
+            ".1.3.6.1.4.1.45121.1.3.10.5.2.3.1.9", ISnmpConstant.GAUGE));
     initProperty(downstreamBandwidthProfileIndex, new SnmpMibBeanProperty(
-        downstreamBandwidthProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.2.3.1.10",
+        downstreamBandwidthProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.2.3.1.10",
         ISnmpConstant.GAUGE));
     initProperty(downstreamQueuingSchedulingType, new SnmpMibBeanProperty(
-        downstreamQueuingSchedulingType, ".1.3.6.1.4.1.41355.1.3.10.5.2.3.1.11",
+        downstreamQueuingSchedulingType, ".1.3.6.1.4.1.45121.1.3.10.5.2.3.1.11",
         ISnmpConstant.INTEGER));
     initProperty(downstreamFlowPriority, new SnmpMibBeanProperty(
-        downstreamFlowPriority, ".1.3.6.1.4.1.41355.1.3.10.5.2.3.1.12",
+        downstreamFlowPriority, ".1.3.6.1.4.1.45121.1.3.10.5.2.3.1.12",
         ISnmpConstant.GAUGE));
     initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-        ".1.3.6.1.4.1.41355.1.3.10.5.2.3.1.13", ISnmpConstant.INTEGER));
+        ".1.3.6.1.4.1.45121.1.3.10.5.2.3.1.13", ISnmpConstant.INTEGER));
 
   }
 

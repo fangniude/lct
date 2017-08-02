@@ -27,9 +27,9 @@ public class Dot3OnuClassifiImportTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsDot3OnuClassifiImportClassId, new SnmpMibBeanProperty(utsDot3OnuClassifiImportClassId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.21.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuClassifiImportFileName, new SnmpMibBeanProperty(utsDot3OnuClassifiImportFileName, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.21.1.2", ISnmpConstant.STRING));
-    initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.21.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuClassifiImportClassId, new SnmpMibBeanProperty(utsDot3OnuClassifiImportClassId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.21.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuClassifiImportFileName, new SnmpMibBeanProperty(utsDot3OnuClassifiImportFileName, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.21.1.2", ISnmpConstant.STRING));
+    initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.21.1.3", ISnmpConstant.INTEGER));
 
   }
 

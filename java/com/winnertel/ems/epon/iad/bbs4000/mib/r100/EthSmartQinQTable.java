@@ -21,12 +21,12 @@ public class EthSmartQinQTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsEthSmartQinQModuleID, new SnmpMibBeanProperty(utsEthSmartQinQModuleID, ".1.3.6.1.4.1.41355.1800.2.2.1.9.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsEthSmartQinQPortID, new SnmpMibBeanProperty(utsEthSmartQinQPortID, ".1.3.6.1.4.1.41355.1800.2.2.1.9.1.2", ISnmpConstant.INTEGER));
-    initProperty(utsEthSmartQinQFrameType, new SnmpMibBeanProperty(utsEthSmartQinQFrameType, ".1.3.6.1.4.1.41355.1800.2.2.1.9.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsEthSmartQinQEtherType, new SnmpMibBeanProperty(utsEthSmartQinQEtherType, ".1.3.6.1.4.1.41355.1800.2.2.1.9.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsEthSmartQinQOutterVLANID, new SnmpMibBeanProperty(utsEthSmartQinQOutterVLANID, ".1.3.6.1.4.1.41355.1800.2.2.1.9.1.5", ISnmpConstant.INTEGER));
-    initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.2.1.9.1.6", ISnmpConstant.INTEGER));
+    initProperty(utsEthSmartQinQModuleID, new SnmpMibBeanProperty(utsEthSmartQinQModuleID, ".1.3.6.1.4.1.45121.1800.2.2.1.9.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsEthSmartQinQPortID, new SnmpMibBeanProperty(utsEthSmartQinQPortID, ".1.3.6.1.4.1.45121.1800.2.2.1.9.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsEthSmartQinQFrameType, new SnmpMibBeanProperty(utsEthSmartQinQFrameType, ".1.3.6.1.4.1.45121.1800.2.2.1.9.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsEthSmartQinQEtherType, new SnmpMibBeanProperty(utsEthSmartQinQEtherType, ".1.3.6.1.4.1.45121.1800.2.2.1.9.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsEthSmartQinQOutterVLANID, new SnmpMibBeanProperty(utsEthSmartQinQOutterVLANID, ".1.3.6.1.4.1.45121.1800.2.2.1.9.1.5", ISnmpConstant.INTEGER));
+    initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.2.1.9.1.6", ISnmpConstant.INTEGER));
   }
 
   public Integer getIfIndex() {

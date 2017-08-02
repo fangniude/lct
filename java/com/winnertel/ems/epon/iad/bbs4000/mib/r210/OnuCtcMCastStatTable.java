@@ -22,12 +22,12 @@ public class OnuCtcMCastStatTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsDot3OnuMCastStatMGroup, new SnmpMibBeanProperty(utsDot3OnuMCastStatMGroup, ".1.3.6.1.4.1.41355.1800.2.4.3.1.7.1.2", ISnmpConstant.IP_ADDRESS));
-    initProperty(utsDot3OnuMCastStatUserNum, new SnmpMibBeanProperty(utsDot3OnuMCastStatUserNum, ".1.3.6.1.4.1.41355.1800.2.4.3.1.7.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuMCastStatRequestNum, new SnmpMibBeanProperty(utsDot3OnuMCastStatRequestNum, ".1.3.6.1.4.1.41355.1800.2.4.3.1.7.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuMCastStatReqRejNum, new SnmpMibBeanProperty(utsDot3OnuMCastStatReqRejNum, ".1.3.6.1.4.1.41355.1800.2.4.3.1.7.1.5", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuMCastStatTotalTime, new SnmpMibBeanProperty(utsDot3OnuMCastStatTotalTime, ".1.3.6.1.4.1.41355.1800.2.4.3.1.7.1.6", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuMCastStatAverageTime, new SnmpMibBeanProperty(utsDot3OnuMCastStatAverageTime, ".1.3.6.1.4.1.41355.1800.2.4.3.1.7.1.7", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuMCastStatMGroup, new SnmpMibBeanProperty(utsDot3OnuMCastStatMGroup, ".1.3.6.1.4.1.45121.1800.2.4.3.1.7.1.2", ISnmpConstant.IP_ADDRESS));
+    initProperty(utsDot3OnuMCastStatUserNum, new SnmpMibBeanProperty(utsDot3OnuMCastStatUserNum, ".1.3.6.1.4.1.45121.1800.2.4.3.1.7.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuMCastStatRequestNum, new SnmpMibBeanProperty(utsDot3OnuMCastStatRequestNum, ".1.3.6.1.4.1.45121.1800.2.4.3.1.7.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuMCastStatReqRejNum, new SnmpMibBeanProperty(utsDot3OnuMCastStatReqRejNum, ".1.3.6.1.4.1.45121.1800.2.4.3.1.7.1.5", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuMCastStatTotalTime, new SnmpMibBeanProperty(utsDot3OnuMCastStatTotalTime, ".1.3.6.1.4.1.45121.1800.2.4.3.1.7.1.6", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuMCastStatAverageTime, new SnmpMibBeanProperty(utsDot3OnuMCastStatAverageTime, ".1.3.6.1.4.1.45121.1800.2.4.3.1.7.1.7", ISnmpConstant.INTEGER));
   }
 
 

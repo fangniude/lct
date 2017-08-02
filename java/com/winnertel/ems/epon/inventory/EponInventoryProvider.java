@@ -600,7 +600,7 @@ public class EponInventoryProvider extends InventoryProvider {
 				param.setReadCommunity(sb.toString());
 				SnmpProxy proxy = new SnmpProxy(param);
 
-				String[] oid = new String[] { ".1.3.6.1.4.1.41355.1.3.10.100.17.3.1.1.1.2" };
+				String[] oid = new String[] { ".1.3.6.1.4.1.45121.1.3.10.100.17.3.1.1.1.2" };
 				try {
 					Vector v = proxy.loadTable(oid, new int[] { 1 }, 1);
 					for (int i = 0; i < v.size(); i++) {
@@ -626,7 +626,7 @@ public class EponInventoryProvider extends InventoryProvider {
 				param.setReadCommunity(sb.toString());
 				SnmpProxy proxy = new SnmpProxy(param);
 
-				String[] oid = new String[] { ".1.3.6.1.4.1.41355.1.3.10.100.19.3.1.1.1.2" };
+				String[] oid = new String[] { ".1.3.6.1.4.1.45121.1.3.10.100.19.3.1.1.1.2" };
 				try {
 					Vector v = proxy.loadTable(oid, new int[] { 1 }, 1);
 					for (int i = 0; i < v.size(); i++) {
@@ -679,7 +679,7 @@ public class EponInventoryProvider extends InventoryProvider {
 				param.setReadCommunity(sb.toString());
 				SnmpProxy proxy = new SnmpProxy(param);
 
-				String[] oid = new String[] { ".1.3.6.1.4.1.41355.1.3.10.100.4024.3.1.1.1.2" };
+				String[] oid = new String[] { ".1.3.6.1.4.1.45121.1.3.10.100.4024.3.1.1.1.2" };
 				try {
 					Vector v = proxy.loadTable(oid, new int[] { 1 }, 1);
 					for (int i = 0; i < v.size() && i < 8; i++) {

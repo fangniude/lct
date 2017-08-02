@@ -39,73 +39,73 @@ public class Dot3Onu2RmsConfigTable extends SnmpMibBean {
 	protected void init() {
 		initProperty(utsDot3Onu2VoipModuleId, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipModuleId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipDeviceId, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipDeviceId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.2",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.2",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.3",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2VoipLogicalPortId, new SnmpMibBeanProperty(
 				utsDot3Onu2VoipLogicalPortId,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.47.1.4",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.47.1.4",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2RmsIpMode, new SnmpMibBeanProperty(
 				utsDot3Onu2RmsIpMode,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.64.1.1",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.64.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2RmsIpAddress,
 				new SnmpMibBeanProperty(utsDot3Onu2RmsIpAddress,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.64.1.2",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.64.1.2",
 						ISnmpConstant.IP_ADDRESS));
 		initProperty(utsDot3Onu2RmsNetmask,
 				new SnmpMibBeanProperty(utsDot3Onu2RmsNetmask,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.64.1.3",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.64.1.3",
 						ISnmpConstant.IP_ADDRESS));
 		initProperty(utsDot3Onu2RmsDefaultGw,
 				new SnmpMibBeanProperty(utsDot3Onu2RmsDefaultGw,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.64.1.4",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.64.1.4",
 						ISnmpConstant.IP_ADDRESS));
 		initProperty(utsDot3Onu2RmsPppoeMode, new SnmpMibBeanProperty(
 				utsDot3Onu2RmsPppoeMode,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.64.1.5",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.64.1.5",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2RmsPppoeUserName,
 				new SnmpMibBeanProperty(utsDot3Onu2RmsPppoeUserName,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.64.1.6",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.64.1.6",
 						ISnmpConstant.STRING));
 		initProperty(utsDot3Onu2RmsPppoePassword,
 				new SnmpMibBeanProperty(utsDot3Onu2RmsPppoePassword,
-						".1.3.6.1.4.1.41355.1800.2.3.1.2.1.64.1.7",
+						".1.3.6.1.4.1.45121.1800.2.3.1.2.1.64.1.7",
 						ISnmpConstant.STRING));
 		initProperty(utsDot3Onu2RmsTaggedFlag, new SnmpMibBeanProperty(
 				utsDot3Onu2RmsTaggedFlag,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.64.1.8",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.64.1.8",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2RmsCvlan, new SnmpMibBeanProperty(
-				utsDot3Onu2RmsCvlan, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.64.1.9",
+				utsDot3Onu2RmsCvlan, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.64.1.9",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2RmsSvlan, new SnmpMibBeanProperty(
 				utsDot3Onu2RmsSvlan,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.64.1.10",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.64.1.10",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2RmsPriority, new SnmpMibBeanProperty(
 				utsDot3Onu2RmsPriority,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.64.1.11",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.64.1.11",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2RmsUrlBlockNum, new SnmpMibBeanProperty(
 				utsDot3Onu2RmsUrlBlockNum,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.64.1.12",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.64.1.12",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2RmsUrlBlockSequence, new SnmpMibBeanProperty(
 				utsDot3Onu2RmsUrlBlockSequence,
-				".1.3.6.1.4.1.41355.1800.2.3.1.2.1.64.1.13",
+				".1.3.6.1.4.1.45121.1800.2.3.1.2.1.64.1.13",
 				ISnmpConstant.INTEGER));
 		initProperty(utsDot3Onu2RmsUrl, new SnmpMibBeanProperty(
-				utsDot3Onu2RmsUrl, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.64.1.14",
+				utsDot3Onu2RmsUrl, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.64.1.14",
 				ISnmpConstant.STRING));
 
 	}

@@ -27,12 +27,12 @@ public class AclExtProfileImportTable extends SnmpMibBean
 	{
 		initProperty(utsAclExtProfileImportProfileId, new SnmpMibBeanProperty(
 				utsAclExtProfileImportProfileId,
-				".1.3.6.1.4.1.41355.1800.2.4.2.3.1.1", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.4.2.3.1.1", ISnmpConstant.INTEGER));
 		initProperty(utsAclExtProfileImportFileName, new SnmpMibBeanProperty(
 				utsAclExtProfileImportFileName,
-				".1.3.6.1.4.1.41355.1800.2.4.2.3.1.2", ISnmpConstant.STRING));
+				".1.3.6.1.4.1.45121.1800.2.4.2.3.1.2", ISnmpConstant.STRING));
 		initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS,
-				".1.3.6.1.4.1.41355.1800.2.4.2.3.1.3", ISnmpConstant.INTEGER));
+				".1.3.6.1.4.1.45121.1800.2.4.2.3.1.3", ISnmpConstant.INTEGER));
 
 	}
 

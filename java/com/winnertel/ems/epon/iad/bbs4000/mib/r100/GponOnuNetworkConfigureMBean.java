@@ -31,18 +31,18 @@ public class GponOnuNetworkConfigureMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(onuCfgSlotNo, new SnmpMibBeanProperty(onuCfgSlotNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.1", ISnmpConstant.INTEGER));
-        initProperty(onuCfgPortNo, new SnmpMibBeanProperty(onuCfgPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.2", ISnmpConstant.INTEGER));
-        initProperty(onuCfgLogicalPortNo, new SnmpMibBeanProperty(onuCfgLogicalPortNo, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.3", ISnmpConstant.INTEGER));
-        initProperty(onuCfgOnuMacAddress, new SnmpMibBeanProperty(onuCfgOnuMacAddress, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.42", ISnmpConstant.MAC_ADDRESS));
-        initProperty(onuCfgOnuDHCPMode, new SnmpMibBeanProperty(onuCfgOnuDHCPMode, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.43", ISnmpConstant.INTEGER));
-        initProperty(onuCfgOnuIPAddress, new SnmpMibBeanProperty(onuCfgOnuIPAddress, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.44", ISnmpConstant.IP_ADDRESS));
-        initProperty(onuCfgOnuIPMask, new SnmpMibBeanProperty(onuCfgOnuIPMask, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.45", ISnmpConstant.IP_ADDRESS));
-        initProperty(onuCfgOnuDefaultGateway, new SnmpMibBeanProperty(onuCfgOnuDefaultGateway, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.46", ISnmpConstant.IP_ADDRESS));
-        initProperty(onuCfgMacLimit, new SnmpMibBeanProperty(onuCfgMacLimit, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.48", ISnmpConstant.GAUGE));
-        initProperty(onuCfgOnuFastLeaveCapability, new SnmpMibBeanProperty(onuCfgOnuFastLeaveCapability, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.50", ISnmpConstant.GAUGE));
+        initProperty(onuCfgSlotNo, new SnmpMibBeanProperty(onuCfgSlotNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.1", ISnmpConstant.INTEGER));
+        initProperty(onuCfgPortNo, new SnmpMibBeanProperty(onuCfgPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.2", ISnmpConstant.INTEGER));
+        initProperty(onuCfgLogicalPortNo, new SnmpMibBeanProperty(onuCfgLogicalPortNo, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.3", ISnmpConstant.INTEGER));
+        initProperty(onuCfgOnuMacAddress, new SnmpMibBeanProperty(onuCfgOnuMacAddress, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.42", ISnmpConstant.MAC_ADDRESS));
+        initProperty(onuCfgOnuDHCPMode, new SnmpMibBeanProperty(onuCfgOnuDHCPMode, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.43", ISnmpConstant.INTEGER));
+        initProperty(onuCfgOnuIPAddress, new SnmpMibBeanProperty(onuCfgOnuIPAddress, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.44", ISnmpConstant.IP_ADDRESS));
+        initProperty(onuCfgOnuIPMask, new SnmpMibBeanProperty(onuCfgOnuIPMask, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.45", ISnmpConstant.IP_ADDRESS));
+        initProperty(onuCfgOnuDefaultGateway, new SnmpMibBeanProperty(onuCfgOnuDefaultGateway, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.46", ISnmpConstant.IP_ADDRESS));
+        initProperty(onuCfgMacLimit, new SnmpMibBeanProperty(onuCfgMacLimit, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.48", ISnmpConstant.GAUGE));
+        initProperty(onuCfgOnuFastLeaveCapability, new SnmpMibBeanProperty(onuCfgOnuFastLeaveCapability, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.50", ISnmpConstant.GAUGE));
 
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.1.5.1.57", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.1.5.1.57", ISnmpConstant.INTEGER));
     }
 
     public Integer getOnuCfgSlotNo() {

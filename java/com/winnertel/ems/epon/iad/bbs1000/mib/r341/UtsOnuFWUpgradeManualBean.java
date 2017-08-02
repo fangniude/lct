@@ -19,11 +19,11 @@ public class UtsOnuFWUpgradeManualBean extends SnmpMibBean {
     }
 
     protected void init() {
-	initProperty(utsOnuFWUpgradeManualPortListBitMap, new SnmpMibBeanProperty(utsOnuFWUpgradeManualPortListBitMap, ".1.3.6.1.4.1.41355.1800.2.3.1.7.12.1", ISnmpConstant.OCTETS));
-	initProperty(utsOnuFWUpgradeManualOption, new SnmpMibBeanProperty(utsOnuFWUpgradeManualOption, ".1.3.6.1.4.1.41355.1800.2.3.1.7.12.2", ISnmpConstant.INTEGER));
-	initProperty(utsOnuFWUpgradeManualActCommitFlag, new SnmpMibBeanProperty(utsOnuFWUpgradeManualActCommitFlag, ".1.3.6.1.4.1.41355.1800.2.3.1.7.12.3", ISnmpConstant.INTEGER));
-	initProperty(utsOnuFWUpgradeManualCurrentStatus, new SnmpMibBeanProperty(utsOnuFWUpgradeManualCurrentStatus, ".1.3.6.1.4.1.41355.1800.2.3.1.7.12.4", ISnmpConstant.OCTETS));
-	initProperty(utsOnuFWUpgradeManualManualStop, new SnmpMibBeanProperty(utsOnuFWUpgradeManualManualStop, ".1.3.6.1.4.1.41355.1800.2.3.1.7.12.5", ISnmpConstant.INTEGER));
+	initProperty(utsOnuFWUpgradeManualPortListBitMap, new SnmpMibBeanProperty(utsOnuFWUpgradeManualPortListBitMap, ".1.3.6.1.4.1.45121.1800.2.3.1.7.12.1", ISnmpConstant.OCTETS));
+	initProperty(utsOnuFWUpgradeManualOption, new SnmpMibBeanProperty(utsOnuFWUpgradeManualOption, ".1.3.6.1.4.1.45121.1800.2.3.1.7.12.2", ISnmpConstant.INTEGER));
+	initProperty(utsOnuFWUpgradeManualActCommitFlag, new SnmpMibBeanProperty(utsOnuFWUpgradeManualActCommitFlag, ".1.3.6.1.4.1.45121.1800.2.3.1.7.12.3", ISnmpConstant.INTEGER));
+	initProperty(utsOnuFWUpgradeManualCurrentStatus, new SnmpMibBeanProperty(utsOnuFWUpgradeManualCurrentStatus, ".1.3.6.1.4.1.45121.1800.2.3.1.7.12.4", ISnmpConstant.OCTETS));
+	initProperty(utsOnuFWUpgradeManualManualStop, new SnmpMibBeanProperty(utsOnuFWUpgradeManualManualStop, ".1.3.6.1.4.1.45121.1800.2.3.1.7.12.5", ISnmpConstant.INTEGER));
     }
 
     public byte[] getUtsOnuFWUpgradeManualPortListBitMap() {

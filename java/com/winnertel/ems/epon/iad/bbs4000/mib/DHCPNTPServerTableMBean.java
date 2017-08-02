@@ -30,9 +30,9 @@ public class DHCPNTPServerTableMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDHCPPoolName, new SnmpMibBeanProperty(utsDHCPPoolName, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.2.1.1", ISnmpConstant.STRING));
-        initProperty(utsDHCPPoolNtpServerIpAddress, new SnmpMibBeanProperty(utsDHCPPoolNtpServerIpAddress, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.8.1.2", ISnmpConstant.STRING));
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.2.1.6.3.8.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsDHCPPoolName, new SnmpMibBeanProperty(utsDHCPPoolName, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.2.1.1", ISnmpConstant.STRING));
+        initProperty(utsDHCPPoolNtpServerIpAddress, new SnmpMibBeanProperty(utsDHCPPoolNtpServerIpAddress, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.8.1.2", ISnmpConstant.STRING));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.2.1.6.3.8.1.4", ISnmpConstant.INTEGER));
 
     }
 

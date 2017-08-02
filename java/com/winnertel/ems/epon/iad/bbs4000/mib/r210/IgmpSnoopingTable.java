@@ -21,12 +21,12 @@ public class IgmpSnoopingTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsIgmpSnoopingVID, new SnmpMibBeanProperty(utsIgmpSnoopingVID, ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.3.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsIgmpSnoopingGroupAddress, new SnmpMibBeanProperty(utsIgmpSnoopingGroupAddress, ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.3.1.2", ISnmpConstant.INTEGER));
-    initProperty(utsIgmpSnoopingType, new SnmpMibBeanProperty(utsIgmpSnoopingType, ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.3.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsIgmpSnoopingExpiryTime, new SnmpMibBeanProperty(utsIgmpSnoopingExpiryTime, ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.3.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsIgmpSnoopingEgressPortList, new SnmpMibBeanProperty(utsIgmpSnoopingEgressPortList, ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.3.1.5", ISnmpConstant.OCTETS));
-    initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.2.2.1.6.9.3.1.6", ISnmpConstant.INTEGER));
+    initProperty(utsIgmpSnoopingVID, new SnmpMibBeanProperty(utsIgmpSnoopingVID, ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.3.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsIgmpSnoopingGroupAddress, new SnmpMibBeanProperty(utsIgmpSnoopingGroupAddress, ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.3.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsIgmpSnoopingType, new SnmpMibBeanProperty(utsIgmpSnoopingType, ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.3.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsIgmpSnoopingExpiryTime, new SnmpMibBeanProperty(utsIgmpSnoopingExpiryTime, ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.3.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsIgmpSnoopingEgressPortList, new SnmpMibBeanProperty(utsIgmpSnoopingEgressPortList, ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.3.1.5", ISnmpConstant.OCTETS));
+    initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.2.2.1.6.9.3.1.6", ISnmpConstant.INTEGER));
   }
 
   public Integer getUtsIgmpSnoopingVID() {

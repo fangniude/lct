@@ -26,14 +26,14 @@ public class PonSystemGroup extends SnmpMibBean {
   }
 
   protected void init() {
-//    initProperty(utsPonSysVlanIdBase, new SnmpMibBeanProperty(utsPonSysVlanIdBase, ".1.3.6.1.4.1.41355.1800.2.1.1.2.1", ISnmpConstant.INTEGER));
-    initProperty(utsPonSysLocalAuthentication, new SnmpMibBeanProperty(utsPonSysLocalAuthentication, ".1.3.6.1.4.1.41355.1800.2.1.1.2.2", ISnmpConstant.INTEGER));
-    initProperty(utsPonSysLogicalPortStrictBinging, new SnmpMibBeanProperty(utsPonSysLogicalPortStrictBinging, ".1.3.6.1.4.1.41355.1800.2.1.1.2.3", ISnmpConstant.INTEGER));
-    initProperty(utsPonSysSlaSynchronization, new SnmpMibBeanProperty(utsPonSysSlaSynchronization, ".1.3.6.1.4.1.41355.1800.2.1.1.2.4", ISnmpConstant.INTEGER));
-    initProperty(utsPonSysOltMACAgingTime, new SnmpMibBeanProperty(utsPonSysOltMACAgingTime, ".1.3.6.1.4.1.41355.1800.2.1.1.2.5", ISnmpConstant.INTEGER));
-    initProperty(utsPonSysOnuAuthTimeOut, new SnmpMibBeanProperty(utsPonSysOnuAuthTimeOut, ".1.3.6.1.4.1.41355.1800.2.1.1.2.6", ISnmpConstant.INTEGER));
-//    initProperty(utsPonSysOlpMode, new SnmpMibBeanProperty(utsPonSysOlpMode, ".1.3.6.1.4.1.41355.1800.2.1.1.2.7", ISnmpConstant.INTEGER));
-    initProperty(utsPonSysDot1adTPID, new SnmpMibBeanProperty(utsPonSysDot1adTPID, ".1.3.6.1.4.1.41355.1800.2.1.1.2.8", ISnmpConstant.INTEGER));
+//    initProperty(utsPonSysVlanIdBase, new SnmpMibBeanProperty(utsPonSysVlanIdBase, ".1.3.6.1.4.1.45121.1800.2.1.1.2.1", ISnmpConstant.INTEGER));
+    initProperty(utsPonSysLocalAuthentication, new SnmpMibBeanProperty(utsPonSysLocalAuthentication, ".1.3.6.1.4.1.45121.1800.2.1.1.2.2", ISnmpConstant.INTEGER));
+    initProperty(utsPonSysLogicalPortStrictBinging, new SnmpMibBeanProperty(utsPonSysLogicalPortStrictBinging, ".1.3.6.1.4.1.45121.1800.2.1.1.2.3", ISnmpConstant.INTEGER));
+    initProperty(utsPonSysSlaSynchronization, new SnmpMibBeanProperty(utsPonSysSlaSynchronization, ".1.3.6.1.4.1.45121.1800.2.1.1.2.4", ISnmpConstant.INTEGER));
+    initProperty(utsPonSysOltMACAgingTime, new SnmpMibBeanProperty(utsPonSysOltMACAgingTime, ".1.3.6.1.4.1.45121.1800.2.1.1.2.5", ISnmpConstant.INTEGER));
+    initProperty(utsPonSysOnuAuthTimeOut, new SnmpMibBeanProperty(utsPonSysOnuAuthTimeOut, ".1.3.6.1.4.1.45121.1800.2.1.1.2.6", ISnmpConstant.INTEGER));
+//    initProperty(utsPonSysOlpMode, new SnmpMibBeanProperty(utsPonSysOlpMode, ".1.3.6.1.4.1.45121.1800.2.1.1.2.7", ISnmpConstant.INTEGER));
+    initProperty(utsPonSysDot1adTPID, new SnmpMibBeanProperty(utsPonSysDot1adTPID, ".1.3.6.1.4.1.45121.1800.2.1.1.2.8", ISnmpConstant.INTEGER));
   }
 
 

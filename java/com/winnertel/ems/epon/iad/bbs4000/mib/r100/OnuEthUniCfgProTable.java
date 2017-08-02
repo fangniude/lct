@@ -38,16 +38,16 @@ public class OnuEthUniCfgProTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(onuEthUniCfgProEthernetUNIProfileIndex, new SnmpMibBeanProperty(onuEthUniCfgProEthernetUNIProfileIndex, ".1.3.6.1.4.1.41355.1.3.10.5.1.8.1.1", ISnmpConstant.GAUGE));
-        initProperty(onuEthUniCfgProProfileName, new SnmpMibBeanProperty(onuEthUniCfgProProfileName, ".1.3.6.1.4.1.41355.1.3.10.5.1.8.1.2", ISnmpConstant.STRING));
-        initProperty(onuEthUniCfgProAutoNegotiation, new SnmpMibBeanProperty(onuEthUniCfgProAutoNegotiation, ".1.3.6.1.4.1.41355.1.3.10.5.1.8.1.3", ISnmpConstant.INTEGER));
-        initProperty(onuEthUniCfgProSpeed, new SnmpMibBeanProperty(onuEthUniCfgProSpeed, ".1.3.6.1.4.1.41355.1.3.10.5.1.8.1.4", ISnmpConstant.INTEGER));
-        initProperty(onuEthUniCfgProDuplex, new SnmpMibBeanProperty(onuEthUniCfgProDuplex, ".1.3.6.1.4.1.41355.1.3.10.5.1.8.1.5", ISnmpConstant.INTEGER));
-        initProperty(onuEthUniCfgProExpectedType, new SnmpMibBeanProperty(onuEthUniCfgProExpectedType, ".1.3.6.1.4.1.41355.1.3.10.5.1.8.1.6", ISnmpConstant.GAUGE));
-        initProperty(onuEthUniCfgProMaxFrameSize, new SnmpMibBeanProperty(onuEthUniCfgProMaxFrameSize, ".1.3.6.1.4.1.41355.1.3.10.5.1.8.1.7", ISnmpConstant.GAUGE));
-        initProperty(onuEthUniCfgProIndDTEDCE, new SnmpMibBeanProperty(onuEthUniCfgProIndDTEDCE, ".1.3.6.1.4.1.41355.1.3.10.5.1.8.1.8", ISnmpConstant.INTEGER));
+        initProperty(onuEthUniCfgProEthernetUNIProfileIndex, new SnmpMibBeanProperty(onuEthUniCfgProEthernetUNIProfileIndex, ".1.3.6.1.4.1.45121.1.3.10.5.1.8.1.1", ISnmpConstant.GAUGE));
+        initProperty(onuEthUniCfgProProfileName, new SnmpMibBeanProperty(onuEthUniCfgProProfileName, ".1.3.6.1.4.1.45121.1.3.10.5.1.8.1.2", ISnmpConstant.STRING));
+        initProperty(onuEthUniCfgProAutoNegotiation, new SnmpMibBeanProperty(onuEthUniCfgProAutoNegotiation, ".1.3.6.1.4.1.45121.1.3.10.5.1.8.1.3", ISnmpConstant.INTEGER));
+        initProperty(onuEthUniCfgProSpeed, new SnmpMibBeanProperty(onuEthUniCfgProSpeed, ".1.3.6.1.4.1.45121.1.3.10.5.1.8.1.4", ISnmpConstant.INTEGER));
+        initProperty(onuEthUniCfgProDuplex, new SnmpMibBeanProperty(onuEthUniCfgProDuplex, ".1.3.6.1.4.1.45121.1.3.10.5.1.8.1.5", ISnmpConstant.INTEGER));
+        initProperty(onuEthUniCfgProExpectedType, new SnmpMibBeanProperty(onuEthUniCfgProExpectedType, ".1.3.6.1.4.1.45121.1.3.10.5.1.8.1.6", ISnmpConstant.GAUGE));
+        initProperty(onuEthUniCfgProMaxFrameSize, new SnmpMibBeanProperty(onuEthUniCfgProMaxFrameSize, ".1.3.6.1.4.1.45121.1.3.10.5.1.8.1.7", ISnmpConstant.GAUGE));
+        initProperty(onuEthUniCfgProIndDTEDCE, new SnmpMibBeanProperty(onuEthUniCfgProIndDTEDCE, ".1.3.6.1.4.1.45121.1.3.10.5.1.8.1.8", ISnmpConstant.INTEGER));
 
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1.3.10.5.1.8.1.9", ISnmpConstant.INTEGER));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1.3.10.5.1.8.1.9", ISnmpConstant.INTEGER));
     }
 
     public Long getOnuEthUniCfgProEthernetUNIProfileIndex() {

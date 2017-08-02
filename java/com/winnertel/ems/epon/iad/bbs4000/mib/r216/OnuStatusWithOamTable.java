@@ -29,14 +29,14 @@ public class OnuStatusWithOamTable extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsOnuSlotId, new SnmpMibBeanProperty(utsOnuSlotId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.4.1.1.1", ISnmpConstant.INTEGER));
-        initProperty(utsOnuPortId, new SnmpMibBeanProperty(utsOnuPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.4.1.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsOnuLogicalPortId, new SnmpMibBeanProperty(utsOnuLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.4.1.1.3", ISnmpConstant.INTEGER));
-        initProperty(utsOnuHardwareType, new SnmpMibBeanProperty(utsOnuHardwareType, ".1.3.6.1.4.1.41355.1800.2.3.1.2.4.1.1.4", ISnmpConstant.INTEGER));
-        initProperty(utsOnuHardwareRev, new SnmpMibBeanProperty(utsOnuHardwareRev, ".1.3.6.1.4.1.41355.1800.2.3.1.2.4.1.1.5", ISnmpConstant.STRING));
-        initProperty(utsOnuFirmwareVersion, new SnmpMibBeanProperty(utsOnuFirmwareVersion, ".1.3.6.1.4.1.41355.1800.2.3.1.2.4.1.1.6", ISnmpConstant.STRING));
-        initProperty(utsOnuSoftwareVersion, new SnmpMibBeanProperty(utsOnuSoftwareVersion, ".1.3.6.1.4.1.41355.1800.2.3.1.2.4.1.1.7", ISnmpConstant.STRING));
-        initProperty(utsOnuMacAddress, new SnmpMibBeanProperty(utsOnuMacAddress, ".1.3.6.1.4.1.41355.1800.2.3.1.2.4.1.1.8", ISnmpConstant.MAC_ADDRESS));
+        initProperty(utsOnuSlotId, new SnmpMibBeanProperty(utsOnuSlotId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.4.1.1.1", ISnmpConstant.INTEGER));
+        initProperty(utsOnuPortId, new SnmpMibBeanProperty(utsOnuPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.4.1.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsOnuLogicalPortId, new SnmpMibBeanProperty(utsOnuLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.4.1.1.3", ISnmpConstant.INTEGER));
+        initProperty(utsOnuHardwareType, new SnmpMibBeanProperty(utsOnuHardwareType, ".1.3.6.1.4.1.45121.1800.2.3.1.2.4.1.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsOnuHardwareRev, new SnmpMibBeanProperty(utsOnuHardwareRev, ".1.3.6.1.4.1.45121.1800.2.3.1.2.4.1.1.5", ISnmpConstant.STRING));
+        initProperty(utsOnuFirmwareVersion, new SnmpMibBeanProperty(utsOnuFirmwareVersion, ".1.3.6.1.4.1.45121.1800.2.3.1.2.4.1.1.6", ISnmpConstant.STRING));
+        initProperty(utsOnuSoftwareVersion, new SnmpMibBeanProperty(utsOnuSoftwareVersion, ".1.3.6.1.4.1.45121.1800.2.3.1.2.4.1.1.7", ISnmpConstant.STRING));
+        initProperty(utsOnuMacAddress, new SnmpMibBeanProperty(utsOnuMacAddress, ".1.3.6.1.4.1.45121.1800.2.3.1.2.4.1.1.8", ISnmpConstant.MAC_ADDRESS));
     }
 
     public Integer getUtsOnuSlotId() {

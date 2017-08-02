@@ -30,10 +30,10 @@ public class EponTrapTableMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsEponTrapDestIP, new SnmpMibBeanProperty(utsEponTrapDestIP, ".1.3.6.1.4.1.41355.1800.3.1.1.1.1.1.1", ISnmpConstant.IP_ADDRESS));
-        initProperty(utsEponTrapUDPPort, new SnmpMibBeanProperty(utsEponTrapUDPPort, ".1.3.6.1.4.1.41355.1800.3.1.1.1.1.1.2", ISnmpConstant.INTEGER));
-        initProperty(utsEponTrapCommunityString, new SnmpMibBeanProperty(utsEponTrapCommunityString, ".1.3.6.1.4.1.41355.1800.3.1.1.1.1.1.3", ISnmpConstant.STRING));
-        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.41355.1800.3.1.1.1.1.1.4", ISnmpConstant.INTEGER));
+        initProperty(utsEponTrapDestIP, new SnmpMibBeanProperty(utsEponTrapDestIP, ".1.3.6.1.4.1.45121.1800.3.1.1.1.1.1.1", ISnmpConstant.IP_ADDRESS));
+        initProperty(utsEponTrapUDPPort, new SnmpMibBeanProperty(utsEponTrapUDPPort, ".1.3.6.1.4.1.45121.1800.3.1.1.1.1.1.2", ISnmpConstant.INTEGER));
+        initProperty(utsEponTrapCommunityString, new SnmpMibBeanProperty(utsEponTrapCommunityString, ".1.3.6.1.4.1.45121.1800.3.1.1.1.1.1.3", ISnmpConstant.STRING));
+        initProperty(ROW_STATUS, new SnmpMibBeanProperty(ROW_STATUS, ".1.3.6.1.4.1.45121.1800.3.1.1.1.1.1.4", ISnmpConstant.INTEGER));
 
     }
 

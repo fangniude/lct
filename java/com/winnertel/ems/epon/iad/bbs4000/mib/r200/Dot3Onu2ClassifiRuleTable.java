@@ -39,21 +39,21 @@ public class Dot3Onu2ClassifiRuleTable extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsDot3OnuModuleId, new SnmpMibBeanProperty(utsDot3OnuModuleId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.4.1.1", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuDeviceId, new SnmpMibBeanProperty(utsDot3OnuDeviceId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.4.1.2", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuPortId, new SnmpMibBeanProperty(utsDot3OnuPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.4.1.3", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuLogicalPortId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.4.1.4", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuClassifiRuleIndex, new SnmpMibBeanProperty(utsDot3OnuClassifiRuleIndex, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.4.1.5", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuClassifiRuleEnable, new SnmpMibBeanProperty(utsDot3OnuClassifiRuleEnable, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.4.1.6", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuClassifiRuleProtId, new SnmpMibBeanProperty(utsDot3OnuClassifiRuleProtId, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.4.1.7", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuClassifiRuleUniPort, new SnmpMibBeanProperty(utsDot3OnuClassifiRuleUniPort, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.4.1.8", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuClassifiRuleL4SrcPortStart, new SnmpMibBeanProperty(utsDot3OnuClassifiRuleL4SrcPortStart, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.4.1.9", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuClassifiRuleL4SrcPortEnd, new SnmpMibBeanProperty(utsDot3OnuClassifiRuleL4SrcPortEnd, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.4.1.10", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuClassifiRuleL4DstPortStart, new SnmpMibBeanProperty(utsDot3OnuClassifiRuleL4DstPortStart, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.4.1.11", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuClassifiRuleL4DstPortEnd, new SnmpMibBeanProperty(utsDot3OnuClassifiRuleL4DstPortEnd, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.4.1.12", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuClassifiRuleDscp, new SnmpMibBeanProperty(utsDot3OnuClassifiRuleDscp, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.4.1.13", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuClassifiRule802Dot1p, new SnmpMibBeanProperty(utsDot3OnuClassifiRule802Dot1p, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.4.1.14", ISnmpConstant.INTEGER));
-    initProperty(utsDot3OnuClassifiRuleCosQueue, new SnmpMibBeanProperty(utsDot3OnuClassifiRuleCosQueue, ".1.3.6.1.4.1.41355.1800.2.3.1.2.1.4.1.15", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuModuleId, new SnmpMibBeanProperty(utsDot3OnuModuleId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.4.1.1", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuDeviceId, new SnmpMibBeanProperty(utsDot3OnuDeviceId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.4.1.2", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuPortId, new SnmpMibBeanProperty(utsDot3OnuPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.4.1.3", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuLogicalPortId, new SnmpMibBeanProperty(utsDot3OnuLogicalPortId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.4.1.4", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuClassifiRuleIndex, new SnmpMibBeanProperty(utsDot3OnuClassifiRuleIndex, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.4.1.5", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuClassifiRuleEnable, new SnmpMibBeanProperty(utsDot3OnuClassifiRuleEnable, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.4.1.6", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuClassifiRuleProtId, new SnmpMibBeanProperty(utsDot3OnuClassifiRuleProtId, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.4.1.7", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuClassifiRuleUniPort, new SnmpMibBeanProperty(utsDot3OnuClassifiRuleUniPort, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.4.1.8", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuClassifiRuleL4SrcPortStart, new SnmpMibBeanProperty(utsDot3OnuClassifiRuleL4SrcPortStart, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.4.1.9", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuClassifiRuleL4SrcPortEnd, new SnmpMibBeanProperty(utsDot3OnuClassifiRuleL4SrcPortEnd, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.4.1.10", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuClassifiRuleL4DstPortStart, new SnmpMibBeanProperty(utsDot3OnuClassifiRuleL4DstPortStart, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.4.1.11", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuClassifiRuleL4DstPortEnd, new SnmpMibBeanProperty(utsDot3OnuClassifiRuleL4DstPortEnd, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.4.1.12", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuClassifiRuleDscp, new SnmpMibBeanProperty(utsDot3OnuClassifiRuleDscp, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.4.1.13", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuClassifiRule802Dot1p, new SnmpMibBeanProperty(utsDot3OnuClassifiRule802Dot1p, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.4.1.14", ISnmpConstant.INTEGER));
+    initProperty(utsDot3OnuClassifiRuleCosQueue, new SnmpMibBeanProperty(utsDot3OnuClassifiRuleCosQueue, ".1.3.6.1.4.1.45121.1800.2.3.1.2.1.4.1.15", ISnmpConstant.INTEGER));
 
   }
 

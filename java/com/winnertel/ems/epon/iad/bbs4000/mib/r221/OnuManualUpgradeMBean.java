@@ -17,9 +17,9 @@ public class OnuManualUpgradeMBean extends SnmpMibBean {
     }
 
     protected void init() {
-        initProperty(utsDot3OnuFWUpgradeManualPortListBitMap, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeManualPortListBitMap, ".1.3.6.1.4.1.41355.1800.2.3.1.7.3.2.1", ISnmpConstant.OCTETS));
-        initProperty(utsDot3OnuFWUpgradeManualOption, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeManualOption, ".1.3.6.1.4.1.41355.1800.2.3.1.7.3.2.2", ISnmpConstant.INTEGER));
-        initProperty(utsDot3OnuFWUpgradeManualActCommitFlag, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeManualActCommitFlag, ".1.3.6.1.4.1.41355.1800.2.3.1.7.3.2.3", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuFWUpgradeManualPortListBitMap, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeManualPortListBitMap, ".1.3.6.1.4.1.45121.1800.2.3.1.7.3.2.1", ISnmpConstant.OCTETS));
+        initProperty(utsDot3OnuFWUpgradeManualOption, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeManualOption, ".1.3.6.1.4.1.45121.1800.2.3.1.7.3.2.2", ISnmpConstant.INTEGER));
+        initProperty(utsDot3OnuFWUpgradeManualActCommitFlag, new SnmpMibBeanProperty(utsDot3OnuFWUpgradeManualActCommitFlag, ".1.3.6.1.4.1.45121.1800.2.3.1.7.3.2.3", ISnmpConstant.INTEGER));
 
     }
 

@@ -32,22 +32,22 @@ public class IgmpSnoopCfgTable extends SnmpMibBean
 	protected void init()
 	{
 		initProperty(utsIgmpSnoopVlanId, new SnmpMibBeanProperty(
-				utsIgmpSnoopVlanId, ".1.3.6.1.4.1.41355.1800.2.2.1.5.5.1.1.1",
+				utsIgmpSnoopVlanId, ".1.3.6.1.4.1.45121.1800.2.2.1.5.5.1.1.1",
 				ISnmpConstant.INTEGER));
 		initProperty(utsIgmpSnoopLastMembAgeTmr,
 				new SnmpMibBeanProperty(utsIgmpSnoopLastMembAgeTmr,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.5.1.1.2",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.5.1.1.2",
 						ISnmpConstant.INTEGER));
 		initProperty(utsIgmpSnoopMCAgeTmr, new SnmpMibBeanProperty(
-				utsIgmpSnoopMCAgeTmr, ".1.3.6.1.4.1.41355.1800.2.2.1.5.5.1.1.3",
+				utsIgmpSnoopMCAgeTmr, ".1.3.6.1.4.1.45121.1800.2.2.1.5.5.1.1.3",
 				ISnmpConstant.INTEGER));
 		initProperty(utsIgmpSnoopRouterAgeTmr,
 				new SnmpMibBeanProperty(utsIgmpSnoopRouterAgeTmr,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.5.1.1.4",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.5.1.1.4",
 						ISnmpConstant.INTEGER));
 		initProperty(utsIgmpSnoopSrcOnlyMcAgeTmr,
 				new SnmpMibBeanProperty(utsIgmpSnoopSrcOnlyMcAgeTmr,
-						".1.3.6.1.4.1.41355.1800.2.2.1.5.5.1.1.5",
+						".1.3.6.1.4.1.45121.1800.2.2.1.5.5.1.1.5",
 						ISnmpConstant.INTEGER));
 
 	}

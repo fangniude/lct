@@ -20,8 +20,8 @@ public class OnuLoopbackTestGroup extends SnmpMibBean {
   }
 
   protected void init() {
-    initProperty(utsBBSMgmtLoopbackDetection, new SnmpMibBeanProperty(utsBBSMgmtLoopbackDetection, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.41", ISnmpConstant.INTEGER));
-    initProperty(utsBBSMgmtLoopbackDetectIntervalTime, new SnmpMibBeanProperty(utsBBSMgmtLoopbackDetectIntervalTime, ".1.3.6.1.4.1.41355.1800.2.1.1.4.1.42", ISnmpConstant.INTEGER));
+    initProperty(utsBBSMgmtLoopbackDetection, new SnmpMibBeanProperty(utsBBSMgmtLoopbackDetection, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.41", ISnmpConstant.INTEGER));
+    initProperty(utsBBSMgmtLoopbackDetectIntervalTime, new SnmpMibBeanProperty(utsBBSMgmtLoopbackDetectIntervalTime, ".1.3.6.1.4.1.45121.1800.2.1.1.4.1.42", ISnmpConstant.INTEGER));
   }
 
   public Integer getUtsDot3OltModuleId() {
