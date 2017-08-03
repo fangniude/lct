@@ -200,11 +200,14 @@ public class ProfileEditPanel extends UPanel {
             XmlProxy proxy = new XmlProxy(fApplication.getSnmpProxy().getTargetHost());
 
             ProfileOnuBean onu = new ProfileOnuBean(proxy);
+            onu.setId(i + "-1");
+            onu.setUpMaxBw(String.valueOf(upMaxBwF.getValue()));
+            onu.setDownMaxBw(String.valueOf(downMaxBwF.getValue()));
+            onu.add();
             setModel(onu);
             onu.setId(i + "-1");
             onu.setUpMaxBw(String.valueOf(upMaxBwF.getValue()));
             onu.setDownMaxBw(String.valueOf(downMaxBwF.getValue()));
-//            onu.add();
 
             TableModel model = uniTable.getModel();
             for (int j = 0; j < 4; j++) {
