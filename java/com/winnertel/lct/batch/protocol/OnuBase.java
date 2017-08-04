@@ -92,7 +92,7 @@ public class OnuBase {
 
     public void toFile(File onuFile) {
         try {
-            new Persister(new Format("<?xml version=\"1.0\" encoding=\"utf-8\"?>")).write(this, onuFile);
+            new Persister(new Format(0, "<?xml version=\"1.0\" encoding=\"utf-8\"?>")).write(this, onuFile);
         } catch (Exception e) {
             e.printStackTrace();
         }

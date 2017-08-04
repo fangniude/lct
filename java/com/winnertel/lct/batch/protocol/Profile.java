@@ -78,7 +78,7 @@ public class Profile {
 
     public void toFile(File profileFile) {
         try {
-            new Persister(new Format("<?xml version=\"1.0\" encoding=\"utf-8\"?>")).write(this, profileFile);
+            new Persister(new Format(0, "<?xml version=\"1.0\" encoding=\"utf-8\"?>")).write(this, profileFile);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -91,7 +91,7 @@ public class OltBase {
 
     public void toFile(File oltFile) {
         try {
-            new Persister(new Format("<?xml version=\"1.0\" encoding=\"utf-8\"?>")).write(this, oltFile);
+            new Persister(new Format(0, "<?xml version=\"1.0\" encoding=\"utf-8\"?>")).write(this, oltFile);
         } catch (Exception e) {
             e.printStackTrace();
         }
