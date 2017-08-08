@@ -6,6 +6,7 @@ import com.winnertel.em.framework.model.snmp.ISnmpProxy;
 import com.winnertel.em.framework.model.snmp.SnmpMibBean;
 import com.winnertel.em.framework.model.snmp.SnmpMibBeanProperty;
 import com.winnertel.lct.batch.LctContants;
+import com.winnertel.lct.batch.gui.TransformUtils;
 import com.winnertel.lct.batch.protocol.ProfileOnu;
 import com.winnertel.lct.batch.proxy.TableName;
 import com.winnertel.lct.batch.proxy.XmlOperation;
@@ -183,7 +184,7 @@ public class ProfileOnuBean extends SnmpMibBean {
         }
 
         Vector<ProfileOnuBean> vector = loadAll(new int[]{1});
-        vector.sort(Comparator.comparing(ProfileOnuBean::getId));
+        vector.sort(Comparator.comparingInt(b -> TransformUtils.idSortNum(b.getId())));
         return vector;
     }
 

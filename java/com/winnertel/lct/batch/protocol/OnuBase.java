@@ -1,5 +1,6 @@
 package com.winnertel.lct.batch.protocol;
 
+import com.winnertel.lct.batch.gui.TransformUtils;
 import com.winnertel.lct.batch.proxy.TableName;
 import com.winnertel.lct.batch.proxy.XmlTable;
 import org.simpleframework.xml.ElementList;
@@ -9,6 +10,7 @@ import org.simpleframework.xml.core.Persister;
 import org.simpleframework.xml.stream.Format;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -45,21 +47,21 @@ public class OnuBase {
 
         List<OnuMac> macList;
         if (macTable != null) {
-            macList = macTable.select().stream().map(OnuMac::valueOf).sorted(Comparator.comparing(OnuMac::getId)).collect(Collectors.toList());
+            macList = macTable.select().stream().map(OnuMac::valueOf).sorted(Comparator.comparingInt(b -> TransformUtils.idSortNum(b.getId()))).collect(Collectors.toList());
         } else {
             macList = new ArrayList<>();
         }
 
         List<OnuCfg> cfgList;
         if (cfgTable != null) {
-            cfgList = cfgTable.select().stream().map(OnuCfg::valueOf).sorted(Comparator.comparing(OnuCfg::getId)).collect(Collectors.toList());
+            cfgList = cfgTable.select().stream().map(OnuCfg::valueOf).sorted(Comparator.comparingInt(b -> TransformUtils.idSortNum(b.getId()))).collect(Collectors.toList());
         } else {
             cfgList = new ArrayList<>();
         }
 
         List<OnuUni> uniList;
         if (cfgTable != null) {
-            uniList = uniTable.select().stream().map(OnuUni::valueOf).sorted(Comparator.comparing(OnuUni::getId)).collect(Collectors.toList());
+            uniList = uniTable.select().stream().map(OnuUni::valueOf).sorted(Comparator.comparingInt(b -> TransformUtils.idSortNum(b.getId()))).collect(Collectors.toList());
         } else {
             uniList = new ArrayList<>();
         }
@@ -91,9 +93,9 @@ public class OnuBase {
         return new OnuBase();
     }
 
-    public void toFile(File onuFile) {
-        try {
-            new Persister(new Format(0, "<?xml version=\"1.0\" encoding=\"utf-8\"?>")).write(this, onuFile);
+    public void toFile(File file) {
+        try (FileWriter fileWriter = new FileWriter(file)) {
+            fileWriter.write(toXml());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -108,11 +110,11 @@ public class OnuBase {
         return null;
     }
 
-    public static String toXml(OnuBase data) {
+    public String toXml() {
         try {
             StringWriter out = new StringWriter();
-            new Persister(new Format("<?xml version=\"1.0\" encoding=\"utf-8\"?>")).write(data, out);
-            return out.toString();
+            new Persister(new Format("<?xml version=\"1.0\" encoding=\"utf-8\"?>")).write(this, out);
+            return out.toString().replaceAll("   ", "\t");
         } catch (Exception e) {
             e.printStackTrace();
         }

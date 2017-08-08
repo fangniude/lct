@@ -1,5 +1,6 @@
 package com.winnertel.lct.batch.protocol;
 
+import com.winnertel.lct.batch.gui.TransformUtils;
 import com.winnertel.lct.batch.proxy.TableName;
 import com.winnertel.lct.batch.proxy.XmlTable;
 import org.simpleframework.xml.ElementList;
@@ -9,6 +10,7 @@ import org.simpleframework.xml.core.Persister;
 import org.simpleframework.xml.stream.Format;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -42,14 +44,14 @@ public class Profile {
 
         List<ProfileOnu> onuList;
         if (onuTable != null) {
-            onuList = onuTable.select().stream().map(ProfileOnu::valueOf).sorted(Comparator.comparing(ProfileOnu::getId)).collect(Collectors.toList());
+            onuList = onuTable.select().stream().map(ProfileOnu::valueOf).sorted(Comparator.comparingInt(b -> TransformUtils.idSortNum(b.getId()))).collect(Collectors.toList());
         } else {
             onuList = new ArrayList<>();
         }
 
         List<ProfileUni> uniList;
         if (onuTable != null) {
-            uniList = uniTable.select().stream().map(ProfileUni::valueOf).sorted(Comparator.comparing(ProfileUni::getId)).collect(Collectors.toList());
+            uniList = uniTable.select().stream().map(ProfileUni::valueOf).sorted(Comparator.comparingInt(b -> TransformUtils.idSortNum(b.getId()))).collect(Collectors.toList());
         } else {
             uniList = new ArrayList<>();
         }
@@ -77,9 +79,9 @@ public class Profile {
         return new Profile();
     }
 
-    public void toFile(File profileFile) {
-        try {
-            new Persister(new Format(0, "<?xml version=\"1.0\" encoding=\"utf-8\"?>")).write(this, profileFile);
+    public void toFile(File file) {
+        try (FileWriter fileWriter = new FileWriter(file)) {
+            fileWriter.write(toXml());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -94,11 +96,11 @@ public class Profile {
         return null;
     }
 
-    public static String toXml(Profile data) {
+    public String toXml() {
         try {
             StringWriter out = new StringWriter();
-            new Persister(new Format("<?xml version=\"1.0\" encoding=\"utf-8\"?>")).write(data, out);
-            return out.toString();
+            new Persister(new Format("<?xml version=\"1.0\" encoding=\"utf-8\"?>")).write(this, out);
+            return out.toString().replaceAll("   ", "\t");
         } catch (Exception e) {
             e.printStackTrace();
         }

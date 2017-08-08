@@ -11,6 +11,7 @@ import org.simpleframework.xml.core.Persister;
 import org.simpleframework.xml.stream.Format;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -90,9 +91,9 @@ public class OltBase {
         return new OltBase();
     }
 
-    public void toFile(File oltFile) {
-        try {
-            new Persister(new Format(0, "<?xml version=\"1.0\" encoding=\"utf-8\"?>")).write(this, oltFile);
+    public void toFile(File file) {
+        try (FileWriter fileWriter = new FileWriter(file)) {
+            fileWriter.write(toXml());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -107,11 +108,11 @@ public class OltBase {
         return null;
     }
 
-    public static String toXml(OltBase data) {
+    public String toXml() {
         try {
             StringWriter out = new StringWriter();
-            new Persister(new Format("<?xml version=\"1.0\" encoding=\"utf-8\"?>")).write(data, out);
-            return out.toString();
+            new Persister(new Format("<?xml version=\"1.0\" encoding=\"utf-8\"?>")).write(this, out);
+            return out.toString().replaceAll("   ", "\t");
         } catch (Exception e) {
             e.printStackTrace();
         }

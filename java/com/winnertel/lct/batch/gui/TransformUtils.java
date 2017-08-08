@@ -131,4 +131,17 @@ public class TransformUtils {
             return String.valueOf(o);
         }
     }
+
+    public static int idSortNum(String id) {
+        String[] split = id.split("-");
+        int i = 0;
+        for (String s : split) {
+            if (i == 0) {
+                i = Integer.valueOf(s);
+            } else {
+                i = i * 10000 + Integer.valueOf(s);
+            }
+        }
+        return i;
+    }
 }
