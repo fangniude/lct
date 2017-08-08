@@ -10,6 +10,7 @@ import com.winnertel.lct.batch.protocol.OltQinQ;
 import com.winnertel.lct.batch.proxy.TableName;
 import com.winnertel.lct.batch.proxy.XmlOperation;
 
+import java.util.Comparator;
 import java.util.Vector;
 
 public class OltQinQBean extends SnmpMibBean {
@@ -98,7 +99,9 @@ public class OltQinQBean extends SnmpMibBean {
             prepareRead(getProperty(field.name()));
         }
 
-        return loadAll(new int[]{1, 1});
+        Vector<OltQinQBean> vector = loadAll(new int[]{1, 1});
+        vector.sort(Comparator.comparingInt(b -> Integer.valueOf(b.getId()) * 100 + Integer.valueOf(b.getIndex())));
+        return vector;
     }
 
     public boolean modify() throws MibBeanException {

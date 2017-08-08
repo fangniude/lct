@@ -90,17 +90,12 @@ public class OltVlanPanel extends UPanel {
                         Boolean tagged = (Boolean) model.getValueAt(rowIdx, 1);
                         Boolean untagged = (Boolean) model.getValueAt(rowIdx, 2);
                         if (colIdx == 1) {
-                            if (tagged)
+                            if (tagged) {
                                 model.setValueAt(Boolean.FALSE, rowIdx, 2);
-                            if (!tagged && !untagged) {
-                                model.setValueAt(Boolean.FALSE, rowIdx, 3);
                             }
-                        }
-                        if (colIdx == 2) {
-                            if (untagged)
+                        } else if (colIdx == 2) {
+                            if (untagged) {
                                 model.setValueAt(Boolean.FALSE, rowIdx, 1);
-                            if (!tagged && !untagged) {
-                                model.setValueAt(Boolean.FALSE, rowIdx, 3);
                             }
                         }
                         break;

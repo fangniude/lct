@@ -11,6 +11,7 @@ import org.simpleframework.xml.stream.Format;
 import java.io.File;
 import java.io.StringWriter;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -41,14 +42,14 @@ public class Profile {
 
         List<ProfileOnu> onuList;
         if (onuTable != null) {
-            onuList = onuTable.select().stream().map(ProfileOnu::valueOf).collect(Collectors.toList());
+            onuList = onuTable.select().stream().map(ProfileOnu::valueOf).sorted(Comparator.comparing(ProfileOnu::getId)).collect(Collectors.toList());
         } else {
             onuList = new ArrayList<>();
         }
 
         List<ProfileUni> uniList;
         if (onuTable != null) {
-            uniList = uniTable.select().stream().map(ProfileUni::valueOf).collect(Collectors.toList());
+            uniList = uniTable.select().stream().map(ProfileUni::valueOf).sorted(Comparator.comparing(ProfileUni::getId)).collect(Collectors.toList());
         } else {
             uniList = new ArrayList<>();
         }

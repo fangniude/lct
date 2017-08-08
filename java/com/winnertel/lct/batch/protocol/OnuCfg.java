@@ -9,11 +9,13 @@ import java.util.Map;
 @Root(name = "onu_cfg", strict = false)
 public class OnuCfg {
     public enum Field {
-        upMaxBw, downMaxBw, upCommittedBw, downCommittedBw, upFixBw, upBurstSize, downBurstSize, upPriority, mxuIpAddress, mxuIpMask, mxuGateway, mxuCVlan, mxuSVlan, mxuPriority
+        dbaSlaEnable, upMaxBw, downMaxBw, upCommittedBw, downCommittedBw, upFixBw, upBurstSize, downBurstSize, upPriority, mxuMgmtGlbEnable, mxuIpAddress, mxuIpMask, mxuGateway, mxuCVlan, mxuSVlan, mxuPriority
     }
 
     @Attribute(name = "onu_cfg_id", required = false)
     private String id;
+    @Attribute(name = "dba_sla_enable", required = false)
+    private String dbaSlaEnable;
     @Attribute(name = "up_max_bw", required = false)
     private String upMaxBw;
     @Attribute(name = "down_max_bw", required = false)
@@ -30,6 +32,8 @@ public class OnuCfg {
     private String downBurstSize;
     @Attribute(name = "up_priority", required = false)
     private String upPriority;
+    @Attribute(name = "mxuMgmtGlb_enable", required = false)
+    private String mxuMgmtGlbEnable;
     @Attribute(name = "mxuMgmtGlb_ip_address", required = false)
     private String mxuIpAddress;
     @Attribute(name = "mxuMgmtGlb_ip_mask", required = false)
@@ -79,6 +83,7 @@ public class OnuCfg {
     public Map<String, Object> toMap() {
         Map<String, Object> map = new HashMap<>();
         map.put("index.0", id);
+        map.put(Field.dbaSlaEnable.name(), dbaSlaEnable);
         map.put(Field.upMaxBw.name(), upMaxBw);
         map.put(Field.downMaxBw.name(), downMaxBw);
         map.put(Field.upCommittedBw.name(), upCommittedBw);
@@ -87,6 +92,7 @@ public class OnuCfg {
         map.put(Field.upBurstSize.name(), upBurstSize);
         map.put(Field.downBurstSize.name(), downBurstSize);
         map.put(Field.upPriority.name(), upPriority);
+        map.put(Field.mxuMgmtGlbEnable.name(), mxuMgmtGlbEnable);
         map.put(Field.mxuIpAddress.name(), mxuIpAddress);
         map.put(Field.mxuIpMask.name(), mxuIpMask);
         map.put(Field.mxuGateway.name(), mxuGateway);
@@ -99,6 +105,7 @@ public class OnuCfg {
     public static OnuCfg valueOf(Map<String, Object> map) {
         OnuCfg cfg = new OnuCfg();
         cfg.setId(valueOf(map.get("index.0")));
+        cfg.setDbaSlaEnable(valueOf(map.get(Field.dbaSlaEnable.name())));
         cfg.setUpMaxBw(valueOf(map.get(Field.upMaxBw.name())));
         cfg.setDownMaxBw(valueOf(map.get(Field.downMaxBw.name())));
         cfg.setUpCommittedBw(valueOf(map.get(Field.upCommittedBw.name())));
@@ -107,6 +114,7 @@ public class OnuCfg {
         cfg.setUpBurstSize(valueOf(map.get(Field.upBurstSize.name())));
         cfg.setDownBurstSize(valueOf(map.get(Field.downBurstSize.name())));
         cfg.setUpPriority(valueOf(map.get(Field.upPriority.name())));
+        cfg.setMxuMgmtGlbEnable(valueOf(map.get(Field.mxuMgmtGlbEnable.name())));
         cfg.setMxuIpAddress(valueOf(map.get(Field.mxuIpAddress.name())));
         cfg.setMxuIpMask(valueOf(map.get(Field.mxuIpMask.name())));
         cfg.setMxuGateway(valueOf(map.get(Field.mxuGateway.name())));
@@ -130,6 +138,14 @@ public class OnuCfg {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getDbaSlaEnable() {
+        return dbaSlaEnable;
+    }
+
+    public void setDbaSlaEnable(String dbaSlaEnable) {
+        this.dbaSlaEnable = dbaSlaEnable;
     }
 
     public String getUpMaxBw() {
@@ -194,6 +210,14 @@ public class OnuCfg {
 
     public void setUpPriority(String upPriority) {
         this.upPriority = upPriority;
+    }
+
+    public String getMxuMgmtGlbEnable() {
+        return mxuMgmtGlbEnable;
+    }
+
+    public void setMxuMgmtGlbEnable(String mxuMgmtGlbEnable) {
+        this.mxuMgmtGlbEnable = mxuMgmtGlbEnable;
     }
 
     public String getMxuIpAddress() {

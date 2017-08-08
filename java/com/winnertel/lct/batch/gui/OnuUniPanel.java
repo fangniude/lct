@@ -189,7 +189,7 @@ public class OnuUniPanel extends UPanel {
             vlanTagF.setEnabled(false);
             passVlanF.setEnabled(false);
             vlanTpidF.setEnabled(false);
-        } else if(1 == str) {
+        } else if (1 == str) {
             vlanTagF.setEnabled(true);
             passVlanF.setEnabled(false);
             vlanTpidF.setEnabled(true);
@@ -262,7 +262,7 @@ public class OnuUniPanel extends UPanel {
         if (vlanTagF.isEnabled()) {
             model.setVlanTag(String.valueOf(vlanTagF.getValue()));
         }
-        if(vlanTpidF.isEnabled()) {
+        if (vlanTpidF.isEnabled()) {
             model.setVlanTpid(String.valueOf(vlanTpidF.getSelectedItem()));
         }
         if (passVlanF.isEnabled()) {

@@ -21,6 +21,7 @@ import static com.winnertel.lct.batch.gui.TransformUtils.*;
 public class OnuCfgPanel extends UPanel {
 
     private final String idLabel = fStringMap.getString("onuId") + ": ";
+    private final String dbaSlaEnableLabel = fStringMap.getString("dbaSlaEnable") + ": ";
     private final String upMaxBwLabel = fStringMap.getString("utsDot3OnuUpstreamPir") + ": ";
     private final String downMaxBwLabel = fStringMap.getString("utsDot3OnuDownstreamPir") + ": ";
     private final String upCommittedBwLabel = fStringMap.getString("utsDot3OnuUpstreamCir") + ": ";
@@ -30,6 +31,7 @@ public class OnuCfgPanel extends UPanel {
     private final String downBurstSizeLabel = fStringMap.getString("utsDot3OnuDownstreamMaxBurstSize") + ": ";
     private final String upPriorityLabel = fStringMap.getString("utsDot3OnuUpstreamWeight") + ": ";
 
+    private final String mxuMgmtGlbEnableL = fStringMap.getString("mxuMgmtGlbEnable") + ": ";
     private final String mxuIpAddressL = fStringMap.getString("utsDot3Onu2CtcMduMgmtIpConfIpAddr") + ": ";
     private final String mxuIpMaskL = fStringMap.getString("utsDot3Onu2CtcMduMgmtIpConfIpMask") + ": ";
     private final String mxuGatewayL = fStringMap.getString("utsDot3Onu2CtcMduMgmtIpConfGw") + ": ";
@@ -39,6 +41,13 @@ public class OnuCfgPanel extends UPanel {
 
 
     private StringTextField idField = new StringTextField();
+
+    private int[] dbaSlaEnableVList = new int[]{1, 0};
+    private String[] dbaSlaEnableTList = new String[]{
+            fStringMap.getString("enable"),
+            fStringMap.getString("disable")
+    };
+    private JComboBox dbaSlaEnableF = new JComboBox(dbaSlaEnableTList);
     private IntegerTextField upMaxBwF = new IntegerTextField();
     private IntegerTextField downMaxBwF = new IntegerTextField();
     private IntegerTextField upCommittedBwF = new IntegerTextField();
@@ -48,6 +57,12 @@ public class OnuCfgPanel extends UPanel {
     private IntegerTextField downBurstSizeF = new IntegerTextField();
     private IntegerTextField upPriorityF = new IntegerTextField();
 
+    private int[] mxuMgmtGlbEnableVList = new int[]{1, 0};
+    private String[] mxuMgmtGlbEnableTList = new String[]{
+            fStringMap.getString("enable"),
+            fStringMap.getString("disable")
+    };
+    private JComboBox mxuMgmtGlbEnableF = new JComboBox(mxuMgmtGlbEnableTList);
     private IPAddressField mxuIpAddressF = new IPAddressField();
     private IPAddressField mxuIpMaskF = new IPAddressField(IPAddressField.IPMASK);
     private IPAddressField mxuGatewayF = new IPAddressField();
@@ -63,7 +78,7 @@ public class OnuCfgPanel extends UPanel {
 
     public void initGui() {
         JPanel baseInfoPanel = new JPanel();
-        NTLayout layout = new NTLayout(15, 3, NTLayout.FILL, NTLayout.CENTER, 5, 5);
+        NTLayout layout = new NTLayout(17, 3, NTLayout.FILL, NTLayout.CENTER, 5, 5);
         layout.setMargins(6, 10, 6, 10);
         baseInfoPanel.setLayout(layout);
         baseInfoPanel.setBorder(BorderFactory.createEtchedBorder());
@@ -71,6 +86,11 @@ public class OnuCfgPanel extends UPanel {
         baseInfoPanel.add(new JLabel(idLabel));
         baseInfoPanel.add(idField);
         baseInfoPanel.add(new HSpacer());
+
+        baseInfoPanel.add(new JLabel(dbaSlaEnableLabel));
+        baseInfoPanel.add(dbaSlaEnableF);
+        baseInfoPanel.add(new HSpacer());
+        dbaSlaEnableF.addItemListener(e -> dbaSlaEnableChange());
 
         baseInfoPanel.add(new JLabel(upMaxBwLabel));
         baseInfoPanel.add(upMaxBwF);
@@ -104,6 +124,11 @@ public class OnuCfgPanel extends UPanel {
         baseInfoPanel.add(upPriorityF);
         baseInfoPanel.add(new HSpacer());
 
+        baseInfoPanel.add(new JLabel(mxuMgmtGlbEnableL));
+        baseInfoPanel.add(mxuMgmtGlbEnableF);
+        baseInfoPanel.add(new HSpacer());
+        mxuMgmtGlbEnableF.addItemListener(e -> mxuMgmtGlbEnableChange());
+
         baseInfoPanel.add(new JLabel(mxuIpAddressL));
         baseInfoPanel.add(mxuIpAddressF);
         baseInfoPanel.add(new HSpacer());
@@ -136,6 +161,28 @@ public class OnuCfgPanel extends UPanel {
         allPanel.add(new VSpacer());
         setLayout(new BorderLayout());
         add(allPanel, BorderLayout.CENTER);
+    }
+
+    private void mxuMgmtGlbEnableChange() {
+        boolean enable = mxuMgmtGlbEnableF.getSelectedIndex() == 0;
+        mxuIpAddressF.setEnabled(enable);
+        mxuIpMaskF.setEnabled(enable);
+        mxuGatewayF.setEnabled(enable);
+        mxuCVlanF.setEnabled(enable);
+        mxuSVlanF.setEnabled(enable);
+        mxuPriorityF.setEnabled(enable);
+    }
+
+    private void dbaSlaEnableChange() {
+        boolean enable = dbaSlaEnableF.getSelectedIndex() == 0;
+        upMaxBwF.setEnabled(enable);
+        downMaxBwF.setEnabled(enable);
+        upCommittedBwF.setEnabled(enable);
+        downCommittedBwF.setEnabled(enable);
+        upFixBwF.setEnabled(enable);
+        upBurstSizeF.setEnabled(enable);
+        downBurstSizeF.setEnabled(enable);
+        upPriorityF.setEnabled(enable);
     }
 
     protected void initForm() {
@@ -184,7 +231,6 @@ public class OnuCfgPanel extends UPanel {
     public void refresh() {
         if (SnmpAction.IType.ADD.equals(fCommand)) {
             idField.setEditable(true);
-            return;
         } else {
             OnuCfgBean m = (OnuCfgBean) getModel();
             if (m == null) {
@@ -193,6 +239,8 @@ public class OnuCfgPanel extends UPanel {
 
             idField.setEditable(false);
             idField.setValue(TransformUtils.disableOnuId(m.getId()));
+            String dbaSlaEnable = m.getDbaSlaEnable();
+            dbaSlaEnableF.setSelectedIndex(getIndexFromValue(dbaSlaEnableVList, Integer.valueOf(dbaSlaEnable == null ? "1" : dbaSlaEnable)));
             setNullableIntField(upMaxBwF, m.getUpMaxBw());
             setNullableIntField(downMaxBwF, m.getDownMaxBw());
             setNullableIntField(upCommittedBwF, m.getUpCommittedBw());
@@ -202,6 +250,8 @@ public class OnuCfgPanel extends UPanel {
             setNullableIntField(downBurstSizeF, m.getDownBurstSize());
             setNullableIntField(upPriorityF, m.getUpPriority());
 
+            String mxuMgmtGlbEnable = m.getMxuMgmtGlbEnable();
+            mxuMgmtGlbEnableF.setSelectedIndex(getIndexFromValue(mxuMgmtGlbEnableVList, Integer.valueOf(mxuMgmtGlbEnable == null ? "1" : mxuMgmtGlbEnable)));
             mxuIpAddressF.setValue(fromHexIp(m.getMxuIpAddress()));
             mxuIpMaskF.setValue(fromHexIp(m.getMxuIpMask()));
             mxuGatewayF.setValue(fromHexIp(m.getMxuGateway()));
@@ -209,6 +259,8 @@ public class OnuCfgPanel extends UPanel {
             mxuSVlanF.setValue(fromHexShort(m.getMxuSVlan()));
             mxuPriorityF.setValue(fromHexByte(m.getMxuPriority()));
         }
+        dbaSlaEnableChange();
+        mxuMgmtGlbEnableChange();
     }
 
     public void updateModel() {
@@ -220,21 +272,36 @@ public class OnuCfgPanel extends UPanel {
         } else {
             model = (OnuCfgBean) getModel();
         }
-        model.setUpMaxBw(String.valueOf(upMaxBwF.getValue()));
-        model.setDownMaxBw(String.valueOf(downMaxBwF.getValue()));
-        model.setUpCommittedBw(String.valueOf(upCommittedBwF.getValue()));
-        model.setDownCommittedBw(String.valueOf(downCommittedBwF.getValue()));
-        model.setUpFixBw(String.valueOf(upFixBwF.getValue()));
-        model.setUpBurstSize(String.valueOf(upBurstSizeF.getValue()));
-        model.setDownBurstSize(String.valueOf(downBurstSizeF.getValue()));
-        model.setUpPriority(String.valueOf(upPriorityF.getValue()));
+        model.setDbaSlaEnable(String.valueOf(dbaSlaEnableVList[dbaSlaEnableF.getSelectedIndex()]));
+        if (dbaSlaEnableF.getSelectedIndex() == 0) {
+            model.setUpMaxBw(String.valueOf(upMaxBwF.getValue()));
+            model.setDownMaxBw(String.valueOf(downMaxBwF.getValue()));
+            model.setUpCommittedBw(String.valueOf(upCommittedBwF.getValue()));
+            model.setDownCommittedBw(String.valueOf(downCommittedBwF.getValue()));
+            model.setUpFixBw(String.valueOf(upFixBwF.getValue()));
+            model.setUpBurstSize(String.valueOf(upBurstSizeF.getValue()));
+            model.setDownBurstSize(String.valueOf(downBurstSizeF.getValue()));
+            model.setUpPriority(String.valueOf(upPriorityF.getValue()));
+        }
 
-        model.setMxuIpAddress(toHexIp(mxuIpAddressF.getValue()));
-        model.setMxuIpMask(toHexIp(mxuIpAddressF.getValue()));
-        model.setMxuGateway(toHexIp(mxuIpAddressF.getValue()));
-        model.setMxuCVlan(toHexShort(mxuCVlanF.getValue()));
-        model.setMxuSVlan(toHexShort(mxuSVlanF.getValue()));
-        model.setMxuPriority(toHexByte(mxuPriorityF.getValue()));
+        model.setMxuMgmtGlbEnable(String.valueOf(mxuMgmtGlbEnableVList[mxuMgmtGlbEnableF.getSelectedIndex()]));
+        if (mxuMgmtGlbEnableF.getSelectedIndex() == 0) {
+            model.setMxuIpAddress(toHexIp(mxuIpAddressF.getValue()));
+            model.setMxuIpMask(toHexIp(mxuIpMaskF.getValue()));
+            model.setMxuGateway(toHexIp(mxuGatewayF.getValue()));
+            model.setMxuCVlan(toHexShort(mxuCVlanF.getValue()));
+            model.setMxuSVlan(toHexShort(mxuSVlanF.getValue()));
+            model.setMxuPriority(toHexByte(mxuPriorityF.getValue()));
+        }
+    }
+
+    public int getIndexFromValue(int[] list, int v) {
+        for (int i = 0; i != list.length; i++) {
+            if (list[i] == v)
+                return i;
+        }
+
+        return 0;
     }
 
 }

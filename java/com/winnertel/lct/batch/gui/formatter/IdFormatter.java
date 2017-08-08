@@ -20,7 +20,7 @@ public class IdFormatter extends SnmpFieldFormatter {
     @Override
     public Object format(SnmpMibBean aMibBean, String aProperty) throws Exception {
         String id = String.valueOf(MibBeanUtil.getSimpleProperty(aMibBean, aProperty));
-        if(aMibBean instanceof OnuMacBean || aMibBean instanceof OnuCfgBean || aMibBean instanceof ProfileOnuBean) {
+        if (aMibBean instanceof OnuMacBean || aMibBean instanceof OnuCfgBean || aMibBean instanceof ProfileOnuBean) {
             return TransformUtils.disableOnuId(id);
         } else if (aMibBean instanceof OnuUniBean || aMibBean instanceof ProfileUniBean) {
             return TransformUtils.disableUniId(id);

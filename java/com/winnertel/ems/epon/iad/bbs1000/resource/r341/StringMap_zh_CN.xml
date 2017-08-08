@@ -4051,4 +4051,7 @@
     <String key="upPir" value="上行最大带宽(Kbps)" />
     <String key="downPir" value="下行最大带宽(Kbps)" />
 
+    <String key="dbaSlaEnable" value="DBA带宽控制" />
+    <String key="mxuMgmtGlbEnable" value="ONU IP地址管理" />
+
 </StringMap>

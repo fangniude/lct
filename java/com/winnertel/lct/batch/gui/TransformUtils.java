@@ -19,7 +19,7 @@ public class TransformUtils {
     }
 
     public static String fromHex(String hexStr) {
-        if (hexStr == null || "null".equals(hexStr) || "".equals(hexStr)   || "".equals(hexStr)) {
+        if (hexStr == null || "null".equals(hexStr) || "".equals(hexStr) || "".equals(hexStr)) {
             return "";
         }
         byte[] bytes = new byte[hexStr.length() / 2];
@@ -34,7 +34,7 @@ public class TransformUtils {
     }
 
     public static int fromHexByte(String hexStr) {
-        if (hexStr == null || "null".equals(hexStr) || "".equals(hexStr)  || hexStr.length() <= 2) {
+        if (hexStr == null || "null".equals(hexStr) || "".equals(hexStr) || hexStr.length() <= 2) {
             return 0;
         }
         return Byte.parseByte(hexStr.substring(2), 16);
@@ -45,7 +45,7 @@ public class TransformUtils {
     }
 
     public static int fromHexShort(String hexStr) {
-        if (hexStr == null || "null".equals(hexStr) || "".equals(hexStr)  || hexStr.length() <= 2) {
+        if (hexStr == null || "null".equals(hexStr) || "".equals(hexStr) || hexStr.length() <= 2) {
             return 0;
         }
         return Integer.parseInt(hexStr.substring(2), 16);

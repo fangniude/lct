@@ -10,6 +10,7 @@ import com.winnertel.lct.batch.protocol.OnuCfg;
 import com.winnertel.lct.batch.proxy.TableName;
 import com.winnertel.lct.batch.proxy.XmlOperation;
 
+import java.util.Comparator;
 import java.util.Vector;
 
 public class OnuCfgBean extends SnmpMibBean {
@@ -46,6 +47,14 @@ public class OnuCfgBean extends SnmpMibBean {
 
     public void setProperty(OnuCfg.Field field, String val) {
         getProperty(field.name()).setValue(val);
+    }
+
+    public String getDbaSlaEnable() {
+        return getProperty(OnuCfg.Field.dbaSlaEnable);
+    }
+
+    public void setDbaSlaEnable(String dbaSlaEnable) {
+        setProperty(OnuCfg.Field.dbaSlaEnable, dbaSlaEnable);
     }
 
     public String getUpMaxBw() {
@@ -112,6 +121,14 @@ public class OnuCfgBean extends SnmpMibBean {
         setProperty(OnuCfg.Field.upPriority, upPriority);
     }
 
+    public String getMxuMgmtGlbEnable() {
+        return getProperty(OnuCfg.Field.mxuMgmtGlbEnable);
+    }
+
+    public void setMxuMgmtGlbEnable(String mxuMgmtGlbEnable) {
+        setProperty(OnuCfg.Field.mxuMgmtGlbEnable, mxuMgmtGlbEnable);
+    }
+
     public String getMxuIpAddress() {
         return getProperty(OnuCfg.Field.mxuIpAddress);
     }
@@ -173,7 +190,9 @@ public class OnuCfgBean extends SnmpMibBean {
             prepareRead(getProperty(field.name()));
         }
 
-        return loadAll(new int[]{1});
+        Vector<OnuCfgBean> vector = loadAll(new int[]{1});
+        vector.sort(Comparator.comparing(OnuCfgBean::getId));
+        return vector;
     }
 
     public boolean modify() throws MibBeanException {

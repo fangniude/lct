@@ -9,11 +9,13 @@ import java.util.Map;
 @Root(name = "onu_cfg", strict = false)
 public class ProfileOnu {
     public enum Field {
-        upMaxBw, downMaxBw, upCommittedBw, downCommittedBw, upFixBw, upBurstSize, downBurstSize, upPriority, mxuIpAddress, mxuIpMask, mxuGateway, mxuCVlan, mxuSVlan, mxuPriority
+        dbaSlaEnable, upMaxBw, downMaxBw, upCommittedBw, downCommittedBw, upFixBw, upBurstSize, downBurstSize, upPriority, mxuIpAddress, mxuIpMask, mxuGateway, mxuCVlan, mxuSVlan, mxuPriority
     }
 
     @Attribute(name = "onu_cfg_id", required = false)
     private String id;
+    @Attribute(name = "dba_sla_enable", required = false)
+    private String dbaSlaEnable;
     @Attribute(name = "up_max_bw", required = false)
     private String upMaxBw;
     @Attribute(name = "down_max_bw", required = false)
@@ -79,6 +81,7 @@ public class ProfileOnu {
     public Map<String, Object> toMap() {
         Map<String, Object> map = new HashMap<>();
         map.put("index.0", id);
+        map.put(Field.dbaSlaEnable.name(), dbaSlaEnable);
         map.put(Field.upMaxBw.name(), upMaxBw);
         map.put(Field.downMaxBw.name(), downMaxBw);
         map.put(Field.upCommittedBw.name(), upCommittedBw);
@@ -99,6 +102,7 @@ public class ProfileOnu {
     public static ProfileOnu valueOf(Map<String, Object> map) {
         ProfileOnu cfg = new ProfileOnu();
         cfg.setId(valueOf(map.get("index.0")));
+        cfg.setDbaSlaEnable(valueOf(map.get(Field.dbaSlaEnable.name())));
         cfg.setUpMaxBw(valueOf(map.get(Field.upMaxBw.name())));
         cfg.setDownMaxBw(valueOf(map.get(Field.downMaxBw.name())));
         cfg.setUpCommittedBw(valueOf(map.get(Field.upCommittedBw.name())));
@@ -130,6 +134,14 @@ public class ProfileOnu {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getDbaSlaEnable() {
+        return dbaSlaEnable;
+    }
+
+    public void setDbaSlaEnable(String dbaSlaEnable) {
+        this.dbaSlaEnable = dbaSlaEnable;
     }
 
     public String getUpMaxBw() {

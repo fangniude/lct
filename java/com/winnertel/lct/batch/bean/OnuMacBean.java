@@ -10,6 +10,7 @@ import com.winnertel.lct.batch.protocol.OnuMac;
 import com.winnertel.lct.batch.proxy.TableName;
 import com.winnertel.lct.batch.proxy.XmlOperation;
 
+import java.util.Comparator;
 import java.util.Vector;
 
 public class OnuMacBean extends SnmpMibBean {
@@ -77,7 +78,9 @@ public class OnuMacBean extends SnmpMibBean {
             prepareRead(getProperty(field.name()));
         }
 
-        return loadAll(new int[]{1});
+        Vector<OnuMacBean> vector = loadAll(new int[]{1});
+        vector.sort(Comparator.comparing(OnuMacBean::getId));
+        return vector;
     }
 
     public boolean modify() throws MibBeanException {

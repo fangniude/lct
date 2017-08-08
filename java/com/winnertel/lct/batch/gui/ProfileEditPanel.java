@@ -201,13 +201,26 @@ public class ProfileEditPanel extends UPanel {
 
             ProfileOnuBean onu = new ProfileOnuBean(proxy);
             onu.setId(i + "-1");
-            onu.setUpMaxBw(String.valueOf(upMaxBwF.getValue()));
-            onu.setDownMaxBw(String.valueOf(downMaxBwF.getValue()));
+            onu.setDbaSlaEnable("1");
+            int upMaxBw = upMaxBwF.getValue();
+            int downMaxBw = downMaxBwF.getValue();
+            if (upMaxBw <= 0 && downMaxBw <= 0) {
+                onu.setDbaSlaEnable("0");
+            } else {
+                onu.setDbaSlaEnable("1");
+                onu.setUpMaxBw(String.valueOf(upMaxBw));
+                onu.setDownMaxBw(String.valueOf(downMaxBw));
+            }
             onu.add();
             setModel(onu);
             onu.setId(i + "-1");
-            onu.setUpMaxBw(String.valueOf(upMaxBwF.getValue()));
-            onu.setDownMaxBw(String.valueOf(downMaxBwF.getValue()));
+            if (upMaxBw <= 0 && downMaxBw <= 0) {
+                onu.setDbaSlaEnable("0");
+            } else {
+                onu.setDbaSlaEnable("1");
+                onu.setUpMaxBw(String.valueOf(upMaxBw));
+                onu.setDownMaxBw(String.valueOf(downMaxBw));
+            }
 
             TableModel model = uniTable.getModel();
             for (int j = 0; j < 4; j++) {

@@ -11,6 +11,7 @@ import org.simpleframework.xml.stream.Format;
 import java.io.File;
 import java.io.StringWriter;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -44,21 +45,21 @@ public class OnuBase {
 
         List<OnuMac> macList;
         if (macTable != null) {
-            macList = macTable.select().stream().map(OnuMac::valueOf).collect(Collectors.toList());
+            macList = macTable.select().stream().map(OnuMac::valueOf).sorted(Comparator.comparing(OnuMac::getId)).collect(Collectors.toList());
         } else {
             macList = new ArrayList<>();
         }
 
         List<OnuCfg> cfgList;
         if (cfgTable != null) {
-            cfgList = cfgTable.select().stream().map(OnuCfg::valueOf).collect(Collectors.toList());
+            cfgList = cfgTable.select().stream().map(OnuCfg::valueOf).sorted(Comparator.comparing(OnuCfg::getId)).collect(Collectors.toList());
         } else {
             cfgList = new ArrayList<>();
         }
 
         List<OnuUni> uniList;
         if (cfgTable != null) {
-            uniList = uniTable.select().stream().map(OnuUni::valueOf).collect(Collectors.toList());
+            uniList = uniTable.select().stream().map(OnuUni::valueOf).sorted(Comparator.comparing(OnuUni::getId)).collect(Collectors.toList());
         } else {
             uniList = new ArrayList<>();
         }

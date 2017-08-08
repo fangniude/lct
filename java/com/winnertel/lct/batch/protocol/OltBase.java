@@ -13,6 +13,7 @@ import org.simpleframework.xml.stream.Format;
 import java.io.File;
 import java.io.StringWriter;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -50,14 +51,14 @@ public class OltBase {
 
         List<OltVlan> vlanList;
         if (vlanTable != null) {
-            vlanList = vlanTable.select().stream().map(OltVlan::valueOf).collect(Collectors.toList());
+            vlanList = vlanTable.select().stream().map(OltVlan::valueOf).sorted(Comparator.comparingInt(ov -> Integer.valueOf(ov.getId()))).collect(Collectors.toList());
         } else {
             vlanList = new ArrayList<>();
         }
 
         List<OltQinQ> qinqList;
         if (vlanTable != null) {
-            qinqList = qinqTable.select().stream().map(OltQinQ::valueOf).collect(Collectors.toList());
+            qinqList = qinqTable.select().stream().map(OltQinQ::valueOf).sorted(Comparator.comparingInt(b -> Integer.valueOf(b.getId()) * 100 + Integer.valueOf(b.getIndex()))).collect(Collectors.toList());
         } else {
             qinqList = new ArrayList<>();
         }

@@ -61,6 +61,7 @@
         <Panel name="OnuCfgTable_Panel">
             <Table mib_bean="com.winnertel.lct.batch.bean.OnuCfgBean" snmp_proxy="com.winnertel.lct.batch.proxy.XmlProxy">
                 <Field name="id" mib_property="id"/>
+                <Field name="dbaSlaEnable" mib_property="dbaSlaEnable"/>
                 <Field name="upMaxBw" mib_property="upMaxBw"/>
                 <Field name="downMaxBw" mib_property="downMaxBw"/>
                 <Field name="upCommittedBw" mib_property="upCommittedBw"/>
@@ -69,6 +70,7 @@
                 <Field name="upBurstSize" mib_property="upBurstSize"/>
                 <Field name="downBurstSize" mib_property="downBurstSize"/>
                 <Field name="upPriority" mib_property="upPriority"/>
+                <Field name="mxuMgmtGlbEnable" mib_property="mxuMgmtGlbEnable"/>
                 <Field name="mxuIpAddress" mib_property="mxuIpAddress"/>
                 <Field name="mxuIpMask" mib_property="mxuIpMask"/>
                 <Field name="mxuGateway" mib_property="mxuGateway"/>
@@ -117,6 +119,7 @@
         <Panel name="ProfileOnuTable_Panel">
             <Table mib_bean="com.winnertel.lct.batch.bean.ProfileOnuBean" snmp_proxy="com.winnertel.lct.batch.proxy.XmlProxy">
                 <Field name="id" mib_property="id"/>
+                <Field name="dbaSlaEnable" mib_property="dbaSlaEnable"/>
                 <Field name="upMaxBw" mib_property="upMaxBw"/>
                 <Field name="downMaxBw" mib_property="downMaxBw"/>
                 <!--<Field name="upCommittedBw" mib_property="upCommittedBw"/>-->
@@ -12491,6 +12494,14 @@
         <Field name="desc" label="utsDot3OnuDescription" formatter="com.winnertel.lct.batch.gui.formatter.FromHexStringFormatter"/>
 
         <Field name="id" label="id"/>
+        <Field name="dbaSlaEnable" label="dbaSlaEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="enable"/>
+                    <Entry value="0" display="disable"/>
+                </ValueMap>
+            </Mib>
+        </Field>
         <Field name="upMaxBw" label="utsDot3OnuUpstreamPir"/>
         <Field name="downMaxBw" label="utsDot3OnuDownstreamPir"/>
         <Field name="upCommittedBw" label="utsDot3OnuUpstreamCir"/>
@@ -12499,6 +12510,14 @@
         <Field name="upBurstSize" label="utsDot3OnuUpstreamMaxBurstSize"/>
         <Field name="downBurstSize" label="utsDot3OnuDownstreamMaxBurstSize"/>
         <Field name="upPriority" label="utsDot3OnuUpstreamWeight"/>
+        <Field name="mxuMgmtGlbEnable" label="mxuMgmtGlbEnable">
+            <Mib>
+                <ValueMap>
+                    <Entry value="1" display="enable"/>
+                    <Entry value="0" display="disable"/>
+                </ValueMap>
+            </Mib>
+        </Field>
         <Field name="mxuIpAddress" label="utsDot3Onu2CtcMduMgmtIpConfIpAddr" formatter="com.winnertel.lct.batch.gui.formatter.FromHexIpFormatter"/>
         <Field name="mxuIpMask" label="utsDot3Onu2CtcMduMgmtIpConfIpMask" formatter="com.winnertel.lct.batch.gui.formatter.FromHexIpFormatter"/>
         <Field name="mxuGateway" label="utsDot3Onu2CtcMduMgmtIpConfGw" formatter="com.winnertel.lct.batch.gui.formatter.FromHexIpFormatter"/>

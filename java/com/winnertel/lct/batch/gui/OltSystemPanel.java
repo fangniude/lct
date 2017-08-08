@@ -179,7 +179,7 @@ public class OltSystemPanel extends UPanel {
             macAuthField.setSelectedIndex(0);
         }
         String vlanTransParent = mbean.getVlanTransParent();
-        if(Strings.isNotEmpty(vlanTransParent)) {
+        if (Strings.isNotEmpty(vlanTransParent)) {
             vlanTransParentField.setSelectedItem(vlanTransParent);
         } else {
             vlanTransParentField.setSelectedIndex(0);

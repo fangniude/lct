@@ -10,6 +10,7 @@ import com.winnertel.lct.batch.protocol.ProfileUni;
 import com.winnertel.lct.batch.proxy.TableName;
 import com.winnertel.lct.batch.proxy.XmlOperation;
 
+import java.util.Comparator;
 import java.util.Vector;
 
 public class ProfileUniBean extends SnmpMibBean {
@@ -71,6 +72,7 @@ public class ProfileUniBean extends SnmpMibBean {
     public void setPassVlan(String passVlan) {
         setProperty(ProfileUni.Field.passVlan, passVlan);
     }
+
     public String getVlanTpid() {
         return getProperty(ProfileUni.Field.vlanTpid);
     }
@@ -157,7 +159,9 @@ public class ProfileUniBean extends SnmpMibBean {
             prepareRead(getProperty(field.name()));
         }
 
-        return loadAll(new int[]{1});
+        Vector<ProfileUniBean> vector = loadAll(new int[]{1});
+        vector.sort(Comparator.comparing(ProfileUniBean::getId));
+        return vector;
     }
 
     public boolean modify() throws MibBeanException {

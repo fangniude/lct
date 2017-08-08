@@ -10,6 +10,7 @@ import com.winnertel.lct.batch.protocol.ProfileOnu;
 import com.winnertel.lct.batch.proxy.TableName;
 import com.winnertel.lct.batch.proxy.XmlOperation;
 
+import java.util.Comparator;
 import java.util.Vector;
 
 public class ProfileOnuBean extends SnmpMibBean {
@@ -46,6 +47,14 @@ public class ProfileOnuBean extends SnmpMibBean {
 
     public void setProperty(ProfileOnu.Field field, String val) {
         getProperty(field.name()).setValue(val);
+    }
+
+    public String getDbaSlaEnable() {
+        return getProperty(ProfileOnu.Field.dbaSlaEnable);
+    }
+
+    public void setDbaSlaEnable(String dbaSlaEnable) {
+        setProperty(ProfileOnu.Field.dbaSlaEnable, dbaSlaEnable);
     }
 
     public String getUpMaxBw() {
@@ -173,7 +182,9 @@ public class ProfileOnuBean extends SnmpMibBean {
             prepareRead(getProperty(field.name()));
         }
 
-        return loadAll(new int[]{1});
+        Vector<ProfileOnuBean> vector = loadAll(new int[]{1});
+        vector.sort(Comparator.comparing(ProfileOnuBean::getId));
+        return vector;
     }
 
     public boolean modify() throws MibBeanException {
