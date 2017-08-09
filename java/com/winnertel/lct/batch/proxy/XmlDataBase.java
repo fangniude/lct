@@ -118,11 +118,11 @@ public class XmlDataBase {
     }
 
     public void sendOnuBase() {
-        sendXml2Olt("onubase.xml", oltFile);
+        sendXml2Olt("onubase.xml", onuFile);
     }
 
     public void sendOnuProfile() {
-        sendXml2Olt("onuprofile.xml", oltFile);
+        sendXml2Olt("onuprofile.xml", profileFile);
     }
 
     private void sendXml2Olt(String fileName, File file) {
