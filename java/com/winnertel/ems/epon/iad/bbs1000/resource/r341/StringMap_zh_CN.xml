@@ -4015,8 +4015,12 @@
 
 
     <String key="id" value="ID" />
-    <String key="idLabel" value="ID" />
+    <String key="ponId" value="PON ID" />
     <String key="onuId" value="ONU ID" />
+    <String key="uniId" value="ONU UNI ID" />
+    <String key="profilePonId" value="PON ID" />
+    <String key="profileUniId" value="ONU UNI ID" />
+    <String key="idLabel" value="ID" />
     <String key="onuUniId" value="ONU UNI¶Ë¿Ú"/>
     <String key="name" value="Ãû³Æ" />
     <String key="member" value="¶Ë¿Ú" />

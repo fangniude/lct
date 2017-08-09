@@ -229,7 +229,7 @@ public class OnuUniPanel extends UPanel {
             }
 
             idField.setEditable(false);
-            idField.setValue(TransformUtils.disableUniId(m.getId()));
+            idField.setValue(TransformUtils.displayUniId(m.getId()));
             vlanModeF.setSelectedIndex(getIndexFromValue(utsDot3OnuEtherPortVlanModeVList, Integer.valueOf(m.getVlanMode())));
             setNullableIntField(vlanTagF, m.getVlanTag());
             vlanTpidF.setSelectedItem(m.getVlanTpid());

@@ -66,7 +66,7 @@ public class OnuMacPanel extends UPanel {
                 }
 
                 idField.setEditable(false);
-                idField.setValue(TransformUtils.disableOnuId(mbean.getId()));
+                idField.setValue(TransformUtils.displayOnuId(mbean.getId()));
                 macField.setValue(mbean.getMac());
                 descField.setValue(TransformUtils.fromHex(mbean.getDesc()));
             }

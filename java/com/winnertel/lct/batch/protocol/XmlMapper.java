@@ -21,7 +21,7 @@ public class XmlMapper {
 
         Profile profile = new Profile(Arrays.asList(onu, onu1, onu2), Arrays.asList(uni, uni1, uni2));
 
-        String str = Profile.toXml(profile);
+        String str = profile.toXml();
         System.out.println(str);
         Profile profile1 = Profile.fromXml(str);
         System.out.println(profile1);
@@ -41,7 +41,7 @@ public class XmlMapper {
         OnuUni uni2 = new OnuUni("id2", "vlanMode2", "vlanTag2", "vlanTpid2", "policingEnable2", "policingCir2", "policingCbs2", "policingEbs2", "dsCir2", "dsPir2", "dsEnable2", "loopDetect2");
 
         OnuBase onu = new OnuBase(Arrays.asList(bind, bind1, bind2), Arrays.asList(onuCfg, onuCfg1, onuCfg2), Arrays.asList(uni, uni1, uni2));
-        String str = OnuBase.toXml(onu);
+        String str = onu.toXml();
         System.out.println(str);
         OnuBase onuBase = OnuBase.fromXml(str);
         System.out.println(onuBase);
@@ -59,7 +59,7 @@ public class XmlMapper {
         OltQinQ qinq2 = new OltQinQ("id2", "index2", "startVlan2", "endVlan2", "etherType2", "newVlan2");
 
         OltBase olt = new OltBase(system, Arrays.asList(oltVlan, oltVlan1, oltVlan2), Arrays.asList(qinq, qinq1, qinq2));
-        String str = OltBase.toXml(olt);
+        String str = olt.toXml();
         System.out.println(str);
         OltBase oltBase = OltBase.fromXml(str);
         System.out.println(oltBase);

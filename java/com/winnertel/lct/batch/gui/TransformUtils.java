@@ -91,7 +91,7 @@ public class TransformUtils {
         return String.format("%s-%s", split[1], split[2]);
     }
 
-    public static String disableOnuId(String save) {
+    public static String displayOnuId(String save) {
         String[] split = save.split("-");
         return String.format("1/%s/%s", split[0], split[1]);
     }
@@ -101,9 +101,19 @@ public class TransformUtils {
         return String.format("%s-%s-%s", split[1], split[2], split[3]);
     }
 
-    public static String disableUniId(String save) {
+    public static String displayUniId(String save) {
         String[] split = save.split("-");
         return String.format("1/%s/%s/%s", split[0], split[1], split[2]);
+    }
+
+    public static String displayProfilePonId(String id) {
+        String[] split = id.split("-");
+        return String.format("PON 1/%s", split[0]);
+    }
+
+    public static String displayProfileUniId(String id) {
+        String[] split = id.split("-");
+        return String.format("PON 1/%s ONU UNI %s", split[0], split[2]);
     }
 
     public static void main(String[] args) {

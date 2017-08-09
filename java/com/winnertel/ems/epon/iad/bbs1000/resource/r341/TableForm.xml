@@ -23,7 +23,7 @@
         <!-- OltQinQTable -->
         <Panel name="OltQinQTable_Panel">
             <Table mib_bean="com.winnertel.lct.batch.bean.OltQinQBean" snmp_proxy="com.winnertel.lct.batch.proxy.XmlProxy">
-                <Field name="id" mib_property="id"/>
+                <Field name="ponId" mib_property="id"/>
                 <Field name="index" mib_property="index"/>
                 <Field name="startVlan" mib_property="startVlan"/>
                 <Field name="endVlan" mib_property="endVlan"/>
@@ -43,7 +43,7 @@
         <!--OnuMacTable_Panel-->
         <Panel name="OnuMacTable_Panel">
             <Table mib_bean="com.winnertel.lct.batch.bean.OnuMacBean" snmp_proxy="com.winnertel.lct.batch.proxy.XmlProxy">
-                <Field name="id" mib_property="id"/>
+                <Field name="onuId" mib_property="id"/>
                 <Field name="mac" mib_property="mac"/>
                 <Field name="desc" mib_property="desc"/>
             </Table>
@@ -60,7 +60,7 @@
         <!-- OnuCfgTable -->
         <Panel name="OnuCfgTable_Panel">
             <Table mib_bean="com.winnertel.lct.batch.bean.OnuCfgBean" snmp_proxy="com.winnertel.lct.batch.proxy.XmlProxy">
-                <Field name="id" mib_property="id"/>
+                <Field name="onuId" mib_property="id"/>
                 <Field name="dbaSlaEnable" mib_property="dbaSlaEnable"/>
                 <Field name="upMaxBw" mib_property="upMaxBw"/>
                 <Field name="downMaxBw" mib_property="downMaxBw"/>
@@ -91,7 +91,7 @@
         <!-- OnuUniTable -->
         <Panel name="OnuUniTable_Panel">
             <Table mib_bean="com.winnertel.lct.batch.bean.OnuUniBean" snmp_proxy="com.winnertel.lct.batch.proxy.XmlProxy">
-                <Field name="id" mib_property="id"/>
+                <Field name="uniId" mib_property="id"/>
                 <Field name="vlanMode" mib_property="vlanMode"/>
                 <Field name="vlanTag" mib_property="vlanTag"/>
                 <Field name="passVlan" mib_property="passVlan"/>
@@ -118,7 +118,7 @@
         <!-- ProfileOnuTable -->
         <Panel name="ProfileOnuTable_Panel">
             <Table mib_bean="com.winnertel.lct.batch.bean.ProfileOnuBean" snmp_proxy="com.winnertel.lct.batch.proxy.XmlProxy">
-                <Field name="id" mib_property="id"/>
+                <Field name="profilePonId" mib_property="id"/>
                 <Field name="dbaSlaEnable" mib_property="dbaSlaEnable"/>
                 <Field name="upMaxBw" mib_property="upMaxBw"/>
                 <Field name="downMaxBw" mib_property="downMaxBw"/>
@@ -148,7 +148,7 @@
         <!-- OnuUniTable -->
         <Panel name="ProfileUniTable_Panel">
             <Table mib_bean="com.winnertel.lct.batch.bean.ProfileUniBean" snmp_proxy="com.winnertel.lct.batch.proxy.XmlProxy">
-                <Field name="id" mib_property="id"/>
+                <Field name="profileUniId" mib_property="id"/>
                 <Field name="vlanMode" mib_property="vlanMode"/>
                 <Field name="vlanTag" mib_property="vlanTag"/>
                 <Field name="passVlan" mib_property="passVlan"/>
@@ -12526,6 +12526,11 @@
         <Field name="mxuPriority" label="utsDot3Onu2CtcMduMgmtIpConfDataPrio" formatter="com.winnertel.lct.batch.gui.formatter.FromHexByteFormatter"/>
 
         <Field name="id" label="id" formatter="com.winnertel.lct.batch.gui.formatter.IdFormatter"/>
+        <Field name="ponId" label="ponId" formatter="com.winnertel.lct.batch.gui.formatter.IdFormatter"/>
+        <Field name="onuId" label="onuId" formatter="com.winnertel.lct.batch.gui.formatter.IdFormatter"/>
+        <Field name="uniId" label="uniId" formatter="com.winnertel.lct.batch.gui.formatter.IdFormatter"/>
+        <Field name="profilePonId" label="profilePonId" formatter="com.winnertel.lct.batch.gui.formatter.ProfilePonIdFormatter"/>
+        <Field name="profileUniId" label="profileUniId" formatter="com.winnertel.lct.batch.gui.formatter.ProfileUniIdFormatter"/>
         <Field name="vlanMode" label="utsDot3OnuEtherPortVlanMode">
             <Mib>
                 <ValueMap>

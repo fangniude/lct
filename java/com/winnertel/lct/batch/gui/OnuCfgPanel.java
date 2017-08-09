@@ -238,7 +238,7 @@ public class OnuCfgPanel extends UPanel {
             }
 
             idField.setEditable(false);
-            idField.setValue(TransformUtils.disableOnuId(m.getId()));
+            idField.setValue(TransformUtils.displayOnuId(m.getId()));
             String dbaSlaEnable = m.getDbaSlaEnable();
             dbaSlaEnableF.setSelectedIndex(getIndexFromValue(dbaSlaEnableVList, Integer.valueOf(dbaSlaEnable == null ? "1" : dbaSlaEnable)));
             setNullableIntField(upMaxBwF, m.getUpMaxBw());

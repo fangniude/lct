@@ -1,40 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-   <onu>
-      <onu_attr onu_id="1-1" onu_mac="54:93:59:00:e1:f1" onu_desc="4f4e5531"/>
-      <onu_attr onu_id="1-2" onu_mac="00:0a:5a:22:e3:f7" onu_desc="4f4e5532"/>
-      <onu_attr onu_id="1-3" onu_mac="00:07:ba:5d:bc:09" onu_desc="4f4e5533"/>
-      <onu_attr onu_id="1-4" onu_mac="00:0a:5a:11:83:5c" onu_desc="4f4e5534"/>
-      <onu_cfg onu_cfg_id="1-1" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1"/>
-      <onu_cfg onu_cfg_id="1-2" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1"/>
-      <onu_cfg onu_cfg_id="1-3" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1"/>
-      <onu_cfg onu_cfg_id="2-2" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1" mxuMgmtGlb_ip_address="0x0101020b" mxuMgmtGlb_ip_mask="0xffffff00" mxuMgmtGlb_gateway="0x01010102" mxuMgmtGlb_cvlan="0x0fb4" mxuMgmtGlb_svlan="0x0000" mxuMgmtGlb_priority="0x00"/>
-      <onu_cfg onu_cfg_id="1-4" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1"/>
-      <onu_cfg onu_cfg_id="1-13" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1" mxuMgmtGlb_ip_address="0x01010211" mxuMgmtGlb_ip_mask="0xffffff00" mxuMgmtGlb_gateway="0x01010102" mxuMgmtGlb_cvlan="0x0fb4" mxuMgmtGlb_svlan="0x0000" mxuMgmtGlb_priority="0x00"/>
-      <onu_cfg onu_cfg_id="4-1" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1" mxuMgmtGlb_ip_address="0x01010118" mxuMgmtGlb_ip_mask="0xffffff00" mxuMgmtGlb_gateway="0x01010102" mxuMgmtGlb_cvlan="0x0fb4" mxuMgmtGlb_svlan="0x0000" mxuMgmtGlb_priority="0x00"/>
-      <onu_cfg onu_cfg_id="1-5" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1" mxuMgmtGlb_ip_address="0x01010213" mxuMgmtGlb_ip_mask="0xffffff00" mxuMgmtGlb_gateway="0x01010102" mxuMgmtGlb_cvlan="0x0fb4" mxuMgmtGlb_svlan="0x0000" mxuMgmtGlb_priority="0x00"/>
-      <onu_cfg onu_cfg_id="1-12" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1" mxuMgmtGlb_ip_address="0x01010212" mxuMgmtGlb_ip_mask="0xffffff00" mxuMgmtGlb_gateway="0x01010102" mxuMgmtGlb_cvlan="0x0fb4" mxuMgmtGlb_svlan="0x0000" mxuMgmtGlb_priority="0x00"/>
-      <onu_cfg onu_cfg_id="1-8" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1" mxuMgmtGlb_ip_address="0x01010216" mxuMgmtGlb_ip_mask="0xffffff00" mxuMgmtGlb_gateway="0x01010102" mxuMgmtGlb_cvlan="0x0fb4" mxuMgmtGlb_svlan="0x0000" mxuMgmtGlb_priority="0x00"/>
-      <onu_cfg onu_cfg_id="3-8" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1" mxuMgmtGlb_ip_address="0x01010112" mxuMgmtGlb_ip_mask="0xffffff00" mxuMgmtGlb_gateway="0x01010102" mxuMgmtGlb_cvlan="0x0fb4" mxuMgmtGlb_svlan="0x0000" mxuMgmtGlb_priority="0x00"/>
-   </onu>
-   <uni>
-      <onu_uni onu_uni_id="1-2-8" onu_vlan_mode="1" onu_vlan_tag="101" onu_vlan_tpid="0x8100" policing_enable="0" ds_enable="0" loop_detect="0"/>
-      <onu_uni onu_uni_id="1-2-7" onu_vlan_mode="1" onu_vlan_tag="101" onu_vlan_tpid="0x8100" policing_enable="0" ds_enable="0" loop_detect="0"/>
-      <onu_uni onu_uni_id="1-3-6" policing_enable="0" ds_enable="0" loop_detect="0"/>
-      <onu_uni onu_uni_id="1-2-6" onu_vlan_mode="1" onu_vlan_tag="101" onu_vlan_tpid="0x8100" policing_enable="0" ds_enable="0" loop_detect="0"/>
-      <onu_uni onu_uni_id="1-3-5" policing_enable="0" ds_enable="0" loop_detect="0"/>
-      <onu_uni onu_uni_id="1-2-5" onu_vlan_mode="1" onu_vlan_tag="101" onu_vlan_tpid="0x8100" policing_enable="0" ds_enable="0" loop_detect="0"/>
-      <onu_uni onu_uni_id="1-3-4" policing_enable="0" ds_enable="0" loop_detect="0"/>
-      <onu_uni onu_uni_id="1-2-4" onu_vlan_mode="1" onu_vlan_tag="101" onu_vlan_tpid="0x8100" policing_enable="0" ds_enable="0" loop_detect="0"/>
-      <onu_uni onu_uni_id="1-3-3" policing_enable="0" ds_enable="0" loop_detect="0"/>
-      <onu_uni onu_uni_id="1-1-4" policing_enable="0" ds_enable="0" loop_detect="0"/>
-      <onu_uni onu_uni_id="1-2-3" onu_vlan_mode="1" onu_vlan_tag="101" onu_vlan_tpid="0x8100" policing_enable="0" ds_enable="0" loop_detect="0"/>
-      <onu_uni onu_uni_id="1-3-2" policing_enable="0" ds_enable="0" loop_detect="0"/>
-      <onu_uni onu_uni_id="1-1-3" policing_enable="0" ds_enable="0" loop_detect="0"/>
-      <onu_uni onu_uni_id="1-2-2" onu_vlan_mode="1" onu_vlan_tag="101" onu_vlan_tpid="0x8100" policing_enable="0" ds_enable="0" loop_detect="0"/>
-      <onu_uni onu_uni_id="1-3-1" policing_enable="0" ds_enable="0" loop_detect="0"/>
-      <onu_uni onu_uni_id="1-1-2" policing_enable="0" ds_enable="0" loop_detect="0"/>
-      <onu_uni onu_uni_id="1-2-1" onu_vlan_mode="1" onu_vlan_tag="101" onu_vlan_tpid="0x8100" policing_enable="0" ds_enable="0" loop_detect="0"/>
-      <onu_uni onu_uni_id="1-1-1" policing_enable="0" ds_enable="0" loop_detect="0"/>
-   </uni>
+	<onu>
+		<onu_attr onu_id="1-1" onu_mac="54:93:59:00:e1:f1" onu_desc="4f4e5531"/>
+		<onu_attr onu_id="1-2" onu_mac="00:0a:5a:22:e3:f7" onu_desc="4f4e5532"/>
+		<onu_attr onu_id="1-3" onu_mac="00:07:ba:5d:bc:09" onu_desc="4f4e5533"/>
+		<onu_attr onu_id="1-4" onu_mac="00:0a:5a:11:83:5c" onu_desc="4f4e5534"/>
+		<onu_cfg onu_cfg_id="1-1" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1" mxuMgmtGlb_ip_address="0xC0A80102" mxuMgmtGlb_ip_mask="0xC0A80102" mxuMgmtGlb_gateway="0xC0A80102" mxuMgmtGlb_cvlan="0x0000" mxuMgmtGlb_svlan="0x0000" mxuMgmtGlb_priority="0x00"/>
+		<onu_cfg onu_cfg_id="1-2" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1" mxuMgmtGlb_ip_address="0xC0A80064" mxuMgmtGlb_ip_mask="0xFFFFFF00" mxuMgmtGlb_gateway="0xC0A80001" mxuMgmtGlb_cvlan="0x0000" mxuMgmtGlb_svlan="0x0000" mxuMgmtGlb_priority="0x00"/>
+		<onu_cfg onu_cfg_id="1-3" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1"/>
+		<onu_cfg onu_cfg_id="1-4" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1"/>
+		<onu_cfg onu_cfg_id="1-5" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1" mxuMgmtGlb_ip_address="0x01010213" mxuMgmtGlb_ip_mask="0xffffff00" mxuMgmtGlb_gateway="0x01010102" mxuMgmtGlb_cvlan="0x0fb4" mxuMgmtGlb_svlan="0x0000" mxuMgmtGlb_priority="0x00"/>
+		<onu_cfg onu_cfg_id="1-8" dba_sla_enable="0" mxuMgmtGlb_enable="0"/>
+		<onu_cfg onu_cfg_id="1-12" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1" mxuMgmtGlb_ip_address="0x01010212" mxuMgmtGlb_ip_mask="0xffffff00" mxuMgmtGlb_gateway="0x01010102" mxuMgmtGlb_cvlan="0x0fb4" mxuMgmtGlb_svlan="0x0000" mxuMgmtGlb_priority="0x00"/>
+		<onu_cfg onu_cfg_id="1-13" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1" mxuMgmtGlb_ip_address="0x01010211" mxuMgmtGlb_ip_mask="0xffffff00" mxuMgmtGlb_gateway="0x01010102" mxuMgmtGlb_cvlan="0x0fb4" mxuMgmtGlb_svlan="0x0000" mxuMgmtGlb_priority="0x00"/>
+		<onu_cfg onu_cfg_id="1-1000" dba_sla_enable="1" up_max_bw="100000" down_max_bw="100000" up_committed_bw="0" down_committed_bw="0" up_fix_bw="0" up_burst_size="1000" down_burst_size="1000" up_priority="0" mxuMgmtGlb_enable="1" mxuMgmtGlb_ip_address="0x00000000" mxuMgmtGlb_ip_mask="0xFFFFFF00" mxuMgmtGlb_gateway="0x00000000" mxuMgmtGlb_cvlan="0x0000" mxuMgmtGlb_svlan="0x0000" mxuMgmtGlb_priority="0x05"/>
+		<onu_cfg onu_cfg_id="1-10001" dba_sla_enable="1" up_max_bw="100000" down_max_bw="100000" up_committed_bw="0" down_committed_bw="0" up_fix_bw="0" up_burst_size="1000" down_burst_size="1000" up_priority="0" mxuMgmtGlb_enable="1" mxuMgmtGlb_ip_address="0x00000000" mxuMgmtGlb_ip_mask="0xFFFFFF00" mxuMgmtGlb_gateway="0x00000000" mxuMgmtGlb_cvlan="0x0000" mxuMgmtGlb_svlan="0x0000" mxuMgmtGlb_priority="0x05"/>
+		<onu_cfg onu_cfg_id="2-2" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1" mxuMgmtGlb_ip_address="0x0101020b" mxuMgmtGlb_ip_mask="0xffffff00" mxuMgmtGlb_gateway="0x01010102" mxuMgmtGlb_cvlan="0x0fb4" mxuMgmtGlb_svlan="0x0000" mxuMgmtGlb_priority="0x00"/>
+		<onu_cfg onu_cfg_id="3-8" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1" mxuMgmtGlb_ip_address="0x01010112" mxuMgmtGlb_ip_mask="0xffffff00" mxuMgmtGlb_gateway="0x01010102" mxuMgmtGlb_cvlan="0x0fb4" mxuMgmtGlb_svlan="0x0000" mxuMgmtGlb_priority="0x00"/>
+		<onu_cfg onu_cfg_id="4-1" up_max_bw="100000" down_max_bw="1000000" up_committed_bw="128" down_committed_bw="1536" up_fix_bw="0" up_burst_size="512" down_burst_size="512" up_priority="1" mxuMgmtGlb_ip_address="0x01010118" mxuMgmtGlb_ip_mask="0xffffff00" mxuMgmtGlb_gateway="0x01010102" mxuMgmtGlb_cvlan="0x0fb4" mxuMgmtGlb_svlan="0x0000" mxuMgmtGlb_priority="0x00"/>
+	</onu>
+	<uni>
+		<onu_uni onu_uni_id="1-1-1" policing_enable="0" ds_enable="0" loop_detect="0"/>
+		<onu_uni onu_uni_id="1-1-2" policing_enable="0" ds_enable="0" loop_detect="0"/>
+		<onu_uni onu_uni_id="1-1-3" policing_enable="0" ds_enable="0" loop_detect="0"/>
+		<onu_uni onu_uni_id="1-1-4" policing_enable="0" ds_enable="0" loop_detect="0"/>
+		<onu_uni onu_uni_id="1-2-1" onu_vlan_mode="1" onu_vlan_tag="101" onu_vlan_tpid="0x8100" policing_enable="0" ds_enable="0" loop_detect="0"/>
+		<onu_uni onu_uni_id="1-2-2" onu_vlan_mode="1" onu_vlan_tag="101" onu_vlan_tpid="0x8100" policing_enable="0" ds_enable="0" loop_detect="0"/>
+		<onu_uni onu_uni_id="1-2-3" onu_vlan_mode="1" onu_vlan_tag="101" onu_vlan_tpid="0x8100" policing_enable="0" ds_enable="0" loop_detect="0"/>
+		<onu_uni onu_uni_id="1-2-4" onu_vlan_mode="1" onu_vlan_tag="101" onu_vlan_tpid="0x8100" policing_enable="0" ds_enable="0" loop_detect="0"/>
+		<onu_uni onu_uni_id="1-2-5" onu_vlan_mode="1" onu_vlan_tag="101" onu_vlan_tpid="0x8100" policing_enable="0" ds_enable="0" loop_detect="0"/>
+		<onu_uni onu_uni_id="1-2-6" onu_vlan_mode="1" onu_vlan_tag="101" onu_vlan_tpid="0x8100" policing_enable="0" ds_enable="0" loop_detect="0"/>
+		<onu_uni onu_uni_id="1-2-7" onu_vlan_mode="1" onu_vlan_tag="101" onu_vlan_tpid="0x8100" policing_enable="0" ds_enable="0" loop_detect="0"/>
+		<onu_uni onu_uni_id="1-2-8" onu_vlan_mode="1" onu_vlan_tag="101" onu_vlan_tpid="0x8100" policing_enable="0" ds_enable="0" loop_detect="0"/>
+		<onu_uni onu_uni_id="1-3-1" policing_enable="0" ds_enable="0" loop_detect="0"/>
+		<onu_uni onu_uni_id="1-3-2" policing_enable="0" ds_enable="0" loop_detect="0"/>
+		<onu_uni onu_uni_id="1-3-3" policing_enable="0" ds_enable="0" loop_detect="0"/>
+		<onu_uni onu_uni_id="1-3-4" policing_enable="0" ds_enable="0" loop_detect="0"/>
+		<onu_uni onu_uni_id="1-3-5" policing_enable="0" ds_enable="0" loop_detect="0"/>
+		<onu_uni onu_uni_id="1-3-6" policing_enable="0" ds_enable="0" loop_detect="0"/>
+	</uni>
 </root>
