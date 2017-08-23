@@ -21,6 +21,7 @@ import java.util.Vector;
 
 public class ProfileEditPanel extends UPanel {
 
+    private final String dbaSlaEnableLabel = fStringMap.getString("dbaSlaEnable") + ": ";
     private final String upMaxBwLabel = fStringMap.getString("utsDot3OnuUpstreamPir") + ": ";
     private final String downMaxBwLabel = fStringMap.getString("utsDot3OnuDownstreamPir") + ": ";
 
@@ -28,6 +29,14 @@ public class ProfileEditPanel extends UPanel {
     private JCheckBox pon2 = new JCheckBox("PON 2");
     private JCheckBox pon3 = new JCheckBox("PON 3");
     private JCheckBox pon4 = new JCheckBox("PON 4");
+
+
+    private int[] dbaSlaEnableVList = new int[]{0, 1};
+    private String[] dbaSlaEnableTList = new String[]{
+            fStringMap.getString("disable"),
+            fStringMap.getString("enable")
+    };
+    private JComboBox dbaSlaEnableF = new JComboBox(dbaSlaEnableTList);
     private IntegerTextField upMaxBwF = new IntegerTextField();
     private IntegerTextField downMaxBwF = new IntegerTextField();
 
@@ -68,11 +77,19 @@ public class ProfileEditPanel extends UPanel {
         ponPanel.add(pon3);
         ponPanel.add(pon4);
 
-        NTLayout onuLayout = new NTLayout(1, 6, NTLayout.FILL, NTLayout.CENTER, 5, 5);
+        NTLayout onuLayout = new NTLayout(2, 6, NTLayout.FILL, NTLayout.CENTER, 5, 5);
         layout.setMargins(6, 10, 6, 10);
         JPanel onuPanel = new JPanel();
         onuPanel.setLayout(onuLayout);
         onuPanel.setBorder(BorderFactory.createTitledBorder(fStringMap.getString("ONU_PON_port_config")));
+
+        onuPanel.add(new JLabel(dbaSlaEnableLabel));
+        onuPanel.add(dbaSlaEnableF);
+        dbaSlaEnableF.addItemListener(e -> mxuMgmtGlbEnableChange());
+        onuPanel.add(new HSpacer());
+        onuPanel.add(new HSpacer());
+        onuPanel.add(new HSpacer());
+        onuPanel.add(new HSpacer());
 
         onuPanel.add(new JLabel(upMaxBwLabel));
         onuPanel.add(upMaxBwF);
@@ -122,6 +139,12 @@ public class ProfileEditPanel extends UPanel {
         add(allPanel, BorderLayout.CENTER);
     }
 
+    private void mxuMgmtGlbEnableChange() {
+        boolean enable = dbaSlaEnableF.getSelectedIndex() == 1;
+        upMaxBwF.setEnabled(enable);
+        downMaxBwF.setEnabled(enable);
+    }
+
     protected void initForm() {
         upMaxBwF.setValueScope(1, 1000000);
         upMaxBwF.setDefaultValue(100000);
@@ -130,6 +153,8 @@ public class ProfileEditPanel extends UPanel {
     }
 
     public void refresh() {
+        dbaSlaEnableF.setSelectedIndex(0);
+        mxuMgmtGlbEnableChange();
 //        System.out.println("test");
 //        if (SnmpAction.IType.MODIFY.equals(fCommand)) {
 //            OnuCfgBean m = (OnuCfgBean) getModel();
@@ -158,6 +183,7 @@ public class ProfileEditPanel extends UPanel {
     }
 
     public void updateModel() {
+        uniTable.updateUI();
         if (pon1.isSelected()) {
             save(1);
         }
@@ -201,25 +227,38 @@ public class ProfileEditPanel extends UPanel {
 
             ProfileOnuBean onu = new ProfileOnuBean(proxy);
             onu.setId(i + "-1");
-            onu.setDbaSlaEnable("1");
-            int upMaxBw = upMaxBwF.getValue();
-            int downMaxBw = downMaxBwF.getValue();
-            if (upMaxBw <= 0 && downMaxBw <= 0) {
-                onu.setDbaSlaEnable("0");
-            } else {
+            onu.setUpBurstSize("1000");
+            onu.setDownBurstSize("1000");
+            onu.setUpPriority("1");
+            onu.setMxuMgmtGlbEnable("0");
+            if (dbaSlaEnableF.getSelectedIndex() == 1) {
+                onu.setDbaSlaEnable("1");
+                int upMaxBw = upMaxBwF.getValue();
+                int downMaxBw = downMaxBwF.getValue();
                 onu.setDbaSlaEnable("1");
                 onu.setUpMaxBw(String.valueOf(upMaxBw));
                 onu.setDownMaxBw(String.valueOf(downMaxBw));
+            } else {
+                onu.setDbaSlaEnable("0");
             }
             onu.add();
+
             setModel(onu);
+
             onu.setId(i + "-1");
-            if (upMaxBw <= 0 && downMaxBw <= 0) {
-                onu.setDbaSlaEnable("0");
-            } else {
+            onu.setUpBurstSize("1000");
+            onu.setDownBurstSize("1000");
+            onu.setUpPriority("1");
+            onu.setMxuMgmtGlbEnable("0");
+            if (dbaSlaEnableF.getSelectedIndex() == 1) {
+                onu.setDbaSlaEnable("1");
+                int upMaxBw = upMaxBwF.getValue();
+                int downMaxBw = downMaxBwF.getValue();
                 onu.setDbaSlaEnable("1");
                 onu.setUpMaxBw(String.valueOf(upMaxBw));
                 onu.setDownMaxBw(String.valueOf(downMaxBw));
+            } else {
+                onu.setDbaSlaEnable("0");
             }
 
             TableModel model = uniTable.getModel();

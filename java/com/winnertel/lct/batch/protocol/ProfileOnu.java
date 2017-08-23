@@ -9,7 +9,7 @@ import java.util.Map;
 @Root(name = "onu_cfg", strict = false)
 public class ProfileOnu {
     public enum Field {
-        dbaSlaEnable, upMaxBw, downMaxBw, upCommittedBw, downCommittedBw, upFixBw, upBurstSize, downBurstSize, upPriority, mxuIpAddress, mxuIpMask, mxuGateway, mxuCVlan, mxuSVlan, mxuPriority
+        dbaSlaEnable, upMaxBw, downMaxBw, upCommittedBw, downCommittedBw, upFixBw, upBurstSize, downBurstSize, upPriority, mxuMgmtGlbEnable, mxuIpAddress, mxuIpMask, mxuGateway, mxuCVlan, mxuSVlan, mxuPriority
     }
 
     @Attribute(name = "onu_cfg_id", required = false)
@@ -32,6 +32,8 @@ public class ProfileOnu {
     private String downBurstSize;
     @Attribute(name = "up_priority", required = false)
     private String upPriority;
+    @Attribute(name = "mxuMgmtGlb_enable", required = false)
+    private String mxuMgmtGlbEnable;
     @Attribute(name = "mxuMgmtGlb_ip_address", required = false)
     private String mxuIpAddress;
     @Attribute(name = "mxuMgmtGlb_ip_mask", required = false)
@@ -90,6 +92,7 @@ public class ProfileOnu {
         map.put(Field.upBurstSize.name(), upBurstSize);
         map.put(Field.downBurstSize.name(), downBurstSize);
         map.put(Field.upPriority.name(), upPriority);
+        map.put(OnuCfg.Field.mxuMgmtGlbEnable.name(), mxuMgmtGlbEnable);
         map.put(Field.mxuIpAddress.name(), mxuIpAddress);
         map.put(Field.mxuIpMask.name(), mxuIpMask);
         map.put(Field.mxuGateway.name(), mxuGateway);
@@ -111,6 +114,7 @@ public class ProfileOnu {
         cfg.setUpBurstSize(valueOf(map.get(Field.upBurstSize.name())));
         cfg.setDownBurstSize(valueOf(map.get(Field.downBurstSize.name())));
         cfg.setUpPriority(valueOf(map.get(Field.upPriority.name())));
+        cfg.setMxuMgmtGlbEnable(valueOf(map.get(OnuCfg.Field.mxuMgmtGlbEnable.name())));
         cfg.setMxuIpAddress(valueOf(map.get(Field.mxuIpAddress.name())));
         cfg.setMxuIpMask(valueOf(map.get(Field.mxuIpMask.name())));
         cfg.setMxuGateway(valueOf(map.get(Field.mxuGateway.name())));
@@ -206,6 +210,14 @@ public class ProfileOnu {
 
     public void setUpPriority(String upPriority) {
         this.upPriority = upPriority;
+    }
+
+    public String getMxuMgmtGlbEnable() {
+        return mxuMgmtGlbEnable;
+    }
+
+    public void setMxuMgmtGlbEnable(String mxuMgmtGlbEnable) {
+        this.mxuMgmtGlbEnable = mxuMgmtGlbEnable;
     }
 
     public String getMxuIpAddress() {

@@ -120,6 +120,22 @@ public class OltSystemBean extends SnmpMibBean {
         setProperty(OltSystem.Field.mgmtIp, mgmtIp);
     }
 
+    public String getMxuIpMask() {
+        return getProperty(OltSystem.Field.mxuIpMask);
+    }
+
+    public void setMxuIpMask(String mxuIpMask) {
+        setProperty(OltSystem.Field.mxuIpMask, mxuIpMask);
+    }
+
+    public String getMxuGateway() {
+        return getProperty(OltSystem.Field.mxuGateway);
+    }
+
+    public void setMxuGateway(String mxuGateway) {
+        setProperty(OltSystem.Field.mxuGateway, mxuGateway);
+    }
+
     public Vector retrieveAll() throws MibBeanException {
         for (OltSystem.Field field : OltSystem.Field.values()) {
             prepareRead(getProperty(field.name()));

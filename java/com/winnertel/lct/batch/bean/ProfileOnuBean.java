@@ -122,6 +122,13 @@ public class ProfileOnuBean extends SnmpMibBean {
         setProperty(ProfileOnu.Field.upPriority, upPriority);
     }
 
+    public String getMxuMgmtGlbEnable() {
+        return getProperty(ProfileOnu.Field.mxuMgmtGlbEnable);
+    }
+
+    public void setMxuMgmtGlbEnable(String mxuMgmtGlbEnable) {
+        setProperty(ProfileOnu.Field.mxuMgmtGlbEnable, mxuMgmtGlbEnable);
+    }
     public String getMxuIpAddress() {
         return getProperty(ProfileOnu.Field.mxuIpAddress);
     }

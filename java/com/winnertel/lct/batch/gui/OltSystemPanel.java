@@ -32,6 +32,8 @@ public class OltSystemPanel extends UPanel {
     private final String vlanTransParentLabel = fStringMap.getString("vlanTransParentLabel") + ": ";
     private final String globalP2pLabel = fStringMap.getString("globalP2pLabel") + ": ";
     private final String mgmtIpLabel = fStringMap.getString("mgmtIpLabel") + ": ";
+    private final String mxuIpMaskL = fStringMap.getString("utsDot3Onu2CtcMduMgmtIpConfIpMask") + ": ";
+    private final String mxuGatewayL = fStringMap.getString("utsDot3Onu2CtcMduMgmtIpConfGw") + ": ";
 
 
     private StringTextField nameField = new StringTextField();
@@ -61,6 +63,8 @@ public class OltSystemPanel extends UPanel {
     private JComboBox vlanTransParentField = new JComboBox(new Object[]{"enable", "disable"});
     private JComboBox globalP2pField = new JComboBox(new Object[]{"disable", "enable"});
     private IPAddressField mgmtIpField = new IPAddressField();
+    private IPAddressField mxuIpMaskF = new IPAddressField(IPAddressField.IPMASK);
+    private IPAddressField mxuGatewayF = new IPAddressField();
 
 
     private SnmpApplyButton btApply;
@@ -74,7 +78,7 @@ public class OltSystemPanel extends UPanel {
 
     public void initGui() {
         JPanel baseInfoPanel1 = new JPanel();
-        NTLayout layout1 = new NTLayout(9, 3, NTLayout.FILL, NTLayout.CENTER, 5, 5);
+        NTLayout layout1 = new NTLayout(11, 3, NTLayout.FILL, NTLayout.CENTER, 5, 5);
         layout1.setMargins(6, 10, 6, 10);
         baseInfoPanel1.setLayout(layout1);
         baseInfoPanel1.setBorder(BorderFactory.createEtchedBorder());
@@ -93,6 +97,14 @@ public class OltSystemPanel extends UPanel {
 
         baseInfoPanel1.add(new JLabel(mgmtIpLabel));
         baseInfoPanel1.add(mgmtIpField);
+        baseInfoPanel1.add(new HSpacer());
+
+        baseInfoPanel1.add(new JLabel(mxuIpMaskL));
+        baseInfoPanel1.add(mxuIpMaskF);
+        baseInfoPanel1.add(new HSpacer());
+
+        baseInfoPanel1.add(new JLabel(mxuGatewayL));
+        baseInfoPanel1.add(mxuGatewayF);
         baseInfoPanel1.add(new HSpacer());
 
         baseInfoPanel1.add(new JLabel(mgmtVlanLabel));
@@ -191,6 +203,8 @@ public class OltSystemPanel extends UPanel {
             globalP2pField.setSelectedIndex(0);
         }
         mgmtIpField.setValue(mbean.getMgmtIp());
+        mxuIpMaskF.setValue(mbean.getMgmtIp());
+        mxuGatewayF.setValue(mbean.getMgmtIp());
     }
 
     public void updateModel() {
@@ -204,6 +218,8 @@ public class OltSystemPanel extends UPanel {
         model.setVlanTransParent(String.valueOf(vlanTransParentField.getSelectedItem()));
         model.setGlobalP2p(String.valueOf(globalP2pField.getSelectedItem()));
         model.setMgmtIp(mgmtIpField.getIPString());
+        model.setMxuIpMask(mxuIpMaskF.getIPString());
+        model.setMxuGateway(mxuGatewayF.getIPString());
     }
 
     public int getIndexFromValue(String[] list, String v) {

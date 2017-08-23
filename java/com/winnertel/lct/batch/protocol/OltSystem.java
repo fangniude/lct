@@ -9,7 +9,7 @@ import java.util.Map;
 @Root(name = "system_node", strict = false)
 public class OltSystem {
     public enum Field {
-        name, location, contact, mgmtVlan, macAgeing, macAuth, vlanTransParent, globalP2p, mgmtIp
+        name, location, contact, mgmtVlan, macAgeing, macAuth, vlanTransParent, globalP2p, mgmtIp, mxuIpMask, mxuGateway
     }
 
     @Attribute(name = "system_name", required = false)
@@ -30,6 +30,10 @@ public class OltSystem {
     private String globalP2p;
     @Attribute(name = "mgmt_ip", required = false)
     private String mgmtIp;
+    @Attribute(name = "mxuMgmtGlb_ip_mask", required = false)
+    private String mxuIpMask;
+    @Attribute(name = "mxuMgmtGlb_gateway", required = false)
+    private String mxuGateway;
 
     public OltSystem() {
     }
@@ -58,6 +62,8 @@ public class OltSystem {
         map.put(Field.vlanTransParent.name(), vlanTransParent);
         map.put(Field.globalP2p.name(), globalP2p);
         map.put(Field.mgmtIp.name(), mgmtIp);
+        map.put(Field.mxuIpMask.name(), mxuIpMask);
+        map.put(Field.mxuGateway.name(), mxuGateway);
         return map;
     }
 
@@ -72,6 +78,8 @@ public class OltSystem {
         system.setVlanTransParent(valueOf(map.get(Field.vlanTransParent.name())));
         system.setGlobalP2p(valueOf(map.get(Field.globalP2p.name())));
         system.setMgmtIp(valueOf(map.get(Field.mgmtIp.name())));
+        system.setMxuIpMask(valueOf(map.get(Field.mxuIpMask.name())));
+        system.setMxuGateway(valueOf(map.get(Field.mxuGateway.name())));
         return system;
     }
 
@@ -153,5 +161,21 @@ public class OltSystem {
 
     public void setMgmtIp(String mgmtIp) {
         this.mgmtIp = mgmtIp;
+    }
+
+    public String getMxuIpMask() {
+        return mxuIpMask;
+    }
+
+    public void setMxuIpMask(String mxuIpMask) {
+        this.mxuIpMask = mxuIpMask;
+    }
+
+    public String getMxuGateway() {
+        return mxuGateway;
+    }
+
+    public void setMxuGateway(String mxuGateway) {
+        this.mxuGateway = mxuGateway;
     }
 }

@@ -57,10 +57,10 @@ public class OnuCfgPanel extends UPanel {
     private IntegerTextField downBurstSizeF = new IntegerTextField();
     private IntegerTextField upPriorityF = new IntegerTextField();
 
-    private int[] mxuMgmtGlbEnableVList = new int[]{1, 0};
+    private int[] mxuMgmtGlbEnableVList = new int[]{0, 1};
     private String[] mxuMgmtGlbEnableTList = new String[]{
-            fStringMap.getString("enable"),
-            fStringMap.getString("disable")
+            fStringMap.getString("disable"),
+            fStringMap.getString("enable")
     };
     private JComboBox mxuMgmtGlbEnableF = new JComboBox(mxuMgmtGlbEnableTList);
     private IPAddressField mxuIpAddressF = new IPAddressField();
@@ -164,7 +164,7 @@ public class OnuCfgPanel extends UPanel {
     }
 
     private void mxuMgmtGlbEnableChange() {
-        boolean enable = mxuMgmtGlbEnableF.getSelectedIndex() == 0;
+        boolean enable = mxuMgmtGlbEnableF.getSelectedIndex() == 1;
         mxuIpAddressF.setEnabled(enable);
         mxuIpMaskF.setEnabled(enable);
         mxuGatewayF.setEnabled(enable);
@@ -199,8 +199,8 @@ public class OnuCfgPanel extends UPanel {
         upBurstSizeF.setDefaultValue(1000);
         downBurstSizeF.setValueScope(1, 100000);
         downBurstSizeF.setDefaultValue(1000);
-        upPriorityF.setValueScope(0, 10);
-        upPriorityF.setDefaultValue(0);
+        upPriorityF.setValueScope(1, 16);
+        upPriorityF.setDefaultValue(1);
         upFixBwF.setValueScope(0, 1000000);
         upFixBwF.setDefaultValue(0);
 
@@ -251,7 +251,7 @@ public class OnuCfgPanel extends UPanel {
             setNullableIntField(upPriorityF, m.getUpPriority());
 
             String mxuMgmtGlbEnable = m.getMxuMgmtGlbEnable();
-            mxuMgmtGlbEnableF.setSelectedIndex(getIndexFromValue(mxuMgmtGlbEnableVList, Integer.valueOf(mxuMgmtGlbEnable == null ? "1" : mxuMgmtGlbEnable)));
+            mxuMgmtGlbEnableF.setSelectedIndex(getIndexFromValue(mxuMgmtGlbEnableVList, Integer.valueOf(mxuMgmtGlbEnable == null ? "0" : mxuMgmtGlbEnable)));
             mxuIpAddressF.setValue(fromHexIp(m.getMxuIpAddress()));
             mxuIpMaskF.setValue(fromHexIp(m.getMxuIpMask()));
             mxuGatewayF.setValue(fromHexIp(m.getMxuGateway()));
@@ -285,7 +285,7 @@ public class OnuCfgPanel extends UPanel {
         }
 
         model.setMxuMgmtGlbEnable(String.valueOf(mxuMgmtGlbEnableVList[mxuMgmtGlbEnableF.getSelectedIndex()]));
-        if (mxuMgmtGlbEnableF.getSelectedIndex() == 0) {
+        if (mxuMgmtGlbEnableF.getSelectedIndex() == 1) {
             model.setMxuIpAddress(toHexIp(mxuIpAddressF.getValue()));
             model.setMxuIpMask(toHexIp(mxuIpMaskF.getValue()));
             model.setMxuGateway(toHexIp(mxuGatewayF.getValue()));
