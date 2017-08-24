@@ -227,8 +227,11 @@ public class ProfileEditPanel extends UPanel {
 
             ProfileOnuBean onu = new ProfileOnuBean(proxy);
             onu.setId(i + "-1");
-            onu.setUpBurstSize("1000");
-            onu.setDownBurstSize("1000");
+            onu.setUpCommittedBw("128");
+            onu.setDownCommittedBw("512");
+            onu.setUpBurstSize("512");
+            onu.setDownBurstSize("1536");
+            onu.setUpFixBw("0");
             onu.setUpPriority("1");
             onu.setMxuMgmtGlbEnable("0");
             if (dbaSlaEnableF.getSelectedIndex() == 1) {
@@ -246,8 +249,11 @@ public class ProfileEditPanel extends UPanel {
             setModel(onu);
 
             onu.setId(i + "-1");
-            onu.setUpBurstSize("1000");
-            onu.setDownBurstSize("1000");
+            onu.setUpCommittedBw("128");
+            onu.setDownCommittedBw("512");
+            onu.setUpBurstSize("512");
+            onu.setDownBurstSize("1536");
+            onu.setUpFixBw("0");
             onu.setUpPriority("1");
             onu.setMxuMgmtGlbEnable("0");
             if (dbaSlaEnableF.getSelectedIndex() == 1) {

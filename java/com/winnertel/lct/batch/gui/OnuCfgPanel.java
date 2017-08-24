@@ -192,13 +192,13 @@ public class OnuCfgPanel extends UPanel {
         downMaxBwF.setValueScope(1, 1000000);
         downMaxBwF.setDefaultValue(100000);
         upCommittedBwF.setValueScope(0, 1000000);
-        upCommittedBwF.setDefaultValue(0);
+        upCommittedBwF.setDefaultValue(128);
         downCommittedBwF.setValueScope(0, 1000000);
-        upCommittedBwF.setDefaultValue(0);
+        downCommittedBwF.setDefaultValue(512);
         upBurstSizeF.setValueScope(1, 100000);
-        upBurstSizeF.setDefaultValue(1000);
+        upBurstSizeF.setDefaultValue(512);
         downBurstSizeF.setValueScope(1, 100000);
-        downBurstSizeF.setDefaultValue(1000);
+        downBurstSizeF.setDefaultValue(1536);
         upPriorityF.setValueScope(1, 16);
         upPriorityF.setDefaultValue(1);
         upFixBwF.setValueScope(0, 1000000);
