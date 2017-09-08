@@ -98,25 +98,7 @@ public class ProfileEditPanel extends UPanel {
         onuPanel.add(new JLabel(downMaxBwLabel));
         onuPanel.add(downMaxBwF);
         onuPanel.add(new HSpacer());
-
-        Vector columnNames = new Vector();
-        columnNames.addAll(Arrays.asList("ID", fStringMap.getString("utsDot3OnuEtherPortVlanMode"), fStringMap.getString("utsDot3OnuEtherPortVlanTag"), fStringMap.getString("utsDot3OnuEtherPortVlanTPID"), fStringMap.getString("passVlan"), fStringMap.getString("upPir"), fStringMap.getString("downPir")));
-        Vector data = new Vector();
-        for (int i = 0; i < 4; i++) {
-            Vector<Object> row = new Vector<>();
-            row.add("" + (i + 1));
-            data.add(row);
-        }
-        DefaultTableModel tableModel = new DefaultTableModel(data, columnNames);
-        uniTable = new JTable(tableModel);
-        uniTable.setPreferredScrollableViewportSize(new Dimension(400, 65));
-
-        uniTable.getColumnModel().getColumn(0).setPreferredWidth(20);
-        uniTable.getColumnModel().getColumn(5).setPreferredWidth(100);
-        uniTable.getColumnModel().getColumn(6).setPreferredWidth(100);
-        uniTable.getColumnModel().getColumn(1).setCellEditor(new DefaultCellEditor(new JComboBox(utsDot3OnuEtherPortVlanModeTList)));
-
-        uniTable.getColumnModel().getColumn(3).setCellEditor(new DefaultCellEditor(new JComboBox(new Object[]{"0x8100", "0x9100"})));
+        uniTable = new JTable();
 
         NTLayout uniLayout = new NTLayout(1, 1, NTLayout.FILL, NTLayout.CENTER, 5, 5);
         layout.setMargins(6, 10, 6, 10);
@@ -153,8 +135,31 @@ public class ProfileEditPanel extends UPanel {
     }
 
     public void refresh() {
+        pon1.setSelected(false);
+        pon2.setSelected(false);
+        pon3.setSelected(false);
+        pon4.setSelected(false);
         dbaSlaEnableF.setSelectedIndex(0);
         mxuMgmtGlbEnableChange();
+
+        Vector columnNames = new Vector();
+        columnNames.addAll(Arrays.asList("ID", fStringMap.getString("utsDot3OnuEtherPortVlanMode"), fStringMap.getString("utsDot3OnuEtherPortVlanTag"), fStringMap.getString("utsDot3OnuEtherPortVlanTPID"), fStringMap.getString("passVlan"), fStringMap.getString("upPir"), fStringMap.getString("downPir")));
+        Vector data = new Vector();
+        for (int i = 0; i < 4; i++) {
+            Vector<Object> row = new Vector<>();
+            row.add("" + (i + 1));
+            data.add(row);
+        }
+        DefaultTableModel tableModel = new DefaultTableModel(data, columnNames);
+        uniTable.setModel(tableModel);
+        uniTable.setPreferredScrollableViewportSize(new Dimension(400, 65));
+
+        uniTable.getColumnModel().getColumn(0).setPreferredWidth(20);
+        uniTable.getColumnModel().getColumn(5).setPreferredWidth(100);
+        uniTable.getColumnModel().getColumn(6).setPreferredWidth(100);
+        uniTable.getColumnModel().getColumn(1).setCellEditor(new DefaultCellEditor(new JComboBox(utsDot3OnuEtherPortVlanModeTList)));
+
+        uniTable.getColumnModel().getColumn(3).setCellEditor(new DefaultCellEditor(new JComboBox(new Object[]{"0x8100", "0x9100"})));
 //        System.out.println("test");
 //        if (SnmpAction.IType.MODIFY.equals(fCommand)) {
 //            OnuCfgBean m = (OnuCfgBean) getModel();

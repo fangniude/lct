@@ -7,21 +7,21 @@
 		<onu_cfg onu_cfg_id="4-1" dba_sla_enable="0" up_committed_bw="128" down_committed_bw="512" up_fix_bw="0" up_burst_size="512" down_burst_size="1536" up_priority="1" mxuMgmtGlb_enable="0"/>
 	</onu>
 	<uni>
-		<onu_uni onu_uni_id="1-1-1" onu_vlan_mode="4" onu_vlan_tag="4" onu_vlan_trunk="3" onu_vlan_tpid="0x9100" policing_enable="1" policing_cir="2" policing_cbs="1000" policing_ebs="1000" ds_cir="1" ds_pir="1" ds_enable="1"/>
-		<onu_uni onu_uni_id="1-1-2" onu_vlan_mode="4" onu_vlan_tag="4" onu_vlan_trunk="3" onu_vlan_tpid="0x9100" policing_enable="1" policing_cir="2" policing_cbs="1000" policing_ebs="1000" ds_cir="1" ds_pir="1" ds_enable="1"/>
-		<onu_uni onu_uni_id="1-1-3" onu_vlan_mode="4" onu_vlan_tag="4" onu_vlan_trunk="3" onu_vlan_tpid="0x8100" policing_enable="1" policing_cir="2" policing_cbs="1000" policing_ebs="1000" ds_cir="1" ds_pir="1" ds_enable="1"/>
-		<onu_uni onu_uni_id="1-1-4" onu_vlan_mode="1" onu_vlan_tag="4" onu_vlan_tpid="0x8100" policing_enable="1" policing_cir="2" policing_cbs="1000" policing_ebs="1000" ds_cir="1" ds_pir="1" ds_enable="1"/>
-		<onu_uni onu_uni_id="2-1-1" onu_vlan_mode="4" onu_vlan_tag="4" onu_vlan_trunk="3" onu_vlan_tpid="0x9100" policing_enable="1" policing_cir="2" policing_cbs="1000" policing_ebs="1000" ds_cir="1" ds_pir="1" ds_enable="1"/>
-		<onu_uni onu_uni_id="2-1-2" onu_vlan_mode="4" onu_vlan_tag="4" onu_vlan_trunk="3" onu_vlan_tpid="0x9100" policing_enable="1" policing_cir="2" policing_cbs="1000" policing_ebs="1000" ds_cir="1" ds_pir="1" ds_enable="1"/>
-		<onu_uni onu_uni_id="2-1-3" onu_vlan_mode="4" onu_vlan_tag="4" onu_vlan_trunk="3" onu_vlan_tpid="0x8100" policing_enable="1" policing_cir="2" policing_cbs="1000" policing_ebs="1000" ds_cir="1" ds_pir="1" ds_enable="1"/>
-		<onu_uni onu_uni_id="2-1-4" onu_vlan_mode="1" onu_vlan_tag="4" onu_vlan_tpid="0x8100" policing_enable="1" policing_cir="2" policing_cbs="1000" policing_ebs="1000" ds_cir="1" ds_pir="1" ds_enable="1"/>
-		<onu_uni onu_uni_id="3-1-1" onu_vlan_mode="4" onu_vlan_tag="4" onu_vlan_trunk="3" onu_vlan_tpid="0x9100" policing_enable="1" policing_cir="2" policing_cbs="1000" policing_ebs="1000" ds_cir="1" ds_pir="1" ds_enable="1"/>
-		<onu_uni onu_uni_id="3-1-2" onu_vlan_mode="4" onu_vlan_tag="4" onu_vlan_trunk="3" onu_vlan_tpid="0x9100" policing_enable="1" policing_cir="2" policing_cbs="1000" policing_ebs="1000" ds_cir="1" ds_pir="1" ds_enable="1"/>
-		<onu_uni onu_uni_id="3-1-3" onu_vlan_mode="4" onu_vlan_tag="4" onu_vlan_trunk="3" onu_vlan_tpid="0x8100" policing_enable="1" policing_cir="2" policing_cbs="1000" policing_ebs="1000" ds_cir="1" ds_pir="1" ds_enable="1"/>
-		<onu_uni onu_uni_id="3-1-4" onu_vlan_mode="1" onu_vlan_tag="4" onu_vlan_tpid="0x8100" policing_enable="1" policing_cir="2" policing_cbs="1000" policing_ebs="1000" ds_cir="1" ds_pir="1" ds_enable="1"/>
-		<onu_uni onu_uni_id="4-1-1" onu_vlan_mode="4" onu_vlan_tag="4" onu_vlan_trunk="3" onu_vlan_tpid="0x9100" policing_enable="1" policing_cir="2" policing_cbs="1000" policing_ebs="1000" ds_cir="1" ds_pir="1" ds_enable="1"/>
-		<onu_uni onu_uni_id="4-1-2" onu_vlan_mode="4" onu_vlan_tag="4" onu_vlan_trunk="3" onu_vlan_tpid="0x9100" policing_enable="1" policing_cir="2" policing_cbs="1000" policing_ebs="1000" ds_cir="1" ds_pir="1" ds_enable="1"/>
-		<onu_uni onu_uni_id="4-1-3" onu_vlan_mode="4" onu_vlan_tag="4" onu_vlan_trunk="3" onu_vlan_tpid="0x8100" policing_enable="1" policing_cir="2" policing_cbs="1000" policing_ebs="1000" ds_cir="1" ds_pir="1" ds_enable="1"/>
-		<onu_uni onu_uni_id="4-1-4" onu_vlan_mode="4" onu_vlan_tag="3" onu_vlan_trunk="3" onu_vlan_tpid="0x9100" policing_enable="1" policing_cir="2" policing_cbs="1000" policing_ebs="1000" ds_cir="3" ds_pir="3" ds_enable="1"/>
+		<onu_uni onu_uni_id="1-1-1" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
+		<onu_uni onu_uni_id="1-1-2" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
+		<onu_uni onu_uni_id="1-1-3" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
+		<onu_uni onu_uni_id="1-1-4" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
+		<onu_uni onu_uni_id="2-1-1" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
+		<onu_uni onu_uni_id="2-1-2" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
+		<onu_uni onu_uni_id="2-1-3" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
+		<onu_uni onu_uni_id="2-1-4" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
+		<onu_uni onu_uni_id="3-1-1" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
+		<onu_uni onu_uni_id="3-1-2" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
+		<onu_uni onu_uni_id="3-1-3" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
+		<onu_uni onu_uni_id="3-1-4" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
+		<onu_uni onu_uni_id="4-1-1" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
+		<onu_uni onu_uni_id="4-1-2" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
+		<onu_uni onu_uni_id="4-1-3" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
+		<onu_uni onu_uni_id="4-1-4" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
 	</uni>
 </root>

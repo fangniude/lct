@@ -203,8 +203,8 @@ public class OltSystemPanel extends UPanel {
             globalP2pField.setSelectedIndex(0);
         }
         mgmtIpField.setValue(mbean.getMgmtIp());
-        mxuIpMaskF.setValue(mbean.getMgmtIp());
-        mxuGatewayF.setValue(mbean.getMgmtIp());
+        mxuIpMaskF.setValue(mbean.getMxuIpMask());
+        mxuGatewayF.setValue(mbean.getMxuGateway());
     }
 
     public void updateModel() {
