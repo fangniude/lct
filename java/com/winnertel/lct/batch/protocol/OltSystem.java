@@ -28,11 +28,11 @@ public class OltSystem {
     private String vlanTransParent;
     @Attribute(name = "global_p2p", required = false)
     private String globalP2p;
-    @Attribute(name = "mgmt_ip", required = false)
+    @Attribute(name = "olt_mgmt_ip", required = false)
     private String mgmtIp;
-    @Attribute(name = "mxuMgmtGlb_ip_mask", required = false)
+    @Attribute(name = "olt_mgmt_ip_mask", required = false)
     private String mxuIpMask;
-    @Attribute(name = "mxuMgmtGlb_gateway", required = false)
+    @Attribute(name = "olt_mgmt_gateway", required = false)
     private String mxuGateway;
 
     public OltSystem() {

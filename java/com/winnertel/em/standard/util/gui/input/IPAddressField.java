@@ -135,7 +135,7 @@ public class IPAddressField extends IPAddressDataLayer {
         }
         String[] strVal = new String[4];
         for (int i = 0; i < 4; i++) {
-            strVal[i] = Integer.toString(val[i]);
+            strVal[i] = Integer.toString(val[i] & 0xff);
         }
 
         setValue(strVal);

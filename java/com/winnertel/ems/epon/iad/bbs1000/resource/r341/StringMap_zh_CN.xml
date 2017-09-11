@@ -4058,4 +4058,7 @@
     <String key="dbaSlaEnable" value="DBA带宽控制" />
     <String key="mxuMgmtGlbEnable" value="ONU IP地址管理" />
 
+    <String key="Err_pass_vlan_must_numbers_join_by_comma" value="PASS VLAN只能输入以逗号分割的数字" />
+    <String key="Err_pass_vlan_count_must_even" value="PASS VLAN只能输入偶数个数字" />
+
 </StringMap>

@@ -202,9 +202,9 @@ public class OltSystemPanel extends UPanel {
         } else {
             globalP2pField.setSelectedIndex(0);
         }
-        mgmtIpField.setValue(mbean.getMgmtIp());
-        mxuIpMaskF.setValue(mbean.getMxuIpMask());
-        mxuGatewayF.setValue(mbean.getMxuGateway());
+        mgmtIpField.setValue(TransformUtils.fromHexIp(mbean.getMgmtIp()));
+        mxuIpMaskF.setValue(TransformUtils.fromHexIp(mbean.getMxuIpMask()));
+        mxuGatewayF.setValue(TransformUtils.fromHexIp(mbean.getMxuGateway()));
     }
 
     public void updateModel() {
@@ -217,9 +217,9 @@ public class OltSystemPanel extends UPanel {
         model.setMacAuth(macAuthFieldVList[macAuthField.getSelectedIndex()]);
         model.setVlanTransParent(String.valueOf(vlanTransParentField.getSelectedItem()));
         model.setGlobalP2p(String.valueOf(globalP2pField.getSelectedItem()));
-        model.setMgmtIp(mgmtIpField.getIPString());
-        model.setMxuIpMask(mxuIpMaskF.getIPString());
-        model.setMxuGateway(mxuGatewayF.getIPString());
+        model.setMgmtIp(TransformUtils.toHexIp(mgmtIpField.getValue()));
+        model.setMxuIpMask(TransformUtils.toHexIp(mxuIpMaskF.getValue()));
+        model.setMxuGateway(TransformUtils.toHexIp(mxuGatewayF.getValue()));
     }
 
     public int getIndexFromValue(String[] list, String v) {

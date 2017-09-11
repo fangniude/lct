@@ -2,6 +2,7 @@ package com.winnertel.lct.batch.gui;
 
 import com.winnertel.em.framework.IApplication;
 import com.winnertel.em.framework.gui.swing.UPanel;
+import com.winnertel.em.framework.gui.util.MessageDialog;
 import com.winnertel.em.standard.snmp.action.SnmpAction;
 import com.winnertel.em.standard.util.gui.input.IntegerTextField;
 import com.winnertel.em.standard.util.gui.input.StringTextField;
@@ -10,6 +11,7 @@ import com.winnertel.em.standard.util.gui.layout.NTLayout;
 import com.winnertel.em.standard.util.gui.layout.VSpacer;
 import com.winnertel.lct.batch.bean.OnuUniBean;
 import com.winnertel.lct.batch.proxy.XmlProxy;
+import org.apache.commons.lang3.math.NumberUtils;
 
 import javax.swing.*;
 import java.awt.*;
@@ -214,6 +216,27 @@ public class OnuUniPanel extends UPanel {
         } else {
             dsPirF.setEnabled(true);
         }
+    }
+
+    @Override
+    public boolean validateFrom() {
+        if (passVlanF.isEnabled()) {
+            String pv = passVlanF.getValue();
+            String[] split = pv.split(",");
+            for (String s : split) {
+                if (!NumberUtils.isNumber(s)) {
+                    String error = fStringMap.getString("Err_pass_vlan_must_numbers_join_by_comma");
+                    MessageDialog.showErrorMessageDialog(fApplication, error);
+                    return false;
+                }
+            }
+            if (split.length % 2 != 0) {
+                String error = fStringMap.getString("Err_pass_vlan_count_must_even");
+                MessageDialog.showErrorMessageDialog(fApplication, error);
+                return false;
+            }
+        }
+        return super.validateFrom();
     }
 
     public void refresh() {

@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<onu>
-		<onu_cfg onu_cfg_id="1-1" dba_sla_enable="0" up_committed_bw="128" down_committed_bw="512" up_fix_bw="0" up_burst_size="512" down_burst_size="1536" up_priority="1" mxuMgmtGlb_enable="0"/>
-		<onu_cfg onu_cfg_id="2-1" dba_sla_enable="0" up_committed_bw="128" down_committed_bw="512" up_fix_bw="0" up_burst_size="512" down_burst_size="1536" up_priority="1" mxuMgmtGlb_enable="0"/>
-		<onu_cfg onu_cfg_id="3-1" dba_sla_enable="0" up_committed_bw="128" down_committed_bw="512" up_fix_bw="0" up_burst_size="512" down_burst_size="1536" up_priority="1" mxuMgmtGlb_enable="0"/>
-		<onu_cfg onu_cfg_id="4-1" dba_sla_enable="0" up_committed_bw="128" down_committed_bw="512" up_fix_bw="0" up_burst_size="512" down_burst_size="1536" up_priority="1" mxuMgmtGlb_enable="0"/>
+		<onu_cfg onu_cfg_id="1-1" dba_sla_enable="1" up_max_bw="100000" down_max_bw="100000" up_committed_bw="128" down_committed_bw="512" up_fix_bw="0" up_burst_size="512" down_burst_size="1536" up_priority="1" mxuMgmtGlb_enable="0"/>
+		<onu_cfg onu_cfg_id="2-1" dba_sla_enable="1" up_max_bw="100000" down_max_bw="100000" up_committed_bw="128" down_committed_bw="512" up_fix_bw="0" up_burst_size="512" down_burst_size="1536" up_priority="1" mxuMgmtGlb_enable="0"/>
+		<onu_cfg onu_cfg_id="3-1" dba_sla_enable="1" up_max_bw="100000" down_max_bw="100000" up_committed_bw="128" down_committed_bw="512" up_fix_bw="0" up_burst_size="512" down_burst_size="1536" up_priority="1" mxuMgmtGlb_enable="0"/>
+		<onu_cfg onu_cfg_id="4-1" dba_sla_enable="1" up_max_bw="100000" down_max_bw="100000" up_committed_bw="128" down_committed_bw="512" up_fix_bw="0" up_burst_size="512" down_burst_size="1536" up_priority="1" mxuMgmtGlb_enable="0"/>
 	</onu>
 	<uni>
-		<onu_uni onu_uni_id="1-1-1" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
-		<onu_uni onu_uni_id="1-1-2" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
-		<onu_uni onu_uni_id="1-1-3" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
-		<onu_uni onu_uni_id="1-1-4" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
-		<onu_uni onu_uni_id="2-1-1" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
-		<onu_uni onu_uni_id="2-1-2" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
-		<onu_uni onu_uni_id="2-1-3" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
-		<onu_uni onu_uni_id="2-1-4" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
-		<onu_uni onu_uni_id="3-1-1" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
-		<onu_uni onu_uni_id="3-1-2" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
-		<onu_uni onu_uni_id="3-1-3" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
-		<onu_uni onu_uni_id="3-1-4" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
-		<onu_uni onu_uni_id="4-1-1" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
-		<onu_uni onu_uni_id="4-1-2" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
-		<onu_uni onu_uni_id="4-1-3" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
-		<onu_uni onu_uni_id="4-1-4" onu_vlan_mode="0" policing_enable="0" ds_enable="0"/>
+		<onu_uni onu_uni_id="1-1-1" onu_vlan_mode="0"/>
+		<onu_uni onu_uni_id="1-1-2" onu_vlan_mode="0"/>
+		<onu_uni onu_uni_id="1-1-3" onu_vlan_mode="0"/>
+		<onu_uni onu_uni_id="1-1-4" onu_vlan_mode="0"/>
+		<onu_uni onu_uni_id="2-1-1" onu_vlan_mode="0"/>
+		<onu_uni onu_uni_id="2-1-2" onu_vlan_mode="0"/>
+		<onu_uni onu_uni_id="2-1-3" onu_vlan_mode="0"/>
+		<onu_uni onu_uni_id="2-1-4" onu_vlan_mode="0"/>
+		<onu_uni onu_uni_id="3-1-1" onu_vlan_mode="0"/>
+		<onu_uni onu_uni_id="3-1-2" onu_vlan_mode="0"/>
+		<onu_uni onu_uni_id="3-1-3" onu_vlan_mode="0"/>
+		<onu_uni onu_uni_id="3-1-4" onu_vlan_mode="0"/>
+		<onu_uni onu_uni_id="4-1-1" onu_vlan_mode="0"/>
+		<onu_uni onu_uni_id="4-1-2" onu_vlan_mode="0"/>
+		<onu_uni onu_uni_id="4-1-3" onu_vlan_mode="0"/>
+		<onu_uni onu_uni_id="4-1-4" onu_vlan_mode="0"/>
 	</uni>
 </root>
