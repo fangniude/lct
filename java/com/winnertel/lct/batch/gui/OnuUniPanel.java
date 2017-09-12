@@ -222,7 +222,7 @@ public class OnuUniPanel extends UPanel {
     public boolean validateFrom() {
         if (passVlanF.isEnabled()) {
             String pv = passVlanF.getValue();
-            String[] split = pv.split(",");
+            String[] split = pv.split(";");
             for (String s : split) {
                 if (!NumberUtils.isNumber(s)) {
                     String error = fStringMap.getString("Err_pass_vlan_must_numbers_join_by_comma");

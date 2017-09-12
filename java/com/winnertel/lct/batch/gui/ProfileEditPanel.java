@@ -311,7 +311,7 @@ public class ProfileEditPanel extends UPanel {
     public boolean validateFrom() {
         if (passVlanF.isEnabled()) {
             String pv = passVlanF.getValue();
-            String[] split = pv.split(",");
+            String[] split = pv.split(";");
             for (String s : split) {
                 if (!NumberUtils.isNumber(s)) {
                     String error = fStringMap.getString("Err_pass_vlan_must_numbers_join_by_comma");
@@ -327,7 +327,7 @@ public class ProfileEditPanel extends UPanel {
         }
         if (passVlanF2.isEnabled()) {
             String pv = passVlanF2.getValue();
-            String[] split = pv.split(",");
+            String[] split = pv.split(";");
             for (String s : split) {
                 if (!NumberUtils.isNumber(s)) {
                     String error = fStringMap.getString("Err_pass_vlan_must_numbers_join_by_comma");
@@ -343,7 +343,7 @@ public class ProfileEditPanel extends UPanel {
         }
         if (passVlanF3.isEnabled()) {
             String pv = passVlanF3.getValue();
-            String[] split = pv.split(",");
+            String[] split = pv.split(";");
             for (String s : split) {
                 if (!NumberUtils.isNumber(s)) {
                     String error = fStringMap.getString("Err_pass_vlan_must_numbers_join_by_comma");
@@ -359,7 +359,7 @@ public class ProfileEditPanel extends UPanel {
         }
         if (passVlanF4.isEnabled()) {
             String pv = passVlanF4.getValue();
-            String[] split = pv.split(",");
+            String[] split = pv.split(";");
             for (String s : split) {
                 if (!NumberUtils.isNumber(s)) {
                     String error = fStringMap.getString("Err_pass_vlan_must_numbers_join_by_comma");
