@@ -343,5 +343,6 @@
         <Panel name="OltBase_Panel" class="com.winnertel.lct.batch.gui.OltBasePanel"/>
         <Panel name="OnuBase_Panel" class="com.winnertel.lct.batch.gui.OnuBasePanel"/>
         <Panel name="OnuProfile_Panel" class="com.winnertel.lct.batch.gui.ProfilePanel"/>
+        <Panel name="InPut_OutPut_Panel" class="com.winnertel.lct.batch.gui.InputOutputPanel"/>
     </TabbedPane>
 </TabbedPaneList>

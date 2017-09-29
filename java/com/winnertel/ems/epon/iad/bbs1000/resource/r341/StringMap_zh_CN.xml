@@ -3994,6 +3994,7 @@
     <String key="OltBase_Panel" value="OLT配置" />
     <String key="OnuBase_Panel" value="ONU配置" />
     <String key="OnuProfile_Panel" value="ONU模板配置" />
+    <String key="InPut_OutPut_Panel" value="导入导出" />
 
     <String key="Import" value="导入" />
     <String key="Save_As" value="另存为..." />
@@ -4060,5 +4061,8 @@
 
     <String key="Err_pass_vlan_must_numbers_join_by_comma" value="PASS VLAN只能输入以英文分号分割的数字" />
     <String key="Err_pass_vlan_count_must_even" value="PASS VLAN只能输入偶数个数字" />
+
+    <String key="input" value="导入" />
+    <String key="output" value="导出" />
 
 </StringMap>

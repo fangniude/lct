@@ -6,10 +6,7 @@ import com.winnertel.lct.batch.protocol.Profile;
 import org.apache.commons.net.tftp.TFTP;
 import org.apache.commons.net.tftp.TFTPClient;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -125,6 +122,14 @@ public class XmlDataBase {
         sendXml2Olt("onuprofile.xml", profileFile);
     }
 
+    public void input(File file) {
+        sendXml2Olt("olt.xml", file);
+    }
+
+    public void output(File file) {
+        getXmlFromOlt("olt.xml", file);
+    }
+
     private void sendXml2Olt(String fileName, File file) {
         TFTPClient client = new TFTPClient();
         try {
@@ -135,6 +140,24 @@ public class XmlDataBase {
             client.close();
         } catch (IOException e) {
             e.printStackTrace();
+            throw new RuntimeException(String.format("tftp put error, fileName: %s", fileName), e);
+        }
+    }
+
+    private void getXmlFromOlt(String fileName, File file) {
+        TFTPClient client = new TFTPClient();
+        try {
+            client.open();
+            try (OutputStream out = new FileOutputStream(file)) {
+                int i = client.receiveFile(fileName, TFTP.OCTET_MODE, out, host);
+                if (i <= 0) {
+                    throw new RuntimeException(String.format("tftp get error, fileName: %s", fileName));
+                }
+            }
+            client.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RuntimeException(String.format("tftp get error, fileName: %s", fileName), e);
         }
     }
 
