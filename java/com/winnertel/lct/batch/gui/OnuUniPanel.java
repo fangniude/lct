@@ -230,11 +230,11 @@ public class OnuUniPanel extends UPanel {
                     return false;
                 }
             }
-            if (split.length % 2 != 0) {
-                String error = fStringMap.getString("Err_pass_vlan_count_must_even");
-                MessageDialog.showErrorMessageDialog(fApplication, error);
-                return false;
-            }
+//            if (split.length % 2 != 0) {
+//                String error = fStringMap.getString("Err_pass_vlan_count_must_even");
+//                MessageDialog.showErrorMessageDialog(fApplication, error);
+//                return false;
+//            }
         }
         return super.validateFrom();
     }

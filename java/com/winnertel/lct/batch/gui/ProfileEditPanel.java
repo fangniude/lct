@@ -319,11 +319,11 @@ public class ProfileEditPanel extends UPanel {
                     return false;
                 }
             }
-            if (split.length % 2 != 0) {
-                String error = fStringMap.getString("Err_pass_vlan_count_must_even");
-                MessageDialog.showErrorMessageDialog(fApplication, error);
-                return false;
-            }
+//            if (split.length % 2 != 0) {
+//                String error = fStringMap.getString("Err_pass_vlan_count_must_even");
+//                MessageDialog.showErrorMessageDialog(fApplication, error);
+//                return false;
+//            }
         }
         if (passVlanF2.isEnabled()) {
             String pv = passVlanF2.getValue();
@@ -335,11 +335,11 @@ public class ProfileEditPanel extends UPanel {
                     return false;
                 }
             }
-            if (split.length % 2 != 0) {
-                String error = fStringMap.getString("Err_pass_vlan_count_must_even");
-                MessageDialog.showErrorMessageDialog(fApplication, error);
-                return false;
-            }
+//            if (split.length % 2 != 0) {
+//                String error = fStringMap.getString("Err_pass_vlan_count_must_even");
+//                MessageDialog.showErrorMessageDialog(fApplication, error);
+//                return false;
+//            }
         }
         if (passVlanF3.isEnabled()) {
             String pv = passVlanF3.getValue();
@@ -351,11 +351,11 @@ public class ProfileEditPanel extends UPanel {
                     return false;
                 }
             }
-            if (split.length % 2 != 0) {
-                String error = fStringMap.getString("Err_pass_vlan_count_must_even");
-                MessageDialog.showErrorMessageDialog(fApplication, error);
-                return false;
-            }
+//            if (split.length % 2 != 0) {
+//                String error = fStringMap.getString("Err_pass_vlan_count_must_even");
+//                MessageDialog.showErrorMessageDialog(fApplication, error);
+//                return false;
+//            }
         }
         if (passVlanF4.isEnabled()) {
             String pv = passVlanF4.getValue();
@@ -367,11 +367,11 @@ public class ProfileEditPanel extends UPanel {
                     return false;
                 }
             }
-            if (split.length % 2 != 0) {
-                String error = fStringMap.getString("Err_pass_vlan_count_must_even");
-                MessageDialog.showErrorMessageDialog(fApplication, error);
-                return false;
-            }
+//            if (split.length % 2 != 0) {
+//                String error = fStringMap.getString("Err_pass_vlan_count_must_even");
+//                MessageDialog.showErrorMessageDialog(fApplication, error);
+//                return false;
+//            }
         }
         return super.validateFrom();
     }

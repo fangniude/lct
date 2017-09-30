@@ -12,13 +12,14 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.io.File;
+import java.io.IOException;
 
 public class InputOutputPanel extends UPanel {
     private JLabel inputL = new JLabel("导入文件:");
     private JLabel outputL = new JLabel("导出文件:");
 
-    private StringTextField inputField = new StringTextField();
-    private StringTextField outputField = new StringTextField();
+    private StringTextField inputField = new StringTextField(50);
+    private StringTextField outputField = new StringTextField(50);
 
     private JButton inputFileButton = new JButton(fStringMap.getString("选择..."));
     private JButton outputFileButton = new JButton(fStringMap.getString("选择..."));
@@ -38,15 +39,15 @@ public class InputOutputPanel extends UPanel {
         inputPanel.setLayout(inputLayout);
         inputPanel.setBorder(BorderFactory.createEtchedBorder());
 
-        inputPanel.add(inputL);
-        inputPanel.add(inputField);
-        inputPanel.add(inputFileButton);
-        inputPanel.add(inputButton);
-        inputPanel.add(new HSpacer());
         inputPanel.add(outputL);
         inputPanel.add(outputField);
         inputPanel.add(outputFileButton);
         inputPanel.add(outputButton);
+        inputPanel.add(new HSpacer());
+        inputPanel.add(inputL);
+        inputPanel.add(inputField);
+        inputPanel.add(inputFileButton);
+        inputPanel.add(inputButton);
         inputPanel.add(new HSpacer());
         setLayout(new BorderLayout());
         add(inputPanel, BorderLayout.NORTH);
@@ -91,14 +92,28 @@ public class InputOutputPanel extends UPanel {
         XmlDataBase db = XmlDataBase.getInstance(fApplication.getSnmpProxy().getTargetHost());
         try {
             db.output(file);
-            MessageDialog.showInfoMessageDialog(fApplication, "导出成功");
+            if (file.length() > 0 && file.lastModified() > System.currentTimeMillis() - 5000) {
+                MessageDialog.showInfoMessageDialog(fApplication, "导出成功");
+            } else {
+                if (file.exists()) {
+                    file.delete();
+                }
+                MessageDialog.showErrorMessageDialog(fApplication, "导出失败");
+            }
         } catch (RuntimeException e) {
+            if (file.exists()) {
+                file.delete();
+            }
             MessageDialog.showErrorMessageDialog(fApplication, "导出失败");
         }
     }
 
     private void inputChooser(ActionEvent actionEvent) {
-        JFileChooser fileChooser = new JFileChooser();
+        File confDir = new File(String.format("data%s%s%sconf%s", File.separator, fApplication.getSnmpProxy().getTargetHost(), File.separator, File.separator));
+        if (!confDir.exists()) {
+            confDir.mkdirs();
+        }
+        JFileChooser fileChooser = new JFileChooser(confDir);
         if (fileChooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) {
             File file = fileChooser.getSelectedFile();
             inputField.setValue(file.getAbsolutePath());
@@ -106,7 +121,11 @@ public class InputOutputPanel extends UPanel {
     }
 
     private void outputChooser(ActionEvent actionEvent) {
-        JFileChooser fileChooser = new JFileChooser();
+        File confDir = new File(String.format("data%s%s%sconf%s", File.separator, fApplication.getSnmpProxy().getTargetHost(), File.separator, File.separator));
+        if (!confDir.exists()) {
+            confDir.mkdirs();
+        }
+        JFileChooser fileChooser = new JFileChooser(confDir);
         if (fileChooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION) {
             File file = fileChooser.getSelectedFile();
             outputField.setValue(file.getAbsolutePath());

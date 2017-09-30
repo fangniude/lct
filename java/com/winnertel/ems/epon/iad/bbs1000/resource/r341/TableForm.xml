@@ -136,7 +136,7 @@
                 <!--<Field name="mxuPriority" mib_property="mxuPriority"/>-->
             </Table>
             <Button id="Add_ProfileOnuTable" type="Add" style="O|C">
-                <Panel action_id="Add_ProfileOnuTable_Log" class="com.winnertel.lct.batch.gui.ProfileEditPanel"/>
+                <Panel action_id="Add_ProfileOnuTable_Log" class="com.winnertel.lct.batch.gui.ProfileOnuPanel"/>
             </Button>
             <!--<Button id="Modify_ProfileOnuTable" type="Modify">-->
                 <!--<Panel action_id="Modify_ProfileOnuTable_Log" class="com.winnertel.lct.batch.gui.ProfileEditPanel"/>-->
@@ -163,7 +163,7 @@
                 <!--<Field name="loopDetect" mib_property="loopDetect"/>-->
             </Table>
             <Button id="Add_ProfileUniTable" type="Add" style="O|C">
-                <Panel action_id="Add_ProfileUniTable_Log" class="com.winnertel.lct.batch.gui.ProfileEditPanel"/>
+                <Panel action_id="Add_ProfileUniTable_Log" class="com.winnertel.lct.batch.gui.ProfileUniPanel"/>
             </Button>
             <!--<Button id="Modify_ProfileUniTable" type="Modify">-->
                 <!--<Panel action_id="Modify_ProfileUniTable_Log" class="com.winnertel.lct.batch.gui.ProfileEditPanel"/>-->
