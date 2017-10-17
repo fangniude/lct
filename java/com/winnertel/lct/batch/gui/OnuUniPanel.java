@@ -1,5 +1,6 @@
 package com.winnertel.lct.batch.gui;
 
+import com.jgoodies.common.base.Strings;
 import com.winnertel.em.framework.IApplication;
 import com.winnertel.em.framework.gui.swing.UPanel;
 import com.winnertel.em.framework.gui.util.MessageDialog;
@@ -195,10 +196,12 @@ public class OnuUniPanel extends UPanel {
             vlanTagF.setEnabled(true);
             passVlanF.setEnabled(false);
             vlanTpidF.setEnabled(true);
+            vlanTpidF.setSelectedIndex(0);
         } else if (4 == str) {
             vlanTagF.setEnabled(true);
             passVlanF.setEnabled(true);
             vlanTpidF.setEnabled(true);
+            vlanTpidF.setSelectedIndex(0);
         }
     }
 
@@ -255,6 +258,7 @@ public class OnuUniPanel extends UPanel {
             idField.setValue(TransformUtils.displayUniId(m.getId()));
             vlanModeF.setSelectedIndex(getIndexFromValue(utsDot3OnuEtherPortVlanModeVList, Integer.valueOf(m.getVlanMode())));
             setNullableIntField(vlanTagF, m.getVlanTag());
+//            vlanTpidF.setSelectedItem(Strings.isEmpty(m.getVlanTpid())? "0x8100" : m.getVlanTpid());
             vlanTpidF.setSelectedItem(m.getVlanTpid());
 
             policingEnableF.setSelectedIndex(getIndexFromValue(policingEnableVList, Integer.valueOf(m.getPolicingEnable())));

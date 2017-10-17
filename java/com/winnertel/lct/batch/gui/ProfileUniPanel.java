@@ -3,6 +3,7 @@ package com.winnertel.lct.batch.gui;
 import com.winnertel.em.framework.IApplication;
 import com.winnertel.em.framework.gui.swing.UPanel;
 import com.winnertel.em.framework.gui.util.MessageDialog;
+import com.winnertel.em.framework.model.IMibBean;
 import com.winnertel.em.framework.model.MibBeanException;
 import com.winnertel.em.standard.snmp.gui.SnmpTablePane;
 import com.winnertel.em.standard.util.gui.input.IntegerTextField;
@@ -385,8 +386,8 @@ public class ProfileUniPanel extends UPanel {
                     uni.setDsCir(String.valueOf(dsPirF.getValue()));
                     uni.setDsPir(String.valueOf(dsPirF.getValue()));
                 }
+                setModel((IMibBean) uni.clone());
                 uni.add();
-                setModel(uni);
             }
             if (uni2.isSelected()) {
                 ProfileUniBean uni = new ProfileUniBean(proxy);
@@ -412,8 +413,8 @@ public class ProfileUniPanel extends UPanel {
                     uni.setDsCir(String.valueOf(dsPirF2.getValue()));
                     uni.setDsPir(String.valueOf(dsPirF2.getValue()));
                 }
+                setModel((IMibBean) uni.clone());
                 uni.add();
-                setModel(uni);
             }
             if (uni3.isSelected()) {
                 ProfileUniBean uni = new ProfileUniBean(proxy);
@@ -439,8 +440,8 @@ public class ProfileUniPanel extends UPanel {
                     uni.setDsCir(String.valueOf(dsPirF3.getValue()));
                     uni.setDsPir(String.valueOf(dsPirF3.getValue()));
                 }
+                setModel((IMibBean) uni.clone());
                 uni.add();
-                setModel(uni);
             }
             if (uni4.isSelected()) {
                 ProfileUniBean uni = new ProfileUniBean(proxy);
@@ -466,8 +467,8 @@ public class ProfileUniPanel extends UPanel {
                     uni.setDsCir(String.valueOf(dsPirF4.getValue()));
                     uni.setDsPir(String.valueOf(dsPirF4.getValue()));
                 }
+                setModel((IMibBean) uni.clone());
                 uni.add();
-                setModel(uni);
             }
         } catch (MibBeanException e) {
             e.printStackTrace();
