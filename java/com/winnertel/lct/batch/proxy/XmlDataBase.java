@@ -1,5 +1,6 @@
 package com.winnertel.lct.batch.proxy;
 
+import com.winnertel.lct.batch.protocol.Olt;
 import com.winnertel.lct.batch.protocol.OltBase;
 import com.winnertel.lct.batch.protocol.OnuBase;
 import com.winnertel.lct.batch.protocol.Profile;
@@ -128,6 +129,26 @@ public class XmlDataBase {
 
     public void output(File file) {
         getXmlFromOlt("olt.xml", file);
+    }
+
+    public void sync() {
+        File file = new File("tmp");
+        getXmlFromOlt("olt.xml", file);
+        if (file.length() > 0) {
+            Olt olt = Olt.fromFile(file);
+            new OltBase(olt.getSystem(), olt.getVlanList(), olt.getQinqList()).toFile(oltFile);
+            new OnuBase(olt.getMacList(), olt.getOnuCfg(), olt.getOnuUni()).toFile(onuFile);
+            fromDisk();
+            if (file.exists()) {
+                file.delete();
+            }
+
+            if (System.currentTimeMillis() - oltFile.lastModified() > 5000 || System.currentTimeMillis() - onuFile.lastModified() > 5000) {
+                throw new RuntimeException("sync fail.");
+            }
+        } else {
+            throw new RuntimeException("get olt.xml file error.");
+        }
     }
 
     private void sendXml2Olt(String fileName, File file) {

@@ -17,6 +17,7 @@ import java.io.IOException;
 public class InputOutputPanel extends UPanel {
     private JLabel inputL = new JLabel("导入文件:");
     private JLabel outputL = new JLabel("导出文件:");
+    private JLabel syncL = new JLabel("将OLT的配置数据同步到小工具:");
 
     private StringTextField inputField = new StringTextField(50);
     private StringTextField outputField = new StringTextField(50);
@@ -26,6 +27,7 @@ public class InputOutputPanel extends UPanel {
 
     private JButton inputButton = new JButton(fStringMap.getString("input"));
     private JButton outputButton = new JButton(fStringMap.getString("output"));
+    private JButton syncButton = new JButton(fStringMap.getString("同步"));
 
     public InputOutputPanel(IApplication app) {
         super(app);
@@ -44,19 +46,44 @@ public class InputOutputPanel extends UPanel {
         inputPanel.add(outputFileButton);
         inputPanel.add(outputButton);
         inputPanel.add(new HSpacer());
+
         inputPanel.add(inputL);
         inputPanel.add(inputField);
         inputPanel.add(inputFileButton);
         inputPanel.add(inputButton);
         inputPanel.add(new HSpacer());
+
+        NTLayout syncLayout = new NTLayout(2, 10, NTLayout.FILL, NTLayout.CENTER, 5, 5);
+        syncLayout.setMargins(6, 10, 6, 10);
+        JPanel syncPanel = new JPanel();
+        syncPanel.setLayout(syncLayout);
+        syncPanel.setBorder(BorderFactory.createTitledBorder("将系统运行的数据分别同步到<批量配置>中的<OLT配置>和<ONU配置>界面"));
+
+        syncPanel.add(new HSpacer());
+        syncPanel.add(new JLabel("批量配置界面"));
+        syncPanel.add(syncButton);
+        syncPanel.add(new HSpacer());
+        syncPanel.add(new HSpacer());
+        syncPanel.add(new HSpacer());
+        syncPanel.add(new HSpacer());
+        syncPanel.add(new HSpacer());
+        syncPanel.add(new HSpacer());
+        syncPanel.add(new HSpacer());
+
+        JPanel allPanel = new JPanel();
+        allPanel.setLayout(new NTLayout(2, 1, NTLayout.FILL, NTLayout.CENTER, 5, 5));
+        allPanel.add(inputPanel);
+        allPanel.add(syncPanel);
+
         setLayout(new BorderLayout());
-        add(inputPanel, BorderLayout.NORTH);
+        add(allPanel, BorderLayout.NORTH);
 
         inputFileButton.addActionListener(this::inputChooser);
         outputFileButton.addActionListener(this::outputChooser);
 
         inputButton.addActionListener(this::input);
         outputButton.addActionListener(this::output);
+        syncButton.addActionListener(this::sync);
     }
 
     private void input(ActionEvent actionEvent) {
@@ -85,6 +112,16 @@ public class InputOutputPanel extends UPanel {
             }
         } else {
             doOutput(file);
+        }
+    }
+
+    private void sync(ActionEvent actionEvent) {
+        XmlDataBase db = XmlDataBase.getInstance(fApplication.getSnmpProxy().getTargetHost());
+        try {
+            db.sync();
+            MessageDialog.showInfoMessageDialog(fApplication, "同步成功");
+        } catch (RuntimeException e) {
+            MessageDialog.showErrorMessageDialog(fApplication, "同步失败");
         }
     }
 

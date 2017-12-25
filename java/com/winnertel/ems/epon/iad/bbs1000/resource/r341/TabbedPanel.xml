@@ -8,7 +8,7 @@
         <Panel name="System_Log" class="com.winnertel.ems.epon.iad.bbs4000.gui.SyslogMBeanPanel"/>
         <Panel name="System_Boot_Params" class="com.winnertel.ems.epon.iad.bbs4000.gui.SysBootParamsMBeanPanel"/>
         <!--<Panel name="General_Configuration" class="com.winnertel.ems.epon.iad.bbs1000.gui.r330.GeneralConfigurationPanel"/>-->
-        <Panel name="LoopbackGlobalSettingPanel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r210.LoopbackGlobalSettingPanel"/>
+        <!--<Panel name="LoopbackGlobalSettingPanel" class="com.winnertel.ems.epon.iad.bbs4000.gui.r210.LoopbackGlobalSettingPanel"/>-->
         <Panel name="TCA" class="com.winnertel.ems.epon.iad.bbs4000.gui.r210.TCAConfigPanel"/>
         <Panel name="Alarm Configuration" class="com.winnertel.ems.epon.iad.bbs1000.gui.AlarmConfigPanel"/>
         <Panel name="PonSystemGroupPanel" class="com.winnertel.ems.epon.iad.bbs1000.gui.r341.PonSystemGroupPanel"/>
